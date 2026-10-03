@@ -1,0 +1,163 @@
+{
+  "id": "0021",
+  "name": "Flow",
+  "storeKey": "flow7-0021",
+  "kicker": "Công thức #0021",
+  "title": "Thử thách Flow 7 ngày",
+  "sub": "Mỗi ngày một việc từ 10 đến 45 phút. Điền ngay trên trang, bấm sao chép câu check-in rồi dán vào bình luận của bài hôm đó trên 10X Excellence Hub.",
+  "days": [
+    {
+      "label": "Thứ Hai", "kick": "Nhận diện", "title": "Lần gần nhất bạn quên thời gian", "time": "Khoảng 10 phút",
+      "cards": [
+        {"h": "Nhớ lại một lần gần đây", "items": [
+          {"f": "ta", "k": "d1what", "q": "Khi đó tôi đang làm việc gì?", "ph": "Ví dụ: rà lại mô hình ngân sách quý"},
+          {"f": "tx", "k": "d1where", "q": "Ở đâu, vào lúc nào trong ngày?", "ph": "Ví dụ: ở văn phòng, 8 giờ sáng"},
+          {"f": "ta", "k": "d1why", "q": "Điều gì giúp tôi tập trung được như vậy?"}
+        ]},
+        {"h": "Ba điều kiện cốt lõi lúc đó có mặt không?", "items": [
+          {"f": "cb", "k": "d1c1", "label": "Mục tiêu rõ ràng: tôi biết chính xác thế nào là xong"},
+          {"f": "cb", "k": "d1c2", "label": "Phản hồi ngay: tôi biết mình làm đúng hay chưa ngay trong lúc làm"},
+          {"f": "cb", "k": "d1c3", "label": "Độ khó vừa sức: đủ để phải cố gắng nhưng chưa quá tải"}
+        ]}
+      ],
+      "checkin": [
+        {"tpl": "Lần gần nhất tôi quên thời gian là khi {d1what}", "need": ["d1what"]},
+        {"tpl": ", {d1where}", "need": ["d1what", "d1where"]},
+        {"tpl": ".", "need": ["d1what"]},
+        {"tpl": " Điều giúp tôi tập trung: {d1why}", "need": ["d1what", "d1why"]}
+      ],
+      "hint": "Dán vào bình luận của bài Ngày 1."
+    },
+    {
+      "label": "Thứ Ba", "kick": "Bản đồ công việc", "title": "Việc nào đang ở vùng Flow?", "time": "Khoảng 15 phút",
+      "cards": [
+        {"h": "5 việc chiếm nhiều thời gian nhất tuần này", "items": [
+          {"f": "rows", "kp": "d2t", "n": 5, "ph": "Việc", "zk": "d2z", "zones": [["loau", "LO ÂU"], ["flow", "FLOW"], ["vocam", "VÔ CẢM"], ["chan", "CHÁN"]]},
+          {"f": "note", "text": "Bấm chọn vùng cho từng việc, ma trận bên dưới tự cập nhật."}
+        ]},
+        {"h": "Ma trận Thử thách và Kỹ năng", "items": [
+          {"f": "matrix", "kp": "d2t", "n": 5, "zk": "d2z", "top": "THỬ THÁCH CAO ↑", "bottom": "KỸ NĂNG CAO →",
+           "zones": [["loau", "LO ÂU", "Thử thách cao, kỹ năng thấp"], ["flow", "FLOW", "Thử thách cao, kỹ năng cao", 1], ["vocam", "VÔ CẢM", "Thử thách thấp, kỹ năng thấp"], ["chan", "CHÁN", "Thử thách thấp, kỹ năng cao"]]}
+        ]},
+        {"h": "Việc tôi chọn cho phiên Flow ngày mai", "items": [
+          {"f": "pick", "k": "d2pick", "kp": "d2t", "n": 5, "empty": "Điền tên việc ở trên để chọn."}
+        ]}
+      ],
+      "checkin": [{"tpl": "Việc tôi chọn cho phiên Flow ngày mai: {d2pick}.", "need": ["d2pick"]}],
+      "hint": "Dán vào bình luận của bài Ngày 2."
+    },
+    {
+      "label": "Thứ Tư", "kick": "Phiên Flow #1", "title": "Phiên Flow đầu tiên: 45 phút", "time": "30 đến 45 phút",
+      "cards": [
+        {"h": "Chuẩn bị trước khi bắt đầu", "items": [
+          {"f": "cb", "k": "d3p1", "label": "Tắt thông báo điện thoại, đóng các tab không liên quan"},
+          {"f": "cb", "k": "d3p2", "label": "Báo đồng nghiệp hoặc gia đình: tôi cần một khoảng thời gian không bị gọi"},
+          {"f": "cb", "k": "d3p3", "label": "Chọn cách tự kiểm tra trong lúc làm (đọc lại, đối chiếu số liệu)"},
+          {"f": "show", "text": "Việc đã chọn hôm qua: {d2pick}", "need": ["d2pick"]},
+          {"f": "tx", "k": "goal3", "q": "Trong phiên này, tôi sẽ hoàn thành", "ph": "Ví dụ: viết xong phần phân tích chi phí của báo cáo"}
+        ]},
+        {"h": "Đồng hồ phiên Flow", "items": [
+          {"f": "timer", "k": "min3", "dk": "dur3", "opts": [30, 45, 60, 90], "def": 45, "note": "Khi bấm Dừng, số phút đã làm được ghi vào nhật ký bên dưới. Mười đến mười lăm phút đầu thường khó tập trung nhất, cứ tiếp tục."}
+        ]},
+        {"h": "Nhật ký phiên 1", "items": [
+          {"f": "nums", "items": [{"k": "min3", "q": "Số phút tập trung"}, {"k": "int3", "q": "Số lần gián đoạn"}]},
+          {"f": "seg", "k": "flow3", "q": "Đã vào Flow chưa?", "opts": ["Có", "Gần Flow", "Chưa"]},
+          {"f": "tx", "k": "src3", "q": "Gián đoạn đến từ đâu?", "ph": "Ví dụ: điện thoại, đồng nghiệp hỏi việc"},
+          {"f": "tx", "k": "next3", "q": "Lần sau tôi muốn điều chỉnh"}
+        ]}
+      ],
+      "checkin": [
+        {"tpl": "Phiên 1: {min3} phút, gián đoạn {int3|0} lần, cảm nhận: {flow3|...}.", "need": ["min3"]},
+        {"tpl": " Lần sau: {next3}.", "need": ["min3", "next3"]}
+      ],
+      "hint": "Dán vào bình luận của bài Ngày 3."
+    },
+    {
+      "label": "Thứ Năm", "kick": "Phiên Flow #2", "title": "Phiên thứ hai vào nhịp nhanh hơn", "time": "30 đến 45 phút",
+      "cards": [
+        {"h": "Điều tôi điều chỉnh hôm nay (chọn một)", "items": [
+          {"f": "seg", "k": "adj4", "opts": ["Đổi sang khung giờ yên tĩnh hơn", "Viết mục tiêu cụ thể hơn", "Cất điện thoại ra khỏi tầm nhìn", "Đổi sang việc khác để thử"]},
+          {"f": "show", "text": "Ghi chú từ phiên 1: {next3}", "need": ["next3"]},
+          {"f": "tx", "k": "goal4", "q": "Mục tiêu phiên 2"}
+        ]},
+        {"h": "Đồng hồ phiên Flow", "items": [
+          {"f": "timer", "k": "min4", "dk": "dur4", "opts": [30, 45, 60, 90], "def": 45, "note": "Khi bấm Dừng, số phút đã làm được ghi vào nhật ký bên dưới."}
+        ]},
+        {"h": "Nhật ký phiên 2", "items": [
+          {"f": "nums", "items": [{"k": "min4", "q": "Số phút tập trung"}, {"k": "int4", "q": "Số lần gián đoạn"}]},
+          {"f": "seg", "k": "flow4", "q": "Đã vào Flow chưa?", "opts": ["Có", "Gần Flow", "Chưa"]},
+          {"f": "tx", "k": "src4", "q": "Gián đoạn đến từ đâu?", "ph": "Ví dụ: điện thoại, đồng nghiệp hỏi việc"},
+          {"f": "tx", "k": "next4", "q": "Lần sau tôi muốn điều chỉnh"}
+        ]},
+        {"h": "So sánh hai phiên", "items": [
+          {"f": "compare", "cols": ["Phiên 1", "Phiên 2"], "rows": [{"label": "Số phút tập trung", "keys": ["min3", "min4"]}, {"label": "Số lần gián đoạn", "keys": ["int3", "int4"]}]}
+        ]}
+      ],
+      "checkin": [
+        {"tpl": "Hôm nay tôi điều chỉnh: {adj4|...}. Phiên 2: {min4} phút, gián đoạn {int4|0} lần, cảm nhận: {flow4|...}.", "need": ["min4"]},
+        {"tpl": " Lần sau: {next4}.", "need": ["min4", "next4"]}
+      ],
+      "hint": "Dán vào bình luận của bài Ngày 4."
+    },
+    {
+      "label": "Thứ Sáu", "kick": "Chọn một điều chỉnh", "title": "Một thay đổi cho góc làm việc", "time": "Khoảng 15 phút",
+      "cards": [
+        {"h": "Mức ảnh hưởng trong hai phiên vừa qua", "items": [
+          {"f": "note", "text": "1: ít ảnh hưởng, 5: ảnh hưởng nhiều."},
+          {"f": "rate", "kp": "d5r", "scale": 5, "head": ["#", "Yếu tố", "Mức"], "rows": [
+            ["Thông báo điện thoại", "Bật chế độ tập trung trong khung giờ làm việc sâu"],
+            ["Làm nhiều việc cùng lúc", "Chỉ mở một ứng dụng hoặc một tab"],
+            ["Mục tiêu mơ hồ", "Viết mục tiêu cụ thể trước khi bắt đầu"],
+            ["Việc quá quen", "Thêm thử thách, ví dụ rút ngắn thời hạn"],
+            ["Việc quá lớn", "Chia thành các bước nhỏ"]]}
+        ]},
+        {"h": "Yếu tố tôi chọn thay đổi", "items": [
+          {"f": "seg", "k": "d5pick", "opts": ["Thông báo điện thoại", "Làm nhiều việc cùng lúc", "Mục tiêu mơ hồ", "Việc quá quen", "Việc quá lớn"],
+           "hints": ["Bật chế độ tập trung trong khung giờ làm việc sâu", "Chỉ mở một ứng dụng hoặc một tab", "Viết mục tiêu cụ thể trước khi bắt đầu", "Thêm thử thách, ví dụ rút ngắn thời hạn", "Chia thành các bước nhỏ"]},
+          {"f": "tx", "k": "d5how", "q": "Tôi sẽ điều chỉnh bằng cách"}
+        ]}
+      ],
+      "checkin": [
+        {"tpl": "Yếu tố tôi chọn: {d5pick}.", "need": ["d5pick"]},
+        {"tpl": " Cách điều chỉnh: {d5how}.", "need": ["d5pick", "d5how"]}
+      ],
+      "hint": "Dán vào bình luận của bài Ngày 5."
+    },
+    {
+      "label": "Thứ Bảy", "kick": "Đo lại tuần", "title": "Tuần này bạn có bao nhiêu phút Flow", "time": "Khoảng 20 phút",
+      "cards": [
+        {"h": "Cộng số phút của tuần", "items": [
+          {"f": "sum", "head": ["Phiên", "Số phút", "Gián đoạn"], "rows": [{"label": "Phiên 1 (Ngày 3)", "keys": ["min3", "int3"]}, {"label": "Phiên 2 (Ngày 4)", "keys": ["min4", "int4"]}]}
+        ]},
+        {"h": "Nhìn lại tuần", "items": [
+          {"f": "ta", "k": "d6q1", "q": "Trong ba điều kiện cốt lõi, điều kiện nào tôi làm tốt nhất, điều kiện nào còn thiếu?"},
+          {"f": "ta", "k": "d6q2", "q": "Gián đoạn chủ yếu đến từ bên ngoài hay từ bên trong?"},
+          {"f": "ta", "k": "d6q3", "q": "Việc nào trong bản đồ Ngày 2 đã chuyển vùng?"},
+          {"f": "tx", "k": "d6learn", "q": "Một điều tôi nhận ra về cách mình làm việc"}
+        ]}
+      ],
+      "checkin": [
+        {"tpl": "Tổng phút Flow tuần này: {sum:min3,min4}.", "need": ["sum:min3,min4"]},
+        {"tpl": " Điều tôi nhận ra: {d6learn}", "need": ["d6learn"]}
+      ],
+      "hint": "Con số lớn hay nhỏ không quan trọng bằng việc bạn đã đo được. Dán vào bình luận của bài Ngày 6."
+    },
+    {
+      "label": "Chủ Nhật", "kick": "Giữ nhịp lâu dài", "title": "Đặt lịch Flow cố định mỗi tuần", "time": "Khoảng 30 phút",
+      "cards": [
+        {"h": "Chọn 3 khung giờ Flow mỗi tuần", "items": [
+          {"f": "note", "text": "Bấm vào ô để đánh dấu, mỗi khung 45 đến 60 phút, vào lúc ít bị gián đoạn nhất."},
+          {"f": "cal", "k": "cal", "mark": "FLOW", "max": 3, "cols": ["T2", "T3", "T4", "T5", "T6", "T7", "CN"], "rows": ["Sáng sớm", "Buổi sáng", "Đầu giờ chiều", "Buổi chiều", "Buổi tối"]}
+        ]},
+        {"h": "Nhìn lại 15 phút mỗi tối Chủ Nhật", "items": [
+          {"f": "cb", "k": "d7r1", "label": "Cộng số phút Flow của tuần vừa qua"},
+          {"f": "cb", "k": "d7r2", "label": "Chọn việc cho ba khung giờ tuần tới"},
+          {"f": "cb", "k": "d7r3", "label": "Điều chỉnh một yếu tố gây gián đoạn nếu cần"},
+          {"f": "tx", "k": "d7keep", "q": "Điều tôi muốn giữ lại sau thử thách"}
+        ]}
+      ],
+      "checkin": [{"tpl": "Lịch Flow của tôi: {cal:cal}.", "need": ["cal:cal"]}],
+      "hint": "Đây là check-in cuối cùng của thử thách. Dán vào bình luận của bài Ngày 7."
+    }
+  ]
+}
