@@ -88,7 +88,7 @@ async function boot(){
   try{const r=await fetch(BASE+'weeks.json?t='+Date.now(),{cache:'no-store'});if(r.ok)idx=await r.json()}catch(_){}
   const list=(idx&&idx.weeks)||[];
   const today=new Date().toISOString().slice(0,10);
-  const vis=list.filter(w=>!w.show||w.show<=today);
+  const H=location.hash||'',pv=/xem-truoc/.test(location.search+H);const vis=list.filter(w=>!w.show||w.show<=today||pv||H.indexOf('#'+w.id+'-')===0);
   const loaded=await Promise.all(vis.map(async w=>{try{const r=await fetch(BASE+w.file+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)return null;const d=await r.json();d.label=w.label;return d}catch(_){return null}}));
   WEEKS=loaded.filter(Boolean);
   if(!WEEKS.length&&window.STH_FALLBACK)WEEKS=[window.STH_FALLBACK];
