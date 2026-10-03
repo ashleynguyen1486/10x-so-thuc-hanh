@@ -89,13 +89,13 @@ async function boot(){
   const list=(idx&&idx.weeks)||[];
   const today=new Date().toISOString().slice(0,10);
   const H=location.hash||'',pv=/xem-truoc/.test(location.search+H);const vis=list.filter(w=>!w.show||w.show<=today||pv||H.indexOf('#'+w.id+'-')===0);
-  const loaded=await Promise.all(vis.map(async w=>{try{const r=await fetch(BASE+w.file+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)return null;const d=await r.json();d.label=w.label;return d}catch(_){return null}}));
+  const loaded=await Promise.all(vis.map(async w=>{try{const r=await fetch(BASE+w.file+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)return null;const d=await r.json();d.label=w.label;d.start=w.start;return d}catch(_){return null}}));
   WEEKS=loaded.filter(Boolean);
   if(!WEEKS.length&&window.STH_FALLBACK)WEEKS=[window.STH_FALLBACK];
   if(!WEEKS.length){$('main').innerHTML='<p class="note">Chưa tải được nội dung. Vui lòng tải lại trang.</p>';return}
   fromHash(true);
   window.addEventListener('hashchange',()=>fromHash(false));
 }
-function fromHash(first){const h=(location.hash||'').match(/^#(?:(\w+)-)?ngay-(\d+)/);if(h){stopTimer();openWeek(h[1]||LEGACY,+h[2])}else if(first){openWeek(WEEKS[WEEKS.length-1].id,0)}}
+function fromHash(first){const h=(location.hash||'').match(/^#(?:(\w+)-)?ngay-(\d+)/);if(h){stopTimer();openWeek(h[1]||LEGACY,+h[2])}else if(first){const td=new Date().toISOString().slice(0,10),st=WEEKS.filter(w=>!w.start||w.start<=td);openWeek((st.length?st[st.length-1]:WEEKS[0]).id,0)}}
 boot();
 })();
