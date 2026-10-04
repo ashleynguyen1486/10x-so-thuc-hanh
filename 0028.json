@@ -1,0 +1,951 @@
+{
+ "id": "0028",
+ "name": "Kỹ thuật Feynman",
+ "storeKey": "sth-0028",
+ "kicker": "Công thức #0028",
+ "title": "Thử thách Kỹ thuật Feynman 7 ngày",
+ "sub": "Mỗi ngày từ 15 đến 45 phút, cho một khái niệm trong công việc của mình. Các anh chị và các bạn điền trên trang, bấm sao chép câu chia sẻ rồi dán vào bình luận của bài hôm đó trên 10X Excellence Hub nha. Trường đồng hành cùng mọi người cả tuần.",
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Chọn",
+   "title": "Chọn một khái niệm để hiểu thật",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Những khái niệm \"tưởng đã hiểu\"",
+     "items": [
+      {
+       "f": "note",
+       "text": "Chấm hai thang từ 1 đến 5: mức quan trọng của khái niệm với công việc (5 là rất quan trọng), và mức tự tin nếu phải giải thích nó cho người khác ngay bây giờ (5 là rất tự tin)."
+      },
+      {
+       "f": "tx",
+       "k": "d1c1",
+       "q": "Khái niệm 1",
+       "ph": "Ví dụ: vì sao công ty có lãi mà vẫn thiếu tiền mặt"
+      },
+      {
+       "f": "seg",
+       "k": "d1i1",
+       "q": "Quan trọng",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1t1",
+       "q": "Tự tin",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1c2",
+       "q": "Khái niệm 2",
+       "ph": "Một khái niệm hay gặp trong công việc"
+      },
+      {
+       "f": "seg",
+       "k": "d1i2",
+       "q": "Quan trọng",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1t2",
+       "q": "Tự tin",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1c3",
+       "q": "Khái niệm 3",
+       "ph": "Một khái niệm hay gặp trong công việc"
+      },
+      {
+       "f": "seg",
+       "k": "d1i3",
+       "q": "Quan trọng",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1t3",
+       "q": "Tự tin",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1c4",
+       "q": "Khái niệm 4",
+       "ph": "Một khái niệm hay gặp trong công việc"
+      },
+      {
+       "f": "seg",
+       "k": "d1i4",
+       "q": "Quan trọng",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1t4",
+       "q": "Tự tin",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1c5",
+       "q": "Khái niệm 5",
+       "ph": "Một khái niệm hay gặp trong công việc"
+      },
+      {
+       "f": "seg",
+       "k": "d1i5",
+       "q": "Quan trọng",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1t5",
+       "q": "Tự tin",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Chọn khái niệm của tuần",
+     "items": [
+      {
+       "f": "note",
+       "text": "Chọn khái niệm quan trọng nhất mà mức tự tin còn thấp. Thu hẹp cho vừa một tuần: \"tài chính doanh nghiệp\" quá rộng, \"vì sao công ty có lãi mà vẫn thiếu tiền mặt\" thì vừa."
+      },
+      {
+       "f": "tx",
+       "k": "d1topic",
+       "q": "Khái niệm tuần này",
+       "ph": "Ví dụ: vì sao công ty có lãi mà vẫn thiếu tiền mặt"
+      },
+      {
+       "f": "seg",
+       "k": "d1conf",
+       "q": "Mức tự tin hiện tại",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1aud",
+       "q": "Người nghe tưởng tượng",
+       "ph": "Ví dụ: một đồng nghiệp mới ở phòng kinh doanh"
+      },
+      {
+       "f": "note",
+       "text": "Người nghe gợi ý: một đồng nghiệp giỏi ở bộ phận khác, mới vào công ty. Thông minh, nhưng không biết thuật ngữ của bộ phận mình."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 1: Khái niệm tuần này: {d1topic}",
+     "need": [
+      "d1topic"
+     ]
+    },
+    {
+     "tpl": ". Mức tự tin: {d1conf}/5",
+     "need": [
+      "d1topic",
+      "d1conf"
+     ]
+    },
+    {
+     "tpl": ". Người nghe: {d1aud}",
+     "need": [
+      "d1topic",
+      "d1aud"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d1topic"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Giải thích lần 1",
+   "title": "Giải thích lần 1 trên giấy trắng",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Trước khi viết",
+     "items": [
+      {
+       "f": "show",
+       "text": "Khái niệm: {d1topic}. Người nghe: {d1aud}",
+       "need": [
+        "d1topic"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d2closed",
+       "label": "Đã đóng hết tài liệu liên quan"
+      },
+      {
+       "f": "note",
+       "text": "Gặp chỗ không biết viết tiếp, hoặc phải dùng thuật ngữ thay cho giải thích, gõ (?) rồi viết tiếp. Đừng dừng lại để tra."
+      }
+     ]
+    },
+    {
+     "h": "Giải thích lần 1",
+     "items": [
+      {
+       "f": "timer",
+       "k": "d2min",
+       "dk": "d2dur",
+       "opts": [
+        10,
+        15,
+        20
+       ],
+       "def": 15,
+       "note": "Viết như đang nói với người nghe đã chọn, bằng từ ngữ hằng ngày."
+      },
+      {
+       "f": "ta",
+       "k": "d2text",
+       "q": "Lời giải thích lần 1",
+       "ph": "Ví dụ: Công ty có lãi nghĩa là bán được nhiều hơn chi phí. Nhưng tiền mặt (?)..."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d2gaps",
+         "q": "Số chỗ hổng (số dấu (?))"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2worst",
+       "q": "Chỗ vấp nhất",
+       "ph": "Ví dụ: không giải thích được vì sao hàng tồn kho làm giảm tiền mặt"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 2: Giải thích lần 1, có {d2gaps} chỗ hổng",
+     "need": [
+      "d2gaps"
+     ]
+    },
+    {
+     "tpl": ". Chỗ vấp nhất: {d2worst}",
+     "need": [
+      "d2gaps",
+      "d2worst"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d2gaps"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Chỗ hổng",
+   "title": "Vá từng chỗ hổng",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "Vá từng chỗ hổng",
+     "items": [
+      {
+       "f": "show",
+       "text": "Chỗ vấp nhất hôm qua: {d2worst}",
+       "need": [
+        "d2worst"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Chép từng chỗ hổng thành một câu hỏi cụ thể, tìm câu trả lời, rồi viết lại bằng lời của mình. Chỉ đọc đúng chỗ cần, không đọc lại từ đầu."
+      },
+      {
+       "f": "tx",
+       "k": "d3q1",
+       "q": "Chỗ hổng 1: câu hỏi cụ thể",
+       "ph": "Ví dụ: vì sao mua hàng về kho làm giảm tiền mặt dù chưa bán?"
+      },
+      {
+       "f": "tx",
+       "k": "d3a1",
+       "q": "Câu trả lời bằng lời của mình",
+       "ph": "Viết ngắn, không chép nguyên văn"
+      },
+      {
+       "f": "seg",
+       "k": "d3s1",
+       "q": "Trạng thái",
+       "opts": [
+        "Đã vá",
+        "Cần hỏi thêm"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3q2",
+       "q": "Chỗ hổng 2: câu hỏi cụ thể",
+       "ph": "Một câu hỏi"
+      },
+      {
+       "f": "tx",
+       "k": "d3a2",
+       "q": "Câu trả lời bằng lời của mình",
+       "ph": "Viết ngắn, không chép nguyên văn"
+      },
+      {
+       "f": "seg",
+       "k": "d3s2",
+       "q": "Trạng thái",
+       "opts": [
+        "Đã vá",
+        "Cần hỏi thêm"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3q3",
+       "q": "Chỗ hổng 3: câu hỏi cụ thể",
+       "ph": "Một câu hỏi"
+      },
+      {
+       "f": "tx",
+       "k": "d3a3",
+       "q": "Câu trả lời bằng lời của mình",
+       "ph": "Viết ngắn, không chép nguyên văn"
+      },
+      {
+       "f": "seg",
+       "k": "d3s3",
+       "q": "Trạng thái",
+       "opts": [
+        "Đã vá",
+        "Cần hỏi thêm"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3q4",
+       "q": "Chỗ hổng 4: câu hỏi cụ thể",
+       "ph": "Một câu hỏi"
+      },
+      {
+       "f": "tx",
+       "k": "d3a4",
+       "q": "Câu trả lời bằng lời của mình",
+       "ph": "Viết ngắn, không chép nguyên văn"
+      },
+      {
+       "f": "seg",
+       "k": "d3s4",
+       "q": "Trạng thái",
+       "opts": [
+        "Đã vá",
+        "Cần hỏi thêm"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Tổng kết",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d3done",
+       "q": "Số chỗ hổng đã vá",
+       "opts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5+"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3ask",
+       "q": "Cần hỏi ai, về điều gì (nếu còn)",
+       "ph": "Ví dụ: chị Hà phòng kế toán, doanh thu ghi khi nào nếu khách trả chậm"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 3: Đã vá {d3done} chỗ hổng",
+     "need": [
+      "d3done"
+     ]
+    },
+    {
+     "tpl": " trên tổng số {d2gaps}",
+     "need": [
+      "d3done",
+      "d2gaps"
+     ]
+    },
+    {
+     "tpl": ". Còn cần hỏi: {d3ask}",
+     "need": [
+      "d3done",
+      "d3ask"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d3done"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Ví dụ",
+   "title": "Ví dụ, so sánh và bỏ thuật ngữ",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Ví dụ và so sánh",
+     "items": [
+      {
+       "f": "show",
+       "text": "Khái niệm: {d1topic}",
+       "need": [
+        "d1topic"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d4ex",
+       "q": "Một ví dụ công việc, có con số hoặc tình huống cụ thể",
+       "ph": "Ví dụ: bán 2 tỷ, lãi 200 triệu nhưng khách trả chậm 60 ngày"
+      },
+      {
+       "f": "tx",
+       "k": "d4an",
+       "q": "Một so sánh đời thường",
+       "ph": "Ví dụ: quán ăn đông khách nhưng khách ghi sổ"
+      },
+      {
+       "f": "tx",
+       "k": "d4lim",
+       "q": "Chỗ so sánh đó không còn đúng",
+       "ph": "Ví dụ: doanh nghiệp có thể vay dựa trên khoản phải thu"
+      }
+     ]
+    },
+    {
+     "h": "Thay thuật ngữ",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mỗi thuật ngữ trong lời giải thích lần 1, viết một cách nói thay bằng từ ngữ hằng ngày."
+      },
+      {
+       "f": "tx",
+       "k": "d4j1",
+       "q": "Thuật ngữ 1",
+       "ph": "Ví dụ: khoản phải thu"
+      },
+      {
+       "f": "tx",
+       "k": "d4r1",
+       "q": "Cách nói thay",
+       "ph": "Ví dụ: tiền khách còn nợ mình"
+      },
+      {
+       "f": "tx",
+       "k": "d4j2",
+       "q": "Thuật ngữ 2",
+       "ph": "Một thuật ngữ"
+      },
+      {
+       "f": "tx",
+       "k": "d4r2",
+       "q": "Cách nói thay",
+       "ph": "Bằng từ ngữ hằng ngày"
+      },
+      {
+       "f": "tx",
+       "k": "d4j3",
+       "q": "Thuật ngữ 3",
+       "ph": "Một thuật ngữ"
+      },
+      {
+       "f": "tx",
+       "k": "d4r3",
+       "q": "Cách nói thay",
+       "ph": "Bằng từ ngữ hằng ngày"
+      },
+      {
+       "f": "tx",
+       "k": "d4j4",
+       "q": "Thuật ngữ 4",
+       "ph": "Một thuật ngữ"
+      },
+      {
+       "f": "tx",
+       "k": "d4r4",
+       "q": "Cách nói thay",
+       "ph": "Bằng từ ngữ hằng ngày"
+      },
+      {
+       "f": "seg",
+       "k": "d4n",
+       "q": "Số thuật ngữ đã thay",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5+"
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 4: Ví dụ: {d4ex}",
+     "need": [
+      "d4ex"
+     ]
+    },
+    {
+     "tpl": ". So sánh: {d4an}",
+     "need": [
+      "d4ex",
+      "d4an"
+     ]
+    },
+    {
+     "tpl": ". Đã thay {d4n} thuật ngữ",
+     "need": [
+      "d4ex",
+      "d4n"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d4ex"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Giải thích lần 2",
+   "title": "Giải thích lần 2, nói thành tiếng",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Chuẩn bị",
+     "items": [
+      {
+       "f": "show",
+       "text": "Ví dụ: {d4ex}. So sánh: {d4an}",
+       "need": [
+        "d4ex"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d5flip",
+       "label": "Đã đọc lại ví dụ một lần và úp giấy xuống"
+      },
+      {
+       "f": "cb",
+       "k": "d5rec",
+       "label": "Đã mở ghi âm trên điện thoại (không bắt buộc)"
+      }
+     ]
+    },
+    {
+     "h": "Giải thích lần 2, nói thành tiếng",
+     "items": [
+      {
+       "f": "timer",
+       "k": "d5min",
+       "dk": "d5dur",
+       "opts": [
+        3,
+        5,
+        7
+       ],
+       "def": 5,
+       "note": "Nói như đang nói với người nghe thật. Vấp thì cứ nói tiếp, nghe lại sau."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d5stuck",
+         "q": "Số lần vấp hoặc phải dùng thuật ngữ"
+        }
+       ]
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Lần 1",
+        "Lần 2"
+       ],
+       "rows": [
+        {
+         "label": "Chỗ hổng hoặc vấp",
+         "keys": [
+          "d2gaps",
+          "d5stuck"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5help",
+       "q": "Điều giúp mình nói trôi hơn",
+       "ph": "Ví dụ: ví dụ quán ăn ghi sổ"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 5: Giải thích lần 2, vấp {d5stuck} chỗ",
+     "need": [
+      "d5stuck"
+     ]
+    },
+    {
+     "tpl": " (lần 1 có {d2gaps} chỗ hổng)",
+     "need": [
+      "d5stuck",
+      "d2gaps"
+     ]
+    },
+    {
+     "tpl": ". {d5help}",
+     "need": [
+      "d5stuck",
+      "d5help"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d5stuck"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Năm câu hỏi",
+   "title": "Tự kiểm tra bằng năm câu hỏi",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Năm câu hỏi kiểm tra độ hiểu",
+     "items": [
+      {
+       "f": "show",
+       "text": "Khái niệm: {d1topic}",
+       "need": [
+        "d1topic"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Tự hỏi và trả lời từng câu khi không nhìn ghi chú. Chấm: 3 là trả lời được ngay, 2 là trả lời được nhưng lúng túng, 1 là chưa trả lời được."
+      },
+      {
+       "f": "rate",
+       "head": [
+        "#",
+        "Câu hỏi",
+        "Tự chấm"
+       ],
+       "kp": "d6r",
+       "scale": 3,
+       "rows": [
+        [
+         "Vì sao?",
+         "Vì sao điều này xảy ra, hoặc vì sao làm như vậy?"
+        ],
+        [
+         "Như thế nào?",
+         "Các bước diễn ra theo thứ tự nào?"
+        ],
+        [
+         "Nếu... thì sao?",
+         "Một điều kiện thay đổi thì kết quả ra sao?"
+        ],
+        [
+         "Khác gì với...?",
+         "So với một khái niệm gần nó"
+        ],
+        [
+         "Ví dụ khác?",
+         "Một ví dụ khác với ví dụ đã chuẩn bị"
+        ]
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d6ok",
+       "q": "Số câu trả lời được ngay",
+       "opts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6hard",
+       "q": "Câu khó nhất (chỗ hổng mới)",
+       "ph": "Ví dụ: nếu khách trả sớm hơn 30 ngày thì tiền mặt thay đổi bao nhiêu"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 6: Trả lời ngay được {d6ok}/5 câu",
+     "need": [
+      "d6ok"
+     ]
+    },
+    {
+     "tpl": ". Câu khó nhất: {d6hard}",
+     "need": [
+      "d6ok",
+      "d6hard"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d6ok"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6."
+  },
+  {
+   "label": "Chủ Nhật",
+   "kick": "30 ngày",
+   "title": "Hẹn người nghe thật và lập lịch 30 ngày",
+   "time": "Khoảng 30 đến 45 phút",
+   "cards": [
+    {
+     "h": "Người nghe thật",
+     "items": [
+      {
+       "f": "show",
+       "text": "Khái niệm: {d1topic}",
+       "need": [
+        "d1topic"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d7who",
+       "q": "Đồng nghiệp sẽ nghe mình giải thích",
+       "ph": "Ví dụ: anh Tuấn phòng kinh doanh"
+      },
+      {
+       "f": "tx",
+       "k": "d7when",
+       "q": "Thời gian hẹn (10 phút)",
+       "ph": "Ví dụ: thứ Ba, 16 giờ"
+      },
+      {
+       "f": "tx",
+       "k": "d7q",
+       "q": "Câu hỏi nhờ họ trả lời sau khi nghe",
+       "ph": "Ví dụ: vì sao công ty có lãi vẫn có thể thiếu tiền?"
+      }
+     ]
+    },
+    {
+     "h": "Một khái niệm mỗi tuần",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d7w1",
+       "q": "Khái niệm tuần sau",
+       "ph": "Ví dụ: chi phí cố định và chi phí biến đổi"
+      },
+      {
+       "f": "tx",
+       "k": "d7w2",
+       "q": "Tuần thứ ba",
+       "ph": "Một khái niệm"
+      },
+      {
+       "f": "tx",
+       "k": "d7w3",
+       "q": "Tuần thứ tư",
+       "ph": "Một khái niệm"
+      },
+      {
+       "f": "seg",
+       "k": "d7day",
+       "q": "Ngày viết giải thích lần 1 mỗi tuần",
+       "opts": [
+        "Thứ Hai",
+        "Thứ Ba",
+        "Thứ Tư",
+        "Thứ Năm",
+        "Thứ Sáu"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d7nb",
+       "label": "Đã mở sổ ghi những điều mình chưa hiểu"
+      },
+      {
+       "f": "note",
+       "text": "Cảm ơn các anh chị và các bạn đã đi cùng Trường cả tuần. Mỗi lần vấp khi giải thích là một chỗ mình biết rõ cần học tiếp nha."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 7: Hẹn {d7who}",
+     "need": [
+      "d7who"
+     ]
+    },
+    {
+     "tpl": " {d7when}",
+     "need": [
+      "d7who",
+      "d7when"
+     ]
+    },
+    {
+     "tpl": ". Câu hỏi kiểm tra: {d7q}",
+     "need": [
+      "d7who",
+      "d7q"
+     ]
+    },
+    {
+     "tpl": ". Khái niệm tuần sau: {d7w1}",
+     "need": [
+      "d7who",
+      "d7w1"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d7who"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 7."
+  }
+ ]
+}
