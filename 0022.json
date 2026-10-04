@@ -1,1 +1,629 @@
-{"id": "0022", "name": "Thói quen", "storeKey": "sth-0022", "kicker": "Công thức #0022", "title": "Thử thách 4 Quy luật thói quen 7 ngày", "sub": "Mỗi ngày một việc từ 15 đến 45 phút. Các anh chị và các bạn điền ngay trên trang, bấm sao chép câu chia sẻ rồi dán vào bình luận của bài hôm đó trên 10X Excellence Hub nhé. Trường đồng hành cùng mọi người cả tuần.", "days": [{"label": "Thứ Hai", "kick": "Nhận diện", "title": "Bảng điểm thói quen một ngày", "time": "Khoảng 15 phút", "cards": [{"h": "Liệt kê những việc mình làm trong một ngày bình thường", "items": [{"f": "note", "text": "Trường gợi ý ghi theo thứ tự thời gian, kể cả việc nhỏ như mở điện thoại hay pha cà phê. Sau đó bấm chấm điểm cho từng việc nhé."}, {"f": "rows", "kp": "d1t", "n": 8, "ph": "Ví dụ: 6:30 mở điện thoại xem tin nhắn", "zk": "d1z", "zones": [["cong", "(+) Tốt"], ["tru", "(−) Kéo lùi"], ["bang", "(=) Trung tính"]]}]}, {"h": "Chọn hai việc để làm tiếp trong tuần", "items": [{"f": "tx", "k": "d1plus", "q": "Một việc (+) tôi muốn làm đều hơn", "ph": "Ví dụ: đọc sách"}, {"f": "tx", "k": "d1minus", "q": "Một việc (−) tôi muốn giảm", "ph": "Ví dụ: lướt điện thoại lúc 6:30"}, {"f": "note", "text": "Đừng phán xét bản thân khi chấm điểm nhé. Mình chỉ đang quan sát, giống như kế toán ghi sổ trước khi lập ngân sách."}]}], "checkin": [{"tpl": "Ngày 1: muốn làm đều hơn: {d1plus}", "need": ["d1plus"]}, {"tpl": ". Muốn giảm: {d1minus}", "need": ["d1plus", "d1minus"]}, {"tpl": ".", "need": ["d1plus"]}], "hint": "Dán vào bình luận của bài Ngày 1."}, {"label": "Thứ Ba", "kick": "Danh tính", "title": "Tôi muốn trở thành người như thế nào?", "time": "Khoảng 20 phút", "cards": [{"h": "Câu danh tính", "items": [{"f": "show", "text": "Việc (+) đã chọn hôm qua: {d1plus}", "need": ["d1plus"]}, {"f": "tx", "k": "d2id", "q": "Tôi là người...", "ph": "Ví dụ: đọc sách mỗi ngày"}, {"f": "tx", "k": "d2habit", "q": "Thói quen là bằng chứng rõ nhất cho câu trên", "ph": "Ví dụ: đọc 10 trang trước khi ngủ"}]}, {"h": "Kiểm tra thói quen bằng ba câu hỏi", "items": [{"f": "cb", "k": "d2c1", "label": "Tôi kiểm soát được việc này"}, {"f": "cb", "k": "d2c2", "label": "Tôi làm được mỗi ngày"}, {"f": "cb", "k": "d2c3", "label": "Mất dưới 30 phút"}, {"f": "note", "text": "Nếu còn ô chưa tích, các anh chị và các bạn thu nhỏ thói quen lại cho đến khi tích đủ ba ô nhé."}, {"f": "ta", "k": "d2why", "q": "Ba lý do thói quen này quan trọng với tôi"}]}], "checkin": [{"tpl": "Ngày 2: Tôi là người {d2id}", "need": ["d2id"]}, {"tpl": ". Thói quen của tôi: {d2habit}", "need": ["d2id", "d2habit"]}, {"tpl": ".", "need": ["d2id"]}], "hint": "Dán vào bình luận của bài Ngày 2."}, {"label": "Thứ Tư", "kick": "Quy luật 1: Hiển nhiên", "title": "Cho thói quen một địa chỉ cụ thể", "time": "Khoảng 20 phút", "cards": [{"h": "Câu ý định thực hiện", "items": [{"f": "show", "text": "Thói quen của tôi: {d2habit}", "need": ["d2habit"]}, {"f": "tx", "k": "d3time", "q": "Lúc mấy giờ?", "ph": "Ví dụ: 21:30"}, {"f": "tx", "k": "d3place", "q": "Ở đâu?", "ph": "Ví dụ: ghế đọc sách cạnh giường"}, {"f": "show", "text": "Tôi sẽ {d2habit|làm thói quen} lúc {d3time} tại {d3place}.", "need": ["d3time", "d3place"]}]}, {"h": "Xếp chồng thói quen và thay đổi môi trường", "items": [{"f": "tx", "k": "d3after", "q": "Sau khi (việc tôi đã làm đều mỗi ngày)...", "ph": "Ví dụ: đánh răng buổi tối"}, {"f": "tx", "k": "d3env", "q": "Một thay đổi trong không gian để tín hiệu dễ thấy", "ph": "Ví dụ: đặt sách trên gối"}, {"f": "note", "text": "Một tín hiệu rõ ràng hiệu quả hơn hai tín hiệu mờ. Nếu câu ý định và câu xếp chồng chỉ ra hai thời điểm khác nhau, mình chọn một thôi nhé."}]}], "checkin": [{"tpl": "Ngày 3: Sau khi {d3after}, tôi sẽ {d2habit|làm thói quen}", "need": ["d3after"]}, {"tpl": " tại {d3place}", "need": ["d3after", "d3place"]}, {"tpl": ". Môi trường: {d3env}", "need": ["d3after", "d3env"]}, {"tpl": ".", "need": ["d3after"]}], "hint": "Dán vào bình luận của bài Ngày 3."}, {"label": "Thứ Năm", "kick": "Quy luật 2: Hấp dẫn", "title": "Ghép thói quen với điều mình mong chờ", "time": "Khoảng 15 phút", "cards": [{"h": "Gói cám dỗ", "items": [{"f": "ta", "k": "d4likes", "q": "Năm điều tôi thích làm trong ngày", "ph": "Ví dụ: trà hoa cúc, sách nói, nhắn tin với bạn thân..."}, {"f": "tx", "k": "d4bundle", "q": "Tôi chỉ (điều tôi thích) khi đang (thói quen)", "ph": "Ví dụ: Tôi chỉ uống trà hoa cúc khi đang đọc sách"}]}, {"h": "Đổi \"phải\" thành \"được\"", "items": [{"f": "tx", "k": "d4duoc", "q": "Tôi được...", "ph": "Ví dụ: dành 15 phút yên tĩnh cho mình mỗi tối"}, {"f": "seg", "k": "d4group", "q": "Tôi đã có người hoặc nhóm cùng làm chưa?", "opts": ["Đã có", "Đang tìm", "Chưa"], "hints": ["Tuyệt vời, nhớ hẹn nhau chia sẻ nhé.", "Trong tuần này, cộng đồng 10X là nhóm của mình.", "Không sao, bình luận chia sẻ mỗi ngày trên 10X là một cách bắt đầu."]}]}], "checkin": [{"tpl": "Ngày 4: {d4bundle}", "need": ["d4bundle"]}, {"tpl": ". Tôi được {d4duoc}", "need": ["d4bundle", "d4duoc"]}, {"tpl": ".", "need": ["d4bundle"]}], "hint": "Dán vào bình luận của bài Ngày 4."}, {"label": "Thứ Sáu", "kick": "Quy luật 3: Dễ dàng", "title": "Phiên bản hai phút và cắt bớt ma sát", "time": "Khoảng 25 phút", "cards": [{"h": "Đếm bước và cắt ba bước", "items": [{"f": "ta", "k": "d5steps", "q": "Các bước từ lúc có tín hiệu đến lúc thật sự bắt đầu", "ph": "Ví dụ: đứng dậy, tìm sách, tắt ti vi, tìm kính..."}, {"f": "tx", "k": "d5cut", "q": "Ba bước tôi cắt hôm nay", "ph": "Ví dụ: để sẵn sách, tắt ti vi, sạc điện thoại ngoài phòng"}]}, {"h": "Mức sàn và mức trần", "items": [{"f": "tx", "k": "d5floor", "q": "Mức sàn (làm được trong hai phút)", "ph": "Ví dụ: đọc 1 trang"}, {"f": "tx", "k": "d5ceil", "q": "Mức trần (khi có thời gian)", "ph": "Ví dụ: đọc 20 trang"}, {"f": "timer", "k": "min5", "dk": "dur5", "opts": [2, 5, 10], "def": 2, "note": "Làm thử mức sàn ngay bây giờ nhé. Hết hai phút mà muốn làm tiếp thì cứ làm."}]}], "checkin": [{"tpl": "Ngày 5: Tôi cắt 3 bước ({d5cut})", "need": ["d5cut"]}, {"tpl": ". Mức sàn: {d5floor}", "need": ["d5floor"]}, {"tpl": ". Mức trần: {d5ceil}", "need": ["d5floor", "d5ceil"]}, {"tpl": ".", "need": ["d5floor"]}], "hint": "Dán vào bình luận của bài Ngày 5."}, {"label": "Thứ Bảy", "kick": "Quy luật 4: Thỏa mãn", "title": "Nhìn thấy tiến độ mỗi ngày", "time": "Khoảng 15 phút", "cards": [{"h": "Bảng theo dõi tuần này", "items": [{"f": "cal", "k": "d6cal", "mark": "X", "max": 7, "cols": ["T2", "T3", "T4", "T5", "T6", "T7", "CN"], "rows": ["Đã làm"]}, {"f": "note", "text": "Mức sàn vẫn được tính một dấu X. Bảng 30 ngày nằm ở trang 22 của tài liệu PDF."}]}, {"h": "Phần thưởng và kế hoạch quay lại", "items": [{"f": "tx", "k": "d6reward", "q": "Ngay sau khi làm xong, tôi sẽ...", "ph": "Ví dụ: tích ô và nghe một bài nhạc yêu thích"}, {"f": "tx", "k": "d6back", "q": "Nếu lỡ một ngày, hôm sau tôi làm mức sàn lúc...", "ph": "Ví dụ: 21:30"}, {"f": "note", "text": "Bỏ lỡ một lần là sự cố, bỏ lỡ hai lần liên tiếp là khởi đầu một thói quen mới. Mình đừng để trống hai ô liền nhau nhé."}]}], "checkin": [{"tpl": "Ngày 6:", "need": ["d6reward"]}, {"tpl": " đã làm {cal:d6cal}.", "need": ["d6reward", "cal:d6cal"]}, {"tpl": " Phần thưởng: {d6reward}.", "need": ["d6reward"]}, {"tpl": " Lỡ ngày nào thì hôm sau làm mức sàn lúc {d6back}.", "need": ["d6reward", "d6back"]}], "hint": "Dán vào bình luận của bài Ngày 6."}, {"label": "Chủ Nhật", "kick": "Đảo ngược và lên kế hoạch", "title": "Một thói quen để bỏ, một kế hoạch 30 ngày để giữ", "time": "Khoảng 30 đến 45 phút", "cards": [{"h": "Phần 1: Đảo ngược thói quen xấu", "items": [{"f": "show", "text": "Việc (−) đã khoanh ở Thứ Hai: {d1minus}", "need": ["d1minus"]}, {"f": "tx", "k": "d7inv", "q": "Làm cho vô hình: tín hiệu tôi loại bỏ", "ph": "Ví dụ: sạc điện thoại ngoài phòng"}, {"f": "tx", "k": "d7cost", "q": "Làm cho kém hấp dẫn: cái giá cụ thể với tôi"}, {"f": "tx", "k": "d7hard", "q": "Làm cho khó khăn: hai bước cản trở", "ph": "Ví dụ: đăng xuất, chuyển ứng dụng ra trang cuối"}, {"f": "tx", "k": "d7buddy", "q": "Làm cho không thỏa mãn: người tôi báo cáo mỗi lần lỡ"}]}, {"h": "Phần 2: Chấm điểm bốn quy luật cho thói quen tốt", "items": [{"f": "rate", "kp": "d7r", "scale": 5, "head": ["#", "Quy luật", "Mức"], "rows": [["Hiển nhiên", "Tín hiệu rõ, thời điểm và địa điểm cố định"], ["Hấp dẫn", "Có điều mình mong chờ đi kèm"], ["Dễ dàng", "Mức sàn hai phút, ít bước cản"], ["Thỏa mãn", "Có phần thưởng ngay và bảng theo dõi"]]}, {"f": "tx", "k": "d7fix", "q": "Một điều chỉnh cho quy luật thấp điểm nhất", "ph": "Ví dụ: đổi sang nghe sách nói khi đi bộ"}, {"f": "tx", "k": "d7review", "q": "Ngày cố định mỗi tuần để xem lại bảng theo dõi", "ph": "Ví dụ: tối Chủ Nhật"}, {"f": "note", "text": "Cảm ơn các anh chị và các bạn đã đi cùng Trường đến ngày cuối. Ba mươi ngày tới mới là phần chính, mình cứ giữ mức sàn đều đặn nhé."}]}], "checkin": [{"tpl": "Ngày 7: Bỏ thói quen xấu bằng cách {d7inv}", "need": ["d7inv"]}, {"tpl": " và {d7hard}", "need": ["d7inv", "d7hard"]}, {"tpl": ". Điều chỉnh: {d7fix}", "need": ["d7fix"]}, {"tpl": ". Cam kết 30 ngày, xem lại mỗi {d7review}", "need": ["d7review"]}, {"tpl": ".", "need": ["d7inv"]}], "hint": "Dán vào bình luận của bài Ngày 7."}]}
+{
+ "id": "0022",
+ "name": "Thói quen",
+ "storeKey": "sth-0022",
+ "kicker": "Công thức #0022",
+ "title": "Thử thách 4 Quy luật thói quen 7 ngày",
+ "sub": "Mỗi ngày một việc từ 15 đến 45 phút. Các anh chị và các bạn điền ngay trên trang, bấm sao chép câu chia sẻ rồi dán vào bình luận của bài hôm đó trên 10X Excellence Hub nhé. Trường đồng hành cùng mọi người cả tuần.",
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Nhận diện",
+   "title": "Bảng điểm thói quen một ngày",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Liệt kê những việc mình làm trong một ngày bình thường",
+     "items": [
+      {
+       "f": "note",
+       "text": "Trường gợi ý ghi theo thứ tự thời gian, kể cả việc nhỏ như mở điện thoại hay pha cà phê. Sau đó bấm chấm điểm cho từng việc nhé."
+      },
+      {
+       "f": "rows",
+       "kp": "d1t",
+       "n": 8,
+       "ph": "Ví dụ: 6:30 mở điện thoại xem tin nhắn",
+       "zk": "d1z",
+       "zones": [
+        [
+         "cong",
+         "(+) Tốt"
+        ],
+        [
+         "tru",
+         "(−) Kéo lùi"
+        ],
+        [
+         "bang",
+         "(=) Trung tính"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Chọn hai việc để làm tiếp trong tuần",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d1plus",
+       "q": "Một việc (+) tôi muốn làm đều hơn",
+       "ph": "Ví dụ: đọc sách"
+      },
+      {
+       "f": "tx",
+       "k": "d1minus",
+       "q": "Một việc (−) tôi muốn giảm",
+       "ph": "Ví dụ: lướt điện thoại lúc 6:30"
+      },
+      {
+       "f": "note",
+       "text": "Đừng phán xét bản thân khi chấm điểm nhé. Mình chỉ đang quan sát, giống như kế toán ghi sổ trước khi lập ngân sách."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 1: muốn làm đều hơn: {d1plus}",
+     "need": [
+      "d1plus"
+     ]
+    },
+    {
+     "tpl": ". Muốn giảm: {d1minus}",
+     "need": [
+      "d1plus",
+      "d1minus"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d1plus"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Danh tính",
+   "title": "Tôi muốn trở thành người như thế nào?",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Câu danh tính",
+     "items": [
+      {
+       "f": "show",
+       "text": "Việc (+) đã chọn hôm qua: {d1plus}",
+       "need": [
+        "d1plus"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2id",
+       "q": "Tôi là người...",
+       "ph": "Ví dụ: đọc sách mỗi ngày"
+      },
+      {
+       "f": "tx",
+       "k": "d2habit",
+       "q": "Thói quen là bằng chứng rõ nhất cho câu trên",
+       "ph": "Ví dụ: đọc 10 trang trước khi ngủ"
+      }
+     ]
+    },
+    {
+     "h": "Kiểm tra thói quen bằng ba câu hỏi",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d2c1",
+       "label": "Tôi kiểm soát được việc này"
+      },
+      {
+       "f": "cb",
+       "k": "d2c2",
+       "label": "Tôi làm được mỗi ngày"
+      },
+      {
+       "f": "cb",
+       "k": "d2c3",
+       "label": "Mất dưới 30 phút"
+      },
+      {
+       "f": "note",
+       "text": "Nếu còn ô chưa tích, các anh chị và các bạn thu nhỏ thói quen lại cho đến khi tích đủ ba ô nhé."
+      },
+      {
+       "f": "ta",
+       "k": "d2why",
+       "q": "Ba lý do thói quen này quan trọng với tôi"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 2: Tôi là người {d2id}",
+     "need": [
+      "d2id"
+     ]
+    },
+    {
+     "tpl": ". Thói quen của tôi: {d2habit}",
+     "need": [
+      "d2id",
+      "d2habit"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d2id"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Quy luật 1: Hiển nhiên",
+   "title": "Cho thói quen một địa chỉ cụ thể",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Câu ý định thực hiện",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen của tôi: {d2habit}",
+       "need": [
+        "d2habit"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3time",
+       "q": "Lúc mấy giờ?",
+       "ph": "Ví dụ: 21:30"
+      },
+      {
+       "f": "tx",
+       "k": "d3place",
+       "q": "Ở đâu?",
+       "ph": "Ví dụ: ghế đọc sách cạnh giường"
+      },
+      {
+       "f": "show",
+       "text": "Tôi sẽ {d2habit|làm thói quen} lúc {d3time} tại {d3place}.",
+       "need": [
+        "d3time",
+        "d3place"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Xếp chồng thói quen và thay đổi môi trường",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3after",
+       "q": "Sau khi (việc tôi đã làm đều mỗi ngày)...",
+       "ph": "Ví dụ: đánh răng buổi tối"
+      },
+      {
+       "f": "tx",
+       "k": "d3env",
+       "q": "Một thay đổi trong không gian để tín hiệu dễ thấy",
+       "ph": "Ví dụ: đặt sách trên gối"
+      },
+      {
+       "f": "note",
+       "text": "Một tín hiệu rõ ràng hiệu quả hơn hai tín hiệu mờ. Nếu câu ý định và câu xếp chồng chỉ ra hai thời điểm khác nhau, mình chọn một thôi nhé."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 3: Sau khi {d3after}, tôi sẽ {d2habit|làm thói quen}",
+     "need": [
+      "d3after"
+     ]
+    },
+    {
+     "tpl": " tại {d3place}",
+     "need": [
+      "d3after",
+      "d3place"
+     ]
+    },
+    {
+     "tpl": ". Môi trường: {d3env}",
+     "need": [
+      "d3after",
+      "d3env"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d3after"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Quy luật 2: Hấp dẫn",
+   "title": "Ghép thói quen với điều mình mong chờ",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Gói cám dỗ",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d4likes",
+       "q": "Năm điều tôi thích làm trong ngày",
+       "ph": "Ví dụ: trà hoa cúc, sách nói, nhắn tin với bạn thân..."
+      },
+      {
+       "f": "tx",
+       "k": "d4bundle",
+       "q": "Tôi chỉ (điều tôi thích) khi đang (thói quen)",
+       "ph": "Ví dụ: Tôi chỉ uống trà hoa cúc khi đang đọc sách"
+      }
+     ]
+    },
+    {
+     "h": "Đổi \"phải\" thành \"được\"",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4duoc",
+       "q": "Tôi được...",
+       "ph": "Ví dụ: dành 15 phút yên tĩnh cho mình mỗi tối"
+      },
+      {
+       "f": "seg",
+       "k": "d4group",
+       "q": "Tôi đã có người hoặc nhóm cùng làm chưa?",
+       "opts": [
+        "Đã có",
+        "Đang tìm",
+        "Chưa"
+       ],
+       "hints": [
+        "Tuyệt vời, nhớ hẹn nhau chia sẻ nhé.",
+        "Trong tuần này, cộng đồng 10X là nhóm của mình.",
+        "Không sao, bình luận chia sẻ mỗi ngày trên 10X là một cách bắt đầu."
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 4: {d4bundle}",
+     "need": [
+      "d4bundle"
+     ]
+    },
+    {
+     "tpl": ". Tôi được {d4duoc}",
+     "need": [
+      "d4bundle",
+      "d4duoc"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d4bundle"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Quy luật 3: Dễ dàng",
+   "title": "Phiên bản hai phút và cắt bớt ma sát",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Đếm bước và cắt ba bước",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d5steps",
+       "q": "Các bước từ lúc có tín hiệu đến lúc thật sự bắt đầu",
+       "ph": "Ví dụ: đứng dậy, tìm sách, tắt ti vi, tìm kính..."
+      },
+      {
+       "f": "tx",
+       "k": "d5cut",
+       "q": "Ba bước tôi cắt hôm nay",
+       "ph": "Ví dụ: để sẵn sách, tắt ti vi, sạc điện thoại ngoài phòng"
+      }
+     ]
+    },
+    {
+     "h": "Mức sàn và mức trần",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5floor",
+       "q": "Mức sàn (làm được trong hai phút)",
+       "ph": "Ví dụ: đọc 1 trang"
+      },
+      {
+       "f": "tx",
+       "k": "d5ceil",
+       "q": "Mức trần (khi có thời gian)",
+       "ph": "Ví dụ: đọc 20 trang"
+      },
+      {
+       "f": "timer",
+       "k": "min5",
+       "dk": "dur5",
+       "opts": [
+        2,
+        5,
+        10
+       ],
+       "def": 2,
+       "note": "Làm thử mức sàn ngay bây giờ nhé. Hết hai phút mà muốn làm tiếp thì cứ làm."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 5: Tôi cắt 3 bước ({d5cut})",
+     "need": [
+      "d5cut"
+     ]
+    },
+    {
+     "tpl": ". Mức sàn: {d5floor}",
+     "need": [
+      "d5floor"
+     ]
+    },
+    {
+     "tpl": ". Mức trần: {d5ceil}",
+     "need": [
+      "d5floor",
+      "d5ceil"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d5floor"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Quy luật 4: Thỏa mãn",
+   "title": "Nhìn thấy tiến độ mỗi ngày",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Bảng theo dõi tuần này",
+     "items": [
+      {
+       "f": "cal",
+       "k": "d6cal",
+       "mark": "X",
+       "max": 7,
+       "cols": [
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7",
+        "CN"
+       ],
+       "rows": [
+        "Đã làm"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Mức sàn vẫn được tính một dấu X. Bảng 30 ngày nằm ở trang 22 của tài liệu PDF."
+      }
+     ]
+    },
+    {
+     "h": "Phần thưởng và kế hoạch quay lại",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d6reward",
+       "q": "Ngay sau khi làm xong, tôi sẽ...",
+       "ph": "Ví dụ: tích ô và nghe một bài nhạc yêu thích"
+      },
+      {
+       "f": "tx",
+       "k": "d6back",
+       "q": "Nếu lỡ một ngày, hôm sau tôi làm mức sàn lúc...",
+       "ph": "Ví dụ: 21:30"
+      },
+      {
+       "f": "note",
+       "text": "Bỏ lỡ một lần là sự cố, bỏ lỡ hai lần liên tiếp là khởi đầu một thói quen mới. Mình đừng để trống hai ô liền nhau nhé."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 6:",
+     "need": [
+      "d6reward"
+     ]
+    },
+    {
+     "tpl": " đã làm {cal:d6cal}.",
+     "need": [
+      "d6reward",
+      "cal:d6cal"
+     ]
+    },
+    {
+     "tpl": " Phần thưởng: {d6reward}.",
+     "need": [
+      "d6reward"
+     ]
+    },
+    {
+     "tpl": " Lỡ ngày nào thì hôm sau làm mức sàn lúc {d6back}.",
+     "need": [
+      "d6reward",
+      "d6back"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6."
+  },
+  {
+   "label": "Chủ Nhật",
+   "kick": "Đảo ngược và lên kế hoạch",
+   "title": "Một thói quen để bỏ, một kế hoạch 30 ngày để giữ",
+   "time": "Khoảng 30 đến 45 phút",
+   "cards": [
+    {
+     "h": "Phần 1: Đảo ngược thói quen xấu",
+     "items": [
+      {
+       "f": "show",
+       "text": "Việc (−) đã khoanh ở Thứ Hai: {d1minus}",
+       "need": [
+        "d1minus"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d7inv",
+       "q": "Làm cho vô hình: tín hiệu tôi loại bỏ",
+       "ph": "Ví dụ: sạc điện thoại ngoài phòng"
+      },
+      {
+       "f": "tx",
+       "k": "d7cost",
+       "q": "Làm cho kém hấp dẫn: cái giá cụ thể với tôi"
+      },
+      {
+       "f": "tx",
+       "k": "d7hard",
+       "q": "Làm cho khó khăn: hai bước cản trở",
+       "ph": "Ví dụ: đăng xuất, chuyển ứng dụng ra trang cuối"
+      },
+      {
+       "f": "tx",
+       "k": "d7buddy",
+       "q": "Làm cho không thỏa mãn: người tôi báo cáo mỗi lần lỡ"
+      }
+     ]
+    },
+    {
+     "h": "Phần 2: Chấm điểm bốn quy luật cho thói quen tốt",
+     "items": [
+      {
+       "f": "rate",
+       "kp": "d7r",
+       "scale": 5,
+       "head": [
+        "#",
+        "Quy luật",
+        "Mức"
+       ],
+       "rows": [
+        [
+         "Hiển nhiên",
+         "Tín hiệu rõ, thời điểm và địa điểm cố định"
+        ],
+        [
+         "Hấp dẫn",
+         "Có điều mình mong chờ đi kèm"
+        ],
+        [
+         "Dễ dàng",
+         "Mức sàn hai phút, ít bước cản"
+        ],
+        [
+         "Thỏa mãn",
+         "Có phần thưởng ngay và bảng theo dõi"
+        ]
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d7fix",
+       "q": "Một điều chỉnh cho quy luật thấp điểm nhất",
+       "ph": "Ví dụ: đổi sang nghe sách nói khi đi bộ"
+      },
+      {
+       "f": "tx",
+       "k": "d7review",
+       "q": "Ngày cố định mỗi tuần để xem lại bảng theo dõi",
+       "ph": "Ví dụ: tối Chủ Nhật"
+      },
+      {
+       "f": "note",
+       "text": "Cảm ơn các anh chị và các bạn đã đi cùng Trường đến ngày cuối. Ba mươi ngày tới mới là phần chính, mình cứ giữ mức sàn đều đặn nhé."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 7: Bỏ thói quen xấu bằng cách {d7inv}",
+     "need": [
+      "d7inv"
+     ]
+    },
+    {
+     "tpl": " và {d7hard}",
+     "need": [
+      "d7inv",
+      "d7hard"
+     ]
+    },
+    {
+     "tpl": ". Điều chỉnh: {d7fix}",
+     "need": [
+      "d7fix"
+     ]
+    },
+    {
+     "tpl": ". Cam kết 30 ngày, xem lại mỗi {d7review}",
+     "need": [
+      "d7review"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d7inv"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 7."
+  }
+ ]
+}
