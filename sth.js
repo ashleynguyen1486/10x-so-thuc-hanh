@@ -6,12 +6,19 @@ const root=document.getElementById('flow7-root');
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 let WEEKS=[],W=null,S={},cur=1,tState={iv:null,lock:null,left:0,start:0,k:''};
-const g=(k,d='')=>S[k]??d;
+let J={};try{J=JSON.parse(localStorage.getItem('sth-journey')||'{}')||{}}catch(e){J={}}
+const isJ=k=>String(k).startsWith('j_');
+const g=(k,d='')=>(isJ(k)?J[k]:S[k])??d;
 const save=()=>{try{localStorage.setItem(W.storeKey||('sth-'+W.id),JSON.stringify(S))}catch(e){}};
-const set=(k,v)=>{S[k]=v;save()};
+const saveJ=()=>{try{localStorage.setItem('sth-journey',JSON.stringify(J))}catch(e){}};
+const set=(k,v)=>{if(isJ(k)){J[k]=v;saveJ()}else{S[k]=v;save()}};
+const iso=d=>d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+function weekDates(){const s=W.start?new Date(W.start+'T00:00:00'):new Date();const out=[];for(let i=0;i<6;i++){const d=new Date(s);d.setDate(s.getDate()+i);out.push(d)}return out}
+function journeyStats(){const m=J.j_marks||{};const days=Object.keys(m).filter(k=>m[k]).sort();let streak=0;const t=new Date();for(let i=0;i<400;i++){const d=new Date(t);d.setDate(t.getDate()-i);if(d.getDay()===0)continue;const k=iso(d);if(m[k])streak++;else if(i===0)continue;else break}return {total:days.length,streak}}
 const load=()=>{try{S=JSON.parse(localStorage.getItem(W.storeKey||('sth-'+W.id))||'{}')||{}}catch(e){S={}}};
 const txt=k=>String(g(k)??'').trim();
 function val(tok){
+  if(tok==='jstreak')return String(journeyStats().streak||'');if(tok==='jtotal')return String(journeyStats().total||'');if(tok==='jweek'){const m=J.j_marks||{};return String(weekDates().filter(d=>m[iso(d)]).length||'')}
   if(tok.startsWith('sum:'))return String(tok.slice(4).split(',').reduce((a,k)=>a+(+g(k)||0),0)).replace(/^0$/,'');
   if(tok.startsWith('cal:')){const D=findItem('cal',tok.slice(4));const c=g(tok.slice(4),{});if(!D)return'';return Object.keys(c).filter(x=>c[x]).map(x=>{const[a,b]=x.split('-');return D.cols[a]+' '+D.rows[b].toLowerCase()}).join(', ')}
   const [k,def]=tok.split('|');const v=txt(k);return v||def||'';
@@ -37,6 +44,7 @@ const R={
   compare:it=>`<div class="tablewrap"><table><tr><th></th>${it.cols.map(c=>`<th>${esc(c)}</th>`).join('')}</tr>${it.rows.map(r=>`<tr><td>${esc(r.label)}</td>${r.keys.map(k=>`<td data-val="${k}"></td>`).join('')}</tr>`).join('')}</table></div>`,
   sum:it=>`<div class="tablewrap"><table><tr>${it.head.map(h=>`<th>${esc(h)}</th>`).join('')}</tr>${it.rows.map(r=>`<tr><td>${esc(r.label)}</td>${r.keys.map(k=>`<td><input type="number" min="0" data-k="${k}" value="${esc(g(k))}"></td>`).join('')}</tr>`).join('')}<tr><td><b>Tổng</b></td>${it.rows[0].keys.map((_,ci)=>`<td><b data-sum="${it.rows.map(r=>r.keys[ci]).join(',')}">0</b></td>`).join('')}</tr></table></div>`,
   rate:it=>`<div class="tablewrap"><table><tr>${it.head.map(h=>`<th>${esc(h)}</th>`).join('')}</tr>${it.rows.map((r,i)=>`<tr><td>${i+1}</td><td><b>${esc(r[0])}</b>${r[1]?`<br><span class="note">${esc(r[1])}</span>`:''}</td><td>${seg(it.kp+(i+1),Array.from({length:it.scale},(_,j)=>String(j+1)))}</td></tr>`).join('')}</table></div>`,
+  track:it=>{const m=g('j_marks',{});const names=['T2','T3','T4','T5','T6','T7'];const ds=weekDates();return `<p class="note">${esc(it.note||'')}</p><div class="tablewrap"><table class="cal"><tr>${ds.map((d,i)=>`<th>${names[i]}<br><small>${d.getDate()}/${d.getMonth()+1}</small></th>`).join('')}</tr><tr>${ds.map(d=>{const k=iso(d);return `<td><button type="button" aria-label="${k}" aria-pressed="${!!m[k]}" data-jm="${k}">${m[k]?'✓':''}</button></td>`}).join('')}</tr></table></div><p class="note" data-jstat></p>`},
   cal:it=>{const c=g(it.k,{});return `<div class="tablewrap"><table class="cal"><tr><th></th>${it.cols.map(d=>`<th>${esc(d)}</th>`).join('')}</tr>${it.rows.map((s,si)=>`<tr><td>${esc(s)}</td>${it.cols.map((d,di)=>`<td><button type="button" aria-label="${esc(d+' '+s)}" aria-pressed="${!!c[di+'-'+si]}" data-cal="${it.k}" data-cell="${di}-${si}" data-mark="${esc(it.mark)}">${c[di+'-'+si]?esc(it.mark):''}</button></td>`).join('')}</tr>`).join('')}</table></div><p class="note" data-calcount="${it.k}" data-max="${it.max||0}" data-unit="${esc(it.unit||'')}"></p>`}
 };
 function renderWeeks(){const n=$('weeks');if(WEEKS.length<2){n.style.display='none';return}n.style.display='';n.innerHTML=WEEKS.map(w=>`<button role="tab" aria-selected="${w.id===W.id}" data-week="${w.id}">${esc(w.label||('Công thức #'+w.id))}<small>${esc(w.name)}</small></button>`).join('')}
@@ -55,13 +63,15 @@ function wrapT(c,t,maxW){const w=t.split(' ');const L=[];let cur='';for(const x 
 function drawBadge(){const cv=$('bcv');if(!cv)return;const c=cv.getContext('2d');const F="'Be Vietnam Pro',Arial,sans-serif";const RED='#862222',INK='#2a1f1f';const n=W.days.length;
  c.fillStyle='#fbf7f6';c.fillRect(0,0,1600,900);c.fillStyle=RED;c.fillRect(0,0,1600,14);c.fillRect(0,886,1600,14);
  c.strokeStyle='#e6d4d1';c.lineWidth=3;c.strokeRect(60,60,1480,780);
- c.beginPath();c.arc(1280,450,190,0,Math.PI*2);c.fillStyle=RED;c.fill();c.strokeStyle='#ffffff';c.lineWidth=8;c.beginPath();c.arc(1280,450,160,0,Math.PI*2);c.stroke();
+ const B=W.badge||{};const sty=B.style||'check';
+ if(sty==='chain'){const st=journeyStats();const big=String(st.total||n);c.fillStyle=RED;c.fillRect(1090,60,450,780);c.fillStyle='#ffffff';c.textAlign='center';c.font=`800 220px ${F}`;c.fillText(big,1315,430);c.font=`700 34px ${F}`;c.fillText(B.unit||'NGÀY GIỮ THÓI QUEN',1315,490);const mk=J.j_marks||{};const wd=weekDates();for(let i=0;i<6;i++){const x=1128+i*75,yy=640;c.fillStyle='#ffffff';if(i<5){c.fillRect(x+26,yy-3,23,6)}c.beginPath();c.arc(x,yy,26,0,Math.PI*2);if(mk[iso(wd[i])]){c.fill()}else{c.strokeStyle='#ffffff';c.lineWidth=5;c.stroke()}}c.font=`600 26px ${F}`;c.fillText('T2  T3  T4  T5  T6  T7',1315,710);}
+ else{c.beginPath();c.arc(1280,450,190,0,Math.PI*2);c.fillStyle=RED;c.fill();c.strokeStyle='#ffffff';c.lineWidth=8;c.beginPath();c.arc(1280,450,160,0,Math.PI*2);c.stroke();
  c.strokeStyle='#ffffff';c.lineWidth=26;c.lineCap='round';c.lineJoin='round';c.beginPath();c.moveTo(1200,455);c.lineTo(1260,515);c.lineTo(1370,395);c.stroke();
- c.fillStyle=RED;c.font=`800 34px ${F}`;c.textAlign='center';c.fillText('ĐỦ '+n+'/'+n+' NGÀY',1280,700);
+ c.fillStyle=RED;c.font=`800 34px ${F}`;c.textAlign='center';c.fillText('ĐỦ '+n+'/'+n+' NGÀY',1280,700);}
  c.textAlign='left';c.fillStyle=RED;c.font=`800 30px ${F}`;c.fillText('THẺ THÀNH TÍCH · '+(W.kicker||('Công thức #'+W.id)).toUpperCase(),130,285);
  c.fillStyle=INK;const TT=W.title.toUpperCase();let tf=64;c.font=`800 ${tf}px ${F}`;while(c.measureText(TT).width>930&&tf>46){tf-=2;c.font=`800 ${tf}px ${F}`}let y=370;for(const l of wrapT(c,TT,930).slice(0,2)){c.fillText(l,130,y);y+=tf+14}
  const nm=txt('badgeName')||'Thành viên 10X Excellence Hub';c.fillStyle=RED;c.font=`800 72px ${F}`;let fs=72;while(c.measureText(nm).width>900&&fs>40){fs-=4;c.font=`800 ${fs}px ${F}`}c.fillText(nm,130,y+60);
- c.fillStyle=INK;c.font=`500 34px ${F}`;c.fillText('Đã hoàn thành và chia sẻ đủ '+n+' ngày thử thách',130,y+130);
+ c.fillStyle=INK;c.font=`500 34px ${F}`;{const ln=B.line?fillRaw(B.line):('Đã hoàn thành và chia sẻ đủ '+n+' ngày thử thách');let ly=y+130;for(const l of wrapT(c,ln,900).slice(0,2)){c.fillText(l,130,ly);ly+=46}}
  c.fillStyle='#5f4a4a';c.font=`600 28px ${F}`;c.fillText((W.label||'')+'  ·  10X Excellence Hub',130,770);
  logo(im=>{if(im&&$('bcv')===cv){const h=105,w=im.width*h/im.height;c.drawImage(im,130,105,w,h)}})}
 function refresh(){
@@ -73,10 +83,10 @@ function refresh(){
   m.querySelectorAll('[data-val]').forEach(e=>e.textContent=txt(e.dataset.val)||'...');
   m.querySelectorAll('[data-sum]').forEach(e=>e.textContent=e.dataset.sum.split(',').reduce((a,k)=>a+(+g(k)||0),0));
   m.querySelectorAll('[data-calcount]').forEach(e=>{const n=Object.values(g(e.dataset.calcount,{})).filter(Boolean).length;const mx=+e.dataset.max;if(e.dataset.unit){e.textContent=`Đã đánh dấu ${n} ${e.dataset.unit}.`;return}e.textContent=`Đã chọn ${n} khung giờ${mx&&n>mx?'. Gợi ý: giữ khoảng '+mx+' khung để dễ duy trì.':'.'}`});
-  const o=$('out');if(o)o.textContent=checkin(cur)||'Điền các ô phía trên, câu chia sẻ sẽ tự xuất hiện ở đây.';if(document.fonts&&document.fonts.ready)document.fonts.ready.then(drawBadge);else drawBadge();
+  m.querySelectorAll('[data-jstat]').forEach(e=>{const st=journeyStats();const h=txt('j_habit');e.textContent=(h?'Thói quen đang giữ: '+h+'. ':'')+'Đã làm '+st.total+' ngày, chuỗi hiện tại '+st.streak+' ngày (Chủ Nhật không tính).'});const o=$('out');if(o)o.textContent=checkin(cur)||'Điền các ô phía trên, câu chia sẻ sẽ tự xuất hiện ở đây.';if(document.fonts&&document.fonts.ready)document.fonts.ready.then(drawBadge);else drawBadge();
 }
 const fmt=s=>String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
-function resetTimer(dk){stopTimer();const s=(+g(dk,45)||45)*60;tState.left=s;tState.start=s;const c=$('clk');if(c)c.textContent=fmt(s);const b=root.querySelector('[data-t="start"]');if(b)b.textContent='Bắt đầu'}
+function resetTimer(dk){stopTimer();const s=(+g(dk,0)||+((W.days.flatMap(d=>d.cards.flatMap(c=>c.items)).find(i=>i.dk===dk)||{}).def)||45)*60;tState.left=s;tState.start=s;const c=$('clk');if(c)c.textContent=fmt(s);const b=root.querySelector('[data-t="start"]');if(b)b.textContent='Bắt đầu'}
 function stopTimer(){if(tState.iv){clearInterval(tState.iv);tState.iv=null}try{tState.lock&&tState.lock.release()}catch(_){}tState.lock=null}
 function record(k){const mins=Math.round((tState.start-tState.left)/60);if(mins>0){set(k,String(mins));root.querySelectorAll(`[data-k="${k}"]`).forEach(i=>i.value=mins);refresh()}}
 async function toggleTimer(b){const k=b.dataset.tk,dk=b.dataset.dk;if(!tState.start||tState.k!==k){tState.k=k;resetTimer(dk)}
@@ -89,7 +99,8 @@ root.addEventListener('click',async e=>{
   const wk=e.target.closest('[data-week]');if(wk){stopTimer();openWeek(wk.dataset.week,0);setHash();return}
   const dy=e.target.closest('[data-day]');if(dy){stopTimer();cur=+dy.dataset.day;set('tab',cur);tState.start=0;setHash();render();root.scrollIntoView({behavior:'smooth'});return}
   const sb=e.target.closest('[data-seg] button');if(sb){const k=sb.parentElement.dataset.seg,v=sb.dataset.v,nv=String(g(k))===v?'':v;set(k,nv);[...sb.parentElement.children].forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===nv)));refresh();return}
-  const pk=e.target.closest('[data-pk]');if(pk){set(pk.dataset.pk,g(pk.dataset.pk)===pk.dataset.v?'':pk.dataset.v);refresh();return}
+  const pk=e.target.closest('[data-pk]');if(pk){const nv=g(pk.dataset.pk)===pk.dataset.v?'':pk.dataset.v;set(pk.dataset.pk,nv);root.querySelectorAll(`[data-k="${pk.dataset.pk}"]`).forEach(x=>x.value=nv);refresh();return}
+  const jm=e.target.closest('[data-jm]');if(jm){const mm={...g('j_marks',{})};mm[jm.dataset.jm]=!mm[jm.dataset.jm];set('j_marks',mm);jm.setAttribute('aria-pressed',String(mm[jm.dataset.jm]));jm.textContent=mm[jm.dataset.jm]?'✓':'';refresh();return}
   const cl=e.target.closest('[data-cal]');if(cl){const k=cl.dataset.cal,c={...g(k,{})};c[cl.dataset.cell]=!c[cl.dataset.cell];set(k,c);cl.setAttribute('aria-pressed',String(c[cl.dataset.cell]));cl.textContent=c[cl.dataset.cell]?cl.dataset.mark:'';refresh();return}
   const cp=e.target.closest('[data-copy]');if(cp){const t=checkin(cur);if(!t){cp.textContent='Hãy điền trước khi sao chép';setTimeout(()=>cp.textContent='Sao chép câu chia sẻ',1800);return}
     try{await navigator.clipboard.writeText(t);cp.textContent='Đã sao chép, dán vào bình luận'}catch(_){const r=document.createRange();r.selectNodeContents($('out'));const s=getSelection();s.removeAllRanges();s.addRange(r);cp.textContent='Đã chọn sẵn, bấm Cmd+C hoặc Ctrl+C để sao chép'}
