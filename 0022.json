@@ -1,34 +1,34 @@
 {
  "id": "0022",
- "name": "Thói quen 10X",
+ "name": "Thói quen 10X",
  "storeKey": "sth-0022-6n",
- "kicker": "Công thức #0022",
- "title": "Thói quen 10X: bốn quy luật trong 6 ngày",
- "sub": "Tuần đầu của hành trình thói quen. Mỗi người chọn một thói quen then chốt và thiết kế nó bằng bốn quy luật, mỗi ngày một quy luật từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "kicker": "Công thức #0022",
+ "title": "Thói quen 10X: bốn quy luật trong 6 ngày",
+ "sub": "Tuần đầu của hành trình thói quen. Mỗi người chọn một thói quen then chốt và thiết kế nó bằng bốn quy luật, mỗi ngày một quy luật từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
  "badge": {
   "style": "chain",
-  "unit": "NGÀY GIỮ THÓI QUEN",
+  "unit": "NGÀY GIỮ THÓI QUEN",
   "line": "Thói quen then chốt: {j_habit|đang được giữ mỗi ngày}"
  },
  "days": [
   {
-   "label": "Thứ Hai",
-   "kick": "Bản sắc",
-   "title": "Mình muốn trở thành người như thế nào?",
+   "label": "Thứ Hai",
+   "kick": "Bản sắc",
+   "title": "Mình muốn trở thành người như thế nào?",
    "time": "Khoảng 20 phút",
    "cards": [
     {
-     "h": "Câu bản sắc trong công việc",
+     "h": "Câu bản sắc trong công việc",
      "items": [
       {
        "f": "note",
-       "text": "Một mục tiêu có ngày hết hạn. Một bản sắc thì không. Viết một câu về con người mình muốn trở thành trong công việc, bắt đầu bằng \"Tôi là người\"."
+       "text": "Một mục tiêu có ngày hết hạn. Một bản sắc thì không. Viết một câu về con người mình muốn trở thành trong công việc, bắt đầu bằng \"Tôi là người\"."
       },
       {
        "f": "ta",
        "k": "j_identity",
        "q": "Tôi là người ...",
-       "ph": "Ví dụ: làm việc quan trọng trước khi mở hộp thư"
+       "ph": "Ví dụ: làm việc quan trọng trước khi mở hộp thư"
       }
      ]
     },
@@ -39,23 +39,23 @@
        "f": "tx",
        "k": "d1a1",
        "q": "Việc nhỏ thứ nhất",
-       "ph": "Ví dụ: làm việc sâu 30 phút mỗi sáng"
+       "ph": "Ví dụ: làm việc sâu 30 phút mỗi sáng"
       },
       {
        "f": "tx",
        "k": "d1a2",
-       "q": "Việc nhỏ thứ hai",
-       "ph": "Ví dụ: viết ba việc quan trọng nhất trước 8 giờ"
+       "q": "Việc nhỏ thứ hai",
+       "ph": "Ví dụ: viết ba việc quan trọng nhất trước 8 giờ"
       },
       {
        "f": "tx",
        "k": "d1a3",
-       "q": "Việc nhỏ thứ ba",
+       "q": "Việc nhỏ thứ ba",
        "ph": "Ví dụ: không mở thư trước 9 giờ"
       },
       {
        "f": "note",
-       "text": "Bấm chọn một việc để làm thói quen then chốt cho cả hành trình, rồi sửa lại câu chữ ở ô bên dưới nếu cần."
+       "text": "Bấm chọn một việc để làm thói quen then chốt cho cả hành trình, rồi sửa lại câu chữ ở ô bên dưới nếu cần."
       },
       {
        "f": "pick",
@@ -67,8 +67,8 @@
       {
        "f": "tx",
        "k": "j_habit",
-       "q": "Thói quen then chốt của tôi",
-       "ph": "Ví dụ: làm việc sâu ít nhất 30 phút mỗi sáng"
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: làm việc sâu ít nhất 30 phút mỗi sáng"
       }
      ]
     },
@@ -78,22 +78,22 @@
       {
        "f": "cb",
        "k": "d1c1",
-       "label": "Làm được mọi ngày làm việc, kể cả ngày bận"
+       "label": "Làm được mọi ngày làm việc, kể cả ngày bận"
       },
       {
        "f": "cb",
        "k": "d1c2",
-       "label": "Nằm trong tầm kiểm soát của tôi, không phụ thuộc người khác"
+       "label": "Nằm trong tầm kiểm soát của tôi, không phụ thuộc người khác"
       },
       {
        "f": "cb",
        "k": "d1c3",
-       "label": "Đủ nhỏ để không cần nhiều động lực"
+       "label": "Đủ nhỏ để không cần nhiều động lực"
       },
       {
        "f": "ta",
        "k": "d1why",
-       "q": "Vì sao thói quen này quan trọng với tôi?"
+       "q": "Vì sao thói quen này quan trọng với tôi?"
       }
      ]
     }
@@ -112,20 +112,20 @@
      ]
     }
    ],
-   "hint": "Dán vào bình luận của bài Ngày 1. Câu bản sắc và thói quen được lưu riêng, các tuần sau sổ tự hiện lại."
+   "hint": "Dán vào bình luận của bài Ngày 1. Câu bản sắc và thói quen được lưu riêng, các tuần sau sổ tự hiện lại."
   },
   {
-   "label": "Thứ Ba",
-   "kick": "Quy luật 1: Rõ ràng",
+   "label": "Thứ Ba",
+   "kick": "Quy luật 1: Rõ ràng",
    "title": "Viết rõ giờ, chỗ và việc làm trước",
    "time": "Khoảng 20 phút",
    "cards": [
     {
-     "h": "Ý định thực hiện",
+     "h": "Ý định thực hiện",
      "items": [
       {
        "f": "show",
-       "text": "Thói quen của tôi: {j_habit}",
+       "text": "Thói quen của tôi: {j_habit}",
        "need": [
         "j_habit"
        ]
@@ -140,7 +140,7 @@
        "f": "tx",
        "k": "j_where",
        "q": "Ở đâu?",
-       "ph": "Ví dụ: tại bàn làm việc"
+       "ph": "Ví dụ: tại bàn làm việc"
       },
       {
        "f": "show",
@@ -154,17 +154,17 @@
      ]
     },
     {
-     "h": "Xếp chồng thói quen",
+     "h": "Xếp chồng thói quen",
      "items": [
       {
        "f": "note",
-       "text": "Lịch mỗi ngày mỗi khác thì gắn thói quen vào một việc mình vốn làm mỗi ngày."
+       "text": "Lịch mỗi ngày mỗi khác thì gắn thói quen vào một việc mình vốn làm mỗi ngày."
       },
       {
        "f": "tx",
        "k": "j_after",
        "q": "Sau khi ...",
-       "ph": "Ví dụ: pha cà phê buổi sáng"
+       "ph": "Ví dụ: pha cà phê buổi sáng"
       },
       {
        "f": "show",
@@ -177,35 +177,35 @@
      ]
     },
     {
-     "h": "Một tín hiệu trong tầm mắt",
+     "h": "Một tín hiệu trong tầm mắt",
      "items": [
       {
        "f": "seg",
        "k": "d2cuetype",
-       "q": "Loại tín hiệu",
+       "q": "Loại tín hiệu",
        "opts": [
-        "Trên màn hình",
+        "Trên màn hình",
         "Trên bàn",
         "Trên lịch",
         "Bỏ một vật gây xao nhãng"
        ],
        "hints": [
         "Mở sẵn tệp cần làm từ chiều hôm trước.",
-        "Đặt sổ hoặc tài liệu lên bàn phím.",
-        "Tạo cuộc hẹn lặp lại có tên thói quen.",
-        "Úp điện thoại vào ngăn kéo trước giờ làm."
+        "Đặt sổ hoặc tài liệu lên bàn phím.",
+        "Tạo cuộc hẹn lặp lại có tên thói quen.",
+        "Úp điện thoại vào ngăn kéo trước giờ làm."
        ]
       },
       {
        "f": "tx",
        "k": "j_cue",
-       "q": "Tín hiệu của tôi",
-       "ph": "Ví dụ: để sẵn tệp kế hoạch trên màn hình"
+       "q": "Tín hiệu của tôi",
+       "ph": "Ví dụ: để sẵn tệp kế hoạch trên màn hình"
       },
       {
        "f": "cb",
        "k": "d2ready",
-       "label": "Tôi đã chuẩn bị tín hiệu này ngay hôm nay"
+       "label": "Tôi đã chuẩn bị tín hiệu này ngay hôm nay"
       }
      ]
     }
@@ -228,30 +228,30 @@
    "hint": "Dán vào bình luận của bài Ngày 2."
   },
   {
-   "label": "Thứ Tư",
-   "kick": "Quy luật 2: Hấp dẫn",
-   "title": "Ghép việc nên làm với việc thích làm",
+   "label": "Thứ Tư",
+   "kick": "Quy luật 2: Hấp dẫn",
+   "title": "Ghép việc nên làm với việc thích làm",
    "time": "Khoảng 15 phút",
    "cards": [
     {
-     "h": "Ba việc mình thích trong ngày làm việc",
+     "h": "Ba việc mình thích trong ngày làm việc",
      "items": [
       {
        "f": "tx",
        "k": "d3l1",
-       "q": "Việc thích thứ nhất",
-       "ph": "Ví dụ: ly cà phê đầu ngày"
+       "q": "Việc thích thứ nhất",
+       "ph": "Ví dụ: ly cà phê đầu ngày"
       },
       {
        "f": "tx",
        "k": "d3l2",
-       "q": "Việc thích thứ hai",
+       "q": "Việc thích thứ hai",
        "ph": "Ví dụ: nghe nhạc"
       },
       {
        "f": "tx",
        "k": "d3l3",
-       "q": "Việc thích thứ ba",
+       "q": "Việc thích thứ ba",
        "ph": "Ví dụ: đọc tin tức"
       }
      ]
@@ -261,7 +261,7 @@
      "items": [
       {
        "f": "note",
-       "text": "Chọn một việc thích để đi kèm thói quen then chốt."
+       "text": "Chọn một việc thích để đi kèm thói quen then chốt."
       },
       {
        "f": "pick",
@@ -280,22 +280,22 @@
       },
       {
        "f": "note",
-       "text": "Nếu hai việc không làm cùng lúc được, đặt việc thích ngay sau khi làm xong thói quen."
+       "text": "Nếu hai việc không làm cùng lúc được, đặt việc thích ngay sau khi làm xong thói quen."
       }
      ]
     },
     {
-     "h": "Người cùng theo dõi",
+     "h": "Người cùng theo dõi",
      "items": [
       {
        "f": "note",
-       "text": "Thói quen dễ giữ hơn khi mình thuộc một nhóm mà ai cũng làm việc đó. Cộng đồng 10X Excellence Hub cũng tính."
+       "text": "Thói quen dễ giữ hơn khi mình thuộc một nhóm mà ai cũng làm việc đó. Cộng đồng 10X Excellence Hub cũng tính."
       },
       {
        "f": "tx",
        "k": "j_buddy",
-       "q": "Người hoặc nhóm cùng theo dõi với tôi",
-       "ph": "Ví dụ: cộng đồng 10X Excellence Hub và một đồng nghiệp"
+       "q": "Người hoặc nhóm cùng theo dõi với tôi",
+       "ph": "Ví dụ: cộng đồng 10X Excellence Hub và một đồng nghiệp"
       }
      ]
     }
@@ -318,17 +318,17 @@
    "hint": "Dán vào bình luận của bài Ngày 3."
   },
   {
-   "label": "Thứ Năm",
-   "kick": "Quy luật 3: Dễ làm",
-   "title": "Thu nhỏ còn hai phút",
+   "label": "Thứ Năm",
+   "kick": "Quy luật 3: Dễ làm",
+   "title": "Thu nhỏ còn hai phút",
    "time": "Khoảng 20 phút",
    "cards": [
     {
-     "h": "Phiên bản hai phút",
+     "h": "Phiên bản hai phút",
      "items": [
       {
        "f": "show",
-       "text": "Thói quen đầy đủ: {j_habit}",
+       "text": "Thói quen đầy đủ: {j_habit}",
        "need": [
         "j_habit"
        ]
@@ -336,12 +336,12 @@
       {
        "f": "tx",
        "k": "j_two",
-       "q": "Phiên bản làm xong trong hai phút",
-       "ph": "Ví dụ: mở tệp và viết câu mục tiêu của phiên"
+       "q": "Phiên bản làm xong trong hai phút",
+       "ph": "Ví dụ: mở tệp và viết câu mục tiêu của phiên"
       },
       {
        "f": "note",
-       "text": "Thử ngay bây giờ. Bấm Bắt đầu và làm phiên bản hai phút."
+       "text": "Thử ngay bây giờ. Bấm Bắt đầu và làm phiên bản hai phút."
       },
       {
        "f": "timer",
@@ -357,7 +357,7 @@
      ]
     },
     {
-     "h": "Đếm ma sát",
+     "h": "Đếm ma sát",
      "items": [
       {
        "f": "ta",
@@ -368,8 +368,8 @@
       {
        "f": "tx",
        "k": "d4cut",
-       "q": "Bước tôi bỏ hoặc chuẩn bị sẵn",
-       "ph": "Ví dụ: ghim tệp kế hoạch lên màn hình chính"
+       "q": "Bước tôi bỏ hoặc chuẩn bị sẵn",
+       "ph": "Ví dụ: ghim tệp kế hoạch lên màn hình chính"
       },
       {
        "f": "cb",
@@ -396,48 +396,48 @@
    "hint": "Dán vào bình luận của bài Ngày 4."
   },
   {
-   "label": "Thứ Sáu",
-   "kick": "Quy luật 4: Thỏa mãn",
-   "title": "Không bao giờ lỡ hai lần liên tiếp",
+   "label": "Thứ Sáu",
+   "kick": "Quy luật 4: Thỏa mãn",
+   "title": "Không bao giờ lỡ hai lần liên tiếp",
    "time": "Khoảng 15 phút",
    "cards": [
     {
-     "h": "Bảng hành trình thói quen",
+     "h": "Bảng hành trình thói quen",
      "items": [
       {
        "f": "track",
-       "note": "Bấm vào ngày đã làm thói quen then chốt. Bảng này dùng chung cho mọi tuần, tuần sau mở sổ vẫn thấy chuỗi cũ."
+       "note": "Bấm vào ngày đã làm thói quen then chốt. Bảng này dùng chung cho mọi tuần, tuần sau mở sổ vẫn thấy chuỗi cũ."
       }
      ]
     },
     {
-     "h": "Ghi nhận ngay sau khi làm",
+     "h": "Ghi nhận ngay sau khi làm",
      "items": [
       {
        "f": "seg",
        "k": "j_reward",
-       "q": "Cách ghi nhận nhỏ của tôi",
+       "q": "Cách ghi nhận nhỏ của tôi",
        "opts": [
         "Bấm ô trên sổ",
-        "Gạch lịch giấy",
+        "Gạch lịch giấy",
         "Kẹp giấy sang hộp",
-        "Báo người cùng theo dõi"
+        "Báo người cùng theo dõi"
        ]
       }
      ]
     },
     {
-     "h": "Kế hoạch cho ngày lỡ",
+     "h": "Kế hoạch cho ngày lỡ",
      "items": [
       {
        "f": "note",
-       "text": "Lỡ một ngày gần như không ảnh hưởng. Lỡ hai ngày liên tiếp mới làm hỏng thói quen."
+       "text": "Lỡ một ngày gần như không ảnh hưởng. Lỡ hai ngày liên tiếp mới làm hỏng thói quen."
       },
       {
        "f": "tx",
        "k": "j_miss",
-       "q": "Nếu lỡ một ngày, hôm sau tôi ...",
-       "ph": "Ví dụ: làm phiên bản hai phút"
+       "q": "Nếu lỡ một ngày, hôm sau tôi ...",
+       "ph": "Ví dụ: làm phiên bản hai phút"
       }
      ]
     }
@@ -459,48 +459,48 @@
    "hint": "Dán vào bình luận của bài Ngày 5."
   },
   {
-   "label": "Thứ Bảy",
+   "label": "Thứ Bảy",
    "kick": "Giữ và mang theo",
-   "title": "Bỏ một thói quen, ký một hợp đồng",
+   "title": "Bỏ một thói quen, ký một hợp đồng",
    "time": "Khoảng 30 phút",
    "cards": [
     {
-     "h": "Một thói quen xấu cần bỏ",
+     "h": "Một thói quen xấu cần bỏ",
      "items": [
       {
        "f": "tx",
        "k": "d6bad",
-       "q": "Thói quen xấu đang cản thói quen then chốt",
-       "ph": "Ví dụ: mở hộp thư ngay khi ngồi vào bàn"
+       "q": "Thói quen xấu đang cản thói quen then chốt",
+       "ph": "Ví dụ: mở hộp thư ngay khi ngồi vào bàn"
       },
       {
        "f": "tx",
        "k": "d6i1",
        "q": "Làm cho khuất đi",
-       "ph": "Ví dụ: tắt thông báo thư từ chiều hôm trước"
+       "ph": "Ví dụ: tắt thông báo thư từ chiều hôm trước"
       },
       {
        "f": "tx",
        "k": "d6i2",
-       "q": "Làm cho kém hấp dẫn",
-       "ph": "Ví dụ: ghi lại số phút việc quan trọng bị mất"
+       "q": "Làm cho kém hấp dẫn",
+       "ph": "Ví dụ: ghi lại số phút việc quan trọng bị mất"
       },
       {
        "f": "tx",
        "k": "d6i3",
        "q": "Làm cho khó",
-       "ph": "Ví dụ: chỉ mở thư trên trình duyệt khác"
+       "ph": "Ví dụ: chỉ mở thư trên trình duyệt khác"
       },
       {
        "f": "tx",
        "k": "d6i4",
-       "q": "Làm cho không thỏa mãn",
-       "ph": "Ví dụ: nhờ đồng nghiệp nhắc khi thấy trả lời thư trước 9 giờ"
+       "q": "Làm cho không thỏa mãn",
+       "ph": "Ví dụ: nhờ đồng nghiệp nhắc khi thấy trả lời thư trước 9 giờ"
       }
      ]
     },
     {
-     "h": "Hợp đồng thói quen",
+     "h": "Hợp đồng thói quen",
      "items": [
       {
        "f": "note",
@@ -513,13 +513,13 @@
        ],
        "rows": [
         {
-         "label": "Câu bản sắc",
+         "label": "Câu bản sắc",
          "keys": [
           "j_identity"
          ]
         },
         {
-         "label": "Thói quen then chốt",
+         "label": "Thói quen then chốt",
          "keys": [
           "j_habit"
          ]
@@ -543,7 +543,7 @@
          ]
         },
         {
-         "label": "Tín hiệu",
+         "label": "Tín hiệu",
          "keys": [
           "j_cue"
          ]
@@ -555,19 +555,19 @@
          ]
         },
         {
-         "label": "Phiên bản hai phút",
+         "label": "Phiên bản hai phút",
          "keys": [
           "j_two"
          ]
         },
         {
-         "label": "Kế hoạch ngày lỡ",
+         "label": "Kế hoạch ngày lỡ",
          "keys": [
           "j_miss"
          ]
         },
         {
-         "label": "Người cùng theo dõi",
+         "label": "Người cùng theo dõi",
          "keys": [
           "j_buddy"
          ]
@@ -577,7 +577,7 @@
       {
        "f": "cb",
        "k": "d6sign",
-       "label": "Tôi cam kết giữ thói quen này sang tuần sau"
+       "label": "Tôi cam kết giữ thói quen này sang tuần sau"
       }
      ]
     }
@@ -596,7 +596,7 @@
      ]
     }
    ],
-   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
   }
  ]
 }
