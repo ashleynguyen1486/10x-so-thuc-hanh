@@ -1,0 +1,1038 @@
+{
+ "id": "0027",
+ "name": "Luyện tập có chủ đích",
+ "storeKey": "sth-0027",
+ "kicker": "Công thức #0027",
+ "title": "Thử thách Luyện tập có chủ đích 7 ngày",
+ "sub": "Mỗi ngày từ 15 đến 45 phút, kể cả phiên luyện ngắn. Các anh chị và các bạn điền trên trang, bấm sao chép câu chia sẻ rồi dán vào bình luận của bài hôm đó trên 10X Excellence Hub nha. Trường đồng hành cùng mọi người cả tuần.",
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Chọn kỹ năng",
+   "title": "Chọn một kỹ năng để luyện",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Những kỹ năng mình dùng hằng tuần",
+     "items": [
+      {
+       "f": "note",
+       "text": "Chấm hai thang từ 1 đến 5: tác động nếu mình giỏi hơn ở kỹ năng này (5 là rất lớn), và tần suất dùng kỹ năng trong một tuần làm việc (5 là gần như mỗi ngày)."
+      },
+      {
+       "f": "tx",
+       "k": "d1s1",
+       "q": "Kỹ năng 1",
+       "ph": "Ví dụ: thuyết trình trước khách hàng"
+      },
+      {
+       "f": "seg",
+       "k": "d1i1",
+       "q": "Tác động",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1f1",
+       "q": "Tần suất",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1s2",
+       "q": "Kỹ năng 2",
+       "ph": "Một kỹ năng dùng hằng tuần"
+      },
+      {
+       "f": "seg",
+       "k": "d1i2",
+       "q": "Tác động",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1f2",
+       "q": "Tần suất",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1s3",
+       "q": "Kỹ năng 3",
+       "ph": "Một kỹ năng dùng hằng tuần"
+      },
+      {
+       "f": "seg",
+       "k": "d1i3",
+       "q": "Tác động",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1f3",
+       "q": "Tần suất",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1s4",
+       "q": "Kỹ năng 4",
+       "ph": "Một kỹ năng dùng hằng tuần"
+      },
+      {
+       "f": "seg",
+       "k": "d1i4",
+       "q": "Tác động",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1f4",
+       "q": "Tần suất",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1s5",
+       "q": "Kỹ năng 5",
+       "ph": "Một kỹ năng dùng hằng tuần"
+      },
+      {
+       "f": "seg",
+       "k": "d1i5",
+       "q": "Tác động",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1f5",
+       "q": "Tần suất",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Chọn và thu hẹp",
+     "items": [
+      {
+       "f": "note",
+       "text": "Chọn kỹ năng có tổng điểm cao nhất, rồi thu hẹp cho đủ cụ thể để luyện. \"Thuyết trình tốt hơn\" quá rộng; \"mở đầu bài thuyết trình trong 60 giây, giữ được sự chú ý\" thì luyện được."
+      },
+      {
+       "f": "tx",
+       "k": "d1skill",
+       "q": "Kỹ năng tôi luyện (đã thu hẹp)",
+       "ph": "Ví dụ: mở đầu bài thuyết trình trong 60 giây"
+      },
+      {
+       "f": "seg",
+       "k": "d1lvl",
+       "q": "Mức hiện tại của tôi (1 đến 10)",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1goal",
+       "q": "Mục tiêu 30 ngày, đo được",
+       "ph": "Ví dụ: mở đầu không cần nhìn ghi chú, có một câu hỏi gợi tò mò"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 1: Kỹ năng tôi luyện: {d1skill}",
+     "need": [
+      "d1skill"
+     ]
+    },
+    {
+     "tpl": ". Mức hiện tại: {d1lvl}/10",
+     "need": [
+      "d1skill",
+      "d1lvl"
+     ]
+    },
+    {
+     "tpl": ". Mục tiêu 30 ngày: {d1goal}",
+     "need": [
+      "d1skill",
+      "d1goal"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d1skill"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Mẫu chuẩn",
+   "title": "Tìm mẫu chuẩn và người phản hồi",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Mẫu chuẩn",
+     "items": [
+      {
+       "f": "show",
+       "text": "Kỹ năng: {d1skill}",
+       "need": [
+        "d1skill"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Mẫu chuẩn là một ví dụ làm tốt mà mình xem được: bản ghi một bài thuyết trình hay, một thư được khách hàng khen, một báo cáo được đánh giá cao."
+      },
+      {
+       "f": "tx",
+       "k": "d2model",
+       "q": "Ví dụ làm tốt tôi chọn",
+       "ph": "Ví dụ: bài trình bày quý của chị Lan"
+      },
+      {
+       "f": "tx",
+       "k": "d2c1",
+       "q": "Tiêu chí 1: điều gì làm ví dụ đó tốt",
+       "ph": "Ví dụ: mở bằng một con số bất ngờ"
+      },
+      {
+       "f": "tx",
+       "k": "d2c2",
+       "q": "Tiêu chí 2",
+       "ph": "Ví dụ: câu ngắn"
+      },
+      {
+       "f": "tx",
+       "k": "d2c3",
+       "q": "Tiêu chí 3",
+       "ph": "Ví dụ: nhìn người nghe"
+      }
+     ]
+    },
+    {
+     "h": "Người phản hồi",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d2fb",
+       "q": "Người có thể cho tôi phản hồi",
+       "ph": "Ví dụ: anh Minh, trưởng nhóm kinh doanh"
+      },
+      {
+       "f": "ta",
+       "k": "d2ask",
+       "q": "Lời nhờ ngắn gọn (cần họ làm gì, mất bao lâu, ngày nào)",
+       "ph": "Ví dụ: thứ Sáu em gửi anh đoạn ghi âm 60 giây, anh chỉ giúp em một điểm cần sửa nhất được không ạ?"
+      },
+      {
+       "f": "cb",
+       "k": "d2sent",
+       "label": "Đã gửi lời nhờ"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 2: Mẫu chuẩn: {d2model}",
+     "need": [
+      "d2model"
+     ]
+    },
+    {
+     "tpl": ". Ba tiêu chí: {d2c1}, {d2c2}, {d2c3}",
+     "need": [
+      "d2model",
+      "d2c1",
+      "d2c2",
+      "d2c3"
+     ]
+    },
+    {
+     "tpl": ". Người phản hồi: {d2fb}",
+     "need": [
+      "d2model",
+      "d2fb"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d2model"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Chia nhỏ",
+   "title": "Chia kỹ năng thành phần nhỏ",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Chia kỹ năng thành phần",
+     "items": [
+      {
+       "f": "show",
+       "text": "Kỹ năng: {d1skill}",
+       "need": [
+        "d1skill"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Chia kỹ năng thành bốn đến sáu phần, chấm mức hiện tại của mình ở từng phần (1 là rất yếu, 5 là đã tốt)."
+      },
+      {
+       "f": "tx",
+       "k": "d3p1",
+       "q": "Phần 1",
+       "ph": "Ví dụ: câu mở đầu gây chú ý"
+      },
+      {
+       "f": "seg",
+       "k": "d3m1",
+       "q": "Mức",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3p2",
+       "q": "Phần 2",
+       "ph": "Một phần của kỹ năng"
+      },
+      {
+       "f": "seg",
+       "k": "d3m2",
+       "q": "Mức",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3p3",
+       "q": "Phần 3",
+       "ph": "Một phần của kỹ năng"
+      },
+      {
+       "f": "seg",
+       "k": "d3m3",
+       "q": "Mức",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3p4",
+       "q": "Phần 4",
+       "ph": "Một phần của kỹ năng"
+      },
+      {
+       "f": "seg",
+       "k": "d3m4",
+       "q": "Mức",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3p5",
+       "q": "Phần 5",
+       "ph": "Một phần của kỹ năng"
+      },
+      {
+       "f": "seg",
+       "k": "d3m5",
+       "q": "Mức",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Chọn trọng tâm",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3weak",
+       "q": "Phần yếu nhất, sẽ luyện ngày mai",
+       "ph": "Ví dụ: câu mở đầu gây chú ý"
+      },
+      {
+       "f": "tx",
+       "k": "d3goal",
+       "q": "Mục tiêu phiên: cuối phiên, tôi biết đạt hay chưa bằng cách nào?",
+       "ph": "Ví dụ: viết và nói thử năm câu mở đầu, chọn hai câu tốt nhất"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 3: Phần yếu nhất: {d3weak}",
+     "need": [
+      "d3weak"
+     ]
+    },
+    {
+     "tpl": ". Mục tiêu phiên: {d3goal}",
+     "need": [
+      "d3weak",
+      "d3goal"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d3weak"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Phiên đầu",
+   "title": "Phiên luyện đầu tiên",
+   "time": "Khoảng 15 phút cộng một phiên",
+   "cards": [
+    {
+     "h": "Trước phiên",
+     "items": [
+      {
+       "f": "show",
+       "text": "Mục tiêu phiên: {d3goal}",
+       "need": [
+        "d3goal"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Ba tiêu chí: {d2c1}, {d2c2}, {d2c3}",
+       "need": [
+        "d2c1"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d4off",
+       "label": "Đã tắt thông báo điện thoại và máy tính"
+      }
+     ]
+    },
+    {
+     "h": "Phiên luyện",
+     "items": [
+      {
+       "f": "timer",
+       "k": "d4min",
+       "dk": "d4dur",
+       "opts": [
+        15,
+        20,
+        25,
+        30
+       ],
+       "def": 25,
+       "note": "Luyện đúng phần yếu nhất. Ghi lại sản phẩm: bản viết, đoạn ghi âm, bảng tính. Mắc lỗi là dấu hiệu độ khó đang đúng nha."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d4min",
+         "q": "Số phút đã luyện"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Ngay sau phiên",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4did",
+       "q": "Làm được gì",
+       "ph": "Ví dụ: viết và nói thử năm câu mở đầu, ghi âm lại"
+      },
+      {
+       "f": "tx",
+       "k": "d4err",
+       "q": "Sai ở đâu",
+       "ph": "Ví dụ: nói quá nhanh"
+      },
+      {
+       "f": "seg",
+       "k": "d4hard",
+       "q": "Độ khó cảm nhận",
+       "opts": [
+        "Quá dễ",
+        "Vừa sức",
+        "Quá khó"
+       ],
+       "hints": [
+        "Không mắc lỗi nào thì có lẽ quá dễ. Lần sau tăng độ khó một chút nha.",
+        "Đúng vùng cần luyện: phải tập trung cao, có lỗi nhưng sửa được.",
+        "Thu hẹp phần luyện lần sau, hoặc để mẫu chuẩn bên cạnh khi luyện."
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d4score",
+       "q": "Tự chấm theo ba tiêu chí (1 đến 10)",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 4: Phiên đầu {d4min} phút",
+     "need": [
+      "d4min"
+     ]
+    },
+    {
+     "tpl": ". {d4did}",
+     "need": [
+      "d4min",
+      "d4did"
+     ]
+    },
+    {
+     "tpl": ". Sai ở chỗ {d4err}",
+     "need": [
+      "d4min",
+      "d4err"
+     ]
+    },
+    {
+     "tpl": ". Độ khó: {d4hard}",
+     "need": [
+      "d4min",
+      "d4hard"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d4min"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Phản hồi",
+   "title": "Nhận phản hồi",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "So với mẫu chuẩn",
+     "items": [
+      {
+       "f": "show",
+       "text": "Mẫu chuẩn: {d2model}",
+       "need": [
+        "d2model"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Đặt sản phẩm của phiên đầu cạnh mẫu chuẩn, như cách Benjamin Franklin so bài viết của mình với bản gốc. Ghi ba khác biệt lớn nhất."
+      },
+      {
+       "f": "tx",
+       "k": "d5x1",
+       "q": "Khác biệt 1",
+       "ph": "Ví dụ: chị dừng một nhịp sau câu đầu, tôi thì không"
+      },
+      {
+       "f": "tx",
+       "k": "d5x2",
+       "q": "Khác biệt 2",
+       "ph": "Ví dụ: chị dùng con số, tôi dùng tính từ"
+      },
+      {
+       "f": "tx",
+       "k": "d5x3",
+       "q": "Khác biệt 3",
+       "ph": "Ví dụ: chị nhìn người nghe"
+      }
+     ]
+    },
+    {
+     "h": "Phản hồi từ người khác",
+     "items": [
+      {
+       "f": "show",
+       "text": "Người phản hồi: {d2fb}",
+       "need": [
+        "d2fb"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d5got",
+       "q": "Đã nhận phản hồi chưa?",
+       "opts": [
+        "Đã nhận",
+        "Đang chờ",
+        "Chưa nhờ được"
+       ],
+       "hints": [
+        "Ghi lại đúng điều họ nói, chưa cần đồng ý hay phản bác.",
+        "So với mẫu chuẩn là đủ cho hôm nay. Phản hồi đến thì dùng cho phiên sau.",
+        "Không sao. Tuần sau thử nhờ một người khác, hoặc tự ghi âm và nghe lại sau một ngày."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5said",
+       "q": "Điều người phản hồi chỉ ra (nếu có)",
+       "ph": "Ví dụ: câu mở đầu dài quá, cắt còn một nửa"
+      }
+     ]
+    },
+    {
+     "h": "Chọn một điều để chỉnh",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5fix",
+       "q": "Điều sẽ chỉnh trong phiên thứ hai",
+       "ph": "Ví dụ: dừng một nhịp sau câu đầu"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 5: So với mẫu chuẩn: {d5x1}",
+     "need": [
+      "d5x1"
+     ]
+    },
+    {
+     "tpl": "; {d5x2}",
+     "need": [
+      "d5x1",
+      "d5x2"
+     ]
+    },
+    {
+     "tpl": "; {d5x3}",
+     "need": [
+      "d5x1",
+      "d5x3"
+     ]
+    },
+    {
+     "tpl": ". Sẽ chỉnh: {d5fix}",
+     "need": [
+      "d5x1",
+      "d5fix"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d5x1"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Điều chỉnh",
+   "title": "Phiên thứ hai có điều chỉnh",
+   "time": "Khoảng 15 phút cộng một phiên",
+   "cards": [
+    {
+     "h": "Chuẩn bị phiên hai",
+     "items": [
+      {
+       "f": "show",
+       "text": "Điều sẽ chỉnh: {d5fix}",
+       "need": [
+        "d5fix"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Phiên đầu: độ khó {d4hard}, tự chấm {d4score}/10",
+       "need": [
+        "d4hard",
+        "d4score"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d6adj",
+       "q": "Điều chỉnh độ khó",
+       "opts": [
+        "Tăng",
+        "Giữ nguyên",
+        "Giảm"
+       ],
+       "hints": [
+        "Rút ngắn thời gian, thêm người nghe, hoặc chọn tình huống khó hơn.",
+        "Phiên đầu đã vừa sức, giữ nguyên và tập trung vào điều cần chỉnh.",
+        "Luyện một phần nhỏ hơn, để mẫu chuẩn bên cạnh, hoặc cho thêm thời gian."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Phiên luyện thứ hai",
+     "items": [
+      {
+       "f": "timer",
+       "k": "d6min",
+       "dk": "d6dur",
+       "opts": [
+        15,
+        20,
+        25,
+        30
+       ],
+       "def": 25,
+       "note": "Cùng phần đã luyện, thêm đúng một điều chỉnh. Ghi lại sản phẩm để so với phiên đầu."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6min",
+         "q": "Số phút đã luyện"
+        }
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d6score",
+       "q": "Tự chấm theo ba tiêu chí (1 đến 10)",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "So sánh hai phiên",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Phiên đầu",
+        "Phiên hai"
+       ],
+       "rows": [
+        {
+         "label": "Số phút",
+         "keys": [
+          "d4min",
+          "d6min"
+         ]
+        },
+        {
+         "label": "Tự chấm",
+         "keys": [
+          "d4score",
+          "d6score"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6still",
+       "q": "Còn sai ở đâu",
+       "ph": "Ví dụ: chưa nhìn người nghe"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 6: Phiên hai {d6min} phút",
+     "need": [
+      "d6min"
+     ]
+    },
+    {
+     "tpl": ", chỉnh: {d5fix}",
+     "need": [
+      "d6min",
+      "d5fix"
+     ]
+    },
+    {
+     "tpl": ". Tự chấm {d6score}/10, phiên đầu {d4score}/10",
+     "need": [
+      "d6min",
+      "d6score",
+      "d4score"
+     ]
+    },
+    {
+     "tpl": ". Còn sai: {d6still}",
+     "need": [
+      "d6min",
+      "d6still"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d6min"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6."
+  },
+  {
+   "label": "Chủ Nhật",
+   "kick": "30 ngày",
+   "title": "Lập lịch luyện tập 30 ngày",
+   "time": "Khoảng 30 đến 45 phút",
+   "cards": [
+    {
+     "h": "Lịch luyện 30 ngày",
+     "items": [
+      {
+       "f": "show",
+       "text": "Kỹ năng: {d1skill}. Mục tiêu 30 ngày: {d1goal}",
+       "need": [
+        "d1skill",
+        "d1goal"
+       ]
+      },
+      {
+       "f": "cal",
+       "k": "d7cal",
+       "unit": "khung giờ",
+       "cols": [
+        "Thứ Hai",
+        "Thứ Ba",
+        "Thứ Tư",
+        "Thứ Năm",
+        "Thứ Sáu",
+        "Thứ Bảy",
+        "Chủ Nhật"
+       ],
+       "rows": [
+        "Sáng",
+        "Trưa",
+        "Chiều",
+        "Tối"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Chọn ba ô trong bảng cho ba phiên mỗi tuần, mỗi phiên 25 đến 30 phút."
+      },
+      {
+       "f": "tx",
+       "k": "d7time",
+       "q": "Giờ cụ thể của các phiên",
+       "ph": "Ví dụ: 8 giờ"
+      },
+      {
+       "f": "tx",
+       "k": "d7metric",
+       "q": "Chỉ số theo dõi tiến bộ",
+       "ph": "Ví dụ: điểm tự chấm theo ba tiêu chí"
+      },
+      {
+       "f": "tx",
+       "k": "d7fb",
+       "q": "Người phản hồi và tần suất",
+       "ph": "Ví dụ: anh Minh, mỗi thứ Sáu"
+      },
+      {
+       "f": "tx",
+       "k": "d7test",
+       "q": "Mốc kiểm tra ngày thứ 30: dùng kỹ năng trong tình huống thật nào?",
+       "ph": "Ví dụ: mở đầu buổi họp quý"
+      },
+      {
+       "f": "note",
+       "text": "Cảm ơn các anh chị và các bạn đã đi cùng Trường cả tuần. Giữ một kỹ năng trong 30 ngày trước khi đổi sang kỹ năng khác nha."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 7: Luyện vào {cal:d7cal}",
+     "need": [
+      "cal:d7cal"
+     ]
+    },
+    {
+     "tpl": " lúc {d7time}",
+     "need": [
+      "cal:d7cal",
+      "d7time"
+     ]
+    },
+    {
+     "tpl": ". Chỉ số: {d7metric}",
+     "need": [
+      "cal:d7cal",
+      "d7metric"
+     ]
+    },
+    {
+     "tpl": ". Phản hồi: {d7fb}",
+     "need": [
+      "cal:d7cal",
+      "d7fb"
+     ]
+    },
+    {
+     "tpl": ". Mốc 30 ngày: {d7test}",
+     "need": [
+      "cal:d7cal",
+      "d7test"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "cal:d7cal"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 7."
+  }
+ ]
+}
