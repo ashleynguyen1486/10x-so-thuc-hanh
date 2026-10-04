@@ -1,0 +1,1057 @@
+{
+ "id": "0024",
+ "name": "Năng lượng",
+ "storeKey": "sth-0024",
+ "kicker": "Công thức #0024",
+ "title": "Thử thách Quản lý năng lượng 7 ngày",
+ "sub": "Mỗi ngày một việc từ 15 đến 45 phút, làm ngay trong ngày làm việc. Các anh chị và các bạn điền trên trang, bấm sao chép câu chia sẻ rồi dán vào bình luận của bài hôm đó trên 10X Excellence Hub nha. Trường đồng hành cùng mọi người cả tuần.",
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Đo năng lượng",
+   "title": "Tự kiểm tra bốn nguồn năng lượng",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Trước khi bắt đầu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Đánh dấu câu nào đúng với mình trong phần lớn tuần làm việc vừa qua, không theo tuần lý tưởng nha. Mỗi câu đánh dấu là một dấu hiệu hao hụt ở tầng đó. Đây là bảng tự quan sát, không phải công cụ chẩn đoán."
+      }
+     ]
+    },
+    {
+     "h": "Thể chất",
+     "items": [
+      {
+       "f": "note",
+       "text": "Thể chất: lượng sức mình có, đủ sức hay đã đuối."
+      },
+      {
+       "f": "cb",
+       "k": "d1the1",
+       "label": "Tôi thường làm liên tục nhiều giờ mà không đứng dậy rời bàn"
+      },
+      {
+       "f": "cb",
+       "k": "d1the2",
+       "label": "Buổi chiều tôi hay thấy uể oải, khó tập trung"
+      },
+      {
+       "f": "cb",
+       "k": "d1the3",
+       "label": "Tôi thường ăn trưa trước màn hình, vừa ăn vừa làm"
+      },
+      {
+       "f": "cb",
+       "k": "d1the4",
+       "label": "Tôi hay làm việc đến khuya hoặc mang việc về nhà nhiều buổi trong tuần"
+      }
+     ]
+    },
+    {
+     "h": "Cảm xúc",
+     "items": [
+      {
+       "f": "note",
+       "text": "Cảm xúc: trạng thái khi làm việc, bình tĩnh hay căng thẳng."
+      },
+      {
+       "f": "cb",
+       "k": "d1cam1",
+       "label": "Tôi dễ cáu hoặc mất kiên nhẫn khi công việc dồn dập"
+      },
+      {
+       "f": "cb",
+       "k": "d1cam2",
+       "label": "Tôi ít khi ghi nhận hay cảm ơn đồng nghiệp một cách cụ thể"
+      },
+      {
+       "f": "cb",
+       "k": "d1cam3",
+       "label": "Tôi hay trả lời ngay những tin nhắn làm mình bực"
+      },
+      {
+       "f": "cb",
+       "k": "d1cam4",
+       "label": "Tôi hiếm có thời gian cho việc mình thích ngoài công việc"
+      }
+     ]
+    },
+    {
+     "h": "Trí tuệ",
+     "items": [
+      {
+       "f": "note",
+       "text": "Trí tuệ: độ tập trung, dồn vào một việc hay bị kéo nhiều hướng."
+      },
+      {
+       "f": "cb",
+       "k": "d1tri1",
+       "label": "Tôi thường mở hộp thư hoặc tin nhắn ngay khi có thông báo"
+      },
+      {
+       "f": "cb",
+       "k": "d1tri2",
+       "label": "Tôi hay làm nhiều việc cùng lúc và chuyển việc liên tục"
+      },
+      {
+       "f": "cb",
+       "k": "d1tri3",
+       "label": "Tôi ít khi chọn trước việc quan trọng nhất cho ngày hôm sau"
+      },
+      {
+       "f": "cb",
+       "k": "d1tri4",
+       "label": "Cuối ngày tôi thường không nhớ rõ mình đã hoàn thành được gì"
+      }
+     ]
+    },
+    {
+     "h": "Ý nghĩa",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ý nghĩa: lý do để bỏ sức, việc này quan trọng với mình đến đâu."
+      },
+      {
+       "f": "cb",
+       "k": "d1yn1",
+       "label": "Tôi dành ít thời gian cho những việc mình làm tốt nhất và thấy có giá trị nhất"
+      },
+      {
+       "f": "cb",
+       "k": "d1yn2",
+       "label": "Cách tôi dùng thời gian chưa khớp với điều tôi nói là quan trọng"
+      },
+      {
+       "f": "cb",
+       "k": "d1yn3",
+       "label": "Tôi thường làm việc cho xong hơn là vì thấy nó có ý nghĩa"
+      },
+      {
+       "f": "cb",
+       "k": "d1yn4",
+       "label": "Tôi ít khi có thời gian suy nghĩ về hướng đi trong công việc"
+      }
+     ]
+    },
+    {
+     "h": "Tầng cần chăm sóc trước",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d1weak",
+       "q": "Tầng có nhiều câu được đánh dấu nhất",
+       "opts": [
+        "Thể chất",
+        "Cảm xúc",
+        "Trí tuệ",
+        "Ý nghĩa"
+       ],
+       "hints": [
+        "Bài Ngày 3 (Thứ Tư) dành riêng cho tầng này.",
+        "Bài Ngày 4 (Thứ Năm) dành riêng cho tầng này.",
+        "Bài Ngày 5 (Thứ Sáu) dành riêng cho tầng này.",
+        "Bài Ngày 6 (Thứ Bảy) dành riêng cho tầng này."
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Nếu hai tầng bằng nhau, chọn tầng mình thấy ảnh hưởng đến công việc rõ hơn nha."
+      },
+      {
+       "f": "ta",
+       "k": "d1how",
+       "q": "Tầng này đang ảnh hưởng thế nào đến công việc của mình?",
+       "ph": "Ví dụ: tôi chuyển việc liên tục, cuối ngày không nhớ đã làm được gì"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 1: Tầng yếu nhất của tôi là {d1weak}",
+     "need": [
+      "d1weak"
+     ]
+    },
+    {
+     "tpl": ". {d1how}",
+     "need": [
+      "d1weak",
+      "d1how"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d1weak"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Bản đồ trong ngày",
+   "title": "Bản đồ năng lượng của một ngày làm việc",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Chấm năng lượng ở năm mốc giờ",
+     "items": [
+      {
+       "f": "note",
+       "text": "Đặt năm nhắc nhở trong ngày. Mỗi lần nhắc, dừng vài giây và chấm năng lượng: 5 là sung sức, làm được việc khó; 3 là bình thường, làm được việc quen; 1 là rất đuối, chỉ làm được việc đơn giản. Có thể đổi mốc giờ theo lịch làm việc của mình nha."
+      },
+      {
+       "f": "seg",
+       "k": "d2t9",
+       "q": "Lúc 9 giờ",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2t11",
+       "q": "Lúc 11 giờ",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2t13",
+       "q": "Lúc 13 giờ 30",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2t15",
+       "q": "Lúc 15 giờ",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2t17",
+       "q": "Lúc 17 giờ",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Cuối ngày nhìn lại",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d2high",
+       "q": "Khung năng lượng cao nhất",
+       "ph": "Ví dụ: 9 giờ, 5 điểm"
+      },
+      {
+       "f": "tx",
+       "k": "d2low",
+       "q": "Khung năng lượng thấp nhất",
+       "ph": "Ví dụ: 15 giờ, 2 điểm"
+      },
+      {
+       "f": "tx",
+       "k": "d2hard",
+       "q": "Việc khó nhất hôm nay mình làm lúc nào?",
+       "ph": "Ví dụ: 15 giờ, viết đề xuất ngân sách"
+      },
+      {
+       "f": "note",
+       "text": "Nếu việc khó nhất rơi vào khung thấp nhất, tuần này mình sẽ thử dời nó sang khung cao hơn nha."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 2: Năng lượng cao nhất lúc {d2high}",
+     "need": [
+      "d2high"
+     ]
+    },
+    {
+     "tpl": ", thấp nhất lúc {d2low}",
+     "need": [
+      "d2high",
+      "d2low"
+     ]
+    },
+    {
+     "tpl": ". Việc khó nhất hôm nay tôi làm lúc {d2hard}",
+     "need": [
+      "d2high",
+      "d2hard"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d2high"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Thể chất",
+   "title": "Ba khoảng nghỉ có phục hồi",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Ba khoảng nghỉ trong lịch hôm nay",
+     "items": [
+      {
+       "f": "note",
+       "text": "Tìm ba khối làm việc dài trong lịch (từ 90 phút trở lên, hoặc các cuộc họp liền nhau). Sau mỗi khối, đặt một khoảng nghỉ 5 đến 10 phút rời màn hình. Lướt điện thoại chưa phải là nghỉ nha."
+      },
+      {
+       "f": "tx",
+       "k": "d3b1",
+       "q": "Khoảng nghỉ 1 (sau việc gì, lúc mấy giờ)",
+       "ph": "Ví dụ: sau họp giao ban, khoảng 10 giờ"
+      },
+      {
+       "f": "tx",
+       "k": "d3b2",
+       "q": "Khoảng nghỉ 2",
+       "ph": "Ví dụ: 13 giờ 30, sau khi ăn trưa rời bàn"
+      },
+      {
+       "f": "tx",
+       "k": "d3b3",
+       "q": "Khoảng nghỉ 3",
+       "ph": "Ví dụ: 15 giờ 30, sau khối viết báo cáo"
+      },
+      {
+       "f": "seg",
+       "k": "d3kind",
+       "q": "Kiểu nghỉ mình chọn",
+       "opts": [
+        "Đứng dậy đi lại",
+        "Đi lấy nước",
+        "Nhìn ra xa",
+        "Ra ngoài trời"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Viết thành câu nếu thì",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3if",
+       "q": "Nếu...",
+       "ph": "Ví dụ: cuộc họp giao ban kết thúc"
+      },
+      {
+       "f": "tx",
+       "k": "d3then",
+       "q": "...thì tôi sẽ",
+       "ph": "Ví dụ: đi lấy nước và đứng ở cửa sổ năm phút"
+      },
+      {
+       "f": "show",
+       "text": "Nếu {d3if}, thì tôi sẽ {d3then}.",
+       "need": [
+        "d3if",
+        "d3then"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Cuối ngày",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d3done",
+       "q": "Số khoảng nghỉ thật đã làm",
+       "opts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "Hơn 3"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d3e15",
+       "q": "Năng lượng lúc 15 giờ",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Hôm qua lúc 15 giờ: {d2t15} điểm.",
+       "need": [
+        "d2t15"
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 3: Hôm nay tôi nghỉ thật {d3done} lần",
+     "need": [
+      "d3done"
+     ]
+    },
+    {
+     "tpl": ". Năng lượng lúc 15 giờ: {d3e15} điểm",
+     "need": [
+      "d3done",
+      "d3e15"
+     ]
+    },
+    {
+     "tpl": ". Câu nghỉ của tôi: nếu {d3if}, thì tôi sẽ {d3then}",
+     "need": [
+      "d3done",
+      "d3if",
+      "d3then"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d3done"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Cảm xúc",
+   "title": "Một lời ghi nhận và ba lăng kính",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Phần 1: Một lời ghi nhận cụ thể",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ghi nhận cụ thể nói rõ người đó đã làm gì và điều đó giúp mình thế nào. Ví dụ: \"Bản tóm tắt em gửi trước cuộc họp giúp anh trả lời khách ngay\", thay vì \"cảm ơn em nhiều\"."
+      },
+      {
+       "f": "tx",
+       "k": "d4who",
+       "q": "Người mình muốn ghi nhận",
+       "ph": "Ví dụ: Minh, nhân viên phòng kinh doanh"
+      },
+      {
+       "f": "ta",
+       "k": "d4msg",
+       "q": "Lời ghi nhận",
+       "ph": "Ví dụ: Bản tóm tắt em gửi trước cuộc họp giúp anh trả lời khách ngay, không phải hẹn lại."
+      },
+      {
+       "f": "cb",
+       "k": "d4sent",
+       "label": "Đã gửi lời ghi nhận"
+      }
+     ]
+    },
+    {
+     "h": "Phần 2: Ba lăng kính",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4sit",
+       "q": "Một tình huống công việc gần đây làm mình khó chịu",
+       "ph": "Ví dụ: đồng nghiệp sửa bản trình bày của tôi mà không báo trước"
+      },
+      {
+       "f": "tx",
+       "k": "d4l1",
+       "q": "Đảo vai: người kia đang thấy gì?",
+       "ph": "Ví dụ: anh ấy phải gửi cho khách trước 9 giờ"
+      },
+      {
+       "f": "tx",
+       "k": "d4l2",
+       "q": "Nhìn xa: sáu tháng nữa chuyện này còn quan trọng không?",
+       "ph": "Ví dụ: không, nhưng cách hai bên phối hợp thì có"
+      },
+      {
+       "f": "tx",
+       "k": "d4l3",
+       "q": "Nhìn rộng: mình học được gì?",
+       "ph": "Ví dụ: nên thống nhất trước ai duyệt bản cuối"
+      },
+      {
+       "f": "tx",
+       "k": "d4next",
+       "q": "Việc mình sẽ làm tiếp theo",
+       "ph": "Ví dụ: hẹn anh ấy 10 phút để thống nhất quy trình duyệt"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 4: Tôi đã gửi lời ghi nhận cho {d4who}",
+     "need": [
+      "d4who"
+     ]
+    },
+    {
+     "tpl": ". Nhìn xa: {d4l2}",
+     "need": [
+      "d4who",
+      "d4l2"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d4who"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Trí tuệ",
+   "title": "Một khối tập trung và giờ kiểm tra thư",
+   "time": "Khoảng 30 phút cộng một khối tập trung",
+   "cards": [
+    {
+     "h": "Chuẩn bị khối tập trung",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5task",
+       "q": "Việc ưu tiên số một hôm nay",
+       "ph": "Ví dụ: viết phần phân tích của báo cáo quý"
+      },
+      {
+       "f": "show",
+       "text": "Khung năng lượng cao nhất của mình (Ngày 2): {d2high}",
+       "need": [
+        "d2high"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d5c1",
+       "label": "Đã tắt thông báo điện thoại và máy tính"
+      },
+      {
+       "f": "cb",
+       "k": "d5c2",
+       "label": "Đã đóng hộp thư, chỉ mở tệp của việc đang làm"
+      },
+      {
+       "f": "cb",
+       "k": "d5c3",
+       "label": "Đã báo nhóm cách liên hệ nếu có việc gấp"
+      }
+     ]
+    },
+    {
+     "h": "Bấm giờ",
+     "items": [
+      {
+       "f": "timer",
+       "k": "d5min",
+       "dk": "d5dur",
+       "opts": [
+        45,
+        60,
+        75,
+        90
+       ],
+       "def": 60,
+       "note": "Khi bấm Dừng, số phút đã làm được ghi lại bên dưới. Muốn mở hộp thư giữa chừng thì ghi việc cần kiểm tra ra giấy và làm tiếp nha."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d5min",
+         "q": "Số phút tập trung"
+        },
+        {
+         "k": "d5int",
+         "q": "Số lần bị gián đoạn"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Giờ kiểm tra thư cố định",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5mail",
+       "q": "Hai hoặc ba giờ kiểm tra thư trong ngày",
+       "ph": "Ví dụ: 11 giờ, 14 giờ và 16 giờ"
+      },
+      {
+       "f": "ta",
+       "k": "d5note",
+       "q": "Khối tập trung có giữ được không? Vì sao?",
+       "ph": "Ví dụ: giữ được 75 phút, bị gọi một lần vì việc gấp thật"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 5: Khối tập trung {d5min} phút",
+     "need": [
+      "d5min"
+     ]
+    },
+    {
+     "tpl": ", bị gián đoạn {d5int} lần",
+     "need": [
+      "d5min",
+      "d5int"
+     ]
+    },
+    {
+     "tpl": ". Kiểm tra thư lúc {d5mail}",
+     "need": [
+      "d5min",
+      "d5mail"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d5min"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Ý nghĩa",
+   "title": "Tìm điểm ngọt trong công việc",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Các việc chính trong tuần",
+     "items": [
+      {
+       "f": "note",
+       "text": "Điểm ngọt là những việc mình vừa làm tốt, vừa thấy có ý nghĩa. Liệt kê các việc chính trong tuần, rồi đánh dấu."
+      },
+      {
+       "f": "tx",
+       "k": "d6w1",
+       "q": "Việc 1",
+       "ph": "Ví dụ: hướng dẫn nhân viên mới"
+      },
+      {
+       "f": "cb",
+       "k": "d6g1",
+       "label": "Làm tốt"
+      },
+      {
+       "f": "cb",
+       "k": "d6m1",
+       "label": "Có ý nghĩa"
+      },
+      {
+       "f": "tx",
+       "k": "d6w2",
+       "q": "Việc 2",
+       "ph": "Một việc chính trong tuần"
+      },
+      {
+       "f": "cb",
+       "k": "d6g2",
+       "label": "Làm tốt"
+      },
+      {
+       "f": "cb",
+       "k": "d6m2",
+       "label": "Có ý nghĩa"
+      },
+      {
+       "f": "tx",
+       "k": "d6w3",
+       "q": "Việc 3",
+       "ph": "Một việc chính trong tuần"
+      },
+      {
+       "f": "cb",
+       "k": "d6g3",
+       "label": "Làm tốt"
+      },
+      {
+       "f": "cb",
+       "k": "d6m3",
+       "label": "Có ý nghĩa"
+      },
+      {
+       "f": "tx",
+       "k": "d6w4",
+       "q": "Việc 4",
+       "ph": "Một việc chính trong tuần"
+      },
+      {
+       "f": "cb",
+       "k": "d6g4",
+       "label": "Làm tốt"
+      },
+      {
+       "f": "cb",
+       "k": "d6m4",
+       "label": "Có ý nghĩa"
+      },
+      {
+       "f": "tx",
+       "k": "d6w5",
+       "q": "Việc 5",
+       "ph": "Một việc chính trong tuần"
+      },
+      {
+       "f": "cb",
+       "k": "d6g5",
+       "label": "Làm tốt"
+      },
+      {
+       "f": "cb",
+       "k": "d6m5",
+       "label": "Có ý nghĩa"
+      }
+     ]
+    },
+    {
+     "h": "Điểm ngọt của tôi",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d6sweet",
+       "q": "Việc điểm ngọt (có cả hai dấu)",
+       "ph": "Ví dụ: hướng dẫn nhân viên mới"
+      },
+      {
+       "f": "tx",
+       "k": "d6hrs",
+       "q": "Số giờ trong tuần dành cho nó",
+       "ph": "Ví dụ: khoảng 2 trong 45 giờ"
+      },
+      {
+       "f": "tx",
+       "k": "d6move",
+       "q": "Một điều chỉnh nhỏ cho tuần tới",
+       "ph": "Ví dụ: thêm một buổi kèm cặp 60 phút vào chiều thứ Tư"
+      },
+      {
+       "f": "note",
+       "text": "Không phải ai cũng chọn được công việc của mình. Dịch chuyển thêm một giờ mỗi tuần về phía điểm ngọt đã là một bước tốt nha."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 6: Điểm ngọt của tôi là {d6sweet}",
+     "need": [
+      "d6sweet"
+     ]
+    },
+    {
+     "tpl": ". Tuần tới tôi sẽ {d6move}",
+     "need": [
+      "d6sweet",
+      "d6move"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d6sweet"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6."
+  },
+  {
+   "label": "Chủ Nhật",
+   "kick": "Bộ nghi thức",
+   "title": "Đo lại và chốt ba nghi thức cho 30 ngày",
+   "time": "Khoảng 30 đến 45 phút",
+   "cards": [
+    {
+     "h": "Phần 1: Đo lại",
+     "items": [
+      {
+       "f": "note",
+       "text": "Làm lại bảng tự kiểm tra như Ngày 1, theo tuần vừa qua."
+      }
+     ]
+    },
+    {
+     "h": "Thể chất",
+     "items": [
+      {
+       "f": "note",
+       "text": "Thể chất: lượng sức mình có, đủ sức hay đã đuối."
+      },
+      {
+       "f": "cb",
+       "k": "d7the1",
+       "label": "Tôi thường làm liên tục nhiều giờ mà không đứng dậy rời bàn"
+      },
+      {
+       "f": "cb",
+       "k": "d7the2",
+       "label": "Buổi chiều tôi hay thấy uể oải, khó tập trung"
+      },
+      {
+       "f": "cb",
+       "k": "d7the3",
+       "label": "Tôi thường ăn trưa trước màn hình, vừa ăn vừa làm"
+      },
+      {
+       "f": "cb",
+       "k": "d7the4",
+       "label": "Tôi hay làm việc đến khuya hoặc mang việc về nhà nhiều buổi trong tuần"
+      }
+     ]
+    },
+    {
+     "h": "Cảm xúc",
+     "items": [
+      {
+       "f": "note",
+       "text": "Cảm xúc: trạng thái khi làm việc, bình tĩnh hay căng thẳng."
+      },
+      {
+       "f": "cb",
+       "k": "d7cam1",
+       "label": "Tôi dễ cáu hoặc mất kiên nhẫn khi công việc dồn dập"
+      },
+      {
+       "f": "cb",
+       "k": "d7cam2",
+       "label": "Tôi ít khi ghi nhận hay cảm ơn đồng nghiệp một cách cụ thể"
+      },
+      {
+       "f": "cb",
+       "k": "d7cam3",
+       "label": "Tôi hay trả lời ngay những tin nhắn làm mình bực"
+      },
+      {
+       "f": "cb",
+       "k": "d7cam4",
+       "label": "Tôi hiếm có thời gian cho việc mình thích ngoài công việc"
+      }
+     ]
+    },
+    {
+     "h": "Trí tuệ",
+     "items": [
+      {
+       "f": "note",
+       "text": "Trí tuệ: độ tập trung, dồn vào một việc hay bị kéo nhiều hướng."
+      },
+      {
+       "f": "cb",
+       "k": "d7tri1",
+       "label": "Tôi thường mở hộp thư hoặc tin nhắn ngay khi có thông báo"
+      },
+      {
+       "f": "cb",
+       "k": "d7tri2",
+       "label": "Tôi hay làm nhiều việc cùng lúc và chuyển việc liên tục"
+      },
+      {
+       "f": "cb",
+       "k": "d7tri3",
+       "label": "Tôi ít khi chọn trước việc quan trọng nhất cho ngày hôm sau"
+      },
+      {
+       "f": "cb",
+       "k": "d7tri4",
+       "label": "Cuối ngày tôi thường không nhớ rõ mình đã hoàn thành được gì"
+      }
+     ]
+    },
+    {
+     "h": "Ý nghĩa",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ý nghĩa: lý do để bỏ sức, việc này quan trọng với mình đến đâu."
+      },
+      {
+       "f": "cb",
+       "k": "d7yn1",
+       "label": "Tôi dành ít thời gian cho những việc mình làm tốt nhất và thấy có giá trị nhất"
+      },
+      {
+       "f": "cb",
+       "k": "d7yn2",
+       "label": "Cách tôi dùng thời gian chưa khớp với điều tôi nói là quan trọng"
+      },
+      {
+       "f": "cb",
+       "k": "d7yn3",
+       "label": "Tôi thường làm việc cho xong hơn là vì thấy nó có ý nghĩa"
+      },
+      {
+       "f": "cb",
+       "k": "d7yn4",
+       "label": "Tôi ít khi có thời gian suy nghĩ về hướng đi trong công việc"
+      }
+     ]
+    },
+    {
+     "h": "So sánh",
+     "items": [
+      {
+       "f": "show",
+       "text": "Ngày 1, tầng yếu nhất: {d1weak}.",
+       "need": [
+        "d1weak"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d7weak",
+       "q": "Hôm nay, tầng có nhiều câu được đánh dấu nhất",
+       "opts": [
+        "Thể chất",
+        "Cảm xúc",
+        "Trí tuệ",
+        "Ý nghĩa"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d7diff",
+       "q": "Số câu đánh dấu: Ngày 1 và hôm nay",
+       "ph": "Ví dụ: từ 7 xuống 5"
+      }
+     ]
+    },
+    {
+     "h": "Phần 2: Ba nghi thức cho 30 ngày",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mỗi nghi thức thuộc một tầng khác nhau, ưu tiên tầng yếu nhất, viết thành câu nếu thì có thời điểm cụ thể."
+      },
+      {
+       "f": "tx",
+       "k": "d7r1",
+       "q": "Nghi thức 1: Nếu..., thì tôi sẽ...",
+       "ph": "Ví dụ: Nếu cuộc họp giao ban kết thúc, thì tôi đi lấy nước và nhìn ra xa năm phút"
+      },
+      {
+       "f": "tx",
+       "k": "d7r2",
+       "q": "Nghi thức 2",
+       "ph": "Ví dụ: Nếu là 9 giờ, thì tôi tắt thông báo và làm việc ưu tiên số một trong 60 phút"
+      },
+      {
+       "f": "tx",
+       "k": "d7r3",
+       "q": "Nghi thức 3",
+       "ph": "Ví dụ: Nếu là chiều thứ Sáu, thì tôi gửi một lời ghi nhận cụ thể cho một người trong nhóm"
+      },
+      {
+       "f": "tx",
+       "k": "d7review",
+       "q": "Ngày cố định mỗi tuần để xem lại",
+       "ph": "Ví dụ: chiều thứ Sáu"
+      },
+      {
+       "f": "note",
+       "text": "Cảm ơn các anh chị và các bạn đã đi cùng Trường cả tuần. Ba nghi thức chạy đều trong một tháng có giá trị hơn mười nghi thức chạy được vài ngày nha."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 7: Ba nghi thức của tôi: {d7r1}",
+     "need": [
+      "d7r1"
+     ]
+    },
+    {
+     "tpl": "; {d7r2}",
+     "need": [
+      "d7r1",
+      "d7r2"
+     ]
+    },
+    {
+     "tpl": "; {d7r3}",
+     "need": [
+      "d7r1",
+      "d7r3"
+     ]
+    },
+    {
+     "tpl": ". Số câu đánh dấu {d7diff}",
+     "need": [
+      "d7r1",
+      "d7diff"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d7r1"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 7."
+  }
+ ]
+}
