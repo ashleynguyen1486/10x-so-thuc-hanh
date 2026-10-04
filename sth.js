@@ -40,12 +40,12 @@ const R={
   cal:it=>{const c=g(it.k,{});return `<div class="tablewrap"><table class="cal"><tr><th></th>${it.cols.map(d=>`<th>${esc(d)}</th>`).join('')}</tr>${it.rows.map((s,si)=>`<tr><td>${esc(s)}</td>${it.cols.map((d,di)=>`<td><button type="button" aria-label="${esc(d+' '+s)}" aria-pressed="${!!c[di+'-'+si]}" data-cal="${it.k}" data-cell="${di}-${si}" data-mark="${esc(it.mark)}">${c[di+'-'+si]?esc(it.mark):''}</button></td>`).join('')}</tr>`).join('')}</table></div><p class="note" data-calcount="${it.k}" data-max="${it.max||0}"></p>`}
 };
 function renderWeeks(){const n=$('weeks');if(WEEKS.length<2){n.style.display='none';return}n.style.display='';n.innerHTML=WEEKS.map(w=>`<button role="tab" aria-selected="${w.id===W.id}" data-week="${w.id}">${esc(w.label||('Công thức #'+w.id))}<small>${esc(w.name)}</small></button>`).join('')}
-function renderNav(){$('days').innerHTML=W.days.map((d,i)=>`<button role="tab" aria-selected="${i+1===cur}" class="${g('done'+(i+1),false)?'done':''}" data-day="${i+1}">Ngày ${i+1}<small>${esc(d.label)}</small></button>`).join('');const done=W.days.filter((_,i)=>g('done'+(i+1),false)).length;$('pbar').style.width=(done/W.days.length*100)+'%';$('ptext').textContent=`${done}/${W.days.length} ngày đã check-in`}
+function renderNav(){$('days').innerHTML=W.days.map((d,i)=>`<button role="tab" aria-selected="${i+1===cur}" class="${g('done'+(i+1),false)?'done':''}" data-day="${i+1}">Ngày ${i+1}<small>${esc(d.label)}</small></button>`).join('');const done=W.days.filter((_,i)=>g('done'+(i+1),false)).length;$('pbar').style.width=(done/W.days.length*100)+'%';$('ptext').textContent=`${done}/${W.days.length} ngày đã chia sẻ`}
 function render(){
   stopTimer();
   $('kick').textContent='10X Excellence Hub · '+(W.kicker||('Công thức #'+W.id));$('h1').textContent=W.title;$('sub').textContent=W.sub||'';
   const d=W.days[cur-1];
-  $('main').innerHTML=`<section class="day"><div class="head"><div class="kick">Ngày ${cur}/${W.days.length} · ${esc(d.kick)}</div><h2>${esc(d.title)}</h2>${d.time?`<span class="time">${esc(d.time)}</span>`:''}</div>${d.cards.map(c=>`<div class="card"><h3>${esc(c.h)}</h3>${c.items.map(it=>(R[it.f]||(()=>''))(it)).join('')}</div>`).join('')}<div class="ci"><h3>Check-in Ngày ${cur}</h3><div class="out" id="out" aria-live="polite"></div><div class="row"><button class="btn" data-copy>Sao chép câu check-in</button><button class="btn ghost" data-done>${g('done'+cur,false)?'Đã check-in ✓':'Đánh dấu đã check-in'}</button></div><small>${esc(d.hint||'')}</small></div></section>`;
+  $('main').innerHTML=`<section class="day"><div class="head"><div class="kick">Ngày ${cur}/${W.days.length} · ${esc(d.kick)}</div><h2>${esc(d.title)}</h2>${d.time?`<span class="time">${esc(d.time)}</span>`:''}</div>${d.cards.map(c=>`<div class="card"><h3>${esc(c.h)}</h3>${c.items.map(it=>(R[it.f]||(()=>''))(it)).join('')}</div>`).join('')}<div class="ci"><h3>Câu chia sẻ Ngày ${cur}</h3><div class="out" id="out" aria-live="polite"></div><div class="row"><button class="btn" data-copy>Sao chép câu chia sẻ</button><button class="btn ghost" data-done>${g('done'+cur,false)?'Đã chia sẻ ✓':'Đánh dấu đã chia sẻ'}</button></div><small>${esc(d.hint||'')}</small></div></section>`;
   renderWeeks();renderNav();refresh();
 }
 function refresh(){
@@ -57,7 +57,7 @@ function refresh(){
   m.querySelectorAll('[data-val]').forEach(e=>e.textContent=txt(e.dataset.val)||'...');
   m.querySelectorAll('[data-sum]').forEach(e=>e.textContent=e.dataset.sum.split(',').reduce((a,k)=>a+(+g(k)||0),0));
   m.querySelectorAll('[data-calcount]').forEach(e=>{const n=Object.values(g(e.dataset.calcount,{})).filter(Boolean).length;const mx=+e.dataset.max;e.textContent=`Đã chọn ${n} khung giờ${mx&&n>mx?'. Gợi ý: giữ khoảng '+mx+' khung để dễ duy trì.':'.'}`});
-  const o=$('out');if(o)o.textContent=checkin(cur)||'Điền các ô phía trên, câu check-in sẽ tự xuất hiện ở đây.';
+  const o=$('out');if(o)o.textContent=checkin(cur)||'Điền các ô phía trên, câu chia sẻ sẽ tự xuất hiện ở đây.';
 }
 const fmt=s=>String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
 function resetTimer(dk){stopTimer();const s=(+g(dk,45)||45)*60;tState.left=s;tState.start=s;const c=$('clk');if(c)c.textContent=fmt(s);const b=root.querySelector('[data-t="start"]');if(b)b.textContent='Bắt đầu'}
@@ -75,10 +75,10 @@ root.addEventListener('click',async e=>{
   const sb=e.target.closest('[data-seg] button');if(sb){const k=sb.parentElement.dataset.seg,v=sb.dataset.v,nv=String(g(k))===v?'':v;set(k,nv);[...sb.parentElement.children].forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.v===nv)));refresh();return}
   const pk=e.target.closest('[data-pk]');if(pk){set(pk.dataset.pk,g(pk.dataset.pk)===pk.dataset.v?'':pk.dataset.v);refresh();return}
   const cl=e.target.closest('[data-cal]');if(cl){const k=cl.dataset.cal,c={...g(k,{})};c[cl.dataset.cell]=!c[cl.dataset.cell];set(k,c);cl.setAttribute('aria-pressed',String(c[cl.dataset.cell]));cl.textContent=c[cl.dataset.cell]?cl.dataset.mark:'';refresh();return}
-  const cp=e.target.closest('[data-copy]');if(cp){const t=checkin(cur);if(!t){cp.textContent='Hãy điền trước khi sao chép';setTimeout(()=>cp.textContent='Sao chép câu check-in',1800);return}
+  const cp=e.target.closest('[data-copy]');if(cp){const t=checkin(cur);if(!t){cp.textContent='Hãy điền trước khi sao chép';setTimeout(()=>cp.textContent='Sao chép câu chia sẻ',1800);return}
     try{await navigator.clipboard.writeText(t);cp.textContent='Đã sao chép, dán vào bình luận'}catch(_){const r=document.createRange();r.selectNodeContents($('out'));const s=getSelection();s.removeAllRanges();s.addRange(r);cp.textContent='Đã chọn sẵn, bấm Cmd+C hoặc Ctrl+C để sao chép'}
-    setTimeout(()=>cp.textContent='Sao chép câu check-in',2600);return}
-  const dn=e.target.closest('[data-done]');if(dn){const k='done'+cur;set(k,!g(k,false));dn.textContent=g(k,false)?'Đã check-in ✓':'Đánh dấu đã check-in';renderNav();return}
+    setTimeout(()=>cp.textContent='Sao chép câu chia sẻ',2600);return}
+  const dn=e.target.closest('[data-done]');if(dn){const k='done'+cur;set(k,!g(k,false));dn.textContent=g(k,false)?'Đã chia sẻ ✓':'Đánh dấu đã chia sẻ';renderNav();return}
   const tb=e.target.closest('[data-t]');if(tb){tb.dataset.t==='start'?toggleTimer(tb):(tState.k=tb.dataset.tk,resetTimer(tb.dataset.dk))}
 });
 root.addEventListener('input',e=>{const t=e.target;if(t.dataset&&t.dataset.k&&t.type!=='checkbox'&&t.tagName!=='SELECT'){set(t.dataset.k,t.value);root.querySelectorAll(`[data-k="${t.dataset.k}"]`).forEach(x=>{if(x!==t)x.value=t.value});refresh()}});
