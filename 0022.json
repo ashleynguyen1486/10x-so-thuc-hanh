@@ -302,7 +302,7 @@
    ],
    "checkin": [
     {
-     "tpl": "Tôi ghép {j_like} với {j_habit}.",
+     "tpl": "Tôi chỉ {j_like} khi đang {j_habit}.",
      "need": [
       "j_like",
       "j_habit"
