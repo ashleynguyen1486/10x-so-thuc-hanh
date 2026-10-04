@@ -178,7 +178,7 @@
      ]
     },
     {
-     "tpl": ". {d1how}",
+     "tpl": ": {d1how}",
      "need": [
       "d1weak",
       "d1how"
