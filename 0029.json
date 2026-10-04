@@ -1,0 +1,866 @@
+{
+ "id": "0029",
+ "name": "Tiên liệu thất bại",
+ "storeKey": "sth-0029",
+ "kicker": "Công thức #0029",
+ "title": "Thử thách Tiên liệu thất bại 7 ngày",
+ "sub": "Mỗi ngày từ 15 đến 45 phút, cho một dự án công việc sắp bắt đầu. Các anh chị và các bạn điền trên trang, bấm sao chép câu chia sẻ rồi dán vào bình luận của bài hôm đó trên 10X Excellence Hub nha. Trường đồng hành cùng mọi người cả tuần.",
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Chọn dự án",
+   "title": "Chọn một dự án sắp bắt đầu",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Những dự án sắp bắt đầu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Liệt kê ba dự án hoặc kế hoạch trong công việc sẽ bắt đầu trong một đến ba tháng tới."
+      },
+      {
+       "f": "tx",
+       "k": "d1a",
+       "q": "Dự án 1",
+       "ph": "Ví dụ: triển khai phần mềm quản lý khách hàng"
+      },
+      {
+       "f": "tx",
+       "k": "d1b",
+       "q": "Dự án 2",
+       "ph": "Một dự án khác"
+      },
+      {
+       "f": "tx",
+       "k": "d1c",
+       "q": "Dự án 3",
+       "ph": "Một dự án khác"
+      }
+     ]
+    },
+    {
+     "h": "Dự án của tuần",
+     "items": [
+      {
+       "f": "note",
+       "text": "Chọn dự án quan trọng nhất, có nhiều người hoặc nhiều bước tham gia. Khi chia sẻ, chỉ cần nêu loại dự án, không cần nêu tên khách hàng hay thông tin nội bộ nha."
+      },
+      {
+       "f": "tx",
+       "k": "d1proj",
+       "q": "Dự án tôi chọn",
+       "ph": "Ví dụ: triển khai phần mềm quản lý khách hàng cho phòng kinh doanh"
+      },
+      {
+       "f": "ta",
+       "k": "d1goal",
+       "q": "Tiêu chí thành công, đo được, có thời hạn",
+       "ph": "Ví dụ: đến 31/1, 80% nhân viên kinh doanh dùng phần mềm thay bảng tính"
+      },
+      {
+       "f": "seg",
+       "k": "d1conf",
+       "q": "Mức tự tin dự án sẽ thành công",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 1: Dự án: {d1proj}",
+     "need": [
+      "d1proj"
+     ]
+    },
+    {
+     "tpl": ". Tiêu chí: {d1goal}",
+     "need": [
+      "d1proj",
+      "d1goal"
+     ]
+    },
+    {
+     "tpl": ". Tự tin: {d1conf}/5",
+     "need": [
+      "d1proj",
+      "d1conf"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d1proj"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Câu chuyện thất bại",
+   "title": "Viết câu chuyện thất bại",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Câu chuyện thất bại",
+     "items": [
+      {
+       "f": "show",
+       "text": "Dự án: {d1proj}",
+       "need": [
+        "d1proj"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2date",
+       "q": "Ngày tưởng tượng dự án đã kết thúc",
+       "ph": "Ví dụ: 31/1"
+      },
+      {
+       "f": "show",
+       "text": "Hôm nay là ngày {d2date}, dự án đã thất bại hoàn toàn. Vì sao?",
+       "need": [
+        "d2date"
+       ]
+      },
+      {
+       "f": "timer",
+       "k": "d2min",
+       "dk": "d2dur",
+       "opts": [
+        5,
+        10,
+        15
+       ],
+       "def": 10,
+       "note": "Viết mọi lý do, càng nhiều càng tốt. Chưa đánh giá, chưa chọn lọc. Viết cụ thể: ai, cái gì, khi nào."
+      },
+      {
+       "f": "tx",
+       "k": "d2r1",
+       "q": "Lý do 1",
+       "ph": "Ví dụ: quản lý vẫn yêu cầu báo cáo bằng bảng tính"
+      },
+      {
+       "f": "tx",
+       "k": "d2r2",
+       "q": "Lý do 2",
+       "ph": "Một lý do thất bại"
+      },
+      {
+       "f": "tx",
+       "k": "d2r3",
+       "q": "Lý do 3",
+       "ph": "Một lý do thất bại"
+      },
+      {
+       "f": "tx",
+       "k": "d2r4",
+       "q": "Lý do 4",
+       "ph": "Một lý do thất bại"
+      },
+      {
+       "f": "tx",
+       "k": "d2r5",
+       "q": "Lý do 5",
+       "ph": "Một lý do thất bại"
+      },
+      {
+       "f": "tx",
+       "k": "d2r6",
+       "q": "Lý do 6",
+       "ph": "Một lý do thất bại"
+      },
+      {
+       "f": "tx",
+       "k": "d2r7",
+       "q": "Lý do 7",
+       "ph": "Một lý do thất bại"
+      },
+      {
+       "f": "tx",
+       "k": "d2r8",
+       "q": "Lý do 8",
+       "ph": "Một lý do thất bại"
+      },
+      {
+       "f": "tx",
+       "k": "d2r9",
+       "q": "Lý do 9",
+       "ph": "Một lý do thất bại"
+      },
+      {
+       "f": "tx",
+       "k": "d2r10",
+       "q": "Lý do 10",
+       "ph": "Một lý do thất bại"
+      }
+     ]
+    },
+    {
+     "h": "Sau khi viết",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d2n",
+         "q": "Số lý do đã viết"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2new",
+       "q": "Lý do mình chưa từng nghĩ tới trước đây",
+       "ph": "Ví dụ: nhân viên phải nhập dữ liệu hai nơi"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 2: Viết được {d2n} lý do thất bại",
+     "need": [
+      "d2n"
+     ]
+    },
+    {
+     "tpl": ". Lý do mình chưa từng nghĩ tới: {d2new}",
+     "need": [
+      "d2n",
+      "d2new"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d2n"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Năm nhóm",
+   "title": "Xếp lý do vào năm nhóm",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Xếp lý do vào năm nhóm",
+     "items": [
+      {
+       "f": "note",
+       "text": "Các lý do viết hôm qua hiện lại ở đây, sửa được nếu cần. Bấm một nhóm cho mỗi lý do. Ô trống thì dùng để thêm lý do mới."
+      },
+      {
+       "f": "rows",
+       "n": 10,
+       "kp": "d2r",
+       "ph": "Lý do",
+       "zk": "d3z",
+       "zones": [
+        [
+         "Con người",
+         "Con người"
+        ],
+        [
+         "Quy trình",
+         "Quy trình"
+        ],
+        [
+         "Nguồn lực",
+         "Nguồn lực"
+        ],
+        [
+         "Bên ngoài",
+         "Bên ngoài"
+        ],
+        [
+         "Chính mình",
+         "Chính mình"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Bức tranh theo nhóm",
+     "items": [
+      {
+       "f": "matrix",
+       "top": "Lý do được xếp theo nhóm",
+       "bottom": "Nhóm trống là chỗ có thể đang bị bỏ sót",
+       "n": 10,
+       "kp": "d2r",
+       "zk": "d3z",
+       "zones": [
+        [
+         "Con người",
+         "Con người",
+         "Ai có thể rời đi, quá tải, không đồng ý?"
+        ],
+        [
+         "Quy trình",
+         "Quy trình",
+         "Bước nào phụ thuộc bước khác?"
+        ],
+        [
+         "Nguồn lực",
+         "Nguồn lực",
+         "Thời gian, ngân sách, công cụ"
+        ],
+        [
+         "Bên ngoài",
+         "Bên ngoài",
+         "Khách hàng, đối tác, thị trường"
+        ],
+        [
+         "Chính mình",
+         "Chính mình",
+         "Mình có thể đánh giá sai điều gì?"
+        ]
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d3most",
+       "q": "Nhóm có nhiều lý do nhất",
+       "opts": [
+        "Con người",
+        "Quy trình",
+        "Nguồn lực",
+        "Bên ngoài",
+        "Chính mình"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d3empty",
+       "q": "Nhóm ít hoặc trống",
+       "opts": [
+        "Con người",
+        "Quy trình",
+        "Nguồn lực",
+        "Bên ngoài",
+        "Chính mình"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3add",
+       "q": "Lý do bổ sung cho nhóm còn trống",
+       "ph": "Ví dụ: mình nhận thêm việc cuối năm nên ít thời gian hỗ trợ"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 3: Nhiều lý do nhất ở nhóm {d3most}",
+     "need": [
+      "d3most"
+     ]
+    },
+    {
+     "tpl": ". Nhóm trống: {d3empty}",
+     "need": [
+      "d3most",
+      "d3empty"
+     ]
+    },
+    {
+     "tpl": ". Thêm: {d3add}",
+     "need": [
+      "d3most",
+      "d3add"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d3most"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Chọn ba",
+   "title": "Chọn ba rủi ro đáng phòng nhất",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Xếp mức ưu tiên",
+     "items": [
+      {
+       "f": "note",
+       "text": "Với mỗi lý do, hỏi: có dễ xảy ra không, và nếu xảy ra thì hậu quả lớn đến đâu? Ưu tiên phòng: cao ở cả hai. Theo dõi: chỉ cao ở một câu. Chấp nhận: thấp ở cả hai."
+      },
+      {
+       "f": "rows",
+       "n": 10,
+       "kp": "d2r",
+       "ph": "Lý do",
+       "zk": "d4p",
+       "zones": [
+        [
+         "Ưu tiên",
+         "Ưu tiên phòng"
+        ],
+        [
+         "Theo dõi",
+         "Theo dõi"
+        ],
+        [
+         "Chấp nhận",
+         "Chấp nhận"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Ba rủi ro đáng phòng nhất",
+     "items": [
+      {
+       "f": "note",
+       "text": "Bấm chọn một lý do cho mỗi rủi ro. Muốn viết lại cụ thể hơn thì sửa ngay trong danh sách lý do ở trên."
+      },
+      {
+       "f": "pick",
+       "k": "d4t1",
+       "n": 10,
+       "kp": "d2r",
+       "empty": "Chưa có lý do nào ở Ngày 2."
+      },
+      {
+       "f": "pick",
+       "k": "d4t2",
+       "n": 10,
+       "kp": "d2r",
+       "empty": ""
+      },
+      {
+       "f": "pick",
+       "k": "d4t3",
+       "n": 10,
+       "kp": "d2r",
+       "empty": ""
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 4: Ba rủi ro được chọn: {d4t1}",
+     "need": [
+      "d4t1"
+     ]
+    },
+    {
+     "tpl": "; {d4t2}",
+     "need": [
+      "d4t1",
+      "d4t2"
+     ]
+    },
+    {
+     "tpl": "; {d4t3}",
+     "need": [
+      "d4t1",
+      "d4t3"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d4t1"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Phòng trước",
+   "title": "Lập hành động phòng ngừa",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "Rủi ro 1",
+     "items": [
+      {
+       "f": "show",
+       "text": "{d4t1}",
+       "need": [
+        "d4t1"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5a1",
+       "q": "Hành động phòng ngừa",
+       "ph": "Ví dụ: đề xuất dừng báo cáo bảng tính từ ngày triển khai"
+      },
+      {
+       "f": "tx",
+       "k": "d5o1",
+       "q": "Người phụ trách",
+       "ph": "Ví dụ: mình"
+      },
+      {
+       "f": "tx",
+       "k": "d5d1",
+       "q": "Ngày thực hiện",
+       "ph": "Ví dụ: thứ Ba tuần sau"
+      },
+      {
+       "f": "tx",
+       "k": "d5s1",
+       "q": "Dấu hiệu sớm",
+       "ph": "Ví dụ: tuần đầu còn người gửi bảng tính"
+      }
+     ]
+    },
+    {
+     "h": "Rủi ro 2",
+     "items": [
+      {
+       "f": "show",
+       "text": "{d4t2}",
+       "need": [
+        "d4t2"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5a2",
+       "q": "Hành động phòng ngừa",
+       "ph": "Một việc cụ thể"
+      },
+      {
+       "f": "tx",
+       "k": "d5o2",
+       "q": "Người phụ trách",
+       "ph": "Tên"
+      },
+      {
+       "f": "tx",
+       "k": "d5d2",
+       "q": "Ngày thực hiện",
+       "ph": "Ngày"
+      },
+      {
+       "f": "tx",
+       "k": "d5s2",
+       "q": "Dấu hiệu sớm",
+       "ph": "Điều gì cho biết rủi ro đang đến gần?"
+      }
+     ]
+    },
+    {
+     "h": "Rủi ro 3",
+     "items": [
+      {
+       "f": "show",
+       "text": "{d4t3}",
+       "need": [
+        "d4t3"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5a3",
+       "q": "Hành động phòng ngừa",
+       "ph": "Một việc cụ thể"
+      },
+      {
+       "f": "tx",
+       "k": "d5o3",
+       "q": "Người phụ trách",
+       "ph": "Tên"
+      },
+      {
+       "f": "tx",
+       "k": "d5d3",
+       "q": "Ngày thực hiện",
+       "ph": "Ngày"
+      },
+      {
+       "f": "tx",
+       "k": "d5s3",
+       "q": "Dấu hiệu sớm",
+       "ph": "Điều gì cho biết rủi ro đang đến gần?"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 5: Rủi ro 1: {d4t1}",
+     "need": [
+      "d4t1",
+      "d5a1"
+     ]
+    },
+    {
+     "tpl": ". Phòng: {d5a1}",
+     "need": [
+      "d4t1",
+      "d5a1"
+     ]
+    },
+    {
+     "tpl": ", {d5o1} phụ trách",
+     "need": [
+      "d5a1",
+      "d5o1"
+     ]
+    },
+    {
+     "tpl": ", {d5d1}",
+     "need": [
+      "d5a1",
+      "d5d1"
+     ]
+    },
+    {
+     "tpl": ". Dấu hiệu sớm: {d5s1}",
+     "need": [
+      "d5a1",
+      "d5s1"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d4t1",
+      "d5a1"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Góc nhìn khác",
+   "title": "Mời một góc nhìn khác",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Mời một góc nhìn khác",
+     "items": [
+      {
+       "f": "show",
+       "text": "Dự án: {d1proj}",
+       "need": [
+        "d1proj"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6who",
+       "q": "Đồng nghiệp sẽ hỏi (tốt nhất ở bộ phận khác)",
+       "ph": "Ví dụ: anh Hùng phòng vận hành"
+      },
+      {
+       "f": "seg",
+       "k": "d6how",
+       "q": "Hình thức",
+       "opts": [
+        "15 phút trực tiếp",
+        "Nhắn tin",
+        "Đầu một cuộc họp nhóm"
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d6msg",
+       "q": "Lời mời ngắn (nói rõ mục đích là tìm rủi ro, không tìm người có lỗi)",
+       "ph": "Ví dụ: nếu tưởng tượng ba tháng sau dự án đã hỏng, anh nghĩ lý do lớn nhất là gì?"
+      },
+      {
+       "f": "tx",
+       "k": "d6when",
+       "q": "Thời gian gửi hoặc gặp",
+       "ph": "Ví dụ: sáng thứ Hai"
+      },
+      {
+       "f": "cb",
+       "k": "d6set",
+       "label": "Đã đặt nhắc lịch"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 6: Sẽ hỏi {d6who}",
+     "need": [
+      "d6who"
+     ]
+    },
+    {
+     "tpl": " bằng hình thức {d6how}",
+     "need": [
+      "d6who",
+      "d6how"
+     ]
+    },
+    {
+     "tpl": ", {d6when}",
+     "need": [
+      "d6who",
+      "d6when"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d6who"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6."
+  },
+  {
+   "label": "Chủ Nhật",
+   "kick": "30 ngày",
+   "title": "Giữ thói quen trong 30 ngày",
+   "time": "Khoảng 30 đến 45 phút",
+   "cards": [
+    {
+     "h": "Kiểm tra dấu hiệu sớm mỗi tuần",
+     "items": [
+      {
+       "f": "show",
+       "text": "Dấu hiệu 1: {d5s1}",
+       "need": [
+        "d5s1"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Dấu hiệu 2: {d5s2}",
+       "need": [
+        "d5s2"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Dấu hiệu 3: {d5s3}",
+       "need": [
+        "d5s3"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d7day",
+       "q": "Ngày xem lại mỗi tuần (10 phút)",
+       "opts": [
+        "Thứ Hai",
+        "Thứ Ba",
+        "Thứ Tư",
+        "Thứ Năm",
+        "Thứ Sáu"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d7time",
+       "q": "Giờ xem lại",
+       "ph": "Ví dụ: 16 giờ 30"
+      },
+      {
+       "f": "cb",
+       "k": "d7cal",
+       "label": "Đã ghi ngày làm ba hành động phòng ngừa vào lịch"
+      }
+     ]
+    },
+    {
+     "h": "Dự án tiếp theo và ngày xem lại",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d7next",
+       "q": "Dự án tiếp theo sẽ tiên liệu thất bại",
+       "ph": "Ví dụ: lập ngân sách năm sau"
+      },
+      {
+       "f": "tx",
+       "k": "d7nextd",
+       "q": "Ngày làm",
+       "ph": "Ví dụ: 15/12"
+      },
+      {
+       "f": "tx",
+       "k": "d7review",
+       "q": "Ngày xem lại sau 30 ngày",
+       "ph": "Ví dụ: 6/1"
+      },
+      {
+       "f": "note",
+       "text": "Cảm ơn các anh chị và các bạn đã đi cùng Trường cả tuần, và cả chín tuần thử thách. Kế hoạch tốt là kế hoạch đã biết rủi ro nằm ở đâu nha."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 7: Xem lại dấu hiệu sớm mỗi {d7day}",
+     "need": [
+      "d7day"
+     ]
+    },
+    {
+     "tpl": " lúc {d7time}",
+     "need": [
+      "d7day",
+      "d7time"
+     ]
+    },
+    {
+     "tpl": ". Dự án tiếp theo: {d7next}",
+     "need": [
+      "d7day",
+      "d7next"
+     ]
+    },
+    {
+     "tpl": ", tiên liệu thất bại vào {d7nextd}",
+     "need": [
+      "d7next",
+      "d7nextd"
+     ]
+    },
+    {
+     "tpl": ". Ngày xem lại: {d7review}",
+     "need": [
+      "d7day",
+      "d7review"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d7day"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 7."
+  }
+ ]
+}
