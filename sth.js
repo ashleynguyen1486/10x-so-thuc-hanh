@@ -45,9 +45,25 @@ function render(){
   stopTimer();
   $('kick').textContent='10X Excellence Hub · '+(W.kicker||('Công thức #'+W.id));$('h1').textContent=W.title;$('sub').textContent=W.sub||'';
   const d=W.days[cur-1];
-  $('main').innerHTML=`<section class="day"><div class="head"><div class="kick">Ngày ${cur}/${W.days.length} · ${esc(d.kick)}</div><h2>${esc(d.title)}</h2>${d.time?`<span class="time">${esc(d.time)}</span>`:''}</div>${d.cards.map(c=>`<div class="card"><h3>${esc(c.h)}</h3>${c.items.map(it=>(R[it.f]||(()=>''))(it)).join('')}</div>`).join('')}<div class="ci"><h3>Câu chia sẻ Ngày ${cur}</h3><div class="out" id="out" aria-live="polite"></div><div class="row"><button class="btn" data-copy>Sao chép câu chia sẻ</button><button class="btn ghost" data-done>${g('done'+cur,false)?'Đã chia sẻ ✓':'Đánh dấu đã chia sẻ'}</button></div><small>${esc(d.hint||'')}</small></div></section>`;
+  $('main').innerHTML=`<section class="day"><div class="head"><div class="kick">Ngày ${cur}/${W.days.length} · ${esc(d.kick)}</div><h2>${esc(d.title)}</h2>${d.time?`<span class="time">${esc(d.time)}</span>`:''}</div>${d.cards.map(c=>`<div class="card"><h3>${esc(c.h)}</h3>${c.items.map(it=>(R[it.f]||(()=>''))(it)).join('')}</div>`).join('')}<div class="ci"><h3>Câu chia sẻ Ngày ${cur}</h3><div class="out" id="out" aria-live="polite"></div><div class="row"><button class="btn" data-copy>Sao chép câu chia sẻ</button><button class="btn ghost" data-done>${g('done'+cur,false)?'Đã chia sẻ ✓':'Đánh dấu đã chia sẻ'}</button></div><small>${esc(d.hint||'')}</small></div>${badgeHTML()}</section>`;
   renderWeeks();renderNav();refresh();
 }
+const allDone=()=>W.days.every((_,i)=>g('done'+(i+1),false));
+function badgeHTML(){if(!allDone())return '';const n=W.days.length;return `<div class="card"><h3>Thẻ thành tích</h3><p class="note">Chúc mừng, mình đã chia sẻ đủ ${n}/${n} ngày. Nhập tên để in lên thẻ, tải thẻ về rồi đăng vào bình luận bài cuối tuần để cả nhóm cùng ghi nhận.</p><input type="text" data-k="badgeName" placeholder="Tên của mình" value="${esc(g('badgeName'))}"><canvas id="bcv" width="1600" height="900" style="width:100%;height:auto;border-radius:10px;border:1px solid var(--line);background:#fbf7f6"></canvas><div class="row"><button class="btn" data-badge>Tải thẻ thành tích</button></div></div>`}
+let LOGO=null;function logo(cb){if(LOGO){cb(LOGO);return}const im=new Image();im.crossOrigin='anonymous';im.onload=()=>{LOGO=im;cb(im)};im.onerror=()=>cb(null);im.src=BASE+'logo.png'}
+function wrapT(c,t,maxW){const w=t.split(' ');const L=[];let cur='';for(const x of w){const tt=cur?cur+' '+x:x;if(c.measureText(tt).width>maxW&&cur){L.push(cur);cur=x}else cur=tt}if(cur)L.push(cur);return L}
+function drawBadge(){const cv=$('bcv');if(!cv)return;const c=cv.getContext('2d');const F="'Be Vietnam Pro',Arial,sans-serif";const RED='#862222',INK='#2a1f1f';const n=W.days.length;
+ c.fillStyle='#fbf7f6';c.fillRect(0,0,1600,900);c.fillStyle=RED;c.fillRect(0,0,1600,14);c.fillRect(0,886,1600,14);
+ c.strokeStyle='#e6d4d1';c.lineWidth=3;c.strokeRect(60,60,1480,780);
+ c.beginPath();c.arc(1280,450,190,0,Math.PI*2);c.fillStyle=RED;c.fill();c.strokeStyle='#ffffff';c.lineWidth=8;c.beginPath();c.arc(1280,450,160,0,Math.PI*2);c.stroke();
+ c.strokeStyle='#ffffff';c.lineWidth=26;c.lineCap='round';c.lineJoin='round';c.beginPath();c.moveTo(1200,455);c.lineTo(1260,515);c.lineTo(1370,395);c.stroke();
+ c.fillStyle=RED;c.font=`800 34px ${F}`;c.textAlign='center';c.fillText('ĐỦ '+n+'/'+n+' NGÀY',1280,700);
+ c.textAlign='left';c.fillStyle=RED;c.font=`800 30px ${F}`;c.fillText('THẺ THÀNH TÍCH · '+(W.kicker||('Công thức #'+W.id)).toUpperCase(),130,285);
+ c.fillStyle=INK;const TT=W.title.toUpperCase();let tf=64;c.font=`800 ${tf}px ${F}`;while(c.measureText(TT).width>930&&tf>46){tf-=2;c.font=`800 ${tf}px ${F}`}let y=370;for(const l of wrapT(c,TT,930).slice(0,2)){c.fillText(l,130,y);y+=tf+14}
+ const nm=txt('badgeName')||'Thành viên 10X Excellence Hub';c.fillStyle=RED;c.font=`800 72px ${F}`;let fs=72;while(c.measureText(nm).width>900&&fs>40){fs-=4;c.font=`800 ${fs}px ${F}`}c.fillText(nm,130,y+60);
+ c.fillStyle=INK;c.font=`500 34px ${F}`;c.fillText('Đã hoàn thành và chia sẻ đủ '+n+' ngày thử thách',130,y+130);
+ c.fillStyle='#5f4a4a';c.font=`600 28px ${F}`;c.fillText((W.label||'')+'  ·  10X Excellence Hub',130,770);
+ logo(im=>{if(im&&$('bcv')===cv){const h=105,w=im.width*h/im.height;c.drawImage(im,130,105,w,h)}})}
 function refresh(){
   const m=$('main');
   m.querySelectorAll('[data-show]').forEach(e=>{const it=JSON.parse(e.dataset.show);const ok=(it.need||[]).every(t=>val(t));e.textContent=ok?fillRaw(it.text):'';e.style.display=ok?'':'none'});
@@ -57,7 +73,7 @@ function refresh(){
   m.querySelectorAll('[data-val]').forEach(e=>e.textContent=txt(e.dataset.val)||'...');
   m.querySelectorAll('[data-sum]').forEach(e=>e.textContent=e.dataset.sum.split(',').reduce((a,k)=>a+(+g(k)||0),0));
   m.querySelectorAll('[data-calcount]').forEach(e=>{const n=Object.values(g(e.dataset.calcount,{})).filter(Boolean).length;const mx=+e.dataset.max;if(e.dataset.unit){e.textContent=`Đã đánh dấu ${n} ${e.dataset.unit}.`;return}e.textContent=`Đã chọn ${n} khung giờ${mx&&n>mx?'. Gợi ý: giữ khoảng '+mx+' khung để dễ duy trì.':'.'}`});
-  const o=$('out');if(o)o.textContent=checkin(cur)||'Điền các ô phía trên, câu chia sẻ sẽ tự xuất hiện ở đây.';
+  const o=$('out');if(o)o.textContent=checkin(cur)||'Điền các ô phía trên, câu chia sẻ sẽ tự xuất hiện ở đây.';if(document.fonts&&document.fonts.ready)document.fonts.ready.then(drawBadge);else drawBadge();
 }
 const fmt=s=>String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
 function resetTimer(dk){stopTimer();const s=(+g(dk,45)||45)*60;tState.left=s;tState.start=s;const c=$('clk');if(c)c.textContent=fmt(s);const b=root.querySelector('[data-t="start"]');if(b)b.textContent='Bắt đầu'}
@@ -78,7 +94,8 @@ root.addEventListener('click',async e=>{
   const cp=e.target.closest('[data-copy]');if(cp){const t=checkin(cur);if(!t){cp.textContent='Hãy điền trước khi sao chép';setTimeout(()=>cp.textContent='Sao chép câu chia sẻ',1800);return}
     try{await navigator.clipboard.writeText(t);cp.textContent='Đã sao chép, dán vào bình luận'}catch(_){const r=document.createRange();r.selectNodeContents($('out'));const s=getSelection();s.removeAllRanges();s.addRange(r);cp.textContent='Đã chọn sẵn, bấm Cmd+C hoặc Ctrl+C để sao chép'}
     setTimeout(()=>cp.textContent='Sao chép câu chia sẻ',2600);return}
-  const dn=e.target.closest('[data-done]');if(dn){const k='done'+cur;set(k,!g(k,false));dn.textContent=g(k,false)?'Đã chia sẻ ✓':'Đánh dấu đã chia sẻ';renderNav();return}
+  const dn=e.target.closest('[data-done]');if(dn){const k='done'+cur;set(k,!g(k,false));render();return}
+  const bd=e.target.closest('[data-badge]');if(bd){const cv=$('bcv');if(!cv)return;try{cv.toBlob(b=>{const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download='the-thanh-tich-'+W.id+'.png';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000)},'image/png')}catch(_){bd.textContent='Nhấn giữ vào thẻ để lưu hình'}return}
   const tb=e.target.closest('[data-t]');if(tb){tb.dataset.t==='start'?toggleTimer(tb):(tState.k=tb.dataset.tk,resetTimer(tb.dataset.dk))}
 });
 root.addEventListener('input',e=>{const t=e.target;if(t.dataset&&t.dataset.k&&t.type!=='checkbox'&&t.tagName!=='SELECT'){set(t.dataset.k,t.value);root.querySelectorAll(`[data-k="${t.dataset.k}"]`).forEach(x=>{if(x!==t)x.value=t.value});refresh()}});
