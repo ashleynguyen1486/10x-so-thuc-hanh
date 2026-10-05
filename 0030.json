@@ -1,0 +1,865 @@
+{
+ "id": "0030",
+ "name": "Hiệu ứng việc dở dang",
+ "storeKey": "sth-0030-6n",
+ "kicker": "Công thức #0030",
+ "title": "Hiệu ứng việc dở dang: khép việc treo trước cuối năm",
+ "sub": "Còn ba tuần nữa là hết năm 2026. Tuần này gom mọi việc dở dang ra giấy, cho mỗi việc một chỗ đứng, khép những việc treo lâu nhất và thêm cho thói quen then chốt một nghi thức kết thúc ngày, từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "loops",
+  "big": "3",
+  "unit": "VIỆC TREO ĐÃ KHÉP",
+  "line": "Nghi thức kết thúc ngày: {j_shutdown|đã gắn với thói quen then chốt}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Gom việc",
+   "title": "Gom tất cả ra giấy",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Mới tham gia hoặc muốn viết lại? Điền hai ô dưới đây, sổ lưu cho cả hành trình."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: khép việc gọn gàng trước khi rời văn phòng"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen đang giữ",
+       "ph": "Ví dụ: làm việc sâu 30 phút mỗi sáng"
+      }
+     ]
+    },
+    {
+     "h": "Mọi việc đang dở dang",
+     "items": [
+      {
+       "f": "note",
+       "text": "Đặt hẹn giờ 15 phút. Viết mọi việc trong công việc đang dở, lớn hay nhỏ. Đừng phân loại, đừng đánh giá. Tám ô dưới đây dùng cho Ngày 2; việc còn lại ghi thêm ở ô cuối."
+      },
+      {
+       "f": "tx",
+       "k": "d1v1",
+       "q": "Việc 1",
+       "ph": "Ví dụ: Trả lời thư báo giá của khách hàng A"
+      },
+      {
+       "f": "tx",
+       "k": "d1v2",
+       "q": "Việc 2",
+       "ph": "Ví dụ: Đọc báo cáo sự cố của nhà cung cấp"
+      },
+      {
+       "f": "tx",
+       "k": "d1v3",
+       "q": "Việc 3",
+       "ph": "Ví dụ: Gửi biên bản họp tuần trước"
+      },
+      {
+       "f": "tx",
+       "k": "d1v4",
+       "q": "Việc 4",
+       "ph": "Ví dụ: Cập nhật quy trình kiểm tra cuối ngày"
+      },
+      {
+       "f": "tx",
+       "k": "d1v5",
+       "q": "Việc 5",
+       "ph": "Ví dụ: Hẹn trao đổi với nhân viên mới"
+      },
+      {
+       "f": "tx",
+       "k": "d1v6",
+       "q": "Việc 6",
+       "ph": "Ví dụ: Đối chiếu công nợ tháng 11"
+      },
+      {
+       "f": "tx",
+       "k": "d1v7",
+       "q": "Việc 7",
+       "ph": "Ví dụ: Sắp xếp thư mục dự án"
+      },
+      {
+       "f": "tx",
+       "k": "d1v8",
+       "q": "Việc 8",
+       "ph": "Ví dụ: Gửi lời cảm ơn đối tác"
+      },
+      {
+       "f": "ta",
+       "k": "d1more",
+       "q": "Các việc khác",
+       "ph": "Ví dụ: tài liệu đào tạo chưa đọc, hồ sơ chưa nộp"
+      }
+     ]
+    },
+    {
+     "h": "Đếm và khoanh",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1n",
+         "q": "Tổng số việc dở dang"
+        }
+       ]
+      },
+      {
+       "f": "pick",
+       "k": "d1top",
+       "kp": "d1v",
+       "n": 8,
+       "empty": "Viết các việc ở trên để chọn."
+      },
+      {
+       "f": "tx",
+       "k": "d1top",
+       "q": "Việc quay lại trong đầu nhiều nhất",
+       "ph": "Bấm chọn ở trên hoặc tự viết"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi đã gom được {d1n} việc dở dang.",
+     "need": [
+      "d1n"
+     ]
+    },
+    {
+     "tpl": " Việc tôi nghĩ đến nhiều nhất: {d1top}.",
+     "need": [
+      "d1top"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1. Các việc được giữ lại để phân loại ở Ngày 2."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Phân loại",
+   "title": "Bốn ngăn cho mọi việc dở dang",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Bốn ngăn",
+     "items": [
+      {
+       "f": "note",
+       "text": "Làm ngay: xong trong khoảng hai phút. Lên lịch: ghi ngày giờ cụ thể. Giao: nói rõ kết quả và thời hạn. Bỏ: quyết định rõ ràng, báo người cần biết. Bấm một ngăn để xem gợi ý."
+      }
+     ]
+    },
+    {
+     "h": "Việc 1 và 2",
+     "items": [
+      {
+       "f": "show",
+       "text": "Việc 1: {d1v1}",
+       "need": [
+        "d1v1"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2z1",
+       "q": "Ngăn",
+       "opts": [
+        "Làm ngay",
+        "Lên lịch",
+        "Giao",
+        "Bỏ"
+       ],
+       "hints": [
+        "Xong trong khoảng hai phút: làm luôn bây giờ, ví dụ trả lời xác nhận lịch họp.",
+        "Quan trọng, cần hơn hai phút: ghi ngày giờ cụ thể vào lịch, không ghi \"tuần sau\".",
+        "Người khác làm phù hợp hơn: nói rõ kết quả, thời hạn, rồi ghi lại để theo dõi.",
+        "Không còn cần thiết: quyết định bỏ và báo người cần biết, nếu có."
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Việc 2: {d1v2}",
+       "need": [
+        "d1v2"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2z2",
+       "q": "Ngăn",
+       "opts": [
+        "Làm ngay",
+        "Lên lịch",
+        "Giao",
+        "Bỏ"
+       ],
+       "hints": [
+        "Xong trong khoảng hai phút: làm luôn bây giờ, ví dụ trả lời xác nhận lịch họp.",
+        "Quan trọng, cần hơn hai phút: ghi ngày giờ cụ thể vào lịch, không ghi \"tuần sau\".",
+        "Người khác làm phù hợp hơn: nói rõ kết quả, thời hạn, rồi ghi lại để theo dõi.",
+        "Không còn cần thiết: quyết định bỏ và báo người cần biết, nếu có."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Việc 3 và 4",
+     "items": [
+      {
+       "f": "show",
+       "text": "Việc 3: {d1v3}",
+       "need": [
+        "d1v3"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2z3",
+       "q": "Ngăn",
+       "opts": [
+        "Làm ngay",
+        "Lên lịch",
+        "Giao",
+        "Bỏ"
+       ],
+       "hints": [
+        "Xong trong khoảng hai phút: làm luôn bây giờ, ví dụ trả lời xác nhận lịch họp.",
+        "Quan trọng, cần hơn hai phút: ghi ngày giờ cụ thể vào lịch, không ghi \"tuần sau\".",
+        "Người khác làm phù hợp hơn: nói rõ kết quả, thời hạn, rồi ghi lại để theo dõi.",
+        "Không còn cần thiết: quyết định bỏ và báo người cần biết, nếu có."
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Việc 4: {d1v4}",
+       "need": [
+        "d1v4"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2z4",
+       "q": "Ngăn",
+       "opts": [
+        "Làm ngay",
+        "Lên lịch",
+        "Giao",
+        "Bỏ"
+       ],
+       "hints": [
+        "Xong trong khoảng hai phút: làm luôn bây giờ, ví dụ trả lời xác nhận lịch họp.",
+        "Quan trọng, cần hơn hai phút: ghi ngày giờ cụ thể vào lịch, không ghi \"tuần sau\".",
+        "Người khác làm phù hợp hơn: nói rõ kết quả, thời hạn, rồi ghi lại để theo dõi.",
+        "Không còn cần thiết: quyết định bỏ và báo người cần biết, nếu có."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Việc 5 và 6",
+     "items": [
+      {
+       "f": "show",
+       "text": "Việc 5: {d1v5}",
+       "need": [
+        "d1v5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2z5",
+       "q": "Ngăn",
+       "opts": [
+        "Làm ngay",
+        "Lên lịch",
+        "Giao",
+        "Bỏ"
+       ],
+       "hints": [
+        "Xong trong khoảng hai phút: làm luôn bây giờ, ví dụ trả lời xác nhận lịch họp.",
+        "Quan trọng, cần hơn hai phút: ghi ngày giờ cụ thể vào lịch, không ghi \"tuần sau\".",
+        "Người khác làm phù hợp hơn: nói rõ kết quả, thời hạn, rồi ghi lại để theo dõi.",
+        "Không còn cần thiết: quyết định bỏ và báo người cần biết, nếu có."
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Việc 6: {d1v6}",
+       "need": [
+        "d1v6"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2z6",
+       "q": "Ngăn",
+       "opts": [
+        "Làm ngay",
+        "Lên lịch",
+        "Giao",
+        "Bỏ"
+       ],
+       "hints": [
+        "Xong trong khoảng hai phút: làm luôn bây giờ, ví dụ trả lời xác nhận lịch họp.",
+        "Quan trọng, cần hơn hai phút: ghi ngày giờ cụ thể vào lịch, không ghi \"tuần sau\".",
+        "Người khác làm phù hợp hơn: nói rõ kết quả, thời hạn, rồi ghi lại để theo dõi.",
+        "Không còn cần thiết: quyết định bỏ và báo người cần biết, nếu có."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Việc 7 và 8",
+     "items": [
+      {
+       "f": "show",
+       "text": "Việc 7: {d1v7}",
+       "need": [
+        "d1v7"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2z7",
+       "q": "Ngăn",
+       "opts": [
+        "Làm ngay",
+        "Lên lịch",
+        "Giao",
+        "Bỏ"
+       ],
+       "hints": [
+        "Xong trong khoảng hai phút: làm luôn bây giờ, ví dụ trả lời xác nhận lịch họp.",
+        "Quan trọng, cần hơn hai phút: ghi ngày giờ cụ thể vào lịch, không ghi \"tuần sau\".",
+        "Người khác làm phù hợp hơn: nói rõ kết quả, thời hạn, rồi ghi lại để theo dõi.",
+        "Không còn cần thiết: quyết định bỏ và báo người cần biết, nếu có."
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Việc 8: {d1v8}",
+       "need": [
+        "d1v8"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2z8",
+       "q": "Ngăn",
+       "opts": [
+        "Làm ngay",
+        "Lên lịch",
+        "Giao",
+        "Bỏ"
+       ],
+       "hints": [
+        "Xong trong khoảng hai phút: làm luôn bây giờ, ví dụ trả lời xác nhận lịch họp.",
+        "Quan trọng, cần hơn hai phút: ghi ngày giờ cụ thể vào lịch, không ghi \"tuần sau\".",
+        "Người khác làm phù hợp hơn: nói rõ kết quả, thời hạn, rồi ghi lại để theo dõi.",
+        "Không còn cần thiết: quyết định bỏ và báo người cần biết, nếu có."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Đếm số việc mỗi ngăn",
+     "items": [
+      {
+       "f": "note",
+       "text": "Đếm cả các việc ghi thêm ở ô cuối của Ngày 1."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d2now",
+         "q": "Làm ngay"
+        },
+        {
+         "k": "d2sch",
+         "q": "Lên lịch"
+        },
+        {
+         "k": "d2del",
+         "q": "Giao"
+        },
+        {
+         "k": "d2drop",
+         "q": "Bỏ"
+        }
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d2done",
+       "label": "Tôi đã làm luôn các việc dưới hai phút"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hôm nay tôi làm ngay {d2now} việc dưới hai phút, lên lịch {d2sch} việc, giao {d2del} việc và bỏ {d2drop} việc.",
+     "need": [
+      "d2now",
+      "d2sch",
+      "d2del",
+      "d2drop"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Khép việc treo",
+   "title": "Khép ba việc treo lâu nhất",
+   "time": "Khoảng 30 đến 45 phút",
+   "cards": [
+    {
+     "h": "Bốn cách khép",
+     "items": [
+      {
+       "f": "note",
+       "text": "Khép một việc không nhất thiết là làm xong. Một bước tiếp theo cụ thể kèm ngày giờ cũng giúp việc dở bớt chen ngang vào đầu."
+      }
+     ]
+    },
+    {
+     "h": "Việc treo số 1",
+     "items": [
+      {
+       "f": "pick",
+       "k": "d3a",
+       "kp": "d1v",
+       "n": 8,
+       "empty": "Viết các việc ở Ngày 1 để chọn."
+      },
+      {
+       "f": "tx",
+       "k": "d3a",
+       "q": "Việc treo",
+       "ph": "Bấm chọn ở trên hoặc tự viết"
+      },
+      {
+       "f": "seg",
+       "k": "d3ah",
+       "q": "Cách khép",
+       "opts": [
+        "Làm xong",
+        "Viết bước tiếp theo",
+        "Hỏi người liên quan",
+        "Chủ động bỏ"
+       ],
+       "hints": [
+        "Làm được trọn trong hôm nay thì làm luôn.",
+        "Việc lớn: viết một bước tiếp theo cụ thể kèm ngày giờ và đặt lịch.",
+        "Việc đang treo vì thiếu một thông tin: hỏi ngay hôm nay.",
+        "Không còn cần thiết: quyết định bỏ, báo người cần biết."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3an",
+       "q": "Việc tôi làm hôm nay để khép",
+       "ph": "Ví dụ: viết bước tiếp theo, 45 phút, sáng Thứ Hai 14.12"
+      },
+      {
+       "f": "cb",
+       "k": "d3aok",
+       "label": "Đã khép"
+      }
+     ]
+    },
+    {
+     "h": "Việc treo số 2",
+     "items": [
+      {
+       "f": "pick",
+       "k": "d3b",
+       "kp": "d1v",
+       "n": 8,
+       "empty": "Viết các việc ở Ngày 1 để chọn."
+      },
+      {
+       "f": "tx",
+       "k": "d3b",
+       "q": "Việc treo",
+       "ph": "Bấm chọn ở trên hoặc tự viết"
+      },
+      {
+       "f": "seg",
+       "k": "d3bh",
+       "q": "Cách khép",
+       "opts": [
+        "Làm xong",
+        "Viết bước tiếp theo",
+        "Hỏi người liên quan",
+        "Chủ động bỏ"
+       ],
+       "hints": [
+        "Làm được trọn trong hôm nay thì làm luôn.",
+        "Việc lớn: viết một bước tiếp theo cụ thể kèm ngày giờ và đặt lịch.",
+        "Việc đang treo vì thiếu một thông tin: hỏi ngay hôm nay.",
+        "Không còn cần thiết: quyết định bỏ, báo người cần biết."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3bn",
+       "q": "Việc tôi làm hôm nay để khép",
+       "ph": "Ví dụ: gọi tổ trưởng hỏi ngân sách"
+      },
+      {
+       "f": "cb",
+       "k": "d3bok",
+       "label": "Đã khép"
+      }
+     ]
+    },
+    {
+     "h": "Việc treo số 3",
+     "items": [
+      {
+       "f": "pick",
+       "k": "d3c",
+       "kp": "d1v",
+       "n": 8,
+       "empty": "Viết các việc ở Ngày 1 để chọn."
+      },
+      {
+       "f": "tx",
+       "k": "d3c",
+       "q": "Việc treo",
+       "ph": "Bấm chọn ở trên hoặc tự viết"
+      },
+      {
+       "f": "seg",
+       "k": "d3ch",
+       "q": "Cách khép",
+       "opts": [
+        "Làm xong",
+        "Viết bước tiếp theo",
+        "Hỏi người liên quan",
+        "Chủ động bỏ"
+       ],
+       "hints": [
+        "Làm được trọn trong hôm nay thì làm luôn.",
+        "Việc lớn: viết một bước tiếp theo cụ thể kèm ngày giờ và đặt lịch.",
+        "Việc đang treo vì thiếu một thông tin: hỏi ngay hôm nay.",
+        "Không còn cần thiết: quyết định bỏ, báo người cần biết."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3cn",
+       "q": "Việc tôi làm hôm nay để khép",
+       "ph": "Ví dụ: gửi thư xác nhận và lưu hồ sơ"
+      },
+      {
+       "f": "cb",
+       "k": "d3cok",
+       "label": "Đã khép"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ba việc treo tôi khép hôm nay: {d3a}; {d3b}; {d3c}.",
+     "need": [
+      "d3a",
+      "d3b",
+      "d3c"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Nghi thức",
+   "title": "Nghi thức kết thúc ngày làm việc",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Chọn các bước, không quá năm",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d4s1",
+       "label": "Xem hộp thư lần cuối, chỉ để chắc không có việc gấp"
+      },
+      {
+       "f": "cb",
+       "k": "d4s2",
+       "label": "Ghi mọi việc dở trong ngày vào danh sách"
+      },
+      {
+       "f": "cb",
+       "k": "d4s3",
+       "label": "Chọn việc quan trọng nhất cho sáng mai"
+      },
+      {
+       "f": "cb",
+       "k": "d4s4",
+       "label": "Làm thói quen then chốt nếu chưa làm, bấm bảng hành trình"
+      },
+      {
+       "f": "cb",
+       "k": "d4s5",
+       "label": "Dọn bàn, mở sẵn tệp cho sáng mai"
+      },
+      {
+       "f": "cb",
+       "k": "d4s6",
+       "label": "Nói câu khép ngày"
+      }
+     ]
+    },
+    {
+     "h": "Nghi thức của tôi",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d4when",
+       "q": "Giờ bắt đầu nghi thức",
+       "opts": [
+        "16 giờ 45",
+        "17 giờ",
+        "17 giờ 15",
+        "17 giờ 30"
+       ],
+       "hints": [
+        "Hợp với ngày làm việc kết thúc lúc 17 giờ.",
+        "Hợp với ngày làm việc kết thúc lúc 17 giờ 15.",
+        "Hợp với ngày làm việc kết thúc lúc 17 giờ 30.",
+        "Hợp với ngày làm việc kết thúc lúc 17 giờ 45 hoặc muộn hơn."
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "j_shutdown",
+       "q": "Nghi thức kết thúc ngày của tôi, viết gọn trong một câu",
+       "ph": "Ví dụ: 17 giờ xem hộp thư lần cuối, ghi việc dở, chọn việc cho sáng mai, bấm bảng hành trình"
+      },
+      {
+       "f": "tx",
+       "k": "d4phrase",
+       "q": "Câu khép ngày",
+       "ph": "Ví dụ: Hôm nay đã khép, mai làm tiếp"
+      },
+      {
+       "f": "cb",
+       "k": "d4try",
+       "label": "Tôi đã làm thử nghi thức chiều nay"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Nghi thức kết thúc ngày của tôi: {j_shutdown}.",
+     "need": [
+      "j_shutdown"
+     ]
+    },
+    {
+     "tpl": " Câu khép ngày: {d4phrase}.",
+     "need": [
+      "d4phrase"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4. Nghi thức được lưu cho cả hành trình."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Dừng có chủ đích",
+   "title": "Dừng giữa chừng để mai dễ bắt đầu",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Việc làm dài ngày",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5task",
+       "q": "Việc tôi chọn",
+       "ph": "Ví dụ: soạn quy chế khen thưởng"
+      },
+      {
+       "f": "seg",
+       "k": "d5type",
+       "q": "Kiểu điểm dừng",
+       "opts": [
+        "Câu viết dở",
+        "Bước kế tiếp ghi sẵn",
+        "Tệp mở sẵn đúng chỗ"
+       ],
+       "hints": [
+        "Viết dở một câu, sáng mai đọc và viết tiếp.",
+        "Ghi một dòng: việc đầu tiên sáng mai là gì, mất bao lâu.",
+        "Để tệp mở đúng trang, đặt con trỏ ở chỗ cần làm tiếp."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Điểm dừng và điểm vào",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5stop",
+       "q": "Hôm nay tôi dừng ở",
+       "ph": "Ví dụ: giữa mục 4, đã xong hai ý đầu"
+      },
+      {
+       "f": "tx",
+       "k": "d5next",
+       "q": "Sáng mai bắt đầu bằng",
+       "ph": "Ví dụ: viết tiếp câu dở về mức thưởng sáng kiến"
+      },
+      {
+       "f": "note",
+       "text": "Sáng Thứ Hai, quay lại đây ghi số phút để vào việc."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d5min",
+         "q": "Số phút để vào việc sáng hôm sau"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hôm nay tôi dừng có chủ đích ở: {d5stop}.",
+     "need": [
+      "d5stop"
+     ]
+    },
+    {
+     "tpl": " Sáng mai bắt đầu bằng: {d5next}.",
+     "need": [
+      "d5next"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Khép năm",
+   "title": "Danh sách việc khép năm 2026",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "Bảng hành trình",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào ngày đã làm thói quen tuần này. Nghi thức kết thúc ngày là lúc tốt nhất để bấm."
+      }
+     ]
+    },
+    {
+     "h": "Tối đa năm việc, mỗi việc một ngày khép",
+     "items": [
+      {
+       "f": "note",
+       "text": "Việc lớn không xong trước 31.12 thì khép bằng một kế hoạch: viết bước đầu tiên của năm 2027 kèm ngày giờ."
+      },
+      {
+       "f": "tx",
+       "k": "d6y1",
+       "q": "Việc 1 và ngày khép",
+       "ph": "Ví dụ: nộp hồ sơ quyết toán, 18.12"
+      },
+      {
+       "f": "tx",
+       "k": "d6y2",
+       "q": "Việc 2 và ngày khép",
+       "ph": "Ví dụ: gửi lời cảm ơn khách hàng, 24.12"
+      },
+      {
+       "f": "tx",
+       "k": "d6y3",
+       "q": "Việc 3 và ngày khép",
+       "ph": "Ví dụ: sắp xếp thư mục dự án, 30.12"
+      },
+      {
+       "f": "tx",
+       "k": "d6y4",
+       "q": "Việc 4 và ngày khép",
+       "ph": "Ví dụ: đối chiếu công nợ, 29.12"
+      },
+      {
+       "f": "tx",
+       "k": "d6y5",
+       "q": "Việc 5 và ngày khép",
+       "ph": "Ví dụ: hoàn tất đánh giá năm nhân viên, 23.12"
+      },
+      {
+       "f": "cb",
+       "k": "d6link",
+       "label": "Tôi đã gắn danh sách này vào nghi thức kết thúc ngày"
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã in danh sách và đặt cạnh trang lá chắn"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Trước 31.12.2026, tôi khép: {d6y1}; {d6y2}; {d6y3}.",
+     "need": [
+      "d6y1",
+      "d6y2",
+      "d6y3"
+     ]
+    },
+    {
+     "tpl": " Thói quen tôi mang sang tuần sau: {j_habit}.",
+     "need": [
+      "j_habit"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

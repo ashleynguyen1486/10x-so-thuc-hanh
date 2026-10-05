@@ -1,1 +1,728 @@
-{"id": "0023", "name": "Nếu thì", "storeKey": "sth-0023", "kicker": "Công thức #0023", "title": "Thử thách Ý định thực hiện 7 ngày", "sub": "Mỗi ngày một việc từ 15 đến 45 phút, xoay quanh một mục tiêu công việc. Các anh chị và các bạn điền ngay trên trang, bấm sao chép câu chia sẻ rồi dán vào bình luận của bài hôm đó trên 10X Excellence Hub nha. Trường đồng hành cùng mọi người cả tuần.", "days": [{"label": "Thứ Hai", "kick": "Chọn mục tiêu", "title": "Một mục tiêu công việc cho bốn tuần tới", "time": "Khoảng 15 phút", "cards": [{"h": "Ba việc mình biết nên làm nhưng cứ trì hoãn", "items": [{"f": "note", "text": "Trường gợi ý nghĩ về công việc trong tháng này: một báo cáo, một cuộc gọi, một thói quen làm việc. Ghi nhanh, chưa cần chọn nha."}, {"f": "tx", "k": "d1a", "q": "Việc 1", "ph": "Ví dụ: gửi báo cáo tuần đúng hạn"}, {"f": "tx", "k": "d1b", "q": "Việc 2", "ph": "Ví dụ: phản hồi cho nhân viên sau mỗi dự án"}, {"f": "tx", "k": "d1c", "q": "Việc 3", "ph": "Ví dụ: gọi cho khách hàng lâu chưa liên lạc"}]}, {"h": "Chọn một và viết thành mục tiêu", "items": [{"f": "tx", "k": "d1goal", "q": "Trong bốn tuần tới, tôi sẽ...", "ph": "Ví dụ: gửi báo cáo tuần trước 17 giờ thứ Sáu"}, {"f": "tx", "k": "d1why", "q": "Lý do việc này quan trọng", "ph": "Ví dụ: để sếp có số liệu cho cuộc họp thứ Hai"}, {"f": "seg", "k": "d1ctrl", "q": "Mục tiêu này mình tự kiểm soát được đến đâu?", "opts": ["Phần lớn", "Một nửa", "Ít"], "hints": ["Tốt, giữ nguyên mục tiêu nha.", "Thử viết lại chỉ phần mình làm được.", "Nên thu nhỏ lại phần mình tự làm được trước nha."]}]}], "checkin": [{"tpl": "Ngày 1: Mục tiêu của tôi: trong bốn tuần tới, tôi sẽ {d1goal}", "need": ["d1goal"]}, {"tpl": ". Lý do: {d1why}", "need": ["d1goal", "d1why"]}, {"tpl": ".", "need": ["d1goal"]}], "hint": "Dán vào bình luận của bài Ngày 1."}, {"label": "Thứ Ba", "kick": "Khởi động", "title": "Câu nếu thì cho lúc bắt đầu", "time": "Khoảng 20 phút", "cards": [{"h": "Ghép hai vế", "items": [{"f": "show", "text": "Mục tiêu: {d1goal}", "need": ["d1goal"]}, {"f": "tx", "k": "d2if", "q": "Nếu (thời điểm, địa điểm hoặc việc vừa xong)...", "ph": "Ví dụ: là 14 giờ thứ Năm, sau họp giao ban"}, {"f": "tx", "k": "d2then", "q": "...thì tôi sẽ (bước đầu tiên, 2 đến 10 phút)", "ph": "Ví dụ: mở tệp báo cáo và điền phần số liệu bán hàng"}, {"f": "show", "text": "Nếu {d2if}, thì tôi sẽ {d2then}.", "need": ["d2if", "d2then"]}]}, {"h": "Kiểm tra bằng ba câu hỏi", "items": [{"f": "cb", "k": "d2c1", "label": "Tình huống cụ thể, tôi sẽ nhận ra ngay khi nó xảy ra"}, {"f": "cb", "k": "d2c2", "label": "Hành động làm được ngay, không cần chuẩn bị thêm"}, {"f": "cb", "k": "d2c3", "label": "Hai vế hợp nhau về thời gian và địa điểm"}, {"f": "note", "text": "Còn ô chưa tích thì các anh chị và các bạn sửa lại câu cho đến khi tích đủ ba ô nha. Viết xong, đặt một nhắc nhở trên lịch đúng thời điểm đó."}]}], "checkin": [{"tpl": "Ngày 2: Nếu {d2if}, thì tôi sẽ {d2then}.", "need": ["d2if", "d2then"]}], "hint": "Dán vào bình luận của bài Ngày 2."}, {"label": "Thứ Tư", "kick": "Trở ngại", "title": "Đối chiếu mong muốn với trở ngại", "time": "Khoảng 20 phút", "cards": [{"h": "Mong muốn và kết quả", "items": [{"f": "show", "text": "Mong muốn: {d1goal}", "need": ["d1goal"]}, {"f": "ta", "k": "d3best", "q": "Kết quả tốt nhất khi đạt được (hình dung một phút rồi viết)", "ph": "Ví dụ: cuộc họp thứ Hai suôn sẻ, nhóm được duyệt đủ nguồn lực"}]}, {"h": "Ba trở ngại bên trong mình", "items": [{"f": "note", "text": "Trở ngại bên trong là một thói quen, một cảm giác hay một suy nghĩ của chính mình. Không viết \"sếp giao nhiều việc\", mà viết \"tôi nhận việc gấp ngay mà không hỏi lại thời hạn\" nha."}, {"f": "tx", "k": "d3o1", "q": "Trở ngại 1", "ph": "Ví dụ: gặp phần khó là chuyển sang trả lời tin nhắn"}, {"f": "tx", "k": "d3o2", "q": "Trở ngại 2", "ph": "Ví dụ: nhận việc gấp ngay mà không hỏi hạn chót"}, {"f": "tx", "k": "d3o3", "q": "Trở ngại 3", "ph": "Ví dụ: chờ đủ số liệu mới bắt đầu"}, {"f": "seg", "k": "d3top", "q": "Trở ngại xuất hiện thường xuyên nhất", "opts": ["Trở ngại 1", "Trở ngại 2", "Trở ngại 3"]}]}], "checkin": [{"tpl": "Ngày 3: Ba trở ngại của tôi: {d3o1}", "need": ["d3o1"]}, {"tpl": "; {d3o2}", "need": ["d3o1", "d3o2"]}, {"tpl": "; {d3o3}", "need": ["d3o1", "d3o3"]}, {"tpl": ".", "need": ["d3o1"]}], "hint": "Dán vào bình luận của bài Ngày 3."}, {"label": "Thứ Năm", "kick": "Giữ hướng", "title": "Câu nếu thì cho từng trở ngại", "time": "Khoảng 20 phút", "cards": [{"h": "Mỗi trở ngại là vế \"nếu\" của một câu mới", "items": [{"f": "note", "text": "Vế \"thì\" viết ở dạng làm gì, không viết ở dạng không làm gì. Ví dụ: \"thì tôi úp điện thoại vào ngăn kéo\" thay vì \"thì tôi không xem điện thoại\"."}, {"f": "show", "text": "Trở ngại 1: {d3o1}", "need": ["d3o1"]}, {"f": "tx", "k": "d4t1", "q": "Nếu trở ngại 1 xuất hiện, thì tôi sẽ...", "ph": "Ví dụ: ghi câu hỏi ra lề và làm tiếp phần kế bên trong 15 phút"}, {"f": "show", "text": "Trở ngại 2: {d3o2}", "need": ["d3o2"]}, {"f": "tx", "k": "d4t2", "q": "Nếu trở ngại 2 xuất hiện, thì tôi sẽ...", "ph": "Ví dụ: hỏi \"hạn chót là lúc nào?\" trước khi nhận"}, {"f": "show", "text": "Trở ngại 3: {d3o3}", "need": ["d3o3"]}, {"f": "tx", "k": "d4t3", "q": "Nếu trở ngại 3 xuất hiện, thì tôi sẽ...", "ph": "Ví dụ: viết khung báo cáo và để trống ô cần số"}]}, {"h": "Đặt câu ở nơi nhìn thấy", "items": [{"f": "seg", "k": "d4where", "q": "Tôi đặt các câu này ở", "opts": ["Giấy nhớ trên màn hình", "Đầu tệp làm việc", "Ảnh nền điện thoại", "Nơi khác"]}]}], "checkin": [{"tpl": "Ngày 4: Nếu {d3o1}, thì tôi sẽ {d4t1}", "need": ["d3o1", "d4t1"]}, {"tpl": ".", "need": ["d4t1"]}], "hint": "Dán vào bình luận của bài Ngày 4."}, {"label": "Thứ Sáu", "kick": "Thử nghiệm", "title": "Chạy các câu nếu thì trong một ngày", "time": "Khoảng 15 phút", "cards": [{"h": "Đánh dấu mỗi lần tình huống xảy ra", "items": [{"f": "show", "text": "Nếu {d2if}, thì tôi sẽ {d2then}.", "need": ["d2if", "d2then"]}, {"f": "seg", "k": "d5s0", "opts": ["Đã làm", "Quên", "Không xảy ra"], "q": "Câu khởi động: kết quả hôm nay"}, {"f": "show", "text": "{d4t1}", "need": ["d4t1"]}, {"f": "seg", "k": "d5s1", "opts": ["Đã làm", "Quên", "Không xảy ra"], "q": "Câu giữ hướng 1: kết quả hôm nay"}, {"f": "show", "text": "{d4t2}", "need": ["d4t2"]}, {"f": "seg", "k": "d5s2", "opts": ["Đã làm", "Quên", "Không xảy ra"], "q": "Câu giữ hướng 2: kết quả hôm nay"}, {"f": "show", "text": "{d4t3}", "need": ["d4t3"]}, {"f": "seg", "k": "d5s3", "opts": ["Đã làm", "Quên", "Không xảy ra"], "q": "Câu giữ hướng 3: kết quả hôm nay"}]}, {"h": "Năm phút cuối ngày", "items": [{"f": "tx", "k": "d5best", "q": "Câu chạy tốt nhất hôm nay", "ph": "Ví dụ: câu khởi động lúc 14 giờ"}, {"f": "tx", "k": "d5worst", "q": "Câu chưa chạy và lý do", "ph": "Ví dụ: câu hỏi hạn chót, vì tôi quên khi đang vội"}, {"f": "note", "text": "\"Quên\" thường có nghĩa là tình huống chưa đủ nổi bật. \"Nhận ra nhưng không làm\" thường có nghĩa là hành động còn quá lớn. Trường dùng ghi chú này cho bài ngày mai nha."}]}], "checkin": [{"tpl": "Ngày 5: Câu chạy tốt nhất: {d5best}", "need": ["d5best"]}, {"tpl": ". Câu chưa chạy: {d5worst}", "need": ["d5best", "d5worst"]}, {"tpl": ".", "need": ["d5best"]}], "hint": "Dán vào bình luận của bài Ngày 5."}, {"label": "Thứ Bảy", "kick": "Quay lại", "title": "Sửa câu chưa chạy, viết câu quay lại", "time": "Khoảng 20 phút", "cards": [{"h": "Phần 1: Sửa câu chưa chạy", "items": [{"f": "show", "text": "Câu chưa chạy hôm qua: {d5worst}", "need": ["d5worst"]}, {"f": "seg", "k": "d6why", "q": "Vì sao câu chưa chạy?", "opts": ["Bị quên", "Nhận ra nhưng không làm", "Tình huống không xảy ra"], "hints": ["Làm tình huống nổi bật hơn: gắn vào sự kiện rõ ràng hoặc đặt nhắc nhở.", "Thu nhỏ hành động, ví dụ từ \"viết phản hồi\" xuống \"viết một dòng\".", "Chọn một tình huống chắc chắn xảy ra hơn."]}, {"f": "tx", "k": "d6fix", "q": "Câu đã sửa", "ph": "Ví dụ: Nếu có người giao việc gấp, thì tôi nhìn giấy nhớ và hỏi hạn chót"}]}, {"h": "Phần 2: Câu quay lại cho ngày bị lỡ", "items": [{"f": "tx", "k": "d6back", "q": "Nếu hôm nay tôi chưa làm được, thì ngày mai lúc... tôi sẽ...", "ph": "Ví dụ: 8 giờ sáng, điền phần số liệu trước khi mở hộp thư"}, {"f": "note", "text": "Câu quay lại ngăn một lần lỡ trở thành cả tuần bỏ dở. Phiên bản ngày mai nên là phần nhỏ nhất của việc chính nha."}]}], "checkin": [{"tpl": "Ngày 6: Câu đã sửa: {d6fix}", "need": ["d6fix"]}, {"tpl": ". Câu quay lại: {d6back}", "need": ["d6fix", "d6back"]}, {"tpl": ".", "need": ["d6fix"]}], "hint": "Dán vào bình luận của bài Ngày 6."}, {"label": "Chủ Nhật", "kick": "Bộ kế hoạch", "title": "Chốt bộ kế hoạch nếu thì cho 30 ngày", "time": "Khoảng 30 đến 45 phút", "cards": [{"h": "Phần 1: Chọn 3 đến 5 câu tốt nhất", "items": [{"f": "ta", "k": "d7set", "q": "Bộ kế hoạch của tôi (mỗi câu một dòng)", "ph": "Một câu khởi động, một đến ba câu giữ hướng, một câu quay lại"}, {"f": "rate", "kp": "d7r", "scale": 5, "head": ["#", "Tiêu chí", "Mức"], "rows": [["Tình huống cụ thể", "Tôi nhận ra ngay khi nó xảy ra"], ["Hành động làm được ngay", "Bước đầu tiên, 2 đến 10 phút"], ["Hai vế hợp nhau", "Cùng thời điểm, cùng địa điểm"]]}, {"f": "note", "text": "Tiêu chí nào dưới 4 điểm, các anh chị và các bạn sửa lại câu tương ứng trước khi chốt nha."}]}, {"h": "Phần 2: Người đồng hành và lịch xem lại", "items": [{"f": "tx", "k": "d7buddy", "q": "Người đồng hành của tôi", "ph": "Ví dụ: chị Lan phòng kế toán"}, {"f": "tx", "k": "d7review", "q": "Ngày cố định mỗi tuần để xem lại bộ kế hoạch", "ph": "Ví dụ: chiều thứ Sáu"}, {"f": "note", "text": "Cảm ơn các anh chị và các bạn đã đi cùng Trường cả tuần. Bộ kế hoạch này dùng tiếp trong 30 ngày tới, mỗi tuần sửa một câu là đủ nha."}]}], "checkin": [{"tpl": "Ngày 7: Bộ kế hoạch của tôi đã chốt", "need": ["d7set"]}, {"tpl": ". Người đồng hành: {d7buddy}", "need": ["d7set", "d7buddy"]}, {"tpl": ". Xem lại mỗi {d7review}", "need": ["d7set", "d7review"]}, {"tpl": ".", "need": ["d7set"]}], "hint": "Dán vào bình luận của bài Ngày 7."}]}
+{
+ "id": "0023",
+ "name": "Nếu... thì...",
+ "storeKey": "sth-0023-6n",
+ "kicker": "Công thức #0023",
+ "title": "Ý định thực hiện cho ngày khó",
+ "sub": "Tuần thứ hai của hành trình thói quen. Giữ nguyên thói quen then chốt, viết sẵn ba kế hoạch Nếu... thì... cho những ngày khó: lịch dồn, đi công tác, bị chen ngang. Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "ring",
+  "big": "{jweek}",
+  "ratio": "{jweek}",
+  "of": 6,
+  "unit": "NGÀY GIỮ THÓI QUEN",
+  "line": "Nếu {j_if1|gặp trở ngại} thì tôi {j_then1|làm phiên bản tối thiểu}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Nhìn lại",
+   "title": "Ngày nào thói quen bị lỡ, và vì sao?",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Mới tham gia? Viết câu bản sắc và một thói quen then chốt trong công việc ở hai ô dưới. Đã có từ tuần trước thì giữ nguyên, sửa câu chữ nếu cần."
+      },
+      {
+       "f": "ta",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: làm việc quan trọng trước khi mở hộp thư"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: làm việc sâu ít nhất 30 phút mỗi sáng"
+      }
+     ]
+    },
+    {
+     "h": "Tuần trước, nhìn lại bằng số",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mở tuần 0022 trên sổ này, chọn Ngày 5 để xem bảng hành trình. Người mới thì nhớ lại năm ngày làm việc gần nhất."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1n",
+         "q": "Số ngày đã làm thói quen"
+        },
+        {
+         "k": "d1m",
+         "q": "Số ngày lỡ"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Vì sao lỡ?",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d1type",
+       "q": "Loại trở ngại gặp nhiều nhất",
+       "opts": [
+        "Lịch dồn",
+        "Đi công tác",
+        "Bị chen ngang",
+        "Quên mất",
+        "Cuối ngày cạn sức"
+       ],
+       "hints": [
+        "Họp liền nhau, việc gấp dồn vào đúng giờ định làm thói quen.",
+        "Ra khỏi văn phòng, mất chỗ ngồi và tín hiệu quen thuộc.",
+        "Đồng nghiệp, khách hàng hoặc cấp trên cần mình đúng lúc định bắt đầu.",
+        "Không có gì cản, chỉ là không nhớ ra đúng lúc.",
+        "Dời thói quen sang cuối ngày rồi không còn đủ sức để làm."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1day",
+       "q": "Ngày lỡ gần nhất: chuyện gì đã xảy ra, vào lúc nào?",
+       "ph": "Ví dụ: Thứ Tư, họp giao ban kéo dài đến 10 giờ, sau đó hộp thư đầy"
+      },
+      {
+       "f": "tx",
+       "k": "d1why",
+       "q": "Trở ngại lớn nhất, viết thật cụ thể",
+       "ph": "Ví dụ: họp giao ban kéo dài qua giờ làm thói quen"
+      }
+     ]
+    },
+    {
+     "h": "Phiên bản tối thiểu",
+     "items": [
+      {
+       "f": "show",
+       "text": "Phiên bản hai phút đã viết tuần trước: {j_two}",
+       "need": [
+        "j_two"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Phiên bản tối thiểu là phiên bản làm xong trong vài phút, dùng cho ngày khó. Cả tuần này, vế \"thì\" của mọi kế hoạch sẽ dựa vào nó."
+      },
+      {
+       "f": "tx",
+       "k": "j_two",
+       "q": "Phiên bản tối thiểu của thói quen",
+       "ph": "Ví dụ: mở tệp kế hoạch và viết câu mục tiêu của phiên"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Thói quen tôi đang giữ: {j_habit}.",
+     "need": [
+      "j_habit"
+     ]
+    },
+    {
+     "tpl": " Tuần trước tôi làm được {d1n} ngày.",
+     "need": [
+      "d1n"
+     ]
+    },
+    {
+     "tpl": " Trở ngại lớn nhất: {d1why}.",
+     "need": [
+      "d1why"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1. Thói quen và phiên bản tối thiểu được lưu cho cả hành trình."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Ba kế hoạch Nếu... thì...",
+   "title": "Viết sẵn câu trả lời cho ba trở ngại",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Cấu trúc một kế hoạch",
+     "items": [
+      {
+       "f": "note",
+       "text": "Nếu [một tình huống nhìn thấy được] thì [một hành động nhỏ, làm được ngay]. Vế \"thì\" là phiên bản tối thiểu, không phải bản đầy đủ."
+      },
+      {
+       "f": "show",
+       "text": "Thói quen: {j_habit}. Phiên bản tối thiểu: {j_two}.",
+       "need": [
+        "j_habit",
+        "j_two"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Kế hoạch 1: trở ngại lớn nhất tuần trước",
+     "items": [
+      {
+       "f": "show",
+       "text": "Trở ngại đã ghi hôm qua: {d1why}",
+       "need": [
+        "d1why"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_if1",
+       "q": "Nếu ...",
+       "ph": "Ví dụ: họp giao ban kéo dài quá 9 giờ"
+      },
+      {
+       "f": "tx",
+       "k": "j_then1",
+       "q": "thì tôi ...",
+       "ph": "Ví dụ: làm 10 phút kế hoạch ngay sau cuộc họp, trước khi mở hộp thư"
+      },
+      {
+       "f": "show",
+       "text": "Nếu {j_if1} thì tôi {j_then1}.",
+       "need": [
+        "j_if1",
+        "j_then1"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Kế hoạch 2: ngày lịch dồn",
+     "items": [
+      {
+       "f": "tx",
+       "k": "j_if2",
+       "q": "Nếu ...",
+       "ph": "Ví dụ: hôm đó có từ ba cuộc họp trở lên"
+      },
+      {
+       "f": "tx",
+       "k": "j_then2",
+       "q": "thì tôi ...",
+       "ph": "Ví dụ: làm phiên bản tối thiểu trước cuộc họp đầu tiên"
+      },
+      {
+       "f": "show",
+       "text": "Nếu {j_if2} thì tôi {j_then2}.",
+       "need": [
+        "j_if2",
+        "j_then2"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Thứ Tư sẽ sửa kỹ kế hoạch này cho ngày họp dồn và ngày đi công tác."
+      }
+     ]
+    },
+    {
+     "h": "Kế hoạch 3: khi người khác chen ngang",
+     "items": [
+      {
+       "f": "tx",
+       "k": "j_if3",
+       "q": "Nếu ...",
+       "ph": "Ví dụ: có người ghé bàn đúng lúc tôi vừa bắt đầu"
+      },
+      {
+       "f": "tx",
+       "k": "j_then3",
+       "q": "thì tôi ...",
+       "ph": "Ví dụ: hẹn lại sau 20 phút rồi làm tiếp"
+      },
+      {
+       "f": "show",
+       "text": "Nếu {j_if3} thì tôi {j_then3}.",
+       "need": [
+        "j_if3",
+        "j_then3"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Thứ Năm sẽ soạn sẵn câu trả lời lịch sự cho kế hoạch này."
+      }
+     ]
+    },
+    {
+     "h": "Kiểm tra từng câu",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d2c1",
+       "label": "Vế \"nếu\" là tình huống nhận ra được ngay khi nó xảy ra"
+      },
+      {
+       "f": "cb",
+       "k": "d2c2",
+       "label": "Vế \"thì\" bắt đầu bằng một động từ và làm được trong 10 phút trở xuống"
+      },
+      {
+       "f": "cb",
+       "k": "d2c3",
+       "label": "Tôi đã đọc to ba câu một lần"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Nếu {j_if1} thì tôi {j_then1}.",
+     "need": [
+      "j_if1",
+      "j_then1"
+     ]
+    },
+    {
+     "tpl": " Nếu {j_if2} thì tôi {j_then2}.",
+     "need": [
+      "j_if2",
+      "j_then2"
+     ]
+    },
+    {
+     "tpl": " Nếu {j_if3} thì tôi {j_then3}.",
+     "need": [
+      "j_if3",
+      "j_then3"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2. Ba kế hoạch được lưu cho cả hành trình, các tuần sau sổ tự hiện lại."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Ngày họp dồn, ngày đi công tác",
+   "title": "Giữ thói quen khi lịch không còn là của mình",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Nhìn trước lịch hai tuần tới",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3day",
+       "q": "Ngày dày nhất sắp tới",
+       "ph": "Ví dụ: Thứ Năm tuần sau, ba cuộc họp liền và một buổi gặp khách"
+      },
+      {
+       "f": "seg",
+       "k": "d3kind",
+       "q": "Loại ngày",
+       "opts": [
+        "Họp liền nhau",
+        "Đi công tác",
+        "Đào tạo cả ngày",
+        "Cao điểm cuối tháng"
+       ],
+       "hints": [
+        "Khoảng trống chỉ còn vài phút giữa các cuộc họp.",
+        "Ra sân bay, lên xe sớm, làm việc ở nơi khác.",
+        "Ngồi trong lớp hoặc hội thảo từ sáng đến chiều.",
+        "Chốt số liệu, báo cáo, giao hàng dồn vào vài ngày cuối."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Đặt thói quen vào chỗ nào trong ngày đó",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d3slot",
+       "q": "Chỗ đặt",
+       "opts": [
+        "Trước việc đầu tiên",
+        "Giữa hai cuộc họp",
+        "Lúc chờ, lúc di chuyển",
+        "Trước khi rời chỗ làm"
+       ],
+       "hints": [
+        "Làm phiên bản tối thiểu ngay khi đến nơi, trước khi lịch bắt đầu.",
+        "Dùng khoảng trống 10 phút đầu tiên trong ngày.",
+        "Ở sân bay, trên xe, trong lúc chờ khách. Chuẩn bị sẵn tài liệu trên điện thoại.",
+        "Mốc cuối cùng của ngày, khi lịch đã xong."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Kế hoạch 2, bản sửa cho ngày khó",
+     "items": [
+      {
+       "f": "show",
+       "text": "Bản hôm qua: Nếu {j_if2} thì tôi {j_then2}.",
+       "need": [
+        "j_if2",
+        "j_then2"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_if2",
+       "q": "Nếu ... (viết lại cho ngày dày nhất sắp tới)",
+       "ph": "Ví dụ: tôi có chuyến bay trước 8 giờ"
+      },
+      {
+       "f": "tx",
+       "k": "j_then2",
+       "q": "thì tôi ...",
+       "ph": "Ví dụ: xem lại ba khách hàng cần gọi trong lúc chờ lên máy bay"
+      },
+      {
+       "f": "cb",
+       "k": "d3cal",
+       "label": "Tôi đã đặt một lời nhắc vào lịch của ngày đó"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày khó sắp tới: {d3day}.",
+     "need": [
+      "d3day"
+     ]
+    },
+    {
+     "tpl": " Kế hoạch của tôi: nếu {j_if2} thì tôi {j_then2}.",
+     "need": [
+      "j_if2",
+      "j_then2"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Khi người khác chen ngang",
+   "title": "Một câu từ chối lịch sự, soạn sẵn từ hôm nay",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Tình huống chen ngang thường gặp",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4who",
+       "q": "Ai, lúc nào, cần gì?",
+       "ph": "Ví dụ: đồng nghiệp ghé bàn hỏi số liệu lúc 8 giờ 15"
+      }
+     ]
+    },
+    {
+     "h": "Chọn kiểu câu trả lời",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d4style",
+       "q": "Kiểu câu",
+       "opts": [
+        "Hẹn lại giờ",
+        "Chuyển kênh",
+        "Hỏi mức gấp",
+        "Gợi ý người khác"
+       ],
+       "hints": [
+        "\"Anh cho em 20 phút nha, xong phần này em qua ngay.\"",
+        "\"Chị nhắn giúp em yêu cầu qua tin nhắn nhóm, 10 giờ em trả lời.\"",
+        "\"Việc này cần trong sáng nay hay trong ngày ạ?\"",
+        "\"Phần này bạn Minh nắm rõ hơn, em kết nối hai người nha.\""
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d4say",
+       "q": "Câu trả lời soạn sẵn của tôi",
+       "ph": "Ví dụ: Anh chờ em 20 phút nha, em gửi số liệu ngay sau khi xong phần này."
+      },
+      {
+       "f": "cb",
+       "k": "d4loud",
+       "label": "Tôi đã nói thử câu này thành tiếng một lần"
+      }
+     ]
+    },
+    {
+     "h": "Kế hoạch 3, bản sửa",
+     "items": [
+      {
+       "f": "show",
+       "text": "Bản Thứ Ba: Nếu {j_if3} thì tôi {j_then3}.",
+       "need": [
+        "j_if3",
+        "j_then3"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_if3",
+       "q": "Nếu ...",
+       "ph": "Ví dụ: có người ghé bàn trong 30 phút đầu ngày"
+      },
+      {
+       "f": "tx",
+       "k": "j_then3",
+       "q": "thì tôi ...",
+       "ph": "Ví dụ: nói câu hẹn lại giờ rồi làm tiếp phiên của mình"
+      },
+      {
+       "f": "note",
+       "text": "Câu soạn sẵn không dùng để né việc gấp. Khách hàng hoặc cấp trên cần ngay thì làm việc gấp trước, rồi làm phiên bản tối thiểu ngay sau đó."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Khi {j_if3}, câu tôi soạn sẵn là: {d4say}",
+     "need": [
+      "j_if3",
+      "d4say"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Dùng thử và ghi lại",
+   "title": "Kế hoạch nào đã chạy, kế hoạch nào cần sửa",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Ba kế hoạch của tuần",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Nếu",
+        "thì tôi"
+       ],
+       "rows": [
+        {
+         "label": "Kế hoạch 1",
+         "keys": [
+          "j_if1",
+          "j_then1"
+         ]
+        },
+        {
+         "label": "Kế hoạch 2",
+         "keys": [
+          "j_if2",
+          "j_then2"
+         ]
+        },
+        {
+         "label": "Kế hoạch 3",
+         "keys": [
+          "j_if3",
+          "j_then3"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Chấm mỗi kế hoạch: 1 = chưa gặp tình huống, 2 = đã gặp nhưng chưa dùng, 3 = đã dùng."
+      },
+      {
+       "f": "rate",
+       "kp": "d5r",
+       "head": [
+        "#",
+        "Kế hoạch",
+        "Mức"
+       ],
+       "scale": 3,
+       "rows": [
+        [
+         "Kế hoạch 1",
+         "Trở ngại lớn nhất tuần trước"
+        ],
+        [
+         "Kế hoạch 2",
+         "Ngày lịch dồn"
+        ],
+        [
+         "Kế hoạch 3",
+         "Khi bị chen ngang"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Ghi lại một lần dùng",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5when",
+       "q": "Tình huống đã xảy ra",
+       "ph": "Ví dụ: Thứ Tư, họp kéo dài đến 9 giờ 40"
+      },
+      {
+       "f": "tx",
+       "k": "d5did",
+       "q": "Mình đã làm gì",
+       "ph": "Ví dụ: làm 10 phút kế hoạch ngay khi rời phòng họp"
+      },
+      {
+       "f": "seg",
+       "k": "d5res",
+       "q": "Kết quả",
+       "opts": [
+        "Chạy đúng",
+        "Chạy một phần",
+        "Chưa chạy"
+       ],
+       "hints": [
+        "Tình huống xảy ra và mình làm đúng vế \"thì\". Giữ nguyên câu.",
+        "Có nhớ ra nhưng làm khác hoặc làm muộn. Sửa vế \"thì\" cho nhỏ hơn.",
+        "Không nhận ra tình huống lúc nó xảy ra. Sửa vế \"nếu\" cho dễ thấy hơn."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Sửa một chỗ",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5fix",
+       "q": "Điều chỉnh cho kế hoạch",
+       "ph": "Ví dụ: đổi \"sau cuộc họp\" thành \"ngay khi rời phòng họp\""
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tình huống đã gặp: {d5when}. Tôi đã {d5did}.",
+     "need": [
+      "d5when",
+      "d5did"
+     ]
+    },
+    {
+     "tpl": " Điều chỉnh: {d5fix}.",
+     "need": [
+      "d5fix"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Thẻ trên bàn",
+   "title": "Câu Nếu... thì... đặt ngay trong tầm mắt",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Bảng hành trình tuần này",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày đã làm thói quen then chốt, kể cả ngày chỉ làm phiên bản tối thiểu. Bảng dùng chung cho mọi tuần."
+      }
+     ]
+    },
+    {
+     "h": "Thẻ Nếu... thì... của tôi",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Nếu",
+        "thì tôi"
+       ],
+       "rows": [
+        {
+         "label": "Kế hoạch 1",
+         "keys": [
+          "j_if1",
+          "j_then1"
+         ]
+        },
+        {
+         "label": "Kế hoạch 2",
+         "keys": [
+          "j_if2",
+          "j_then2"
+         ]
+        },
+        {
+         "label": "Kế hoạch 3",
+         "keys": [
+          "j_if3",
+          "j_then3"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Chọn câu mình cần nhất cho mặt trước của thẻ. Mặt sau ghi câu bản sắc."
+      },
+      {
+       "f": "ta",
+       "k": "d6card",
+       "q": "Câu ghi ở mặt trước thẻ",
+       "ph": "Ví dụ: Nếu họp kéo dài thì tôi làm 10 phút kế hoạch ngay sau cuộc họp"
+      },
+      {
+       "f": "show",
+       "text": "Mặt sau: Tôi là người {j_identity}.",
+       "need": [
+        "j_identity"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã in thẻ ở trang cuối phiếu Ngày 6, hoặc chép tay, và đặt trên bàn làm việc"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tuần này tôi giữ thói quen {jweek} ngày.",
+     "need": [
+      "jweek"
+     ]
+    },
+    {
+     "tpl": " Câu trên thẻ của tôi: {d6card}",
+     "need": [
+      "d6card"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

@@ -1,0 +1,627 @@
+{
+ "id": "0034",
+ "name": "Quy tắc 5/25",
+ "storeKey": "sth-0034-6n",
+ "kicker": "Công thức #0034",
+ "title": "Quy tắc 5/25: năm mục tiêu cho năm 2027",
+ "sub": "Tuần đầu năm 2027, mở Mùa 2 của hành trình. Viết 25 mục tiêu công việc, khoanh lấy 5, biến 20 mục tiêu còn lại thành danh sách tránh, rồi nối thói quen then chốt với mục tiêu số 1. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "frame",
+  "big": "5",
+  "unit": "MỤC TIÊU",
+  "sub": "năm 2027",
+  "line": "Mục tiêu số 1: {j_goal1|đã được chọn}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "25 mục tiêu",
+   "title": "Viết 25 mục tiêu công việc năm 2027",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Câu bản sắc năm 2027: Năm 2027, tôi là người {j_identity_2027}.",
+       "need": [
+        "j_identity_2027"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc và thói quen then chốt muốn giữ cả năm ở hai ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: làm việc quan trọng trước khi mở hộp thư"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: viết ba việc quan trọng nhất trước 8 giờ"
+      }
+     ]
+    },
+    {
+     "h": "25 mục tiêu theo năm nhóm",
+     "items": [
+      {
+       "f": "note",
+       "text": "Hôm nay chỉ viết, chưa lọc. Mỗi nhóm khoảng 5 mục tiêu, mỗi dòng một mục tiêu. Nhóm nào nghĩ ra nhiều hơn cứ viết thêm."
+      },
+      {
+       "f": "ta",
+       "k": "d1g1",
+       "q": "Kết quả công việc",
+       "ph": "Ví dụ: 12 khách hàng doanh nghiệp mới; chốt sổ tháng trong 3 ngày"
+      },
+      {
+       "f": "ta",
+       "k": "d1g2",
+       "q": "Kỹ năng và chuyên môn",
+       "ph": "Ví dụ: thuyết trình với khách hàng nước ngoài không cần người hỗ trợ"
+      },
+      {
+       "f": "ta",
+       "k": "d1g3",
+       "q": "Khách hàng và quan hệ",
+       "ph": "Ví dụ: gặp trực tiếp 20 khách hàng lớn nhất ít nhất một lần"
+      },
+      {
+       "f": "ta",
+       "k": "d1g4",
+       "q": "Đội nhóm và cách làm việc",
+       "ph": "Ví dụ: mỗi thành viên trong nhóm có kế hoạch phát triển riêng"
+      },
+      {
+       "f": "ta",
+       "k": "d1g5",
+       "q": "Học tập và phát triển",
+       "ph": "Ví dụ: hoàn thành một chứng chỉ chuyên môn"
+      }
+     ]
+    },
+    {
+     "h": "Đếm lại",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1count",
+         "q": "Tôi đã viết được bao nhiêu mục tiêu?"
+        }
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1most",
+       "q": "Nhóm có nhiều mục tiêu nhất",
+       "opts": [
+        "Kết quả",
+        "Kỹ năng",
+        "Khách hàng",
+        "Đội nhóm",
+        "Học tập"
+       ],
+       "hints": [
+        "Kết quả công việc: doanh số, chỉ tiêu, dự án, thời hạn.",
+        "Kỹ năng và chuyên môn: điều mình muốn làm giỏi hơn.",
+        "Khách hàng và quan hệ: khách hàng, đối tác, đồng nghiệp bộ phận khác.",
+        "Đội nhóm và cách làm việc: quy trình, phối hợp, phát triển người khác.",
+        "Học tập và phát triển: khoá học, chứng chỉ, sách chuyên môn."
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi đã viết {d1count} mục tiêu công việc cho năm 2027.",
+     "need": [
+      "d1count"
+     ]
+    },
+    {
+     "tpl": " Nhóm có nhiều mục tiêu nhất: {d1most}.",
+     "need": [
+      "d1most"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Khoanh 5",
+   "title": "Khoanh lấy 5 mục tiêu quan trọng nhất",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Bảy câu hỏi lọc",
+     "items": [
+      {
+       "f": "note",
+       "text": "1. Cả năm chỉ đạt một mục tiêu thì đó là mục tiêu nào? 2. Có gắn với vai trò chính năm 2027 không? 3. Cuối năm có biết đã đạt hay chưa không? 4. Phần lớn kết quả có trong tầm ảnh hưởng của mình không? 5. Có trùng mục tiêu khác không? 6. Bỏ đi có tiếc thật sự không? 7. Mục tiêu của mình hay của người khác?"
+      }
+     ]
+    },
+    {
+     "h": "Năm mục tiêu năm 2027",
+     "items": [
+      {
+       "f": "tx",
+       "k": "j_goal1",
+       "q": "Mục tiêu số 1 (quan trọng nhất)",
+       "ph": "Ví dụ: 12 khách hàng doanh nghiệp mới ký hợp đồng trong năm"
+      },
+      {
+       "f": "tx",
+       "k": "j_goal2",
+       "q": "Mục tiêu số 2",
+       "ph": "Ví dụ: chốt sổ tháng trong 3 ngày làm việc"
+      },
+      {
+       "f": "tx",
+       "k": "j_goal3",
+       "q": "Mục tiêu số 3",
+       "ph": "Ví dụ: thuyết trình với khách hàng nước ngoài không cần người hỗ trợ"
+      },
+      {
+       "f": "tx",
+       "k": "j_goal4",
+       "q": "Mục tiêu số 4",
+       "ph": "Ví dụ: mỗi thành viên trong nhóm có kế hoạch phát triển riêng"
+      },
+      {
+       "f": "tx",
+       "k": "j_goal5",
+       "q": "Mục tiêu số 5",
+       "ph": "Ví dụ: hoàn thành một chứng chỉ chuyên môn"
+      }
+     ]
+    },
+    {
+     "h": "Kiểm tra cả 5 mục tiêu",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d2c1",
+       "label": "Mỗi mục tiêu đo được hoặc thấy được kết quả vào cuối năm"
+      },
+      {
+       "f": "cb",
+       "k": "d2c2",
+       "label": "Phần lớn kết quả nằm trong tầm ảnh hưởng của tôi"
+      },
+      {
+       "f": "cb",
+       "k": "d2c3",
+       "label": "Chỉ tiêu do công ty giao (nếu có) đã nằm trong 5 mục tiêu hoặc có mục tiêu đóng góp trực tiếp"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Năm mục tiêu công việc năm 2027 của tôi: 1) {j_goal1}; 2) {j_goal2}; 3) {j_goal3}; 4) {j_goal4}; 5) {j_goal5}.",
+     "need": [
+      "j_goal1",
+      "j_goal2",
+      "j_goal3",
+      "j_goal4",
+      "j_goal5"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Danh sách tránh",
+   "title": "20 mục tiêu còn lại là danh sách tránh",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Danh sách tránh",
+     "items": [
+      {
+       "f": "note",
+       "text": "Tránh không có nghĩa là xoá. Đây là những mục tiêu tốt nhưng không đầu tư thời gian trong giai đoạn này. Cuối quý xem lại."
+      },
+      {
+       "f": "ta",
+       "k": "d3rest",
+       "q": "20 mục tiêu còn lại",
+       "ph": "Chép từ Ngày 1 những mục tiêu không nằm trong 5 mục tiêu đã chọn"
+      }
+     ]
+    },
+    {
+     "h": "Ba mục tiêu hấp dẫn nhất",
+     "items": [
+      {
+       "f": "tx",
+       "k": "j_avoid",
+       "q": "Ba mục tiêu dễ lấn sang thời gian của 5 mục tiêu chính nhất",
+       "ph": "Ví dụ: mở kênh bán hàng trên mạng xã hội; học thiết kế; viết sách"
+      },
+      {
+       "f": "seg",
+       "k": "d3why",
+       "q": "Vì sao chúng hấp dẫn?",
+       "opts": [
+        "Dễ và vui",
+        "Được người khác khen",
+        "Người khác muốn tôi làm",
+        "Nghĩ là sẽ làm sau"
+       ],
+       "hints": [
+        "Việc dễ, cho cảm giác xong việc nhanh, nhưng không đưa mình tới 5 mục tiêu.",
+        "Việc được ghi nhận ngay, dễ làm mình quên mục tiêu dài hạn.",
+        "Việc người khác mong mình làm, chưa chắc là mục tiêu của mình.",
+        "Việc để dành khi có thời gian, nhưng mỗi lần rảnh lại đòi được làm."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Câu nói không soạn sẵn",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3no",
+       "q": "Câu từ chối lịch sự cho lời mời ngoài 5 mục tiêu",
+       "ph": "Ví dụ: cảm ơn anh, quý này em tập trung cho mục tiêu khách hàng doanh nghiệp, em xin hẹn lại tháng 4"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Danh sách tránh của tôi bắt đầu bằng: {j_avoid}.",
+     "need": [
+      "j_avoid"
+     ]
+    },
+    {
+     "tpl": " Câu tôi dùng để nói không: {d3no}.",
+     "need": [
+      "d3no"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Nối thói quen",
+   "title": "Nối thói quen then chốt với mục tiêu số 1",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Đặt cạnh nhau",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen then chốt: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Mục tiêu số 1: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d4fit",
+       "q": "Hai điều này đã nối với nhau chưa?",
+       "opts": [
+        "Đã nối thẳng",
+        "Cần điều chỉnh nhỏ",
+        "Cần đổi thói quen"
+       ],
+       "hints": [
+        "Mỗi lần làm thói quen đều đưa mình gần mục tiêu số 1. Giữ nguyên.",
+        "Giữ tín hiệu và giờ, thêm một quy định nhỏ để thói quen đóng góp cho mục tiêu. Ví dụ: trong ba việc quan trọng luôn có một việc cho khách hàng mới.",
+        "Thói quen không còn liên quan. Theo quy tắc vàng: giữ tín hiệu và khung giờ, đặt thói quen mới vào."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d4link",
+       "q": "Mỗi lần làm thói quen giúp mục tiêu số 1 bằng cách ...",
+       "ph": "Ví dụ: luôn có một việc hướng tới khách hàng mới trong ba việc quan trọng"
+      },
+      {
+       "f": "show",
+       "text": "Mỗi ngày {j_habit}, để tiến tới {j_goal1}.",
+       "need": [
+        "j_habit",
+        "j_goal1"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen. Từ Mùa 2, mỗi ô cũng là một bước tới mục tiêu số 1."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Thói quen {j_habit} đưa tôi tới mục tiêu số 1 ({j_goal1}) bằng cách {d4link}.",
+     "need": [
+      "j_habit",
+      "j_goal1",
+      "d4link"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Kế hoạch quý 1",
+   "title": "Kế hoạch quý 1 trên một trang",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Ba mốc cho mục tiêu số 1",
+     "items": [
+      {
+       "f": "show",
+       "text": "Mục tiêu số 1: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Mỗi mốc là một kết quả thấy được, không phải một việc làm. Tháng 2 có kỳ nghỉ Tết Nguyên Đán, mốc nên khiêm tốn hơn."
+      },
+      {
+       "f": "tx",
+       "k": "d5m1",
+       "q": "Cuối tháng 1",
+       "ph": "Ví dụ: danh sách 40 khách hàng tiềm năng đã sàng lọc"
+      },
+      {
+       "f": "tx",
+       "k": "d5m2",
+       "q": "Cuối tháng 2",
+       "ph": "Ví dụ: 10 buổi gặp đã diễn ra"
+      },
+      {
+       "f": "tx",
+       "k": "d5m3",
+       "q": "Cuối tháng 3",
+       "ph": "Ví dụ: 2 hợp đồng đầu tiên đã ký"
+      }
+     ]
+    },
+    {
+     "h": "Con số theo dõi mỗi tuần",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5measure",
+       "q": "Con số tôi kiểm soát được, theo dõi mỗi tuần",
+       "ph": "Ví dụ: số cuộc gọi chào hàng tới khách hàng mới"
+      }
+     ]
+    },
+    {
+     "h": "Mốc cuối quý cho mục tiêu số 2 đến số 5",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Mục tiêu"
+       ],
+       "rows": [
+        {
+         "label": "Số 2",
+         "keys": [
+          "j_goal2"
+         ]
+        },
+        {
+         "label": "Số 3",
+         "keys": [
+          "j_goal3"
+         ]
+        },
+        {
+         "label": "Số 4",
+         "keys": [
+          "j_goal4"
+         ]
+        },
+        {
+         "label": "Số 5",
+         "keys": [
+          "j_goal5"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d5others",
+       "q": "Mỗi mục tiêu một mốc cuối quý",
+       "ph": "Ví dụ: số 2: chốt sổ tháng 3 trong 4 ngày; số 3: một buổi thuyết trình thử với đồng nghiệp"
+      }
+     ]
+    },
+    {
+     "h": "Thói quen trong kỳ nghỉ Tết Nguyên Đán",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5tet",
+       "q": "Phiên bản nhỏ nhất cho những ngày nghỉ",
+       "ph": "Ví dụ: mỗi sáng viết một việc quan trọng nhất cho ngày đi làm lại"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Mốc quý 1 của mục tiêu số 1: {d5m3}.",
+     "need": [
+      "d5m3"
+     ]
+    },
+    {
+     "tpl": " Tôi theo dõi mỗi tuần bằng: {d5measure}.",
+     "need": [
+      "d5measure"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Thẻ 5 mục tiêu",
+   "title": "Thẻ 5 mục tiêu đặt trên bàn làm việc",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thẻ 5 mục tiêu năm 2027",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mọi điều đã viết trong tuần tự gom lại ở đây. Ô nào còn trống thì quay lại ngày đó để điền."
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Câu bản sắc năm 2027",
+         "keys": [
+          "j_identity_2027"
+         ]
+        },
+        {
+         "label": "Mục tiêu số 1",
+         "keys": [
+          "j_goal1"
+         ]
+        },
+        {
+         "label": "Mục tiêu số 2",
+         "keys": [
+          "j_goal2"
+         ]
+        },
+        {
+         "label": "Mục tiêu số 3",
+         "keys": [
+          "j_goal3"
+         ]
+        },
+        {
+         "label": "Mục tiêu số 4",
+         "keys": [
+          "j_goal4"
+         ]
+        },
+        {
+         "label": "Mục tiêu số 5",
+         "keys": [
+          "j_goal5"
+         ]
+        },
+        {
+         "label": "Danh sách tránh",
+         "keys": [
+          "j_avoid"
+         ]
+        },
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Mốc cuối quý 1",
+         "keys": [
+          "d5m3"
+         ]
+        },
+        {
+         "label": "Con số mỗi tuần",
+         "keys": [
+          "d5measure"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Đặt thẻ đúng chỗ",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã điền thẻ 5 mục tiêu (in từ phiếu Ngày 6 hoặc viết tay)"
+      },
+      {
+       "f": "tx",
+       "k": "d6place",
+       "q": "Thẻ của tôi đặt ở",
+       "ph": "Ví dụ: cạnh bàn phím, ngay chỗ đặt sổ kế hoạch buổi sáng"
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau, Công thức #0035 Bảng Kanban cá nhân biến 5 mục tiêu và kế hoạch quý 1 thành những việc cụ thể trên một bảng."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Năm 2027, tôi tập trung vào 5 mục tiêu. Mục tiêu số 1: {j_goal1}.",
+     "need": [
+      "j_goal1"
+     ]
+    },
+    {
+     "tpl": " Thẻ của tôi đặt ở: {d6place}.",
+     "need": [
+      "d6place"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

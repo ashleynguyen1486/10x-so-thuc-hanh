@@ -1,0 +1,763 @@
+{
+ "id": "0032",
+ "name": "Lòng biết ơn",
+ "storeKey": "sth-0032-6n",
+ "kicker": "Công thức #0032",
+ "title": "Lòng biết ơn: một lời cảm ơn sau mỗi thói quen",
+ "sub": "Tuần Giáng sinh, cũng là tuần làm việc trọn vẹn cuối cùng của năm 2026. Thói quen then chốt có thêm một lớp nhỏ: một lời cảm ơn cụ thể sau mỗi lần làm. Mỗi ngày 15 đến 20 phút, từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "card",
+  "word": "Cảm ơn",
+  "big": "6",
+  "unit": "LỜI CẢM ƠN TRONG TUẦN",
+  "line": "Thói quen: {j_habit|đang được giữ}, kèm một lời cảm ơn cụ thể"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Ba điều biết ơn",
+   "title": "Ba điều biết ơn trong công việc năm nay",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc và thói quen then chốt vào hai ô dưới đây. Người đã có thì giữ nguyên, hoặc sửa lại câu chữ nếu cần."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: làm việc quan trọng trước khi mở hộp thư"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: viết ba việc quan trọng nhất trước 8 giờ"
+      }
+     ]
+    },
+    {
+     "h": "Ba điều biết ơn trong công việc năm 2026",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mỗi điều nên gắn với một người, một cơ hội hoặc một bài học cụ thể. Chưa biết bắt đầu từ đâu thì bấm một gợi ý."
+      },
+      {
+       "f": "seg",
+       "k": "d1kind",
+       "q": "Gợi ý bắt đầu từ đâu",
+       "opts": [
+        "Một người",
+        "Một cơ hội",
+        "Một bài học",
+        "Một khó khăn đã qua"
+       ],
+       "hints": [
+        "Ai đã giúp công việc của mình chạy được? Ví dụ: bạn kế toán mới tự học phần mềm đối chiếu.",
+        "Việc gì mình được giao lần đầu trong năm? Ví dụ: được dẫn dự án mở rộng khách hàng miền Trung.",
+        "Điều gì mình làm khác đi sau một lần làm sai? Ví dụ: luôn gửi biên bản họp trong ngày.",
+        "Giai đoạn khó nào đã qua và ai đã cùng mình vượt qua? Ví dụ: tháng thiếu người cả phòng chia nhau trực."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1g1",
+       "q": "Điều biết ơn số 1",
+       "ph": "Ví dụ: anh phụ trách kho luôn gửi phiếu xuất trước 5 giờ"
+      },
+      {
+       "f": "tx",
+       "k": "d1g2",
+       "q": "Điều biết ơn số 2",
+       "ph": "Ví dụ: được giao dẫn một dự án mới"
+      },
+      {
+       "f": "tx",
+       "k": "d1g3",
+       "q": "Điều biết ơn số 3",
+       "ph": "Ví dụ: một khách hàng góp ý thẳng giúp tôi sửa quy trình báo giá"
+      }
+     ]
+    },
+    {
+     "h": "Điều đáng nhớ nhất",
+     "items": [
+      {
+       "f": "note",
+       "text": "Bấm chọn một trong ba điều vừa viết."
+      },
+      {
+       "f": "pick",
+       "k": "d1top",
+       "kp": "d1g",
+       "n": 3,
+       "empty": "Điền ít nhất một điều ở trên để chọn."
+      },
+      {
+       "f": "ta",
+       "k": "d1why",
+       "q": "Điều đó đã thay đổi công việc của tôi ra sao?",
+       "ph": "Ví dụ: chốt sổ cuối tháng nhanh hơn, tôi có thêm thời gian phân tích số liệu"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ba điều tôi biết ơn trong công việc năm 2026: {d1g1}; {d1g2}; {d1g3}.",
+     "need": [
+      "d1g1",
+      "d1g2",
+      "d1g3"
+     ]
+    },
+    {
+     "tpl": " Điều đáng nhớ nhất: {d1top}.",
+     "need": [
+      "d1top"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Đồng nghiệp",
+   "title": "Cảm ơn đúng người, đúng việc",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Lời cảm ơn ba phần",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d2who",
+       "q": "Ai?",
+       "ph": "Ví dụ: bạn Minh phòng kho (có thể ghi vai trò thay cho tên)"
+      },
+      {
+       "f": "tx",
+       "k": "d2what",
+       "q": "Việc cụ thể họ đã làm",
+       "ph": "Ví dụ: gửi phiếu xuất kho trước 5 giờ suốt mùa cao điểm"
+      },
+      {
+       "f": "tx",
+       "k": "d2impact",
+       "q": "Tác động tới công việc",
+       "ph": "Ví dụ: phòng kế toán chốt sổ sớm hơn một ngày"
+      },
+      {
+       "f": "show",
+       "text": "Cảm ơn {d2who} đã {d2what}. Nhờ vậy, {d2impact}.",
+       "need": [
+        "d2who",
+        "d2what",
+        "d2impact"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d2sent",
+       "label": "Tôi đã gửi lời cảm ơn này hôm nay"
+      }
+     ]
+    },
+    {
+     "h": "Lớp mới cho thói quen then chốt",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2how",
+       "q": "Cách cảm ơn đi kèm thói quen",
+       "opts": [
+        "Một dòng nhắn",
+        "Nói trực tiếp",
+        "Sổ cảm ơn",
+        "Giấy nhớ"
+       ],
+       "hints": [
+        "Nhắn một câu cho người đã giúp việc mình vừa làm.",
+        "Nói một câu cảm ơn khi gặp người đó trong ngày.",
+        "Ghi một dòng cảm ơn vào sổ riêng, cuối tuần gửi đi.",
+        "Viết vài chữ trên giấy nhớ, đặt lên bàn người đó."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_thanks",
+       "q": "Sau mỗi lần làm thói quen, tôi ...",
+       "ph": "Ví dụ: nhắn một dòng cảm ơn người đã giúp việc quan trọng nhất hôm qua"
+      },
+      {
+       "f": "show",
+       "text": "Sau khi {j_habit}, tôi {j_thanks}.",
+       "need": [
+        "j_habit",
+        "j_thanks"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt. Từ hôm nay, mỗi lần làm thói quen đi kèm một lời cảm ơn."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hôm nay tôi cảm ơn {d2who} vì đã {d2what}.",
+     "need": [
+      "d2who",
+      "d2what"
+     ]
+    },
+    {
+     "tpl": " Sau mỗi lần làm thói quen, tôi {j_thanks}.",
+     "need": [
+      "j_thanks"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Khách hàng và đối tác",
+   "title": "Người nhận vui hơn mình nghĩ",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Chọn người nhận",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d3type",
+       "q": "Loại đối tác",
+       "opts": [
+        "Khách hàng lâu năm",
+        "Khách hàng mới",
+        "Nhà cung cấp",
+        "Bộ phận khác"
+       ],
+       "hints": [
+        "Khách đã làm việc cùng từ hai năm trở lên. Cảm ơn một việc cụ thể trong năm nay.",
+        "Khách bắt đầu làm việc trong năm 2026. Cảm ơn vì đã tin chọn bên mình.",
+        "Đơn vị cung cấp hàng hoá, dịch vụ cho bên mình. Cảm ơn một lần họ linh hoạt hoặc giao đúng hẹn.",
+        "Đồng nghiệp ở bộ phận khác trong công ty, cũng là khách hàng nội bộ của mình."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3who",
+       "q": "Người hoặc đơn vị tôi cảm ơn",
+       "ph": "Ví dụ: một nhà cung cấp bao bì làm việc cùng ba năm"
+      },
+      {
+       "f": "note",
+       "text": "Khi chia sẻ trong cộng đồng, ghi loại đối tác thay cho tên công ty để giữ thông tin khách hàng."
+      }
+     ]
+    },
+    {
+     "h": "Dự đoán trước khi gửi",
+     "items": [
+      {
+       "f": "rate",
+       "kp": "d3r",
+       "head": [
+        "#",
+        "Câu hỏi",
+        "Mức 1 đến 5"
+       ],
+       "rows": [
+        [
+         "Người nhận sẽ vui đến đâu?",
+         "1 là bình thường, 5 là rất vui"
+        ],
+        [
+         "Người nhận sẽ thấy ngại đến đâu?",
+         "1 là không ngại, 5 là rất ngại"
+        ]
+       ],
+       "scale": 5
+      },
+      {
+       "f": "note",
+       "text": "Kumar và Epley (2018): người viết thư cảm ơn thường đoán thấp mức vui và đoán cao mức ngại của người nhận."
+      }
+     ]
+    },
+    {
+     "h": "Ba câu cảm ơn",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3moment",
+       "q": "Việc cụ thể họ đã làm trong năm",
+       "ph": "Ví dụ: giao bù lô hàng lỗi trong 24 giờ"
+      },
+      {
+       "f": "tx",
+       "k": "d3help",
+       "q": "Điều đó giúp bên mình thế nào",
+       "ph": "Ví dụ: chúng tôi giữ được đơn hàng của khách lớn nhất quý"
+      },
+      {
+       "f": "tx",
+       "k": "d3wish",
+       "q": "Lời chúc riêng cho năm 2027",
+       "ph": "Ví dụ: chúc nhà máy mới của anh chị vận hành suôn sẻ"
+      },
+      {
+       "f": "show",
+       "text": "Bản nháp: Cảm ơn anh chị đã {d3moment}. Nhờ vậy, {d3help}. {d3wish}.",
+       "need": [
+        "d3moment",
+        "d3help",
+        "d3wish"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d3sent",
+       "label": "Tôi đã gửi lời cảm ơn này"
+      },
+      {
+       "f": "ta",
+       "k": "d3reply",
+       "q": "Người nhận phản hồi thế nào so với dự đoán? (điền sau)",
+       "ph": "Ví dụ: anh ấy gọi lại cảm ơn và kể đã chuyển thư cho cả nhóm"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Đối tác tôi cảm ơn hôm nay: {d3who}.",
+     "need": [
+      "d3who"
+     ]
+    },
+    {
+     "tpl": " Điều tôi cảm ơn: {d3moment}.",
+     "need": [
+      "d3moment"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Ngày 24.12",
+   "title": "Cảm ơn người âm thầm hỗ trợ",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Người âm thầm hỗ trợ",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d4role",
+       "q": "Vai trò",
+       "opts": [
+        "Bảo vệ",
+        "Tạp vụ",
+        "Kỹ thuật",
+        "Lễ tân",
+        "Giao nhận",
+        "Trực ca lễ"
+       ],
+       "hints": [
+        "Người giữ cổng, nhớ xe khách quen, giữ hộ bưu phẩm khi mình đi vắng.",
+        "Người giữ phòng họp, bàn làm việc, khu bếp sạch sẽ mỗi sáng.",
+        "Người khôi phục tệp, sửa máy, giữ mạng chạy ổn định.",
+        "Người đón khách, nghe điện thoại thay mình khi mình đang họp.",
+        "Người đưa hàng, đưa hồ sơ tới đúng hẹn, kể cả ngày đường đông.",
+        "Người làm việc trong kỳ nghỉ lễ để hệ thống, nhà máy, tổng đài không dừng."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d4who",
+       "q": "Người cụ thể",
+       "ph": "Ví dụ: chú Tư bảo vệ ca sáng"
+      },
+      {
+       "f": "tx",
+       "k": "d4what",
+       "q": "Việc họ làm mà ít ai thấy",
+       "ph": "Ví dụ: giữ hộ bưu phẩm mỗi lần tôi đi công tác"
+      }
+     ]
+    },
+    {
+     "h": "Cách cảm ơn hợp với người nhận",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d4way",
+       "q": "Cách cảm ơn",
+       "opts": [
+        "Nói trực tiếp",
+        "Thiệp nhỏ",
+        "Nhắn quản lý của họ",
+        "Một món quà nhỏ"
+       ],
+       "hints": [
+        "Hợp với người cởi mở. Nói riêng, đúng việc họ làm.",
+        "Hợp với người ngại đám đông. In thiệp ở phiếu Ngày 6 hoặc viết tay.",
+        "Lời ghi nhận đến tai cấp trên của họ thường có ý nghĩa lâu hơn.",
+        "Một ly nước, một phần bánh Giáng sinh mang tới tận chỗ, kèm một câu cảm ơn."
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d4msg",
+       "q": "Câu tôi sẽ nói hoặc viết",
+       "ph": "Ví dụ: Cảm ơn chú, mỗi lần cháu đi công tác về bưu phẩm đều còn nguyên"
+      },
+      {
+       "f": "cb",
+       "k": "d4done",
+       "label": "Tôi đã cảm ơn trong hôm nay"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày 24.12, tôi cảm ơn {d4who} vì {d4what}.",
+     "need": [
+      "d4who",
+      "d4what"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Ngày 25.12",
+   "title": "Nhìn lại hành trình của mình",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Hành trình đến hôm nay",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Đã làm {jtotal} ngày trên bảng hành trình.",
+       "need": [
+        "jtotal"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Bảng dưới gom lại các lớp đã thêm cho thói quen qua từng tuần. Ô hiện dấu ba chấm là tuần đó chưa điền, không sao cả: mỗi người bắt đầu ở một thời điểm khác nhau."
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Đã viết"
+       ],
+       "rows": [
+        {
+         "label": "Câu bản sắc",
+         "keys": [
+          "j_identity"
+         ]
+        },
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Giờ làm thói quen",
+         "keys": [
+          "j_when"
+         ]
+        },
+        {
+         "label": "Phiên bản hai phút",
+         "keys": [
+          "j_two"
+         ]
+        },
+        {
+         "label": "Kế hoạch Nếu... thì...",
+         "keys": [
+          "j_if1"
+         ]
+        },
+        {
+         "label": "Khung giờ năng lượng",
+         "keys": [
+          "j_peak"
+         ]
+        },
+        {
+         "label": "Khung giờ làm việc sâu",
+         "keys": [
+          "j_deep"
+         ]
+        },
+        {
+         "label": "Việc quan trọng nhất đầu ngày",
+         "keys": [
+          "j_frog"
+         ]
+        },
+        {
+         "label": "Kỹ năng đang luyện",
+         "keys": [
+          "j_skill"
+         ]
+        },
+        {
+         "label": "Điều đã giảng lại",
+         "keys": [
+          "j_teach"
+         ]
+        },
+        {
+         "label": "Lá chắn cuối năm",
+         "keys": [
+          "j_guard"
+         ]
+        },
+        {
+         "label": "Nghi thức kết thúc ngày",
+         "keys": [
+          "j_shutdown"
+         ]
+        },
+        {
+         "label": "Cải tiến nhỏ nhất",
+         "keys": [
+          "j_kaizen"
+         ]
+        },
+        {
+         "label": "Lời cảm ơn đi kèm",
+         "keys": [
+          "j_thanks"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Chọn ít nhất ba câu hỏi để trả lời",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d5q2",
+       "q": "Tuần nào khó nhất, và điều gì đã giúp mình không bỏ?",
+       "ph": "Ví dụ: tuần tất niên, nhờ kế hoạch Nếu... thì... viết sẵn"
+      },
+      {
+       "f": "ta",
+       "k": "d5q3",
+       "q": "Một ngày rất bận mà vẫn làm: hôm đó mình làm phiên bản nào?",
+       "ph": "Ví dụ: chỉ viết một việc quan trọng nhất lên giấy nhớ"
+      },
+      {
+       "f": "ta",
+       "k": "d5q4",
+       "q": "Ai đã nhận ra thay đổi của mình?",
+       "ph": "Ví dụ: trưởng phòng hỏi vì sao báo cáo tuần gửi sớm hơn"
+      },
+      {
+       "f": "ta",
+       "k": "d5q6",
+       "q": "Một lời ghi nhận cho chính mình",
+       "ph": "Ví dụ: cảm ơn chính mình vì đã quay lại ngay sau mỗi ngày lỡ"
+      }
+     ]
+    },
+    {
+     "h": "Điều tự hào nhất",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5proud",
+       "q": "Điều tôi tự hào nhất về chính mình trong hành trình",
+       "ph": "Ví dụ: tuần tất niên vẫn giữ được 5 trên 6 ngày"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hành trình của tôi đến hôm nay: {jtotal} ngày giữ thói quen {j_habit}.",
+     "need": [
+      "jtotal",
+      "j_habit"
+     ]
+    },
+    {
+     "tpl": " Điều tôi tự hào nhất: {d5proud}.",
+     "need": [
+      "d5proud"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Lá thư năm 2026",
+   "title": "Lá thư cảm ơn năm 2026",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "Những lời cảm ơn trong tuần",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mọi điều đã viết trong tuần tự gom lại ở đây. Ô nào còn trống thì quay lại ngày đó để điền."
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Điều đáng nhớ nhất năm",
+         "keys": [
+          "d1top"
+         ]
+        },
+        {
+         "label": "Đồng nghiệp",
+         "keys": [
+          "d2who"
+         ]
+        },
+        {
+         "label": "Đối tác",
+         "keys": [
+          "d3who"
+         ]
+        },
+        {
+         "label": "Người âm thầm hỗ trợ",
+         "keys": [
+          "d4who"
+         ]
+        },
+        {
+         "label": "Điều tự hào nhất",
+         "keys": [
+          "d5proud"
+         ]
+        },
+        {
+         "label": "Lời cảm ơn sau thói quen",
+         "keys": [
+          "j_thanks"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Lá thư gửi cộng đồng",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d6learn",
+       "q": "Đoạn 1: một điều tôi học được từ hành trình",
+       "ph": "Ví dụ: thói quen nhỏ làm đều có sức nặng hơn kế hoạch lớn làm một lần"
+      },
+      {
+       "f": "ta",
+       "k": "d6thank",
+       "q": "Đoạn 2: một người hoặc một chia sẻ trong cộng đồng đã giúp tôi",
+       "ph": "Ví dụ: chia sẻ về ngày lỡ của một anh trong nhóm giúp tôi không bỏ cuộc"
+      },
+      {
+       "f": "ta",
+       "k": "d6carry",
+       "q": "Đoạn 3: điều tôi mang theo sang năm 2027",
+       "ph": "Ví dụ: một lời cảm ơn cụ thể mỗi ngày làm việc"
+      },
+      {
+       "f": "tx",
+       "k": "d6line",
+       "q": "Một câu tóm tắt lá thư để đưa vào câu chia sẻ",
+       "ph": "Ví dụ: cảm ơn mọi người, nhờ những chia sẻ về ngày lỡ mà tôi học được cách quay lại"
+      }
+     ]
+    },
+    {
+     "h": "Mang sang tuần chuyển năm",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d6keep",
+       "label": "Tôi giữ thói quen then chốt và lời cảm ơn đi kèm sang tuần sau"
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau, Công thức #0033 Sức mạnh thói quen tổng kết năm 2026 bằng bảng hành trình và quyết định thói quen then chốt cho năm 2027."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Gửi cộng đồng 10X Excellence Hub: {d6line}.",
+     "need": [
+      "d6line"
+     ]
+    },
+    {
+     "tpl": " Lời cảm ơn tôi mang sang năm mới: {j_thanks}.",
+     "need": [
+      "j_thanks"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

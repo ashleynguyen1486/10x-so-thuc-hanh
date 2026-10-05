@@ -1,0 +1,599 @@
+{
+ "id": "0031",
+ "name": "Kaizen",
+ "storeKey": "sth-0031-6n",
+ "kicker": "Công thức #0031",
+ "title": "Kaizen: mỗi tuần tốt hơn một chút",
+ "sub": "Tuần họp tổng kết năm. Nhìn lại năm 2026 theo tinh thần cải tiến: ba việc mình đã làm tốt hơn, một cải tiến nhỏ nhất cho thói quen then chốt, một vòng PDCA trong một ngày, 5S cho chỗ làm việc, một góp ý từ đồng nghiệp và sổ cải tiến năm, từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "curve",
+  "big": "+1",
+  "unit": "CẢI TIẾN NHỎ MỖI TUẦN",
+  "line": "Cải tiến tuần này: {j_kaizen|một bước nhỏ cho thói quen then chốt}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Nhìn lại năm",
+   "title": "Ba việc mình đã làm tốt hơn",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Mới tham gia hoặc muốn viết lại? Điền hai ô dưới đây, sổ lưu cho cả hành trình."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: mỗi tuần làm tốt hơn một chút"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen đang giữ",
+       "ph": "Ví dụ: viết ba việc quan trọng nhất trước 8 giờ"
+      }
+     ]
+    },
+    {
+     "h": "Tháng 12 năm 2025 và bây giờ",
+     "items": [
+      {
+       "f": "note",
+       "text": "Nhớ lại cách mình làm việc một năm trước. Viết ba việc đã làm tốt hơn, càng cụ thể càng tốt, rồi ghi điều đã giúp mình."
+      },
+      {
+       "f": "tx",
+       "k": "d1g1",
+       "q": "Việc tốt hơn số 1",
+       "ph": "Ví dụ: trả lời khách hàng trong ngày thay vì hai ngày"
+      },
+      {
+       "f": "tx",
+       "k": "d1h1",
+       "q": "Điều đã giúp",
+       "ph": "Ví dụ: mẫu trả lời soạn sẵn"
+      },
+      {
+       "f": "tx",
+       "k": "d1g2",
+       "q": "Việc tốt hơn số 2",
+       "ph": "Ví dụ: gửi báo cáo tuần đúng hạn mọi Thứ Sáu"
+      },
+      {
+       "f": "tx",
+       "k": "d1h2",
+       "q": "Điều đã giúp",
+       "ph": "Ví dụ: đặt lịch nhắc chiều Thứ Năm"
+      },
+      {
+       "f": "tx",
+       "k": "d1g3",
+       "q": "Việc tốt hơn số 3",
+       "ph": "Ví dụ: họp giao ban gọn trong 20 phút"
+      },
+      {
+       "f": "tx",
+       "k": "d1h3",
+       "q": "Điều đã giúp",
+       "ph": "Ví dụ: gửi nội dung họp từ hôm trước"
+      }
+     ]
+    },
+    {
+     "h": "Nhìn lại hành trình",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ai đã đi cùng hành trình từ tháng 10: sổ tự đếm số ngày đã làm thói quen."
+      },
+      {
+       "f": "show",
+       "text": "Tổng số ngày đã làm thói quen trên bảng hành trình: {jtotal}.",
+       "need": [
+        "jtotal"
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d1feel",
+       "q": "Một điều mình tự hào trong năm 2026",
+       "ph": "Ví dụ: giữ được thói quen qua mùa cao điểm tháng 11"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Năm 2026, ba việc tôi đã làm tốt hơn: {d1g1}; {d1g2}; {d1g3}.",
+     "need": [
+      "d1g1",
+      "d1g2",
+      "d1g3"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Cải tiến nhỏ",
+   "title": "Cải tiến nhỏ nhất cho thói quen",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Chỗ thói quen hay vấp",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2trip",
+       "q": "Thói quen hay bị lỡ khi nào, vì sao?",
+       "ph": "Ví dụ: những sáng có họp giao ban lúc 8 giờ 30"
+      }
+     ]
+    },
+    {
+     "h": "Năm hướng cải tiến",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d2dir",
+       "q": "Chọn một hướng",
+       "opts": [
+        "Bớt một bước",
+        "Đổi thời điểm",
+        "Đổi chỗ",
+        "Thêm tín hiệu",
+        "Đo lại"
+       ],
+       "hints": [
+        "Bỏ một bước phải làm trước khi bắt đầu, ví dụ ghim tệp lên thanh tác vụ.",
+        "Dời sang khung giờ ít bị chen ngang, ví dụ sớm hơn 15 phút trước giờ họp.",
+        "Chọn một chỗ ngồi giúp vào việc nhanh hơn, ví dụ phòng họp nhỏ trống buổi sáng.",
+        "Đặt một vật hoặc lời nhắc đúng chỗ, ví dụ giấy ghi chú ở mép màn hình.",
+        "Thêm một con số đơn giản, ví dụ ghi số phút làm việc sâu thật sự."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_kaizen",
+       "q": "Cải tiến nhỏ nhất của tôi tuần này",
+       "ph": "Ví dụ: ghim tệp kế hoạch lên thanh tác vụ"
+      },
+      {
+       "f": "cb",
+       "k": "d2tom",
+       "label": "Sáng mai làm được ngay, không cần chuẩn bị thêm"
+      },
+      {
+       "f": "cb",
+       "k": "d2one",
+       "label": "Chỉ một cải tiến, không thay đổi điều khác"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Thói quen của tôi: {j_habit}.",
+     "need": [
+      "j_habit"
+     ]
+    },
+    {
+     "tpl": " Cải tiến nhỏ nhất tuần này: {j_kaizen}.",
+     "need": [
+      "j_kaizen"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2. Cải tiến được lưu cho cả hành trình."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "PDCA",
+   "title": "Một vòng PDCA trong một ngày",
+   "time": "Khoảng 30 phút, chia trong ngày",
+   "cards": [
+    {
+     "h": "Kế hoạch (buổi sáng)",
+     "items": [
+      {
+       "f": "show",
+       "text": "Cải tiến: {j_kaizen}",
+       "need": [
+        "j_kaizen"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3exp",
+       "q": "Mình mong điều gì xảy ra?",
+       "ph": "Ví dụ: vào việc nhanh hơn"
+      },
+      {
+       "f": "tx",
+       "k": "d3how",
+       "q": "Mình đo bằng cách nào?",
+       "ph": "Ví dụ: số phút từ lúc ngồi xuống đến dòng đầu tiên"
+      }
+     ]
+    },
+    {
+     "h": "Thực hiện (trong ngày)",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d3do",
+       "label": "Tôi đã làm thói quen kèm cải tiến hôm nay"
+      }
+     ]
+    },
+    {
+     "h": "Kiểm tra (cuối ngày)",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3c",
+       "q": "Kết quả so với hôm qua",
+       "ph": "Ví dụ: hôm qua 12 phút, hôm nay 4 phút"
+      },
+      {
+       "f": "track",
+       "note": "Bảng hành trình tuần này nằm ở đây. Bấm các ngày đã làm thói quen để có thêm một nguồn so sánh."
+      }
+     ]
+    },
+    {
+     "h": "Điều chỉnh",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d3a",
+       "q": "Quyết định cho ngày mai",
+       "opts": [
+        "chuẩn hoá",
+        "điều chỉnh",
+        "bỏ"
+       ],
+       "hints": [
+        "Có tác dụng: giữ lại thành cách làm mới từ ngày mai.",
+        "Có tác dụng một phần: sửa lại một chi tiết và thử tiếp ngày mai.",
+        "Không có tác dụng: quay lại cách cũ, chọn một cải tiến khác ở Ngày 2."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3next",
+       "q": "Nếu điều chỉnh, sửa gì?",
+       "ph": "Ví dụ: ghim thêm tệp danh sách khách hàng"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Vòng PDCA hôm nay, tôi thử: {j_kaizen}.",
+     "need": [
+      "j_kaizen"
+     ]
+    },
+    {
+     "tpl": " Kết quả: {d3c}.",
+     "need": [
+      "d3c"
+     ]
+    },
+    {
+     "tpl": " Quyết định: {d3a}.",
+     "need": [
+      "d3a"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "5S nhỏ",
+   "title": "Trước và sau một buổi 5S nhỏ",
+   "time": "Khoảng 20 đến 30 phút",
+   "cards": [
+    {
+     "h": "Chọn một góc",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d4spot",
+       "q": "Góc làm việc liên quan đến thói quen",
+       "opts": [
+        "Mặt bàn",
+        "Màn hình máy tính",
+        "Thư mục dự án"
+       ],
+       "hints": [
+        "Tài liệu, sổ, bút, vật dụng mình dùng khi làm thói quen.",
+        "Biểu tượng, cửa sổ, tệp tải về nằm lẫn với tệp đang làm.",
+        "Thư mục chứa tài liệu của thói quen hoặc dự án đang làm."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d4before",
+       "q": "Trước khi làm",
+       "ph": "Ví dụ: hơn năm mươi biểu tượng trên màn hình"
+      }
+     ]
+    },
+    {
+     "h": "Năm chữ S, hôm nay làm ba chữ đầu",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d4s1",
+       "label": "Sàng lọc: giữ điều cần, bỏ điều không cần"
+      },
+      {
+       "f": "cb",
+       "k": "d4s2",
+       "label": "Sắp xếp: mỗi vật một chỗ cố định"
+      },
+      {
+       "f": "cb",
+       "k": "d4s3",
+       "label": "Sạch sẽ: làm sạch để thấy vấn đề"
+      },
+      {
+       "f": "note",
+       "text": "Săn sóc: một quy định nhỏ để duy trì. Sẵn sàng: biến việc duy trì thành thói quen."
+      },
+      {
+       "f": "tx",
+       "k": "d4after",
+       "q": "Sau khi làm",
+       "ph": "Ví dụ: còn ba thư mục Đang làm, Tham khảo, Lưu trữ"
+      },
+      {
+       "f": "tx",
+       "k": "d4one",
+       "q": "Cải tiến 5S hôm nay trong một câu",
+       "ph": "Ví dụ: dọn màn hình còn ba thư mục"
+      },
+      {
+       "f": "tx",
+       "k": "d4rule",
+       "q": "Quy định nhỏ để duy trì",
+       "ph": "Ví dụ: năm phút dọn bàn trong nghi thức kết thúc ngày"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Cải tiến 5S hôm nay: {d4one}.",
+     "need": [
+      "d4one"
+     ]
+    },
+    {
+     "tpl": " Trước: {d4before}.",
+     "need": [
+      "d4before"
+     ]
+    },
+    {
+     "tpl": " Sau: {d4after}.",
+     "need": [
+      "d4after"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Góp ý",
+   "title": "Xin một góp ý từ đồng nghiệp",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Người và việc",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5who",
+       "q": "Đồng nghiệp tôi xin góp ý",
+       "ph": "Ví dụ: anh Tuấn, trưởng nhóm dự án"
+      },
+      {
+       "f": "tx",
+       "k": "d5what",
+       "q": "Việc cụ thể tôi hỏi",
+       "ph": "Ví dụ: bản báo cáo tiến độ chiều Thứ Sáu"
+      }
+     ]
+    },
+    {
+     "h": "Lời xin góp ý",
+     "items": [
+      {
+       "f": "note",
+       "text": "Bốn điểm: hỏi về một việc cụ thể, hỏi một điều nhỏ, hướng về tương lai, không tạo áp lực."
+      },
+      {
+       "f": "ta",
+       "k": "d5ask",
+       "q": "Lời xin góp ý của tôi",
+       "ph": "Ví dụ: Có một điều nhỏ nào em có thể làm khác đi để bản báo cáo giúp ích cho anh nhiều hơn không? Anh trả lời một câu ngắn là đủ."
+      },
+      {
+       "f": "cb",
+       "k": "d5sent",
+       "label": "Tôi đã gửi lời xin góp ý hôm nay"
+      }
+     ]
+    },
+    {
+     "h": "Khi nhận được trả lời",
+     "items": [
+      {
+       "f": "note",
+       "text": "Cảm ơn, ghi lại nguyên văn, không cần giải thích. Ô này điền sau cũng được."
+      },
+      {
+       "f": "tx",
+       "k": "d5fb",
+       "q": "Góp ý tôi nhận được",
+       "ph": "Ví dụ: tóm tắt ba dòng ở đầu báo cáo"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi đã xin góp ý từ {d5who}.",
+     "need": [
+      "d5who"
+     ]
+    },
+    {
+     "tpl": " Góp ý tôi nhận được: {d5fb}.",
+     "need": [
+      "d5fb"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5. Chưa nhận được góp ý thì dán phần đầu, bổ sung sau."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Sổ cải tiến",
+   "title": "Sổ cải tiến năm 2026 của mình",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "Sổ cải tiến tự gom",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mọi điều đã viết trong tuần tự gom lại ở đây. Ô nào hiện dấu ba chấm thì quay lại ngày đó để bổ sung."
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Tốt hơn 1",
+         "keys": [
+          "d1g1"
+         ]
+        },
+        {
+         "label": "Tốt hơn 2",
+         "keys": [
+          "d1g2"
+         ]
+        },
+        {
+         "label": "Tốt hơn 3",
+         "keys": [
+          "d1g3"
+         ]
+        },
+        {
+         "label": "Cải tiến tuần",
+         "keys": [
+          "j_kaizen"
+         ]
+        },
+        {
+         "label": "Kết quả PDCA",
+         "keys": [
+          "d3c"
+         ]
+        },
+        {
+         "label": "Quyết định",
+         "keys": [
+          "d3a"
+         ]
+        },
+        {
+         "label": "5S",
+         "keys": [
+          "d4one"
+         ]
+        },
+        {
+         "label": "Góp ý",
+         "keys": [
+          "d5fb"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Bước tiếp theo",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d6next",
+       "q": "Cải tiến nhỏ tiếp theo cho tuần sau",
+       "ph": "Ví dụ: tóm tắt ba dòng ở đầu báo cáo Thứ Sáu"
+      },
+      {
+       "f": "ta",
+       "k": "d6diary",
+       "q": "Nhật ký năm 2026, ba đến năm câu (chỉ dành cho mình)",
+       "ph": "Ví dụ: Tôi bắt đầu năm với lịch làm việc kín và hay trễ hạn báo cáo..."
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã in trang sổ cải tiến và đặt cạnh trang lá chắn"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Sổ cải tiến năm 2026 của tôi có: {d1g1}; {j_kaizen}; {d4one}.",
+     "need": [
+      "d1g1",
+      "j_kaizen",
+      "d4one"
+     ]
+    },
+    {
+     "tpl": " Cải tiến nhỏ tiếp theo cho tuần sau: {d6next}.",
+     "need": [
+      "d6next"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

@@ -1,850 +1,605 @@
 {
  "id": "0025",
- "name": "Công việc sâu",
- "storeKey": "sth-0025",
- "kicker": "Công thức #0025",
- "title": "Thử thách Công việc sâu 7 ngày",
- "sub": "Mỗi ngày từ 15 đến 45 phút chuẩn bị và ghi chép, cộng các khối làm việc sâu cho chính công việc của mình. Các anh chị và các bạn điền trên trang, bấm sao chép câu chia sẻ rồi dán vào bình luận của bài hôm đó trên 10X Excellence Hub nha. Trường đồng hành cùng mọi người cả tuần.",
+ "name": "Khối sâu",
+ "storeKey": "sth-0025-6n",
+ "kicker": "Công thức #0025",
+ "title": "Công việc sâu cho thói quen",
+ "sub": "Tuần thứ tư của hành trình thói quen. Nâng thói quen then chốt thành một khối làm việc sâu được bảo vệ trong lịch: phân loại việc sâu và việc nông, chọn nhịp, nghi thức bắt đầu và kết thúc, gom việc nông, đo giờ sâu cả tuần. Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ.",
+ "badge": {
+  "style": "diag",
+  "big": "{sum:d6m1,d6m2,d6m3,d6m4,d6m5,d6m6}",
+  "unit": "PHÚT VIỆC SÂU",
+  "line": "Khối làm việc sâu: {j_deep|đã có chỗ trong lịch}"
+ },
  "days": [
   {
-   "label": "Thứ Hai",
-   "kick": "Đo độ sâu",
-   "title": "Tuần qua có bao nhiêu giờ thật sự sâu?",
+   "label": "Thứ Hai",
+   "kick": "Việc sâu và việc nông",
+   "title": "Việc nào cần cả bộ óc, việc nào thì không?",
    "time": "Khoảng 20 phút",
    "cards": [
     {
-     "h": "Các việc chiếm nhiều thời gian nhất tuần qua",
-     "items": [
-      {
-       "f": "note",
-       "text": "Việc sâu: cần tập trung cao, khó thay thế, ví dụ viết đề xuất, phân tích số liệu. Việc nông: mang tính hậu cần, làm được cả khi bị xao nhãng, ví dụ trả lời thư thông thường, sắp lịch họp. Câu hỏi kiểm tra: một người mới tốt nghiệp cần nhiều tháng đào tạo mới làm được thì nhiều khả năng là việc sâu."
-      },
-      {
-       "f": "tx",
-       "k": "d1w1",
-       "q": "Việc 1 và số giờ tuần qua",
-       "ph": "Ví dụ: viết đề xuất cải tiến quy trình, 3 giờ"
-      },
-      {
-       "f": "seg",
-       "k": "d1t1",
-       "q": "Loại việc",
-       "opts": [
-        "Sâu",
-        "Nông"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d1w2",
-       "q": "Việc 2 và số giờ tuần qua",
-       "ph": "Ví dụ: trả lời thư khách hàng, 3 giờ"
-      },
-      {
-       "f": "seg",
-       "k": "d1t2",
-       "q": "Loại việc",
-       "opts": [
-        "Sâu",
-        "Nông"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d1w3",
-       "q": "Việc 3 và số giờ tuần qua",
-       "ph": "Ví dụ: họp giao ban, 3 giờ"
-      },
-      {
-       "f": "seg",
-       "k": "d1t3",
-       "q": "Loại việc",
-       "opts": [
-        "Sâu",
-        "Nông"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d1w4",
-       "q": "Việc 4 và số giờ tuần qua",
-       "ph": "Ví dụ: phân tích số liệu bán hàng, 3 giờ"
-      },
-      {
-       "f": "seg",
-       "k": "d1t4",
-       "q": "Loại việc",
-       "opts": [
-        "Sâu",
-        "Nông"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d1w5",
-       "q": "Việc 5 và số giờ tuần qua",
-       "ph": "Một việc khác"
-      },
-      {
-       "f": "seg",
-       "k": "d1t5",
-       "q": "Loại việc",
-       "opts": [
-        "Sâu",
-        "Nông"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d1w6",
-       "q": "Việc 6 và số giờ tuần qua",
-       "ph": "Một việc khác"
-      },
-      {
-       "f": "seg",
-       "k": "d1t6",
-       "q": "Loại việc",
-       "opts": [
-        "Sâu",
-        "Nông"
-       ]
-      }
-     ]
-    },
-    {
-     "h": "Tổng kết",
-     "items": [
-      {
-       "f": "tx",
-       "k": "d1deep",
-       "q": "Tổng số giờ sâu tuần qua (ước lượng)",
-       "ph": "Ví dụ: 4"
-      },
-      {
-       "f": "tx",
-       "k": "d1total",
-       "q": "Tổng số giờ làm việc tuần qua",
-       "ph": "Ví dụ: 45"
-      },
-      {
-       "f": "tx",
-       "k": "d1cut",
-       "q": "Điều hay cắt ngang mình nhất khi làm việc sâu",
-       "ph": "Ví dụ: nhóm trò chuyện công ty"
-      },
-      {
-       "f": "note",
-       "text": "Con số thấp là bình thường, đó là điểm xuất phát của tuần nha."
-      }
-     ]
-    }
-   ],
-   "checkin": [
-    {
-     "tpl": "Ngày 1: Tuần qua tôi có khoảng {d1deep} giờ sâu",
-     "need": [
-      "d1deep"
-     ]
-    },
-    {
-     "tpl": " trên {d1total} giờ làm việc",
-     "need": [
-      "d1deep",
-      "d1total"
-     ]
-    },
-    {
-     "tpl": ". Thứ hay cắt ngang nhất: {d1cut}",
-     "need": [
-      "d1deep",
-      "d1cut"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d1deep"
-     ]
-    }
-   ],
-   "hint": "Dán vào bình luận của bài Ngày 1."
-  },
-  {
-   "label": "Thứ Ba",
-   "kick": "Chọn cách",
-   "title": "Chọn cách sắp xếp và đặt lịch khối sâu",
-   "time": "Khoảng 15 phút",
-   "cards": [
-    {
-     "h": "Chọn cách sắp xếp thời gian sâu",
-     "items": [
-      {
-       "f": "seg",
-       "k": "d2way",
-       "q": "Cách phù hợp với công việc hiện tại",
-       "opts": [
-        "Tu viện",
-        "Hai chế độ",
-        "Nhịp đều",
-        "Nhà báo"
-       ],
-       "hints": [
-        "Tu viện: dành phần lớn thời gian cho một mục tiêu sâu, loại gần hết việc nông. Rất ít người làm được.",
-        "Hai chế độ: vài ngày hoặc vài tuần sâu xen với giai đoạn bình thường, ví dụ chặn hai ngày liền viết kế hoạch năm.",
-        "Nhịp đều: một khối sâu vào cùng giờ mỗi ngày. Phù hợp với phần lớn người đi làm nha.",
-        "Nhà báo: chen việc sâu vào bất kỳ khoảng trống nào. Khó với người mới bắt đầu."
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d2time",
-       "q": "Khối sâu của tôi (giờ, các ngày)",
-       "ph": "Ví dụ: 8 giờ đến 9 giờ 30, thứ Tư đến thứ Sáu"
-      },
-      {
-       "f": "tx",
-       "k": "d2task",
-       "q": "Việc quan trọng nhất sẽ làm trong các khối này",
-       "ph": "Ví dụ: đề xuất cải tiến quy trình duyệt chi phí"
-      },
-      {
-       "f": "note",
-       "text": "Gợi ý: đặt khối sâu vào khung năng lượng cao nhất mình đã tìm ra ở Ngày 2 tuần 0024 (mở lại thẻ tuần đó để xem)."
-      },
-      {
-       "f": "cb",
-       "k": "d2cal",
-       "label": "Đã đặt các khối sâu vào lịch làm việc"
-      }
-     ]
-    }
-   ],
-   "checkin": [
-    {
-     "tpl": "Ngày 2: Tôi chọn cách {d2way}",
-     "need": [
-      "d2way"
-     ]
-    },
-    {
-     "tpl": ", khối sâu {d2time}",
-     "need": [
-      "d2way",
-      "d2time"
-     ]
-    },
-    {
-     "tpl": ". Việc chính: {d2task}",
-     "need": [
-      "d2way",
-      "d2task"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d2way"
-     ]
-    }
-   ],
-   "hint": "Dán vào bình luận của bài Ngày 2."
-  },
-  {
-   "label": "Thứ Tư",
-   "kick": "Khối đầu tiên",
-   "title": "Xây nghi thức và làm khối sâu đầu tiên",
-   "time": "Khoảng 15 phút cộng một khối",
-   "cards": [
-    {
-     "h": "Bốn câu hỏi nghi thức",
-     "items": [
-      {
-       "f": "tx",
-       "k": "d3where",
-       "q": "Ở đâu?",
-       "ph": "Ví dụ: phòng họp nhỏ tầng 3"
-      },
-      {
-       "f": "tx",
-       "k": "d3long",
-       "q": "Bao lâu?",
-       "ph": "Ví dụ: 8 giờ đến 9 giờ 30"
-      },
-      {
-       "f": "tx",
-       "k": "d3rule",
-       "q": "Quy tắc gì?",
-       "ph": "Ví dụ: điện thoại ở ngăn kéo, đóng hộp thư"
-      },
-      {
-       "f": "tx",
-       "k": "d3need",
-       "q": "Cần chuẩn bị gì?",
-       "ph": "Ví dụ: tài liệu in sẵn, danh sách bước đầu tiên"
-      }
-     ]
-    },
-    {
-     "h": "Khối sâu đầu tiên",
+     "h": "Thói quen đang giữ",
      "items": [
       {
        "f": "show",
-       "text": "Việc chính: {d2task}",
+       "text": "Thói quen đang giữ: {j_habit}",
        "need": [
-        "d2task"
+        "j_habit"
        ]
       },
       {
-       "f": "timer",
-       "k": "d3min",
-       "dk": "d3dur",
-       "opts": [
-        45,
-        60,
-        75,
-        90
-       ],
-       "def": 75,
-       "note": "Mười đến mười lăm phút đầu thường khó chịu nhất. Muốn mở điện thoại thì ghi việc cần kiểm tra ra giấy rồi làm tiếp nha."
+       "f": "note",
+       "text": "Mới tham gia? Viết câu bản sắc và một thói quen then chốt trong công việc ở hai ô dưới. Đã có từ các tuần trước thì giữ nguyên."
+      },
+      {
+       "f": "ta",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: làm việc quan trọng trước khi mở hộp thư"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: làm việc sâu ít nhất 30 phút mỗi sáng"
+      }
+     ]
+    },
+    {
+     "h": "Sáu việc của một ngày làm việc gần nhất",
+     "items": [
+      {
+       "f": "note",
+       "text": "Việc sâu: cần tập trung trọn vẹn, tạo ra giá trị mới, người khác khó làm thay. Việc nông: việc hành chính, làm được cả khi bị cắt ngang, người mới vào nghề học vài tuần là làm được. Viết từng việc rồi bấm Sâu hoặc Nông."
+      },
+      {
+       "f": "rows",
+       "n": 6,
+       "kp": "d1t",
+       "ph": "Việc",
+       "zk": "d1z",
+       "zones": [
+        [
+         "sau",
+         "Sâu"
+        ],
+        [
+         "nong",
+         "Nông"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Nhìn lại một ngày",
+     "items": [
+      {
+       "f": "matrix",
+       "top": "Việc đã chia nhóm",
+       "bottom": "Một ngày có mấy việc sâu?",
+       "n": 6,
+       "kp": "d1t",
+       "zk": "d1z",
+       "zones": [
+        [
+         "sau",
+         "Việc sâu",
+         "Cần tập trung trọn vẹn",
+         true
+        ],
+        [
+         "nong",
+         "Việc nông",
+         "Làm được khi bị cắt ngang",
+         false
+        ]
+       ]
       },
       {
        "f": "nums",
        "items": [
         {
-         "k": "d3min",
-         "q": "Số phút tập trung"
-        },
-        {
-         "k": "d3int",
-         "q": "Số lần bị cắt ngang"
+         "k": "d1h",
+         "q": "Hôm qua có khoảng bao nhiêu giờ làm việc sâu thật sự?"
         }
        ]
       },
       {
        "f": "tx",
-       "k": "d3done",
-       "q": "Đã làm được gì trong khối",
-       "ph": "Ví dụ: viết xong phần phân tích hiện trạng"
+       "k": "d1top",
+       "q": "Việc sâu quan trọng nhất của tôi tuần này",
+       "ph": "Ví dụ: hoàn thành đề xuất dự án cho khách hàng mới"
       }
      ]
     }
    ],
    "checkin": [
     {
-     "tpl": "Ngày 3: Khối sâu đầu tiên {d3min} phút",
+     "tpl": "Thói quen tôi đang giữ: {j_habit}.",
      "need": [
-      "d3min"
+      "j_habit"
      ]
     },
     {
-     "tpl": " tại {d3where}",
+     "tpl": " Việc sâu quan trọng nhất tuần này: {d1top}.",
      "need": [
-      "d3min",
-      "d3where"
+      "d1top"
      ]
     },
     {
-     "tpl": ", bị cắt ngang {d3int} lần",
+     "tpl": " Hôm qua tôi có khoảng {d1h} giờ làm việc sâu.",
      "need": [
-      "d3min",
-      "d3int"
-     ]
-    },
-    {
-     "tpl": ". {d3done}",
-     "need": [
-      "d3min",
-      "d3done"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d3min"
+      "d1h"
      ]
     }
    ],
-   "hint": "Dán vào bình luận của bài Ngày 3."
+   "hint": "Dán vào bình luận của bài Ngày 1."
   },
   {
-   "label": "Thứ Năm",
-   "kick": "Nhàm chán",
-   "title": "Lên lịch giờ dùng mạng và suy nghĩ khi di chuyển",
+   "label": "Thứ Ba",
+   "kick": "Nhịp lịch",
+   "title": "Chọn nhịp làm việc sâu hợp với vị trí của mình",
    "time": "Khoảng 20 phút",
    "cards": [
     {
-     "h": "Phần 1: Lên lịch cho mạng",
+     "h": "Bốn nhịp làm việc sâu",
      "items": [
       {
-       "f": "note",
-       "text": "Chọn những khoảng trong ngày được phép mở tin nhắn và mạng. Ngoài các khoảng đó, kể cả khi đang chờ, không mở."
-      },
-      {
-       "f": "tx",
-       "k": "d4slots",
-       "q": "Các khoảng được mở",
-       "ph": "Ví dụ: đầu mỗi giờ chẵn, 10 phút"
-      },
-      {
        "f": "seg",
-       "k": "d4urge",
-       "q": "Số lần suýt mở ngoài giờ",
+       "k": "d2mode",
+       "q": "Nhịp của tôi",
        "opts": [
-        "0 đến 3",
-        "4 đến 7",
-        "8 đến 12",
-        "Hơn 12"
+        "nhịp đều mỗi ngày",
+        "hai chế độ",
+        "tranh thủ khoảng trống",
+        "ẩn mình dài ngày"
+       ],
+       "hints": [
+        "Cùng một khung giờ mỗi ngày làm việc. Hợp với phần lớn người đi làm.",
+        "Vài ngày trong tuần dành trọn cho việc sâu, các ngày khác cho việc thường. Cần sự đồng ý của quản lý.",
+        "Có khoảng trống là chuyển ngay sang việc sâu. Cần đã quen làm việc sâu, khó với người mới bắt đầu.",
+        "Rút khỏi mọi liên lạc trong thời gian dài. Hiếm khi hợp với người làm trong doanh nghiệp."
        ]
       }
      ]
     },
     {
-     "h": "Phần 2: Suy nghĩ khi di chuyển",
+     "h": "Khối làm việc sâu của tôi",
      "items": [
       {
-       "f": "note",
-       "text": "Trong 15 phút đi bộ hoặc trên đường, nghĩ về một vấn đề công việc. Lạc đề thì nhẹ nhàng quay lại. Đang lái xe thì chỉ làm khi thoải mái, cần chú ý đường thì dừng nha."
-      },
-      {
-       "f": "tx",
-       "k": "d4q",
-       "q": "Câu hỏi mình mang theo",
-       "ph": "Ví dụ: làm sao rút ngắn thời gian duyệt chi phí?"
-      },
-      {
-       "f": "tx",
-       "k": "d4idea",
-       "q": "Một ý mới có được",
-       "ph": "Ví dụ: gom việc duyệt vào thứ Ba và thứ Sáu"
-      }
-     ]
-    }
-   ],
-   "checkin": [
-    {
-     "tpl": "Ngày 4: Số lần suýt mở tin nhắn ngoài giờ: {d4urge}",
-     "need": [
-      "d4urge"
-     ]
-    },
-    {
-     "tpl": ". Câu hỏi khi đi bộ: {d4q}",
-     "need": [
-      "d4urge",
-      "d4q"
-     ]
-    },
-    {
-     "tpl": " Ý mới: {d4idea}",
-     "need": [
-      "d4urge",
-      "d4idea"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d4urge"
-     ]
-    }
-   ],
-   "hint": "Dán vào bình luận của bài Ngày 4."
-  },
-  {
-   "label": "Thứ Sáu",
-   "kick": "Công cụ",
-   "title": "Chọn lọc công cụ trong giờ làm việc",
-   "time": "Khoảng 25 phút",
-   "cards": [
-    {
-     "h": "Hai mục tiêu quan trọng nhất",
-     "items": [
-      {
-       "f": "tx",
-       "k": "d5g1",
-       "q": "Mục tiêu nghề nghiệp 1 trong quý này",
-       "ph": "Ví dụ: hoàn thành quy trình duyệt chi phí mới"
-      },
-      {
-       "f": "tx",
-       "k": "d5g2",
-       "q": "Mục tiêu nghề nghiệp 2",
-       "ph": "Ví dụ: kèm hai nhân viên mới"
-      }
-     ]
-    },
-    {
-     "h": "Năm công cụ hay dùng nhất trong giờ làm",
-     "items": [
-      {
-       "f": "note",
-       "text": "Chỉ giữ công cụ có lợi ích đáng kể cho mục tiêu chính. Công cụ chỉ có ích một chút thường không bù được phần chú ý bị chia nhỏ."
-      },
-      {
-       "f": "tx",
-       "k": "d5t1",
-       "q": "Công cụ 1",
-       "ph": "Ví dụ: nhóm trò chuyện toàn công ty"
-      },
-      {
-       "f": "seg",
-       "k": "d5b1",
-       "q": "Lợi ích cho hai mục tiêu trên",
-       "opts": [
-        "Cao",
-        "Trung bình",
-        "Thấp"
+       "f": "show",
+       "text": "Giờ vàng đã tìm ở tuần 0024: {j_peak}",
+       "need": [
+        "j_peak"
        ]
       },
       {
        "f": "tx",
-       "k": "d5t2",
-       "q": "Công cụ 2",
-       "ph": "Ví dụ: thư điện tử, nhóm dự án, ứng dụng nhắn tin"
-      },
-      {
-       "f": "seg",
-       "k": "d5b2",
-       "q": "Lợi ích cho hai mục tiêu trên",
-       "opts": [
-        "Cao",
-        "Trung bình",
-        "Thấp"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d5t3",
-       "q": "Công cụ 3",
-       "ph": "Ví dụ: thư điện tử, nhóm dự án, ứng dụng nhắn tin"
-      },
-      {
-       "f": "seg",
-       "k": "d5b3",
-       "q": "Lợi ích cho hai mục tiêu trên",
-       "opts": [
-        "Cao",
-        "Trung bình",
-        "Thấp"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d5t4",
-       "q": "Công cụ 4",
-       "ph": "Ví dụ: thư điện tử, nhóm dự án, ứng dụng nhắn tin"
-      },
-      {
-       "f": "seg",
-       "k": "d5b4",
-       "q": "Lợi ích cho hai mục tiêu trên",
-       "opts": [
-        "Cao",
-        "Trung bình",
-        "Thấp"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d5t5",
-       "q": "Công cụ 5",
-       "ph": "Ví dụ: thư điện tử, nhóm dự án, ứng dụng nhắn tin"
-      },
-      {
-       "f": "seg",
-       "k": "d5b5",
-       "q": "Lợi ích cho hai mục tiêu trên",
-       "opts": [
-        "Cao",
-        "Trung bình",
-        "Thấp"
-       ]
-      }
-     ]
-    },
-    {
-     "h": "Điều chỉnh",
-     "items": [
-      {
-       "f": "tx",
-       "k": "d5fix",
-       "q": "Điều chỉnh cho công cụ lợi ích thấp",
-       "ph": "Ví dụ: tắt thông báo nhóm toàn công ty, xem lúc 11 giờ và 16 giờ"
-      },
-      {
-       "f": "tx",
-       "k": "d5keep",
-       "q": "Công cụ giữ nguyên",
-       "ph": "Ví dụ: nhóm dự án chính"
-      }
-     ]
-    }
-   ],
-   "checkin": [
-    {
-     "tpl": "Ngày 5: {d5fix}",
-     "need": [
-      "d5fix"
-     ]
-    },
-    {
-     "tpl": ". Giữ: {d5keep}",
-     "need": [
-      "d5fix",
-      "d5keep"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d5fix"
-     ]
-    }
-   ],
-   "hint": "Dán vào bình luận của bài Ngày 5."
-  },
-  {
-   "label": "Thứ Bảy",
-   "kick": "Việc nông",
-   "title": "Gom việc nông, viết nghi thức kết thúc ngày",
-   "time": "Khoảng 25 phút",
-   "cards": [
-    {
-     "h": "Năm việc nông lặp lại nhiều nhất",
-     "items": [
-      {
-       "f": "note",
-       "text": "Gom: dồn vào một khung cố định. Giảm: làm ít lần hơn. Chuyển: giao cho người phù hợp hơn."
-      },
-      {
-       "f": "tx",
-       "k": "d6s1",
-       "q": "Việc nông 1",
-       "ph": "Ví dụ: trả lời thư"
-      },
-      {
-       "f": "seg",
-       "k": "d6a1",
-       "q": "Cách xử lý",
-       "opts": [
-        "Gom",
-        "Giảm",
-        "Chuyển",
-        "Giữ nguyên"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d6s2",
-       "q": "Việc nông 2",
-       "ph": "Một việc nông lặp lại"
-      },
-      {
-       "f": "seg",
-       "k": "d6a2",
-       "q": "Cách xử lý",
-       "opts": [
-        "Gom",
-        "Giảm",
-        "Chuyển",
-        "Giữ nguyên"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d6s3",
-       "q": "Việc nông 3",
-       "ph": "Một việc nông lặp lại"
-      },
-      {
-       "f": "seg",
-       "k": "d6a3",
-       "q": "Cách xử lý",
-       "opts": [
-        "Gom",
-        "Giảm",
-        "Chuyển",
-        "Giữ nguyên"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d6s4",
-       "q": "Việc nông 4",
-       "ph": "Một việc nông lặp lại"
-      },
-      {
-       "f": "seg",
-       "k": "d6a4",
-       "q": "Cách xử lý",
-       "opts": [
-        "Gom",
-        "Giảm",
-        "Chuyển",
-        "Giữ nguyên"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d6s5",
-       "q": "Việc nông 5",
-       "ph": "Một việc nông lặp lại"
-      },
-      {
-       "f": "seg",
-       "k": "d6a5",
-       "q": "Cách xử lý",
-       "opts": [
-        "Gom",
-        "Giảm",
-        "Chuyển",
-        "Giữ nguyên"
-       ]
-      }
-     ]
-    },
-    {
-     "h": "Nghi thức kết thúc ngày",
-     "items": [
-      {
-       "f": "cb",
-       "k": "d6r1",
-       "label": "Xem lại các việc còn dở"
-      },
-      {
-       "f": "cb",
-       "k": "d6r2",
-       "label": "Ghi bước tiếp theo cho từng việc"
-      },
-      {
-       "f": "cb",
-       "k": "d6r3",
-       "label": "Xem lịch ngày mai"
-      },
-      {
-       "f": "tx",
-       "k": "d6word",
-       "q": "Câu tự báo ngày làm việc đã xong",
-       "ph": "Ví dụ: Hết giờ, mai tính tiếp"
-      },
-      {
-       "f": "tx",
-       "k": "d6plan",
-       "q": "Kế hoạch gom việc nông tuần tới",
-       "ph": "Ví dụ: thư lúc 11 giờ và 16 giờ, bảng theo dõi thứ Ba và thứ Sáu"
-      }
-     ]
-    }
-   ],
-   "checkin": [
-    {
-     "tpl": "Ngày 6: {d6plan}",
-     "need": [
-      "d6plan"
-     ]
-    },
-    {
-     "tpl": ". Câu kết thúc ngày: \"{d6word}\"",
-     "need": [
-      "d6plan",
-      "d6word"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d6plan"
-     ]
-    }
-   ],
-   "hint": "Dán vào bình luận của bài Ngày 6."
-  },
-  {
-   "label": "Chủ Nhật",
-   "kick": "Kế hoạch 30 ngày",
-   "title": "Lập kế hoạch làm việc sâu cho 30 ngày",
-   "time": "Khoảng 30 đến 45 phút",
-   "cards": [
-    {
-     "h": "Kế hoạch 30 ngày theo khung bốn nguyên tắc thực thi",
-     "items": [
-      {
-       "f": "note",
-       "text": "Một mục tiêu quan trọng, một chỉ số dẫn dắt (giờ sâu mỗi tuần), một bảng điểm nhìn thấy được, và một lịch xem lại hằng tuần."
-      },
-      {
-       "f": "tx",
-       "k": "d7goal",
-       "q": "Mục tiêu quan trọng cho 30 ngày tới",
-       "ph": "Ví dụ: hoàn thành đề xuất quy trình duyệt chi phí"
+       "k": "j_deep",
+       "q": "Khung giờ của khối làm việc sâu",
+       "ph": "Ví dụ: 8 giờ 30 đến 10 giờ, Thứ Hai đến Thứ Sáu"
       },
       {
        "f": "show",
-       "text": "Điểm xuất phát (Ngày 1): {d1deep} giờ sâu mỗi tuần.",
+       "text": "Thói quen then chốt nằm trong khối: {j_habit}, {j_deep}.",
        "need": [
-        "d1deep"
+        "j_habit",
+        "j_deep"
        ]
       },
       {
-       "f": "tx",
-       "k": "d7hrs",
-       "q": "Giờ sâu mỗi tuần tôi hướng tới",
-       "ph": "Ví dụ: 6"
+       "f": "cb",
+       "k": "d2cal",
+       "label": "Tôi đã đặt khối này thành lịch lặp lại, tên rõ ràng, trạng thái bận"
       },
       {
-       "f": "seg",
-       "k": "d7board",
-       "q": "Bảng điểm của tôi",
-       "opts": [
-        "Giấy dán cạnh màn hình",
-        "Bảng tính",
-        "Sổ tay",
-        "Ứng dụng ghi chú"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d7review",
-       "q": "Ngày cố định mỗi tuần để xem lại",
-       "ph": "Ví dụ: chiều thứ Sáu"
-      },
-      {
-       "f": "note",
-       "text": "Cảm ơn các anh chị và các bạn đã đi cùng Trường cả tuần. Một khối sâu được bảo vệ đều đặn có giá trị hơn ba khối hay bị huỷ nha."
+       "f": "cb",
+       "k": "d2tell",
+       "label": "Tôi đã báo quản lý hoặc đội về khung giờ này"
       }
      ]
     }
    ],
    "checkin": [
     {
-     "tpl": "Ngày 7: Mục tiêu 30 ngày: {d7goal}",
+     "tpl": "Nhịp làm việc sâu của tôi: {d2mode}.",
      "need": [
-      "d7goal"
+      "d2mode"
      ]
     },
     {
-     "tpl": ". Giờ sâu mỗi tuần: từ {d1deep} lên {d7hrs}",
+     "tpl": " Khối làm việc sâu: {j_deep}.",
      "need": [
-      "d7goal",
-      "d1deep",
-      "d7hrs"
-     ]
-    },
-    {
-     "tpl": ". Xem lại mỗi {d7review}",
-     "need": [
-      "d7goal",
-      "d7review"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d7goal"
+      "j_deep"
      ]
     }
    ],
-   "hint": "Dán vào bình luận của bài Ngày 7."
+   "hint": "Dán vào bình luận của bài Ngày 2. Khối làm việc sâu được lưu cho cả hành trình."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Nghi thức bắt đầu",
+   "title": "Ba câu trả lời trước khi vào khối sâu",
+   "time": "Khoảng 20 phút, cộng một khối làm việc sâu",
+   "cards": [
+    {
+     "h": "Ở đâu và bao lâu",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3where",
+       "q": "Mình làm việc sâu ở đâu?",
+       "ph": "Ví dụ: phòng họp nhỏ tầng 3, hoặc bàn mình với tai nghe"
+      },
+      {
+       "f": "tx",
+       "k": "d3long",
+       "q": "Khối kéo dài bao lâu?",
+       "ph": "Ví dụ: 60 phút"
+      }
+     ]
+    },
+    {
+     "h": "Làm thế nào khi đã bắt đầu",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3rule",
+       "q": "Quy tắc trong khối",
+       "ph": "Ví dụ: tắt thông báo, điện thoại để ngoài tầm tay, không mở hộp thư"
+      },
+      {
+       "f": "tx",
+       "k": "d3support",
+       "q": "Điều giúp mình vào việc",
+       "ph": "Ví dụ: một ly nước, mở sẵn tài liệu từ chiều hôm trước"
+      }
+     ]
+    },
+    {
+     "h": "Nghi thức bắt đầu của tôi",
+     "items": [
+      {
+       "f": "ta",
+       "k": "j_ritual",
+       "q": "Gom lại thành một câu",
+       "ph": "Ví dụ: rót nước, tắt thông báo, viết mục tiêu của khối lên giấy, rồi bắt đầu"
+      },
+      {
+       "f": "note",
+       "text": "Thử ngay một khối. Làm nghi thức, bấm Bắt đầu và làm việc sâu đến khi đồng hồ dừng."
+      },
+      {
+       "f": "timer",
+       "k": "d3min",
+       "dk": "d3dur",
+       "def": 45,
+       "opts": [
+        30,
+        45,
+        60,
+        90
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Nghi thức bắt đầu khối làm việc sâu của tôi: {j_ritual}",
+     "need": [
+      "j_ritual"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3. Nghi thức bắt đầu được lưu cho cả hành trình."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Gom việc nông",
+   "title": "Để việc nông không chen vào khối sâu",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Bảng hành trình tuần này",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày đã làm thói quen then chốt trong khối sâu từ Thứ Hai đến nay."
+      }
+     ]
+    },
+    {
+     "h": "Đếm một buổi",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d4n",
+         "q": "Số lần chuyển sang hộp thư, tin nhắn trong một buổi"
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Mỗi lần chuyển việc, một phần sự chú ý còn bám lại ở việc trước. Sophie Leroy gọi đó là dư âm chú ý."
+      }
+     ]
+    },
+    {
+     "h": "Gom việc nông vào khung cố định",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4batch",
+       "q": "Khung gom việc nông",
+       "ph": "Ví dụ: 11 giờ và 16 giờ"
+      },
+      {
+       "f": "seg",
+       "k": "d4ch",
+       "q": "Kênh gây cắt ngang nhiều nhất",
+       "opts": [
+        "Hộp thư",
+        "Tin nhắn nhóm",
+        "Điện thoại",
+        "Người ghé bàn"
+       ],
+       "hints": [
+        "Tắt thông báo, mở hộp thư đúng khung gom.",
+        "Bật chế độ không làm phiền trong khối sâu, ghi trạng thái bận.",
+        "Để điện thoại ngoài tầm tay, chỉ để cuộc gọi của người quan trọng được báo.",
+        "Dùng câu hẹn lại giờ đã soạn ở tuần 0023."
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d4tell",
+       "q": "Câu báo trước với đồng nghiệp",
+       "ph": "Ví dụ: Từ 8 giờ 30 đến 10 giờ mình tập trung làm đề xuất, việc gấp anh chị gọi điện nha, còn lại 10 giờ mình trả lời."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi gom việc nông vào {d4batch}.",
+     "need": [
+      "d4batch"
+     ]
+    },
+    {
+     "tpl": " Câu báo trước với đồng nghiệp: {d4tell}",
+     "need": [
+      "d4tell"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Nghi thức kết thúc",
+   "title": "Khép ngày làm việc để sáng mai vào việc ngay",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Bốn bước trước khi rời bàn",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d5c1",
+       "label": "Xem lại việc đang dở, ghi bước tiếp theo cho từng việc"
+      },
+      {
+       "f": "cb",
+       "k": "d5c2",
+       "label": "Xem lịch ngày mai, giữ nguyên khối làm việc sâu"
+      },
+      {
+       "f": "cb",
+       "k": "d5c3",
+       "label": "Mở sẵn tài liệu cho khối sâu ngày mai"
+      },
+      {
+       "f": "cb",
+       "k": "d5c4",
+       "label": "Nói hoặc viết câu kết thúc ngày"
+      }
+     ]
+    },
+    {
+     "h": "Chuẩn bị cho khối sâu ngày mai",
+     "items": [
+      {
+       "f": "show",
+       "text": "Khối làm việc sâu: {j_deep}",
+       "need": [
+        "j_deep"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5next",
+       "q": "Việc đầu tiên của khối sâu ngày mai",
+       "ph": "Ví dụ: viết phần giải pháp của đề xuất, trang 3"
+      },
+      {
+       "f": "tx",
+       "k": "d5phrase",
+       "q": "Câu kết thúc ngày của tôi",
+       "ph": "Ví dụ: Đã khép ngày làm việc"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Câu kết thúc ngày của tôi: {d5phrase}.",
+     "need": [
+      "d5phrase"
+     ]
+    },
+    {
+     "tpl": " Việc đầu tiên của khối sâu ngày mai: {d5next}.",
+     "need": [
+      "d5next"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Đo giờ sâu",
+   "title": "Một tuần làm việc sâu, nhìn bằng con số",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Số phút làm việc sâu mỗi ngày",
+     "items": [
+      {
+       "f": "note",
+       "text": "Chỉ tính thời gian tập trung thật sự, không mở hộp thư, không chuyển việc. Ngày không có khối sâu ghi 0."
+      },
+      {
+       "f": "sum",
+       "head": [
+        "Ngày",
+        "Phút"
+       ],
+       "rows": [
+        {
+         "label": "Thứ Hai",
+         "keys": [
+          "d6m1"
+         ]
+        },
+        {
+         "label": "Thứ Ba",
+         "keys": [
+          "d6m2"
+         ]
+        },
+        {
+         "label": "Thứ Tư",
+         "keys": [
+          "d6m3"
+         ]
+        },
+        {
+         "label": "Thứ Năm",
+         "keys": [
+          "d6m4"
+         ]
+        },
+        {
+         "label": "Thứ Sáu",
+         "keys": [
+          "d6m5"
+         ]
+        },
+        {
+         "label": "Thứ Bảy",
+         "keys": [
+          "d6m6"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Ba câu hỏi nhìn lại",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d6best",
+       "q": "Khối sâu nào trọn vẹn nhất, vì sao?",
+       "ph": "Ví dụ: sáng Thứ Tư, vì đã mở sẵn tài liệu từ chiều hôm trước"
+      },
+      {
+       "f": "tx",
+       "k": "d6why",
+       "q": "Điều gì cắt ngang khối sâu nhiều nhất?",
+       "ph": "Ví dụ: tin nhắn nhóm dự án"
+      },
+      {
+       "f": "tx",
+       "k": "d6keep",
+       "q": "Tuần sau mình giữ gì, đổi gì?",
+       "ph": "Ví dụ: giữ khung 8 giờ 30, thêm khối thứ hai vào chiều Thứ Năm"
+      }
+     ]
+    },
+    {
+     "h": "Khối làm việc sâu mang sang tuần sau",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Của tôi"
+       ],
+       "rows": [
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Khối làm việc sâu",
+         "keys": [
+          "j_deep"
+         ]
+        },
+        {
+         "label": "Nghi thức bắt đầu",
+         "keys": [
+          "j_ritual"
+         ]
+        },
+        {
+         "label": "Giờ vàng",
+         "keys": [
+          "j_peak"
+         ]
+        },
+        {
+         "label": "Nghỉ ngắn sau khối",
+         "keys": [
+          "j_recharge"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tuần này tôi có {sum:d6m1,d6m2,d6m3,d6m4,d6m5,d6m6} phút làm việc sâu.",
+     "need": [
+      "sum:d6m1,d6m2,d6m3,d6m4,d6m5,d6m6"
+     ]
+    },
+    {
+     "tpl": " Điều cắt ngang nhiều nhất: {d6why}.",
+     "need": [
+      "d6why"
+     ]
+    },
+    {
+     "tpl": " Tuần sau tôi giữ khối {j_deep}.",
+     "need": [
+      "j_deep"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
   }
  ]
 }

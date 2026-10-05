@@ -1,0 +1,579 @@
+{
+ "id": "0033",
+ "name": "Sức mạnh thói quen",
+ "storeKey": "sth-0033-6n",
+ "kicker": "Công thức #0033",
+ "title": "Sức mạnh thói quen: khép năm 2026, mở năm 2027",
+ "sub": "Tuần chuyển năm. Đọc lại năm 2026 qua bảng hành trình, vẽ vòng lặp thói quen, quyết định giữ, nâng cấp hay đổi thói quen then chốt cho năm 2027. Thứ Năm 31.12 viết thư gửi chính mình, Thứ Sáu 01.01 nghỉ Tết chỉ một câu. Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "year",
+  "year": "2026",
+  "big": "{jtotal}",
+  "unit": "NĂM 2026 CỦA TÔI",
+  "sub": "ngày giữ thói quen trên hành trình",
+  "line": "Thói quen mang vào năm 2027: {j_habit|đang được chọn}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Đọc lại năm 2026",
+   "title": "Đọc lại năm 2026 qua bảng hành trình",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc và thói quen then chốt muốn mang vào năm 2027 ở hai ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: làm việc quan trọng trước khi mở hộp thư"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: đọc tài liệu chuyên môn 20 phút trước giờ họp sáng"
+      }
+     ]
+    },
+    {
+     "h": "Lưu lại thói quen năm 2026",
+     "items": [
+      {
+       "f": "note",
+       "text": "Chép nguyên văn thói quen đang giữ vào ô dưới. Sổ lưu riêng bản này cho cả hành trình, để Thứ Tư có thể cập nhật thói quen cho năm 2027 mà không mất bản cũ."
+      },
+      {
+       "f": "tx",
+       "k": "j_habit_2026",
+       "q": "Thói quen năm 2026 của tôi",
+       "ph": "Ví dụ: viết ba việc quan trọng nhất trước 8 giờ"
+      },
+      {
+       "f": "show",
+       "text": "Đã lưu: năm 2026, tôi giữ thói quen {j_habit_2026}.",
+       "need": [
+        "j_habit_2026"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen. Dòng bên dưới bảng là tổng số ngày cả hành trình, chỉ số đầu tiên của báo cáo năm."
+      }
+     ]
+    },
+    {
+     "h": "Bốn chỉ số của báo cáo năm",
+     "items": [
+      {
+       "f": "note",
+       "text": "Tổng số ngày sổ đã đếm ở dòng ngay dưới bảng. Ba chỉ số còn lại tự đọc trên bảng hoặc nhớ lại."
+      },
+      {
+       "f": "ta",
+       "k": "d1best",
+       "q": "Chuỗi dài nhất: giai đoạn nào mình giữ đều nhất, vì sao?",
+       "ph": "Ví dụ: tháng 11, vì đã có tín hiệu rõ và kế hoạch Nếu... thì..."
+      },
+      {
+       "f": "ta",
+       "k": "d1gap",
+       "q": "Khoảng trống: những tuần nhiều ô trống trùng với việc gì?",
+       "ph": "Ví dụ: hai tuần công tác và tuần chốt hợp đồng cuối năm"
+      },
+      {
+       "f": "ta",
+       "k": "d1back",
+       "q": "Ngày quay lại: sau ngày lỡ, điều gì giúp mình làm lại?",
+       "ph": "Ví dụ: làm phiên bản hai phút ngay sáng hôm sau"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Năm 2026, tôi đã giữ thói quen {j_habit_2026} được {jtotal} ngày.",
+     "need": [
+      "j_habit_2026",
+      "jtotal"
+     ]
+    },
+    {
+     "tpl": " Giai đoạn giữ đều nhất: {d1best}.",
+     "need": [
+      "d1best"
+     ]
+    },
+    {
+     "tpl": " Điều giúp tôi quay lại sau ngày lỡ: {d1back}.",
+     "need": [
+      "d1back"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Vòng lặp thói quen",
+   "title": "Mổ xẻ vòng lặp của một thói quen",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Vòng lặp của thói quen then chốt",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d2cuetype",
+       "q": "Tín hiệu thuộc nhóm nào?",
+       "opts": [
+        "Địa điểm",
+        "Thời gian",
+        "Trạng thái",
+        "Người khác",
+        "Việc ngay trước"
+       ],
+       "hints": [
+        "Một chỗ cụ thể. Ví dụ: ngồi vào bàn làm việc.",
+        "Một giờ cố định. Ví dụ: 8 giờ sáng.",
+        "Một cảm giác. Ví dụ: thấy đầu óc còn tỉnh táo.",
+        "Một người hoặc một nhóm. Ví dụ: khi trưởng nhóm bắt đầu họp giao ban.",
+        "Một việc vừa làm xong. Ví dụ: ngay sau khi pha cà phê."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2cue",
+       "q": "Tín hiệu",
+       "ph": "Ví dụ: 8 giờ sáng ngồi vào bàn"
+      },
+      {
+       "f": "show",
+       "text": "Hành động: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2reward",
+       "q": "Phần thưởng",
+       "ph": "Ví dụ: cảm giác nắm được ngày làm việc"
+      },
+      {
+       "f": "show",
+       "text": "Tín hiệu {d2cue} → {j_habit} → phần thưởng {d2reward}",
+       "need": [
+        "d2cue",
+        "j_habit",
+        "d2reward"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Vòng lặp của một thói quen chưa tốt",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d2bcue",
+       "q": "Tín hiệu",
+       "ph": "Ví dụ: 3 giờ chiều, gặp việc khó"
+      },
+      {
+       "f": "tx",
+       "k": "d2broutine",
+       "q": "Hành động theo quán tính",
+       "ph": "Ví dụ: mở điện thoại lướt mạng xã hội"
+      },
+      {
+       "f": "tx",
+       "k": "d2breward",
+       "q": "Phần thưởng thật sự mình muốn",
+       "ph": "Ví dụ: đổi không khí vài phút"
+      }
+     ]
+    },
+    {
+     "h": "Quy tắc vàng",
+     "items": [
+      {
+       "f": "note",
+       "text": "Giữ tín hiệu, giữ phần thưởng, chỉ thay hành động."
+      },
+      {
+       "f": "tx",
+       "k": "d2new",
+       "q": "Hành động mới",
+       "ph": "Ví dụ: đứng dậy rót nước, nói chuyện năm phút với đồng nghiệp"
+      },
+      {
+       "f": "show",
+       "text": "Khi {d2bcue}, tôi sẽ {d2new}, để có {d2breward}.",
+       "need": [
+        "d2bcue",
+        "d2new",
+        "d2breward"
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Vòng lặp của tôi: tín hiệu {d2cue} → {j_habit} → phần thưởng {d2reward}.",
+     "need": [
+      "d2cue",
+      "j_habit",
+      "d2reward"
+     ]
+    },
+    {
+     "tpl": " Hành động mới thay cho thói quen chưa tốt: {d2new}.",
+     "need": [
+      "d2new"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Quyết định cho 2027",
+   "title": "Giữ, nâng cấp hay đổi thói quen?",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Chấm ba câu",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen năm 2026: {j_habit_2026}",
+       "need": [
+        "j_habit_2026"
+       ]
+      },
+      {
+       "f": "rate",
+       "kp": "d3r",
+       "head": [
+        "#",
+        "Câu",
+        "Mức 1 đến 5"
+       ],
+       "rows": [
+        [
+         "Thói quen này đã gần như tự động",
+         "Làm mà không cần nhắc, kể cả ngày bận"
+        ],
+        [
+         "Thói quen vẫn gắn với điều quan trọng nhất của công việc năm 2027",
+         ""
+        ],
+        [
+         "Tôi muốn và có thể làm nhiều hơn một chút",
+         ""
+        ]
+       ],
+       "scale": 5
+      },
+      {
+       "f": "note",
+       "text": "Cách đọc: câu 1 và câu 3 cao thì cân nhắc nâng cấp. Câu 2 thấp thì cân nhắc đổi. Các trường hợp còn lại, giữ nguyên thường là lựa chọn tốt."
+      }
+     ]
+    },
+    {
+     "h": "Quyết định",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d3choice",
+       "q": "Hướng của tôi cho năm 2027",
+       "opts": [
+        "Giữ nguyên",
+        "Nâng cấp",
+        "Đổi thói quen"
+       ],
+       "hints": [
+        "Giữ đúng thói quen, đúng tín hiệu. Hợp khi chưa thật sự tự động mà vẫn gắn với công việc năm tới.",
+        "Giữ tín hiệu và giờ cũ, tăng một nấc nhỏ. Ví dụ: đọc 20 phút và ghi ba ý áp dụng.",
+        "Giữ tín hiệu và khung giờ cũ, đặt một thói quen mới vào đúng chỗ đó."
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Thói quen năm 2026 đã lưu ở Ngày 1. Chọn giữ nguyên thì để nguyên ô dưới. Nâng cấp hoặc đổi thì sửa lại câu chữ."
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt năm 2027",
+       "ph": "Ví dụ: đọc tài liệu chuyên môn 20 phút và ghi ba ý áp dụng"
+      },
+      {
+       "f": "ta",
+       "k": "d3why",
+       "q": "Vì sao tôi chọn hướng này?",
+       "ph": "Ví dụ: năm 2027 tôi nhận thêm mảng đào tạo nội bộ, cần đọc có ghi chép"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Quyết định của tôi cho năm 2027: {d3choice}.",
+     "need": [
+      "d3choice"
+     ]
+    },
+    {
+     "tpl": " Thói quen then chốt năm 2027: {j_habit}.",
+     "need": [
+      "j_habit"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Ngày 31.12",
+   "title": "Lá thư gửi chính mình ngày cuối năm",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Gợi ý cho lá thư",
+     "items": [
+      {
+       "f": "note",
+       "text": "Hôm nay công việc của mình đang ở đâu? Năm 2026 dạy mình điều gì về thói quen? Thói quen nào mang vào năm 2027, vì sao? Mình mong khi mở thư đã làm được gì? Nếu thói quen đã dừng, mình muốn nói gì với chính mình? Một lời cảm ơn gửi chính mình của năm 2026."
+      },
+      {
+       "f": "ta",
+       "k": "j_letter",
+       "q": "Thư gửi chính mình",
+       "ph": "Gửi tôi của năm 2027, ..."
+      },
+      {
+       "f": "note",
+       "text": "Ô thư được lưu cho cả hành trình. Sổ chỉ lưu trên trình duyệt đang dùng, nên chép thêm một bản ra giấy hoặc gửi vào hộp thư của chính mình."
+      }
+     ]
+    },
+    {
+     "h": "Hẹn ngày mở thư",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d4open",
+       "q": "Ngày mở thư",
+       "opts": [
+        "30.06.2027",
+        "31.12.2027"
+       ],
+       "hints": [
+        "Giữa năm: đủ lâu để thấy thay đổi, đủ gần để còn điều chỉnh cho nửa năm sau.",
+        "Cuối năm: đọc lại trọn một năm, đúng dịp tổng kết năm 2027."
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d4remind",
+       "label": "Tôi đã tạo lời nhắc trong lịch cho ngày mở thư"
+      },
+      {
+       "f": "cb",
+       "k": "d4copy",
+       "label": "Tôi đã chép thêm một bản ra giấy hoặc hộp thư"
+      },
+      {
+       "f": "tx",
+       "k": "d4line",
+       "q": "Một câu trong thư để chia sẻ",
+       "ph": "Ví dụ: quay lại lúc nào cũng được, chỉ cần bắt đầu bằng hai phút"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày cuối năm 2026, tôi đã viết thư gửi chính mình và hẹn mở vào {d4open}.",
+     "need": [
+      "d4open"
+     ]
+    },
+    {
+     "tpl": " Một câu trong thư: {d4line}.",
+     "need": [
+      "d4line"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Tết Dương lịch 01.01.2027",
+   "title": "Một câu bản sắc cho năm mới",
+   "time": "Khoảng 5 đến 10 phút",
+   "cards": [
+    {
+     "h": "Một câu là đủ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Câu bản sắc đang dùng: Tôi là người {j_identity}.",
+       "need": [
+        "j_identity"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_identity_2027",
+       "q": "Năm 2027, tôi là người ...",
+       "ph": "Ví dụ: giữ lời hẹn với khách hàng, dù là hẹn gọi lại"
+      },
+      {
+       "f": "show",
+       "text": "Năm 2027, tôi là người {j_identity_2027}.",
+       "need": [
+        "j_identity_2027"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d5two",
+       "label": "Hôm nay nghỉ Tết. Nếu muốn giữ nhịp, tôi làm phiên bản hai phút của thói quen"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Năm 2027, tôi là người {j_identity_2027}.",
+     "need": [
+      "j_identity_2027"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5. Chúc mừng năm mới."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Tuần đầu năm 2027",
+   "title": "Sẵn sàng cho tuần đầu năm 2027",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Năm 2026 và năm 2027",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Năm 2026",
+        "Năm 2027"
+       ],
+       "rows": [
+        {
+         "label": "Thói quen",
+         "keys": [
+          "j_habit_2026",
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Câu bản sắc",
+         "keys": [
+          "j_identity",
+          "j_identity_2027"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Quyết định Thứ Tư: {d3choice}.",
+       "need": [
+        "d3choice"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Ba việc chuẩn bị trước Thứ Hai 04.01",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d6c1",
+       "label": "Tín hiệu còn đúng chỗ (hoặc đã đặt tín hiệu mới)"
+      },
+      {
+       "f": "cb",
+       "k": "d6c2",
+       "label": "Đã có phiên bản hai phút cho thói quen năm 2027"
+      },
+      {
+       "f": "tx",
+       "k": "j_two",
+       "q": "Phiên bản hai phút",
+       "ph": "Ví dụ: mở tài liệu và đọc một trang"
+      },
+      {
+       "f": "cb",
+       "k": "d6c3",
+       "label": "Đã báo người cùng theo dõi về thói quen năm nay"
+      }
+     ]
+    },
+    {
+     "h": "Lần đầu tiên trong năm mới",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d6first",
+       "q": "Ngày, giờ, chỗ",
+       "ph": "Ví dụ: Thứ Hai 04.01, 8 giờ sáng, tại bàn làm việc, sau khi pha cà phê"
+      },
+      {
+       "f": "track",
+       "note": "Nếu hôm qua hoặc hôm nay đã làm thói quen, bấm vào ô ngày đó."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi mang vào năm 2027 thói quen {j_habit}.",
+     "need": [
+      "j_habit"
+     ]
+    },
+    {
+     "tpl": " Lần đầu tiên trong năm mới: {d6first}.",
+     "need": [
+      "d6first"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

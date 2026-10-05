@@ -1,951 +1,662 @@
 {
  "id": "0028",
- "name": "Kỹ thuật Feynman",
- "storeKey": "sth-0028",
- "kicker": "Công thức #0028",
- "title": "Thử thách Kỹ thuật Feynman 7 ngày",
- "sub": "Mỗi ngày từ 15 đến 45 phút, cho một khái niệm trong công việc của mình. Các anh chị và các bạn điền trên trang, bấm sao chép câu chia sẻ rồi dán vào bình luận của bài hôm đó trên 10X Excellence Hub nha. Trường đồng hành cùng mọi người cả tuần.",
+ "name": "Kỹ thuật Feynman",
+ "storeKey": "sth-0028-6n",
+ "kicker": "Công thức #0028",
+ "title": "Kỹ thuật Feynman: hiểu thật là giảng lại được",
+ "sub": "Thói quen then chốt giữ nguyên. Tuần này thêm bản sắc người chia sẻ kiến thức: chọn một điều đã học, giải thích bằng lời đơn giản, tìm chỗ vấp, rút gọn, giảng lại cho đồng nghiệp và chia sẻ trong cộng đồng, từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "quote",
+  "big": "6/6",
+  "unit": "NGÀY GIẢNG LẠI",
+  "quote": "{d4short|Hiểu thật là giảng lại được bằng lời đơn giản}",
+  "line": "Nhịp chia sẻ: {j_teach|giảng lại điều mình học cho người mới}"
+ },
  "days": [
   {
-   "label": "Thứ Hai",
-   "kick": "Chọn",
-   "title": "Chọn một khái niệm để hiểu thật",
-   "time": "Khoảng 20 phút",
+   "label": "Thứ Hai",
+   "kick": "Chọn điều để giảng",
+   "title": "Chọn một điều để giảng lại",
+   "time": "Khoảng 15 phút",
    "cards": [
     {
-     "h": "Những khái niệm \"tưởng đã hiểu\"",
+     "h": "Hành trình đang giữ",
      "items": [
       {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng con đang luyện: {j_skill}",
+       "need": [
+        "j_skill"
+       ]
+      },
+      {
        "f": "note",
-       "text": "Chấm hai thang từ 1 đến 5: mức quan trọng của khái niệm với công việc (5 là rất quan trọng), và mức tự tin nếu phải giải thích nó cho người khác ngay bây giờ (5 là rất tự tin)."
+       "text": "Người mới tham gia điền hai ô dưới đây. Ai đã có thì giữ nguyên hoặc sửa câu chữ nếu cần."
       },
       {
        "f": "tx",
-       "k": "d1c1",
-       "q": "Khái niệm 1",
-       "ph": "Ví dụ: vì sao công ty có lãi mà vẫn thiếu tiền mặt"
-      },
-      {
-       "f": "seg",
-       "k": "d1i1",
-       "q": "Quan trọng",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "seg",
-       "k": "d1t1",
-       "q": "Tự tin",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: hiểu rõ việc mình làm và giúp người khác cùng hiểu"
       },
       {
        "f": "tx",
-       "k": "d1c2",
-       "q": "Khái niệm 2",
-       "ph": "Một khái niệm hay gặp trong công việc"
-      },
-      {
-       "f": "seg",
-       "k": "d1i2",
-       "q": "Quan trọng",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "seg",
-       "k": "d1t2",
-       "q": "Tự tin",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d1c3",
-       "q": "Khái niệm 3",
-       "ph": "Một khái niệm hay gặp trong công việc"
-      },
-      {
-       "f": "seg",
-       "k": "d1i3",
-       "q": "Quan trọng",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "seg",
-       "k": "d1t3",
-       "q": "Tự tin",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d1c4",
-       "q": "Khái niệm 4",
-       "ph": "Một khái niệm hay gặp trong công việc"
-      },
-      {
-       "f": "seg",
-       "k": "d1i4",
-       "q": "Quan trọng",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "seg",
-       "k": "d1t4",
-       "q": "Tự tin",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d1c5",
-       "q": "Khái niệm 5",
-       "ph": "Một khái niệm hay gặp trong công việc"
-      },
-      {
-       "f": "seg",
-       "k": "d1i5",
-       "q": "Quan trọng",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "seg",
-       "k": "d1t5",
-       "q": "Tự tin",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: đọc tài liệu chuyên môn 20 phút mỗi sáng"
       }
      ]
     },
     {
-     "h": "Chọn khái niệm của tuần",
+     "h": "Điều tôi sẽ giảng lại",
      "items": [
       {
-       "f": "note",
-       "text": "Chọn khái niệm quan trọng nhất mà mức tự tin còn thấp. Thu hẹp cho vừa một tuần: \"tài chính doanh nghiệp\" quá rộng, \"vì sao công ty có lãi mà vẫn thiếu tiền mặt\" thì vừa."
+       "f": "seg",
+       "k": "d1src",
+       "q": "Lấy từ đâu?",
+       "opts": [
+        "Công thức trong hành trình",
+        "Kỹ năng con đang luyện",
+        "Chuyên môn của tôi"
+       ],
+       "hints": [
+        "Ví dụ: phương pháp ABCDE, kế hoạch Nếu... thì..., vòng phản hồi.",
+        "Ví dụ: cách viết đoạn tóm tắt mở đầu báo cáo mà mình đang luyện.",
+        "Ví dụ: cách tính giá vốn, quy trình duyệt chi, cách xử lý một khiếu nại."
+       ]
       },
       {
        "f": "tx",
-       "k": "d1topic",
-       "q": "Khái niệm tuần này",
-       "ph": "Ví dụ: vì sao công ty có lãi mà vẫn thiếu tiền mặt"
+       "k": "d1idea",
+       "q": "Điều cụ thể tôi sẽ giảng lại",
+       "ph": "Ví dụ: quy trình xử lý khiếu nại của khách hàng"
+      },
+      {
+       "f": "cb",
+       "k": "d1narrow",
+       "label": "Đủ hẹp để giải thích trong 10 phút"
+      }
+     ]
+    },
+    {
+     "h": "Mức hiểu hiện tại",
+     "items": [
+      {
+       "f": "note",
+       "text": "Thang 1 đến 7: 1 là chỉ biết tên gọi, 4 là giải thích được các bước chính, 7 là giải thích trọn vẹn bằng lời đơn giản và trả lời được mọi câu hỏi \"vì sao\"."
       },
       {
        "f": "seg",
-       "k": "d1conf",
-       "q": "Mức tự tin hiện tại",
+       "k": "d1score",
+       "q": "Tôi tự chấm",
        "opts": [
         "1",
         "2",
         "3",
         "4",
-        "5"
+        "5",
+        "6",
+        "7"
        ]
-      },
-      {
-       "f": "tx",
-       "k": "d1aud",
-       "q": "Người nghe tưởng tượng",
-       "ph": "Ví dụ: một đồng nghiệp mới ở phòng kinh doanh"
-      },
-      {
-       "f": "note",
-       "text": "Người nghe gợi ý: một đồng nghiệp giỏi ở bộ phận khác, mới vào công ty. Thông minh, nhưng không biết thuật ngữ của bộ phận mình."
       }
      ]
     }
    ],
    "checkin": [
     {
-     "tpl": "Ngày 1: Khái niệm tuần này: {d1topic}",
+     "tpl": "Thói quen tôi đang giữ: {j_habit}.",
      "need": [
-      "d1topic"
+      "j_habit"
      ]
     },
     {
-     "tpl": ". Mức tự tin: {d1conf}/5",
+     "tpl": " Điều tôi sẽ giảng lại tuần này: {d1idea}.",
      "need": [
-      "d1topic",
-      "d1conf"
-     ]
-    },
-    {
-     "tpl": ". Người nghe: {d1aud}",
-     "need": [
-      "d1topic",
-      "d1aud"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d1topic"
+      "d1idea"
      ]
     }
    ],
-   "hint": "Dán vào bình luận của bài Ngày 1."
+   "hint": "Dán vào bình luận của bài Ngày 1. Thứ Bảy sẽ chấm lại mức hiểu để so sánh."
   },
   {
-   "label": "Thứ Ba",
-   "kick": "Giải thích lần 1",
-   "title": "Giải thích lần 1 trên giấy trắng",
+   "label": "Thứ Ba",
+   "kick": "Giải thích đơn giản",
+   "title": "Giải thích cho người mới vào nghề",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Người nghe tôi hình dung",
+     "items": [
+      {
+       "f": "show",
+       "text": "Điều tôi giảng lại: {d1idea}",
+       "need": [
+        "d1idea"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2aud",
+       "q": "Người ngồi đối diện",
+       "opts": [
+        "Thực tập sinh",
+        "Nhân viên mới",
+        "Đồng nghiệp phòng khác",
+        "Khách hàng"
+       ],
+       "hints": [
+        "Chưa biết gì về nghề. Cần từ thường ngày và ví dụ thật cụ thể.",
+        "Biết nghề chung chung, chưa biết cách làm ở công ty mình.",
+        "Giỏi việc của họ, chưa quen thuật ngữ của phòng mình.",
+        "Chỉ quan tâm điều này ảnh hưởng gì đến họ."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Bản giải thích đầu tiên",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d2exp",
+       "q": "Viết như đang nói với người đó",
+       "ph": "Ví dụ: Giá vốn là số tiền công ty đã bỏ ra để có được món hàng mình vừa bán..."
+      },
+      {
+       "f": "cb",
+       "k": "d2c1",
+       "label": "Dùng từ ngữ thường ngày"
+      },
+      {
+       "f": "cb",
+       "k": "d2c2",
+       "label": "Có một ví dụ cụ thể, có con số"
+      },
+      {
+       "f": "cb",
+       "k": "d2c3",
+       "label": "Nối với việc của người nghe"
+      },
+      {
+       "f": "cb",
+       "k": "d2c4",
+       "label": "Không có thuật ngữ nào chưa được giải thích"
+      },
+      {
+       "f": "tx",
+       "k": "d2one",
+       "q": "Tóm lại trong một câu",
+       "ph": "Ví dụ: giá vốn là tiền đã bỏ ra để có món hàng vừa bán"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt. Bảng dùng chung cho mọi tuần, chuỗi cũ vẫn còn."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Bản giải thích một câu cho người mới vào nghề: {d2one}.",
+     "need": [
+      "d2one"
+     ]
+    },
+    {
+     "tpl": " Người nghe tôi hình dung: {d2aud}.",
+     "need": [
+      "d2aud"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Tìm chỗ vấp",
+   "title": "Chỗ vấp là chỗ cần học lại",
    "time": "Khoảng 25 phút",
    "cards": [
     {
-     "h": "Trước khi viết",
+     "h": "Đọc to và gạch dưới chỗ ngập ngừng",
      "items": [
       {
-       "f": "show",
-       "text": "Khái niệm: {d1topic}. Người nghe: {d1aud}",
-       "need": [
-        "d1topic"
-       ]
-      },
-      {
-       "f": "cb",
-       "k": "d2closed",
-       "label": "Đã đóng hết tài liệu liên quan"
-      },
-      {
        "f": "note",
-       "text": "Gặp chỗ không biết viết tiếp, hoặc phải dùng thuật ngữ thay cho giải thích, gõ (?) rồi viết tiếp. Đừng dừng lại để tra."
+       "text": "Ba dấu hiệu của chỗ vấp: dùng từ mơ hồ (thường, khoảng, nói chung là), lặp lại thuật ngữ thay cho giải thích, không trả lời được câu hỏi vì sao."
+      },
+      {
+       "f": "tx",
+       "k": "d3g1",
+       "q": "Chỗ vấp 1",
+       "ph": "Ví dụ: không chắc mức 20 triệu là trước hay sau thuế"
+      },
+      {
+       "f": "tx",
+       "k": "d3g2",
+       "q": "Chỗ vấp 2",
+       "ph": "Ví dụ: không nói được kế toán kiểm tra những gì"
+      },
+      {
+       "f": "tx",
+       "k": "d3g3",
+       "q": "Chỗ vấp 3",
+       "ph": "Ví dụ: không trả lời được vì sao cần ba cấp duyệt"
       }
      ]
     },
     {
-     "h": "Giải thích lần 1",
+     "h": "Chỗ quan trọng nhất",
      "items": [
       {
-       "f": "timer",
-       "k": "d2min",
-       "dk": "d2dur",
+       "f": "pick",
+       "k": "d3gap",
+       "kp": "d3g",
+       "n": 3,
+       "empty": "Điền ít nhất một chỗ vấp ở trên để chọn."
+      },
+      {
+       "f": "tx",
+       "k": "d3gap",
+       "q": "Chỗ vấp tôi xử lý hôm nay",
+       "ph": "Ví dụ: vì sao cần ba cấp duyệt"
+      },
+      {
+       "f": "seg",
+       "k": "d3type",
+       "q": "Loại chỗ vấp",
        "opts": [
-        10,
-        15,
-        20
+        "Từ mơ hồ",
+        "Lặp thuật ngữ",
+        "Thiếu lý do"
        ],
-       "def": 15,
-       "note": "Viết như đang nói với người nghe đã chọn, bằng từ ngữ hằng ngày."
+       "hints": [
+        "Thay bằng con số hoặc điều kiện cụ thể.",
+        "Viết ra thuật ngữ đó nghĩa là gì bằng lời thường ngày.",
+        "Tìm hiểu vì sao làm như vậy, rồi viết một câu giải thích lý do."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3src",
+       "q": "Tài liệu hoặc người tôi quay lại",
+       "ph": "Ví dụ: quy chế tài chính, chị kế toán trưởng"
       },
       {
        "f": "ta",
-       "k": "d2text",
-       "q": "Lời giải thích lần 1",
-       "ph": "Ví dụ: Công ty có lãi nghĩa là bán được nhiều hơn chi phí. Nhưng tiền mặt (?)..."
-      },
-      {
-       "f": "nums",
-       "items": [
-        {
-         "k": "d2gaps",
-         "q": "Số chỗ hổng (số dấu (?))"
-        }
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d2worst",
-       "q": "Chỗ vấp nhất",
-       "ph": "Ví dụ: không giải thích được vì sao hàng tồn kho làm giảm tiền mặt"
+       "k": "d3fix",
+       "q": "Câu viết lại bằng lời của tôi",
+       "ph": "Ví dụ: Khoản lớn cần ba cấp duyệt để..."
       }
      ]
     }
    ],
    "checkin": [
     {
-     "tpl": "Ngày 2: Giải thích lần 1, có {d2gaps} chỗ hổng",
+     "tpl": "Chỗ tôi vấp khi giải thích: {d3gap}.",
      "need": [
-      "d2gaps"
+      "d3gap"
      ]
     },
     {
-     "tpl": ". Chỗ vấp nhất: {d2worst}",
+     "tpl": " Tài liệu tôi quay lại: {d3src}.",
      "need": [
-      "d2gaps",
-      "d2worst"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d2gaps"
+      "d3src"
      ]
     }
    ],
-   "hint": "Dán vào bình luận của bài Ngày 2."
+   "hint": "Dán vào bình luận của bài Ngày 3."
   },
   {
-   "label": "Thứ Tư",
-   "kick": "Chỗ hổng",
-   "title": "Vá từng chỗ hổng",
-   "time": "Khoảng 30 phút",
-   "cards": [
-    {
-     "h": "Vá từng chỗ hổng",
-     "items": [
-      {
-       "f": "show",
-       "text": "Chỗ vấp nhất hôm qua: {d2worst}",
-       "need": [
-        "d2worst"
-       ]
-      },
-      {
-       "f": "note",
-       "text": "Chép từng chỗ hổng thành một câu hỏi cụ thể, tìm câu trả lời, rồi viết lại bằng lời của mình. Chỉ đọc đúng chỗ cần, không đọc lại từ đầu."
-      },
-      {
-       "f": "tx",
-       "k": "d3q1",
-       "q": "Chỗ hổng 1: câu hỏi cụ thể",
-       "ph": "Ví dụ: vì sao mua hàng về kho làm giảm tiền mặt dù chưa bán?"
-      },
-      {
-       "f": "tx",
-       "k": "d3a1",
-       "q": "Câu trả lời bằng lời của mình",
-       "ph": "Viết ngắn, không chép nguyên văn"
-      },
-      {
-       "f": "seg",
-       "k": "d3s1",
-       "q": "Trạng thái",
-       "opts": [
-        "Đã vá",
-        "Cần hỏi thêm"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d3q2",
-       "q": "Chỗ hổng 2: câu hỏi cụ thể",
-       "ph": "Một câu hỏi"
-      },
-      {
-       "f": "tx",
-       "k": "d3a2",
-       "q": "Câu trả lời bằng lời của mình",
-       "ph": "Viết ngắn, không chép nguyên văn"
-      },
-      {
-       "f": "seg",
-       "k": "d3s2",
-       "q": "Trạng thái",
-       "opts": [
-        "Đã vá",
-        "Cần hỏi thêm"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d3q3",
-       "q": "Chỗ hổng 3: câu hỏi cụ thể",
-       "ph": "Một câu hỏi"
-      },
-      {
-       "f": "tx",
-       "k": "d3a3",
-       "q": "Câu trả lời bằng lời của mình",
-       "ph": "Viết ngắn, không chép nguyên văn"
-      },
-      {
-       "f": "seg",
-       "k": "d3s3",
-       "q": "Trạng thái",
-       "opts": [
-        "Đã vá",
-        "Cần hỏi thêm"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d3q4",
-       "q": "Chỗ hổng 4: câu hỏi cụ thể",
-       "ph": "Một câu hỏi"
-      },
-      {
-       "f": "tx",
-       "k": "d3a4",
-       "q": "Câu trả lời bằng lời của mình",
-       "ph": "Viết ngắn, không chép nguyên văn"
-      },
-      {
-       "f": "seg",
-       "k": "d3s4",
-       "q": "Trạng thái",
-       "opts": [
-        "Đã vá",
-        "Cần hỏi thêm"
-       ]
-      }
-     ]
-    },
-    {
-     "h": "Tổng kết",
-     "items": [
-      {
-       "f": "seg",
-       "k": "d3done",
-       "q": "Số chỗ hổng đã vá",
-       "opts": [
-        "0",
-        "1",
-        "2",
-        "3",
-        "4",
-        "5+"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d3ask",
-       "q": "Cần hỏi ai, về điều gì (nếu còn)",
-       "ph": "Ví dụ: chị Hà phòng kế toán, doanh thu ghi khi nào nếu khách trả chậm"
-      }
-     ]
-    }
-   ],
-   "checkin": [
-    {
-     "tpl": "Ngày 3: Đã vá {d3done} chỗ hổng",
-     "need": [
-      "d3done"
-     ]
-    },
-    {
-     "tpl": " trên tổng số {d2gaps}",
-     "need": [
-      "d3done",
-      "d2gaps"
-     ]
-    },
-    {
-     "tpl": ". Còn cần hỏi: {d3ask}",
-     "need": [
-      "d3done",
-      "d3ask"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d3done"
-     ]
-    }
-   ],
-   "hint": "Dán vào bình luận của bài Ngày 3."
-  },
-  {
-   "label": "Thứ Năm",
-   "kick": "Ví dụ",
-   "title": "Ví dụ, so sánh và bỏ thuật ngữ",
+   "label": "Thứ Năm",
+   "kick": "Rút gọn",
+   "title": "Từ phức tạp đến đơn giản, có ví dụ",
    "time": "Khoảng 20 phút",
    "cards": [
     {
-     "h": "Ví dụ và so sánh",
+     "h": "Ba vòng rút gọn",
      "items": [
       {
-       "f": "show",
-       "text": "Khái niệm: {d1topic}",
-       "need": [
-        "d1topic"
+       "f": "note",
+       "text": "Bấm giờ 10 phút cho hai vòng rút gọn. Giữ lại thứ tự các bước, động từ cụ thể và một lý do ngắn."
+      },
+      {
+       "f": "timer",
+       "k": "d4min",
+       "dk": "d4dur",
+       "def": 10,
+       "opts": [
+        5,
+        10,
+        15
        ]
       },
       {
+       "f": "ta",
+       "k": "d4fifty",
+       "q": "Bản khoảng 50 chữ",
+       "ph": "Ví dụ: Nghe hết, không ngắt lời. Nhắc lại vấn đề trong một câu..."
+      },
+      {
        "f": "tx",
+       "k": "d4short",
+       "q": "Bản một câu",
+       "ph": "Ví dụ: nghe hết, nhắc lại, xin lỗi, hẹn rõ, gọi lại đúng hẹn"
+      }
+     ]
+    },
+    {
+     "h": "Ví dụ và hình ảnh so sánh",
+     "items": [
+      {
+       "f": "ta",
        "k": "d4ex",
-       "q": "Một ví dụ công việc, có con số hoặc tình huống cụ thể",
-       "ph": "Ví dụ: bán 2 tỷ, lãi 200 triệu nhưng khách trả chậm 60 ngày"
+       "q": "Ví dụ trong công việc (tình huống và kết quả)",
+       "ph": "Ví dụ: khách nhận hàng trễ hai ngày, nhân viên hẹn 15 giờ báo lịch giao bù và gọi lại đúng giờ"
       },
       {
        "f": "tx",
-       "k": "d4an",
-       "q": "Một so sánh đời thường",
-       "ph": "Ví dụ: quán ăn đông khách nhưng khách ghi sổ"
+       "k": "d4ana",
+       "q": "Hình ảnh so sánh quen thuộc (nếu có)",
+       "ph": "Ví dụ: giống thợ sửa xe giỏi, nghe khách tả hết rồi mới sửa"
       },
-      {
-       "f": "tx",
-       "k": "d4lim",
-       "q": "Chỗ so sánh đó không còn đúng",
-       "ph": "Ví dụ: doanh nghiệp có thể vay dựa trên khoản phải thu"
-      }
-     ]
-    },
-    {
-     "h": "Thay thuật ngữ",
-     "items": [
-      {
-       "f": "note",
-       "text": "Mỗi thuật ngữ trong lời giải thích lần 1, viết một cách nói thay bằng từ ngữ hằng ngày."
-      },
-      {
-       "f": "tx",
-       "k": "d4j1",
-       "q": "Thuật ngữ 1",
-       "ph": "Ví dụ: khoản phải thu"
-      },
-      {
-       "f": "tx",
-       "k": "d4r1",
-       "q": "Cách nói thay",
-       "ph": "Ví dụ: tiền khách còn nợ mình"
-      },
-      {
-       "f": "tx",
-       "k": "d4j2",
-       "q": "Thuật ngữ 2",
-       "ph": "Một thuật ngữ"
-      },
-      {
-       "f": "tx",
-       "k": "d4r2",
-       "q": "Cách nói thay",
-       "ph": "Bằng từ ngữ hằng ngày"
-      },
-      {
-       "f": "tx",
-       "k": "d4j3",
-       "q": "Thuật ngữ 3",
-       "ph": "Một thuật ngữ"
-      },
-      {
-       "f": "tx",
-       "k": "d4r3",
-       "q": "Cách nói thay",
-       "ph": "Bằng từ ngữ hằng ngày"
-      },
-      {
-       "f": "tx",
-       "k": "d4j4",
-       "q": "Thuật ngữ 4",
-       "ph": "Một thuật ngữ"
-      },
-      {
-       "f": "tx",
-       "k": "d4r4",
-       "q": "Cách nói thay",
-       "ph": "Bằng từ ngữ hằng ngày"
-      },
-      {
-       "f": "seg",
-       "k": "d4n",
-       "q": "Số thuật ngữ đã thay",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5+"
-       ]
-      }
-     ]
-    }
-   ],
-   "checkin": [
-    {
-     "tpl": "Ngày 4: Ví dụ: {d4ex}",
-     "need": [
-      "d4ex"
-     ]
-    },
-    {
-     "tpl": ". So sánh: {d4an}",
-     "need": [
-      "d4ex",
-      "d4an"
-     ]
-    },
-    {
-     "tpl": ". Đã thay {d4n} thuật ngữ",
-     "need": [
-      "d4ex",
-      "d4n"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d4ex"
-     ]
-    }
-   ],
-   "hint": "Dán vào bình luận của bài Ngày 4."
-  },
-  {
-   "label": "Thứ Sáu",
-   "kick": "Giải thích lần 2",
-   "title": "Giải thích lần 2, nói thành tiếng",
-   "time": "Khoảng 20 phút",
-   "cards": [
-    {
-     "h": "Chuẩn bị",
-     "items": [
       {
        "f": "show",
-       "text": "Ví dụ: {d4ex}. So sánh: {d4an}",
+       "text": "Một câu: {d4short}. Ví dụ: {d4ex}",
        "need": [
+        "d4short",
         "d4ex"
        ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Bản rút gọn của tôi: {d4short}.",
+     "need": [
+      "d4short"
+     ]
+    },
+    {
+     "tpl": " Ví dụ trong công việc: {d4ex}",
+     "need": [
+      "d4ex"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Giảng lại",
+   "title": "Mười phút giảng lại cho đồng nghiệp",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Trước khi giảng",
+     "items": [
+      {
+       "f": "show",
+       "text": "Câu mở đầu: {d4short}",
+       "need": [
+        "d4short"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5who",
+       "q": "Người nghe (có thể ghi vai trò)",
+       "ph": "Ví dụ: bạn nhân viên mới phòng chăm sóc khách hàng"
       },
       {
        "f": "cb",
-       "k": "d5flip",
-       "label": "Đã đọc lại ví dụ một lần và úp giấy xuống"
-      },
-      {
-       "f": "cb",
-       "k": "d5rec",
-       "label": "Đã mở ghi âm trên điện thoại (không bắt buộc)"
+       "k": "d5told",
+       "label": "Đã nói trước: chỗ nào chưa rõ cứ hỏi"
       }
      ]
     },
     {
-     "h": "Giải thích lần 2, nói thành tiếng",
+     "h": "Mười phút",
      "items": [
+      {
+       "f": "note",
+       "text": "Kể ví dụ trước, nguyên tắc sau. Dừng sau mỗi ý để hỏi. Gần cuối nhờ người nghe giải thích lại bằng lời của họ."
+      },
       {
        "f": "timer",
        "k": "d5min",
        "dk": "d5dur",
+       "def": 10,
        "opts": [
-        3,
         5,
-        7
-       ],
-       "def": 5,
-       "note": "Nói như đang nói với người nghe thật. Vấp thì cứ nói tiếp, nghe lại sau."
+        10,
+        15
+       ]
       },
       {
        "f": "nums",
        "items": [
         {
-         "k": "d5stuck",
-         "q": "Số lần vấp hoặc phải dùng thuật ngữ"
+         "k": "d5min",
+         "q": "Số phút đã giảng"
         }
        ]
+      }
+     ]
+    },
+    {
+     "h": "Sau khi giảng",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5q",
+       "q": "Câu hỏi khó nhất tôi nhận được",
+       "ph": "Ví dụ: chưa biết khi nào xử lý xong thì hẹn thế nào?"
       },
       {
-       "f": "compare",
-       "cols": [
-        "Lần 1",
-        "Lần 2"
+       "f": "seg",
+       "k": "d5back",
+       "q": "Người nghe giải thích lại được",
+       "opts": [
+        "Trọn vẹn",
+        "Một phần",
+        "Chưa"
        ],
-       "rows": [
-        {
-         "label": "Chỗ hổng hoặc vấp",
-         "keys": [
-          "d2gaps",
-          "d5stuck"
-         ]
-        }
+       "hints": [
+        "Bản giải thích đã rõ. Giữ nguyên khi chia sẻ ở Ngày 6.",
+        "Xem phần người nghe bỏ sót, thường là chỗ cần thêm ví dụ.",
+        "Quay lại bản một câu và ví dụ, thử giảng lại vào tuần sau."
        ]
       },
       {
        "f": "tx",
-       "k": "d5help",
-       "q": "Điều giúp mình nói trôi hơn",
-       "ph": "Ví dụ: ví dụ quán ăn ghi sổ"
+       "k": "d5fix",
+       "q": "Chỗ cần sửa trước khi chia sẻ",
+       "ph": "Ví dụ: thêm câu trả lời cho trường hợp chưa biết ngày xong"
       }
      ]
     }
    ],
    "checkin": [
     {
-     "tpl": "Ngày 5: Giải thích lần 2, vấp {d5stuck} chỗ",
+     "tpl": "Hôm nay tôi giảng lại cho {d5who} trong {d5min} phút.",
      "need": [
-      "d5stuck"
+      "d5who",
+      "d5min"
      ]
     },
     {
-     "tpl": " (lần 1 có {d2gaps} chỗ hổng)",
+     "tpl": " Câu hỏi khó nhất tôi nhận được: {d5q}",
      "need": [
-      "d5stuck",
-      "d2gaps"
-     ]
-    },
-    {
-     "tpl": ". {d5help}",
-     "need": [
-      "d5stuck",
-      "d5help"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d5stuck"
+      "d5q"
      ]
     }
    ],
-   "hint": "Dán vào bình luận của bài Ngày 5."
+   "hint": "Dán vào bình luận của bài Ngày 5."
   },
   {
-   "label": "Thứ Bảy",
-   "kick": "Năm câu hỏi",
-   "title": "Tự kiểm tra bằng năm câu hỏi",
+   "label": "Thứ Bảy",
+   "kick": "Chia sẻ",
+   "title": "Một bản giải thích, nhiều người học",
    "time": "Khoảng 25 phút",
    "cards": [
     {
-     "h": "Năm câu hỏi kiểm tra độ hiểu",
+     "h": "Bài chia sẻ năm phần",
      "items": [
       {
+       "f": "note",
+       "text": "Tên điều được giải thích, một câu rút gọn, giải thích ngắn khoảng 50 chữ, một ví dụ từ công việc thật (không nêu tên khách hàng hay thông tin nội bộ), một câu hỏi từng nhận kèm câu trả lời."
+      },
+      {
        "f": "show",
-       "text": "Khái niệm: {d1topic}",
+       "text": "Gợi ý từ các ngày trước: {d1idea}. Một câu: {d4short}.",
        "need": [
-        "d1topic"
+        "d1idea",
+        "d4short"
        ]
       },
+      {
+       "f": "ta",
+       "k": "d6post",
+       "q": "Bài chia sẻ của tôi",
+       "ph": "Điều tôi giảng lại: ... Một câu: ... Giải thích ngắn: ... Ví dụ: ... Câu hỏi từng nhận: ..."
+      }
+     ]
+    },
+    {
+     "h": "Nhịp chia sẻ kiến thức",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d6pick",
+       "q": "Gợi ý nhịp",
+       "opts": [
+        "Mỗi tháng cho nhóm",
+        "Mỗi khi có người mới",
+        "Mỗi tuần trong cộng đồng"
+       ],
+       "hints": [
+        "Mỗi tháng giảng lại một điều vừa học cho nhóm trong 10 phút.",
+        "Mỗi khi có người mới vào phòng, giải thích cho họ một quy trình.",
+        "Mỗi tuần đăng một bản giải thích ngắn trong 10X Excellence Hub."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_teach",
+       "q": "Nhịp chia sẻ kiến thức tôi giữ",
+       "ph": "Ví dụ: mỗi tháng giảng lại một điều vừa học cho nhóm 10 phút"
+      }
+     ]
+    },
+    {
+     "h": "Chấm lại mức hiểu",
+     "items": [
       {
        "f": "note",
-       "text": "Tự hỏi và trả lời từng câu khi không nhìn ghi chú. Chấm: 3 là trả lời được ngay, 2 là trả lời được nhưng lúng túng, 1 là chưa trả lời được."
-      },
-      {
-       "f": "rate",
-       "head": [
-        "#",
-        "Câu hỏi",
-        "Tự chấm"
-       ],
-       "kp": "d6r",
-       "scale": 3,
-       "rows": [
-        [
-         "Vì sao?",
-         "Vì sao điều này xảy ra, hoặc vì sao làm như vậy?"
-        ],
-        [
-         "Như thế nào?",
-         "Các bước diễn ra theo thứ tự nào?"
-        ],
-        [
-         "Nếu... thì sao?",
-         "Một điều kiện thay đổi thì kết quả ra sao?"
-        ],
-        [
-         "Khác gì với...?",
-         "So với một khái niệm gần nó"
-        ],
-        [
-         "Ví dụ khác?",
-         "Một ví dụ khác với ví dụ đã chuẩn bị"
-        ]
-       ]
+       "text": "Thang 1 đến 7: 1 là chỉ biết tên gọi, 4 là giải thích được các bước chính, 7 là giải thích trọn vẹn bằng lời đơn giản và trả lời được mọi câu hỏi \"vì sao\"."
       },
       {
        "f": "seg",
-       "k": "d6ok",
-       "q": "Số câu trả lời được ngay",
+       "k": "d6score",
+       "q": "Hôm nay tôi tự chấm",
        "opts": [
-        "0",
         "1",
         "2",
         "3",
         "4",
-        "5"
+        "5",
+        "6",
+        "7"
        ]
       },
-      {
-       "f": "tx",
-       "k": "d6hard",
-       "q": "Câu khó nhất (chỗ hổng mới)",
-       "ph": "Ví dụ: nếu khách trả sớm hơn 30 ngày thì tiền mặt thay đổi bao nhiêu"
-      }
-     ]
-    }
-   ],
-   "checkin": [
-    {
-     "tpl": "Ngày 6: Trả lời ngay được {d6ok}/5 câu",
-     "need": [
-      "d6ok"
-     ]
-    },
-    {
-     "tpl": ". Câu khó nhất: {d6hard}",
-     "need": [
-      "d6ok",
-      "d6hard"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d6ok"
-     ]
-    }
-   ],
-   "hint": "Dán vào bình luận của bài Ngày 6."
-  },
-  {
-   "label": "Chủ Nhật",
-   "kick": "30 ngày",
-   "title": "Hẹn người nghe thật và lập lịch 30 ngày",
-   "time": "Khoảng 30 đến 45 phút",
-   "cards": [
-    {
-     "h": "Người nghe thật",
-     "items": [
       {
        "f": "show",
-       "text": "Khái niệm: {d1topic}",
+       "text": "Mức hiểu: Thứ Hai {d1score}, hôm nay {d6score}.",
        "need": [
-        "d1topic"
+        "d1score",
+        "d6score"
        ]
-      },
-      {
-       "f": "tx",
-       "k": "d7who",
-       "q": "Đồng nghiệp sẽ nghe mình giải thích",
-       "ph": "Ví dụ: anh Tuấn phòng kinh doanh"
-      },
-      {
-       "f": "tx",
-       "k": "d7when",
-       "q": "Thời gian hẹn (10 phút)",
-       "ph": "Ví dụ: thứ Ba, 16 giờ"
-      },
-      {
-       "f": "tx",
-       "k": "d7q",
-       "q": "Câu hỏi nhờ họ trả lời sau khi nghe",
-       "ph": "Ví dụ: vì sao công ty có lãi vẫn có thể thiếu tiền?"
       }
      ]
     },
     {
-     "h": "Một khái niệm mỗi tuần",
+     "h": "Hành trình đến hôm nay",
      "items": [
       {
-       "f": "tx",
-       "k": "d7w1",
-       "q": "Khái niệm tuần sau",
-       "ph": "Ví dụ: chi phí cố định và chi phí biến đổi"
-      },
-      {
-       "f": "tx",
-       "k": "d7w2",
-       "q": "Tuần thứ ba",
-       "ph": "Một khái niệm"
-      },
-      {
-       "f": "tx",
-       "k": "d7w3",
-       "q": "Tuần thứ tư",
-       "ph": "Một khái niệm"
-      },
-      {
-       "f": "seg",
-       "k": "d7day",
-       "q": "Ngày viết giải thích lần 1 mỗi tuần",
-       "opts": [
-        "Thứ Hai",
-        "Thứ Ba",
-        "Thứ Tư",
-        "Thứ Năm",
-        "Thứ Sáu"
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Câu bản sắc",
+         "keys": [
+          "j_identity"
+         ]
+        },
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Quy ước ăn ếch",
+         "keys": [
+          "j_frog"
+         ]
+        },
+        {
+         "label": "Kỹ năng con",
+         "keys": [
+          "j_skill"
+         ]
+        },
+        {
+         "label": "Người góp ý",
+         "keys": [
+          "j_coach"
+         ]
+        },
+        {
+         "label": "Nhịp chia sẻ",
+         "keys": [
+          "j_teach"
+         ]
+        }
        ]
-      },
-      {
-       "f": "cb",
-       "k": "d7nb",
-       "label": "Đã mở sổ ghi những điều mình chưa hiểu"
-      },
-      {
-       "f": "note",
-       "text": "Cảm ơn các anh chị và các bạn đã đi cùng Trường cả tuần. Mỗi lần vấp khi giải thích là một chỗ mình biết rõ cần học tiếp nha."
       }
      ]
     }
    ],
    "checkin": [
     {
-     "tpl": "Ngày 7: Hẹn {d7who}",
+     "tpl": "Nhịp chia sẻ kiến thức tôi giữ: {j_teach}.",
      "need": [
-      "d7who"
+      "j_teach"
      ]
     },
     {
-     "tpl": " {d7when}",
+     "tpl": " Bản giải thích của tôi cho người mới: {d6post}",
      "need": [
-      "d7who",
-      "d7when"
-     ]
-    },
-    {
-     "tpl": ". Câu hỏi kiểm tra: {d7q}",
-     "need": [
-      "d7who",
-      "d7q"
-     ]
-    },
-    {
-     "tpl": ". Khái niệm tuần sau: {d7w1}",
-     "need": [
-      "d7who",
-      "d7w1"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d7who"
+      "d6post"
      ]
     }
    ],
-   "hint": "Dán vào bình luận của bài Ngày 7."
+   "hint": "Dán vào bình luận của bài Ngày 6. Nhịp chia sẻ được lưu cho cả hành trình. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
   }
  ]
 }

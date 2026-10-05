@@ -1,987 +1,728 @@
 {
  "id": "0026",
- "name": "Ăn con ếch",
- "storeKey": "sth-0026",
- "kicker": "Công thức #0026",
- "title": "Thử thách Ăn con ếch 7 ngày",
- "sub": "Mỗi ngày từ 15 đến 45 phút chuẩn bị và ghi chép, cộng thời gian làm chính con ếch của mình. Các anh chị và các bạn điền trên trang, bấm sao chép câu chia sẻ rồi dán vào bình luận của bài hôm đó trên 10X Excellence Hub nha. Trường đồng hành cùng mọi người cả tuần.",
+ "name": "Ăn con ếch",
+ "storeKey": "sth-0026-6n",
+ "kicker": "Công thức #0026",
+ "title": "Ăn con ếch: việc quan trọng nhất làm đầu ngày",
+ "sub": "Thói quen then chốt giữ nguyên. Tuần này đặt việc quan trọng nhất, con ếch, ngay cạnh nó để làm đầu ngày, mỗi ngày một bước từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "sun",
+  "big": "{d6n|6}",
+  "unit": "BUỔI SÁNG ĂN ẾCH",
+  "line": "Quy ước: {j_frog|việc quan trọng nhất làm đầu ngày}"
+ },
  "days": [
   {
-   "label": "Thứ Hai",
-   "kick": "Chọn ếch",
-   "title": "Tìm con ếch thật của tuần này",
-   "time": "Khoảng 20 phút",
+   "label": "Thứ Hai",
+   "kick": "Chấm điểm ABCDE",
+   "title": "Tìm con ếch trong danh sách việc",
+   "time": "Khoảng 25 phút",
    "cards": [
     {
-     "h": "Những việc mình đang trì hoãn",
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia điền hai ô dưới đây. Ai đã có thì giữ nguyên hoặc sửa câu chữ nếu cần."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: làm việc quan trọng trước, việc gấp sau"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: dành 20 phút đầu ngày cho việc khó nhất"
+      }
+     ]
+    },
+    {
+     "h": "Năm việc lớn nhất và chữ cái của từng việc",
      "items": [
       {
        "f": "note",
-       "text": "Con ếch là việc quan trọng nhất, có tác động lớn nhất, và thường là việc mình hay né nhất. Chấm hai thang từ 1 đến 5: tác động nếu xong (5 là rất lớn) và mức ngại khi nghĩ đến nó (5 là rất ngại)."
+       "text": "Viết năm việc lớn nhất cần làm hôm nay hoặc trong tuần, rồi bấm chữ cái cho từng việc."
+      },
+      {
+       "f": "note",
+       "text": "A, phải làm: không làm sẽ có hậu quả rõ ràng (hạn nộp, khách hàng, hợp đồng). B, nên làm: không làm thì có hậu quả nhẹ. C, làm thì tốt: không làm cũng không ảnh hưởng gì. D, giao được: người khác làm được, giao để mình có thời gian cho việc A. E, bỏ được: việc không còn đem lại giá trị, dừng hẳn."
       },
       {
        "f": "tx",
-       "k": "d1w1",
+       "k": "d1t1",
        "q": "Việc 1",
-       "ph": "Ví dụ: viết lại phần tóm tắt báo cáo khách hàng"
+       "ph": "Ví dụ: hoàn thiện hồ sơ thầu nộp Thứ Năm"
       },
       {
        "f": "seg",
-       "k": "d1i1",
-       "q": "Tác động",
+       "k": "d1g1",
+       "q": "Chữ cái cho việc 1",
        "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "seg",
-       "k": "d1f1",
-       "q": "Mức ngại",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
        ]
       },
       {
        "f": "tx",
-       "k": "d1w2",
+       "k": "d1t2",
        "q": "Việc 2",
-       "ph": "Một việc đang trì hoãn"
+       "ph": "Ví dụ: trả lời đồng nghiệp hỏi số liệu không gấp"
       },
       {
        "f": "seg",
-       "k": "d1i2",
-       "q": "Tác động",
+       "k": "d1g2",
+       "q": "Chữ cái cho việc 2",
        "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "seg",
-       "k": "d1f2",
-       "q": "Mức ngại",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
        ]
       },
       {
        "f": "tx",
-       "k": "d1w3",
+       "k": "d1t3",
        "q": "Việc 3",
-       "ph": "Một việc đang trì hoãn"
+       "ph": "Ví dụ: đọc tin tức ngành"
       },
       {
        "f": "seg",
-       "k": "d1i3",
-       "q": "Tác động",
+       "k": "d1g3",
+       "q": "Chữ cái cho việc 3",
        "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "seg",
-       "k": "d1f3",
-       "q": "Mức ngại",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
        ]
       },
       {
        "f": "tx",
-       "k": "d1w4",
+       "k": "d1t4",
        "q": "Việc 4",
-       "ph": "Một việc đang trì hoãn"
+       "ph": "Ví dụ: nhập dữ liệu khách hàng mới"
       },
       {
        "f": "seg",
-       "k": "d1i4",
-       "q": "Tác động",
+       "k": "d1g4",
+       "q": "Chữ cái cho việc 4",
        "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "seg",
-       "k": "d1f4",
-       "q": "Mức ngại",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
        ]
       },
       {
        "f": "tx",
-       "k": "d1w5",
+       "k": "d1t5",
        "q": "Việc 5",
-       "ph": "Một việc đang trì hoãn"
+       "ph": "Ví dụ: báo cáo tuần không ai còn đọc"
       },
       {
        "f": "seg",
-       "k": "d1i5",
-       "q": "Tác động",
+       "k": "d1g5",
+       "q": "Chữ cái cho việc 5",
        "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "seg",
-       "k": "d1f5",
-       "q": "Mức ngại",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d1w6",
-       "q": "Việc 6",
-       "ph": "Một việc đang trì hoãn"
-      },
-      {
-       "f": "seg",
-       "k": "d1i6",
-       "q": "Tác động",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      },
-      {
-       "f": "seg",
-       "k": "d1f6",
-       "q": "Mức ngại",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
        ]
       }
      ]
     },
     {
-     "h": "Chọn con ếch",
+     "h": "Con ếch hôm nay",
      "items": [
       {
        "f": "note",
-       "text": "Chọn việc có tác động cao nhất. Nếu bằng nhau, chọn việc mình ngại hơn. Viết lại thành việc cụ thể, bắt đầu được ngay."
+       "text": "Quy tắc: không làm việc B khi việc A chưa xong. Có nhiều việc A thì chọn việc A quan trọng nhất, đó là con ếch."
+      },
+      {
+       "f": "pick",
+       "k": "d1frog",
+       "kp": "d1t",
+       "n": 5,
+       "empty": "Điền ít nhất một việc ở trên để chọn."
       },
       {
        "f": "tx",
        "k": "d1frog",
-       "q": "Con ếch của tôi tuần này",
-       "ph": "Ví dụ: viết lại phần tóm tắt báo cáo khách hàng quý ba"
+       "q": "Con ếch hôm nay (việc A quan trọng nhất)",
+       "ph": "Ví dụ: phần giá của hồ sơ thầu"
       },
       {
-       "f": "seg",
-       "k": "d1fi",
-       "q": "Tác động",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
+       "f": "ta",
+       "k": "d1why",
+       "q": "Nếu không làm việc này, hậu quả là gì?",
+       "ph": "Ví dụ: nộp trễ, mất cơ hội dự thầu quý này"
       },
       {
-       "f": "seg",
-       "k": "d1ff",
-       "q": "Mức ngại",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
+       "f": "cb",
+       "k": "d1go",
+       "label": "Tôi bắt đầu con ếch ngay sau thói quen then chốt hôm nay, dù chỉ 15 phút"
       }
      ]
     }
    ],
    "checkin": [
     {
-     "tpl": "Ngày 1: Con ếch của tôi tuần này: {d1frog}",
+     "tpl": "Thói quen tôi đang giữ: {j_habit}.",
      "need": [
-      "d1frog"
+      "j_habit"
      ]
     },
     {
-     "tpl": ". Tác động {d1fi}",
-     "need": [
-      "d1frog",
-      "d1fi"
-     ]
-    },
-    {
-     "tpl": ", mức ngại {d1ff}",
-     "need": [
-      "d1frog",
-      "d1ff"
-     ]
-    },
-    {
-     "tpl": ".",
+     "tpl": " Con ếch hôm nay (việc A): {d1frog}.",
      "need": [
       "d1frog"
      ]
     }
    ],
-   "hint": "Dán vào bình luận của bài Ngày 1."
+   "hint": "Dán vào bình luận của bài Ngày 1. Câu bản sắc và thói quen được lưu cho cả hành trình."
   },
   {
-   "label": "Thứ Ba",
-   "kick": "Dọn bàn",
-   "title": "Dọn bàn cho sáng mai",
-   "time": "Khoảng 15 phút",
+   "label": "Thứ Ba",
+   "kick": "Chuẩn bị từ chiều",
+   "title": "Chuẩn bị con ếch từ chiều hôm trước",
+   "time": "Khoảng 15 phút, cuối giờ chiều",
    "cards": [
     {
-     "h": "Dọn bàn cho sáng mai",
+     "h": "Năm phút trước khi rời chỗ làm",
      "items": [
       {
-       "f": "note",
-       "text": "Làm trong 15 phút cuối ngày hôm nay, để sáng mai chỉ còn việc bắt đầu."
-      },
-      {
-       "f": "ta",
-       "k": "d2list",
-       "q": "Danh sách việc ngày mai (mỗi việc một dòng)",
-       "ph": "Sáu đến tám việc là đủ"
-      },
-      {
-       "f": "show",
-       "text": "Con ếch: {d1frog}",
-       "need": [
-        "d1frog"
-       ]
-      },
-      {
        "f": "tx",
-       "k": "d2a1",
-       "q": "Việc A1 ngày mai (con ếch hoặc một phần của nó)",
-       "ph": "Ví dụ: viết lại phần tóm tắt"
+       "k": "d2frog",
+       "q": "Con ếch ngày mai",
+       "ph": "Ví dụ: phần mục tiêu doanh số của kế hoạch quý I"
       },
       {
        "f": "tx",
        "k": "d2first",
-       "q": "Bước đầu tiên, làm được trong năm phút",
-       "ph": "Ví dụ: đọc lại phần tóm tắt cũ, gạch ba ý cần sửa"
+       "q": "Bước đầu tiên, làm được trong hai phút",
+       "ph": "Ví dụ: điền ba con số doanh thu quý trước vào trang 2"
       },
       {
        "f": "tx",
-       "k": "d2time",
-       "q": "Giờ bắt đầu ăn ếch",
-       "ph": "Ví dụ: 8 giờ"
+       "k": "d2need",
+       "q": "Tài liệu hoặc thông tin cần có sẵn",
+       "ph": "Ví dụ: tệp số liệu quý trước, bảng giá mới từ kế toán"
+      },
+      {
+       "f": "show",
+       "text": "Sáng mai, ngay sau {j_habit}, tôi bắt đầu {d2frog} bằng việc {d2first}.",
+       "need": [
+        "j_habit",
+        "d2frog",
+        "d2first"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Đặt con ếch ở chỗ thấy đầu tiên",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d2where",
+       "q": "Sáng mai tôi sẽ thấy con ếch ở đâu?",
+       "opts": [
+        "Màn hình",
+        "Bàn phím",
+        "Lịch",
+        "Sổ tay"
+       ],
+       "hints": [
+        "Mở sẵn tệp con ếch, đóng mọi cửa sổ khác trước khi tắt máy.",
+        "Viết con ếch và bước đầu tiên lên một tờ giấy, đặt lên bàn phím.",
+        "Tạo một cuộc hẹn 30 phút đầu ngày mang tên con ếch.",
+        "Viết con ếch ở dòng đầu trang của ngày mai."
+       ]
       },
       {
        "f": "cb",
-       "k": "d2c1",
-       "label": "Đã đặt giờ ăn ếch lên lịch"
+       "k": "d2open",
+       "label": "Tôi đã mở sẵn tài liệu cần dùng"
       },
       {
        "f": "cb",
-       "k": "d2c2",
-       "label": "Đã mở sẵn tệp cần dùng, để tài liệu lên bàn"
-      },
-      {
-       "f": "cb",
-       "k": "d2c3",
-       "label": "Đã đóng các thẻ trình duyệt không cần"
+       "k": "d2ask",
+       "label": "Tôi đã xin sẵn thông tin còn thiếu ngay chiều nay"
       }
      ]
     }
    ],
    "checkin": [
     {
-     "tpl": "Ngày 2: Đã dọn bàn cho sáng mai. A1: {d2a1}",
+     "tpl": "Con ếch ngày mai: {d2frog}.",
      "need": [
-      "d2a1"
+      "d2frog"
      ]
     },
     {
-     "tpl": ". Bước đầu: {d2first}",
+     "tpl": " Bước đầu tiên: {d2first}.",
      "need": [
-      "d2a1",
       "d2first"
-     ]
-    },
-    {
-     "tpl": ". Bắt đầu lúc {d2time}",
-     "need": [
-      "d2a1",
-      "d2time"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d2a1"
      ]
     }
    ],
-   "hint": "Dán vào bình luận của bài Ngày 2."
+   "hint": "Dán vào bình luận của bài Ngày 2. Chia sẻ trước khi rời chỗ làm chiều nay."
   },
   {
-   "label": "Thứ Tư",
-   "kick": "Ăn ếch",
-   "title": "Ăn con ếch đầu tiên",
-   "time": "Khoảng 15 phút cộng một khối",
+   "label": "Thứ Tư",
+   "kick": "Ăn ếch trước 10 giờ",
+   "title": "Ăn con ếch trước 10 giờ sáng",
+   "time": "Khoảng 20 phút ghi chép",
    "cards": [
     {
-     "h": "Trước khi bắt đầu",
+     "h": "Bắt đầu con ếch",
      "items": [
       {
        "f": "show",
-       "text": "Bước đầu tiên: {d2first}",
+       "text": "Con ếch đã chuẩn bị từ chiều qua: {d2frog}",
        "need": [
-        "d2first"
+        "d2frog"
        ]
       },
       {
-       "f": "seg",
-       "k": "d3before",
-       "q": "Mức ngại trước khi làm",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
+       "f": "note",
+       "text": "Làm thói quen then chốt, rồi bấm Bắt đầu và làm liền con ếch trước khi mở hộp thư."
       },
-      {
-       "f": "cb",
-       "k": "d3mail",
-       "label": "Chưa mở hộp thư sáng nay"
-      }
-     ]
-    },
-    {
-     "h": "Ăn con ếch",
-     "items": [
       {
        "f": "timer",
        "k": "d3min",
        "dk": "d3dur",
+       "def": 25,
        "opts": [
-        30,
-        45,
-        60,
-        90
+        15,
+        25,
+        45
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3start",
+       "q": "Giờ tôi bắt đầu con ếch",
+       "ph": "Ví dụ: 8 giờ 10"
+      }
+     ]
+    },
+    {
+     "h": "Lúc 10 giờ",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d3state",
+       "q": "Tình trạng con ếch lúc 10 giờ",
+       "opts": [
+        "Đã xong",
+        "Xong một phần",
+        "Chưa bắt đầu"
        ],
-       "def": 60,
-       "note": "Làm ngay bước đầu tiên. Muốn mở hộp thư giữa chừng thì ghi việc cần kiểm tra ra giấy rồi làm tiếp nha."
+       "hints": [
+        "Con ếch đã xong. Phần còn lại của ngày nhẹ hơn nhiều.",
+        "Đã bắt đầu và đi được một đoạn. Vẫn tính là đã ăn ếch.",
+        "Chưa bắt đầu. Ghi lại việc đã chen vào trước để tuần sau xử lý."
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d3block",
+       "q": "Việc gì chen vào trước con ếch (nếu có)?",
+       "ph": "Ví dụ: nhóm trò chuyện nội bộ lúc 8 giờ 15"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt. Bảng dùng chung cho mọi tuần, chuỗi cũ vẫn còn."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hôm nay tôi bắt đầu con ếch lúc {d3start}.",
+     "need": [
+      "d3start"
+     ]
+    },
+    {
+     "tpl": " Tình trạng lúc 10 giờ: {d3state}.",
+     "need": [
+      "d3state"
+     ]
+    },
+    {
+     "tpl": " Tuần này tôi đã làm thói quen {jweek} ngày.",
+     "need": [
+      "jweek"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Cắt lát",
+   "title": "Ếch quá lớn thì cắt thành lát",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Con ếch lớn của tuần",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4big",
+       "q": "Việc lớn tôi hay hoãn nhất",
+       "ph": "Ví dụ: hồ sơ quyết toán cuối năm"
+      },
+      {
+       "f": "note",
+       "text": "Mỗi lát: bắt đầu được ngay, xong trong 15 đến 45 phút, và có một kết quả nhìn thấy được."
+      },
+      {
+       "f": "tx",
+       "k": "d4s1",
+       "q": "Lát 1",
+       "ph": "Ví dụ: lập danh mục chứng từ cần có"
+      },
+      {
+       "f": "tx",
+       "k": "d4s2",
+       "q": "Lát 2",
+       "ph": "Ví dụ: đối chiếu nhóm tài khoản tiền"
+      },
+      {
+       "f": "tx",
+       "k": "d4s3",
+       "q": "Lát 3",
+       "ph": "Ví dụ: đối chiếu nhóm tài khoản công nợ"
+      },
+      {
+       "f": "tx",
+       "k": "d4s4",
+       "q": "Lát 4 (nếu có)",
+       "ph": "Ví dụ: ghi riêng các khoản chênh lệch"
+      },
+      {
+       "f": "tx",
+       "k": "d4s5",
+       "q": "Lát 5 (nếu có)",
+       "ph": "Ví dụ: gửi danh sách câu hỏi cho kế toán trưởng"
+      }
+     ]
+    },
+    {
+     "h": "Lát cho sáng mai",
+     "items": [
+      {
+       "f": "pick",
+       "k": "d4first",
+       "kp": "d4s",
+       "n": 5,
+       "empty": "Điền ít nhất một lát ở trên để chọn."
+      },
+      {
+       "f": "tx",
+       "k": "d4first",
+       "q": "Lát đầu tiên tôi làm",
+       "ph": "Ví dụ: lập danh mục chứng từ cần có"
+      },
+      {
+       "f": "seg",
+       "k": "d4size",
+       "q": "Độ dài mỗi lát",
+       "opts": [
+        "15 phút",
+        "25 phút",
+        "45 phút"
+       ],
+       "hints": [
+        "Hợp với việc mình rất ngại bắt đầu. Chỉ cần khoét một lỗ nhỏ vào con ếch.",
+        "Hợp với phần lớn công việc văn phòng, vừa đủ để đi sâu.",
+        "Hợp với việc cần nhiều bối cảnh như viết, phân tích, lập trình."
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Con ếch lớn của tuần: {d4big}.",
+     "need": [
+      "d4big"
+     ]
+    },
+    {
+     "tpl": " Lát đầu tiên tôi làm: {d4first}.",
+     "need": [
+      "d4first"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Ghép với thói quen",
+   "title": "Đặt con ếch ngay cạnh thói quen",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Chọn cách ghép",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d5way",
+       "q": "Cách ghép hợp với thói quen của tôi",
+       "opts": [
+        "Cách 1: ếch ngay sau",
+        "Cách 2: thói quen mở màn",
+        "Cách 3: thói quen là lát đầu"
+       ],
+       "hints": [
+        "Thói quen ngắn, không liên quan trực tiếp đến việc chính. Thói quen xong là tín hiệu mở con ếch.",
+        "Thói quen là nghi thức chuẩn bị hay một khối giờ. Con ếch đi vào ngay sau, trong cùng khối giờ.",
+        "Thói quen vốn là một phần của công việc quan trọng. Mỗi ngày chọn đúng nội dung cho thói quen là xong."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Quy ước ăn ếch",
+     "items": [
+      {
+       "f": "tx",
+       "k": "j_frog",
+       "q": "Quy ước ăn ếch của tôi (một câu)",
+       "ph": "Ví dụ: sau 20 phút đọc chuyên môn, làm ngay việc A1 trước khi mở hộp thư"
+      },
+      {
+       "f": "tx",
+       "k": "d5move",
+       "q": "Việc tôi dời hẳn sang sau 10 giờ",
+       "ph": "Ví dụ: mở hộp thư"
+      },
+      {
+       "f": "show",
+       "text": "Mỗi sáng: {j_habit} → con ếch → {d5move|các việc khác}.",
+       "need": [
+        "j_habit",
+        "j_frog"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d5tell",
+       "label": "Tôi đã báo cho đồng nghiệp gần nhất biết khung giờ buổi sáng của mình"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Quy ước ăn ếch của tôi: {j_frog}.",
+     "need": [
+      "j_frog"
+     ]
+    },
+    {
+     "tpl": " Việc tôi dời sau 10 giờ: {d5move}.",
+     "need": [
+      "d5move"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5. Quy ước được lưu cho cả hành trình, các tuần sau sổ tự hiện lại."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Nhìn lại",
+   "title": "Nhìn lại một tuần ăn con ếch",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Năm buổi sáng vừa qua",
+     "items": [
+      {
+       "f": "note",
+       "text": "Hàng trên (Trước 10 giờ): con ếch được ăn trước 10 giờ, xong một phần cũng tính. Hàng dưới (Có chuẩn bị): con ếch đã được chuẩn bị từ chiều hôm trước."
+      },
+      {
+       "f": "cal",
+       "k": "d6cal",
+       "mark": "✓",
+       "unit": "ô",
+       "cols": [
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6"
+       ],
+       "rows": [
+        "Trước 10 giờ",
+        "Có chuẩn bị"
+       ]
       },
       {
        "f": "nums",
        "items": [
         {
-         "k": "d3min",
-         "q": "Số phút đã làm"
+         "k": "d6n",
+         "q": "Số buổi sáng ăn ếch trước 10 giờ"
         }
        ]
-      },
-      {
-       "f": "tx",
-       "k": "d3done",
-       "q": "Làm được đến đâu",
-       "ph": "Ví dụ: xong bản nháp phần tóm tắt"
-      },
-      {
-       "f": "seg",
-       "k": "d3after",
-       "q": "Mức ngại sau khi làm",
-       "opts": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-       ]
-      }
-     ]
-    }
-   ],
-   "checkin": [
-    {
-     "tpl": "Ngày 3: Ăn ếch {d3min} phút",
-     "need": [
-      "d3min"
-     ]
-    },
-    {
-     "tpl": ". {d3done}",
-     "need": [
-      "d3min",
-      "d3done"
-     ]
-    },
-    {
-     "tpl": ". Mức ngại trước: {d3before}/5, sau: {d3after}/5",
-     "need": [
-      "d3min",
-      "d3before",
-      "d3after"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d3min"
-     ]
-    }
-   ],
-   "hint": "Dán vào bình luận của bài Ngày 3."
-  },
-  {
-   "label": "Thứ Năm",
-   "kick": "ABCDE",
-   "title": "Xếp danh sách hôm nay theo ABCDE",
-   "time": "Khoảng 20 phút",
-   "cards": [
-    {
-     "h": "Danh sách hôm nay",
-     "items": [
-      {
-       "f": "note",
-       "text": "A: phải làm, hậu quả nghiêm trọng nếu không làm. B: nên làm, hậu quả nhẹ. C: làm cũng được, không hậu quả. D: giao cho người phù hợp, khi đã trao đổi. E: bỏ, việc không còn cần."
-      },
-      {
-       "f": "tx",
-       "k": "d4w1",
-       "q": "Việc 1",
-       "ph": "Ví dụ: báo cáo quý gửi ban giám đốc"
-      },
-      {
-       "f": "seg",
-       "k": "d4m1",
-       "q": "Mức",
-       "opts": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d4w2",
-       "q": "Việc 2",
-       "ph": "Một việc trong danh sách hôm nay"
-      },
-      {
-       "f": "seg",
-       "k": "d4m2",
-       "q": "Mức",
-       "opts": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d4w3",
-       "q": "Việc 3",
-       "ph": "Một việc trong danh sách hôm nay"
-      },
-      {
-       "f": "seg",
-       "k": "d4m3",
-       "q": "Mức",
-       "opts": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d4w4",
-       "q": "Việc 4",
-       "ph": "Một việc trong danh sách hôm nay"
-      },
-      {
-       "f": "seg",
-       "k": "d4m4",
-       "q": "Mức",
-       "opts": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d4w5",
-       "q": "Việc 5",
-       "ph": "Một việc trong danh sách hôm nay"
-      },
-      {
-       "f": "seg",
-       "k": "d4m5",
-       "q": "Mức",
-       "opts": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d4w6",
-       "q": "Việc 6",
-       "ph": "Một việc trong danh sách hôm nay"
-      },
-      {
-       "f": "seg",
-       "k": "d4m6",
-       "q": "Mức",
-       "opts": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d4w7",
-       "q": "Việc 7",
-       "ph": "Một việc trong danh sách hôm nay"
-      },
-      {
-       "f": "seg",
-       "k": "d4m7",
-       "q": "Mức",
-       "opts": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E"
-       ]
-      },
-      {
-       "f": "tx",
-       "k": "d4w8",
-       "q": "Việc 8",
-       "ph": "Một việc trong danh sách hôm nay"
-      },
-      {
-       "f": "seg",
-       "k": "d4m8",
-       "q": "Mức",
-       "opts": [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E"
-       ]
       }
      ]
     },
     {
-     "h": "Cuối ngày",
+     "h": "Năm câu hỏi",
      "items": [
       {
-       "f": "tx",
-       "k": "d4cut",
-       "q": "Việc đã giao hoặc bỏ",
-       "ph": "Ví dụ: bỏ báo cáo tuần không còn ai đọc"
-      },
-      {
-       "f": "seg",
-       "k": "d4bfirst",
-       "q": "Có làm việc B hoặc C trước khi xong A1 không?",
-       "opts": [
-        "Không",
-        "Có, một lần",
-        "Có, nhiều lần"
+       "f": "rate",
+       "kp": "d6r",
+       "head": [
+        "#",
+        "Câu hỏi",
+        "Mức (1 thấp, 5 cao)"
        ],
-       "hints": [
-        "Tốt lắm, giữ nguyên thứ tự này nha.",
-        "Bình thường. Ghi lại việc đó đã chen vào lúc nào.",
-        "Thử dọn bàn kỹ hơn tối nay và để hộp thư sau con ếch nha."
-       ]
-      }
-     ]
-    }
-   ],
-   "checkin": [
-    {
-     "tpl": "Ngày 4: Đã xếp danh sách theo ABCDE",
-     "need": [
-      "d4m1"
-     ]
-    },
-    {
-     "tpl": ". Đã giao hoặc bỏ: {d4cut}",
-     "need": [
-      "d4m1",
-      "d4cut"
-     ]
-    },
-    {
-     "tpl": ". Làm B hoặc C trước A1: {d4bfirst}",
-     "need": [
-      "d4m1",
-      "d4bfirst"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d4m1"
-     ]
-    }
-   ],
-   "hint": "Dán vào bình luận của bài Ngày 4."
-  },
-  {
-   "label": "Thứ Sáu",
-   "kick": "Cắt nhỏ",
-   "title": "Cắt con ếch lớn thành lát",
-   "time": "Khoảng 20 phút cộng một lát",
-   "cards": [
-    {
-     "h": "Cắt con ếch thành lát",
-     "items": [
-      {
-       "f": "show",
-       "text": "Con ếch: {d1frog}",
-       "need": [
-        "d1frog"
+       "scale": 5,
+       "rows": [
+        [
+         "Tôi chọn đúng con ếch",
+         "Việc A thật, không phải việc B trông giống A vì gấp"
+        ],
+        [
+         "Con ếch được bắt đầu trước hộp thư",
+         "Kể cả khi chỉ làm được một phần"
+        ],
+        [
+         "Tôi gọi được tên việc hay chen vào",
+         "Và đã có cách dời, giới hạn hoặc chuẩn bị sẵn"
+        ],
+        [
+         "Buổi chiều chuẩn bị giúp sáng hôm sau dễ bắt đầu",
+         "So những ngày có và không có chuẩn bị"
+        ],
+        [
+         "Quy ước ăn ếch hợp với thói quen của tôi",
+         "Muốn sửa thì quay lại Ngày 5"
+        ]
        ]
       },
+      {
+       "f": "ta",
+       "k": "d6learn",
+       "q": "Một điều tôi học được về buổi sáng của mình",
+       "ph": "Ví dụ: ngày nào chuẩn bị từ chiều thì 8 giờ 15 đã vào việc"
+      },
+      {
+       "f": "tx",
+       "k": "d6next",
+       "q": "Con ếch đầu tiên của Thứ Hai tới",
+       "ph": "Ví dụ: chốt danh sách khách hàng mời hội nghị cuối năm"
+      }
+     ]
+    },
+    {
+     "h": "Tấm thẻ quy ước ăn ếch",
+     "items": [
       {
        "f": "note",
-       "text": "Mỗi lát làm được trong 30 đến 60 phút, xếp theo thứ tự làm."
+       "text": "Mọi điều đã viết trong tuần tự gom lại ở đây. Phiếu PDF Ngày 6 có bản in để đặt cạnh màn hình."
       },
       {
-       "f": "tx",
-       "k": "d5s1",
-       "q": "Lát 1",
-       "ph": "Ví dụ: dàn ý ba phần"
-      },
-      {
-       "f": "tx",
-       "k": "d5s2",
-       "q": "Lát 2",
-       "ph": "Phần tiếp theo"
-      },
-      {
-       "f": "tx",
-       "k": "d5s3",
-       "q": "Lát 3",
-       "ph": "Phần tiếp theo"
-      },
-      {
-       "f": "tx",
-       "k": "d5s4",
-       "q": "Lát 4",
-       "ph": "Phần tiếp theo"
-      },
-      {
-       "f": "tx",
-       "k": "d5s5",
-       "q": "Lát 5",
-       "ph": "Phần tiếp theo"
-      }
-     ]
-    },
-    {
-     "h": "Làm lát đầu tiên",
-     "items": [
-      {
-       "f": "seg",
-       "k": "d5way",
-       "q": "Cách bắt đầu",
-       "opts": [
-        "Làm một lát đến xong",
-        "Đục lỗ 15 phút"
+       "f": "compare",
+       "cols": [
+        "Nội dung"
        ],
-       "hints": [
-        "Làm lát đó đến xong, không chuyển sang việc khác giữa chừng.",
-        "Cam kết 15 phút, sau đó được phép dừng. Thường mình sẽ làm tiếp lâu hơn."
+       "rows": [
+        {
+         "label": "Câu bản sắc",
+         "keys": [
+          "j_identity"
+         ]
+        },
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Khối làm việc sâu",
+         "keys": [
+          "j_deep"
+         ]
+        },
+        {
+         "label": "Quy ước ăn ếch",
+         "keys": [
+          "j_frog"
+         ]
+        },
+        {
+         "label": "Việc dời sau 10 giờ",
+         "keys": [
+          "d5move"
+         ]
+        },
+        {
+         "label": "Con ếch Thứ Hai tới",
+         "keys": [
+          "d6next"
+         ]
+        }
        ]
-      },
-      {
-       "f": "cb",
-       "k": "d5done",
-       "label": "Đã xong lát 1 sáng nay"
       }
      ]
     }
    ],
    "checkin": [
     {
-     "tpl": "Ngày 5: Con ếch được cắt thành các lát. Lát 1: {d5s1}",
-     "need": [
-      "d5s1"
-     ]
-    },
-    {
-     "tpl": ". Cách bắt đầu: {d5way}",
-     "need": [
-      "d5s1",
-      "d5way"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d5s1"
-     ]
-    }
-   ],
-   "hint": "Dán vào bình luận của bài Ngày 5."
-  },
-  {
-   "label": "Thứ Bảy",
-   "kick": "Nhìn lại",
-   "title": "Nhìn lại tuần ăn ếch",
-   "time": "Khoảng 20 phút",
-   "cards": [
-    {
-     "h": "Đếm con ếch",
-     "items": [
-      {
-       "f": "seg",
-       "k": "d6n",
-       "q": "Số buổi sáng ăn ếch trước khi mở hộp thư (thứ Tư đến thứ Sáu)",
-       "opts": [
-        "0",
-        "1",
-        "2",
-        "3"
-       ]
-      },
-      {
-       "f": "seg",
-       "k": "d6block",
-       "q": "Điều cản trở nhiều nhất",
-       "opts": [
-        "Họp sớm",
-        "Tin nhắn gấp",
-        "Tự mở hộp thư",
-        "Việc phát sinh",
-        "Khác"
-       ]
-      }
-     ]
-    },
-    {
-     "h": "Câu nếu thì cho điều cản trở",
-     "items": [
-      {
-       "f": "tx",
-       "k": "d6if",
-       "q": "Nếu...",
-       "ph": "Ví dụ: muốn mở hộp thư trước 9 giờ"
-      },
-      {
-       "f": "tx",
-       "k": "d6then",
-       "q": "...thì tôi sẽ",
-       "ph": "Ví dụ: làm thêm 10 phút với con ếch trước"
-      },
-      {
-       "f": "show",
-       "text": "Nếu {d6if}, thì tôi sẽ {d6then}.",
-       "need": [
-        "d6if",
-        "d6then"
-       ]
-      }
-     ]
-    },
-    {
-     "h": "Việc hai phút đúng chỗ",
-     "items": [
-      {
-       "f": "note",
-       "text": "Quy tắc hai phút của David Allen: việc gì xong trong dưới hai phút thì làm ngay. Tuần này mình dùng nó sau khi đã ăn con ếch."
-      },
-      {
-       "f": "tx",
-       "k": "d6two",
-       "q": "Thời điểm dành cho việc hai phút",
-       "ph": "Ví dụ: 9 giờ 15, sau khi ăn ếch"
-      }
-     ]
-    }
-   ],
-   "checkin": [
-    {
-     "tpl": "Ngày 6: Ăn ếch được {d6n}/3 buổi sáng",
+     "tpl": "Tuần này tôi ăn ếch trước 10 giờ {d6n} buổi sáng.",
      "need": [
       "d6n"
      ]
     },
     {
-     "tpl": ". Cản trở lớn nhất: {d6block}",
+     "tpl": " Con ếch đầu tiên của tuần tới: {d6next}.",
      "need": [
-      "d6n",
-      "d6block"
-     ]
-    },
-    {
-     "tpl": ". Câu nếu thì: nếu {d6if}, thì tôi sẽ {d6then}",
-     "need": [
-      "d6n",
-      "d6if",
-      "d6then"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d6n"
+      "d6next"
      ]
     }
    ],
-   "hint": "Dán vào bình luận của bài Ngày 6."
-  },
-  {
-   "label": "Chủ Nhật",
-   "kick": "30 ngày",
-   "title": "Biến việc ăn ếch thành nghi thức 30 ngày",
-   "time": "Khoảng 30 đến 45 phút",
-   "cards": [
-    {
-     "h": "Nghi thức 30 ngày",
-     "items": [
-      {
-       "f": "tx",
-       "k": "d7tidy",
-       "q": "Giờ dọn bàn mỗi chiều",
-       "ph": "Ví dụ: 17 giờ 15"
-      },
-      {
-       "f": "tx",
-       "k": "d7eat",
-       "q": "Giờ ăn ếch mỗi sáng",
-       "ph": "Ví dụ: 8 giờ"
-      },
-      {
-       "f": "tx",
-       "k": "d7frog",
-       "q": "Con ếch lớn cho 30 ngày tới",
-       "ph": "Ví dụ: hoàn thành quy chế đánh giá mới"
-      },
-      {
-       "f": "tx",
-       "k": "d7buddy",
-       "q": "Người đồng hành",
-       "ph": "Ví dụ: anh Tuấn phòng kinh doanh"
-      },
-      {
-       "f": "seg",
-       "k": "d7report",
-       "q": "Báo người đồng hành mỗi",
-       "opts": [
-        "Thứ Sáu",
-        "Chủ Nhật",
-        "Thứ Hai"
-       ]
-      },
-      {
-       "f": "note",
-       "text": "Cảm ơn các anh chị và các bạn đã đi cùng Trường cả tuần. Một con ếch mỗi ngày, đều đặn, có giá trị hơn nhiều con ếch thỉnh thoảng nha."
-      }
-     ]
-    }
-   ],
-   "checkin": [
-    {
-     "tpl": "Ngày 7: Dọn bàn lúc {d7tidy}",
-     "need": [
-      "d7tidy"
-     ]
-    },
-    {
-     "tpl": ", ăn ếch lúc {d7eat}",
-     "need": [
-      "d7tidy",
-      "d7eat"
-     ]
-    },
-    {
-     "tpl": ". Con ếch 30 ngày: {d7frog}",
-     "need": [
-      "d7tidy",
-      "d7frog"
-     ]
-    },
-    {
-     "tpl": ". Người đồng hành: {d7buddy}",
-     "need": [
-      "d7tidy",
-      "d7buddy"
-     ]
-    },
-    {
-     "tpl": ".",
-     "need": [
-      "d7tidy"
-     ]
-    }
-   ],
-   "hint": "Dán vào bình luận của bài Ngày 7."
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
   }
  ]
 }
