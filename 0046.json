@@ -1,0 +1,755 @@
+{
+ "id": "0046",
+ "name": "Chi phí chìm",
+ "storeKey": "sth-0046-6n",
+ "kicker": "Công thức #0046",
+ "title": "Chi phí chìm và quý 1",
+ "sub": "Tuần cuối của quý 1 và của Mùa 2. Nhìn lại năm mục tiêu bằng chặng đường phía trước, không bằng phần đã bỏ ra phía sau: giữ, sửa hay dừng. Thói quen then chốt thì giữ. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "frame",
+  "big": "Q1",
+  "unit": "QUÝ 1 ĐÃ KHÉP",
+  "sub": "Mùa 2 · năm 2027",
+  "line": "Giữ sang quý 2: {j_q1_keep|thói quen then chốt}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Đặt lên bàn",
+   "title": "Đặt năm mục tiêu lên bàn",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Sao Bắc Đẩu của mục tiêu số 1: {j_northstar}",
+       "need": [
+        "j_northstar"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và mục tiêu quan trọng nhất ở các ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: hoàn thành điều đã hứa với đồng nghiệp"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: đầu mỗi ca, 15 phút kiểm tra một máy theo danh sách"
+      },
+      {
+       "f": "tx",
+       "k": "j_goal1",
+       "q": "Mục tiêu số 1 (người mới)",
+       "ph": "Ví dụ: giảm thời gian dừng máy"
+      }
+     ]
+    },
+    {
+     "h": "Trạng thái từng mục tiêu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Đúng hướng: đang tiến như dự kiến. Chậm: có tiến nhưng chậm hơn dự kiến. Đứng yên: gần như chưa thay đổi trong vài tuần. Hôm nay chỉ nhìn, chưa quyết định gì."
+      },
+      {
+       "f": "show",
+       "text": "Số 1: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1s1",
+       "q": "Mục tiêu số 1",
+       "opts": [
+        "Đúng hướng",
+        "Chậm",
+        "Đứng yên"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Số 2: {j_goal2}",
+       "need": [
+        "j_goal2"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1s2",
+       "q": "Mục tiêu số 2",
+       "opts": [
+        "Đúng hướng",
+        "Chậm",
+        "Đứng yên"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Số 3: {j_goal3}",
+       "need": [
+        "j_goal3"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1s3",
+       "q": "Mục tiêu số 3",
+       "opts": [
+        "Đúng hướng",
+        "Chậm",
+        "Đứng yên"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Số 4: {j_goal4}",
+       "need": [
+        "j_goal4"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1s4",
+       "q": "Mục tiêu số 4",
+       "opts": [
+        "Đúng hướng",
+        "Chậm",
+        "Đứng yên"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Số 5: {j_goal5}",
+       "need": [
+        "j_goal5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1s5",
+       "q": "Mục tiêu số 5",
+       "opts": [
+        "Đúng hướng",
+        "Chậm",
+        "Đứng yên"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Đếm lại",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1n",
+         "q": "Số mục tiêu đang đúng hướng"
+        }
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1most",
+       "q": "Mục tiêu tôi dành nhiều thời gian nhất",
+       "opts": [
+        "số 1",
+        "số 2",
+        "số 3",
+        "số 4",
+        "số 5"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Mỗi nút là một mục tiêu trong danh sách phía trên, số 1 là mục tiêu quan trọng nhất."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Sau gần một quý, {d1n} trong 5 mục tiêu của tôi đang đúng hướng.",
+     "need": [
+      "d1n"
+     ]
+    },
+    {
+     "tpl": " Mục tiêu tôi dành nhiều thời gian nhất: mục tiêu {d1most}.",
+     "need": [
+      "d1most"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Bắt đầu lại",
+   "title": "Nếu hôm nay bắt đầu lại, có chọn lại không?",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Sáu câu hỏi cho mỗi mục tiêu",
+     "items": [
+      {
+       "f": "note",
+       "text": "1. Hôm nay mới bắt đầu, có chọn mục tiêu này không? 2. Lý do chọn từ tháng 1 còn đúng không? 3. Bảng điểm nói gì? 4. Kết quả còn trong tầm ảnh hưởng của mình không? 5. Cần sửa phạm vi, thời hạn hay cách làm? 6. Dừng thì thời gian dôi ra dành cho mục tiêu nào?"
+      }
+     ]
+    },
+    {
+     "h": "Kết luận cho từng mục tiêu",
+     "items": [
+      {
+       "f": "show",
+       "text": "Số 1: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2k1",
+       "q": "Mục tiêu số 1",
+       "opts": [
+        "Giữ",
+        "Sửa",
+        "Dừng"
+       ],
+       "hints": [
+        "Mục tiêu vẫn đúng, đang đi đúng hướng hoặc chỉ chậm vì lý do tạm thời.",
+        "Vẫn đáng theo đuổi nhưng cần đổi phạm vi, thời hạn, cách đo hoặc cách làm.",
+        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Số 2: {j_goal2}",
+       "need": [
+        "j_goal2"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2k2",
+       "q": "Mục tiêu số 2",
+       "opts": [
+        "Giữ",
+        "Sửa",
+        "Dừng"
+       ],
+       "hints": [
+        "Mục tiêu vẫn đúng, đang đi đúng hướng hoặc chỉ chậm vì lý do tạm thời.",
+        "Vẫn đáng theo đuổi nhưng cần đổi phạm vi, thời hạn, cách đo hoặc cách làm.",
+        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Số 3: {j_goal3}",
+       "need": [
+        "j_goal3"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2k3",
+       "q": "Mục tiêu số 3",
+       "opts": [
+        "Giữ",
+        "Sửa",
+        "Dừng"
+       ],
+       "hints": [
+        "Mục tiêu vẫn đúng, đang đi đúng hướng hoặc chỉ chậm vì lý do tạm thời.",
+        "Vẫn đáng theo đuổi nhưng cần đổi phạm vi, thời hạn, cách đo hoặc cách làm.",
+        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Số 4: {j_goal4}",
+       "need": [
+        "j_goal4"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2k4",
+       "q": "Mục tiêu số 4",
+       "opts": [
+        "Giữ",
+        "Sửa",
+        "Dừng"
+       ],
+       "hints": [
+        "Mục tiêu vẫn đúng, đang đi đúng hướng hoặc chỉ chậm vì lý do tạm thời.",
+        "Vẫn đáng theo đuổi nhưng cần đổi phạm vi, thời hạn, cách đo hoặc cách làm.",
+        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Số 5: {j_goal5}",
+       "need": [
+        "j_goal5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2k5",
+       "q": "Mục tiêu số 5",
+       "opts": [
+        "Giữ",
+        "Sửa",
+        "Dừng"
+       ],
+       "hints": [
+        "Mục tiêu vẫn đúng, đang đi đúng hướng hoặc chỉ chậm vì lý do tạm thời.",
+        "Vẫn đáng theo đuổi nhưng cần đổi phạm vi, thời hạn, cách đo hoặc cách làm.",
+        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Tổng hợp",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d2keep",
+         "q": "Số mục tiêu vẫn chọn lại (giữ hoặc sửa)"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2review",
+       "q": "Mục tiêu cần xem lại kỹ vào Thứ Năm",
+       "ph": "Ví dụ: chuẩn hoá tài liệu cho toàn bộ 14 máy"
+      },
+      {
+       "f": "note",
+       "text": "Mục tiêu do công ty giao không tự dừng được. Nếu thấy cần điều chỉnh, trao đổi với cấp trên bằng số liệu từ bảng điểm."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Nếu bắt đầu lại hôm nay, tôi vẫn chọn {d2keep} mục tiêu.",
+     "need": [
+      "d2keep"
+     ]
+    },
+    {
+     "tpl": " Mục tiêu cần xem lại: {d2review}.",
+     "need": [
+      "d2review"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Khép quý 1",
+   "title": "Hôm nay khép lại quý 1 năm 2027",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Năm câu hỏi khép quý",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3proud",
+       "q": "1. Kết quả tôi tự hào nhất trong quý 1",
+       "ph": "Ví dụ: hợp đồng đầu tiên với một khách hàng doanh nghiệp mới"
+      },
+      {
+       "f": "note",
+       "text": "2. Thói quen then chốt đã đi cùng mình bao nhiêu ngày: xem bảng hành trình bên dưới."
+      },
+      {
+       "f": "seg",
+       "k": "d3tool",
+       "q": "3. Công cụ của Mùa 2 tôi dùng nhiều nhất",
+       "opts": [
+        "Kanban",
+        "Ranh giới",
+        "Hộp thời gian",
+        "Sổ đầu dòng",
+        "Mặc định",
+        "Bảng điểm",
+        "Khác"
+       ],
+       "hints": [
+        "Bảng ba cột và giới hạn việc dở (#0035).",
+        "Bảo vệ giờ làm việc quan trọng (#0037).",
+        "Mỗi bước một khung giờ, hạn chót tự đặt (#0042).",
+        "Hệ thống ghi chép ngày và tháng (#0041).",
+        "Quy tắc mặc định, lịch mục tiêu theo ngày (#0044).",
+        "Sao Bắc Đẩu và chỉ số hành động (#0045).",
+        "Một công cụ khác của Mùa 2, ghi ở ô bài học bên dưới."
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d3lesson",
+       "q": "4. Nếu bắt đầu lại quý 1, tôi sẽ làm khác điều gì?",
+       "ph": "Ví dụ: dựng bảng điểm ngay từ tháng 1"
+      },
+      {
+       "f": "tx",
+       "k": "d3thanks",
+       "q": "5. Người tôi muốn cảm ơn về quý 1",
+       "ph": "Ví dụ: chị Mai, đã nhận giúp việc trong tuần tôi nghỉ Tết"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen. Dòng bên dưới đếm tổng số ngày của cả hành trình, gồm cả quý 1."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Quý 1 khép lại. Kết quả tôi tự hào nhất: {d3proud}.",
+     "need": [
+      "d3proud"
+     ]
+    },
+    {
+     "tpl": " Thói quen đã giữ {jtotal} ngày trên cả hành trình.",
+     "need": [
+      "jtotal"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Dừng hoặc sửa",
+   "title": "Mạnh dạn dừng hoặc sửa một mục tiêu",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Ba câu nói báo hiệu",
+     "items": [
+      {
+       "f": "show",
+       "text": "Mục tiêu cần xem lại: {d2review}",
+       "need": [
+        "d2review"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Đánh dấu những câu mình từng nghĩ tới với mục tiêu này. Đó là lúc hỏi lại câu hỏi của Thứ Ba."
+      },
+      {
+       "f": "cb",
+       "k": "d4s1",
+       "label": "Đã làm đến đây rồi, bỏ thì phí"
+      },
+      {
+       "f": "cb",
+       "k": "d4s2",
+       "label": "Thêm một tháng nữa chắc sẽ khác (dù không có điều gì mới thay đổi)"
+      },
+      {
+       "f": "cb",
+       "k": "d4s3",
+       "label": "Mình đã nói với cả nhóm là sẽ làm được"
+      }
+     ]
+    },
+    {
+     "h": "Cách xử lý",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d4act",
+       "q": "Tôi chọn",
+       "opts": [
+        "Dừng hẳn",
+        "Vào danh sách tránh",
+        "Sửa phạm vi",
+        "Sửa thời hạn",
+        "Sửa cách đo hoặc cách làm"
+       ],
+       "hints": [
+        "Thời gian của quý 2 đi về mục tiêu khác. Những gì đã học vẫn ở lại.",
+        "Tạm gác, xem lại vào cuối năm cùng danh sách tránh.",
+        "Thu hẹp cho vừa, ví dụ 12 khách hàng thành 6 khách hàng ở một khu vực.",
+        "Lùi hạn có lý do rõ ràng, ghi lý do vào sổ.",
+        "Thêm Sao Bắc Đẩu hoặc đổi chỉ số hành động."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_q1_drop",
+       "q": "Mục tiêu tôi dừng hoặc sửa (viết rõ sau khi sửa)",
+       "ph": "Ví dụ: tài liệu chuẩn cho 8 máy được giữ lại, xong trong quý 2"
+      },
+      {
+       "f": "tx",
+       "k": "d4why",
+       "q": "Lý do, dựa vào chặng đường phía trước",
+       "ph": "Ví dụ: 6 máy sẽ được thay vào tháng 7"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Mục tiêu tôi mạnh dạn dừng hoặc sửa: {j_q1_drop}.",
+     "need": [
+      "j_q1_drop"
+     ]
+    },
+    {
+     "tpl": " Lý do: {d4why}.",
+     "need": [
+      "d4why"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Giữ thói quen",
+   "title": "Mục tiêu có thể đổi, thói quen thì giữ",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Năm mục tiêu cho quý 2",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ô nào đã có nội dung từ đầu năm sẽ hiện sẵn. Giữ nguyên, sửa theo Thứ Năm, hoặc thay mục tiêu đã dừng. Sửa ở đây thì mọi nơi dùng lại đều tự cập nhật."
+      },
+      {
+       "f": "tx",
+       "k": "j_goal1",
+       "q": "Mục tiêu số 1",
+       "ph": ""
+      },
+      {
+       "f": "tx",
+       "k": "j_goal2",
+       "q": "Mục tiêu số 2",
+       "ph": ""
+      },
+      {
+       "f": "tx",
+       "k": "j_goal3",
+       "q": "Mục tiêu số 3",
+       "ph": ""
+      },
+      {
+       "f": "tx",
+       "k": "j_goal4",
+       "q": "Mục tiêu số 4",
+       "ph": ""
+      },
+      {
+       "f": "tx",
+       "k": "j_goal5",
+       "q": "Mục tiêu số 5",
+       "ph": ""
+      }
+     ]
+    },
+    {
+     "h": "Giữ sang quý 2",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen then chốt: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Quy tắc mặc định: {j_default}",
+       "need": [
+        "j_default"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_q1_keep",
+       "q": "Điều tôi giữ sang quý 2 (thói quen và một công cụ của Mùa 2)",
+       "ph": "Ví dụ: 15 phút đầu ca kiểm tra máy, cùng bảng điểm mỗi chiều Thứ Sáu"
+      },
+      {
+       "f": "cb",
+       "k": "d5upd",
+       "label": "Thói quen đã được cập nhật nội dung cho vừa mục tiêu mới, giữ tín hiệu và khung giờ"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Sang quý 2, tôi giữ: {j_q1_keep}.",
+     "need": [
+      "j_q1_keep"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Khép Mùa 2",
+   "title": "Khép Mùa 2, một chặng đường đáng tự hào",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Bảng gom Mùa 2",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mọi điều đã lưu cho cả hành trình trong Mùa 2 hiện lại ở đây. Ô nào còn dấu ba chấm là tuần đó chưa điền, vẫn có thể quay lại."
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Mục tiêu số 1",
+         "keys": [
+          "j_goal1"
+         ]
+        },
+        {
+         "label": "Danh sách tránh",
+         "keys": [
+          "j_avoid"
+         ]
+        },
+        {
+         "label": "Quy tắc mặc định",
+         "keys": [
+          "j_default"
+         ]
+        },
+        {
+         "label": "Sao Bắc Đẩu",
+         "keys": [
+          "j_northstar"
+         ]
+        },
+        {
+         "label": "Mỗi tuần",
+         "keys": [
+          "j_lead"
+         ]
+        },
+        {
+         "label": "Đã dừng hoặc sửa",
+         "keys": [
+          "j_q1_drop"
+         ]
+        },
+        {
+         "label": "Giữ sang quý 2",
+         "keys": [
+          "j_q1_keep"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Tổng số ngày giữ thói quen trên cả hành trình: {jtotal}.",
+       "need": [
+        "jtotal"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Điều tự hào và điều mang theo",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d6proud",
+       "q": "Điều tôi tự hào nhất về Mùa 2",
+       "ph": "Ví dụ: giữ thói quen qua cả tuần Tết bằng phiên bản tối thiểu"
+      },
+      {
+       "f": "tx",
+       "k": "d6carry",
+       "q": "Một điều mang sang Mùa 3",
+       "ph": "Ví dụ: 15 phút chiều Thứ Sáu với bảng điểm"
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã in và điền trang tổng kết Mùa 2 (phiếu Ngày 6)"
+      },
+      {
+       "f": "note",
+       "text": "Từ Thứ Hai 05.04: Mùa 3 \"Học nhanh, nhớ lâu\". Thói quen then chốt tiếp tục là trục của hành trình."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Mùa 2 của tôi: {d6proud}.",
+     "need": [
+      "d6proud"
+     ]
+    },
+    {
+     "tpl": " Mang sang Mùa 3: {d6carry}.",
+     "need": [
+      "d6carry"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

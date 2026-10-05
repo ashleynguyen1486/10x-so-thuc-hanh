@@ -1,0 +1,601 @@
+{
+ "id": "0039",
+ "name": "Đừng bao giờ ăn một mình",
+ "storeKey": "sth-0039-6n",
+ "kicker": "Công thức #0039",
+ "title": "Đừng bao giờ ăn một mình: tuần khai xuân",
+ "sub": "Mùng 3 đến mùng 8 Tết Đinh Mùi, mỗi ngày 10 đến 15 phút. Vẽ bản đồ quan hệ công việc, gửi lời chúc Tết có tên người nhận, hỏi thăm lại những mối quan hệ lâu chưa gặp, cho đi trước một điều hữu ích, và ghép nhịp kết nối vào thói quen then chốt. Không bán hàng. Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "ring",
+  "big": "{d6n|6}",
+  "ratio": "{d6n}",
+  "of": "5",
+  "unit": "NGƯỜI ĐÃ KẾT NỐI LẠI",
+  "line": "Nhịp kết nối: {j_reach|mỗi tuần kết nối lại một người}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Bản đồ quan hệ",
+   "title": "Bản đồ quan hệ công việc năm Đinh Mùi",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc và một thói quen nhỏ trong công việc muốn giữ cả năm ở hai ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: giữ lời hẹn với khách hàng, dù là hẹn gọi lại"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: chiều Thứ Sáu viết ba việc quan trọng cho tuần sau"
+      }
+     ]
+    },
+    {
+     "h": "Bốn nhóm quan hệ",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mỗi nhóm vài người. Ghi vai trò hoặc tên viết tắt cũng được, sổ chỉ lưu trên trình duyệt của mình."
+      },
+      {
+       "f": "ta",
+       "k": "d1c",
+       "q": "Khách hàng",
+       "ph": "Ví dụ: chị trưởng phòng mua hàng của khách hàng A; anh giám đốc nhà máy B"
+      },
+      {
+       "f": "ta",
+       "k": "d1p",
+       "q": "Đối tác và nhà cung cấp",
+       "ph": "Ví dụ: anh kỹ sư bên nhà cung cấp máy đóng gói"
+      },
+      {
+       "f": "ta",
+       "k": "d1o",
+       "q": "Đồng nghiệp ở bộ phận khác",
+       "ph": "Ví dụ: chị Mai phòng kế hoạch; anh Khoa phòng dữ liệu"
+      },
+      {
+       "f": "ta",
+       "k": "d1m",
+       "q": "Người hướng dẫn, người từng làm cùng",
+       "ph": "Ví dụ: thầy hướng dẫn thực tập; anh trưởng nhóm dự án cũ"
+      }
+     ]
+    },
+    {
+     "h": "Danh sách giữ liên lạc năm nay",
+     "items": [
+      {
+       "f": "ta",
+       "k": "j_people",
+       "q": "5 đến 10 người tôi muốn giữ liên lạc trong năm Đinh Mùi",
+       "ph": "Ví dụ: chị Hà (khách hàng A), anh Phúc (nhà cung cấp), chị Mai (kế hoạch), thầy Bình ..."
+      },
+      {
+       "f": "note",
+       "text": "Danh sách này được lưu cho cả hành trình. Thứ Sáu, mỗi tuần sẽ lấy một tên từ đây."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1n",
+         "q": "Bản đồ của tôi có bao nhiêu người?"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1first",
+       "q": "Người đầu tiên tôi muốn kết nối lại",
+       "ph": "Ví dụ: anh trưởng nhóm dự án kho năm ngoái"
+      },
+      {
+       "f": "cb",
+       "k": "d1role",
+       "label": "Khi chia sẻ, tôi ghi vai trò thay cho tên thật của người khác"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Bản đồ quan hệ công việc năm Đinh Mùi của tôi có {d1n} người.",
+     "need": [
+      "d1n"
+     ]
+    },
+    {
+     "tpl": " Người đầu tiên tôi muốn kết nối lại: {d1first}.",
+     "need": [
+      "d1first"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Lời chúc",
+   "title": "Ba lời chúc Tết có tên người nhận",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Năm điều của một lời chúc được nhớ",
+     "items": [
+      {
+       "f": "note",
+       "text": "1. Đúng tên, đúng cách xưng hô. 2. Một việc cụ thể của năm qua. 3. Chúc một điều gắn với công việc của họ. 4. Ngắn, ba đến bốn câu. 5. Không kèm đề nghị nào."
+      }
+     ]
+    },
+    {
+     "h": "Lời chúc đầu tiên",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d2to",
+       "q": "Gửi ai",
+       "ph": "Ví dụ: anh Minh, khách hàng dự án kho"
+      },
+      {
+       "f": "ta",
+       "k": "d2msg",
+       "q": "Lời chúc",
+       "ph": "Ví dụ: Chúc mừng năm mới anh Minh. Cảm ơn anh đã tin tưởng giao dự án kho cho nhóm em năm qua..."
+      },
+      {
+       "f": "seg",
+       "k": "d2ch",
+       "q": "Kênh gửi",
+       "opts": [
+        "Gọi điện",
+        "Tin nhắn",
+        "Email",
+        "Gặp trực tiếp"
+       ],
+       "hints": [
+        "Hợp với người thân thiết hoặc người lớn tuổi. Gọi ngắn, vài phút là đủ.",
+        "Hợp với người bận. Viết đủ câu, có tên, không dùng thiệp chuyển tiếp.",
+        "Hợp với đối tác ở nước ngoài hoặc mối quan hệ trang trọng. Tiêu đề ngắn, có tên người nhận.",
+        "Ấm nhất nếu tiện. Ghé vài phút, không kéo dài."
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d2k1",
+       "label": "Có tên và một việc cụ thể của năm qua"
+      },
+      {
+       "f": "cb",
+       "k": "d2k2",
+       "label": "Không kèm đề nghị mua bán hay lời nhờ"
+      }
+     ]
+    },
+    {
+     "h": "Đếm lại",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d2n",
+         "q": "Hôm nay tôi đã gửi bao nhiêu lời chúc cụ thể?"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2detail",
+       "q": "Một điều cụ thể tôi nhắc trong lời chúc",
+       "ph": "Ví dụ: đợt giao hàng tháng 9 hai bên cùng xử lý"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hôm nay tôi đã gửi {d2n} lời chúc Tết cụ thể.",
+     "need": [
+      "d2n"
+     ]
+    },
+    {
+     "tpl": " Một điều cụ thể tôi nhắc trong lời chúc: {d2detail}.",
+     "need": [
+      "d2detail"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Quan hệ yếu",
+   "title": "Hai mối quan hệ lâu chưa liên lạc",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Quan hệ mạnh và quan hệ yếu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Granovetter (1973): trong số người tìm được việc qua người quen, chỉ khoảng 17% gặp người đó thường xuyên; khoảng 56% thỉnh thoảng; khoảng 28% hiếm khi. Quan hệ yếu nối mình với những nhóm khác, nên hay mang đến điều mình chưa biết."
+      }
+     ]
+    },
+    {
+     "h": "Hai người",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3w1",
+       "q": "Người thứ nhất",
+       "ph": "Ví dụ: bạn học cùng khoá đào tạo quản lý sản xuất"
+      },
+      {
+       "f": "tx",
+       "k": "d3w2",
+       "q": "Người thứ hai",
+       "ph": "Ví dụ: chị đối tác cũ bên công ty logistics"
+      },
+      {
+       "f": "seg",
+       "k": "d3gap",
+       "q": "Lần liên lạc gần nhất",
+       "opts": [
+        "Vài tháng",
+        "Khoảng một năm",
+        "Vài năm"
+       ],
+       "hints": [
+        "Vẫn còn gần. Một tin hỏi thăm năm mới là rất tự nhiên.",
+        "Nhắc lại một kỷ niệm làm việc chung để mở lời.",
+        "Giới thiệu ngắn mình đang làm gì, rồi hỏi thăm họ. Không cần xin lỗi vì lâu không liên lạc."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3learn",
+       "q": "Họ biết điều gì mà tôi mong học",
+       "ph": "Ví dụ: cách tối ưu tuyến giao hàng; thị trường miền Trung"
+      }
+     ]
+    },
+    {
+     "h": "Gửi lời hỏi thăm",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d3s1",
+       "label": "Đã gửi tin hỏi thăm người thứ nhất, không nhờ việc gì"
+      },
+      {
+       "f": "cb",
+       "k": "d3s2",
+       "label": "Đã gửi tin hỏi thăm người thứ hai, không nhờ việc gì"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hai mối quan hệ lâu chưa liên lạc tôi đã hỏi thăm lại: {d3w1} và {d3w2}.",
+     "need": [
+      "d3w1",
+      "d3w2"
+     ]
+    },
+    {
+     "tpl": " Điều tôi mong học từ họ: {d3learn}.",
+     "need": [
+      "d3learn"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Cho đi trước",
+   "title": "Cho đi trước một điều hữu ích",
+   "time": "Khoảng 10 đến 15 phút",
+   "cards": [
+    {
+     "h": "Chọn cách cho đi",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d4type",
+       "q": "Cách cho đi hôm nay",
+       "opts": [
+        "Tài liệu hữu ích",
+        "Giới thiệu hai người",
+        "Lời ghi nhận",
+        "Góp ý chuyên môn",
+        "Chúc mừng cột mốc"
+       ],
+       "hints": [
+        "Một bài viết, mẫu biểu, tài liệu đúng việc họ đang làm, kèm một câu vì sao mình nghĩ nó hợp.",
+        "Giới thiệu hai người có thể giúp nhau. Hỏi ý cả hai trước khi giới thiệu.",
+        "Một lời ghi nhận cụ thể về việc họ đã làm, có thể đồng gửi cấp trên của họ.",
+        "Góp ý khi họ đang gặp một vấn đề mình có kinh nghiệm. Ngắn, đúng trọng tâm.",
+        "Chúc mừng thăng chức, khai trương, hoàn thành dự án. Nhắc một chi tiết cụ thể."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d4to",
+       "q": "Gửi tới",
+       "ph": "Ví dụ: anh Phúc, kỹ sư nhà cung cấp"
+      },
+      {
+       "f": "tx",
+       "k": "d4what",
+       "q": "Điều tôi cho đi",
+       "ph": "Ví dụ: một bài viết về bảo trì dự phòng cho dây chuyền đóng gói"
+      }
+     ]
+    },
+    {
+     "h": "Kiểm tra",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d4c1",
+       "label": "Điều này hữu ích với họ, không chỉ với mình"
+      },
+      {
+       "f": "cb",
+       "k": "d4c2",
+       "label": "Không kèm lời nhờ hay đề nghị nào"
+      },
+      {
+       "f": "cb",
+       "k": "d4c3",
+       "label": "Không có thông tin mật của công ty hay khách hàng"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Điều tôi cho đi trước hôm nay: {d4what}, gửi tới {d4to}.",
+     "need": [
+      "d4what",
+      "d4to"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Nhịp kết nối",
+   "title": "Mỗi tuần kết nối lại một người",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Ghép vào thói quen",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen then chốt: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Danh sách giữ liên lạc: {j_people}",
+       "need": [
+        "j_people"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d5pace",
+       "q": "Nhịp phù hợp với tôi",
+       "opts": [
+        "Mỗi tuần một người",
+        "Mỗi tuần hai người",
+        "Hai tuần một người"
+       ],
+       "hints": [
+        "Nhịp dễ giữ với đa số vị trí.",
+        "Hợp với kinh doanh, chăm sóc khách hàng, người có nhiều quan hệ bên ngoài.",
+        "Hợp khi mới bắt đầu hoặc giai đoạn rất bận."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_reach",
+       "q": "Nhịp kết nối của tôi",
+       "ph": "Ví dụ: chiều Thứ Sáu, sau khi viết ba việc quan trọng, gửi một tin hỏi thăm"
+      },
+      {
+       "f": "tx",
+       "k": "d5who",
+       "q": "Người kết nối lại của tuần này",
+       "ph": "Ví dụ: chị Mai phòng kế hoạch"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen. Tuần nào có một lần kết nối lại cũng là một lớp mới của thói quen."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Nhịp kết nối của tôi: {j_reach}.",
+     "need": [
+      "j_reach"
+     ]
+    },
+    {
+     "tpl": " Tôi gắn nhịp này ngay sau thói quen {j_habit}.",
+     "need": [
+      "j_habit"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Bàn tròn khai xuân",
+   "title": "Mùng 8, hẹn một bàn tròn khai xuân",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Lời mời",
+     "items": [
+      {
+       "f": "note",
+       "text": "Bốn phần của một lời mời dễ nhận lời: lý do gặp không phải bán hàng; thời lượng ngắn; hai lựa chọn thời gian; một lối thoát lịch sự."
+      },
+      {
+       "f": "tx",
+       "k": "d6who",
+       "q": "Mời ai",
+       "ph": "Ví dụ: anh Long, đồng nghiệp cũ dự án kho"
+      },
+      {
+       "f": "seg",
+       "k": "d6form",
+       "q": "Hình thức",
+       "opts": [
+        "cà phê sáng",
+        "ăn trưa",
+        "gọi video",
+        "ghé văn phòng"
+       ],
+       "hints": [
+        "Khoảng 30 phút trước giờ làm, nhẹ nhàng, dễ hẹn.",
+        "Đúng tinh thần tên sách. Hợp với người quen đã lâu.",
+        "Khoảng 20 phút, khi hai người ở xa nhau.",
+        "Ghé thăm ngắn khoảng 20 phút, hợp với khách hàng đầu năm."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6when",
+       "q": "Thời gian đề xuất",
+       "ph": "Ví dụ: sáng Thứ Ba 23.02 hoặc Thứ Năm 25.02"
+      },
+      {
+       "f": "cb",
+       "k": "d6sent",
+       "label": "Đã gửi lời mời"
+      }
+     ]
+    },
+    {
+     "h": "Tuần khai xuân của tôi",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6n",
+         "q": "Tuần này tôi đã liên lạc lại với bao nhiêu người?"
+        }
+       ]
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Người đầu tiên",
+         "keys": [
+          "d1first"
+         ]
+        },
+        {
+         "label": "Lời chúc cụ thể",
+         "keys": [
+          "d2detail"
+         ]
+        },
+        {
+         "label": "Quan hệ yếu",
+         "keys": [
+          "d3w1"
+         ]
+        },
+        {
+         "label": "Điều cho đi",
+         "keys": [
+          "d4what"
+         ]
+        },
+        {
+         "label": "Nhịp kết nối",
+         "keys": [
+          "j_reach"
+         ]
+        },
+        {
+         "label": "Bàn tròn",
+         "keys": [
+          "d6who"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau, Công thức #0040 Đường cong quên và lặp lại cách quãng mở tuần làm việc đầy đủ đầu tiên sau Tết, từ Thứ Hai 15.02."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tuần khai xuân tôi đã kết nối lại với {d6n} người.",
+     "need": [
+      "d6n"
+     ]
+    },
+    {
+     "tpl": " Cuộc hẹn đầu tiên của năm: {d6form} với {d6who}, {d6when}.",
+     "need": [
+      "d6form",
+      "d6who",
+      "d6when"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

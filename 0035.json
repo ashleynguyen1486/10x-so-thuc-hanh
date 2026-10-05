@@ -1,0 +1,649 @@
+{
+ "id": "0035",
+ "name": "Bảng Kanban cá nhân",
+ "storeKey": "sth-0035-6n",
+ "kicker": "Công thức #0035",
+ "title": "Bảng Kanban cá nhân: năm mục tiêu thành việc mỗi ngày",
+ "sub": "Tuần làm việc trọn vẹn đầu tiên của năm 2027. Đưa năm mục tiêu lên một bảng ba cột (Cần làm, Đang làm, Xong), tách mục tiêu số 1 thành thẻ việc, giới hạn số việc dở và nhìn bảng năm phút mỗi sáng cạnh thói quen then chốt. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "diag",
+  "big": "{d6xong|6}",
+  "unit": "VIỆC ĐÃ XONG",
+  "line": "Giới hạn việc dở: {j_wip|3} việc. Bảng đặt ở: {j_board|ngay trên bàn làm việc}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Dựng bảng",
+   "title": "Dựng bảng ba cột",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Mục tiêu số 1 năm 2027: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết một câu bản sắc và một thói quen then chốt trong công việc ở hai ô dưới đây. Thứ Ba sẽ có ô cho mục tiêu số 1."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: làm xong việc đang dở trước khi nhận việc mới"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: viết ba việc quan trọng nhất trước khi mở hộp thư"
+      }
+     ]
+    },
+    {
+     "h": "Bảng đặt ở đâu",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d1type",
+       "q": "Loại bảng tôi dùng",
+       "opts": [
+        "Bảng trắng",
+        "Tờ giấy dán cạnh bàn",
+        "Một trang sổ",
+        "Ứng dụng trên máy tính"
+       ],
+       "hints": [
+        "Bảng trắng và giấy ghi chú: dễ nhìn, dễ di chuyển thẻ, hợp với người làm cố định một chỗ.",
+        "Tờ giấy khổ lớn dán cạnh màn hình: rẻ, nhanh, ai cũng làm được ngay hôm nay.",
+        "Một trang sổ kẻ ba cột: mang theo được, hợp với người hay di chuyển. Thẻ di chuyển bằng cách gạch và viết lại.",
+        "Ứng dụng có dạng bảng nhiều cột: hợp với người làm việc chủ yếu trên máy tính hoặc cần chia sẻ với nhóm."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_board",
+       "q": "Bảng Kanban của tôi đặt ở",
+       "ph": "Ví dụ: tấm bảng trắng nhỏ bên trái màn hình"
+      }
+     ]
+    },
+    {
+     "h": "Đổ hết việc ra thẻ",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mỗi việc đang có trong đầu là một thẻ, kể cả việc nhỏ. Việc nào đang dở thì đặt thẳng vào cột Đang làm, chưa cần sắp xếp."
+      },
+      {
+       "f": "ta",
+       "k": "d1list",
+       "q": "Danh sách việc (mỗi dòng một việc)",
+       "ph": "Ví dụ: viết báo giá cho khách hàng A; gửi số liệu tháng 12 cho kế toán; gọi lại nhà cung cấp"
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1count",
+         "q": "Số thẻ ở cột Cần làm"
+        },
+        {
+         "k": "d1doing",
+         "q": "Số việc đang dở ở cột Đang làm"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Bảng Kanban của tôi đặt ở: {j_board}.",
+     "need": [
+      "j_board"
+     ]
+    },
+    {
+     "tpl": " Cột Cần làm có {d1count} thẻ, cột Đang làm đang có {d1doing} việc dở.",
+     "need": [
+      "d1count",
+      "d1doing"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Tách bước",
+   "title": "Tách mục tiêu số 1 thành thẻ việc",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Mục tiêu và mốc gần nhất",
+     "items": [
+      {
+       "f": "show",
+       "text": "Mục tiêu số 1: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_goal1",
+       "q": "Mục tiêu số 1 năm 2027 (người mới điền ở đây, người đã có có thể sửa)",
+       "ph": "Ví dụ: 12 khách hàng doanh nghiệp mới ký hợp đồng trong năm"
+      },
+      {
+       "f": "tx",
+       "k": "d2mile",
+       "q": "Mốc gần nhất của mục tiêu số 1",
+       "ph": "Ví dụ: cuối tháng 1, danh sách 40 khách hàng tiềm năng đã sàng lọc"
+      }
+     ]
+    },
+    {
+     "h": "Thẻ việc",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mỗi thẻ bắt đầu bằng một động từ, làm xong trong một lần ngồi (thường dưới 90 phút), xong thì ai nhìn cũng biết là xong."
+      },
+      {
+       "f": "tx",
+       "k": "d2s1",
+       "q": "Thẻ 1",
+       "ph": "Ví dụ: lọc khách hàng cũ trong hệ thống theo ngành"
+      },
+      {
+       "f": "tx",
+       "k": "d2s2",
+       "q": "Thẻ 2",
+       "ph": "Ví dụ: viết tiêu chí sàng lọc trên một trang"
+      },
+      {
+       "f": "tx",
+       "k": "d2s3",
+       "q": "Thẻ 3",
+       "ph": "Ví dụ: xin danh sách hội viên của hiệp hội ngành"
+      },
+      {
+       "f": "tx",
+       "k": "d2s4",
+       "q": "Thẻ 4",
+       "ph": "Ví dụ: gọi thử 5 khách hàng đầu để kiểm tra tiêu chí"
+      },
+      {
+       "f": "tx",
+       "k": "d2s5",
+       "q": "Thẻ 5 (nếu có)",
+       "ph": ""
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d2n",
+         "q": "Tổng số thẻ việc đã tách"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Kiểm tra và chọn thẻ đầu tiên",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d2c1",
+       "label": "Mỗi thẻ bắt đầu bằng một động từ"
+      },
+      {
+       "f": "cb",
+       "k": "d2c2",
+       "label": "Mỗi thẻ làm xong được trong một lần ngồi"
+      },
+      {
+       "f": "cb",
+       "k": "d2c3",
+       "label": "Có ít nhất một thẻ làm được ngay trong tuần này"
+      },
+      {
+       "f": "pick",
+       "k": "d2first",
+       "kp": "d2s",
+       "n": 5,
+       "empty": "Viết các thẻ ở trên, rồi bấm chọn thẻ đầu tiên kéo sang Đang làm."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Mục tiêu số 1 của tôi đã thành {d2n} thẻ việc.",
+     "need": [
+      "d2n"
+     ]
+    },
+    {
+     "tpl": " Thẻ đầu tiên tôi kéo sang Đang làm: {d2first}.",
+     "need": [
+      "d2first"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Giới hạn việc dở",
+   "title": "Giới hạn việc dở, một con số nhỏ",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Đếm luồng việc",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d3now",
+         "q": "Số việc đang dở hiện tại"
+        },
+        {
+         "k": "d3week",
+         "q": "Số việc tôi làm xong mỗi tuần (ước lượng)"
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Định luật Little, hiểu gần đúng: thời gian trung bình một việc nằm trên bảng bằng số việc dở chia cho số việc xong mỗi tuần. Ví dụ 12 việc dở, mỗi tuần xong 4 việc: mỗi việc mất khoảng 3 tuần. Đây là phép tính minh hoạ cho giá trị trung bình."
+      }
+     ]
+    },
+    {
+     "h": "Chọn giới hạn",
+     "items": [
+      {
+       "f": "seg",
+       "k": "j_wip",
+       "q": "Giới hạn việc dở cho cột Đang làm",
+       "opts": [
+        "2",
+        "3",
+        "4",
+        "5"
+       ],
+       "hints": [
+        "2 việc: hợp với việc cần tập trung sâu, ít bị gián đoạn, như phân tích, viết, thiết kế.",
+        "3 việc: điểm khởi đầu phổ biến cho phần lớn công việc văn phòng.",
+        "4 việc: hợp với vị trí phối hợp nhiều bên, có nhiều việc phải chờ người khác.",
+        "5 việc: chỉ nên dùng khi có làn \"Đang chờ\" riêng; nếu cột luôn đầy, thử giảm xuống."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3rule",
+       "q": "Khi cột Đang làm đã đầy, tôi ...",
+       "ph": "Ví dụ: làm xong thẻ gần xong nhất trước khi nhận việc mới"
+      },
+      {
+       "f": "cb",
+       "k": "d3lane",
+       "label": "Tôi kẻ thêm một làn việc gấp phía trên bảng, giới hạn một thẻ"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt. Mỗi ô cũng là một ngày bảng được nhìn tới."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Giới hạn việc dở của tôi: {j_wip} việc.",
+     "need": [
+      "j_wip"
+     ]
+    },
+    {
+     "tpl": " Khi cột Đang làm đã đầy, tôi {d3rule}.",
+     "need": [
+      "d3rule"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Nhìn bảng",
+   "title": "Năm phút nhìn bảng mỗi sáng",
+   "time": "Khoảng 10 phút",
+   "cards": [
+    {
+     "h": "Năm phút",
+     "items": [
+      {
+       "f": "timer",
+       "k": "d4min",
+       "dk": "d4dur",
+       "def": 5,
+       "opts": [
+        3,
+        5,
+        10
+       ],
+       "note": "Bấm Bắt đầu, đọc bảng từ phải sang trái theo ba câu hỏi bên dưới."
+      }
+     ]
+    },
+    {
+     "h": "Ba câu hỏi, đọc từ phải sang trái",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d4q1",
+       "label": "Hôm qua việc gì đã sang cột Xong?"
+      },
+      {
+       "f": "cb",
+       "k": "d4q2",
+       "label": "Việc nào ở cột Đang làm đang tắc, đang chờ gì?"
+      },
+      {
+       "f": "cb",
+       "k": "d4q3",
+       "label": "Hôm nay việc nào gần xong nhất, cột Đang làm còn chỗ không?"
+      },
+      {
+       "f": "tx",
+       "k": "d4pick",
+       "q": "Việc tôi chọn làm trước hôm nay",
+       "ph": "Ví dụ: gửi bộ câu trả lời mẫu cho trưởng phòng góp ý"
+      }
+     ]
+    },
+    {
+     "h": "Gắn vào thói quen then chốt",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen then chốt: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d4when",
+       "q": "Thời điểm nhìn bảng mỗi sáng",
+       "opts": [
+        "Ngay trước thói quen then chốt",
+        "Ngay sau thói quen then chốt",
+        "Ngay khi mở máy tính"
+       ],
+       "hints": [
+        "Nhìn bảng xong mới làm thói quen: hợp khi thói quen là lập kế hoạch ngày, vì bảng cho sẵn nguyên liệu.",
+        "Làm thói quen xong thì nhìn bảng: hợp khi thói quen là một việc sâu đầu ngày, bảng giúp chọn việc tiếp theo.",
+        "Nhìn bảng trước khi mở hộp thư: hợp với người bắt đầu ngày bằng máy tính, tránh để email quyết định việc làm trước."
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Năm phút nhìn bảng sáng nay, tôi chọn làm trước: {d4pick}.",
+     "need": [
+      "d4pick"
+     ]
+    },
+    {
+     "tpl": " Thời điểm tôi nhìn bảng mỗi sáng: {d4when}.",
+     "need": [
+      "d4when"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Việc tắc",
+   "title": "Thẻ nào đang tắc, tắc vì đâu?",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thẻ đứng yên lâu nhất",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5card",
+       "q": "Việc đang tắc",
+       "ph": "Ví dụ: viết quy trình xử lý hoàn tiền"
+      },
+      {
+       "f": "seg",
+       "k": "d5why",
+       "q": "Lý do tắc",
+       "opts": [
+        "Chờ người khác",
+        "Thiếu thông tin",
+        "Việc quá lớn",
+        "Chưa rõ bước tiếp theo",
+        "Ngại bắt đầu"
+       ],
+       "hints": [
+        "Cần xác nhận, số liệu, chữ ký từ người khác. Gửi lời nhắn ngắn có hạn rõ, ghi tên người đang giữ việc lên thẻ.",
+        "Chưa đủ dữ liệu hoặc chưa rõ yêu cầu. Viết đúng một câu hỏi cần trả lời, dành 15 phút tìm câu trả lời.",
+        "Thẻ là một chủ đề, không phải một việc. Tách theo ba dấu hiệu của Ngày 2, giữ thẻ nhỏ nhất ở Đang làm.",
+        "Đã làm một phần nhưng dừng ở chỗ \"rồi sao nữa\". Viết ngay bước tiếp theo bằng một động từ.",
+        "Không thiếu gì, chỉ là việc khó hoặc không thích. Đặt đồng hồ 15 phút, làm phần dễ nhất trước."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5next",
+       "q": "Bước gỡ tắc hôm nay (khoảng 15 phút)",
+       "ph": "Ví dụ: nhắn phòng kế toán xác nhận hạn mức trước 15 giờ Thứ Hai"
+      }
+     ]
+    },
+    {
+     "h": "Sau khi gỡ",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d5dot",
+       "label": "Tôi đã dán dấu tắc (chấm đỏ) lên thẻ còn phải chờ"
+      },
+      {
+       "f": "cb",
+       "k": "d5wait",
+       "label": "Thẻ chờ người khác đã chuyển sang làn Đang chờ, cột Đang làm có lại chỗ"
+      },
+      {
+       "f": "note",
+       "text": "Nếu tuần nào cũng có thẻ tắc vì cùng một lý do, ghi lại để Thứ Bảy xem cách phòng ngừa từ đầu."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Việc tắc trên bảng của tôi: {d5card}. Lý do: {d5why}.",
+     "need": [
+      "d5card",
+      "d5why"
+     ]
+    },
+    {
+     "tpl": " Bước gỡ tắc hôm nay: {d5next}.",
+     "need": [
+      "d5next"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Luồng việc",
+   "title": "Nhìn lại luồng việc của tuần",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Con số của tuần",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6xong",
+         "q": "Số thẻ đã sang cột Xong tuần này"
+        },
+        {
+         "k": "d6g1",
+         "q": "Trong đó, số thẻ thuộc mục tiêu số 1"
+        },
+        {
+         "k": "d6morning",
+         "q": "Số buổi sáng đã nhìn bảng"
+        }
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Giới hạn việc dở đang dùng: {j_wip} việc.",
+       "need": [
+        "j_wip"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Câu hỏi mở",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d6long",
+       "q": "Thẻ nào nằm lâu nhất, vì sao?",
+       "ph": "Ví dụ: quy trình hoàn tiền, chờ kế toán xác nhận hạn mức gần ba ngày"
+      },
+      {
+       "f": "ta",
+       "k": "d6learn",
+       "q": "Điều tôi nhận ra về luồng việc",
+       "ph": "Ví dụ: việc phát sinh chiếm gần hết cột Xong, cần làn việc gấp riêng"
+      },
+      {
+       "f": "seg",
+       "k": "d6adj",
+       "q": "Giới hạn việc dở cho tuần sau",
+       "opts": [
+        "Giữ nguyên",
+        "Giảm một",
+        "Tăng một"
+       ],
+       "hints": [
+        "Cột Đang làm thường còn vừa đủ chỗ, thẻ chảy đều: giữ nguyên.",
+        "Cột luôn đầy, nhiều thẻ đứng yên: giảm một để buộc làm xong trước khi bắt đầu.",
+        "Cột thường trống mà việc vẫn chảy đều: có thể thử tăng một."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Bảng của tôi sau một tuần",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Mục tiêu số 1",
+         "keys": [
+          "j_goal1"
+         ]
+        },
+        {
+         "label": "Bảng đặt ở",
+         "keys": [
+          "j_board"
+         ]
+        },
+        {
+         "label": "Giới hạn việc dở",
+         "keys": [
+          "j_wip"
+         ]
+        },
+        {
+         "label": "Thời điểm nhìn bảng",
+         "keys": [
+          "d4when"
+         ]
+        },
+        {
+         "label": "Tuần sau",
+         "keys": [
+          "d6adj"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau, Công thức #0036 Gan góc: giữ thói quen và mục tiêu khi hứng khởi đầu năm chững lại. Tấm bảng tiếp tục được dùng."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tuần này {d6xong} thẻ đã sang cột Xong.",
+     "need": [
+      "d6xong"
+     ]
+    },
+    {
+     "tpl": " Điều tôi nhận ra về luồng việc: {d6learn}.",
+     "need": [
+      "d6learn"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

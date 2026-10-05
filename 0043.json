@@ -1,0 +1,540 @@
+{
+ "id": "0043",
+ "name": "Nghịch lý lựa chọn",
+ "storeKey": "sth-0043-6n",
+ "kicker": "Công thức #0043",
+ "title": "Nghịch lý lựa chọn: chọn đủ tốt để giữ ưu tiên",
+ "sub": "Đếm các lựa chọn nhỏ trong ngày, tự nhìn lại kiểu chọn của mình, đặt ngưỡng đủ tốt cho việc nhỏ, rút bớt phương án khi trình cho người khác, dành sức chọn kỹ cho quyết định lớn và viết một quy ước chọn lựa của riêng mình. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "quote",
+  "big": "ĐỦ TỐT",
+  "unit": "CHỌN ÍT, GIỮ ƯU TIÊN",
+  "quote": "{d6key|Việc nhỏ chọn đủ tốt, sức lớn dành cho mục tiêu.}",
+  "line": "Việc tôi chọn kiểu đủ tốt: {j_enough|đã được chọn}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Đếm lựa chọn",
+   "title": "Đếm các lựa chọn nhỏ trong một buổi sáng",
+   "time": "Khoảng 15 phút, chia trong buổi sáng",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Quy tắc hộp thời gian: {j_timebox}",
+       "need": [
+        "j_timebox"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc và thói quen then chốt muốn giữ ở hai ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: quyết định nhanh việc nhỏ, dành sức cho việc lớn"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: mỗi sáng chọn một việc quan trọng nhất trong 5 phút"
+      }
+     ]
+    },
+    {
+     "h": "Đếm trong buổi sáng",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mỗi khi phải chọn giữa hai phương án trở lên, đánh một dấu vào sổ đầu dòng: chọn mẫu tài liệu, chọn việc làm trước, chọn cách trả lời một email, chọn nhà cung cấp để gọi."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1count",
+         "q": "Số lựa chọn nhỏ đếm được đến giờ nghỉ trưa"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1top",
+       "q": "Lựa chọn nhỏ tốn thời gian nhất",
+       "ph": "Ví dụ: chọn mẫu trình bày cho báo cáo tháng, mất gần 30 phút"
+      },
+      {
+       "f": "seg",
+       "k": "d1kind",
+       "q": "Phần lớn các lựa chọn thuộc loại",
+       "opts": [
+        "Cách trình bày",
+        "Việc làm trước",
+        "Cách trả lời",
+        "Chọn nhà cung cấp, công cụ"
+       ],
+       "hints": [
+        "Mẫu tài liệu, màu sắc, bố cục. Thường là việc ảnh hưởng nhỏ, dễ đổi.",
+        "Thứ tự công việc trong ngày. Quy tắc hộp thời gian và việc quan trọng nhất buổi sáng giúp bớt cân nhắc.",
+        "Câu chữ của email, tin nhắn. Mẫu câu soạn sẵn giúp chọn nhanh hơn.",
+        "So sánh nơi cung cấp hay công cụ. Ngày 3 sẽ dùng cách đặt ngưỡng đủ tốt."
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Buổi sáng nay tôi đếm được {d1count} lựa chọn nhỏ.",
+     "need": [
+      "d1count"
+     ]
+    },
+    {
+     "tpl": " Lựa chọn tốn thời gian nhất: {d1top}.",
+     "need": [
+      "d1top"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Tối đa hoá",
+   "title": "Tối đa hoá hay chọn đủ tốt?",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Năm câu tự chấm (tham khảo)",
+     "items": [
+      {
+       "f": "note",
+       "text": "Do 10X Excellence Hub soạn theo tinh thần nghiên cứu của Schwartz và cộng sự (2002). Chỉ để tự nhìn lại, không phải thang đo khoa học. 1 là rất không giống mình, 5 là rất giống mình."
+      },
+      {
+       "f": "rate",
+       "kp": "d2r",
+       "head": [
+        "#",
+        "Câu",
+        "Điểm"
+       ],
+       "scale": 5,
+       "rows": [
+        [
+         "Khi chọn mẫu trình bày cho báo cáo, tôi xem hết các mẫu rồi mới quyết định",
+         ""
+        ],
+        [
+         "Sau khi gửi một email quan trọng, tôi hay nghĩ lại xem có cách viết nào tốt hơn",
+         ""
+        ],
+        [
+         "Khi đặt lịch họp, tôi cân nhắc nhiều khung giờ dù khung giờ đầu tiên đã phù hợp",
+         ""
+        ],
+        [
+         "Khi chọn nhà cung cấp cho việc nhỏ, tôi muốn so sánh thêm vài nơi nữa cho chắc",
+         ""
+        ],
+        [
+         "Tôi thấy khó chịu khi phải quyết định mà chưa xem hết các phương án",
+         ""
+        ]
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Tổng điểm: {sum:d2r1,d2r2,d2r3,d2r4,d2r5} trên 25. Không có điểm tốt hay xấu: tối đa hoá có giá trị với việc lớn, khó đổi.",
+       "need": [
+        "d2r1"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Ba việc nhỏ hay cân nhắc quá lâu",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d2three",
+       "q": "Ba việc nhỏ (lấy từ danh sách đếm hôm qua)",
+       "ph": "Ví dụ: chọn mẫu báo cáo; chọn khung giờ họp; sửa câu chữ email thường"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Điểm tối đa hoá tự chấm của tôi: {sum:d2r1,d2r2,d2r3,d2r4,d2r5}/25.",
+     "need": [
+      "d2r1"
+     ]
+    },
+    {
+     "tpl": " Ba việc nhỏ tôi hay cân nhắc quá lâu: {d2three}.",
+     "need": [
+      "d2three"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2. Điểm số là chuyện riêng, có thể xoá phần điểm trước khi dán."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Ngưỡng đủ tốt",
+   "title": "Đặt ngưỡng đủ tốt trước khi chọn",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Một việc nhỏ cần quyết định",
+     "items": [
+      {
+       "f": "show",
+       "text": "Ba việc đã ghi hôm qua: {d2three}",
+       "need": [
+        "d2three"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_enough",
+       "q": "Việc tôi chọn kiểu đủ tốt (lưu cho cả hành trình)",
+       "ph": "Ví dụ: chọn công cụ khảo sát khách hàng"
+      }
+     ]
+    },
+    {
+     "h": "Ba bước",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3crit",
+       "q": "Bước 1: ba tiêu chí bắt buộc",
+       "ph": "Ví dụ: gửi được qua email và tin nhắn; xuất ra bảng tính; trong ngân sách đã duyệt"
+      },
+      {
+       "f": "seg",
+       "k": "d3limit",
+       "q": "Bước 2: giới hạn tìm kiếm",
+       "opts": [
+        "Tối đa 3 phương án",
+        "Tối đa 15 phút",
+        "Một hộp 45 phút"
+       ],
+       "hints": [
+        "Xem tối đa ba phương án, dừng khi gặp phương án đầu tiên đạt tiêu chí.",
+        "Hợp với việc rất nhỏ: chọn mẫu, chọn khung giờ.",
+        "Hợp với việc nhỏ nhưng cần tìm hiểu: chọn công cụ, chọn nhà cung cấp phụ."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3pick",
+       "q": "Bước 3: phương án đầu tiên đạt ngưỡng",
+       "ph": "Ví dụ: công cụ số 2, dùng thử một tháng rồi đánh giá lại"
+      },
+      {
+       "f": "cb",
+       "k": "d3rev",
+       "label": "Tôi đã biến quyết định này thành quyết định đảo ngược được (dùng thử, hẹn ngày đánh giá lại) nếu có thể"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Việc tôi chọn kiểu đủ tốt: {j_enough}.",
+     "need": [
+      "j_enough"
+     ]
+    },
+    {
+     "tpl": " Tiêu chí đủ tốt: {d3crit}.",
+     "need": [
+      "d3crit"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Rút phương án",
+   "title": "Rút bớt phương án khi trình cho người khác",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Bản cần chỉnh",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4what",
+       "q": "Bản đề xuất, báo cáo hoặc tin nhắn có nhiều phương án",
+       "ph": "Ví dụ: đề xuất gói dịch vụ cho khách hàng doanh nghiệp mới"
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d4n1",
+         "q": "Số phương án ban đầu"
+        },
+        {
+         "k": "d4n2",
+         "q": "Số phương án sau khi rút"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Bốn câu hỏi",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d4q1",
+       "label": "Người chọn đã rõ ưu tiên của họ (nếu chưa, tôi hỏi trước)"
+      },
+      {
+       "f": "cb",
+       "k": "d4q2",
+       "label": "Mỗi phương án còn lại phục vụ một ưu tiên rõ ràng"
+      },
+      {
+       "f": "cb",
+       "k": "d4q3",
+       "label": "Tôi đã chọn một phương án khuyến nghị"
+      },
+      {
+       "f": "cb",
+       "k": "d4q4",
+       "label": "Phần chi tiết phụ đã chuyển vào phụ lục"
+      },
+      {
+       "f": "tx",
+       "k": "d4rec",
+       "q": "Khuyến nghị và hai lý do",
+       "ph": "Ví dụ: gói hai năm, vì khớp ngân sách và có hỗ trợ triển khai"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi rút {d4what} từ {d4n1} xuống {d4n2} phương án, kèm một khuyến nghị.",
+     "need": [
+      "d4what",
+      "d4n1",
+      "d4n2"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Chọn kỹ",
+   "title": "Dành sức chọn kỹ cho việc lớn",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Bốn quyết định sắp tới",
+     "items": [
+      {
+       "f": "note",
+       "text": "Câu hỏi 1: có ảnh hưởng lớn đến năm mục tiêu không? Câu hỏi 2: nếu chọn sai, có dễ đổi lại không? Ghi bốn quyết định và bấm ô phù hợp."
+      },
+      {
+       "f": "rows",
+       "n": 4,
+       "kp": "d5d",
+       "ph": "Quyết định",
+       "zk": "d5z",
+       "zones": [
+        [
+         "O1",
+         "Ô 1"
+        ],
+        [
+         "O2",
+         "Ô 2"
+        ],
+        [
+         "O3",
+         "Ô 3"
+        ],
+        [
+         "O4",
+         "Ô 4"
+        ]
+       ]
+      },
+      {
+       "f": "matrix",
+       "top": "Ảnh hưởng lớn đến năm mục tiêu",
+       "bottom": "Ảnh hưởng nhỏ",
+       "n": 4,
+       "kp": "d5d",
+       "zk": "d5z",
+       "zones": [
+        [
+         "O1",
+         "Ô 1: chọn kỹ",
+         "Ảnh hưởng lớn đến năm mục tiêu, khó đổi. Đáng tối đa hoá.",
+         true
+        ],
+        [
+         "O2",
+         "Ô 2: đủ tốt, có kiểm tra",
+         "Ảnh hưởng lớn, dễ đổi. Thử ngắn, hẹn ngày đánh giá lại.",
+         false
+        ],
+        [
+         "O3",
+         "Ô 3: đủ tốt, đọc kỹ điều khoản",
+         "Ảnh hưởng nhỏ, khó đổi.",
+         false
+        ],
+        [
+         "O4",
+         "Ô 4: chọn nhanh",
+         "Ảnh hưởng nhỏ, dễ đổi. Theo ngưỡng đủ tốt hoặc quy tắc có sẵn.",
+         false
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Một quyết định đáng chọn kỹ",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5max",
+       "q": "Quyết định ở ô 1 xứng đáng để tôi chọn kỹ tuần tới",
+       "ph": "Ví dụ: chọn nhà cung cấp chính cho quý 2"
+      },
+      {
+       "f": "cb",
+       "k": "d5box",
+       "label": "Tôi đã đặt một hộp thời gian riêng cho quyết định này"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Quyết định xứng đáng để tôi chọn kỹ tuần tới: {d5max}.",
+     "need": [
+      "d5max"
+     ]
+    },
+    {
+     "tpl": " Việc tôi chọn đủ tốt: {j_enough}.",
+     "need": [
+      "j_enough"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Quy ước",
+   "title": "Quy ước chọn lựa của riêng mình",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Bản mẫu sáu điều",
+     "items": [
+      {
+       "f": "note",
+       "text": "1. Ô 4 chọn theo ngưỡng đủ tốt. 2. Việc nhỏ xem tối đa ba phương án hoặc 15 phút. 3. Ghi rõ một đến ba việc chọn kiểu đủ tốt. 4. Ô 1 có hộp thời gian riêng và ý kiến người có kinh nghiệm. 5. Trình người khác tối đa ba phương án kèm khuyến nghị. 6. Lựa chọn chưa tốt thì ghi một dòng rút kinh nghiệm, không tự trách."
+      },
+      {
+       "f": "show",
+       "text": "Việc tôi chọn kiểu đủ tốt: {j_enough}",
+       "need": [
+        "j_enough"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Quy ước của tôi",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d6rules",
+       "q": "Ba đến sáu điều, viết bằng câu chữ của mình",
+       "ph": "Ví dụ: Điều 1. Mẫu báo cáo và khung giờ họp nội bộ: chọn phương án đầu tiên đạt tiêu chí."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6n",
+         "q": "Số điều trong quy ước"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6key",
+       "q": "Điều tôi thấy quan trọng nhất (một câu ngắn)",
+       "ph": "Ví dụ: việc nhỏ xem tối đa ba phương án"
+      },
+      {
+       "f": "cb",
+       "k": "d6card",
+       "label": "Tôi đã điền thẻ quy ước và đặt cạnh thẻ năm mục tiêu"
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau, Công thức #0044 Luật Hick và quy tắc mặc định biến các quyết định lặp lại thành quy tắc để bắt đầu thói quen nhanh hơn."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Quy ước chọn lựa của tôi có {d6n} điều.",
+     "need": [
+      "d6n"
+     ]
+    },
+    {
+     "tpl": " Điều tôi thấy quan trọng nhất: {d6key}.",
+     "need": [
+      "d6key"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

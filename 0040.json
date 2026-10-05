@@ -1,0 +1,606 @@
+{
+ "id": "0040",
+ "name": "Đường cong quên",
+ "storeKey": "sth-0040-6n",
+ "kicker": "Công thức #0040",
+ "title": "Đường cong quên và lặp lại cách quãng",
+ "sub": "Tuần làm việc đầy đủ đầu tiên sau Tết. Khởi động lại thói quen then chốt, chọn ba công thức muốn giữ lâu nhất, dựng lịch ôn cách quãng, làm thẻ ghi nhớ và gắn việc ôn vào thói quen. Thứ Bảy là Rằm tháng Giêng. Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "curve",
+  "big": "{d4n|6}",
+  "unit": "THẺ GHI NHỚ ĐÃ LÀM",
+  "line": "Lịch ôn: {j_review|1, 3, 7, 14 ngày}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Khởi động lại",
+   "title": "Khởi động lại thói quen, thử nhớ lại các công thức",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thói quen sau Tết",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Phiên bản Tết: {j_tet_mini}",
+       "need": [
+        "j_tet_mini"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc và một thói quen nhỏ trong công việc muốn giữ ở hai ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: học điều mới mỗi tuần và dùng ngay vào việc"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: viết ba việc quan trọng nhất trước 8 giờ"
+      },
+      {
+       "f": "seg",
+       "k": "d1state",
+       "q": "Thói quen của mình qua Tết",
+       "opts": [
+        "Giữ được nhịp",
+        "Lỡ vài ngày",
+        "Dừng hẳn"
+       ],
+       "hints": [
+        "Rất tốt. Hôm nay chuyển từ phiên bản Tết về bản đầy đủ.",
+        "Bình thường sau kỳ nghỉ dài. Làm bản đầy đủ hôm nay, nguyên tắc không lỡ hai lần liên tiếp bắt đầu lại từ đây.",
+        "Cũng bình thường. Đọc câu tự nhắc tử tế, làm phiên bản hai phút hôm nay, ngày mai làm bản đầy đủ."
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Câu tự nhắc: {j_kind}",
+       "need": [
+        "j_kind"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1first",
+       "q": "Lần đầu tiên làm bản đầy đủ sau Tết",
+       "ph": "Ví dụ: sáng nay, Thứ Hai 15.02"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen. Tuần đầu sau Tết, mỗi ô là một bước lấy lại nhịp."
+      }
+     ]
+    },
+    {
+     "h": "Thử nhớ lại, không nhìn tài liệu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Hai phút. Viết tên những công thức còn nhớ từ tháng 10 đến nay, mỗi dòng một tên. Viết xong mới đếm."
+      },
+      {
+       "f": "ta",
+       "k": "d1recall",
+       "q": "Các công thức tôi còn nhớ",
+       "ph": "Ví dụ: Ăn con ếch; Kaizen; ..."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1count",
+         "q": "Tôi nhớ được bao nhiêu công thức?"
+        }
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d1honest",
+       "label": "Tôi đã viết mà không nhìn lại tài liệu"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Sau Tết, tôi khởi động lại thói quen {j_habit} từ {d1first}.",
+     "need": [
+      "j_habit",
+      "d1first"
+     ]
+    },
+    {
+     "tpl": " Không nhìn lại, tôi nhớ được {d1count} công thức đã học.",
+     "need": [
+      "d1count"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Ba công thức",
+   "title": "Ba công thức muốn giữ lâu nhất",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "19 công thức đã học",
+     "items": [
+      {
+       "f": "note",
+       "text": "#0021 Dòng chảy; #0022 Bốn quy luật thay đổi hành vi; #0023 Ý định thực hiện; #0024 Quản lý năng lượng; #0025 Công việc sâu; #0026 Ăn con ếch; #0027 Luyện tập có chủ đích; #0028 Kỹ thuật Feynman; #0029 Tiên liệu thất bại; #0030 Hiệu ứng việc dở dang; #0031 Kaizen; #0032 Lòng biết ơn; #0033 Sức mạnh thói quen; #0034 Quy tắc 5/25; #0035 Bảng Kanban cá nhân; #0036 Gan góc; #0037 Đặt ranh giới; #0038 Tự trắc ẩn trong công việc; #0039 Đừng bao giờ ăn một mình."
+      }
+     ]
+    },
+    {
+     "h": "Ba công thức của tôi",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d2f1",
+       "q": "Công thức thứ nhất",
+       "ph": "Ví dụ: Ý định thực hiện"
+      },
+      {
+       "f": "tx",
+       "k": "d2f2",
+       "q": "Công thức thứ hai",
+       "ph": "Ví dụ: Kỹ thuật Feynman"
+      },
+      {
+       "f": "tx",
+       "k": "d2f3",
+       "q": "Công thức thứ ba",
+       "ph": "Ví dụ: Đặt ranh giới"
+      },
+      {
+       "f": "rate",
+       "kp": "d2r",
+       "head": [
+        "#",
+        "Không nhìn tài liệu, tôi nhớ",
+        "Mức"
+       ],
+       "scale": 3,
+       "rows": [
+        [
+         "Công thức thứ nhất",
+         "1 gần như quên, 2 nhớ lờ mờ, 3 nhớ rõ"
+        ],
+        [
+         "Công thức thứ hai",
+         ""
+        ],
+        [
+         "Công thức thứ ba",
+         ""
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Nhớ rõ nhất",
+     "items": [
+      {
+       "f": "pick",
+       "k": "d2best",
+       "kp": "d2f",
+       "n": 3,
+       "empty": "Điền ba công thức ở trên để chọn công thức nhớ rõ nhất."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ba công thức tôi muốn giữ lâu nhất: {d2f1}, {d2f2}, {d2f3}.",
+     "need": [
+      "d2f1",
+      "d2f2",
+      "d2f3"
+     ]
+    },
+    {
+     "tpl": " Công thức tôi nhớ rõ nhất: {d2best}.",
+     "need": [
+      "d2best"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Lịch ôn",
+   "title": "Học dồn hay ôn cách quãng? Dựng lịch ôn",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Chọn nhịp ôn",
+     "items": [
+      {
+       "f": "note",
+       "text": "Cepeda và cộng sự (2006): với cùng thời lượng, chia thành nhiều buổi cách quãng giúp nhớ tốt hơn học dồn. Các con số dưới đây là quy ước thực hành, không phải công thức chính xác của một nghiên cứu."
+      },
+      {
+       "f": "seg",
+       "k": "d3plan",
+       "q": "Nhịp ôn",
+       "opts": [
+        "1, 3, 7, 14 ngày",
+        "2, 7, 21 ngày",
+        "Mỗi tuần một lần"
+       ],
+       "hints": [
+        "Ôn sau 1 ngày, 3 ngày, 7 ngày, 14 ngày kể từ lần học. Khoảng cách giãn dần.",
+        "Thưa hơn, hợp với tuần bận. Vẫn giữ tinh thần giãn dần.",
+        "Đơn giản nhất: mỗi tuần một buổi cố định, ví dụ sáng Thứ Hai."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_review",
+       "q": "Lịch ôn của tôi",
+       "ph": "Ví dụ: 1, 3, 7, 14 ngày, ôn ngay sau thói quen buổi sáng"
+      },
+      {
+       "f": "tx",
+       "k": "d3first",
+       "q": "Lần ôn đầu tiên",
+       "ph": "Ví dụ: sáng Thứ Sáu 19.02"
+      }
+     ]
+    },
+    {
+     "h": "Ngày ôn cho ba công thức",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Công thức"
+       ],
+       "rows": [
+        {
+         "label": "Thứ nhất",
+         "keys": [
+          "d2f1"
+         ]
+        },
+        {
+         "label": "Thứ hai",
+         "keys": [
+          "d2f2"
+         ]
+        },
+        {
+         "label": "Thứ ba",
+         "keys": [
+          "d2f3"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d3dates",
+       "q": "Các ngày ôn cụ thể",
+       "ph": "Ví dụ: 19.02, 21.02, 25.02, 04.03"
+      },
+      {
+       "f": "cb",
+       "k": "d3cal",
+       "label": "Đã đặt lời nhắc trong lịch làm việc cho lần ôn đầu tiên"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Lịch ôn của tôi: {j_review}.",
+     "need": [
+      "j_review"
+     ]
+    },
+    {
+     "tpl": " Lần ôn đầu tiên: {d3first}.",
+     "need": [
+      "d3first"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Thẻ ghi nhớ",
+   "title": "Sáu tấm thẻ ghi nhớ cho ba công thức",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Năm bước",
+     "items": [
+      {
+       "f": "note",
+       "text": "1. Chọn hai ý dùng được trong công việc. 2. Mặt trước là câu hỏi, không phải tiêu đề. 3. Mặt sau ngắn, bằng lời của mình. 4. Thêm một ví dụ công việc. 5. Ôn bằng cách che mặt sau."
+      }
+     ]
+    },
+    {
+     "h": "Thẻ mẫu của tôi",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4q1",
+       "q": "Mặt trước (câu hỏi)",
+       "ph": "Ví dụ: Kế hoạch Nếu... thì... gồm những phần nào?"
+      },
+      {
+       "f": "ta",
+       "k": "d4a1",
+       "q": "Mặt sau (câu trả lời và ví dụ)",
+       "ph": "Ví dụ: Nếu tình huống X, thì tôi làm Y. Nếu họp quá giờ, thì tôi ghi việc dở vào sổ trước khi rời phòng."
+      },
+      {
+       "f": "seg",
+       "k": "d4form",
+       "q": "Tôi làm thẻ bằng",
+       "opts": [
+        "Giấy",
+        "Sổ tay",
+        "Ứng dụng ghi chú"
+       ],
+       "hints": [
+        "Phiếu Ngày 4 có trang thẻ in được, cắt theo đường đứt.",
+        "Gấp đôi trang: câu hỏi bên trái, câu trả lời bên phải.",
+        "Mỗi thẻ một ghi chú, câu trả lời đặt dưới vài dòng trống."
+       ]
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d4n",
+         "q": "Tôi đã làm bao nhiêu thẻ?"
+        }
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d4c1",
+       "label": "Mặt trước của mọi thẻ đều là câu hỏi"
+      },
+      {
+       "f": "cb",
+       "k": "d4c2",
+       "label": "Đã thử ôn một vòng bằng cách che mặt sau"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi đã làm {d4n} thẻ ghi nhớ.",
+     "need": [
+      "d4n"
+     ]
+    },
+    {
+     "tpl": " Một câu hỏi trên thẻ của tôi: {d4q1}",
+     "need": [
+      "d4q1"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Lần ôn đầu",
+   "title": "Lần ôn đầu tiên, gắn ngay sau thói quen",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Gắn vào thói quen",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen then chốt: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5after",
+       "q": "Tôi ôn thẻ ngay sau",
+       "ph": "Ví dụ: khi viết xong ba việc quan trọng nhất buổi sáng"
+      },
+      {
+       "f": "show",
+       "text": "Sau khi {d5after}, tôi ôn thẻ ghi nhớ năm phút.",
+       "need": [
+        "d5after"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Kết quả lần ôn đầu",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d5right",
+         "q": "Số thẻ trả lời đúng"
+        },
+        {
+         "k": "d5total",
+         "q": "Tổng số thẻ đã ôn"
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Sai nhiều ở lần ôn đầu là bình thường: đường cong quên dốc nhất ở những ngày đầu. Thẻ sai ôn lại sớm hơn, thẻ đúng giãn ra xa hơn."
+      },
+      {
+       "f": "show",
+       "text": "Câu tự nhắc: {j_kind}",
+       "need": [
+        "j_kind"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d5mark",
+       "label": "Đã đánh dấu những thẻ cần ôn sớm hơn"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Lần ôn đầu tiên: tôi trả lời đúng {d5right} trên {d5total} thẻ.",
+     "need": [
+      "d5right",
+      "d5total"
+     ]
+    },
+    {
+     "tpl": " Tôi gắn việc ôn ngay sau {d5after}.",
+     "need": [
+      "d5after"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Rằm tháng Giêng",
+   "title": "Rằm tháng Giêng, giảng lại một công thức",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Giảng lại cho đồng nghiệp",
+     "items": [
+      {
+       "f": "pick",
+       "k": "d6teach",
+       "kp": "d2f",
+       "n": 3,
+       "empty": "Điền ba công thức ở Ngày 2 để chọn."
+      },
+      {
+       "f": "tx",
+       "k": "d6who",
+       "q": "Người nghe và thời điểm",
+       "ph": "Ví dụ: trưởng nhóm mới, 5 phút sau giao ban Thứ Ba"
+      },
+      {
+       "f": "tx",
+       "k": "d6ex",
+       "q": "Ví dụ công việc sẽ dùng khi giảng",
+       "ph": "Ví dụ: kế hoạch Nếu... thì... cho ngày phỏng vấn dồn dập"
+      }
+     ]
+    },
+    {
+     "h": "Lịch ôn bốn tuần tới",
+     "items": [
+      {
+       "f": "cal",
+       "k": "d6cal",
+       "mark": "●",
+       "max": 8,
+       "unit": "buổi ôn",
+       "cols": [
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6",
+        "T7"
+       ],
+       "rows": [
+        "Tuần 22.02",
+        "Tuần 01.03",
+        "Tuần 08.03",
+        "Tuần 15.03"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6next",
+       "q": "Buổi ôn tiếp theo của tôi",
+       "ph": "Ví dụ: sáng Thứ Hai 22.02, sau thói quen buổi sáng"
+      }
+     ]
+    },
+    {
+     "h": "Thử nhớ lại lần nữa",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6count",
+         "q": "Không nhìn tài liệu, hôm nay tôi nhớ được bao nhiêu công thức?"
+        }
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Thứ Hai: {d1count} công thức. Hôm nay: {d6count} công thức.",
+       "need": [
+        "d1count",
+        "d6count"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau, Công thức #0041 Sổ đầu dòng từ Thứ Hai 22.02. Từ tháng 4, Mùa 3 \"Học nhanh, nhớ lâu\"."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Công thức tôi sẽ giảng lại cho đồng nghiệp: {d6teach}.",
+     "need": [
+      "d6teach"
+     ]
+    },
+    {
+     "tpl": " Buổi ôn tiếp theo của tôi: {d6next}.",
+     "need": [
+      "d6next"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

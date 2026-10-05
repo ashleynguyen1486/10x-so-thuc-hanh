@@ -1,0 +1,744 @@
+{
+ "id": "0044",
+ "name": "Luật Hick",
+ "storeKey": "sth-0044-6n",
+ "kicker": "Công thức #0044",
+ "title": "Luật Hick và mặc định",
+ "sub": "Mỗi lựa chọn thêm vào ngay trước lúc bắt đầu là thêm một nhịp chậm. Tuần này đo thời gian bắt đầu thói quen, biến quyết định lặp lại thành quy tắc mặc định, làm lịch mục tiêu theo ngày và thực đơn ba việc. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "loops",
+  "big": "6/6",
+  "unit": "NGÀY CÓ QUY TẮC SẴN",
+  "line": "Quy tắc mặc định: {j_default|đã viết xong}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Đo thời gian bắt đầu",
+   "title": "Từ lúc định làm đến lúc bắt đầu",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc và một thói quen nhỏ trong công việc muốn làm mỗi ngày ở hai ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: làm việc quan trọng trước khi mở hộp thư"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: 20 phút đầu giờ cho một bước của mục tiêu số 1"
+      }
+     ]
+    },
+    {
+     "h": "Những điều phải cân nhắc trước khi bắt đầu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Hôm nay, lúc làm thói quen, ghi lại mọi điều mình còn phải chọn ngay trước lúc bắt đầu. Đánh dấu những điều đúng với mình, ghi thêm nếu có."
+      },
+      {
+       "f": "cb",
+       "k": "d1c1",
+       "label": "Làm lúc nào"
+      },
+      {
+       "f": "cb",
+       "k": "d1c2",
+       "label": "Làm cho mục tiêu nào"
+      },
+      {
+       "f": "cb",
+       "k": "d1c3",
+       "label": "Làm phần nào, bắt đầu từ đâu"
+      },
+      {
+       "f": "cb",
+       "k": "d1c4",
+       "label": "Làm ở đâu"
+      },
+      {
+       "f": "cb",
+       "k": "d1c5",
+       "label": "Làm trong bao lâu"
+      },
+      {
+       "f": "tx",
+       "k": "d1more",
+       "q": "Điều khác mình còn phải cân nhắc",
+       "ph": "Ví dụ: gọi điện hay viết email"
+      }
+     ]
+    },
+    {
+     "h": "Hai con số mốc",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1n",
+         "q": "Tôi phải cân nhắc bao nhiêu điều?"
+        },
+        {
+         "k": "d1min",
+         "q": "Khoảng bao nhiêu phút để bắt đầu?"
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Không cần chính xác đến từng phút. Thứ Bảy sẽ đo lại để so sánh."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Trước khi bắt đầu thói quen, tôi phải cân nhắc {d1n} điều.",
+     "need": [
+      "d1n"
+     ]
+    },
+    {
+     "tpl": " Từ lúc định làm đến lúc bắt đầu mất khoảng {d1min} phút.",
+     "need": [
+      "d1min"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Kiểm kê",
+   "title": "Kiểm kê những quyết định lặp lại",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Năm quyết định nhỏ mỗi ngày",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ưu tiên những quyết định nằm quanh thói quen then chốt và giờ đầu ngày."
+      },
+      {
+       "f": "tx",
+       "k": "d2q1",
+       "q": "Quyết định 1",
+       "ph": "Ví dụ: mở hộp thư trước hay mở bảng việc trước"
+      },
+      {
+       "f": "tx",
+       "k": "d2q2",
+       "q": "Quyết định 2",
+       "ph": "Ví dụ: trả lời khách hàng nào trước"
+      },
+      {
+       "f": "tx",
+       "k": "d2q3",
+       "q": "Quyết định 3",
+       "ph": "Ví dụ: báo cáo giao ban theo mẫu nào"
+      },
+      {
+       "f": "tx",
+       "k": "d2q4",
+       "q": "Quyết định 4",
+       "ph": "Ví dụ: làm gì trong 25 phút trống"
+      },
+      {
+       "f": "tx",
+       "k": "d2q5",
+       "q": "Quyết định 5",
+       "ph": "Ví dụ: làm ở bàn hay phòng họp nhỏ"
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d2cnt",
+         "q": "Mỗi ngày tôi lặp lại khoảng bao nhiêu quyết định nhỏ như vậy?"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Chọn một quyết định để làm quy tắc",
+     "items": [
+      {
+       "f": "note",
+       "text": "Nên chọn quyết định có đủ ba dấu hiệu: lặp lại gần như mỗi ngày; chọn phương án nào kết quả cũng không khác nhiều; mỗi lần chọn vẫn tốn sức hoặc làm chậm việc quan trọng."
+      },
+      {
+       "f": "pick",
+       "k": "d2pick",
+       "kp": "d2q",
+       "n": 5,
+       "empty": "Viết ít nhất một quyết định ở trên, các nút chọn sẽ hiện ra ở đây."
+      },
+      {
+       "f": "cb",
+       "k": "d2not",
+       "label": "Quyết định tôi chọn không thuộc loại cần cân nhắc mỗi lần (duyệt chi lớn, khiếu nại nghiêm trọng, đánh giá nhân sự)"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen. Tuần này bảng nằm ở Ngày 2 để theo dõi cả tuần thử quy tắc mặc định."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Mỗi ngày tôi lặp lại khoảng {d2cnt} quyết định nhỏ.",
+     "need": [
+      "d2cnt"
+     ]
+    },
+    {
+     "tpl": " Quyết định tôi muốn biến thành quy tắc: {d2pick}.",
+     "need": [
+      "d2pick"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Quy tắc mặc định",
+   "title": "Viết một quy tắc mặc định cho thói quen",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Quy tắc của thói quen then chốt",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen then chốt: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Mẫu: Nếu không có lý do đặc biệt, tôi luôn ... Một quy tắc tốt trả lời trước bốn câu hỏi: khi nào, cho mục tiêu nào, bao lâu, bắt đầu từ đâu."
+      },
+      {
+       "f": "tx",
+       "k": "j_default",
+       "q": "Quy tắc mặc định của tôi",
+       "ph": "Ví dụ: 8 giờ 15, sau khi rót trà, 30 phút cho bước tiếp theo của mục tiêu số 1, mở đúng tệp đang dở"
+      }
+     ]
+    },
+    {
+     "h": "Kiểm tra bốn câu hỏi",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d3k1",
+       "label": "Khi nào: đã có giờ hoặc việc đứng ngay trước"
+      },
+      {
+       "f": "cb",
+       "k": "d3k2",
+       "label": "Cho mục tiêu nào: đã rõ, không phải chọn lại"
+      },
+      {
+       "f": "cb",
+       "k": "d3k3",
+       "label": "Bao lâu: đã có số phút"
+      },
+      {
+       "f": "cb",
+       "k": "d3k4",
+       "label": "Bắt đầu từ đâu: đã biết mở tệp nào, làm phần nào"
+      }
+     ]
+    },
+    {
+     "h": "Quy tắc cho quyết định đã chọn hôm qua",
+     "items": [
+      {
+       "f": "show",
+       "text": "Quyết định đã chọn: {d2pick}",
+       "need": [
+        "d2pick"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3rule2",
+       "q": "Quy tắc mặc định cho quyết định này",
+       "ph": "Ví dụ: trả lời email hai lần mỗi ngày, 11 giờ và 16 giờ"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Quy tắc mặc định của tôi: {j_default}.",
+     "need": [
+      "j_default"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Lịch xoay vòng",
+   "title": "Sáng nào cũng đã biết làm cho mục tiêu nào",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Năm mục tiêu",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Mục tiêu"
+       ],
+       "rows": [
+        {
+         "label": "Số 1",
+         "keys": [
+          "j_goal1"
+         ]
+        },
+        {
+         "label": "Số 2",
+         "keys": [
+          "j_goal2"
+         ]
+        },
+        {
+         "label": "Số 3",
+         "keys": [
+          "j_goal3"
+         ]
+        },
+        {
+         "label": "Số 4",
+         "keys": [
+          "j_goal4"
+         ]
+        },
+        {
+         "label": "Số 5",
+         "keys": [
+          "j_goal5"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Ô nào hiện dấu ba chấm là mục tiêu đó chưa được viết. Người mới có thể ghi nhanh mục tiêu ở ô dưới."
+      },
+      {
+       "f": "tx",
+       "k": "j_goal1",
+       "q": "Mục tiêu số 1 (nếu chưa có)",
+       "ph": "Ví dụ: giảm tỷ lệ nghỉ việc của nhân viên mới"
+      }
+     ]
+    },
+    {
+     "h": "Lịch mục tiêu theo ngày",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mỗi nút là một mục tiêu trong bảng trên: số 1 là mục tiêu quan trọng nhất. Mục tiêu số 1 nên có ít nhất hai ngày. Thứ Bảy có thể chọn phiên bản tối thiểu: xem lại bảng mục tiêu 10 phút."
+      },
+      {
+       "f": "seg",
+       "k": "d4t2",
+       "q": "Thứ Hai",
+       "opts": [
+        "số 1",
+        "số 2",
+        "số 3",
+        "số 4",
+        "số 5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d4t3",
+       "q": "Thứ Ba",
+       "opts": [
+        "số 1",
+        "số 2",
+        "số 3",
+        "số 4",
+        "số 5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d4t4",
+       "q": "Thứ Tư",
+       "opts": [
+        "số 1",
+        "số 2",
+        "số 3",
+        "số 4",
+        "số 5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d4t5",
+       "q": "Thứ Năm",
+       "opts": [
+        "số 1",
+        "số 2",
+        "số 3",
+        "số 4",
+        "số 5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d4t6",
+       "q": "Thứ Sáu",
+       "opts": [
+        "số 1",
+        "số 2",
+        "số 3",
+        "số 4",
+        "số 5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d4t7",
+       "q": "Thứ Bảy",
+       "opts": [
+        "số 1",
+        "số 2",
+        "số 3",
+        "số 4",
+        "số 5",
+        "tối thiểu"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Đặt lịch ở chỗ nhìn thấy",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4place",
+       "q": "Lịch của tôi đặt ở",
+       "ph": "Ví dụ: bìa sổ kế hoạch, góc màn hình"
+      },
+      {
+       "f": "note",
+       "text": "Khi một tuần cần thay đổi, sửa lịch một lần vào chiều Thứ Sáu cho tuần sau, không chọn lại mỗi sáng."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Lịch mục tiêu của tôi: Thứ Hai mục tiêu {d4t2}, Thứ Ba mục tiêu {d4t3}, Thứ Tư mục tiêu {d4t4}, Thứ Năm mục tiêu {d4t5}, Thứ Sáu mục tiêu {d4t6}.",
+     "need": [
+      "d4t2",
+      "d4t3",
+      "d4t4",
+      "d4t5",
+      "d4t6"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Thực đơn ngắn",
+   "title": "Thực đơn ba việc và điều kiện phá lệ",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thực đơn cho 15 phút trống",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ba việc soạn sẵn, mỗi việc làm xong trong khoảng 15 phút. Khi có khoảng trống, chỉ chọn trong ba việc này."
+      },
+      {
+       "f": "tx",
+       "k": "d5m1",
+       "q": "Việc 1",
+       "ph": "Ví dụ: đối chiếu một khoản chênh lệch"
+      },
+      {
+       "f": "tx",
+       "k": "d5m2",
+       "q": "Việc 2",
+       "ph": "Ví dụ: trả lời một câu hỏi của bộ phận khác"
+      },
+      {
+       "f": "tx",
+       "k": "d5m3",
+       "q": "Việc 3",
+       "ph": "Ví dụ: cập nhật một dòng trong báo cáo tuần"
+      }
+     ]
+    },
+    {
+     "h": "Điều kiện phá lệ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Quy tắc mặc định: {j_default}",
+       "need": [
+        "j_default"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Ngắn, cụ thể, kiểm tra được. \"Khi có việc gấp\" quá rộng."
+      },
+      {
+       "f": "tx",
+       "k": "d5ex",
+       "q": "Tôi chỉ phá quy tắc khi ...",
+       "ph": "Ví dụ: khách hàng báo sự cố ảnh hưởng tới giao hàng trong ngày"
+      }
+     ]
+    },
+    {
+     "h": "Bốn ngày qua",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d5broke",
+       "q": "Tôi đã phá quy tắc",
+       "opts": [
+        "Chưa lần nào",
+        "Một hai lần",
+        "Ba lần trở lên"
+       ],
+       "hints": [
+        "Quy tắc đang vừa với thực tế. Giữ nguyên và dùng tiếp.",
+        "Bình thường. Xem lại lý do có nằm trong điều kiện phá lệ không.",
+        "Quy tắc chưa vừa, ví dụ khung giờ luôn trùng việc khác. Sửa quy tắc, không bỏ quy tắc."
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Khi có 15 phút trống, tôi chọn một trong ba việc: {d5m1}; {d5m2}; {d5m3}.",
+     "need": [
+      "d5m1",
+      "d5m2",
+      "d5m3"
+     ]
+    },
+    {
+     "tpl": " Tôi chỉ phá quy tắc khi {d5ex}.",
+     "need": [
+      "d5ex"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Sổ quy tắc",
+   "title": "Đo lại và gom sổ quy tắc mặc định",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "Đo lại",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6n",
+         "q": "Hôm nay còn phải cân nhắc bao nhiêu điều?"
+        },
+        {
+         "k": "d6min",
+         "q": "Khoảng bao nhiêu phút để bắt đầu?"
+        }
+       ]
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Số điều cân nhắc",
+        "Số phút"
+       ],
+       "rows": [
+        {
+         "label": "Thứ Hai",
+         "keys": [
+          "d1n",
+          "d1min"
+         ]
+        },
+        {
+         "label": "Thứ Bảy",
+         "keys": [
+          "d6n",
+          "d6min"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Giảm ít hay nhiều đều là thông tin tốt. Nếu chưa giảm, xem lại quy tắc còn để ngỏ câu hỏi nào."
+      }
+     ]
+    },
+    {
+     "h": "Sổ quy tắc mặc định",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mọi điều đã viết trong tuần tự gom lại ở đây. Ô nào còn dấu ba chấm thì quay lại ngày đó để điền."
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Quy tắc của thói quen",
+         "keys": [
+          "j_default"
+         ]
+        },
+        {
+         "label": "Quy tắc thứ hai",
+         "keys": [
+          "d3rule2"
+         ]
+        },
+        {
+         "label": "Thứ Hai",
+         "keys": [
+          "d4t2"
+         ]
+        },
+        {
+         "label": "Thứ Ba",
+         "keys": [
+          "d4t3"
+         ]
+        },
+        {
+         "label": "Thứ Tư",
+         "keys": [
+          "d4t4"
+         ]
+        },
+        {
+         "label": "Thứ Năm",
+         "keys": [
+          "d4t5"
+         ]
+        },
+        {
+         "label": "Thứ Sáu",
+         "keys": [
+          "d4t6"
+         ]
+        },
+        {
+         "label": "Thực đơn 15 phút",
+         "keys": [
+          "d5m1"
+         ]
+        },
+        {
+         "label": "",
+         "keys": [
+          "d5m2"
+         ]
+        },
+        {
+         "label": "",
+         "keys": [
+          "d5m3"
+         ]
+        },
+        {
+         "label": "Điều kiện phá lệ",
+         "keys": [
+          "d5ex"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã chép sổ quy tắc ra trang in được ở phiếu Ngày 6 hoặc ghi vào sổ tay"
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau, Công thức #0045 Chỉ số Sao Bắc Đẩu cho mục tiêu: mỗi mục tiêu có một con số dẫn đường và một con số hành động mỗi tuần."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Thời gian bắt đầu thói quen: Thứ Hai khoảng {d1min} phút, hôm nay khoảng {d6min} phút.",
+     "need": [
+      "d1min",
+      "d6min"
+     ]
+    },
+    {
+     "tpl": " Quy tắc tôi giữ: {j_default}.",
+     "need": [
+      "j_default"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

@@ -1,0 +1,685 @@
+{
+ "id": "0045",
+ "name": "Sao Bắc Đẩu",
+ "storeKey": "sth-0045-6n",
+ "kicker": "Công thức #0045",
+ "title": "Chỉ số Sao Bắc Đẩu",
+ "sub": "Mỗi mục tiêu cần một con số dẫn đường và một con số hành động mỗi tuần. Tuần này viết Sao Bắc Đẩu cho mục tiêu số 1, chọn chỉ số hành động, dựng bảng điểm và đặt nhịp xem 15 phút mỗi tuần. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "chain",
+  "big": "",
+  "unit": "NGÀY GIỮ THÓI QUEN",
+  "line": "Sao Bắc Đẩu: {j_northstar|đã chọn xong}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Bản đồ năm mục tiêu",
+   "title": "Mục tiêu nào đã có con số?",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và mục tiêu số 1 ở các ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: giữ lời hẹn với khách hàng, dù là hẹn gọi lại"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: 20 phút đầu giờ cho một bước của mục tiêu số 1"
+      },
+      {
+       "f": "tx",
+       "k": "j_goal1",
+       "q": "Mục tiêu số 1 (người mới hoặc muốn sửa)",
+       "ph": "Ví dụ: tăng doanh thu từ khách hàng doanh nghiệp"
+      }
+     ]
+    },
+    {
+     "h": "Trạng thái con số của từng mục tiêu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Đều đặn: có con số theo dõi mỗi tuần hoặc mỗi tháng. Cuối kỳ: chỉ biết kết quả khi hết quý hoặc hết năm. Chưa có: chưa có con số nào để biết đang tới đâu."
+      },
+      {
+       "f": "show",
+       "text": "Số 1: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1s1",
+       "q": "Mục tiêu số 1",
+       "opts": [
+        "Đều đặn",
+        "Cuối kỳ",
+        "Chưa có"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Số 2: {j_goal2}",
+       "need": [
+        "j_goal2"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1s2",
+       "q": "Mục tiêu số 2",
+       "opts": [
+        "Đều đặn",
+        "Cuối kỳ",
+        "Chưa có"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Số 3: {j_goal3}",
+       "need": [
+        "j_goal3"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1s3",
+       "q": "Mục tiêu số 3",
+       "opts": [
+        "Đều đặn",
+        "Cuối kỳ",
+        "Chưa có"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Số 4: {j_goal4}",
+       "need": [
+        "j_goal4"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1s4",
+       "q": "Mục tiêu số 4",
+       "opts": [
+        "Đều đặn",
+        "Cuối kỳ",
+        "Chưa có"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Số 5: {j_goal5}",
+       "need": [
+        "j_goal5"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d1s5",
+       "q": "Mục tiêu số 5",
+       "opts": [
+        "Đều đặn",
+        "Cuối kỳ",
+        "Chưa có"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Đếm lại",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1n",
+         "q": "Số mục tiêu đã có con số theo dõi đều đặn"
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Sau một quý, mục tiêu chưa có con số là chuyện bình thường. Tuần này bắt đầu từ mục tiêu số 1."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Trong 5 mục tiêu, {d1n} mục tiêu đã có con số theo dõi đều đặn.",
+     "need": [
+      "d1n"
+     ]
+    },
+    {
+     "tpl": " Mục tiêu số 1 của tôi: {j_goal1}.",
+     "need": [
+      "j_goal1"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Sao Bắc Đẩu",
+   "title": "Viết chỉ số Sao Bắc Đẩu cho mục tiêu số 1",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Ứng viên",
+     "items": [
+      {
+       "f": "show",
+       "text": "Mục tiêu số 1: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d2cand",
+       "q": "Hai hoặc ba con số có thể dẫn đường cho mục tiêu này",
+       "ph": "Ví dụ: số ngày từ cuối tháng đến khi báo cáo đến tay ban giám đốc; số giờ làm thêm tuần chốt sổ"
+      }
+     ]
+    },
+    {
+     "h": "Ba câu hỏi kiểm tra",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d2k1",
+       "label": "Đo được đều đặn, không cần ý kiến chủ quan"
+      },
+      {
+       "f": "cb",
+       "k": "d2k2",
+       "label": "Con số tăng thì người nhận kết quả công việc của tôi thật sự được lợi"
+      },
+      {
+       "f": "cb",
+       "k": "d2k3",
+       "label": "Không tự làm đẹp được bằng cách làm nhanh cho có"
+      }
+     ]
+    },
+    {
+     "h": "Sao Bắc Đẩu của mục tiêu số 1",
+     "items": [
+      {
+       "f": "tx",
+       "k": "j_northstar",
+       "q": "Một con số dẫn đường",
+       "ph": "Ví dụ: tỷ lệ khiếu nại được giải quyết trong 24 giờ"
+      },
+      {
+       "f": "tx",
+       "k": "d2now",
+       "q": "Giá trị hiện tại (nếu biết)",
+       "ph": "Ví dụ: khoảng 60%"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Sao Bắc Đẩu của mục tiêu số 1: {j_northstar}.",
+     "need": [
+      "j_northstar"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Chỉ số hành động",
+   "title": "Chọn một con số hành động mỗi tuần",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Ba ứng viên",
+     "items": [
+      {
+       "f": "show",
+       "text": "Sao Bắc Đẩu: {j_northstar}",
+       "need": [
+        "j_northstar"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3c1",
+       "q": "Ứng viên 1",
+       "ph": "Ví dụ: số buổi trao đổi một một với nhân viên mới mỗi tuần"
+      },
+      {
+       "f": "tx",
+       "k": "d3c2",
+       "q": "Ứng viên 2",
+       "ph": "Ví dụ: số khoá đào tạo hội nhập mỗi tháng"
+      },
+      {
+       "f": "tx",
+       "k": "d3c3",
+       "q": "Ứng viên 3",
+       "ph": "Ví dụ: điểm khảo sát hài lòng của nhân viên mới"
+      }
+     ]
+    },
+    {
+     "h": "Chấm hai tiêu chí",
+     "items": [
+      {
+       "f": "note",
+       "text": "1 là thấp, 2 là trung bình, 3 là cao. Dự báo được: làm nhiều hơn thì kết quả có khả năng tốt hơn. Tác động được: phần lớn nằm trong tay mình."
+      },
+      {
+       "f": "rate",
+       "kp": "d3p",
+       "head": [
+        "#",
+        "Dự báo được",
+        "Điểm"
+       ],
+       "rows": [
+        [
+         "Ứng viên 1",
+         ""
+        ],
+        [
+         "Ứng viên 2",
+         ""
+        ],
+        [
+         "Ứng viên 3",
+         ""
+        ]
+       ],
+       "scale": 3
+      },
+      {
+       "f": "rate",
+       "kp": "d3i",
+       "head": [
+        "#",
+        "Tác động được",
+        "Điểm"
+       ],
+       "rows": [
+        [
+         "Ứng viên 1",
+         ""
+        ],
+        [
+         "Ứng viên 2",
+         ""
+        ],
+        [
+         "Ứng viên 3",
+         ""
+        ]
+       ],
+       "scale": 3
+      }
+     ]
+    },
+    {
+     "h": "Con số hành động mỗi tuần",
+     "items": [
+      {
+       "f": "note",
+       "text": "Chọn ứng viên cao ở cả hai tiêu chí. Viết thành câu có động từ, con số, khung thời gian, vừa sức với tuần bận nhất."
+      },
+      {
+       "f": "tx",
+       "k": "j_lead",
+       "q": "Chỉ số hành động mỗi tuần",
+       "ph": "Ví dụ: mỗi tuần gặp trực tiếp 3 khách hàng doanh nghiệp"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Chỉ số hành động mỗi tuần của tôi: {j_lead}.",
+     "need": [
+      "j_lead"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Bảng điểm",
+   "title": "Bảng điểm nhìn năm giây là hiểu",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Phần trên: Sao Bắc Đẩu",
+     "items": [
+      {
+       "f": "show",
+       "text": "Sao Bắc Đẩu: {j_northstar}",
+       "need": [
+        "j_northstar"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d4from",
+       "q": "Từ (giá trị hiện tại)",
+       "ph": "Ví dụ: 70%"
+      },
+      {
+       "f": "tx",
+       "k": "d4to",
+       "q": "Lên (giá trị mong muốn)",
+       "ph": "Ví dụ: 85%"
+      },
+      {
+       "f": "tx",
+       "k": "d4date",
+       "q": "Vào ngày",
+       "ph": "Ví dụ: 30.06.2027"
+      },
+      {
+       "f": "show",
+       "text": "Từ {d4from} lên {d4to} vào {d4date}.",
+       "need": [
+        "d4from",
+        "d4to",
+        "d4date"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Phần dưới: con số hành động tuần này",
+     "items": [
+      {
+       "f": "show",
+       "text": "Mỗi tuần: {j_lead}",
+       "need": [
+        "j_lead"
+       ]
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d4done",
+         "q": "Tuần này đã làm bao nhiêu lần?"
+        },
+        {
+         "k": "d4target",
+         "q": "Mục tiêu tuần là bao nhiêu lần?"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Chỗ đặt bảng điểm",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4place",
+       "q": "Bảng điểm của tôi đặt ở",
+       "ph": "Ví dụ: cạnh màn hình, ngay chỗ đặt sổ quy tắc"
+      },
+      {
+       "f": "cb",
+       "k": "d4print",
+       "label": "Tôi đã in bảng điểm từ phiếu Ngày 4 hoặc kẻ tay"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Bảng điểm của tôi đặt ở {d4place}.",
+     "need": [
+      "d4place"
+     ]
+    },
+    {
+     "tpl": " Tuần này tôi đã làm {d4done} lần, mục tiêu tuần là {d4target}.",
+     "need": [
+      "d4done",
+      "d4target"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Nhịp tuần",
+   "title": "Mười lăm phút với bảng điểm",
+   "time": "Khoảng 15 phút",
+   "cards": [
+    {
+     "h": "Năm câu hỏi",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d5q1",
+       "q": "1. Tuần này cam kết làm gì, đã làm được bao nhiêu?",
+       "ph": "Ghi đúng số đã làm, không làm tròn lên"
+      },
+      {
+       "f": "seg",
+       "k": "d5trend",
+       "q": "2. Sao Bắc Đẩu đang",
+       "opts": [
+        "Đi lên",
+        "Đứng yên",
+        "Đi xuống"
+       ],
+       "hints": [
+        "Ghi lại điều đã giúp con số đi lên, giữ nhịp tuần tới.",
+        "Bình thường trong vài tuần đầu. Nếu chỉ số hành động đạt đều mà con số đứng yên lâu, xem lại chỉ số hành động.",
+        "Tìm nguyên nhân nằm trong tầm tác động của mình trước, rồi mới đến nguyên nhân bên ngoài."
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d5q3",
+       "q": "3. Điều gì đã cản, có lặp lại không?",
+       "ph": "Ví dụ: họp đột xuất sáng Thứ Ba, đã lặp lại hai tuần"
+      },
+      {
+       "f": "tx",
+       "k": "d5commit",
+       "q": "4. Cam kết cụ thể cho tuần tới",
+       "ph": "Ví dụ: Thứ Ba gặp anh Hoàng bên đối tác phân phối"
+      },
+      {
+       "f": "ta",
+       "k": "d5q5",
+       "q": "5. Thói quen mỗi ngày có đang phục vụ con số hành động không?",
+       "ph": "Ví dụ: 20 phút đầu giờ dùng để hẹn lịch gặp khách"
+      }
+     ]
+    },
+    {
+     "h": "Đặt nhịp vào lịch",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5when",
+       "q": "Giờ cố định cho nhịp hằng tuần",
+       "ph": "Ví dụ: 16 giờ 30 chiều Thứ Sáu, 15 phút"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen. Tuần này bảng nằm ở Ngày 5, cạnh nhịp xem bảng điểm."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Nhịp xem bảng điểm của tôi: {d5when}.",
+     "need": [
+      "d5when"
+     ]
+    },
+    {
+     "tpl": " Cam kết tuần tới: {d5commit}.",
+     "need": [
+      "d5commit"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Một dòng",
+   "title": "Một dòng từ mục tiêu xuống thói quen",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Bốn tầng",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Mục tiêu số 1",
+         "keys": [
+          "j_goal1"
+         ]
+        },
+        {
+         "label": "Sao Bắc Đẩu",
+         "keys": [
+          "j_northstar"
+         ]
+        },
+        {
+         "label": "Mỗi tuần",
+         "keys": [
+          "j_lead"
+         ]
+        },
+        {
+         "label": "Thói quen đang giữ",
+         "keys": [
+          "j_habit"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6daily",
+       "q": "Mỗi ngày (thói quen viết lại theo con số hành động)",
+       "ph": "Ví dụ: 20 phút đầu giờ viết hoặc sửa một câu trả lời mẫu"
+      },
+      {
+       "f": "show",
+       "text": "{j_goal1} → {j_northstar} → {j_lead} → {d6daily}",
+       "need": [
+        "j_goal1",
+        "j_northstar",
+        "j_lead",
+        "d6daily"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Kết quả cả tuần",
+     "items": [
+      {
+       "f": "show",
+       "text": "Mục tiêu tuần: {d4target} lần. Thứ Năm đã làm: {d4done} lần.",
+       "need": [
+        "d4target",
+        "d4done"
+       ]
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6done",
+         "q": "Cả tuần đã làm con số hành động bao nhiêu lần?"
+        }
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d6next",
+       "q": "Tuần sau làm thêm dòng bốn tầng cho",
+       "opts": [
+        "Giữ số 1",
+        "Số 2",
+        "Số 3",
+        "Số 4",
+        "Số 5"
+       ],
+       "hints": [
+        "Giữ trọng tâm cho mục tiêu số 1, chưa thêm mục tiêu khác.",
+        "Thêm dòng bốn tầng cho mục tiêu số 2.",
+        "Thêm dòng bốn tầng cho mục tiêu số 3.",
+        "Thêm dòng bốn tầng cho mục tiêu số 4.",
+        "Thêm dòng bốn tầng cho mục tiêu số 5."
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau, Công thức #0046 khép quý 1 và khép Mùa 2: nhìn lại năm mục tiêu sau một quý. Bảng điểm tuần này là nguồn thông tin quan trọng."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Mục tiêu số 1: {j_goal1} → Sao Bắc Đẩu: {j_northstar} → mỗi tuần: {j_lead} → mỗi ngày: {d6daily}.",
+     "need": [
+      "j_goal1",
+      "j_northstar",
+      "j_lead",
+      "d6daily"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

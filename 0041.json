@@ -1,0 +1,661 @@
+{
+ "id": "0041",
+ "name": "Sổ đầu dòng",
+ "storeKey": "sth-0041-6n",
+ "kicker": "Công thức #0041",
+ "title": "Sổ đầu dòng: một nơi giữ mọi bước của năm mục tiêu",
+ "sub": "Dựng một hệ thống ghi chép theo ngày và theo tháng để không rơi mất các bước của năm mục tiêu: ghi nhanh bằng ký hiệu, nhật ký tháng 3, trang tương lai, trang riêng cho mục tiêu số 1 và lần chuyển việc đầu tiên. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "bars",
+  "big": "6/6",
+  "unit": "NGÀY GHI SỔ ĐẦU DÒNG",
+  "line": "Sổ của tôi: {j_log|đã sẵn sàng}. Ngày chuyển việc: {j_migrate|cuối tháng}."
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Dựng sổ",
+   "title": "Dựng sổ: một nơi ghi, một bảng ký hiệu",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Mục tiêu số 1: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc và thói quen then chốt muốn giữ ở hai ô dưới đây. Người đã có thì giữ nguyên."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: không để việc của khách hàng rơi mất giữa chừng"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: mỗi sáng ghi nhanh các việc trong ngày trước khi mở hộp thư"
+      }
+     ]
+    },
+    {
+     "h": "Một nơi ghi duy nhất",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d1type",
+       "q": "Tôi ghi bằng",
+       "opts": [
+        "Sổ giấy",
+        "Ứng dụng ghi chú",
+        "Tệp trên máy tính"
+       ],
+       "hints": [
+        "Cuốn sổ có đánh số trang, đặt cạnh bàn phím. Chậm hơn một chút, nhưng việc viết tay giúp đọc lại kỹ hơn khi chuyển việc.",
+        "Ghi chú trên điện thoại, luôn mang theo. Tạo một ghi chú tên Chỉ mục và mỗi ngày một ghi chú mới.",
+        "Một tệp văn bản trên máy tính làm việc. Hợp với người ngồi máy cả ngày; mỗi ngày một tiêu đề mới ở đầu tệp."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_log",
+       "q": "Nơi tôi ghi sổ đầu dòng",
+       "ph": "Ví dụ: cuốn sổ bìa đỏ đặt cạnh bàn phím"
+      },
+      {
+       "f": "cb",
+       "k": "d1index",
+       "label": "Tôi đã đánh số trang và để trống trang chỉ mục (hoặc tạo ghi chú Chỉ mục)"
+      }
+     ]
+    },
+    {
+     "h": "Bảng ký hiệu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ba loại dòng: • việc cần làm; ○ sự kiện có ngày giờ; - ghi chú. Đặt * trước dòng nếu đó là việc ưu tiên."
+      },
+      {
+       "f": "note",
+       "text": "Bốn trạng thái của một việc: X đã xong; > chuyển sang ngày hoặc tháng khác; < lên lịch cho các tháng sau; gạch ngang cả dòng khi việc không còn cần làm."
+      },
+      {
+       "f": "cb",
+       "k": "d1key",
+       "label": "Tôi đã chép bảng ký hiệu vào trang trong bìa hoặc đầu tệp"
+      }
+     ]
+    },
+    {
+     "h": "Trang đầu tiên",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ghi ngày hôm nay. Dòng đầu là thói quen then chốt. Từ giờ đến hết ngày, mỗi việc, sự kiện, ghi chú phát sinh là một dòng."
+      },
+      {
+       "f": "ta",
+       "k": "d1page",
+       "q": "Chép vài dòng của trang hôm nay (tuỳ chọn)",
+       "ph": "Ví dụ: X viết ba việc quan trọng; ○ 9:00 họp giao ban; • gửi bảng so sánh nhà cung cấp"
+      },
+      {
+       "f": "tx",
+       "k": "d1first",
+       "q": "Dòng quan trọng nhất hôm nay",
+       "ph": "Ví dụ: chốt số lượng đặt hàng quý 2"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi ghi sổ đầu dòng ở {j_log}.",
+     "need": [
+      "j_log"
+     ]
+    },
+    {
+     "tpl": " Dòng quan trọng nhất hôm nay: {d1first}.",
+     "need": [
+      "d1first"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Ghi nhanh",
+   "title": "Ghi nhanh cả ngày bằng ba ký hiệu",
+   "time": "Khoảng 20 phút, chia trong ngày",
+   "cards": [
+    {
+     "h": "Ba lần mở sổ",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d2a",
+       "label": "Sáng: mở trang mới, ghi ngày, dòng đầu là thói quen then chốt"
+      },
+      {
+       "f": "cb",
+       "k": "d2b",
+       "label": "Trong ngày: mỗi khi có việc, sự kiện, ghi chú phát sinh thì ghi ngay một dòng"
+      },
+      {
+       "f": "cb",
+       "k": "d2c",
+       "label": "Cuối ngày: đổi trạng thái cho từng dấu chấm (X, >, < hoặc gạch ngang)"
+      }
+     ]
+    },
+    {
+     "h": "Đếm trang hôm nay",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d2task",
+         "q": "Số việc (•)"
+        },
+        {
+         "k": "d2event",
+         "q": "Số sự kiện (○)"
+        },
+        {
+         "k": "d2note",
+         "q": "Số ghi chú (-)"
+        },
+        {
+         "k": "d2done",
+         "q": "Số việc đã đánh X"
+        }
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2hard",
+       "q": "Ký hiệu tôi hay quên dùng nhất",
+       "opts": [
+        "Việc",
+        "Sự kiện",
+        "Ghi chú"
+       ],
+       "hints": [
+        "Việc bị ghi lẫn vào ghi chú, nên cuối ngày dễ bỏ sót. Mẹo: dòng nào bắt đầu bằng động từ (gửi, gọi, soạn) thì là việc.",
+        "Sự kiện bị ghi như một việc. Mẹo: điều gì gắn với một giờ cụ thể (họp, gặp khách hàng) thì dùng vòng tròn.",
+        "Thông tin quan trọng không được ghi vì nghĩ là sẽ nhớ. Mẹo: điều khách hàng hay cấp trên vừa nói thì ghi ngay một gạch ngắn."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Một dòng đáng giữ",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d2keep",
+       "q": "Một ghi chú hôm nay mà nếu không ghi, có thể tôi đã quên",
+       "ph": "Ví dụ: nhà cung cấp B báo giá tăng từ tháng 4"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hôm nay tôi ghi nhanh {d2task} việc, {d2event} sự kiện và {d2note} ghi chú; {d2done} việc đã đánh dấu X.",
+     "need": [
+      "d2task",
+      "d2event",
+      "d2note",
+      "d2done"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Nhật ký tháng",
+   "title": "Nhật ký tháng 3 trên hai trang",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "Trang lịch tháng 3",
+     "items": [
+      {
+       "f": "note",
+       "text": "Viết các ngày 1 đến 31 dọc mép trái, kèm T2 đến CN. Tháng 3 năm 2027 bắt đầu vào Thứ Hai. Chỉ ghi những điều đã chắc chắn có ngày."
+      },
+      {
+       "f": "ta",
+       "k": "d3events",
+       "q": "Sự kiện đã biết của tháng 3",
+       "ph": "Ví dụ: 08.03 Ngày Quốc tế Phụ nữ; 15.03 hạn nộp báo cáo tháng; 31.03 khép quý 1"
+      }
+     ]
+    },
+    {
+     "h": "Trang việc tháng 3",
+     "items": [
+      {
+       "f": "note",
+       "text": "Với mỗi mục tiêu dưới đây, viết ít nhất một việc cần làm trong tháng 3. Sau đó thêm các việc khác đã biết."
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Mục tiêu"
+       ],
+       "rows": [
+        {
+         "label": "Số 1",
+         "keys": [
+          "j_goal1"
+         ]
+        },
+        {
+         "label": "Số 2",
+         "keys": [
+          "j_goal2"
+         ]
+        },
+        {
+         "label": "Số 3",
+         "keys": [
+          "j_goal3"
+         ]
+        },
+        {
+         "label": "Số 4",
+         "keys": [
+          "j_goal4"
+         ]
+        },
+        {
+         "label": "Số 5",
+         "keys": [
+          "j_goal5"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d3tasks",
+       "q": "Danh sách việc tháng 3",
+       "ph": "Ví dụ: • chuẩn hoá mẫu đối chiếu công nợ với 5 khách hàng lớn"
+      },
+      {
+       "f": "tx",
+       "k": "d3key",
+       "q": "Việc quan trọng nhất của tháng 3 cho mục tiêu số 1 (đánh dấu sao)",
+       "ph": "Ví dụ: chốt số lượng đặt hàng quý 2 với ba nhà cung cấp"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt. Trong sổ đầu dòng, đó là những ngày dòng đầu tiên có chữ X."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Nhật ký tháng 3 của tôi đã sẵn sàng. Việc quan trọng nhất của tháng cho mục tiêu số 1: {d3key}.",
+     "need": [
+      "d3key"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Trang tương lai",
+   "title": "Trang tương lai cho các tháng còn lại",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Mốc tiếp theo của từng mục tiêu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Chín ô cho tháng 4 đến tháng 12. Với mỗi mục tiêu, hỏi: mốc tiếp theo rơi vào tháng nào? Ghi vào ô tháng đó."
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Mục tiêu"
+       ],
+       "rows": [
+        {
+         "label": "Số 1",
+         "keys": [
+          "j_goal1"
+         ]
+        },
+        {
+         "label": "Số 2",
+         "keys": [
+          "j_goal2"
+         ]
+        },
+        {
+         "label": "Số 3",
+         "keys": [
+          "j_goal3"
+         ]
+        },
+        {
+         "label": "Số 4",
+         "keys": [
+          "j_goal4"
+         ]
+        },
+        {
+         "label": "Số 5",
+         "keys": [
+          "j_goal5"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d4q2",
+       "q": "Tháng 4 đến tháng 6",
+       "ph": "Ví dụ: tháng 6 • học xong phần lý thuyết chứng chỉ"
+      },
+      {
+       "f": "ta",
+       "k": "d4q3",
+       "q": "Tháng 7 đến tháng 9",
+       "ph": "Ví dụ: tháng 8 ○ hạn đăng ký thi"
+      },
+      {
+       "f": "ta",
+       "k": "d4q4",
+       "q": "Tháng 10 đến tháng 12",
+       "ph": "Ví dụ: tháng 10 ○ ngày thi chứng chỉ"
+      }
+     ]
+    },
+    {
+     "h": "Nối với các trang khác",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d4lt",
+       "label": "Tôi đã chép các dòng mang dấu < của Thứ Ba và Thứ Tư sang trang tương lai"
+      },
+      {
+       "f": "cb",
+       "k": "d4idx",
+       "label": "Tôi đã ghi trang tương lai vào trang chỉ mục"
+      },
+      {
+       "f": "tx",
+       "k": "d4far",
+       "q": "Mốc xa nhất trên trang tương lai",
+       "ph": "Ví dụ: tháng 10, thi chứng chỉ kế toán quản trị"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Trang tương lai của tôi đã có mốc cho cả năm mục tiêu. Mốc xa nhất: {d4far}.",
+     "need": [
+      "d4far"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Trang mục tiêu",
+   "title": "Mục tiêu số 1 có một trang riêng",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Chọn kiểu trang",
+     "items": [
+      {
+       "f": "show",
+       "text": "Mục tiêu số 1: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d5type",
+       "q": "Kiểu trang hợp với mục tiêu số 1",
+       "opts": [
+        "Danh sách bước",
+        "Nhật ký tiến độ",
+        "Danh sách câu hỏi"
+       ],
+       "hints": [
+        "Hợp với mục tiêu có trình tự rõ, như hoàn thành một chứng chỉ hay triển khai một quy trình mới.",
+        "Hợp với mục tiêu đo bằng con số theo tuần, như số khách hàng mới. Mỗi tuần một dòng con số, một dòng nhận xét.",
+        "Hợp với mục tiêu còn mơ hồ ở cách làm, như cải thiện phối hợp giữa hai bộ phận. Mỗi câu hỏi có lời giải sẽ thành một bước."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Bảy điều của một trang mục tiêu",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d5c1",
+       "label": "Tên mục tiêu viết đầy đủ ở đầu trang"
+      },
+      {
+       "f": "cb",
+       "k": "d5c2",
+       "label": "Một dòng vì sao mục tiêu này quan trọng"
+      },
+      {
+       "f": "cb",
+       "k": "d5c3",
+       "label": "Các mốc của quý"
+      },
+      {
+       "f": "cb",
+       "k": "d5c4",
+       "label": "Ba đến năm bước tiếp theo"
+      },
+      {
+       "f": "cb",
+       "k": "d5c5",
+       "label": "Một chỗ cho ghi chú"
+      },
+      {
+       "f": "cb",
+       "k": "d5c6",
+       "label": "Số trang ghi trong chỉ mục"
+      },
+      {
+       "f": "cb",
+       "k": "d5c7",
+       "label": "Một ngày sẽ mở lại trang để cập nhật"
+      },
+      {
+       "f": "tx",
+       "k": "d5why",
+       "q": "Dòng vì sao của tôi",
+       "ph": "Ví dụ: nhóm đang mất dần khách hàng cũ do phản hồi chậm"
+      },
+      {
+       "f": "tx",
+       "k": "d5page",
+       "q": "Trang mục tiêu số 1 nằm ở trang số",
+       "ph": "Ví dụ: 21"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Mục tiêu số 1 của tôi đã có trang riêng kiểu {d5type}, ghi ở trang {d5page} trong chỉ mục.",
+     "need": [
+      "d5type",
+      "d5page"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Chuyển việc",
+   "title": "Lần chuyển việc đầu tiên cuối tháng 2",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "Ba hướng cho mỗi việc chưa xong",
+     "items": [
+      {
+       "f": "note",
+       "text": "> chuyển sang nhật ký tháng 3: việc còn cần, nên làm tháng tới.   < lên lịch trên trang tương lai: việc còn cần, hợp từ tháng 4.   Gạch bỏ: việc không còn cần, hoặc thật ra không đáng làm."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6mig",
+         "q": "Số việc chuyển sang tháng 3 (>)"
+        },
+        {
+         "k": "d6sch",
+         "q": "Số việc lên lịch (<)"
+        },
+        {
+         "k": "d6drop",
+         "q": "Số việc gạch bỏ"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6one",
+       "q": "Một việc tôi đã quyết định gạch bỏ",
+       "ph": "Ví dụ: thiết kế lại mẫu báo cáo tuần, nằm đó ba tuần mà không ai hỏi đến"
+      }
+     ]
+    },
+    {
+     "h": "Ngày chuyển việc hằng tháng",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ngày này được lưu cho cả hành trình. Gợi ý: Thứ Bảy cuối cùng của tháng, hoặc ngày làm việc cuối cùng của tháng."
+      },
+      {
+       "f": "tx",
+       "k": "j_migrate",
+       "q": "Ngày chuyển việc của tôi",
+       "ph": "Ví dụ: Thứ Bảy cuối cùng của mỗi tháng"
+      }
+     ]
+    },
+    {
+     "h": "Gom cả tuần",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Nơi ghi sổ",
+         "keys": [
+          "j_log"
+         ]
+        },
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Việc quan trọng nhất tháng 3",
+         "keys": [
+          "d3key"
+         ]
+        },
+        {
+         "label": "Mốc xa nhất",
+         "keys": [
+          "d4far"
+         ]
+        },
+        {
+         "label": "Kiểu trang mục tiêu số 1",
+         "keys": [
+          "d5type"
+         ]
+        },
+        {
+         "label": "Ngày chuyển việc",
+         "keys": [
+          "j_migrate"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau, Công thức #0042 Quy luật Parkinson và hộp thời gian đặt cho mỗi bước của mục tiêu một khoảng thời gian cụ thể trên lịch."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Lần chuyển việc đầu tiên của tôi: {d6mig} việc chuyển sang tháng 3, {d6sch} việc lên lịch, {d6drop} việc gạch bỏ.",
+     "need": [
+      "d6mig",
+      "d6sch",
+      "d6drop"
+     ]
+    },
+    {
+     "tpl": " Ngày chuyển việc hằng tháng: {j_migrate}.",
+     "need": [
+      "j_migrate"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

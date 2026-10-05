@@ -1,0 +1,612 @@
+{
+ "id": "0037",
+ "name": "Đặt ranh giới",
+ "storeKey": "sth-0037-6n",
+ "kicker": "Công thức #0037",
+ "title": "Đặt ranh giới: chốt việc, bàn giao, nghỉ Tết trọn vẹn",
+ "sub": "Tuần nước rút trước Tết. Nhìn ra những điều đang lấn vào giờ quan trọng, nói ranh giới lịch sự, soạn email trả lời tự động, lập danh sách bàn giao, trao đổi với cấp trên hoặc đồng nghiệp, rồi tiễn năm cũ và dọn bàn làm việc vào ngày 23 tháng Chạp. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "seal",
+  "big": "TẾT",
+  "unit": "NGHỈ TRỌN VẸN",
+  "ring": "ĐẶT RANH GIỚI · BÀN GIAO XONG · CÔNG THỨC #0037 · ",
+  "line": "Ranh giới của tôi: {j_boundary|đã được đặt}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Điều lấn giờ",
+   "title": "Những điều đang lấn vào giờ quan trọng",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Lý do dài hạn: {j_why_long}",
+       "need": [
+        "j_why_long"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết một câu bản sắc và một thói quen then chốt trong công việc ở hai ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: bảo vệ giờ làm việc quan trọng một cách lịch sự"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: 45 phút đầu ngày làm việc quan trọng nhất, chưa mở tin nhắn"
+      }
+     ]
+    },
+    {
+     "h": "Ba ngày làm việc gần nhất",
+     "items": [
+      {
+       "f": "note",
+       "text": "Nhớ lại những lần giờ quan trọng bị cắt ngang. Chỉ ghi loại việc, không cần nêu tên ai."
+      },
+      {
+       "f": "ta",
+       "k": "d1list",
+       "q": "Những lần bị cắt ngang",
+       "ph": "Ví dụ: họp đột xuất lúc 8 giờ; tin nhắn công việc lúc 21 giờ; lời nhờ chỉ mất 5 phút kéo dài 40 phút"
+      },
+      {
+       "f": "seg",
+       "k": "d1top",
+       "q": "Điều lấn vào nhiều nhất",
+       "opts": [
+        "Họp đột xuất",
+        "Tin nhắn và email ngoài giờ",
+        "Lời nhờ vả",
+        "Việc gấp của người khác",
+        "Tự mình mở điện thoại"
+       ],
+       "hints": [
+        "Cuộc họp mời gấp, rơi đúng vào khung giờ làm việc sâu. Thứ Ba sẽ có câu mẫu đề xuất khung giờ khác.",
+        "Tin nhắn, email công việc buổi tối, cuối tuần. Thứ Tư sẽ chọn quy tắc trả lời email sau giờ.",
+        "Đồng nghiệp nhờ việc nhỏ lúc mình đang làm việc quan trọng. Câu mẫu: hẹn lại một giờ cụ thể.",
+        "Việc trễ hạn của người khác chuyển sang thành việc gấp của mình. Thứ Sáu sẽ có cuộc trao đổi để thống nhất.",
+        "Không ai làm phiền, chỉ là mình tự mở điện thoại. Ranh giới lúc này là ranh giới với chính mình: để điện thoại xa bàn trong khung giờ đó."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Khung giờ cần bảo vệ",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d1hour",
+       "q": "Khung giờ quan trọng nhất tôi muốn bảo vệ",
+       "ph": "Ví dụ: 8 giờ đến 9 giờ 30 sáng, làm thói quen và việc khó nhất"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Điều đang lấn vào giờ quan trọng của tôi nhiều nhất: {d1top}.",
+     "need": [
+      "d1top"
+     ]
+    },
+    {
+     "tpl": " Khung giờ tôi muốn bảo vệ: {d1hour}.",
+     "need": [
+      "d1hour"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Câu nói",
+   "title": "Nói ranh giới sao cho lịch sự",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Ranh giới của tôi",
+     "items": [
+      {
+       "f": "show",
+       "text": "Khung giờ muốn bảo vệ: {d1hour}",
+       "need": [
+        "d1hour"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Một câu gồm: khung giờ nào, bảo vệ việc gì, ngoại lệ nào."
+      },
+      {
+       "f": "tx",
+       "k": "j_boundary",
+       "q": "Ranh giới của tôi",
+       "ph": "Ví dụ: từ 8 giờ đến 9 giờ 30 tôi không nhận họp, trừ việc khẩn của khách hàng"
+      }
+     ]
+    },
+    {
+     "h": "Câu nói ba phần",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d2sit",
+       "q": "Tình huống tôi hay gặp nhất",
+       "opts": [
+        "Lời mời họp",
+        "Lời nhờ 5 phút",
+        "Tin nhắn ngoài giờ",
+        "Giao thêm việc",
+        "Lời nhờ ngày nghỉ"
+       ],
+       "hints": [
+        "\"Em cảm ơn chị đã mời. Khung này em đang dành cho báo cáo quý. Chiều nay sau 14 giờ em tham gia được, hoặc em gửi ý kiến trước 11 giờ.\"",
+        "\"Anh hỏi đúng lúc em đang làm dở phần số liệu. 11 giờ em qua chỗ anh mình xem cùng nha.\"",
+        "Không trả lời ngay. Sáng hôm sau: \"Em đã nhận tin nhắn tối qua, em gửi anh trước 10 giờ sáng nay ạ.\"",
+        "\"Em nhận việc này được. Anh giúp em chọn việc nào ưu tiên: việc nào em có thể lùi sang sau Tết ạ?\"",
+        "\"Em đang nghỉ đến hết mùng 6. Việc này anh Minh đang nhận bàn giao, anh liên hệ anh Minh giúp em nha.\""
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2say",
+       "q": "Câu tôi sẽ nói (ghi nhận, ranh giới, lựa chọn khác)",
+       "ph": "Ví dụ: cảm ơn chị đã mời, khung 8 giờ đến 9 giờ 30 em làm báo cáo, chiều nay em tham gia được"
+      },
+      {
+       "f": "cb",
+       "k": "d2once",
+       "label": "Tôi sẽ nói rõ một lần và giữ nhất quán"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt. Tuần nước rút trước Tết, phiên bản Vừa hay Cạn của tuần trước vẫn được tính."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ranh giới của tôi: {j_boundary}.",
+     "need": [
+      "j_boundary"
+     ]
+    },
+    {
+     "tpl": " Câu tôi sẽ nói: {d2say}.",
+     "need": [
+      "d2say"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Email Tết",
+   "title": "Email trả lời tự động cho kỳ nghỉ Tết",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Năm phần của email",
+     "items": [
+      {
+       "f": "note",
+       "text": "1. Lời chào. 2. Ngày nghỉ và ngày bắt đầu trả lời. 3. Người liên hệ thay, chia theo loại việc. 4. Kênh khẩn theo quy định công ty (nếu có). 5. Lời chúc Tết."
+      },
+      {
+       "f": "tx",
+       "k": "d3back",
+       "q": "Ngày tôi bắt đầu trả lời email",
+       "ph": "Ví dụ: sáng Thứ Ba sau kỳ nghỉ (để trống nếu công ty chưa chốt lịch)"
+      },
+      {
+       "f": "tx",
+       "k": "d3contact",
+       "q": "Người liên hệ thay",
+       "ph": "Ví dụ: chị Lan (đơn hàng), anh Minh (hợp đồng)"
+      },
+      {
+       "f": "ta",
+       "k": "d3draft",
+       "q": "Bản nháp email",
+       "ph": "Kính chào anh chị, em đang nghỉ Tết Nguyên Đán từ ngày ... đến hết ngày ..."
+      }
+     ]
+    },
+    {
+     "h": "Cài đặt",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d3set",
+       "label": "Đã cài trong hộp thư, hẹn giờ bật vào ngày bắt đầu nghỉ (hoặc đặt lời nhắc để bật)"
+      },
+      {
+       "f": "cb",
+       "k": "d3ok",
+       "label": "Người liên hệ thay đã đồng ý được ghi tên"
+      }
+     ]
+    },
+    {
+     "h": "Quy tắc email sau giờ",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d3after",
+       "q": "Quy tắc của tôi",
+       "opts": [
+        "Không trả lời sau 19 giờ",
+        "Chỉ trả lời việc khẩn",
+        "Hẹn giờ gửi vào sáng hôm sau"
+       ],
+       "hints": [
+        "Sau 19 giờ không mở email công việc, trừ việc khẩn đã thống nhất. Hợp với phần lớn vị trí văn phòng.",
+        "Vẫn xem lướt, nhưng chỉ trả lời việc khẩn; việc còn lại để sáng hôm sau.",
+        "Vẫn viết khi có ý, nhưng hẹn giờ gửi lúc 8 giờ sáng, để người nhận không thấy phải trả lời trong đêm."
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người làm vận hành, trực sự cố, chăm sóc khách hàng có ca trực riêng: quy tắc áp dụng cho thời gian ngoài ca trực."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Email trả lời tự động dịp Tết của tôi đã soạn xong, người liên hệ thay: {d3contact}.",
+     "need": [
+      "d3contact"
+     ]
+    },
+    {
+     "tpl": " Quy tắc email sau giờ của tôi: {d3after}.",
+     "need": [
+      "d3after"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Bàn giao",
+   "title": "Danh sách bàn giao để nghỉ Tết trọn vẹn",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "Việc cần bàn giao",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mỗi dòng một việc: tên việc · tình trạng và bước tiếp theo · tài liệu ở đâu · đầu mối · người nhận. Không ghi mật khẩu vào danh sách."
+      },
+      {
+       "f": "ta",
+       "k": "j_handover",
+       "q": "Danh sách bàn giao Tết",
+       "ph": "Ví dụ: đơn hàng công ty A · chờ xác nhận giao ngày 15.02 · thư mục Đơn hàng 2027 · chị Hằng bên A · chị Lan nhận"
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d4n",
+         "q": "Số việc cần bàn giao"
+        },
+        {
+         "k": "d4later",
+         "q": "Số việc lùi sang sau Tết"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Người nhận và kiểm tra",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4who",
+       "q": "Người nhận bàn giao chính",
+       "ph": "Ví dụ: chị Lan, phòng kinh doanh"
+      },
+      {
+       "f": "tx",
+       "k": "d4meet",
+       "q": "Buổi trao đổi bàn giao 15 phút",
+       "ph": "Ví dụ: 15 giờ Thứ Năm 04.02"
+      },
+      {
+       "f": "cb",
+       "k": "d4c1",
+       "label": "Tài liệu của từng việc đã ghi rõ nơi lưu"
+      },
+      {
+       "f": "cb",
+       "k": "d4c2",
+       "label": "Quyền truy cập cấp theo quy định bảo mật của công ty, không ghi mật khẩu"
+      },
+      {
+       "f": "cb",
+       "k": "d4c3",
+       "label": "Cấp trên đã biết ai nhận việc gì"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Danh sách bàn giao Tết của tôi có {d4n} việc.",
+     "need": [
+      "d4n"
+     ]
+    },
+    {
+     "tpl": " Người nhận bàn giao chính: {d4who}.",
+     "need": [
+      "d4who"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Trao đổi",
+   "title": "Mười lăm phút trao đổi về ranh giới",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Chuẩn bị",
+     "items": [
+      {
+       "f": "show",
+       "text": "Ranh giới của tôi: {j_boundary}",
+       "need": [
+        "j_boundary"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d5with",
+       "q": "Người tôi trao đổi",
+       "opts": [
+        "Cấp trên",
+        "Đồng nghiệp",
+        "Khách hàng",
+        "Nhóm của tôi"
+       ],
+       "hints": [
+        "Thống nhất khung giờ, việc ưu tiên trước Tết, người nhận bàn giao.",
+        "Thống nhất cách nhờ việc, giờ hẹn lại, người trực thay.",
+        "Báo trước lịch nghỉ, người liên hệ thay, ngày trả lời.",
+        "Thống nhất khung giờ chung không họp, quy tắc tin nhắn ngoài giờ cho cả nhóm."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5topic",
+       "q": "Điều cần thống nhất",
+       "ph": "Ví dụ: khung 7 giờ 30 đến 8 giờ 15 không nhận cuộc gọi việc không gấp"
+      }
+     ]
+    },
+    {
+     "h": "Ba câu",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5a",
+       "q": "Điều tôi đang ưu tiên (gắn với mục tiêu chung)",
+       "ph": "Ví dụ: bộ hướng dẫn thao tác cho dây chuyền B, vì quý 1 có công nhân mới"
+      },
+      {
+       "f": "tx",
+       "k": "d5b",
+       "q": "Ranh giới đề xuất, kèm ngoại lệ",
+       "ph": "Ví dụ: không nhận cuộc gọi việc không gấp, trừ khi máy dừng hoặc có nguy cơ an toàn"
+      },
+      {
+       "f": "tx",
+       "k": "d5c",
+       "q": "Điều tôi cam kết",
+       "ph": "Ví dụ: trả lời ngay sau 8 giờ 15, gửi danh sách bàn giao trước Thứ Tư"
+      }
+     ]
+    },
+    {
+     "h": "Kết quả",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5result",
+       "q": "Kết quả cuộc trao đổi",
+       "ph": "Ví dụ: trưởng phòng đồng ý, sẽ báo lại với các tổ trưởng"
+      },
+      {
+       "f": "note",
+       "text": "Nếu chưa được chấp nhận, hỏi thêm: khung giờ nào trong ngày em có thể dành cho việc này? Một ranh giới nhỏ hơn vẫn tốt hơn không có."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hôm nay tôi trao đổi về: {d5topic}.",
+     "need": [
+      "d5topic"
+     ]
+    },
+    {
+     "tpl": " Người tôi trao đổi: {d5with}.",
+     "need": [
+      "d5with"
+     ]
+    },
+    {
+     "tpl": " Kết quả: {d5result}.",
+     "need": [
+      "d5result"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "23 tháng Chạp",
+   "title": "Tiễn năm cũ, dọn bàn làm việc",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Báo cáo năm làm việc, ba câu",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d6good",
+       "q": "Một điều đã làm tốt trong năm",
+       "ph": "Ví dụ: giữ được thói quen viết ba việc quan trọng gần như mỗi sáng"
+      },
+      {
+       "f": "tx",
+       "k": "d6let",
+       "q": "Một điều muốn tiễn đi",
+       "ph": "Ví dụ: thói quen trả lời tin nhắn công việc lúc nửa đêm"
+      },
+      {
+       "f": "tx",
+       "k": "d6keep",
+       "q": "Một điều mang sang năm Đinh Mùi",
+       "ph": "Ví dụ: khung 8 giờ đến 9 giờ 30 không họp"
+      }
+     ]
+    },
+    {
+     "h": "Dọn bàn làm việc, năm bước",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d6s1",
+       "label": "Giấy tờ chia ba chồng: lưu trữ, bàn giao, bỏ đi (giấy tờ có thông tin khách hàng huỷ theo quy định)"
+      },
+      {
+       "f": "cb",
+       "k": "d6s2",
+       "label": "Tệp trên màn hình chính đã về đúng thư mục"
+      },
+      {
+       "f": "cb",
+       "k": "d6s3",
+       "label": "Bảng Kanban: gỡ thẻ cột Xong của tháng 1, bỏ thẻ không còn cần"
+      },
+      {
+       "f": "cb",
+       "k": "d6s4",
+       "label": "Kiểm tra lần cuối danh sách bàn giao và email trả lời tự động"
+      },
+      {
+       "f": "cb",
+       "k": "d6s5",
+       "label": "Bàn sạch, để lại thẻ 5 mục tiêu, tấm bảng và thẻ việc đầu tiên của năm mới"
+      }
+     ]
+    },
+    {
+     "h": "Gom cả tuần",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Ranh giới",
+         "keys": [
+          "j_boundary"
+         ]
+        },
+        {
+         "label": "Quy tắc email sau giờ",
+         "keys": [
+          "d3after"
+         ]
+        },
+        {
+         "label": "Người liên hệ thay",
+         "keys": [
+          "d3contact"
+         ]
+        },
+        {
+         "label": "Người nhận bàn giao",
+         "keys": [
+          "d4who"
+         ]
+        },
+        {
+         "label": "Mang sang năm mới",
+         "keys": [
+          "d6keep"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau, Công thức #0038 Tự trắc ẩn trong công việc: tuần giáp Tết, việc mỗi ngày chỉ 5 đến 15 phút."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "23 tháng Chạp, tôi tiễn đi: {d6let}.",
+     "need": [
+      "d6let"
+     ]
+    },
+    {
+     "tpl": " Điều tôi mang sang năm mới: {d6keep}.",
+     "need": [
+      "d6keep"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

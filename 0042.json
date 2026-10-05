@@ -1,0 +1,633 @@
+{
+ "id": "0042",
+ "name": "Hộp thời gian",
+ "storeKey": "sth-0042-6n",
+ "kicker": "Công thức #0042",
+ "title": "Quy luật Parkinson và hộp thời gian",
+ "sub": "Đọc lại Quy luật Parkinson từ bài viết gốc năm 1955, thử ước lượng thời gian, đặt hộp thời gian cho từng bước của năm mục tiêu, dùng hạn chót tự đặt một cách đúng mực và khép tuần bằng một cuộc họp 20 phút với chính mình. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "sun",
+  "big": "6/6",
+  "unit": "NGÀY CÓ HỘP THỜI GIAN",
+  "line": "Quy tắc của tôi: {j_timebox|mỗi bước một hộp thời gian}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Việc phình ra",
+   "title": "Những việc đã phình ra trong tuần trước",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Mục tiêu số 1: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Nơi ghi sổ đầu dòng: {j_log}",
+       "need": [
+        "j_log"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và mục tiêu quan trọng nhất của quý này ở các ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: làm xong việc quan trọng trước khi việc gấp kéo đến"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: mỗi sáng làm 45 phút cho việc quan trọng nhất trước khi họp"
+      },
+      {
+       "f": "tx",
+       "k": "j_goal1",
+       "q": "Mục tiêu số 1 (quan trọng nhất)",
+       "ph": "Ví dụ: 12 khách hàng doanh nghiệp mới ký hợp đồng trong năm"
+      }
+     ]
+    },
+    {
+     "h": "Ba việc đã phình ra",
+     "items": [
+      {
+       "f": "note",
+       "text": "Lật lại sổ đầu dòng, lịch hoặc hộp thư đã gửi của tuần trước. Tìm ba việc chiếm nhiều thời gian hơn mức cần thiết."
+      },
+      {
+       "f": "tx",
+       "k": "d1a",
+       "q": "Việc 1",
+       "ph": "Ví dụ: báo cáo tuần sửa đi sửa lại, mất gần trọn buổi chiều"
+      },
+      {
+       "f": "tx",
+       "k": "d1b",
+       "q": "Việc 2",
+       "ph": "Ví dụ: cuộc họp dự án dự kiến 30 phút, kéo dài 75 phút"
+      },
+      {
+       "f": "tx",
+       "k": "d1c",
+       "q": "Việc 3",
+       "ph": "Ví dụ: một email trả lời khách hàng soạn mất cả buổi sáng"
+      },
+      {
+       "f": "seg",
+       "k": "d1half",
+       "q": "Nếu chỉ có một nửa thời gian, phần lớn các việc này vẫn đạt mức chấp nhận được?",
+       "opts": [
+        "Có",
+        "Một phần",
+        "Không"
+       ],
+       "hints": [
+        "Thời gian dư đã bị lấp bằng chỉnh sửa và cân nhắc thêm. Đây là chỗ hộp thời gian giúp được nhiều nhất.",
+        "Một số việc cần đủ thời gian thật, một số việc phình ra. Tuần này tách hai loại đó.",
+        "Có thể đây là việc mình ước lượng thiếu, không phải việc phình ra. Phép thử Thứ Ba sẽ giúp nhìn rõ hơn."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1long",
+       "q": "Việc kéo dài hơn cần thiết nhất",
+       "ph": "Ví dụ: báo cáo tuần"
+      }
+     ]
+    },
+    {
+     "h": "Bước cho hộp thời gian tuần này",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d1step",
+       "q": "Một bước nhỏ của mục tiêu số 1 sẽ đặt vào hộp thời gian",
+       "ph": "Ví dụ: viết phần giải pháp của bản đề xuất cho khách hàng mới"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Việc tuần trước kéo dài hơn cần thiết nhất: {d1long}.",
+     "need": [
+      "d1long"
+     ]
+    },
+    {
+     "tpl": " Bước của mục tiêu số 1 tôi sẽ đặt vào hộp thời gian tuần này: {d1step}.",
+     "need": [
+      "d1step"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Ước lượng",
+   "title": "Phép thử ước lượng ba việc",
+   "time": "Khoảng 15 phút, chia trong ngày",
+   "cards": [
+    {
+     "h": "Sáng: ba việc khác loại",
+     "items": [
+      {
+       "f": "note",
+       "text": "Một việc viết, một việc số liệu hoặc kỹ thuật, một việc phối hợp với người khác. Ghi số phút ước lượng ngay, đừng tính kỹ."
+      },
+      {
+       "f": "ta",
+       "k": "d2tasks",
+       "q": "Tên ba việc",
+       "ph": "Ví dụ: 1) soạn đề xuất; 2) đối chiếu số liệu bán hàng; 3) chốt lịch giao hàng với kho"
+      }
+     ]
+    },
+    {
+     "h": "Ước lượng và thực tế (phút)",
+     "items": [
+      {
+       "f": "sum",
+       "head": [
+        "Việc",
+        "Ước lượng",
+        "Thực tế"
+       ],
+       "rows": [
+        {
+         "label": "Việc 1",
+         "keys": [
+          "d2e1",
+          "d2a1"
+         ]
+        },
+        {
+         "label": "Việc 2",
+         "keys": [
+          "d2e2",
+          "d2a2"
+         ]
+        },
+        {
+         "label": "Việc 3",
+         "keys": [
+          "d2e3",
+          "d2a3"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Trong ngày ghi giờ bắt đầu và kết thúc từng việc vào sổ đầu dòng. Cuối ngày nhập số phút thực tế, sổ tự cộng tổng."
+      },
+      {
+       "f": "tx",
+       "k": "d2why",
+       "q": "Việc lệch nhiều nhất là việc gì, và vì sao lệch?",
+       "ph": "Ví dụ: soạn đề xuất, vì phải chờ số liệu từ phòng kế toán"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt, kể cả hôm qua."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tổng ước lượng ba việc hôm nay: {sum:d2e1,d2e2,d2e3} phút; thực tế: {sum:d2a1,d2a2,d2a3} phút.",
+     "need": [
+      "d2e1",
+      "d2a1"
+     ]
+    },
+    {
+     "tpl": " Việc lệch nhiều nhất: {d2why}.",
+     "need": [
+      "d2why"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Hộp đầu tiên",
+   "title": "Hộp thời gian đầu tiên cho mục tiêu số 1",
+   "time": "Khoảng 45 phút, gồm chính hộp thời gian",
+   "cards": [
+    {
+     "h": "Bốn điều của một hộp",
+     "items": [
+      {
+       "f": "show",
+       "text": "Bước đã chọn hôm Thứ Hai: {d1step}",
+       "need": [
+        "d1step"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3what",
+       "q": "Bước đặt vào hộp",
+       "ph": "Ví dụ: phần giải pháp của bản đề xuất"
+      },
+      {
+       "f": "tx",
+       "k": "d3start",
+       "q": "Giờ bắt đầu",
+       "ph": "Ví dụ: 8:30"
+      },
+      {
+       "f": "tx",
+       "k": "d3enough",
+       "q": "Kết quả đủ khi hết giờ",
+       "ph": "Ví dụ: bản nháp phần giải pháp, chưa cần chỉnh câu chữ"
+      },
+      {
+       "f": "note",
+       "text": "Điểm dừng: hết giờ thì dừng, ghi lại đã đến đâu. Không kéo dài hộp tại chỗ; nếu cần, đặt một hộp mới."
+      }
+     ]
+    },
+    {
+     "h": "Đồng hồ đếm ngược",
+     "items": [
+      {
+       "f": "timer",
+       "k": "d3t",
+       "dk": "d3len",
+       "def": 45,
+       "opts": [
+        15,
+        25,
+        30,
+        45,
+        60,
+        90
+       ],
+       "note": "Chọn độ dài hộp, bấm Bắt đầu. Lần đầu, 25 đến 45 phút là khoảng dễ giữ."
+      }
+     ]
+    },
+    {
+     "h": "Kết quả",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d3result",
+       "q": "Khi hết giờ",
+       "opts": [
+        "Đạt kết quả đủ",
+        "Đạt một phần",
+        "Chưa bắt đầu được"
+       ],
+       "hints": [
+        "Hộp đã giữ được. Ghi lại giờ và loại việc để dùng lại.",
+        "Bình thường với hộp đầu tiên. Đặt một hộp mới vào lịch, hoặc thu nhỏ kết quả đủ cho lần sau.",
+        "Ghi lý do: bị gọi vào họp, việc chưa rõ, hay giờ không phù hợp. Thử lại vào khung giờ khác ngày mai."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_timebox",
+       "q": "Quy tắc hộp thời gian của tôi (lưu cho cả hành trình)",
+       "ph": "Ví dụ: mỗi sáng một hộp 45 phút cho mục tiêu số 1, bắt đầu 8:30, hết giờ thì dừng"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hộp thời gian đầu tiên của tôi: {d3what}, {d3len|45} phút.",
+     "need": [
+      "d3what"
+     ]
+    },
+    {
+     "tpl": " Kết quả: {d3result}.",
+     "need": [
+      "d3result"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Hạn chót",
+   "title": "Hạn chót tự đặt cho một bước lớn",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Điều cần biết về bằng chứng",
+     "items": [
+      {
+       "f": "note",
+       "text": "Nghiên cứu nổi tiếng của Ariely và Wertenbroch (2002) về hạn chót tự đặt đã bị rút: năm 2026 có các dấu hiệu bất thường trong dữ liệu được công bố, tạp chí đã rút bài, và một nghiên cứu lặp lại không tìm thấy hiệu ứng. Dùng hạn chót trung gian như một công cụ lập kế hoạch để tự kiểm tra, không coi là điều khoa học đã chứng minh."
+      }
+     ]
+    },
+    {
+     "h": "Một bước lớn, hai mốc trung gian",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4step",
+       "q": "Bước lớn cần làm trong vài tuần tới",
+       "ph": "Ví dụ: bộ tài liệu đào tạo nhân viên mới"
+      },
+      {
+       "f": "tx",
+       "k": "d4dl1",
+       "q": "Hạn chót trung gian 1 (kết quả nhìn thấy được và ngày)",
+       "ph": "Ví dụ: Thứ Sáu 12.03 gửi dàn ý cho trưởng phòng"
+      },
+      {
+       "f": "tx",
+       "k": "d4dl2",
+       "q": "Hạn chót trung gian 2",
+       "ph": "Ví dụ: Thứ Sáu 19.03 hoàn thành bản nháp ba bài đầu"
+      },
+      {
+       "f": "seg",
+       "k": "d4kind",
+       "q": "Loại hạn chót này",
+       "opts": [
+        "Có người cùng biết",
+        "Chỉ mình biết"
+       ],
+       "hints": [
+        "Hạn chót đã được báo cho một người liên quan. Hỏi lại người đó vào ngày hạn.",
+        "Hạn chót chỉ mình biết rất dễ được dời. Thử báo cho một người trong hôm nay."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d4who",
+       "q": "Người được báo về hạn chót đầu tiên",
+       "ph": "Ví dụ: chị Lan, trưởng phòng nhân sự"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hạn chót trung gian tôi tự đặt: {d4dl1}, cho bước {d4step}.",
+     "need": [
+      "d4dl1",
+      "d4step"
+     ]
+    },
+    {
+     "tpl": " Người biết hạn này: {d4who}.",
+     "need": [
+      "d4who"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Lịch tuần sau",
+   "title": "Đặt hộp thời gian lên lịch tuần sau",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Bảng chọn độ dài",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d5len",
+       "q": "Độ dài tôi sẽ dùng nhiều nhất",
+       "opts": [
+        "15 phút",
+        "25 đến 30 phút",
+        "45 đến 60 phút",
+        "90 phút"
+       ],
+       "hints": [
+        "Việc nhỏ, rõ ràng. Gom nhiều việc nhỏ cùng loại vào một hộp.",
+        "Bước khởi động của việc lớn, việc đang ngại bắt đầu.",
+        "Phần lớn các bước của năm mục tiêu. Đặt vào giờ năng lượng cao nếu có thể.",
+        "Việc cần tập trung sâu, liền mạch. Một hộp như vậy mỗi ngày là đủ."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Mỗi mục tiêu ít nhất một hộp",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Mục tiêu"
+       ],
+       "rows": [
+        {
+         "label": "Số 1",
+         "keys": [
+          "j_goal1"
+         ]
+        },
+        {
+         "label": "Số 2",
+         "keys": [
+          "j_goal2"
+         ]
+        },
+        {
+         "label": "Số 3",
+         "keys": [
+          "j_goal3"
+         ]
+        },
+        {
+         "label": "Số 4",
+         "keys": [
+          "j_goal4"
+         ]
+        },
+        {
+         "label": "Số 5",
+         "keys": [
+          "j_goal5"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d5plan",
+       "q": "Các hộp của tuần 08.03 đến 12.03",
+       "ph": "Ví dụ: T2 8:30 45 phút, mục tiêu số 1, dàn ý đề xuất; T3 14:00 25 phút, mục tiêu số 3, đọc tài liệu"
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d5count",
+         "q": "Số hộp đã đặt lên lịch"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5long",
+       "q": "Hộp dài nhất và dành cho bước nào",
+       "ph": "Ví dụ: 90 phút sáng Thứ Tư, lập kế hoạch ngân sách quý 2"
+      },
+      {
+       "f": "cb",
+       "k": "d5gap",
+       "label": "Tôi đã chừa khoảng trống, không lấp đầy lịch bằng hộp"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi đã đặt {d5count} hộp thời gian lên lịch tuần sau cho năm mục tiêu.",
+     "need": [
+      "d5count"
+     ]
+    },
+    {
+     "tpl": " Hộp dài nhất: {d5long}.",
+     "need": [
+      "d5long"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Tự họp",
+   "title": "Cuộc họp 20 phút với chính mình",
+   "time": "Đúng 20 phút",
+   "cards": [
+    {
+     "h": "Mục 1 và 2: giữ được và tràn",
+     "items": [
+      {
+       "f": "timer",
+       "k": "d6t",
+       "dk": "d6len",
+       "def": 20,
+       "opts": [
+        20
+       ],
+       "note": "Bấm Bắt đầu. Hết 20 phút thì dừng."
+      },
+      {
+       "f": "tx",
+       "k": "d6keep",
+       "q": "Hộp giữ tốt nhất và vì sao",
+       "ph": "Ví dụ: hộp 45 phút sáng Thứ Tư, vì việc rõ và không ai gọi"
+      },
+      {
+       "f": "tx",
+       "k": "d6over",
+       "q": "Hộp tràn nhiều nhất và một điều sẽ sửa",
+       "ph": "Ví dụ: hộp chiều Thứ Năm, sẽ viết kết quả đủ từ hôm trước"
+      }
+     ]
+    },
+    {
+     "h": "Mục 3: chấm ba điểm",
+     "items": [
+      {
+       "f": "rate",
+       "kp": "d6r",
+       "head": [
+        "#",
+        "Câu hỏi",
+        "Điểm"
+       ],
+       "scale": 5,
+       "rows": [
+        [
+         "Tôi bắt đầu hộp đúng giờ",
+         "1 là hiếm khi, 5 là hầu như luôn"
+        ],
+        [
+         "Tôi dừng hộp đúng giờ",
+         "1 là hiếm khi, 5 là hầu như luôn"
+        ],
+        [
+         "Kết quả đủ rõ ràng trước khi bắt đầu",
+         "1 là hiếm khi, 5 là hầu như luôn"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Mục 4: chốt quy tắc hộp thời gian",
+     "items": [
+      {
+       "f": "show",
+       "text": "Quy tắc viết hôm Thứ Tư: {j_timebox}",
+       "need": [
+        "j_timebox"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_timebox",
+       "q": "Quy tắc hộp thời gian tôi giữ (sửa nếu cần)",
+       "ph": "Ví dụ: mỗi sáng một hộp 45 phút cho mục tiêu số 1, bắt đầu 8:30, viết kết quả đủ từ chiều hôm trước"
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau, Công thức #0043 Nghịch lý lựa chọn, mở ngày 08.03."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tuần hộp thời gian: hộp giữ tốt nhất là {d6keep}.",
+     "need": [
+      "d6keep"
+     ]
+    },
+    {
+     "tpl": " Quy tắc hộp thời gian tôi giữ: {j_timebox}.",
+     "need": [
+      "j_timebox"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

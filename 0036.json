@@ -1,0 +1,611 @@
+{
+ "id": "0036",
+ "name": "Gan góc",
+ "storeKey": "sth-0036-6n",
+ "kicker": "Công thức #0036",
+ "title": "Gan góc: giữ hướng đi khi hứng khởi giảm",
+ "sub": "Giữa tháng 1, lúc quyết tâm đầu năm thường chững lại. Tự chấm, tách đam mê và kiên trì, đặt mục tiêu số 1 vào ba tầng với một lý do dài hạn, chọn một việc khó để luyện, viết phiên bản tối thiểu cho ngày nản và một lá thư cho ngày muốn bỏ cuộc. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "ladder",
+  "big": "{jtotal|6}",
+  "unit": "NGÀY GIỮ THÓI QUEN",
+  "line": "Lý do dài hạn: {j_why_long|đã được viết ra}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Tự chấm",
+   "title": "Tự chấm sáu câu về gan góc",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Mục tiêu số 1 năm 2027: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết một câu bản sắc và một thói quen then chốt trong công việc. Thứ Tư sẽ có ô cho mục tiêu số 1."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: tiếp tục làm việc quan trọng cả khi không còn hứng"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: 20 phút đọc tài liệu chuyên môn trước giờ họp sáng"
+      }
+     ]
+    },
+    {
+     "h": "Sáu câu, nhìn lại ba tháng gần đây",
+     "items": [
+      {
+       "f": "note",
+       "text": "1 = hoàn toàn không giống tôi, 5 = rất giống tôi. Sáu câu do 10X Excellence Hub soạn để tự nhìn lại, không phải thang đo gốc của Duckworth, không dùng để chẩn đoán hay so sánh."
+      },
+      {
+       "f": "rate",
+       "kp": "d1r",
+       "head": [
+        "#",
+        "Câu",
+        "Mức độ"
+       ],
+       "rows": [
+        [
+         "Việc đã bắt đầu, tôi thường làm đến khi xong, dù giữa chừng gặp khó.",
+         "Kiên trì"
+        ],
+        [
+         "Một lần bị từ chối hay làm hỏng không làm tôi dừng hẳn một việc quan trọng.",
+         "Kiên trì"
+        ],
+        [
+         "Tôi vẫn làm phần việc khó khi không còn thấy hứng thú.",
+         "Kiên trì"
+        ],
+        [
+         "Mục tiêu công việc năm nay của tôi nối tiếp mục tiêu năm trước.",
+         "Nhất quán mục tiêu"
+        ],
+        [
+         "Tôi ít khi bỏ dở một hướng đi chỉ vì có một ý tưởng mới hấp dẫn hơn.",
+         "Nhất quán mục tiêu"
+        ],
+        [
+         "Tôi quan tâm tới cùng một nhóm vấn đề trong công việc suốt nhiều tháng liền.",
+         "Nhất quán mục tiêu"
+        ]
+       ],
+       "scale": 5
+      },
+      {
+       "f": "show",
+       "text": "Kiên trì: {sum:d1r1,d1r2,d1r3} trên 15. Nhất quán mục tiêu: {sum:d1r4,d1r5,d1r6} trên 15.",
+       "need": [
+        "d1r1"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Phần mạnh hơn và điều muốn rèn",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d1strong",
+       "q": "Phần tôi mạnh hơn",
+       "opts": [
+        "Kiên trì",
+        "Nhất quán mục tiêu",
+        "Ngang nhau"
+       ],
+       "hints": [
+        "Điểm ba câu đầu cao hơn: làm xong việc đã bắt đầu, ít dừng vì khó. Tuần này chú ý thêm tới lý do dài hạn (Thứ Tư).",
+        "Điểm ba câu sau cao hơn: hướng đi ổn định qua thời gian. Tuần này chú ý thêm tới việc khó và ngày nản (Thứ Năm, Thứ Sáu).",
+        "Hai phần gần bằng nhau: chọn điều muốn rèn dựa trên câu có điểm thấp nhất."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1keep",
+       "q": "Điều tôi muốn rèn trong tháng 1",
+       "ph": "Ví dụ: vẫn làm phần việc khó trong những tuần không còn hứng"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tự chấm tuần này, phần tôi mạnh hơn: {d1strong}.",
+     "need": [
+      "d1strong"
+     ]
+    },
+    {
+     "tpl": " Điều tôi muốn rèn trong tháng 1: {d1keep}.",
+     "need": [
+      "d1keep"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Hai sợi dây",
+   "title": "Đam mê và kiên trì, hai sợi dây khác nhau",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Đam mê: hướng đi",
+     "items": [
+      {
+       "f": "note",
+       "text": "Đam mê theo cách Duckworth dùng gần với sự nhất quán của mối quan tâm qua thời gian, không chỉ là cảm giác hứng thú."
+      },
+      {
+       "f": "ta",
+       "k": "d2passion",
+       "q": "Điều trong công việc tôi muốn quay lại nhiều năm",
+       "ph": "Ví dụ: giúp khách hàng doanh nghiệp vận hành gọn hơn"
+      }
+     ]
+    },
+    {
+     "h": "Kiên trì: bước tiếp khi khó",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d2persist",
+       "q": "Lần gần nhất tôi tiếp tục một việc dù khó",
+       "ph": "Ví dụ: hồ sơ thầu bị trả lại hai lần, tôi sửa lần ba và nộp đúng hạn"
+      }
+     ]
+    },
+    {
+     "h": "Tháng 1, phần nào chững trước?",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d2weak",
+       "q": "Phần đang chững trước",
+       "opts": [
+        "Nỗ lực mỗi ngày",
+        "Hướng đi",
+        "Cả hai vẫn ổn"
+       ],
+       "hints": [
+        "Hướng đi còn nguyên, chỉ là nỗ lực mỗi ngày giảm dần. Phiên bản tối thiểu (Thứ Sáu) sẽ giúp nhiều.",
+        "Bắt đầu tự hỏi mục tiêu có còn đúng không. Bài mục tiêu ba tầng (Thứ Tư) sẽ giúp nhìn rõ hơn.",
+        "Cả hai đều ổn: tuần này là dịp chuẩn bị trước cho những tuần khó hơn."
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Đam mê trong công việc của tôi hướng về: {d2passion}.",
+     "need": [
+      "d2passion"
+     ]
+    },
+    {
+     "tpl": " Lần gần nhất tôi kiên trì dù khó: {d2persist}.",
+     "need": [
+      "d2persist"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Ba tầng",
+   "title": "Mục tiêu số 1 nằm ở tầng nào?",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Tầng giữa: mục tiêu số 1",
+     "items": [
+      {
+       "f": "show",
+       "text": "Mục tiêu số 1: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_goal1",
+       "q": "Mục tiêu số 1 năm 2027 (người mới điền ở đây, người đã có có thể sửa)",
+       "ph": "Ví dụ: chốt sổ tháng trong 3 ngày làm việc"
+      }
+     ]
+    },
+    {
+     "h": "Tầng trên: lý do dài hạn",
+     "items": [
+      {
+       "f": "note",
+       "text": "Hỏi \"để làm gì?\" hai đến ba lần liên tiếp. Câu trả lời cuối cùng thường là điều mình thật sự quan tâm trong nhiều năm."
+      },
+      {
+       "f": "tx",
+       "k": "d3why1",
+       "q": "Để làm gì? (lần 1)",
+       "ph": "Ví dụ: để ban giám đốc có số liệu sớm"
+      },
+      {
+       "f": "tx",
+       "k": "d3why2",
+       "q": "Để làm gì? (lần 2)",
+       "ph": "Ví dụ: để doanh nghiệp ra quyết định kịp thời"
+      },
+      {
+       "f": "tx",
+       "k": "j_why_long",
+       "q": "Lý do dài hạn của tôi",
+       "ph": "Ví dụ: trở thành người giúp doanh nghiệp ra quyết định bằng số liệu"
+      }
+     ]
+    },
+    {
+     "h": "Tầng dưới: việc tuần này",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3low",
+       "q": "Một thẻ việc tuần này trên bảng Kanban",
+       "ph": "Ví dụ: thử mẫu đối chiếu công nợ mới"
+      },
+      {
+       "f": "tx",
+       "k": "d3link",
+       "q": "Mục tiêu số 1 phục vụ lý do dài hạn bằng cách",
+       "ph": "Ví dụ: số liệu sớm hơn hai ngày cho mỗi cuộc họp tháng"
+      },
+      {
+       "f": "show",
+       "text": "Tầng trên: {j_why_long}. Tầng giữa: {j_goal1}. Tầng dưới: {d3low}.",
+       "need": [
+        "j_why_long",
+        "j_goal1",
+        "d3low"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d3board",
+       "label": "Tôi đã viết lý do dài hạn lên góc tấm bảng Kanban"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Lý do dài hạn của tôi: {j_why_long}.",
+     "need": [
+      "j_why_long"
+     ]
+    },
+    {
+     "tpl": " Mục tiêu số 1 phục vụ lý do đó bằng cách: {d3link}.",
+     "need": [
+      "d3link"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Việc khó",
+   "title": "Một việc khó để luyện mỗi tuần",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Chọn việc khó",
+     "items": [
+      {
+       "f": "tx",
+       "k": "j_hard",
+       "q": "Việc khó tôi luyện mỗi tuần",
+       "ph": "Ví dụ: thuyết trình trước khách hàng không cần đọc slide"
+      },
+      {
+       "f": "seg",
+       "k": "d4kind",
+       "q": "Việc khó thuộc nhóm",
+       "opts": [
+        "Chuyên môn",
+        "Giao tiếp",
+        "Phân tích, viết",
+        "Quản lý con người"
+       ],
+       "hints": [
+        "Một kỹ năng nghề cốt lõi: lập dự toán, viết mã, vận hành máy mới.",
+        "Thuyết trình, đàm phán, xử lý cuộc gọi khó, góp ý trực tiếp.",
+        "Phân tích số liệu, viết báo cáo, viết hướng dẫn, viết đề xuất.",
+        "Giao việc, kèm người mới, trao đổi về hiệu suất, dẫn cuộc họp."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Ba điều kiện của quy tắc việc khó",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d4c1",
+       "label": "Việc này cần luyện tập đều đặn mới tiến bộ"
+      },
+      {
+       "f": "cb",
+       "k": "d4c2",
+       "label": "Tôi tự chọn, không ai chọn hộ"
+      },
+      {
+       "f": "cb",
+       "k": "d4c3",
+       "label": "Có một điểm dừng tự nhiên, trước đó không bỏ chỉ vì một ngày nản"
+      },
+      {
+       "f": "tx",
+       "k": "d4stop",
+       "q": "Tôi giữ việc khó này đến",
+       "ph": "Ví dụ: hết quý 1, hoặc sau mười buổi thuyết trình"
+      },
+      {
+       "f": "tx",
+       "k": "d4first",
+       "q": "Phiên luyện đầu tiên (đặt thành thẻ trên bảng Kanban)",
+       "ph": "Ví dụ: Thứ Ba 26.01, 30 phút tập phần mở đầu bài thuyết trình"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Việc khó tôi luyện mỗi tuần: {j_hard}.",
+     "need": [
+      "j_hard"
+     ]
+    },
+    {
+     "tpl": " Tôi giữ đến: {d4stop}.",
+     "need": [
+      "d4stop"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Ngày nản",
+   "title": "Ngày nản, làm phiên bản tối thiểu",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Ba phiên bản của thói quen",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen then chốt: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Phiên bản hai phút đã viết ở Mùa 1: {j_two}",
+       "need": [
+        "j_two"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5full",
+       "q": "Mức Đầy: phiên bản đầy đủ",
+       "ph": "Ví dụ: viết ba việc, nhìn bảng, làm thẻ khó nhất 45 phút"
+      },
+      {
+       "f": "tx",
+       "k": "d5mid",
+       "q": "Mức Vừa: phiên bản rút gọn",
+       "ph": "Ví dụ: viết ba việc, nhìn bảng năm phút"
+      },
+      {
+       "f": "tx",
+       "k": "d5min",
+       "q": "Mức Cạn: phiên bản tối thiểu",
+       "ph": "Ví dụ: viết một việc quan trọng nhất lên giấy ghi chú"
+      }
+     ]
+    },
+    {
+     "h": "Hôm nay",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d5level",
+       "q": "Mức năng lượng hôm nay",
+       "opts": [
+        "Đầy",
+        "Vừa",
+        "Cạn"
+       ],
+       "hints": [
+        "Ngủ đủ, lịch thoáng, đầu óc tỉnh táo: làm phiên bản đầy đủ.",
+        "Một ngày bình thường, có vài cuộc họp: làm phiên bản rút gọn, giữ phần cốt lõi.",
+        "Sau công tác, sau tuần chốt số liệu, nhiều việc phát sinh, hoặc không muốn bắt đầu: làm phiên bản tối thiểu, hai phút là đủ."
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Ngày nghỉ vẫn là ngày nghỉ. Ngày Cạn kéo dài vì quá tải là tín hiệu để trao đổi với cấp trên về khối lượng việc."
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen, kể cả ngày chỉ làm phiên bản tối thiểu."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày nản, phiên bản tối thiểu của thói quen của tôi là: {d5min}.",
+     "need": [
+      "d5min"
+     ]
+    },
+    {
+     "tpl": " Hôm nay tôi ở mức: {d5level}.",
+     "need": [
+      "d5level"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Thư cho ngày nản",
+   "title": "Một lá thư cho ngày muốn bỏ cuộc",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Lá thư bốn phần",
+     "items": [
+      {
+       "f": "note",
+       "text": "1. Lý do dài hạn bằng lời của mình. 2. Một lần mình đã tiếp tục dù khó, và điều xảy ra sau đó. 3. Phiên bản tối thiểu: hôm nay chỉ cần làm điều này. 4. Một lời dặn tử tế, như nói với một đồng nghiệp đang nản."
+      },
+      {
+       "f": "show",
+       "text": "Gợi ý từ tuần này. Lý do dài hạn: {j_why_long}. Lần kiên trì: {d2persist}. Phiên bản tối thiểu: {d5min}.",
+       "need": [
+        "j_why_long"
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d6letter",
+       "q": "Thư gửi tôi của ngày muốn bỏ cuộc",
+       "ph": "Gửi tôi của ngày nản, ..."
+      }
+     ]
+    },
+    {
+     "h": "Mở thư khi nào, lưu ở đâu",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d6open",
+       "q": "Tôi sẽ mở thư khi",
+       "ph": "Ví dụ: hai ngày liền không muốn nhìn bảng Kanban"
+      },
+      {
+       "f": "tx",
+       "k": "d6where",
+       "q": "Thư được lưu ở",
+       "ph": "Ví dụ: trang cuối sổ kế hoạch, mặt sau thẻ 5 mục tiêu"
+      }
+     ]
+    },
+    {
+     "h": "Gom cả tuần",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Lý do dài hạn",
+         "keys": [
+          "j_why_long"
+         ]
+        },
+        {
+         "label": "Mục tiêu số 1",
+         "keys": [
+          "j_goal1"
+         ]
+        },
+        {
+         "label": "Việc khó mỗi tuần",
+         "keys": [
+          "j_hard"
+         ]
+        },
+        {
+         "label": "Giữ đến",
+         "keys": [
+          "d4stop"
+         ]
+        },
+        {
+         "label": "Phiên bản tối thiểu",
+         "keys": [
+          "d5min"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau, Công thức #0037 Đặt ranh giới: bảo vệ giờ làm việc quan trọng trong tuần nước rút trước Tết, chốt việc và bàn giao."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi đã viết thư cho ngày muốn bỏ cuộc. Tôi sẽ mở thư khi: {d6open}.",
+     "need": [
+      "d6open"
+     ]
+    },
+    {
+     "tpl": " Lý do dài hạn tôi nhắc mình: {j_why_long}.",
+     "need": [
+      "j_why_long"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

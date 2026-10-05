@@ -1,0 +1,550 @@
+{
+ "id": "0038",
+ "name": "Tự trắc ẩn trong công việc",
+ "storeKey": "sth-0038-6n",
+ "kicker": "Công thức #0038",
+ "title": "Tự trắc ẩn trong công việc: tuần giáp Tết",
+ "sub": "Tuần cuối năm Bính Ngọ, mỗi ngày chỉ 5 đến 15 phút. Nhìn lại một năm làm việc công bằng với chính mình, viết câu tự nhắc tử tế, chọn phiên bản Tết cho thói quen then chốt. Thứ Sáu là tối giao thừa, Thứ Bảy là mùng 1 Tết Đinh Mùi. Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "card",
+  "word": "Chúc mừng năm mới",
+  "big": "6/6",
+  "unit": "NGÀY GIÁP TẾT",
+  "line": "Câu tự nhắc năm mới: {j_kind|tử tế với người, nghiêm túc với việc}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Nhìn lại năm",
+   "title": "Nhìn lại một năm như một đồng nghiệp công bằng",
+   "time": "Khoảng 10 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc và một thói quen nhỏ trong công việc muốn giữ qua năm mới ở hai ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: làm việc quan trọng trước khi mở hộp thư"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: viết ba việc quan trọng nhất trước 8 giờ"
+      }
+     ]
+    },
+    {
+     "h": "Ba điều đã làm tốt",
+     "items": [
+      {
+       "f": "note",
+       "text": "Từ Tết năm ngoái đến nay. Viết cụ thể: việc gì, kết quả ra sao. Không cần là thành tích lớn."
+      },
+      {
+       "f": "tx",
+       "k": "d1g1",
+       "q": "Điều làm tốt 1",
+       "ph": "Ví dụ: chốt sổ tháng 11 sớm hai ngày"
+      },
+      {
+       "f": "tx",
+       "k": "d1g2",
+       "q": "Điều làm tốt 2",
+       "ph": "Ví dụ: giữ được khách hàng lớn sau đợt giao trễ"
+      },
+      {
+       "f": "tx",
+       "k": "d1g3",
+       "q": "Điều làm tốt 3",
+       "ph": "Ví dụ: hướng dẫn hai nhân viên mới tự làm báo cáo tuần"
+      },
+      {
+       "f": "pick",
+       "k": "d1best",
+       "kp": "d1g",
+       "n": 3,
+       "empty": "Điền ít nhất một điều ở trên để chọn điều muốn chia sẻ."
+      }
+     ]
+    },
+    {
+     "h": "Một điều chưa như ý",
+     "items": [
+      {
+       "f": "note",
+       "text": "Viết bằng giọng của một đồng nghiệp công bằng: nêu sự việc, nêu hoàn cảnh lúc đó, không dùng từ chê bai."
+      },
+      {
+       "f": "tx",
+       "k": "d1fair",
+       "q": "Điều chưa như ý, nhìn lại công bằng",
+       "ph": "Ví dụ: dự án kho mới trễ một tháng, vì nhận thêm hai đơn hàng gấp mà chưa điều chỉnh kế hoạch"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Một điều tôi đã làm tốt trong năm làm việc vừa qua: {d1best}.",
+     "need": [
+      "d1best"
+     ]
+    },
+    {
+     "tpl": " Một điều chưa như ý, nhìn lại công bằng: {d1fair}.",
+     "need": [
+      "d1fair"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Câu tự nhắc",
+   "title": "Viết một câu tự nhắc thật tử tế",
+   "time": "Khoảng 10 phút",
+   "cards": [
+    {
+     "h": "Giọng tự trách",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d2harsh",
+       "q": "Câu đầu tiên vang lên trong đầu lần gần nhất mình tự trách",
+       "ph": "Ví dụ: làm bao nhiêu năm mà còn sai lỗi này"
+      },
+      {
+       "f": "note",
+       "text": "Ô này là của riêng mình, không đưa vào câu chia sẻ."
+      }
+     ]
+    },
+    {
+     "h": "Câu hỏi đồng nghiệp",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d2friend",
+       "q": "Nếu một đồng nghiệp mình quý gặp đúng chuyện này, mình sẽ nói gì với họ?",
+       "ph": "Ví dụ: cuối năm chứng từ nhiều gấp đôi, ai cũng có thể sai. Sửa ngay rồi xem lại bước đối chiếu."
+      },
+      {
+       "f": "seg",
+       "k": "d2part",
+       "q": "Câu trả lời của mình đã có phần nào?",
+       "opts": [
+        "Ghi nhận",
+        "Ai cũng vậy",
+        "Bước tiếp theo",
+        "Đủ cả ba"
+       ],
+       "hints": [
+        "Tử tế với bản thân: thừa nhận chuyện này khó, không gạt đi.",
+        "Nhân tính chung: nhắc rằng ai làm việc này cũng có lúc như vậy.",
+        "Chánh niệm và hành động: nhìn sự việc đúng kích thước, chọn một bước nhỏ và cụ thể.",
+        "Câu trả lời đã có ghi nhận, lời nhắc ai cũng vậy và một bước tiếp theo. Rất tốt để rút thành câu tự nhắc."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Câu tự nhắc tử tế",
+     "items": [
+      {
+       "f": "tx",
+       "k": "j_kind",
+       "q": "Câu tự nhắc tôi dùng mỗi khi có sai sót hay ngày lỡ",
+       "ph": "Ví dụ: sai một số thì sửa một số, rồi xem lại bước đối chiếu"
+      },
+      {
+       "f": "cb",
+       "k": "d2c1",
+       "label": "Câu ngắn, nói thành tiếng mà không thấy ngượng"
+      },
+      {
+       "f": "cb",
+       "k": "d2c2",
+       "label": "Câu kết thúc bằng một hướng đi"
+      },
+      {
+       "f": "note",
+       "text": "Câu này được lưu cho cả hành trình. Các tuần sau và thẻ thành tích sẽ dùng lại."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Câu tự nhắc tử tế tôi mang vào năm mới: {j_kind}.",
+     "need": [
+      "j_kind"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Sửa sai",
+   "title": "Một sai sót, một bài học, một cách sửa",
+   "time": "Khoảng 10 phút",
+   "cards": [
+    {
+     "h": "Ba dòng",
+     "items": [
+      {
+       "f": "show",
+       "text": "Câu tự nhắc của tôi: {j_kind}",
+       "need": [
+        "j_kind"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3what",
+       "q": "Sự việc (viết như biên bản, không tính từ)",
+       "ph": "Ví dụ: tháng 9, một lô hàng giao trễ hai ngày vì không kiểm tra lại tồn kho vật tư"
+      },
+      {
+       "f": "tx",
+       "k": "d3lesson",
+       "q": "Bài học",
+       "ph": "Ví dụ: lịch sản xuất chỉ đúng khi vật tư đã được xác nhận"
+      },
+      {
+       "f": "tx",
+       "k": "d3fix",
+       "q": "Năm mới tôi làm khác bằng cách",
+       "ph": "Ví dụ: chiều Thứ Sáu nào cũng đối chiếu vật tư cho tuần sau"
+      }
+     ]
+    },
+    {
+     "h": "Giọng khi nhìn lại",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d3tone",
+       "q": "Khi viết ba dòng, giọng của mình gần với",
+       "opts": [
+        "Đồng nghiệp công bằng",
+        "Người chấm điểm khắt khe",
+        "Người bỏ qua cho xong"
+       ],
+       "hints": [
+        "Nêu đúng sự việc, nhận phần trách nhiệm của mình, đi tới cách sửa. Đây là giọng tuần này luyện.",
+        "Nhiều tính từ chê bai, ít cách sửa. Thử đọc lại câu tự nhắc rồi viết lại dòng sự việc.",
+        "Viết cho qua, không có bài học. Thử thêm một câu: lần sau gặp tình huống này mình làm gì?"
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Một bài học từ sai sót năm qua: {d3lesson}.",
+     "need": [
+      "d3lesson"
+     ]
+    },
+    {
+     "tpl": " Năm mới tôi sẽ làm khác bằng cách: {d3fix}.",
+     "need": [
+      "d3fix"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Phiên bản Tết",
+   "title": "28 Tết, chọn phiên bản Tết của thói quen",
+   "time": "Khoảng 10 đến 15 phút",
+   "cards": [
+    {
+     "h": "Bảng chọn",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d4type",
+       "q": "Thói quen của mình gần nhóm nào?",
+       "opts": [
+        "Đọc, học",
+        "Lập kế hoạch",
+        "Làm việc sâu",
+        "Khách hàng",
+        "Cải tiến",
+        "Cảm ơn"
+       ],
+       "hints": [
+        "Phiên bản Tết: đọc một trang, hoặc đọc lại một ghi chú cũ và gạch chân một ý.",
+        "Phiên bản Tết: mỗi sáng viết một việc quan trọng nhất cho ngày đi làm lại đầu tiên.",
+        "Phiên bản Tết: mở tài liệu dự án quan trọng nhất, đọc lại 5 phút, ghi một ý cho buổi đầu sau Tết.",
+        "Phiên bản Tết: mỗi ngày một lời chúc Tết cụ thể, đúng tên người nhận, không bàn công việc.",
+        "Phiên bản Tết: ghi một quan sát nhỏ trong ngày về cách một nơi phục vụ khách ngày Tết.",
+        "Phiên bản Tết: một lời cảm ơn cụ thể mỗi ngày, gửi người đã hỗ trợ mình trong năm."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_tet_mini",
+       "q": "Phiên bản Tết của thói quen",
+       "ph": "Ví dụ: mỗi sáng viết một việc quan trọng nhất cho ngày đi làm lại"
+      },
+      {
+       "f": "tx",
+       "k": "d4after",
+       "q": "Tôi làm ngay sau nếp sinh hoạt ngày Tết nào?",
+       "ph": "Ví dụ: ấm trà đầu ngày"
+      },
+      {
+       "f": "cb",
+       "k": "d4c1",
+       "label": "Dưới 5 phút"
+      },
+      {
+       "f": "cb",
+       "k": "d4c2",
+       "label": "Không cần máy tính, làm được ở bất kỳ đâu"
+      },
+      {
+       "f": "cb",
+       "k": "d4c3",
+       "label": "Gắn vào một nếp sinh hoạt ngày Tết có sẵn"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen. Những ngày Tết, làm phiên bản Tết cũng được tính."
+      },
+      {
+       "f": "show",
+       "text": "Ngày lỡ thì đọc câu này: {j_kind}",
+       "need": [
+        "j_kind"
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Phiên bản Tết của thói quen: {j_tet_mini}.",
+     "need": [
+      "j_tet_mini"
+     ]
+    },
+    {
+     "tpl": " Tôi làm ngay sau {d4after}.",
+     "need": [
+      "d4after"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Giao thừa",
+   "title": "Tối giao thừa, ba câu khép năm Bính Ngọ",
+   "time": "Khoảng 5 phút",
+   "cards": [
+    {
+     "h": "Ba câu khép năm",
+     "items": [
+      {
+       "f": "note",
+       "text": "29 Tết, tối nay là giao thừa. Viết trước hoặc sau bữa cơm tất niên đều được."
+      },
+      {
+       "f": "tx",
+       "k": "d5proud",
+       "q": "Năm Bính Ngọ, tôi tự hào về ...",
+       "ph": "Ví dụ: giữ thói quen viết ba việc quan trọng qua cả mùa cao điểm cuối năm"
+      },
+      {
+       "f": "tx",
+       "k": "d5lesson",
+       "q": "Bài học tôi mang sang năm Đinh Mùi",
+       "ph": "Ví dụ: lịch chỉ đúng khi nguồn lực đã được xác nhận"
+      },
+      {
+       "f": "ta",
+       "k": "d5thanks",
+       "q": "Cảm ơn chính mình vì ... (giữ riêng, không chia sẻ)",
+       "ph": "Ví dụ: đã quay lại sau những tuần bận nhất"
+      }
+     ]
+    },
+    {
+     "h": "Thói quen tối nay",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d5mini",
+       "label": "Đã làm phiên bản Tết, hoặc đã chọn nghỉ trọn vẹn"
+      },
+      {
+       "f": "show",
+       "text": "Phiên bản Tết: {j_tet_mini}",
+       "need": [
+        "j_tet_mini"
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Năm Bính Ngọ, tôi tự hào về {d5proud}.",
+     "need": [
+      "d5proud"
+     ]
+    },
+    {
+     "tpl": " Bài học tôi mang sang năm Đinh Mùi: {d5lesson}.",
+     "need": [
+      "d5lesson"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Mùng 1 Tết",
+   "title": "Mùng 1 Tết Đinh Mùi, chúc mừng năm mới",
+   "time": "Khoảng 5 phút",
+   "cards": [
+    {
+     "h": "Một câu cho mùng 1 năm sau",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d6wish",
+       "q": "Mùng 1 Tết năm sau, nhìn lại năm Đinh Mùi, tôi muốn thấy",
+       "ph": "Ví dụ: tôi vẫn giữ thói quen này và quay lại nhanh mỗi lần lỡ"
+      },
+      {
+       "f": "show",
+       "text": "Câu tự nhắc tử tế: {j_kind}",
+       "need": [
+        "j_kind"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d6mini",
+       "label": "Sáng nay đã làm phiên bản Tết của thói quen (không bắt buộc)"
+      }
+     ]
+    },
+    {
+     "h": "Tuần giáp Tết của tôi",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mọi điều đã viết trong tuần tự gom lại ở đây. Ô nào còn dấu ba chấm thì quay lại ngày đó để điền."
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Điều làm tốt",
+         "keys": [
+          "d1best"
+         ]
+        },
+        {
+         "label": "Câu tự nhắc",
+         "keys": [
+          "j_kind"
+         ]
+        },
+        {
+         "label": "Bài học",
+         "keys": [
+          "d3lesson"
+         ]
+        },
+        {
+         "label": "Phiên bản Tết",
+         "keys": [
+          "j_tet_mini"
+         ]
+        },
+        {
+         "label": "Tự hào năm Bính Ngọ",
+         "keys": [
+          "d5proud"
+         ]
+        },
+        {
+         "label": "Mùng 1 năm sau",
+         "keys": [
+          "d6wish"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau, Công thức #0039 Đừng bao giờ ăn một mình mở tuần khai xuân từ Thứ Hai 08.02, mùng 3 Tết."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Năm Đinh Mùi, tôi mong mùng 1 năm sau nhìn lại sẽ thấy: {d6wish}.",
+     "need": [
+      "d6wish"
+     ]
+    },
+    {
+     "tpl": " Câu tự nhắc tôi mang theo: {j_kind}.",
+     "need": [
+      "j_kind"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}
