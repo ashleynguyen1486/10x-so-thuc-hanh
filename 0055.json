@@ -1,0 +1,520 @@
+{
+ "id": "0055",
+ "name": "Zettelkasten",
+ "storeKey": "sth-0055-6n",
+ "kicker": "Công thức #0055",
+ "title": "Zettelkasten: hộp thẻ ghi chú",
+ "sub": "Mỗi buổi học kết thúc bằng một thẻ ghi chú viết bằng lời của mình, đánh số và nối với thẻ cũ. Hộp thẻ dần thành kho ý tưởng cho công việc. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "card",
+  "word": "Tò mò",
+  "big": "6/6",
+  "unit": "NGÀY GHI THẺ",
+  "line": "Hộp thẻ: {j_zk|mỗi buổi học một thẻ bằng lời của mình}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Thẻ đầu tiên",
+   "title": "Tấm thẻ đầu tiên",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Thói quen và kỹ năng đang học",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Dự án học của quý 2: {j_learn_project}",
+       "need": [
+        "j_learn_project"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Câu hỏi khép buổi học: {j_bloom}",
+       "need": [
+        "j_bloom"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và một kỹ năng muốn học thêm cho công việc ở các ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: giữ lại điều mình học để dùng được về sau"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: đầu ca, 15 phút xem lại biểu đồ chất lượng hôm qua"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_skill",
+       "q": "Kỹ năng tôi đang học trong quý 2",
+       "ph": "Ví dụ: kiểm soát quá trình bằng biểu đồ kiểm soát"
+      }
+     ]
+    },
+    {
+     "h": "Thẻ số 1",
+     "items": [
+      {
+       "f": "note",
+       "text": "Một ý đáng giữ nhất của buổi học, viết bằng lời của mình, không quá năm câu. Góc trên bên phải ghi số 1. Dòng cuối ghi nguồn và ngày."
+      },
+      {
+       "f": "ta",
+       "k": "d1idea",
+       "q": "Ý trên thẻ số 1",
+       "ph": "Ví dụ: Biểu đồ kiểm soát giúp tách biến động thông thường với biến động có nguyên nhân đặc biệt"
+      },
+      {
+       "f": "tx",
+       "k": "d1src",
+       "q": "Nguồn",
+       "ph": "Ví dụ: tài liệu đào tạo chất lượng, trang 8"
+      },
+      {
+       "f": "cb",
+       "k": "d1own",
+       "label": "Thẻ viết bằng lời của tôi, không chép nguyên văn"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Thẻ số 1 trong hộp thẻ của tôi: “{d1idea}”.",
+     "need": [
+      "d1idea"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Tò mò",
+   "title": "Hôm nay hỏi “vì sao” như một đứa trẻ",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Một câu hỏi tò mò",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d2kind",
+       "q": "Tôi chọn câu hỏi mở",
+       "opts": [
+        "Vì sao",
+        "Ngạc nhiên",
+        "Hỏi người giỏi",
+        "Ngại hỏi"
+       ],
+       "hints": [
+        "Về kỹ năng đang học, câu “vì sao” nào mình chưa trả lời được?",
+        "Điều gì trong buổi học tuần trước làm mình ngạc nhiên?",
+        "Nếu được hỏi người giỏi nhất về kỹ năng này một câu, mình sẽ hỏi gì?",
+        "Câu hỏi nào mình đã ngại hỏi trong một cuộc họp?"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2q",
+       "q": "Câu hỏi của tôi",
+       "ph": "Ví dụ: Vì sao chọn mẫu năm sản phẩm mỗi giờ mà không phải mười?"
+      }
+     ]
+    },
+    {
+     "h": "Tấm thẻ thứ hai",
+     "items": [
+      {
+       "f": "note",
+       "text": "Câu hỏi ở dòng đầu, điều đã tìm được sau 20 phút học ở dưới, dù chưa đầy đủ. Tiếp nối ý thẻ 1 thì đánh số 1a, hướng mới thì đánh số 2."
+      },
+      {
+       "f": "tx",
+       "k": "d2num",
+       "q": "Số của thẻ mới",
+       "ph": "Ví dụ: 1b"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt, kèm 20 phút học."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Câu hỏi tò mò của tôi hôm nay: “{d2q}”.",
+     "need": [
+      "d2q"
+     ]
+    },
+    {
+     "tpl": " Thẻ mới mang số {d2num}.",
+     "need": [
+      "d2num"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Ba loại ghi chú",
+   "title": "Ba loại ghi chú, chỉ một loại vào hộp",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Ba loại ghi chú",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ghi chú tạm: ý chợt đến, viết vội, đọc lại trong một hai ngày rồi chuyển hoặc bỏ. Ghi chú tài liệu: điều hiểu từ một nguồn, kèm nguồn, giữ theo tài liệu. Thẻ lâu dài: một ý, câu hoàn chỉnh, sáu tháng sau đọc vẫn hiểu, đánh số, nối với thẻ cũ. Chỉ thẻ lâu dài vào hộp."
+      },
+      {
+       "f": "cb",
+       "k": "d3a",
+       "label": "Đã gom giấy dán, tin nhắn tự gửi và chữ bên lề của tuần"
+      },
+      {
+       "f": "cb",
+       "k": "d3b",
+       "label": "Đã viết lại những ý đáng giữ thành thẻ lâu dài"
+      },
+      {
+       "f": "cb",
+       "k": "d3c",
+       "label": "Đã bỏ đi phần còn lại"
+      }
+     ]
+    },
+    {
+     "h": "Đếm lại",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d3tmp",
+         "q": "Số ghi chú tạm đã gom"
+        },
+        {
+         "k": "d3keep",
+         "q": "Số thẻ lâu dài giữ lại"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hôm nay tôi gom {d3tmp} ghi chú tạm và giữ lại {d3keep} thẻ lâu dài.",
+     "need": [
+      "d3tmp",
+      "d3keep"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Lời của mình",
+   "title": "Chép lại hay viết bằng lời của mình?",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Trước: đoạn chép",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d4src",
+       "q": "Đoạn đã gạch chân hoặc chép nguyên văn (tóm tắt vài chữ)",
+       "ph": "Ví dụ: Giới hạn kiểm soát tính từ dữ liệu của quá trình"
+      }
+     ]
+    },
+    {
+     "h": "Sau: thẻ bằng lời của mình",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d4card",
+       "q": "Thẻ viết lại, không quá năm câu",
+       "ph": "Ví dụ: Không đem dung sai bản vẽ lên biểu đồ kiểm soát; giới hạn phải tính từ chính dữ liệu dây chuyền ép. Xem thêm thẻ 1a."
+      },
+      {
+       "f": "cb",
+       "k": "d4s1",
+       "label": "Không mở lại nguồn vẫn hiểu"
+      },
+      {
+       "f": "cb",
+       "k": "d4s2",
+       "label": "Có một câu về ý nghĩa với công việc của tôi"
+      },
+      {
+       "f": "cb",
+       "k": "d4s3",
+       "label": "Có một liên kết hoặc một câu hỏi tiếp theo"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi viết lại một đoạn chép nguyên văn thành thẻ bằng lời của mình: “{d4card}”.",
+     "need": [
+      "d4card"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Nối thẻ",
+   "title": "Thẻ 1, thẻ 1a, thẻ 1a1: cách các ý nối với nhau",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "Đánh số kiểu Luhmann",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ý hoàn toàn mới: số tiếp theo (1, 2, 3). Đi tiếp một thẻ: thêm chữ cái (1 → 1a, 1b). Đi sâu từ thẻ có chữ: thêm số (1a → 1a1). Số đã đặt thì không đổi."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d5n",
+         "q": "Số thẻ trong hộp"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Một liên kết hai chiều",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5a",
+       "q": "Thẻ",
+       "ph": "Ví dụ: 2"
+      },
+      {
+       "f": "tx",
+       "k": "d5b",
+       "q": "Nối với thẻ",
+       "ph": "Ví dụ: 1a"
+      },
+      {
+       "f": "cb",
+       "k": "d5both",
+       "label": "Đã ghi “Xem thêm” ở cả hai thẻ"
+      },
+      {
+       "f": "tx",
+       "k": "d5idx",
+       "q": "Thẻ mục lục của dự án học",
+       "ph": "Ví dụ: Biểu đồ kiểm soát → 1. Đo lường → 2"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hộp thẻ của tôi có {d5n} thẻ.",
+     "need": [
+      "d5n"
+     ]
+    },
+    {
+     "tpl": " Liên kết mới: thẻ {d5a} nối với thẻ {d5b}.",
+     "need": [
+      "d5a",
+      "d5b"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Một tuần",
+   "title": "Nhật ký một tuần của hộp thẻ",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Hành trình Mùa 3 của tôi",
+     "items": [
+      {
+       "f": "note",
+       "text": "Những điều đã lưu cho cả hành trình từ đầu Mùa 3. Ô nào còn dấu ba chấm là tuần đó chưa điền, vẫn có thể quay lại."
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Kỹ năng đang học (#0047)",
+         "keys": [
+          "j_learn_skill"
+         ]
+        },
+        {
+         "label": "Dự án học quý 2 (#0047)",
+         "keys": [
+          "j_learn_project"
+         ]
+        },
+        {
+         "label": "Cách tự kiểm tra (#0048)",
+         "keys": [
+          "j_recall"
+         ]
+        },
+        {
+         "label": "Cách dùng trang Cornell (#0049)",
+         "keys": [
+          "j_cornell"
+         ]
+        },
+        {
+         "label": "Bộ ba kỹ năng (#0050)",
+         "keys": [
+          "j_stack"
+         ]
+        },
+        {
+         "label": "Cung điện trí nhớ (#0051)",
+         "keys": [
+          "j_palace"
+         ]
+        },
+        {
+         "label": "Cách trộn (#0052)",
+         "keys": [
+          "j_mix"
+         ]
+        },
+        {
+         "label": "Khép buổi học bằng bản đồ (#0053)",
+         "keys": [
+          "j_map"
+         ]
+        },
+        {
+         "label": "Câu hỏi khép buổi học (#0054)",
+         "keys": [
+          "j_bloom"
+         ]
+        },
+        {
+         "label": "Quy ước hộp thẻ (#0055)",
+         "keys": [
+          "j_zk"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Nhìn lại hộp thẻ",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6n",
+         "q": "Số thẻ trong hộp sau một tuần"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6idea",
+       "q": "Thẻ gợi ý được điều gì đó cho dự án học",
+       "ph": "Ví dụ: thẻ 2, cần chuẩn hoá cách đo trước khi dựng biểu đồ"
+      },
+      {
+       "f": "tx",
+       "k": "j_zk",
+       "q": "Quy ước hộp thẻ của tôi",
+       "ph": "Ví dụ: cuối mỗi buổi học, một thẻ bằng lời của mình, nối với ít nhất một thẻ cũ"
+      },
+      {
+       "f": "note",
+       "text": "Quy ước này được lưu cho cả hành trình."
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã in thẻ mục lục (phiếu Ngày 6) và đặt ở đầu hộp"
+      },
+      {
+       "f": "show",
+       "text": "Tổng số ngày giữ thói quen trên cả hành trình: {jtotal}.",
+       "need": [
+        "jtotal"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau: Phương pháp PARA, sắp xếp tài liệu học và tài liệu công việc vào bốn nhóm Dự án, Lĩnh vực, Tài nguyên, Lưu trữ."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Sau một tuần, hộp thẻ của tôi có {d6n} thẻ.",
+     "need": [
+      "d6n"
+     ]
+    },
+    {
+     "tpl": " Quy ước của tôi: {j_zk}.",
+     "need": [
+      "j_zk"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

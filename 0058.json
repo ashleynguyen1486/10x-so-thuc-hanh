@@ -1,0 +1,648 @@
+{
+ "id": "0058",
+ "name": "Xây dựng công khai",
+ "storeKey": "sth-0058-6n",
+ "kicker": "Công thức #0058",
+ "title": "Xây dựng công khai",
+ "sub": "Mỗi tuần chia sẻ một điều đã học từ dự án học, với nhóm của mình hoặc cộng đồng 10X: chọn điều an toàn để chia sẻ, viết năm câu, chuẩn bị như thể sắp giảng lại, đón nhận phản hồi. Tuần cuối trước khi khép Mùa 3. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "chain",
+  "unit": "NGÀY GIỮ THÓI QUEN",
+  "line": "Nhịp chia sẻ: {j_share|mỗi tuần một điều đã học}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Nơi chia sẻ",
+   "title": "Chọn nơi chia sẻ và điều đầu tiên",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Hành trình đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Dự án học: {j_learn_project}",
+       "need": [
+        "j_learn_project"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt, một kỹ năng đang học trong công việc và một sản phẩm nhỏ muốn làm ra. Ô nào đã có nội dung từ các tuần trước sẽ hiện sẵn."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: sẵn lòng chia sẻ điều mình biết với đồng nghiệp"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: 15 phút đầu giờ đọc lại hồ sơ ứng viên trong ngày"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_skill",
+       "q": "Kỹ năng tôi đang học",
+       "ph": "Ví dụ: phỏng vấn theo năng lực"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_project",
+       "q": "Dự án học (sản phẩm và ngày)",
+       "ph": "Ví dụ: bộ câu hỏi phỏng vấn cho vị trí kinh doanh, cuối tháng 6"
+      }
+     ]
+    },
+    {
+     "h": "Nơi chia sẻ",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d1where",
+       "q": "Tôi sẽ chia sẻ điều mình học với",
+       "opts": [
+        "nhóm của tôi",
+        "buổi họp tuần",
+        "một đồng nghiệp học cùng",
+        "cộng đồng 10X"
+       ],
+       "hints": [
+        "Nhóm chat hoặc nhóm làm việc nhỏ, nơi mọi người dùng được điều mình học.",
+        "Một hai phút cuối buổi họp, nói trực tiếp.",
+        "Một người đang học cùng kỹ năng, dễ trao đổi hai chiều.",
+        "Bình luận trong 10X Excellence Hub, chỉ chia sẻ cách làm và bài học."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Ba điều đã học từ dự án học",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d1l1",
+       "q": "Điều 1",
+       "ph": "Ví dụ: câu hỏi đào sâu khi ứng viên trả lời chung chung"
+      },
+      {
+       "f": "tx",
+       "k": "d1l2",
+       "q": "Điều 2",
+       "ph": ""
+      },
+      {
+       "f": "tx",
+       "k": "d1l3",
+       "q": "Điều 3",
+       "ph": ""
+      },
+      {
+       "f": "pick",
+       "k": "d1topic",
+       "kp": "d1l",
+       "n": 3,
+       "empty": "Viết ba điều ở trên, rồi bấm chọn điều chia sẻ đầu tiên."
+      },
+      {
+       "f": "note",
+       "text": "Bấm vào điều muốn chia sẻ đầu tiên. Điều nhỏ cũng đáng chia sẻ."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi sẽ chia sẻ điều mình học với {d1where}.",
+     "need": [
+      "d1where"
+     ]
+    },
+    {
+     "tpl": " Điều đầu tiên: {d1topic}.",
+     "need": [
+      "d1topic"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Ranh giới",
+   "title": "Chia sẻ được gì, giữ riêng gì?",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Xếp ba điều vào ba vùng",
+     "items": [
+      {
+       "f": "note",
+       "text": "Phép thử: nếu khách hàng hoặc quản lý của mình đọc, họ có thấy thoải mái không? Chưa chắc thì chuyển xuống một vùng."
+      },
+      {
+       "f": "show",
+       "text": "Điều 1: {d1l1}",
+       "need": [
+        "d1l1"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2z1",
+       "q": "Điều 1 thuộc vùng",
+       "opts": [
+        "Chia sẻ được",
+        "Làm mờ rồi chia sẻ",
+        "Giữ riêng"
+       ],
+       "hints": [
+        "Cách làm, bài học từ sai sót của chính mình (kể ở mức chung), tài liệu công khai, câu hỏi mình đang tìm câu trả lời.",
+        "Ví dụ từ công việc thật sau khi bỏ tên khách hàng, tên dự án, con số cụ thể; mẫu biểu đã xoá dữ liệu thật.",
+        "Thông tin khách hàng, hợp đồng, giá, số liệu chưa công bố, tài liệu có quy định bảo mật, nhận xét về người khác. Phân vân thì hỏi quản lý trước."
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Điều 2: {d1l2}",
+       "need": [
+        "d1l2"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2z2",
+       "q": "Điều 2 thuộc vùng",
+       "opts": [
+        "Chia sẻ được",
+        "Làm mờ rồi chia sẻ",
+        "Giữ riêng"
+       ],
+       "hints": [
+        "Cách làm, bài học từ sai sót của chính mình (kể ở mức chung), tài liệu công khai, câu hỏi mình đang tìm câu trả lời.",
+        "Ví dụ từ công việc thật sau khi bỏ tên khách hàng, tên dự án, con số cụ thể; mẫu biểu đã xoá dữ liệu thật.",
+        "Thông tin khách hàng, hợp đồng, giá, số liệu chưa công bố, tài liệu có quy định bảo mật, nhận xét về người khác. Phân vân thì hỏi quản lý trước."
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Điều 3: {d1l3}",
+       "need": [
+        "d1l3"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d2z3",
+       "q": "Điều 3 thuộc vùng",
+       "opts": [
+        "Chia sẻ được",
+        "Làm mờ rồi chia sẻ",
+        "Giữ riêng"
+       ],
+       "hints": [
+        "Cách làm, bài học từ sai sót của chính mình (kể ở mức chung), tài liệu công khai, câu hỏi mình đang tìm câu trả lời.",
+        "Ví dụ từ công việc thật sau khi bỏ tên khách hàng, tên dự án, con số cụ thể; mẫu biểu đã xoá dữ liệu thật.",
+        "Thông tin khách hàng, hợp đồng, giá, số liệu chưa công bố, tài liệu có quy định bảo mật, nhận xét về người khác. Phân vân thì hỏi quản lý trước."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Viết lại cho an toàn",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d2safe",
+       "q": "Điều tôi chia sẻ được (đã làm mờ nếu cần)",
+       "ph": "Ví dụ: cách hỏi lại khi ứng viên trả lời chung chung"
+      },
+      {
+       "f": "tx",
+       "k": "d2keep",
+       "q": "Loại thông tin tôi giữ riêng (không ghi nội dung)",
+       "ph": "Ví dụ: hồ sơ và kết quả phỏng vấn của ứng viên"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt và 20 phút học. Dòng bên dưới đếm tổng số ngày của cả hành trình."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Điều tôi chia sẻ được: {d2safe}.",
+     "need": [
+      "d2safe"
+     ]
+    },
+    {
+     "tpl": " Điều tôi giữ riêng: {d2keep}.",
+     "need": [
+      "d2keep"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Viết bài",
+   "title": "Giải phẫu một bài chia sẻ ngắn",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Năm phần, mỗi phần một câu",
+     "items": [
+      {
+       "f": "show",
+       "text": "Điều sẽ chia sẻ: {d2safe}",
+       "need": [
+        "d2safe"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3p1",
+       "q": "1. Câu mở: điều đã học",
+       "ph": "Ví dụ: Tuần này tôi học được cách hỏi lại khi ứng viên trả lời chung chung."
+      },
+      {
+       "f": "tx",
+       "k": "d3p2",
+       "q": "2. Tình huống trước đó",
+       "ph": "Ví dụ: Trước đây tôi hay chuyển sang câu khác và thiếu thông tin để đánh giá."
+      },
+      {
+       "f": "tx",
+       "k": "d3p3",
+       "q": "3. Cách làm cụ thể",
+       "ph": "Ví dụ: Giờ tôi đề nghị ứng viên kể đúng một lần cụ thể."
+      },
+      {
+       "f": "tx",
+       "k": "d3p4",
+       "q": "4. Lời mời dùng chung",
+       "ph": "Ví dụ: Ai cần bộ câu hỏi, tôi gửi ngay."
+      },
+      {
+       "f": "tx",
+       "k": "d3p5",
+       "q": "5. Điều còn chưa chắc",
+       "ph": "Ví dụ: Khi ứng viên vẫn trả lời chung chung lần hai, mọi người hỏi tiếp thế nào?"
+      }
+     ]
+    },
+    {
+     "h": "Hoàn thiện bản nháp",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3title",
+       "q": "Tiêu đề ngắn cho bài",
+       "ph": "Ví dụ: Một câu hỏi giúp ứng viên nói cụ thể"
+      },
+      {
+       "f": "cb",
+       "k": "d3check",
+       "label": "Đã đọc lại bằng phép thử hôm qua: không có tên khách hàng, dự án, con số nội bộ"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Bài chia sẻ đầu tiên của tôi đã có bản nháp: {d3title}.",
+     "need": [
+      "d3title"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Giảng lại",
+   "title": "Chuẩn bị như thể sắp giảng lại",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Chuẩn bị để giảng lại",
+     "items": [
+      {
+       "f": "note",
+       "text": "Nestojko và cộng sự (2014): người học chuẩn bị để dạy lại nhớ ý chính tốt hơn và sắp xếp kiến thức mạch lạc hơn người chuẩn bị để làm bài kiểm tra. Hình dung mình sắp giải thích cho một đồng nghiệp mới."
+      },
+      {
+       "f": "show",
+       "text": "Bản nháp: {d3title}",
+       "need": [
+        "d3title"
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d4main",
+       "q": "Ba ý chính người nghe cần nhớ, theo đúng trình tự",
+       "ph": "Ví dụ: hỏi một lần cụ thể; hỏi thời gian và kết quả; ghi lại nguyên văn"
+      }
+     ]
+    },
+    {
+     "h": "Chia sẻ thật",
+     "items": [
+      {
+       "f": "show",
+       "text": "Nơi chia sẻ đã chọn: {d1where}",
+       "need": [
+        "d1where"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d4done",
+       "label": "Đã chia sẻ hôm nay (bài viết, trong buổi họp hoặc nói trực tiếp đều được)"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi đã chia sẻ bài {d3title} với {d1where}.",
+     "need": [
+      "d3title",
+      "d1where"
+     ]
+    },
+    {
+     "tpl": " Ba ý chính khi chuẩn bị để giảng lại: {d4main}.",
+     "need": [
+      "d4main"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Phản hồi và nhịp",
+   "title": "Phản hồi làm bài học sâu hơn",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Đón nhận phản hồi",
+     "items": [
+      {
+       "f": "note",
+       "text": "Im lặng ban đầu là bình thường. Cảm ơn trước, giải thích sau. Chọn điều dùng được, đưa vào hộp thẻ hoặc thư mục dự án học."
+      },
+      {
+       "f": "tx",
+       "k": "d5fb",
+       "q": "Một phản hồi nhận được (ghi vai trò người góp ý)",
+       "ph": "Ví dụ: trưởng nhóm tuyển dụng gợi ý hỏi thời gian và kết quả"
+      },
+      {
+       "f": "cb",
+       "k": "d5thx",
+       "label": "Đã cảm ơn người góp ý"
+      },
+      {
+       "f": "tx",
+       "k": "d5learn",
+       "q": "Điều tôi học thêm nhờ phản hồi (hoặc nhờ chuẩn bị giảng lại)",
+       "ph": "Ví dụ: hỏi ứng viên kể một lần cụ thể có thời gian và kết quả"
+      }
+     ]
+    },
+    {
+     "h": "Nhịp chia sẻ",
+     "items": [
+      {
+       "f": "tx",
+       "k": "j_share",
+       "q": "Nhịp chia sẻ của tôi: khi nào, ở đâu, mỗi lần bao nhiêu",
+       "ph": "Ví dụ: chiều Thứ Năm mỗi tuần, một điều đã học, gửi nhóm chat của phòng"
+      },
+      {
+       "f": "note",
+       "text": "Nhịp chia sẻ được lưu cho cả hành trình."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Nhịp chia sẻ của tôi: {j_share}.",
+     "need": [
+      "j_share"
+     ]
+    },
+    {
+     "tpl": " Điều tôi học thêm nhờ phản hồi: {d5learn}.",
+     "need": [
+      "d5learn"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5. Nhịp chia sẻ được lưu cho cả hành trình."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Nhìn lại Mùa 3",
+   "title": "Nhìn lại mười hai tuần Mùa 3",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Bảng gom Mùa 3",
+     "items": [
+      {
+       "f": "note",
+       "text": "Những điều đã lưu cho cả hành trình trong Mùa 3 hiện lại ở đây. Ô nào còn dấu ba chấm là tuần đó chưa điền, vẫn có thể quay lại."
+      },
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Kỹ năng đang học (#0047)",
+         "keys": [
+          "j_learn_skill"
+         ]
+        },
+        {
+         "label": "Dự án học (#0047)",
+         "keys": [
+          "j_learn_project"
+         ]
+        },
+        {
+         "label": "Cách tự kiểm tra (#0048)",
+         "keys": [
+          "j_recall"
+         ]
+        },
+        {
+         "label": "Cách dùng trang Cornell (#0049)",
+         "keys": [
+          "j_cornell"
+         ]
+        },
+        {
+         "label": "Bộ ba kỹ năng (#0050)",
+         "keys": [
+          "j_stack"
+         ]
+        },
+        {
+         "label": "Cung điện trí nhớ (#0051)",
+         "keys": [
+          "j_palace"
+         ]
+        },
+        {
+         "label": "Cách trộn (#0052)",
+         "keys": [
+          "j_mix"
+         ]
+        },
+        {
+         "label": "Khép buổi học bằng bản đồ (#0053)",
+         "keys": [
+          "j_map"
+         ]
+        },
+        {
+         "label": "Câu hỏi khép buổi học (#0054)",
+         "keys": [
+          "j_bloom"
+         ]
+        },
+        {
+         "label": "Quy ước hộp thẻ (#0055)",
+         "keys": [
+          "j_zk"
+         ]
+        },
+        {
+         "label": "Thư mục dự án học (#0056)",
+         "keys": [
+          "j_para"
+         ]
+        },
+        {
+         "label": "Vòng tự đánh giá (#0057)",
+         "keys": [
+          "j_meta"
+         ]
+        },
+        {
+         "label": "Nhịp chia sẻ (#0058)",
+         "keys": [
+          "j_share"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Tổng số ngày giữ thói quen trên cả hành trình: {jtotal}.",
+       "need": [
+        "jtotal"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Điều tự hào và điều mang theo",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d6stage",
+       "q": "Chặng tôi thấy mình tiến nhiều nhất",
+       "opts": [
+        "Chọn hướng",
+        "Học sao cho nhớ",
+        "Giữ và sắp xếp",
+        "Hiểu sâu và chia sẻ"
+       ],
+       "hints": [
+        "Siêu học, xếp chồng kỹ năng (#0047, #0050).",
+        "Truy hồi, cung điện trí nhớ, học xen kẽ, bản đồ tư duy (#0048, #0051 đến #0053).",
+        "Cornell, hộp thẻ, PARA (#0049, #0055, #0056).",
+        "Bloom, tự đánh giá, xây dựng công khai (#0054, #0057, #0058)."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6proud",
+       "q": "Điều tôi tự hào nhất về Mùa 3",
+       "ph": "Ví dụ: có bộ câu hỏi phỏng vấn đầu tiên do chính mình soạn"
+      },
+      {
+       "f": "tx",
+       "k": "d6carry",
+       "q": "Một điều tôi mang vào tuần khép mùa",
+       "ph": "Ví dụ: hoàn thiện dự án học và trình bày cho trưởng nhóm"
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã in và điền trang Mùa 3 (phiếu Ngày 6)"
+      },
+      {
+       "f": "note",
+       "text": "Từ Thứ Hai 28.06 (Ngày Gia đình Việt Nam): tuần khép Mùa 3. Quý 2 khép lại Thứ Tư 30.06."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Mùa 3 của tôi: {d6proud}.",
+     "need": [
+      "d6proud"
+     ]
+    },
+    {
+     "tpl": " Điều tôi mang vào tuần khép mùa: {d6carry}.",
+     "need": [
+      "d6carry"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

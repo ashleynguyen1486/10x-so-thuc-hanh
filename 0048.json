@@ -1,0 +1,570 @@
+{
+ "id": "0048",
+ "name": "Truy hồi chủ động",
+ "storeKey": "sth-0048-6n",
+ "kicker": "Công thức #0048",
+ "title": "Truy hồi chủ động",
+ "sub": "Trong 20 phút học sau thói quen then chốt, bớt đọc lại, thêm tự kiểm tra: gập tài liệu, tự viết ra, tự đặt câu hỏi rồi mới mở ra đối chiếu. Thứ Sáu 16.04 Giỗ Tổ: bài nhẹ. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "check",
+  "line": "Cách tự kiểm tra của tôi: {j_recall|gập tài liệu, tự viết ra}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Trang giấy trắng",
+   "title": "Đọc lại bốn lần hay tự kiểm tra ba lần?",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thói quen và kỹ năng đang học",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng quý 2: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Dự án học: {j_learn_project}",
+       "need": [
+        "j_learn_project"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và một kỹ năng đang muốn học trong công việc. Ba ô này được lưu cho cả hành trình."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: nắm chắc sản phẩm trước khi gặp khách hàng"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: đọc email khách hàng quan trọng nhất trước 9 giờ"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_skill",
+       "q": "Kỹ năng tôi đang học",
+       "ph": "Ví dụ: chính sách và tính năng dòng sản phẩm mới"
+      }
+     ]
+    },
+    {
+     "h": "Trang giấy trắng",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d1part",
+       "q": "Phần nhỏ tôi học hôm nay",
+       "ph": "Ví dụ: ba gói sản phẩm và điểm khác nhau"
+      },
+      {
+       "f": "note",
+       "text": "Đọc hoặc xem khoảng 8 phút. Gập tài liệu, viết ra giấy trắng mọi điều nhớ được trong 7 phút. Mở ra đối chiếu 5 phút."
+      },
+      {
+       "f": "timer",
+       "k": "d1t",
+       "dk": "d1min",
+       "def": 8,
+       "opts": [
+        5,
+        7,
+        8,
+        10
+       ],
+       "note": "Dùng đồng hồ cho từng chặng: 8 phút đọc, 7 phút viết, 5 phút đối chiếu."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1ideas",
+         "q": "Số ý tự viết lại được"
+        },
+        {
+         "k": "d1miss",
+         "q": "Số ý bị sót khi đối chiếu"
+        }
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d1fix",
+       "label": "Đã ghi lại những ý bị sót để tự hỏi lại vào ngày mai"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Trang giấy trắng đầu tiên: tôi tự viết lại được {d1ideas} ý về {d1part}",
+     "need": [
+      "d1ideas",
+      "d1part"
+     ]
+    },
+    {
+     "tpl": ", sót {d1miss} ý",
+     "need": [
+      "d1miss"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d1ideas",
+      "d1part"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Câu hỏi tốt",
+   "title": "Câu hỏi buộc mình phải nhớ lại",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Năm cặp câu hỏi",
+     "items": [
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Mỗi câu hỏi dưới đây theo một cặp: tiêu đề thành câu hỏi; có hoặc không thành vì sao; định nghĩa thành tình huống; gợi sẵn đáp án thành để trống; câu hỏi lớn thành câu hỏi một ý."
+      },
+      {
+       "f": "tx",
+       "k": "d2q1",
+       "q": "Câu 1 (Tiêu đề → câu hỏi)",
+       "ph": "Ví dụ: khách mua được 10 ngày muốn đổi, phải kiểm tra những điều kiện nào?"
+      },
+      {
+       "f": "tx",
+       "k": "d2q2",
+       "q": "Câu 2 (Có hoặc không → vì sao)",
+       "ph": "Ví dụ: vì sao một tháng có lãi mà vẫn thiếu tiền trả nhà cung cấp?"
+      },
+      {
+       "f": "tx",
+       "k": "d2q3",
+       "q": "Câu 3 (Định nghĩa → tình huống)",
+       "ph": "Ví dụ: ứng viên trả lời chung chung, câu hỏi tiếp theo là gì?"
+      },
+      {
+       "f": "tx",
+       "k": "d2q4",
+       "q": "Câu 4 (Gợi sẵn đáp án → để trống)",
+       "ph": "Ví dụ: bốn bước xử lý khiếu nại theo đúng trình tự là gì?"
+      },
+      {
+       "f": "tx",
+       "k": "d2q5",
+       "q": "Câu 5 (Câu hỏi lớn → câu hỏi một ý)",
+       "ph": "Ví dụ: khách đề nghị giảm 10%, điều đầu tiên mình hỏi lại là gì?"
+      }
+     ]
+    },
+    {
+     "h": "Tự trả lời, rồi đối chiếu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Đặt tài liệu sang một bên, trả lời cả năm câu ra giấy. Sau đó mới mở tài liệu đối chiếu."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d2right",
+         "q": "Số câu trả lời đúng (trên 5)"
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Bấm vào câu khó nhất. Câu này sẽ được hỏi lại vào Thứ Sáu."
+      },
+      {
+       "f": "pick",
+       "k": "d2hard",
+       "kp": "d2q",
+       "n": 5,
+       "empty": "Viết ít nhất một câu hỏi ở trên để chọn."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi viết 5 câu hỏi cho kỹ năng {j_learn_skill}.",
+     "need": [
+      "j_learn_skill"
+     ]
+    },
+    {
+     "tpl": " Câu khó nhất: {d2hard}",
+     "need": [
+      "d2hard"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Thí nghiệm nhỏ",
+   "title": "Một thí nghiệm nhỏ trên chính mình",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Vật liệu và cách chia",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mười ý của kỹ năng đang học: mười điều cần nhớ, mười bước của một quy trình, hoặc mười câu giải thích ngắn. Chia thành hai nhóm khó như nhau."
+      },
+      {
+       "f": "ta",
+       "k": "d3a",
+       "q": "Nhóm A: năm ý chỉ đọc lại",
+       "ph": "Ví dụ: 1. hạn đổi trả 30 ngày; 2. ..."
+      },
+      {
+       "f": "ta",
+       "k": "d3b",
+       "q": "Nhóm B: năm ý tự kiểm tra (che đáp án, tự trả lời)",
+       "ph": "Ví dụ: 1. quyền giảm giá của trưởng ca; 2. ..."
+      }
+     ]
+    },
+    {
+     "h": "Dự đoán trước",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d3guess",
+       "q": "Sáng Thứ Bảy, khi viết lại mười ý không nhìn tài liệu",
+       "opts": [
+        "nhóm A nhớ hơn",
+        "nhóm B nhớ hơn",
+        "hai nhóm như nhau"
+       ],
+       "hints": [
+        "Đọc lại nhiều lần thường tạo cảm giác quen và yên tâm. Thứ Bảy sẽ so lại.",
+        "Đây là điều các nghiên cứu về truy hồi thường thấy. Thứ Bảy sẽ kiểm tra trên chính mình.",
+        "Với mười ý và ba ngày, kết quả như nhau hoàn toàn có thể xảy ra."
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Lịch: hôm nay, Thứ Năm, Thứ Sáu, mỗi ngày khoảng 5 phút. Đọc lại nhóm A một lượt. Với nhóm B, che đáp án, tự trả lời rồi mới mở ra."
+      },
+      {
+       "f": "cb",
+       "k": "d3r1",
+       "label": "Đã làm vòng đầu hôm nay"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Thí nghiệm nhỏ của tôi: 5 ý đọc lại, 5 ý tự kiểm tra.",
+     "need": [
+      "d3a"
+     ]
+    },
+    {
+     "tpl": " Dự đoán của tôi: {d3guess}.",
+     "need": [
+      "d3guess"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Mười cách học",
+   "title": "Mười cách học, xếp theo bằng chứng",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Cách tôi đang dùng trong 20 phút học",
+     "items": [
+      {
+       "f": "note",
+       "text": "Theo tổng quan của Dunlosky và cộng sự (2013). Mức thấp không có nghĩa là vô ích, chỉ là bằng chứng hạn chế hoặc hiệu quả phụ thuộc nhiều điều kiện."
+      },
+      {
+       "f": "cb",
+       "k": "d4t1",
+       "label": "Tự kiểm tra (cao)"
+      },
+      {
+       "f": "cb",
+       "k": "d4t2",
+       "label": "Học cách quãng (cao)"
+      },
+      {
+       "f": "cb",
+       "k": "d4t3",
+       "label": "Tự hỏi vì sao (vừa)"
+      },
+      {
+       "f": "cb",
+       "k": "d4t4",
+       "label": "Tự giải thích (vừa)"
+      },
+      {
+       "f": "cb",
+       "k": "d4t5",
+       "label": "Học xen kẽ (vừa)"
+      },
+      {
+       "f": "cb",
+       "k": "d4t6",
+       "label": "Tóm tắt (thấp)"
+      },
+      {
+       "f": "cb",
+       "k": "d4t7",
+       "label": "Tô đậm, gạch chân (thấp)"
+      },
+      {
+       "f": "cb",
+       "k": "d4t8",
+       "label": "Mẹo từ khoá (thấp)"
+      },
+      {
+       "f": "cb",
+       "k": "d4t9",
+       "label": "Hình dung bằng hình ảnh (thấp)"
+      },
+      {
+       "f": "cb",
+       "k": "d4t10",
+       "label": "Đọc lại (thấp)"
+      }
+     ]
+    },
+    {
+     "h": "Bớt một, thêm một",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4from",
+       "q": "Cách tôi bớt",
+       "ph": "Ví dụ: tô đậm tài liệu"
+      },
+      {
+       "f": "tx",
+       "k": "d4to",
+       "q": "Cách tôi thêm",
+       "ph": "Ví dụ: năm phút gập tài liệu tự viết ra"
+      },
+      {
+       "f": "cb",
+       "k": "d4r2",
+       "label": "Đã làm vòng hai của thí nghiệm nhỏ"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt và 20 phút học. Thứ Sáu 16.04 là ngày nghỉ lễ: phiên bản ngắn vẫn được tính."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Trong 20 phút học, tôi bớt {d4from}, thêm {d4to}.",
+     "need": [
+      "d4from",
+      "d4to"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Giỗ Tổ",
+   "title": "Giỗ Tổ, nhớ người đã dạy mình nghề",
+   "time": "Khoảng 10 phút",
+   "cards": [
+    {
+     "h": "Uống nước nhớ nguồn",
+     "items": [
+      {
+       "f": "note",
+       "text": "Thứ Sáu 16.04 là ngày Giỗ Tổ Hùng Vương, mùng 10 tháng 3 âm lịch. Bài nhẹ: không nhìn tài liệu nào, nhớ lại và viết ra."
+      },
+      {
+       "f": "tx",
+       "k": "d5who",
+       "q": "Người đã dạy tôi nhiều nhất về nghề",
+       "ph": "Ví dụ: anh Phong, trưởng nhóm đầu tiên của tôi"
+      },
+      {
+       "f": "ta",
+       "k": "d5three",
+       "q": "Ba điều người đó dạy, đến giờ tôi vẫn dùng",
+       "ph": "Ví dụ: đọc lại email một lần trước khi gửi; ..."
+      },
+      {
+       "f": "tx",
+       "k": "d5one",
+       "q": "Một điều để chia sẻ hôm nay",
+       "ph": "Ví dụ: chuẩn bị ba câu hỏi trước mỗi cuộc gặp khách hàng"
+      }
+     ]
+    },
+    {
+     "h": "Nếu còn thời gian",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d5thanks",
+       "label": "Đã gửi người đó một lời cảm ơn ngắn"
+      },
+      {
+       "f": "show",
+       "text": "Câu khó nhất hôm Thứ Ba: {d2hard}",
+       "need": [
+        "d2hard"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d5r3",
+       "label": "Đã tự trả lời lại năm câu hỏi Thứ Ba, vòng ba của thí nghiệm nhỏ"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Ngày Giỗ Tổ, tôi nhớ đến {d5who}, người đã dạy tôi: {d5one}.",
+     "need": [
+      "d5who",
+      "d5one"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Kết quả",
+   "title": "Kết quả thí nghiệm của chính mình",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Đo thí nghiệm nhỏ",
+     "items": [
+      {
+       "f": "note",
+       "text": "Không nhìn tài liệu, viết ra cả mười ý. Rồi mới mở nhóm A và nhóm B ra đếm."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6a",
+         "q": "Nhóm A (đọc lại) nhớ được, trên 5"
+        },
+        {
+         "k": "d6b",
+         "q": "Nhóm B (tự kiểm tra) nhớ được, trên 5"
+        }
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Dự đoán hôm Thứ Tư: {d3guess}",
+       "need": [
+        "d3guess"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Mẫu rất nhỏ, kết quả nào cũng có giá trị. Có thể đo lại cả mười ý vào Thứ Bảy tuần sau."
+      }
+     ]
+    },
+    {
+     "h": "Cách tự kiểm tra tôi giữ",
+     "items": [
+      {
+       "f": "tx",
+       "k": "j_recall",
+       "q": "Trong 20 phút học, tôi tự kiểm tra bằng cách",
+       "ph": "Ví dụ: 5 phút cuối gập tài liệu, tự viết ra, rồi mới mở ra đối chiếu"
+      },
+      {
+       "f": "show",
+       "text": "Lịch ôn của tôi (tuần #0040): {j_review}",
+       "need": [
+        "j_review"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d6rev",
+       "label": "Từ nay, mỗi lần ôn theo lịch là một lần tự kiểm tra"
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Đã in bộ thẻ câu hỏi gập đôi (phiếu Ngày 6)"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Thí nghiệm nhỏ: đọc lại nhớ {d6a}/5 ý, tự kiểm tra nhớ {d6b}/5 ý.",
+     "need": [
+      "d6a",
+      "d6b"
+     ]
+    },
+    {
+     "tpl": " Cách tự kiểm tra tôi giữ: {j_recall}.",
+     "need": [
+      "j_recall"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

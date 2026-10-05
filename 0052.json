@@ -1,0 +1,558 @@
+{
+ "id": "0052",
+ "name": "Học xen kẽ",
+ "storeKey": "sth-0052-6n",
+ "kicker": "Công thức #0052",
+ "title": "Học xen kẽ",
+ "sub": "Trong 20 phút học, trộn các dạng bài hoặc tình huống thay vì học dồn một dạng, gọi tên dạng trước khi làm, và nhìn cảm giác khó như một tín hiệu đang học sâu. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "curve",
+  "big": "ABC",
+  "unit": "HỌC XEN KẼ",
+  "line": "Cách trộn: {j_mix|trộn các dạng bài trong 20 phút học}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Các dạng bài",
+   "title": "Liệt kê các dạng bài",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Hành trình đang đi",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Cung điện trí nhớ tuần trước: {j_palace}",
+       "need": [
+        "j_palace"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen muốn giữ mỗi ngày và một kỹ năng muốn học thêm cho công việc."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: xử lý đúng từ lần đầu"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: sau khi mở máy, 20 phút học trước khi mở hộp thư"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_skill",
+       "q": "Kỹ năng tôi đang học",
+       "ph": "Ví dụ: phân tích dữ liệu bằng bảng tính"
+      }
+     ]
+    },
+    {
+     "h": "Các dạng bài của kỹ năng",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ba hoặc bốn dạng bài tập, dạng tình huống. Kỹ năng khó chia dạng thì nghĩ theo loại khách hàng, loại lỗi, loại tài liệu sẽ gặp."
+      },
+      {
+       "f": "tx",
+       "k": "d1t1",
+       "q": "Dạng 1",
+       "ph": "Ví dụ: lọc dữ liệu"
+      },
+      {
+       "f": "tx",
+       "k": "d1t2",
+       "q": "Dạng 2",
+       "ph": "Ví dụ: tổng hợp theo nhóm"
+      },
+      {
+       "f": "tx",
+       "k": "d1t3",
+       "q": "Dạng 3",
+       "ph": "Ví dụ: vẽ biểu đồ"
+      },
+      {
+       "f": "tx",
+       "k": "d1t4",
+       "q": "Dạng 4 (nếu có)",
+       "ph": ""
+      },
+      {
+       "f": "ta",
+       "k": "d1ex",
+       "q": "Mỗi dạng một bài tập hoặc tình huống mẫu dùng được trong tuần",
+       "ph": "Ví dụ: lọc khách hàng nợ quá 60 ngày; tổng hợp doanh số theo vùng; biểu đồ doanh số 6 tháng"
+      },
+      {
+       "f": "show",
+       "text": "Dạng của tôi: {d1t1}, {d1t2|...}, {d1t3|...}, {d1t4|...}",
+       "need": [
+        "d1t1"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1weak",
+       "q": "Dạng tôi còn yếu nhất",
+       "ph": "Ví dụ: vẽ biểu đồ"
+      },
+      {
+       "f": "tx",
+       "k": "d1good",
+       "q": "Dạng tôi thấy đã thạo nhất",
+       "ph": "Ví dụ: lọc dữ liệu"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Kỹ năng đang học của tôi có các dạng: {d1t1}, {d1t2}",
+     "need": [
+      "d1t1",
+      "d1t2"
+     ]
+    },
+    {
+     "tpl": ", {d1t3}",
+     "need": [
+      "d1t1",
+      "d1t2",
+      "d1t3"
+     ]
+    },
+    {
+     "tpl": ", {d1t4}",
+     "need": [
+      "d1t1",
+      "d1t2",
+      "d1t4"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d1t1",
+      "d1t2"
+     ]
+    },
+    {
+     "tpl": " Dạng tôi còn yếu nhất: {d1weak}.",
+     "need": [
+      "d1weak"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Buổi đầu",
+   "title": "Khó khăn có ích nghĩa là gì?",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Học khác thể hiện",
+     "items": [
+      {
+       "f": "note",
+       "text": "Thể hiện: làm tốt đến đâu ngay trong lúc học. Học: điều còn lại vài ngày, vài tuần sau. Một khó khăn có ích khi nó buộc mình gọi lại, so sánh, phân biệt, chọn cách giải. Không có ích khi chỉ gây rối: tài liệu khó đọc, chỗ ồn, bài vượt quá xa nền tảng."
+      },
+      {
+       "f": "show",
+       "text": "Dạng của tôi: {d1t1}, {d1t2|...}, {d1t3|...}",
+       "need": [
+        "d1t1"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Buổi học xen kẽ đầu tiên",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ba dạng, mỗi dạng hai bài. Trộn thứ tự sao cho không có hai bài cùng dạng đứng liền nhau. Làm lần lượt, không xem lời giải trước."
+      },
+      {
+       "f": "ta",
+       "k": "d2order",
+       "q": "Thứ tự sáu bài của tôi",
+       "ph": "Ví dụ: lọc, biểu đồ, tổng hợp, lọc, tổng hợp, biểu đồ"
+      },
+      {
+       "f": "seg",
+       "k": "d2hard",
+       "q": "Mức khó tôi cảm thấy",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ],
+       "hints": [
+        "Rất dễ: có thể các dạng chưa đủ khác nhau, hoặc đã rất thạo.",
+        "Dễ.",
+        "Vừa phải.",
+        "Khó: rất thường gặp ở buổi xen kẽ đầu tiên.",
+        "Rất khó: kiểm tra xem có dạng nào mình chưa hiểu cách làm không, nếu có thì học lại dạng đó trước."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2ok",
+       "q": "Số bài làm đúng (trên 6)",
+       "ph": "Ví dụ: 4"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Buổi học xen kẽ đầu tiên: mức khó tôi cảm thấy {d2hard}/5, làm đúng {d2ok} bài.",
+     "need": [
+      "d2hard",
+      "d2ok"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Gọi tên dạng",
+   "title": "Bài học từ một phòng tranh",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Phòng tranh của Kornell và Bjork",
+     "items": [
+      {
+       "f": "note",
+       "text": "Kornell và Bjork (2008): tranh của 12 hoạ sĩ. Học xen kẽ nhận ra đúng khoảng 61%, học dồn khoảng 35%. Nhưng khoảng 78% người tham gia nghĩ học dồn tốt bằng hoặc hơn. Cảm giác học tốt có thể đánh lừa."
+      },
+      {
+       "f": "note",
+       "text": "Bước thêm hôm nay: trước khi giải mỗi bài, dừng vài giây và tự nói \"bài này thuộc dạng ...\" kèm một lý do ngắn."
+      }
+     ]
+    },
+    {
+     "h": "Buổi học xen kẽ thứ hai",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d3name",
+       "label": "Tôi đã gọi tên dạng trước mỗi bài"
+      },
+      {
+       "f": "tx",
+       "k": "d3right",
+       "q": "Số lần gọi tên đúng dạng ngay từ đầu (trên 6)",
+       "ph": "Ví dụ: 5"
+      },
+      {
+       "f": "ta",
+       "k": "d3note",
+       "q": "Điều tôi nhận ra về sự khác nhau giữa các dạng",
+       "ph": "Ví dụ: khiếu nại hoá đơn và lỗi giao hàng mở đầu giống nhau, phải nghe hết câu thứ hai"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hôm nay trước mỗi bài tôi gọi tên dạng bài. Điều tôi nhận ra: {d3note}.",
+     "need": [
+      "d3note"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Cách trộn",
+   "title": "Ba cách trộn cho người đi làm",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Bảng chọn",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d4way",
+       "q": "Cách trộn tôi chọn",
+       "opts": [
+        "Trộn dạng bài",
+        "Trộn tình huống",
+        "Trộn bài cũ và mới",
+        "Kết hợp hai cách"
+       ],
+       "hints": [
+        "Kỹ năng có các dạng bài rõ ràng, dễ nhầm với nhau. Mỗi buổi hai, ba dạng, gọi tên dạng trước khi làm.",
+        "Kỹ năng thiên về tình huống với con người hoặc sự cố. Viết sẵn bộ thẻ tình huống, mỗi buổi rút ngẫu nhiên ba, bốn thẻ.",
+        "Đang học nối tiếp nhiều phần, sợ quên phần cũ. Mỗi buổi xen vài bài của phần cũ vào giữa phần mới, kết hợp lặp lại cách quãng.",
+        "Ví dụ trộn tình huống, mỗi buổi thêm một thẻ của tuần trước. Ghi rõ trong câu cách trộn bên dưới."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_mix",
+       "q": "Cách trộn của tôi cho 20 phút học (lưu cho cả hành trình)",
+       "ph": "Ví dụ: mỗi buổi rút 4 thẻ tình huống, thêm 1 thẻ của tuần trước"
+      }
+     ]
+    },
+    {
+     "h": "Lịch trộn cho tuần tới",
+     "items": [
+      {
+       "f": "note",
+       "text": "Không buổi nào chỉ có một dạng. Mỗi dạng xuất hiện ít nhất hai buổi trong tuần."
+      },
+      {
+       "f": "cal",
+       "k": "d4cal",
+       "mark": "●",
+       "cols": [
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6"
+       ],
+       "rows": [
+        "Dạng 1",
+        "Dạng 2",
+        "Dạng 3",
+        "Dạng 4"
+       ],
+       "unit": "ô"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Cách trộn của tôi cho 20 phút học: {j_mix}.",
+     "need": [
+      "j_mix"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Tự kiểm tra",
+   "title": "Khó khăn nào có ích, khó khăn nào không?",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Sáu dấu hiệu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Đánh dấu những dấu hiệu tôi gặp trong tuần. Ba dấu hiệu đầu: khó khăn đang có ích. Ba dấu hiệu sau: khó khăn đang không có ích, nên điều chỉnh."
+      },
+      {
+       "f": "cb",
+       "k": "d5s1",
+       "label": "1. Tôi phải dừng lại để nhận ra dạng bài"
+      },
+      {
+       "f": "cb",
+       "k": "d5s2",
+       "label": "2. Tôi sai, rồi hiểu vì sao sai"
+      },
+      {
+       "f": "cb",
+       "k": "d5s3",
+       "label": "3. Các dạng bài dễ nhầm với nhau"
+      },
+      {
+       "f": "cb",
+       "k": "d5s4",
+       "label": "4. Tôi chưa hiểu cách làm của một dạng nào đó"
+      },
+      {
+       "f": "cb",
+       "k": "d5s5",
+       "label": "5. Cái khó đến từ bên ngoài: tài liệu khó đọc, chỗ ồn, bị gián đoạn"
+      },
+      {
+       "f": "cb",
+       "k": "d5s6",
+       "label": "6. Nội dung là danh sách cần thuộc lòng (từ vựng, thuật ngữ)"
+      },
+      {
+       "f": "note",
+       "text": "Gặp dấu hiệu 4: học lại dạng đó trước rồi mới trộn. Dấu hiệu 5: gỡ nguồn gây rối. Dấu hiệu 6: dùng cung điện trí nhớ hoặc thẻ tự kiểm tra."
+      }
+     ]
+    },
+    {
+     "h": "Bài tự kiểm tra trộn dạng",
+     "items": [
+      {
+       "f": "note",
+       "text": "Tám bài mới, trộn đủ các dạng đã học, làm liền, không xem ghi chú, gọi tên dạng trước mỗi bài."
+      },
+      {
+       "f": "tx",
+       "k": "d5tot",
+       "q": "Tổng số bài",
+       "ph": "Ví dụ: 8"
+      },
+      {
+       "f": "tx",
+       "k": "d5ok",
+       "q": "Số bài làm đúng",
+       "ph": "Ví dụ: 6"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Bài tự kiểm tra trộn dạng: tôi làm đúng {d5ok} trên {d5tot} bài.",
+     "need": [
+      "d5ok",
+      "d5tot"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Nhìn lại",
+   "title": "Một tuần học xen kẽ, nhìn lại",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Đặt các con số cạnh nhau",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thứ Ba: mức khó {d2hard}/5, làm đúng {d2ok} bài trên 6.",
+       "need": [
+        "d2hard"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Thứ Tư: gọi tên đúng dạng {d3right} lần trên 6.",
+       "need": [
+        "d3right"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Thứ Sáu: làm đúng {d5ok} trên {d5tot} bài trộn dạng.",
+       "need": [
+        "d5ok"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d6comp",
+       "q": "So với cảm giác, kết quả của tôi",
+       "opts": [
+        "tốt hơn cảm giác",
+        "đúng như cảm giác",
+        "kém hơn cảm giác"
+       ],
+       "hints": [
+        "Giống điều Kornell và Bjork thấy ở phòng tranh: cảm giác khó không phải thước đo tốt của việc học.",
+        "Cảm giác và kết quả đi cùng nhau. Tiếp tục ghi cả hai con số ở các tuần sau.",
+        "Xem lại sáu dấu hiệu: có thể một dạng chưa được học kỹ trước khi trộn."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Điều rút ra và tuần tới",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d6learn",
+       "q": "Một điều tôi rút ra từ tuần học xen kẽ",
+       "ph": "Ví dụ: cảm giác khó không phải thước đo tốt của việc học"
+      },
+      {
+       "f": "show",
+       "text": "Cách trộn đã lưu: {j_mix}",
+       "need": [
+        "j_mix"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_mix",
+       "q": "Cách trộn tôi giữ cho tuần tới (sửa nếu cần)",
+       "ph": ""
+      },
+      {
+       "f": "tx",
+       "k": "d6first",
+       "q": "Buổi học xen kẽ đầu tiên của tuần tới",
+       "ph": "Ví dụ: Thứ Hai, 4 thẻ tình huống"
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã in thẻ lịch trộn (trang 2 phiếu Ngày 6)"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Một tuần học xen kẽ, điều tôi rút ra: {d6learn}.",
+     "need": [
+      "d6learn"
+     ]
+    },
+    {
+     "tpl": " Tuần tới tôi giữ cách trộn: {j_mix}.",
+     "need": [
+      "j_mix"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

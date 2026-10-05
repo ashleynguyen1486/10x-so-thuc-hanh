@@ -1,0 +1,531 @@
+{
+ "id": "0054",
+ "name": "Phân loại Bloom",
+ "storeKey": "sth-0054-6n",
+ "kicker": "Công thức #0054",
+ "title": "Phân loại Bloom: học lên tầng cao",
+ "sub": "Đẩy 20 phút học lên tầng cao hơn: từ nhớ, hiểu sang vận dụng, phân tích, đánh giá, sáng tạo, bằng câu hỏi tự đặt cho kỹ năng đang học. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "sun",
+  "big": "6/6",
+  "unit": "NGÀY HỌC LÊN TẦNG",
+  "line": "Câu hỏi cuối buổi học: {j_bloom|đã sẵn sàng}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Đang ở tầng nào",
+   "title": "Mình đang dừng ở tầng nào?",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Thói quen và kỹ năng đang học",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Dự án học của quý 2: {j_learn_project}",
+       "need": [
+        "j_learn_project"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Quy ước khép buổi học từ tuần trước: {j_map}",
+       "need": [
+        "j_map"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và một kỹ năng muốn học thêm cho công việc ở các ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: dùng được điều mình học vào việc thật"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: 7 giờ 45, 15 phút rà danh sách ứng viên trong ngày"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_skill",
+       "q": "Kỹ năng tôi đang học trong quý 2",
+       "ph": "Ví dụ: phỏng vấn theo năng lực"
+      }
+     ]
+    },
+    {
+     "h": "Sáu câu hỏi, một chủ đề",
+     "items": [
+      {
+       "f": "note",
+       "text": "Viết sáu câu hỏi cho chủ đề của mình, mỗi tầng một câu (xem bài đăng). Thử trả lời không mở tài liệu, dừng ở câu đầu tiên chưa trả lời được."
+      },
+      {
+       "f": "tx",
+       "k": "d1topic",
+       "q": "Chủ đề",
+       "ph": "Ví dụ: chính sách chiết khấu cho đại lý"
+      },
+      {
+       "f": "seg",
+       "k": "d1level",
+       "q": "Tầng cao nhất tôi trả lời được hôm nay",
+       "opts": [
+        "nhớ",
+        "hiểu",
+        "vận dụng",
+        "phân tích",
+        "đánh giá",
+        "sáng tạo"
+       ],
+       "hints": [
+        "Nhắc lại được tên gọi, con số, các bước. Câu hỏi kiểu: là gì, gồm những gì, bao nhiêu.",
+        "Giải thích được bằng lời của mình, nêu được ví dụ. Câu hỏi kiểu: vì sao, nghĩa là gì.",
+        "Dùng được trong một tình huống cụ thể, với số liệu hay hồ sơ thật.",
+        "Tách vấn đề thành các phần, thấy nguyên nhân và điểm khác nhau.",
+        "Đưa ra nhận định theo tiêu chí, chọn và bảo vệ một phương án.",
+        "Tạo ra điều mới: đề xuất, kế hoạch, biểu mẫu, một bước của dự án học."
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Với chủ đề {d1topic}, hôm nay tôi trả lời được đến tầng {d1level}.",
+     "need": [
+      "d1topic",
+      "d1level"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Sáu động từ",
+   "title": "Sáu động từ, sáu câu hỏi",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Một câu hỏi cho mỗi tầng",
+     "items": [
+      {
+       "f": "note",
+       "text": "Từ mở câu gợi ý. Nhớ: là gì, gồm những gì. Hiểu: vì sao, nghĩa là gì. Vận dụng: trong trường hợp này làm thế nào. Phân tích: yếu tố nào, khác nhau ở đâu. Đánh giá: nên chọn phương án nào. Sáng tạo: hãy đề xuất, hãy thiết kế."
+      },
+      {
+       "f": "tx",
+       "k": "d2q1",
+       "q": "Nhớ",
+       "ph": "Ví dụ: Câu trả lời theo năng lực gồm mấy phần?"
+      },
+      {
+       "f": "tx",
+       "k": "d2q2",
+       "q": "Hiểu",
+       "ph": "Ví dụ: Vì sao hỏi việc đã làm đáng tin hơn hỏi việc sẽ làm?"
+      },
+      {
+       "f": "tx",
+       "k": "d2q3",
+       "q": "Vận dụng",
+       "ph": "Ví dụ: Viết ba câu hỏi cho năng lực xử lý khiếu nại"
+      },
+      {
+       "f": "tx",
+       "k": "d2q4",
+       "q": "Phân tích",
+       "ph": "Ví dụ: Hai câu trả lời mẫu khác nhau ở phần nào?"
+      },
+      {
+       "f": "tx",
+       "k": "d2q5",
+       "q": "Đánh giá",
+       "ph": "Ví dụ: Chọn ứng viên nào dựa trên hai câu trả lời này?"
+      },
+      {
+       "f": "tx",
+       "k": "d2q6",
+       "q": "Sáng tạo",
+       "ph": "Ví dụ: Thiết kế bộ câu hỏi cho vị trí cửa hàng trưởng"
+      }
+     ]
+    },
+    {
+     "h": "Câu ở tầng cao nhất muốn trả lời được",
+     "items": [
+      {
+       "f": "show",
+       "text": "Bấm chọn câu hỏi ở tầng cao nhất mình muốn trả lời được vào cuối tuần:",
+       "need": [
+        "d2q1"
+       ]
+      },
+      {
+       "f": "pick",
+       "k": "d2top",
+       "kp": "d2q",
+       "n": 6,
+       "empty": "Viết ít nhất một câu hỏi ở trên để chọn."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Câu hỏi ở tầng cao nhất tôi viết hôm nay: “{d2top}”.",
+     "need": [
+      "d2top"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Nhật ký 20 phút",
+   "title": "Một buổi học 20 phút đi lên các tầng",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Hai mươi phút, hai nửa",
+     "items": [
+      {
+       "f": "note",
+       "text": "Nửa đầu: nhớ và hiểu (vẽ lại bản đồ, giải thích bằng lời của mình). Nửa sau: vận dụng, phân tích hoặc đánh giá (bài tập với số liệu thật, so sánh hai trường hợp, chọn phương án)."
+      },
+      {
+       "f": "timer",
+       "k": "d3t",
+       "dk": "d3dk",
+       "def": 20,
+       "opts": [
+        15,
+        20,
+        25
+       ],
+       "note": ""
+      }
+     ]
+    },
+    {
+     "h": "Ghi lại",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d3min",
+         "q": "Số phút ở tầng vận dụng trở lên"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3what",
+       "q": "Việc cụ thể đã làm ở nửa sau",
+       "ph": "Ví dụ: tách hai câu trả lời mẫu theo bốn phần"
+      },
+      {
+       "f": "seg",
+       "k": "d3peak",
+       "q": "Tầng cao nhất chạm tới hôm nay",
+       "opts": [
+        "nhớ",
+        "hiểu",
+        "vận dụng",
+        "phân tích",
+        "đánh giá",
+        "sáng tạo"
+       ],
+       "hints": [
+        "Nhắc lại được tên gọi, con số, các bước. Câu hỏi kiểu: là gì, gồm những gì, bao nhiêu.",
+        "Giải thích được bằng lời của mình, nêu được ví dụ. Câu hỏi kiểu: vì sao, nghĩa là gì.",
+        "Dùng được trong một tình huống cụ thể, với số liệu hay hồ sơ thật.",
+        "Tách vấn đề thành các phần, thấy nguyên nhân và điểm khác nhau.",
+        "Đưa ra nhận định theo tiêu chí, chọn và bảo vệ một phương án.",
+        "Tạo ra điều mới: đề xuất, kế hoạch, biểu mẫu, một bước của dự án học."
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Hôm nay tôi dành {d3min} phút trong buổi học cho các tầng từ vận dụng trở lên: {d3what}.",
+     "need": [
+      "d3min",
+      "d3what"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Hỏi đáp",
+   "title": "Bloom có phải là một cái thang?",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Trả lời hai câu ở tầng cao nhất",
+     "items": [
+      {
+       "f": "show",
+       "text": "Câu đã chọn hôm Thứ Ba: {d2top}",
+       "need": [
+        "d2top"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Không mở tài liệu, mỗi câu khoảng 5 phút. Các tầng có thể chồng lên nhau, đi lên đi xuống trong một buổi học là bình thường."
+      },
+      {
+       "f": "seg",
+       "k": "d4done",
+       "q": "Tầng cao nhất tôi đã trả lời được",
+       "opts": [
+        "nhớ",
+        "hiểu",
+        "vận dụng",
+        "phân tích",
+        "đánh giá",
+        "sáng tạo"
+       ],
+       "hints": [
+        "Nhắc lại được tên gọi, con số, các bước. Câu hỏi kiểu: là gì, gồm những gì, bao nhiêu.",
+        "Giải thích được bằng lời của mình, nêu được ví dụ. Câu hỏi kiểu: vì sao, nghĩa là gì.",
+        "Dùng được trong một tình huống cụ thể, với số liệu hay hồ sơ thật.",
+        "Tách vấn đề thành các phần, thấy nguyên nhân và điểm khác nhau.",
+        "Đưa ra nhận định theo tiêu chí, chọn và bảo vệ một phương án.",
+        "Tạo ra điều mới: đề xuất, kế hoạch, biểu mẫu, một bước của dự án học."
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d4hard",
+       "q": "Tầng còn khó nhất với tôi",
+       "opts": [
+        "nhớ",
+        "hiểu",
+        "vận dụng",
+        "phân tích",
+        "đánh giá",
+        "sáng tạo"
+       ],
+       "hints": [
+        "Nhắc lại được tên gọi, con số, các bước. Câu hỏi kiểu: là gì, gồm những gì, bao nhiêu.",
+        "Giải thích được bằng lời của mình, nêu được ví dụ. Câu hỏi kiểu: vì sao, nghĩa là gì.",
+        "Dùng được trong một tình huống cụ thể, với số liệu hay hồ sơ thật.",
+        "Tách vấn đề thành các phần, thấy nguyên nhân và điểm khác nhau.",
+        "Đưa ra nhận định theo tiêu chí, chọn và bảo vệ một phương án.",
+        "Tạo ra điều mới: đề xuất, kế hoạch, biểu mẫu, một bước của dự án học."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt, kèm 20 phút học."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi đã trả lời được câu hỏi ở tầng {d4done}.",
+     "need": [
+      "d4done"
+     ]
+    },
+    {
+     "tpl": " Tầng còn khó nhất với tôi: {d4hard}.",
+     "need": [
+      "d4hard"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Bảng chọn",
+   "title": "Chọn hoạt động học theo từng tầng",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Lịch tầng cho tuần sau",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mỗi buổi học từ Thứ Hai đến Thứ Sáu tuần sau chọn một tầng. Kỹ năng mới bắt đầu: nhiều buổi nhớ và hiểu là hợp lý, chỉ cần ít nhất hai buổi từ vận dụng trở lên."
+      },
+      {
+       "f": "cal",
+       "k": "d5cal",
+       "mark": "●",
+       "max": 5,
+       "unit": "buổi",
+       "cols": [
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6"
+       ],
+       "rows": [
+        "Nhớ",
+        "Hiểu",
+        "Vận dụng",
+        "Phân tích",
+        "Đánh giá",
+        "Sáng tạo"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Buổi ở tầng cao nhất",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5act",
+       "q": "Hoạt động cụ thể",
+       "ph": "Ví dụ: chấm một bản đề xuất theo ba tiêu chí tự đặt"
+      },
+      {
+       "f": "cb",
+       "k": "d5out",
+       "label": "Hoạt động này có một sản phẩm nhỏ nhìn thấy được (một trang, một bảng, một câu trả lời)"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tuần sau tôi đưa 20 phút học lên các tầng: {cal:d5cal}.",
+     "need": [
+      "cal:d5cal"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Câu hỏi khép",
+   "title": "Một câu hỏi khép mỗi buổi học",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Câu hỏi khép buổi học",
+     "items": [
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Ví dụ. Vận dụng: điều vừa học dùng được vào việc nào trong tuần này? Phân tích: điều này khác cách mình đang làm ở đâu? Đánh giá: giữ cách cũ hay đổi sang cách mới, vì sao? Sáng tạo: có thể biến điều này thành một biểu mẫu hay một bước của dự án học không?"
+      },
+      {
+       "f": "tx",
+       "k": "j_bloom",
+       "q": "Câu hỏi tôi tự đặt cuối mỗi buổi học",
+       "ph": "Ví dụ: Điều vừa học dùng được vào việc nào trong tuần này?"
+      },
+      {
+       "f": "note",
+       "text": "Câu hỏi này được lưu cho cả hành trình."
+      },
+      {
+       "f": "seg",
+       "k": "d6goal",
+       "q": "Tầng tôi muốn chạm tới thường xuyên trong tháng 6",
+       "opts": [
+        "nhớ",
+        "hiểu",
+        "vận dụng",
+        "phân tích",
+        "đánh giá",
+        "sáng tạo"
+       ],
+       "hints": [
+        "Nhắc lại được tên gọi, con số, các bước. Câu hỏi kiểu: là gì, gồm những gì, bao nhiêu.",
+        "Giải thích được bằng lời của mình, nêu được ví dụ. Câu hỏi kiểu: vì sao, nghĩa là gì.",
+        "Dùng được trong một tình huống cụ thể, với số liệu hay hồ sơ thật.",
+        "Tách vấn đề thành các phần, thấy nguyên nhân và điểm khác nhau.",
+        "Đưa ra nhận định theo tiêu chí, chọn và bảo vệ một phương án.",
+        "Tạo ra điều mới: đề xuất, kế hoạch, biểu mẫu, một bước của dự án học."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Khép tuần",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã in thẻ câu hỏi theo tầng (phiếu Ngày 6) và kẹp vào bìa hồ sơ học"
+      },
+      {
+       "f": "show",
+       "text": "Tổng số ngày giữ thói quen trên cả hành trình: {jtotal}.",
+       "need": [
+        "jtotal"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau: Zettelkasten, hộp thẻ ghi chú. Mỗi buổi học kết thúc bằng một thẻ ghi chú viết bằng lời của mình."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Câu hỏi tôi tự đặt cuối mỗi buổi học: “{j_bloom}”.",
+     "need": [
+      "j_bloom"
+     ]
+    },
+    {
+     "tpl": " Tầng tôi muốn chạm tới trong tháng 6: {d6goal}.",
+     "need": [
+      "d6goal"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

@@ -1,0 +1,595 @@
+{
+ "id": "0050",
+ "name": "Xếp chồng kỹ năng",
+ "storeKey": "sth-0050-6n",
+ "kicker": "Công thức #0050",
+ "title": "Xếp chồng kỹ năng",
+ "sub": "Tuần có kỳ nghỉ lễ 30.4 và 1.5. Nhìn toàn bộ kỹ năng của mình, tìm kỹ năng nền và kỹ năng ít gặp, vẽ chữ T, rồi ghép kỹ năng đang học thành một bộ ba tạo lợi thế riêng trong công việc. Thứ Sáu và Thứ Bảy chỉ 5 phút. Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "ring",
+  "big": "3",
+  "ratio": "3",
+  "of": "3",
+  "unit": "KỸ NĂNG XẾP CHỒNG",
+  "line": "Bộ ba: {j_stack|kỹ năng nền, kỹ năng hỗ trợ, kỹ năng đang học}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Kiểm kê",
+   "title": "Kiểm kê bộ kỹ năng",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Hành trình đang đi",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học (từ #0047): {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Dự án học của quý 2: {j_learn_project}",
+       "need": [
+        "j_learn_project"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen muốn giữ mỗi ngày và một kỹ năng muốn học thêm cho công việc. Người đã có thì các ô dưới đây hiện sẵn nội dung, sửa được nếu cần."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: hiểu con số và giải thích được con số"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: sau khi mở máy, 20 phút học trước khi mở hộp thư"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_skill",
+       "q": "Kỹ năng tôi đang học",
+       "ph": "Ví dụ: phân tích dữ liệu bằng bảng tính nâng cao"
+      }
+     ]
+    },
+    {
+     "h": "Sáu kỹ năng tôi đang dùng",
+     "items": [
+      {
+       "f": "note",
+       "text": "Gồm cả kỹ năng chuyên môn và kỹ năng làm việc với người. Những việc đã quen tay đến mức không còn gọi là kỹ năng cũng ghi vào."
+      },
+      {
+       "f": "tx",
+       "k": "d1k1",
+       "q": "Kỹ năng 1",
+       "ph": "Ví dụ: đối chiếu công nợ"
+      },
+      {
+       "f": "tx",
+       "k": "d1k2",
+       "q": "Kỹ năng 2",
+       "ph": "Ví dụ: lập bảng tính có công thức"
+      },
+      {
+       "f": "tx",
+       "k": "d1k3",
+       "q": "Kỹ năng 3",
+       "ph": "Ví dụ: gọi điện nhắc thanh toán"
+      },
+      {
+       "f": "tx",
+       "k": "d1k4",
+       "q": "Kỹ năng 4",
+       "ph": "Ví dụ: đọc hợp đồng tiếng Anh"
+      },
+      {
+       "f": "tx",
+       "k": "d1k5",
+       "q": "Kỹ năng 5",
+       "ph": "Ví dụ: hướng dẫn nhân viên mới"
+      },
+      {
+       "f": "tx",
+       "k": "d1k6",
+       "q": "Kỹ năng 6",
+       "ph": "Ví dụ: dùng phần mềm kế toán"
+      }
+     ]
+    },
+    {
+     "h": "Chấm mức từng kỹ năng",
+     "items": [
+      {
+       "f": "note",
+       "text": "1: mới làm quen. 2: tự làm được việc thường ngày. 3: làm tốt cả việc khó. 4: người khác thường hỏi mình."
+      },
+      {
+       "f": "rate",
+       "kp": "d1r",
+       "head": [
+        "#",
+        "Kỹ năng",
+        "Mức"
+       ],
+       "rows": [
+        [
+         "Kỹ năng 1",
+         ""
+        ],
+        [
+         "Kỹ năng 2",
+         ""
+        ],
+        [
+         "Kỹ năng 3",
+         ""
+        ],
+        [
+         "Kỹ năng 4",
+         ""
+        ],
+        [
+         "Kỹ năng 5",
+         ""
+        ],
+        [
+         "Kỹ năng 6",
+         ""
+        ]
+       ],
+       "scale": 4
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1n",
+         "q": "Số kỹ năng tôi dùng ít nhất mỗi tuần một lần"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Bộ kỹ năng của tôi có {d1n} kỹ năng tôi dùng hằng tuần.",
+     "need": [
+      "d1n"
+     ]
+    },
+    {
+     "tpl": " Kỹ năng đang học: {j_learn_skill}.",
+     "need": [
+      "j_learn_skill"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Kỹ năng nền",
+   "title": "Kỹ năng nền và kỹ năng ít gặp",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Hai câu hỏi",
+     "items": [
+      {
+       "f": "note",
+       "text": "Kỹ năng nền: kỹ năng mình mạnh nhất và công việc dựa vào nhiều nhất. Kỹ năng ít gặp: kỹ năng mình có mà ít người trong bộ phận có, dù ngoài thị trường có thể khá phổ biến."
+      },
+      {
+       "f": "show",
+       "text": "Sáu kỹ năng từ Ngày 1: {d1k1}, {d1k2|...}, {d1k3|...}, {d1k4|...}, {d1k5|...}, {d1k6|...}",
+       "need": [
+        "d1k1"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2base",
+       "q": "Kỹ năng nền của tôi",
+       "ph": "Ví dụ: đối chiếu công nợ"
+      },
+      {
+       "f": "tx",
+       "k": "d2rare",
+       "q": "Kỹ năng ít gặp trong bộ phận",
+       "ph": "Ví dụ: gọi điện trao đổi với khách hàng về khoản quá hạn"
+      },
+      {
+       "f": "note",
+       "text": "Chưa nghĩ ra kỹ năng ít gặp? Nhớ lại lần gần nhất đồng nghiệp nhờ mình giúp một việc ngoài phần việc chính."
+      }
+     ]
+    },
+    {
+     "h": "Khi hai kỹ năng gặp nhau",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d2job",
+       "q": "Một việc chỉ khi có cả hai kỹ năng tôi mới làm tốt",
+       "ph": "Ví dụ: thu những khoản nợ khó mà vẫn giữ quan hệ tốt với khách hàng"
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d2link",
+       "q": "Kỹ năng đang học nối hai kỹ năng này như thế nào?",
+       "ph": "Ví dụ: bảng theo dõi tuổi nợ giúp mỗi cuộc gọi bắt đầu bằng số liệu rõ ràng"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Kỹ năng nền của tôi: {d2base}.",
+     "need": [
+      "d2base"
+     ]
+    },
+    {
+     "tpl": " Kỹ năng ít gặp trong bộ phận: {d2rare}.",
+     "need": [
+      "d2rare"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Chữ T",
+   "title": "Vẽ chữ T của mình",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thanh dọc và thanh ngang",
+     "items": [
+      {
+       "f": "note",
+       "text": "Thanh dọc: một chuyên môn vững. Thanh ngang: những kỹ năng giúp chuyên môn đó làm việc được với người khác (trao đổi, hiểu khách hàng, hiểu số liệu, hiểu quy trình của bộ phận bên cạnh)."
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng nền đã chọn hôm qua: {d2base}",
+       "need": [
+        "d2base"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3deep",
+       "q": "Thanh dọc: chuyên môn tôi vững nhất",
+       "ph": "Ví dụ: kế toán công nợ"
+      },
+      {
+       "f": "tx",
+       "k": "d3h1",
+       "q": "Thanh ngang 1",
+       "ph": "Ví dụ: trao đổi với khách hàng"
+      },
+      {
+       "f": "tx",
+       "k": "d3h2",
+       "q": "Thanh ngang 2",
+       "ph": "Ví dụ: lập bảng tính"
+      },
+      {
+       "f": "tx",
+       "k": "d3h3",
+       "q": "Thanh ngang 3",
+       "ph": "Ví dụ: hướng dẫn người mới"
+      }
+     ]
+    },
+    {
+     "h": "Kỹ năng đang học nằm ở đâu?",
+     "items": [
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d3pos",
+       "q": "Kỹ năng đang học",
+       "opts": [
+        "thanh dọc",
+        "thanh ngang"
+       ],
+       "hints": [
+        "Đào sâu chuyên môn, ví dụ một kế toán học chuẩn mực báo cáo mới. Đo tiến bộ bằng độ khó của việc mình tự xử lý được.",
+        "Mở thêm một cánh cửa cho chuyên môn sẵn có, ví dụ một kỹ sư học trình bày dự án cho khách hàng. Đo tiến bộ bằng số lần dùng kỹ năng trong việc thật."
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d3add",
+       "q": "Kỹ năng đang học thêm gì vào chữ T của tôi?",
+       "ph": "Ví dụ: giúp phần kế toán nói chuyện được với ban lãnh đạo bằng biểu đồ"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Chữ T của tôi: thanh dọc là {d3deep}.",
+     "need": [
+      "d3deep"
+     ]
+    },
+    {
+     "tpl": " Kỹ năng đang học nằm ở {d3pos}.",
+     "need": [
+      "d3pos"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Bộ ba",
+   "title": "Ghép ba kỹ năng thành một lợi thế",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Ba phần của bộ ba",
+     "items": [
+      {
+       "f": "show",
+       "text": "Kỹ năng nền: {d2base}",
+       "need": [
+        "d2base"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng ít gặp: {d2rare}",
+       "need": [
+        "d2rare"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Mẫu câu: kỹ năng nền + kỹ năng hỗ trợ + kỹ năng đang học → giá trị cho ai. Ví dụ: kỹ thuật bảo trì + hướng dẫn người mới + soạn video ngắn."
+      },
+      {
+       "f": "tx",
+       "k": "j_stack",
+       "q": "Bộ ba kỹ năng của tôi (lưu cho cả hành trình)",
+       "ph": "Ví dụ: kế toán công nợ + trao đổi với khách hàng + phân tích dữ liệu"
+      },
+      {
+       "f": "tx",
+       "k": "d4who",
+       "q": "Giá trị cho ai",
+       "ph": "Ví dụ: phòng kinh doanh, khi cần biết khách hàng nào nên ưu tiên thu nợ"
+      }
+     ]
+    },
+    {
+     "h": "Mức ăn khớp và 20 phút tuần tới",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d4fit",
+       "q": "Kỹ năng đang học ăn khớp với hai kỹ năng kia ở mức",
+       "opts": [
+        "Rất khớp",
+        "Khớp một phần",
+        "Chưa khớp"
+       ],
+       "hints": [
+        "Giữ nguyên kỹ năng và dự án học, ưu tiên phần giao nhau.",
+        "Giữ kỹ năng, chỉnh dự án học gần với việc thật của bộ phận hơn.",
+        "Không cần đổi tuần này. Ghi chú kỹ năng khác có thể cộng vào tốt hơn để xem lại cuối quý."
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d4focus",
+       "q": "Phần giao nhau tôi ưu tiên trong 20 phút học tuần tới",
+       "ph": "Ví dụ: các hàm bảng tính để theo dõi tuổi nợ theo khách hàng"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Bộ kỹ năng xếp chồng của tôi: {j_stack}.",
+     "need": [
+      "j_stack"
+     ]
+    },
+    {
+     "tpl": " Giá trị cho: {d4who}.",
+     "need": [
+      "d4who"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Nghỉ lễ 30.4",
+   "title": "Kỳ nghỉ lễ và một việc năm phút",
+   "time": "Khoảng 5 phút",
+   "cards": [
+    {
+     "h": "Phiên bản nghỉ lễ của thói quen",
+     "items": [
+      {
+       "f": "note",
+       "text": "Hôm nay là ngày đầu kỳ nghỉ lễ 30.4 và 1.5. Chọn một phiên bản rất nhỏ, hoặc chọn nghỉ hẳn: thói quen không mất đi vì một kỳ nghỉ."
+      },
+      {
+       "f": "seg",
+       "k": "d5pick",
+       "q": "Hôm nay tôi chọn",
+       "opts": [
+        "5 phút đọc cột câu hỏi Cornell",
+        "5 phút nghe một đoạn âm thanh",
+        "Cách khác",
+        "Nghỉ hẳn"
+       ],
+       "hints": [
+        "Đọc câu hỏi trên một trang Cornell gần nhất, tự trả lời trong đầu.",
+        "Một đoạn âm thanh ngắn liên quan đến kỹ năng đang học, nghe trên đường đi.",
+        "Viết cách của mình vào ô bên dưới.",
+        "Hoàn toàn được. Thứ Hai 03.05 quay lại khung giờ quen thuộc."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5mini",
+       "q": "Phiên bản nhỏ của tôi",
+       "ph": "Ví dụ: 5 phút đọc cột câu hỏi Cornell trên xe"
+      }
+     ]
+    },
+    {
+     "h": "Một người để học hỏi",
+     "items": [
+      {
+       "f": "note",
+       "text": "Không nhằm so sánh. Chỉ để thấy xếp chồng kỹ năng ở ngoài đời thật."
+      },
+      {
+       "f": "tx",
+       "k": "d5person",
+       "q": "Người có bộ kỹ năng xếp chồng tôi muốn học hỏi",
+       "ph": "Ví dụ: anh trưởng ca cũ, vững kỹ thuật và được cả tổ tin"
+      },
+      {
+       "f": "tx",
+       "k": "d5skills",
+       "q": "Hai, ba kỹ năng tôi thấy ở người đó",
+       "ph": "Ví dụ: sửa máy, giải thích dễ hiểu, giữ bình tĩnh khi có sự cố"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Kỳ nghỉ này, phiên bản nhỏ của tôi: {d5mini}.",
+     "need": [
+      "d5mini"
+     ]
+    },
+    {
+     "tpl": " Người có bộ kỹ năng tôi muốn học hỏi: {d5person}.",
+     "need": [
+      "d5person"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Nghỉ lễ 1.5",
+   "title": "Ba câu hỏi nhẹ cho ngày 1.5",
+   "time": "Khoảng 5 phút",
+   "cards": [
+    {
+     "h": "Ba câu hỏi mở",
+     "items": [
+      {
+       "f": "show",
+       "text": "Bộ ba kỹ năng của tôi: {j_stack}",
+       "need": [
+        "j_stack"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6sur",
+       "q": "1. Khi viết bộ ba kỹ năng, điều làm tôi bất ngờ",
+       "ph": "Ví dụ: kỹ năng ít gặp của tôi lại là việc rất bình thường"
+      },
+      {
+       "f": "tx",
+       "k": "d6year",
+       "q": "2. Một năm nữa, chữ T của tôi khác đi ở đâu",
+       "ph": "Ví dụ: thanh ngang có thêm trình bày trước khách hàng bằng tiếng Anh"
+      },
+      {
+       "f": "tx",
+       "k": "d6next",
+       "q": "3. Việc nhỏ tuần tới để dùng bộ ba kỹ năng",
+       "ph": "Ví dụ: báo cáo tuổi nợ cho cuộc họp Thứ Ba"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen, kể cả phiên bản nghỉ lễ."
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã in thẻ bộ ba kỹ năng (trang 2 phiếu Ngày 6) và kẹp vào sổ kế hoạch"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tuần lễ khép lại với {jweek} ngày giữ thói quen.",
+     "need": [
+      "jweek"
+     ]
+    },
+    {
+     "tpl": " Việc nhỏ tuần tới để dùng bộ ba kỹ năng: {d6next}.",
+     "need": [
+      "d6next"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

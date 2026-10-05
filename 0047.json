@@ -1,0 +1,721 @@
+{
+ "id": "0047",
+ "name": "Siêu học",
+ "storeKey": "sth-0047-6n",
+ "kicker": "Công thức #0047",
+ "title": "Siêu học: bản đồ quý 2",
+ "sub": "Mở Mùa 3 \"Học nhanh, nhớ lâu\". Thêm 20 phút học có chủ đích ngay sau thói quen then chốt, chọn một kỹ năng và một dự án học cho quý 2. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "ladder",
+  "big": "MÙA 3",
+  "unit": "BẢN ĐỒ HỌC ĐÃ VẼ",
+  "line": "Kỹ năng quý 2: {j_learn_skill|học có chủ đích mỗi ngày}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Mở Mùa 3",
+   "title": "Chỗ đứng cho 20 phút học",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thói quen đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Giữ sang quý 2: {j_q1_keep}",
+       "need": [
+        "j_q1_keep"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc và một việc nhỏ làm mỗi ngày trong công việc. Việc đó là thói quen then chốt, 20 phút học sẽ đặt ngay sau nó."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: học điều mới mỗi tuần và dùng ngay vào việc"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: viết ba việc quan trọng nhất trước 8 giờ"
+      }
+     ]
+    },
+    {
+     "h": "Chỗ đứng của 20 phút",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d1slot",
+       "q": "Tôi đặt 20 phút học",
+       "opts": [
+        "Ngay sau thói quen then chốt",
+        "Một khung giờ cố định khác"
+       ],
+       "hints": [
+        "Thói quen cũ là tín hiệu cho việc mới, không cần tìm thêm khung giờ trống. Đây là cách được gợi ý.",
+        "Dùng khi thói quen rơi vào lúc không tiện học, ví dụ giữa ca. Chọn một giờ cố định, ngày nào cũng như nhau."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1time",
+       "q": "Giờ cụ thể",
+       "ph": "Ví dụ: 8 giờ 10 đến 8 giờ 30, tại bàn làm việc"
+      },
+      {
+       "f": "show",
+       "text": "Câu xếp chồng: Sau khi {j_habit}, tôi học 20 phút có chủ đích.",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d1cal",
+       "label": "Đã đặt 20 phút học vào lịch cho cả tuần"
+      }
+     ]
+    },
+    {
+     "h": "Ba kỹ năng ứng viên",
+     "items": [
+      {
+       "f": "show",
+       "text": "Mục tiêu số 1 đang giữ: {j_goal1}",
+       "need": [
+        "j_goal1"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Mỗi kỹ năng gắn với một mục tiêu đang giữ sau quý 1. Viết cụ thể, ngày mai sẽ chấm điểm và chọn một."
+      },
+      {
+       "f": "tx",
+       "k": "d1s1",
+       "q": "Kỹ năng 1",
+       "ph": "Ví dụ: đàm phán giá với khách hàng doanh nghiệp"
+      },
+      {
+       "f": "tx",
+       "k": "d1s2",
+       "q": "Kỹ năng 2",
+       "ph": "Ví dụ: đọc báo cáo tài chính của khách hàng"
+      },
+      {
+       "f": "tx",
+       "k": "d1s3",
+       "q": "Kỹ năng 3",
+       "ph": "Ví dụ: trình bày đề xuất bằng tiếng Anh"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Mùa 3, tôi thêm 20 phút học có chủ đích sau thói quen then chốt. Ba kỹ năng tôi đang cân nhắc: {d1s1}",
+     "need": [
+      "d1s1"
+     ]
+    },
+    {
+     "tpl": ", {d1s2}",
+     "need": [
+      "d1s2"
+     ]
+    },
+    {
+     "tpl": ", {d1s3}",
+     "need": [
+      "d1s3"
+     ]
+    },
+    {
+     "tpl": ".",
+     "need": [
+      "d1s1"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Bảng chọn",
+   "title": "Bảng chọn một kỹ năng cho cả quý 2",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Ba kỹ năng ứng viên",
+     "items": [
+      {
+       "f": "show",
+       "text": "Kỹ năng 1: {d1s1}",
+       "need": [
+        "d1s1"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng 2: {d1s2}",
+       "need": [
+        "d1s2"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng 3: {d1s3}",
+       "need": [
+        "d1s3"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Tiêu chí 1, phục vụ mục tiêu: 5 điểm khi giỏi kỹ năng này thì mục tiêu số 1 tiến rõ. Tiêu chí 2, dùng hằng tuần: 5 điểm khi tuần nào cũng có tình huống thật để dùng. Tiêu chí 3, thấy tiến bộ: 5 điểm khi có cách đo rõ hoặc có người đủ giỏi để góp ý."
+      }
+     ]
+    },
+    {
+     "h": "Chấm điểm từ 1 đến 5",
+     "items": [
+      {
+       "f": "sum",
+       "head": [
+        "Tiêu chí",
+        "KN 1",
+        "KN 2",
+        "KN 3"
+       ],
+       "rows": [
+        {
+         "label": "Phục vụ mục tiêu",
+         "keys": [
+          "d2a1",
+          "d2a2",
+          "d2a3"
+         ]
+        },
+        {
+         "label": "Dùng hằng tuần",
+         "keys": [
+          "d2b1",
+          "d2b2",
+          "d2b3"
+         ]
+        },
+        {
+         "label": "Thấy tiến bộ",
+         "keys": [
+          "d2c1",
+          "d2c2",
+          "d2c3"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Hai kỹ năng bằng điểm: chọn kỹ năng gần mục tiêu số 1 hơn. Hai kỹ năng còn lại vào danh sách học sau, xem lại cuối quý 2."
+      }
+     ]
+    },
+    {
+     "h": "Kỹ năng được chọn",
+     "items": [
+      {
+       "f": "note",
+       "text": "Bấm vào kỹ năng có tổng điểm cao nhất, hoặc viết lại cho hẹp hơn ở ô bên dưới."
+      },
+      {
+       "f": "pick",
+       "k": "j_learn_skill",
+       "kp": "d1s",
+       "n": 3,
+       "empty": "Điền ít nhất một kỹ năng ở Ngày 1 để chọn."
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_skill",
+       "q": "Kỹ năng tôi chọn cho quý 2 (thu hẹp nếu còn rộng)",
+       "ph": "Ví dụ: đàm phán giá khi khách hàng đề nghị giảm giá"
+      },
+      {
+       "f": "tx",
+       "k": "d2why",
+       "q": "Vì sao kỹ năng này đáng 20 phút mỗi ngày",
+       "ph": "Ví dụ: mục tiêu số 1 là giữ biên lợi nhuận ở hợp đồng gia hạn"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Kỹ năng tôi chọn cho quý 2: {j_learn_skill}.",
+     "need": [
+      "j_learn_skill"
+     ]
+    },
+    {
+     "tpl": " Vì: {d2why}.",
+     "need": [
+      "d2why"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Vẽ bản đồ",
+   "title": "Vẽ bản đồ trước khi bắt đầu học",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Vì sao học",
+     "items": [
+      {
+       "f": "show",
+       "text": "Kỹ năng: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Vì: {d2why}",
+       "need": [
+        "d2why"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Siêu học trước: dành khoảng 10% tổng thời gian dự kiến để tìm hiểu kỹ năng gồm những phần nào. Với 20 phút mỗi ngày trong mười hai tuần, phần này khoảng hai giờ rưỡi, chia ra vài buổi trong tuần."
+      }
+     ]
+    },
+    {
+     "h": "Học những gì",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d3concept",
+       "q": "Khái niệm cần hiểu",
+       "ph": "Ví dụ: khác biệt giữa lợi nhuận và tiền"
+      },
+      {
+       "f": "ta",
+       "k": "d3fact",
+       "q": "Dữ kiện cần nhớ",
+       "ph": "Ví dụ: các khoản mục chính, hạn chốt số mỗi tuần"
+      },
+      {
+       "f": "ta",
+       "k": "d3proc",
+       "q": "Quy trình cần luyện tay",
+       "ph": "Ví dụ: lấy số, đối chiếu, dựng bảng, viết nhận xét"
+      },
+      {
+       "f": "seg",
+       "k": "d3heavy",
+       "q": "Phần nặng nhất của kỹ năng này",
+       "opts": [
+        "khái niệm",
+        "dữ kiện",
+        "quy trình"
+       ],
+       "hints": [
+        "Mỗi buổi kết thúc bằng việc tự giải thích lại bằng lời của mình, kèm một ví dụ công việc.",
+        "Dành phần đầu buổi cho tự kiểm tra và ôn cách quãng cho đến khi trả lời được không cần nhìn.",
+        "Dành phần lớn buổi để làm đi làm lại trên việc thật hoặc số liệu thật."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Học bằng cách nào",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3src",
+       "q": "Nguồn học chính",
+       "ph": "Ví dụ: báo cáo mẫu của kế toán trưởng"
+      },
+      {
+       "f": "tx",
+       "k": "d3who",
+       "q": "Người giỏi có thể hỏi",
+       "ph": "Ví dụ: chị kế toán trưởng, mỗi Thứ Sáu"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt. Từ Mùa 3, một ngày trọn vẹn gồm thói quen và 20 phút học ngay sau đó."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Bản đồ kỹ năng {j_learn_skill}: phần nặng nhất là {d3heavy}.",
+     "need": [
+      "j_learn_skill",
+      "d3heavy"
+     ]
+    },
+    {
+     "tpl": " Nguồn học chính: {d3src}.",
+     "need": [
+      "d3src"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Chín nguyên tắc",
+   "title": "Chín nguyên tắc và một dự án học",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Nguyên tắc tôi đang làm khi học",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d4p1",
+       "label": "1. Siêu học trước: vẽ bản đồ trước khi học"
+      },
+      {
+       "f": "cb",
+       "k": "d4p2",
+       "label": "2. Tập trung: 20 phút cho đúng một việc"
+      },
+      {
+       "f": "cb",
+       "k": "d4p3",
+       "label": "3. Trực tiếp: học bằng chính việc sẽ làm"
+      },
+      {
+       "f": "cb",
+       "k": "d4p4",
+       "label": "4. Luyện riêng: tách phần yếu nhất ra luyện"
+      },
+      {
+       "f": "cb",
+       "k": "d4p5",
+       "label": "5. Truy hồi: tự kiểm tra thay vì đọc lại"
+      },
+      {
+       "f": "cb",
+       "k": "d4p6",
+       "label": "6. Phản hồi: tìm người góp ý sớm"
+      },
+      {
+       "f": "cb",
+       "k": "d4p7",
+       "label": "7. Ghi nhớ: ôn cách quãng"
+      },
+      {
+       "f": "cb",
+       "k": "d4p8",
+       "label": "8. Trực giác: tự giải thích, tìm ví dụ"
+      },
+      {
+       "f": "cb",
+       "k": "d4p9",
+       "label": "9. Thử nghiệm: thử cách khác và so sánh"
+      }
+     ]
+    },
+    {
+     "h": "Làm tốt hơn trong quý 2",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4two",
+       "q": "Hai nguyên tắc tôi muốn làm tốt hơn",
+       "ph": "Ví dụ: truy hồi và phản hồi"
+      }
+     ]
+    },
+    {
+     "h": "Dự án học của quý 2",
+     "items": [
+      {
+       "f": "show",
+       "text": "Kỹ năng: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Một dự án học tốt: có sản phẩm nhìn thấy được, dùng cho một việc thật, xong trước 30.06.2027, chia được thành những bước vừa 20 phút. Câu mẫu: Trước 30.06, tôi hoàn thành [sản phẩm], dùng cho [việc thật]."
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_project",
+       "q": "Dự án học của tôi",
+       "ph": "Ví dụ: trước 30.06, bộ kịch bản đàm phán cho ba tình huống giảm giá, dùng thử với hai khách hàng"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Dự án học quý 2 của tôi: {j_learn_project}.",
+     "need": [
+      "j_learn_project"
+     ]
+    },
+    {
+     "tpl": " Hai nguyên tắc tôi muốn làm tốt hơn: {d4two}.",
+     "need": [
+      "d4two"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Buổi học đầu",
+   "title": "Hai buổi 20 phút, một buổi có chủ đích",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Chuẩn bị",
+     "items": [
+      {
+       "f": "show",
+       "text": "Kỹ năng: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Dự án học: {j_learn_project}",
+       "need": [
+        "j_learn_project"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5part",
+       "q": "Phần nhỏ tôi luyện hôm nay",
+       "ph": "Ví dụ: câu hỏi đào sâu sau câu trả lời đầu tiên của ứng viên"
+      }
+     ]
+    },
+    {
+     "h": "Đồng hồ 20 phút",
+     "items": [
+      {
+       "f": "timer",
+       "k": "d5t",
+       "dk": "d5min",
+       "def": 20,
+       "opts": [
+        10,
+        15,
+        20,
+        25
+       ],
+       "note": "Gợi ý: 2 phút chọn phần nhỏ, 10 phút luyện riêng, 5 phút đóng tài liệu tự kiểm tra, 3 phút ghi một dòng và bước tiếp theo."
+      }
+     ]
+    },
+    {
+     "h": "Một dòng sau buổi học",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5done",
+       "q": "Điều đã làm được",
+       "ph": "Ví dụ: năm câu hỏi đào sâu cho hai câu trả lời mẫu"
+      },
+      {
+       "f": "tx",
+       "k": "d5stuck",
+       "q": "Điều còn vướng",
+       "ph": "Ví dụ: chưa phân biệt rõ câu hỏi dẫn dắt"
+      },
+      {
+       "f": "tx",
+       "k": "d5next",
+       "q": "Buổi sau tôi làm gì",
+       "ph": "Ví dụ: viết câu hỏi cho tình huống xử lý xung đột trong ca"
+      }
+     ]
+    },
+    {
+     "h": "Người góp ý",
+     "items": [
+      {
+       "f": "show",
+       "text": "Người góp ý đã ghi từ tuần #0027: {j_coach}",
+       "need": [
+        "j_coach"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_coach",
+       "q": "Người có thể góp ý cho tôi về kỹ năng này",
+       "ph": "Ví dụ: anh trưởng phòng nhân sự"
+      },
+      {
+       "f": "cb",
+       "k": "d5ask",
+       "label": "Đã gửi người góp ý một câu hỏi ngắn"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Buổi 20 phút đầu tiên, tôi luyện: {d5part}.",
+     "need": [
+      "d5part"
+     ]
+    },
+    {
+     "tpl": " Buổi sau: {d5next}.",
+     "need": [
+      "d5next"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Thư gửi quý 2",
+   "title": "Lá thư gửi mình ngày 30.06.2027",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Bảng gom tuần mở Mùa 3",
+     "items": [
+      {
+       "f": "compare",
+       "cols": [
+        "Nội dung"
+       ],
+       "rows": [
+        {
+         "label": "Thói quen then chốt",
+         "keys": [
+          "j_habit"
+         ]
+        },
+        {
+         "label": "Chỗ đứng 20 phút",
+         "keys": [
+          "d1time"
+         ]
+        },
+        {
+         "label": "Kỹ năng quý 2",
+         "keys": [
+          "j_learn_skill"
+         ]
+        },
+        {
+         "label": "Vì sao",
+         "keys": [
+          "d2why"
+         ]
+        },
+        {
+         "label": "Dự án học",
+         "keys": [
+          "j_learn_project"
+         ]
+        },
+        {
+         "label": "Người góp ý",
+         "keys": [
+          "j_coach"
+         ]
+        }
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Tổng số ngày giữ thói quen trên cả hành trình: {jtotal}.",
+       "need": [
+        "jtotal"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Lá thư gửi mình ngày 30.06",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ba phần: hôm nay mình chọn gì và vì sao; mình sẽ giữ nhịp thế nào, kể cả phiên bản tối thiểu cho tuần bận; mình mong thấy điều gì vào 30.06, một việc cụ thể làm được."
+      },
+      {
+       "f": "ta",
+       "k": "d6letter",
+       "q": "Gửi tôi ngày 30.06.2027",
+       "ph": "Hôm nay là Thứ Bảy 10.04. Tôi vừa chọn ..."
+      },
+      {
+       "f": "tx",
+       "k": "d6line",
+       "q": "Một câu từ lá thư để chia sẻ",
+       "ph": "Ví dụ: tôi mong đã dùng kịch bản ít nhất một lần trong cuộc gọi thật"
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Đã in và điền bản đồ dự án học (phiếu Ngày 6)"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Kỹ năng quý 2: {j_learn_skill}.",
+     "need": [
+      "j_learn_skill"
+     ]
+    },
+    {
+     "tpl": " Dự án học: {j_learn_project}.",
+     "need": [
+      "j_learn_project"
+     ]
+    },
+    {
+     "tpl": " Gửi tôi ngày 30.06: {d6line}.",
+     "need": [
+      "d6line"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

@@ -1,0 +1,570 @@
+{
+ "id": "0053",
+ "name": "Bản đồ tư duy",
+ "storeKey": "sth-0053-6n",
+ "kicker": "Công thức #0053",
+ "title": "Bản đồ tư duy sau mỗi buổi học",
+ "sub": "Mỗi buổi học 20 phút khép lại bằng một bản đồ một trang, vẽ từ trí nhớ trước, mở tài liệu bổ sung sau, có chữ và hình. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "bars",
+  "big": "6/6",
+  "unit": "NGÀY VẼ BẢN ĐỒ",
+  "line": "Mỗi buổi học khép lại bằng: {j_map|một bản đồ một trang}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Bản đồ đầu tiên",
+   "title": "Một trung tâm, ba đến năm nhánh",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Thói quen và kỹ năng đang học",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Dự án học của quý 2: {j_learn_project}",
+       "need": [
+        "j_learn_project"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và một kỹ năng muốn học thêm cho công việc ở các ô dưới đây."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: hiểu rõ điều mình ký trước khi ký"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: 8 giờ sáng, trước khi mở email, 20 phút cho việc quan trọng nhất"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_skill",
+       "q": "Kỹ năng tôi đang học trong quý 2",
+       "ph": "Ví dụ: đọc hiểu điều khoản hợp đồng mua hàng"
+      }
+     ]
+    },
+    {
+     "h": "Hai mươi phút học",
+     "items": [
+      {
+       "f": "timer",
+       "k": "d1t",
+       "dk": "d1dk",
+       "def": 20,
+       "opts": [
+        15,
+        20,
+        25
+       ],
+       "note": "Học như mọi ngày. Hết giờ thì úp tài liệu xuống rồi mới vẽ."
+      }
+     ]
+    },
+    {
+     "h": "Bản đồ đầu tiên",
+     "items": [
+      {
+       "f": "note",
+       "text": "Tờ giấy nằm ngang. Chủ đề buổi học ở giữa trang, khoanh lại. Ba đến năm nhánh chính toả ra, mỗi nhánh một từ khoá, không viết câu dài. Hôm nay chưa cần màu."
+      },
+      {
+       "f": "tx",
+       "k": "d1center",
+       "q": "Trung tâm của bản đồ (chủ đề buổi học)",
+       "ph": "Ví dụ: điều khoản thanh toán"
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1n",
+         "q": "Số nhánh chính"
+        }
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d1down",
+       "label": "Tôi đã úp tài liệu xuống trước khi vẽ"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Bản đồ đầu tiên của tôi: trung tâm là {d1center}, có {d1n} nhánh chính.",
+     "need": [
+      "d1center",
+      "d1n"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Đặt cạnh nhau",
+   "title": "Danh sách, bản đồ tư duy hay bản đồ khái niệm?",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Ba cách ghi một buổi học",
+     "items": [
+      {
+       "f": "note",
+       "text": "Danh sách: giữ đúng trình tự, khó thấy liên kết. Bản đồ tư duy: một trung tâm, nhìn một lần thấy toàn cảnh. Bản đồ khái niệm: nhiều ô nối bằng mũi tên, trên mũi tên ghi rõ quan hệ."
+      },
+      {
+       "f": "seg",
+       "k": "d2fit",
+       "q": "Kiến thức hôm nay hợp nhất với cách nào?",
+       "opts": [
+        "Danh sách",
+        "Bản đồ tư duy",
+        "Bản đồ khái niệm"
+       ],
+       "hints": [
+        "Cần làm theo từng bước, ví dụ quy trình xuất kho. Danh sách là đủ.",
+        "Cần nhìn toàn cảnh một chủ đề và ôn lại nhanh. Đây là cách chính của tuần này.",
+        "Cần hiểu vì sao điều này dẫn đến điều kia, ví dụ tồn kho thấp làm chậm giao hàng."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Chuyển danh sách sang bản đồ",
+     "items": [
+      {
+       "f": "note",
+       "text": "Lấy một trang ghi chép dạng danh sách gần đây (trang Cornell từ tuần #0049 rất hợp), chuyển sang bản đồ tư duy. Tìm một liên kết giữa hai nhánh mà danh sách không cho thấy, nối bằng đường ngang và ghi vài chữ lên đường nối."
+      },
+      {
+       "f": "tx",
+       "k": "d2a",
+       "q": "Một nhánh của liên kết",
+       "ph": "Ví dụ: khuyến mãi"
+      },
+      {
+       "f": "tx",
+       "k": "d2b",
+       "q": "Nhánh còn lại",
+       "ph": "Ví dụ: kiểm tra tồn kho"
+      },
+      {
+       "f": "tx",
+       "k": "d2word",
+       "q": "Vài chữ ghi trên đường nối",
+       "ph": "Ví dụ: làm thay đổi số lượng cần giữ"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Chuyển ghi chép sang bản đồ, tôi thấy một liên kết mới: {d2a} có liên quan đến {d2b}.",
+     "need": [
+      "d2a",
+      "d2b"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Vẽ từ trí nhớ",
+   "title": "Phép thử vẽ lại bản đồ từ trí nhớ",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Năm phút, không nhìn trộm",
+     "items": [
+      {
+       "f": "note",
+       "text": "Úp bản đồ cũ và tài liệu xuống. Trên tờ giấy mới, vẽ lại bản đồ từ trí nhớ. Hết giờ, lật bản đồ cũ lên, bổ sung nhánh đã quên bằng mực đỏ."
+      },
+      {
+       "f": "timer",
+       "k": "d3t",
+       "dk": "d3dk",
+       "def": 5,
+       "opts": [
+        5,
+        7,
+        10
+       ],
+       "note": ""
+      }
+     ]
+    },
+    {
+     "h": "Đọc kết quả",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d3got",
+         "q": "Số nhánh nhớ được"
+        },
+        {
+         "k": "d3add",
+         "q": "Số nhánh phải bổ sung"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3miss",
+       "q": "Nhánh hay quên nhất",
+       "ph": "Ví dụ: mức phạt chậm giao"
+      },
+      {
+       "f": "seg",
+       "k": "d3read",
+       "q": "Kết quả của tôi giống trường hợp nào?",
+       "opts": [
+        "Quên nhánh con",
+        "Quên nhánh chính",
+        "Nhớ gần hết"
+       ],
+       "hints": [
+        "Rất bình thường. Nhánh chính là khung, chi tiết luôn mờ nhanh hơn.",
+        "Đánh dấu nhánh đó, đưa vào lịch ôn cách quãng của mình.",
+        "Lần sau thử vẽ lại sau ba ngày thay vì một ngày."
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Lịch ôn cách quãng của tôi: {j_review}",
+       "need": [
+        "j_review"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt, kèm 20 phút học."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Vẽ lại từ trí nhớ, tôi nhớ được {d3got} nhánh, phải bổ sung {d3add} nhánh.",
+     "need": [
+      "d3got",
+      "d3add"
+     ]
+    },
+    {
+     "tpl": " Nhánh hay quên nhất: {d3miss}.",
+     "need": [
+      "d3miss"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Một trang",
+   "title": "Bốn mươi trang tài liệu, một trang bản đồ",
+   "time": "Khoảng 30 phút",
+   "cards": [
+    {
+     "h": "Chọn tài liệu",
+     "items": [
+      {
+       "f": "show",
+       "text": "Dự án học của quý 2: {j_learn_project}",
+       "need": [
+        "j_learn_project"
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d4type",
+       "q": "Loại tài liệu",
+       "opts": [
+        "Quy trình",
+        "Hợp đồng",
+        "Báo cáo",
+        "Tài liệu sản phẩm",
+        "Quy chế",
+        "Khác"
+       ],
+       "hints": [
+        "Quy trình nội bộ, hướng dẫn công việc, tiêu chuẩn vận hành.",
+        "Hợp đồng mẫu, điều khoản mua bán, thoả thuận dịch vụ.",
+        "Báo cáo tháng, báo cáo thị trường, báo cáo kiểm toán.",
+        "Thông số, tính năng, bảng giá, tài liệu đào tạo về sản phẩm.",
+        "Quy chế lương thưởng, chi tiêu, phê duyệt.",
+        "Một tài liệu khác phục vụ dự án học, ghi tên ở ô bên dưới."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d4doc",
+       "q": "Tên tài liệu",
+       "ph": "Ví dụ: quy định mới về hợp đồng mua hàng"
+      }
+     ]
+    },
+    {
+     "h": "Ba giới hạn của một trang",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d4l1",
+       "label": "Tối đa bảy nhánh chính, nhiều hơn thì gộp lại"
+      },
+      {
+       "f": "cb",
+       "k": "d4l2",
+       "label": "Mỗi nhánh tối đa ba đến bốn từ"
+      },
+      {
+       "f": "cb",
+       "k": "d4l3",
+       "label": "Còn chừa khoảng trống cho điều sẽ học thêm"
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d4n",
+         "q": "Số nhánh chính"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d4where",
+       "q": "Nơi tôi cất bản đồ để dùng đến",
+       "ph": "Ví dụ: kẹp vào bìa hồ sơ hợp đồng"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi đã tóm tài liệu {d4doc} thành một bản đồ một trang, có {d4n} nhánh chính.",
+     "need": [
+      "d4doc",
+      "d4n"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Chữ và hình",
+   "title": "Chữ và hình, hai đường vào trí nhớ",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Mã hoá kép",
+     "items": [
+      {
+       "f": "note",
+       "text": "Paivio: một ý được ghi bằng cả chữ và hình có hai đường để lấy ra khi cần nhớ. Hình nhỏ là một nét vẽ vài giây, không cần đẹp. Ưu tiên thêm hình cho từ khoá trừu tượng nhất."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d5n",
+         "q": "Số hình nhỏ đã thêm vào bản đồ"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Quy ước ký hiệu của tôi",
+     "items": [
+      {
+       "f": "note",
+       "text": "Ghi ba ký hiệu hay dùng và ý nghĩa, giữ nguyên qua mọi bản đồ."
+      },
+      {
+       "f": "tx",
+       "k": "d5s1",
+       "q": "Ký hiệu 1",
+       "ph": "Ví dụ: đồng hồ = hạn chót"
+      },
+      {
+       "f": "tx",
+       "k": "d5s2",
+       "q": "Ký hiệu 2",
+       "ph": "Ví dụ: dấu chấm than = rủi ro"
+      },
+      {
+       "f": "tx",
+       "k": "d5s3",
+       "q": "Ký hiệu 3",
+       "ph": "Ví dụ: mực đỏ = bổ sung khi mở tài liệu"
+      },
+      {
+       "f": "show",
+       "text": "Bấm chọn ký hiệu mình dùng nhiều nhất:",
+       "need": [
+        "d5s1"
+       ]
+      },
+      {
+       "f": "pick",
+       "k": "d5sym",
+       "kp": "d5s",
+       "n": 3,
+       "empty": "Viết ít nhất một ký hiệu ở trên để chọn."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi thêm {d5n} hình nhỏ vào bản đồ.",
+     "need": [
+      "d5n"
+     ]
+    },
+    {
+     "tpl": " Ký hiệu tôi dùng nhiều nhất: {d5sym}.",
+     "need": [
+      "d5sym"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Nhìn lại",
+   "title": "Đặt các bản đồ cạnh nhau và nhìn lại",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Năm câu hỏi mở",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d6q1",
+       "q": "1. Bản đồ rõ ràng nhất, và vì sao",
+       "ph": "Ví dụ: bản đồ Thứ Năm, vì có đường nối ngang"
+      },
+      {
+       "f": "tx",
+       "k": "d6q2",
+       "q": "2. Giữa bản đồ Thứ Hai và hôm qua, điều gì đã khác",
+       "ph": "Ví dụ: từ khoá ngắn hơn, vẽ nhanh hơn"
+      },
+      {
+       "f": "tx",
+       "k": "d6q3",
+       "q": "3. Nhánh phải bổ sung nhiều lần nhất",
+       "ph": "Ví dụ: mức phạt chậm giao"
+      },
+      {
+       "f": "ta",
+       "k": "d6q4",
+       "q": "4. Đặt cạnh nhau, kỹ năng đang học rõ hơn ở đâu",
+       "ph": "Ví dụ: thấy dự án học đang thiếu phần điều khoản bảo hành"
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6n",
+         "q": "Số bản đồ đã vẽ trong tuần"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Quy ước khép buổi học",
+     "items": [
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_map",
+       "q": "5. Từ nay mỗi buổi học khép lại bằng",
+       "ph": "Ví dụ: 5 phút vẽ bản đồ từ trí nhớ, bổ sung bằng mực đỏ"
+      },
+      {
+       "f": "note",
+       "text": "Quy ước này được lưu cho cả hành trình."
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã in trang quy ước bản đồ (phiếu Ngày 6) và kẹp cùng các bản đồ của tuần"
+      },
+      {
+       "f": "show",
+       "text": "Tổng số ngày giữ thói quen trên cả hành trình: {jtotal}.",
+       "need": [
+        "jtotal"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau: Phân loại Bloom, đẩy 20 phút học lên tầng cao hơn."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tuần này tôi vẽ {d6n} bản đồ cho kỹ năng {j_learn_skill|đang học}.",
+     "need": [
+      "d6n"
+     ]
+    },
+    {
+     "tpl": " Từ nay mỗi buổi học khép lại bằng: {j_map}.",
+     "need": [
+      "j_map"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

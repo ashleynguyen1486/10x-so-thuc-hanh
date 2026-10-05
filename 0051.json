@@ -1,0 +1,570 @@
+{
+ "id": "0051",
+ "name": "Cung điện trí nhớ",
+ "storeKey": "sth-0051-6n",
+ "kicker": "Công thức #0051",
+ "title": "Cung điện trí nhớ",
+ "sub": "Tuần đầu sau kỳ nghỉ lễ. Chọn một nơi quen thuộc làm cung điện, đặt các ý chính của một bài trình bày, một quy trình hay một nhóm số liệu vào từng điểm dừng, rồi dùng trong một việc thật. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "seal",
+  "big": "{d1n|7}",
+  "unit": "ĐIỂM DỪNG",
+  "ring": "CUNG ĐIỆN TRÍ NHỚ · CÔNG THỨC #0051 · 10X EXCELLENCE HUB · ",
+  "line": "Cung điện: {j_palace|một nơi quen thuộc}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Chọn cung điện",
+   "title": "Chọn cung điện và các điểm dừng",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Quay lại sau kỳ nghỉ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Bộ ba kỹ năng tuần trước: {j_stack}",
+       "need": [
+        "j_stack"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d1back",
+       "label": "Sáng nay tôi đã làm thói quen ở đúng khung giờ cũ (phiên bản nhỏ cũng tính)"
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen muốn giữ mỗi ngày và một kỹ năng muốn học thêm cho công việc."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: nói rõ ràng, đủ ý trước khách hàng"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: sau khi mở máy, 20 phút học trước khi mở hộp thư"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_skill",
+       "q": "Kỹ năng tôi đang học",
+       "ph": "Ví dụ: trình bày báo cáo trước ban giám đốc"
+      }
+     ]
+    },
+    {
+     "h": "Cung điện của tôi",
+     "items": [
+      {
+       "f": "note",
+       "text": "Chọn một nơi rất quen, đi lại hằng ngày. Nhắm mắt, đi một vòng trong đầu theo một hướng cố định như khi đi thật, rồi chọn các điểm dừng dễ nhận ra."
+      },
+      {
+       "f": "tx",
+       "k": "j_palace",
+       "q": "Cung điện trí nhớ của tôi (lưu cho cả hành trình)",
+       "ph": "Ví dụ: đường từ bãi gửi xe vào bàn làm việc"
+      },
+      {
+       "f": "tx",
+       "k": "d1s1",
+       "q": "Điểm dừng 1",
+       "ph": "Ví dụ: cổng bảo vệ"
+      },
+      {
+       "f": "tx",
+       "k": "d1s2",
+       "q": "Điểm dừng 2",
+       "ph": "Ví dụ: quầy lễ tân"
+      },
+      {
+       "f": "tx",
+       "k": "d1s3",
+       "q": "Điểm dừng 3",
+       "ph": "Ví dụ: thang máy"
+      },
+      {
+       "f": "tx",
+       "k": "d1s4",
+       "q": "Điểm dừng 4",
+       "ph": "Ví dụ: máy in tầng 5"
+      },
+      {
+       "f": "tx",
+       "k": "d1s5",
+       "q": "Điểm dừng 5",
+       "ph": "Ví dụ: cửa phòng họp"
+      },
+      {
+       "f": "tx",
+       "k": "d1s6",
+       "q": "Điểm dừng 6",
+       "ph": "Ví dụ: bàn trưởng phòng"
+      },
+      {
+       "f": "tx",
+       "k": "d1s7",
+       "q": "Điểm dừng 7",
+       "ph": "Ví dụ: bàn làm việc của tôi"
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1n",
+         "q": "Số điểm dừng của cung điện"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Cung điện trí nhớ đầu tiên của tôi: {j_palace}, {d1n} điểm dừng.",
+     "need": [
+      "j_palace",
+      "d1n"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Điều cần nhớ",
+   "title": "Chọn điều cần nhớ cho công việc",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Bảng chọn",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d2type",
+       "q": "Loại nội dung tuần này",
+       "opts": [
+        "ý chính bài trình bày",
+        "các bước quy trình",
+        "nhóm số liệu",
+        "kiến thức kỹ năng đang học"
+       ],
+       "hints": [
+        "Có 4 đến 7 ý nói theo thứ tự, muốn nói mà không phải nhìn trang chiếu liên tục. Ví dụ: 5 ý của buổi báo cáo quý.",
+        "Thứ tự các bước quan trọng, bỏ sót một bước là có lỗi. Ví dụ: 7 bước tiếp nhận nhân viên mới.",
+        "Vài con số then chốt hay bị hỏi bất ngờ, không nhiều hơn 7. Ví dụ: tỷ lệ lỗi của 5 dây chuyền.",
+        "Một danh sách của kỹ năng đang học: nguyên tắc, hàm, thuật ngữ. Ví dụ: 6 hàm bảng tính hay dùng."
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Có việc thật sắp diễn ra trong tuần (buổi trình bày, cuộc họp, buổi hướng dẫn) thì chọn nội dung cho việc đó. Chưa có thì chọn kiến thức của kỹ năng đang học."
+      },
+      {
+       "f": "tx",
+       "k": "d2what",
+       "q": "Tên nội dung cụ thể",
+       "ph": "Ví dụ: báo cáo quý cho ban giám đốc ngày 07.05"
+      },
+      {
+       "f": "ta",
+       "k": "d2items",
+       "q": "Các ý cần nhớ theo đúng thứ tự (mỗi ý vài chữ)",
+       "ph": "Ví dụ: 1 kết quả quý; 2 ba khách hàng lớn; 3 giao hàng chậm; 4 kế hoạch tháng 6; 5 đề xuất nhân sự"
+      },
+      {
+       "f": "note",
+       "text": "Chỉ đặt vào cung điện những ý đã hiểu. Số liệu nội bộ hay thông tin khách hàng thì khi chia sẻ chỉ nêu tên loại nội dung."
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen. Tuần đầu sau kỳ nghỉ, phiên bản nhỏ cũng tính."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Điều tôi sẽ đặt vào cung điện trí nhớ: {d2what} ({d2type}).",
+     "need": [
+      "d2what",
+      "d2type"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Hình ảnh",
+   "title": "Người nhớ giỏi làm khác ở đâu?",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Điều nghiên cứu cho thấy",
+     "items": [
+      {
+       "f": "note",
+       "text": "Maguire và cộng sự (2003): 10 người nhớ giỏi không khác người bình thường về cấu trúc não. Khác ở cách dùng: 9 trong 10 người dùng phương pháp định vị, và vùng não về trí nhớ không gian hoạt động mạnh hơn khi họ ghi nhớ."
+      },
+      {
+       "f": "show",
+       "text": "Các ý cần nhớ: {d2items}",
+       "need": [
+        "d2items"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Ba điểm dừng đầu tiên",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mỗi ý thành một hình ảnh cụ thể, có chuyển động, màu sắc hoặc kích thước khác thường. Ví dụ: ý ba khách hàng lớn ở quầy lễ tân thành ba chiếc xe tải mang logo khách hàng xếp hàng trước quầy."
+      },
+      {
+       "f": "show",
+       "text": "Điểm dừng 1: {d1s1}",
+       "need": [
+        "d1s1"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3i1",
+       "q": "Hình ảnh ở điểm dừng 1",
+       "ph": "Ví dụ: anh bảo vệ giơ tấm biển ghi doanh thu quý"
+      },
+      {
+       "f": "show",
+       "text": "Điểm dừng 2: {d1s2}",
+       "need": [
+        "d1s2"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3i2",
+       "q": "Hình ảnh ở điểm dừng 2",
+       "ph": "Ví dụ: ba xe tải mang logo ba khách hàng chờ ký sổ"
+      },
+      {
+       "f": "show",
+       "text": "Điểm dừng 3: {d1s3}",
+       "need": [
+        "d1s3"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3i3",
+       "q": "Hình ảnh ở điểm dừng 3",
+       "ph": "Ví dụ: cửa thang máy kẹt giữa chừng như lô hàng giao chậm"
+      },
+      {
+       "f": "cb",
+       "k": "d3walk",
+       "label": "Tôi đã nhắm mắt đi qua ba điểm đầu và gọi lại đủ ba ý"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Điểm dừng đầu tiên, {d1s1}, giữ hình ảnh: {d3i1}.",
+     "need": [
+      "d1s1",
+      "d3i1"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Đi một vòng",
+   "title": "Năm ý trình bày, năm điểm dừng",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Các điểm dừng còn lại",
+     "items": [
+      {
+       "f": "note",
+       "text": "Đặt các ý còn lại vào điểm dừng 4 trở đi. Cung điện có ít điểm hơn thì bỏ qua các ô thừa."
+      },
+      {
+       "f": "show",
+       "text": "Điểm dừng 4: {d1s4}",
+       "need": [
+        "d1s4"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d4i4",
+       "q": "Hình ảnh ở điểm dừng 4",
+       "ph": "Ví dụ: tờ lịch tháng 6 dán trên cửa kính, năm ngày khoanh đỏ"
+      },
+      {
+       "f": "show",
+       "text": "Điểm dừng 5: {d1s5}",
+       "need": [
+        "d1s5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d4i5",
+       "q": "Hình ảnh ở điểm dừng 5",
+       "ph": "Ví dụ: một chiếc ghế trống cạnh bục trình bày"
+      },
+      {
+       "f": "show",
+       "text": "Điểm dừng 6: {d1s6}",
+       "need": [
+        "d1s6"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d4i6",
+       "q": "Hình ảnh ở điểm dừng 6",
+       "ph": ""
+      },
+      {
+       "f": "show",
+       "text": "Điểm dừng 7: {d1s7}",
+       "need": [
+        "d1s7"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d4i7",
+       "q": "Hình ảnh ở điểm dừng 7",
+       "ph": ""
+      }
+     ]
+    },
+    {
+     "h": "Đi một vòng",
+     "items": [
+      {
+       "f": "note",
+       "text": "Nhắm mắt, đi từ điểm đầu đến điểm cuối, gọi lại từng ý. Đếm ở lần đi đầu tiên. Lần đầu quên một ý là bình thường: đó là điểm dừng cần hình ảnh mạnh hơn."
+      },
+      {
+       "f": "tx",
+       "k": "d4tot",
+       "q": "Tổng số ý đặt trong cung điện",
+       "ph": "Ví dụ: 5"
+      },
+      {
+       "f": "tx",
+       "k": "d4got",
+       "q": "Số ý nhớ được ở lần đi đầu tiên",
+       "ph": "Ví dụ: 4"
+      },
+      {
+       "f": "tx",
+       "k": "d4fix",
+       "q": "Ý bị quên và hình ảnh mới cho ý đó",
+       "ph": "Ví dụ: ý 4, đổi thành tờ lịch khổng lồ phủ kín cửa kính"
+      },
+      {
+       "f": "tx",
+       "k": "d4say",
+       "q": "Nói thành lời các ý theo thứ tự, không nhìn ghi chú, mất khoảng",
+       "ph": "Ví dụ: 3 phút"
+      },
+      {
+       "f": "tx",
+       "k": "d4next",
+       "q": "Lần đi lại tiếp theo vào lúc",
+       "ph": "Ví dụ: trên đường ra bãi xe chiều nay"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Đi một vòng cung điện, tôi nhớ được {d4got} trên {d4tot} ý ngay lần đầu.",
+     "need": [
+      "d4got",
+      "d4tot"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Việc thật",
+   "title": "Dùng cung điện trong một việc thật",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Trước và trong việc",
+     "items": [
+      {
+       "f": "note",
+       "text": "Đi một vòng cung điện trước khi bắt đầu. Việc thật là việc có người khác: trình bày trong cuộc họp, hướng dẫn quy trình, trả lời câu hỏi về số liệu, hoặc nói thành lời trọn vẹn cho một người nghe."
+      },
+      {
+       "f": "tx",
+       "k": "d5what",
+       "q": "Tôi đã dùng cung điện cho việc",
+       "ph": "Ví dụ: báo cáo quý trước ban giám đốc sáng Thứ Sáu"
+      },
+      {
+       "f": "seg",
+       "k": "d5res",
+       "q": "Kết quả",
+       "opts": [
+        "đã dùng trong việc thật",
+        "đã nói thành lời cho một người nghe",
+        "chưa có dịp, đã tự nói và bấm giờ"
+       ],
+       "hints": [
+        "Ghi lại ý nào hiện ra dễ nhất và ý nào phải nghĩ lâu.",
+        "Hỏi người nghe xem có ý nào bị thiếu hoặc lộn thứ tự không.",
+        "Hoàn toàn được. Ghi lại thời gian nói trọn vẹn để so ở lần sau."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Lần sau",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d5adj",
+       "q": "Một điều tôi sẽ điều chỉnh ở lần dùng sau",
+       "ph": "Ví dụ: chọn cung điện gần phòng họp hơn, làm hình ảnh cho số liệu rõ hơn"
+      },
+      {
+       "f": "note",
+       "text": "Cung điện hợp nhất với danh sách các ý rời cần nhớ theo thứ tự. Kiến thức cần hiểu sâu thì dùng trang Cornell và giảng lại kiểu Feynman."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi đã dùng cung điện trí nhớ cho: {d5what}.",
+     "need": [
+      "d5what"
+     ]
+    },
+    {
+     "tpl": " Kết quả: {d5res}.",
+     "need": [
+      "d5res"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Đi lại",
+   "title": "Sáu tuần trong nghiên cứu, một tuần của mình",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Đặt cạnh nhau",
+     "items": [
+      {
+       "f": "note",
+       "text": "Bên trái, nghiên cứu: 40 ngày, mỗi ngày 30 phút, nhớ danh sách từ. Bên phải, tuần này: 6 ngày, mỗi ngày khoảng 20 phút, nhớ một nội dung công việc thật. Giống nhau ở cách làm: luyện ngắn, đều đặn, trên một chiến lược rõ ràng."
+      },
+      {
+       "f": "note",
+       "text": "Dresler và cộng sự (2017): 51 người chưa từng luyện trí nhớ, nhóm luyện phương pháp định vị 30 phút mỗi ngày trong 40 ngày nhớ thêm trung bình khoảng 35 từ trong danh sách 72 từ; bốn tháng sau vẫn hơn mức ban đầu khoảng 22 từ. Nghiên cứu đo danh sách từ trong phòng thí nghiệm, không đo việc nhớ trong công việc."
+      }
+     ]
+    },
+    {
+     "h": "Đi lại sau vài ngày",
+     "items": [
+      {
+       "f": "show",
+       "text": "Cung điện của tôi: {j_palace}",
+       "need": [
+        "j_palace"
+       ]
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6got",
+         "q": "Số ý còn nhớ khi đi lại hôm nay, không nhìn ghi chú"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_palace",
+       "q": "Cung điện tôi giữ cho cả hành trình (sửa nếu cần)",
+       "ph": ""
+      },
+      {
+       "f": "tx",
+       "k": "d6next",
+       "q": "Nội dung tiếp theo tôi đặt vào cung điện",
+       "ph": "Ví dụ: 6 hàm bảng tính cho dữ liệu công nợ"
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã in bản đồ cung điện (trang 2 phiếu Ngày 6) và kẹp vào sổ kế hoạch"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Sau vài ngày, tôi vẫn nhớ {d6got} ý trong cung điện trí nhớ.",
+     "need": [
+      "d6got"
+     ]
+    },
+    {
+     "tpl": " Nội dung tiếp theo tôi đặt vào cung điện: {d6next}.",
+     "need": [
+      "d6next"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

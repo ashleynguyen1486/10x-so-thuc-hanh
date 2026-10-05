@@ -1,0 +1,484 @@
+{
+ "id": "0049",
+ "name": "Ghi chép Cornell",
+ "storeKey": "sth-0049-6n",
+ "kicker": "Công thức #0049",
+ "title": "Ghi chép Cornell",
+ "sub": "Mỗi buổi 20 phút học để lại một trang chia ba vùng: ghi chép, câu hỏi gợi nhớ, tóm tắt. Cột câu hỏi là chỗ tự kiểm tra của tuần trước. Dùng được cả cho cuộc họp và buổi đào tạo nội bộ. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "diag",
+  "big": "6",
+  "unit": "NGÀY GHI CORNELL",
+  "line": "Trang Cornell của tôi: {j_cornell|ghi, hỏi, tóm tắt}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Trang đầu tiên",
+   "title": "Một trang giấy chia ba vùng",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Thói quen và điều đang học",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng quý 2: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Cách tự kiểm tra tôi giữ: {j_recall}",
+       "need": [
+        "j_recall"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và một điều đang muốn học trong công việc."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: ghi lại điều đã học để dùng lại được"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: kiểm tra biên bản ca trước 7 giờ 30"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_skill",
+       "q": "Điều tôi đang học",
+       "ph": "Ví dụ: quy trình kiểm soát thay đổi mới"
+      }
+     ]
+    },
+    {
+     "h": "Chia trang",
+     "items": [
+      {
+       "f": "note",
+       "text": "Kẻ một đường ngang cách mép dưới khoảng 5 cm. Kẻ một đường dọc cách mép trái khoảng một phần ba bề ngang. Cột phải ghi trong lúc học, cột trái viết câu hỏi sau, dải dưới tóm tắt."
+      },
+      {
+       "f": "cb",
+       "k": "d1split",
+       "label": "Đã chia trang, ghi chủ đề và ngày ở đầu trang"
+      },
+      {
+       "f": "tx",
+       "k": "d1topic",
+       "q": "Chủ đề của trang đầu tiên",
+       "ph": "Ví dụ: ba điều kiện duyệt đơn hàng lớn"
+      },
+      {
+       "f": "seg",
+       "k": "d1where",
+       "q": "Tôi ghi trang này trong",
+       "opts": [
+        "20 phút học",
+        "một cuộc họp",
+        "một buổi đào tạo",
+        "lúc đọc tài liệu"
+       ],
+       "hints": [
+        "Hai mươi phút học sau thói quen then chốt, với kỹ năng quý 2.",
+        "Cột phải ghi diễn biến. Ngày mai và Thứ Năm sẽ dùng cột trái cho việc cần làm.",
+        "Buổi đào tạo nội bộ là nơi Cornell rất hợp: nhiều ý mới, cần nhớ lâu.",
+        "Ghi ý chính của từng phần, không chép lại nguyên câu."
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d1right",
+       "label": "Hôm nay chỉ ghi cột phải, để trống cột trái và dải dưới"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Trang Cornell đầu tiên của tôi: {d1topic}, ghi trong {d1where}.",
+     "need": [
+      "d1topic",
+      "d1where"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Cột ghi chép",
+   "title": "Ghi gì và rút gọn thế nào",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Bộ ký hiệu của tôi",
+     "items": [
+      {
+       "f": "note",
+       "text": "Năm đến bảy ký hiệu, dùng nhất quán. Ví dụ: mũi tên cho dẫn đến, dấu chấm hỏi cho điều chưa rõ, dấu sao cho điều quan trọng, chữ V khoanh tròn cho việc cần làm, VD cho ví dụ của mình."
+      },
+      {
+       "f": "ta",
+       "k": "d2sym",
+       "q": "Ký hiệu tôi dùng",
+       "ph": "Ví dụ: → dẫn đến; ? chưa rõ; * quan trọng; V việc cần làm; VD ví dụ"
+      }
+     ]
+    },
+    {
+     "h": "Rút gọn trong ngày",
+     "items": [
+      {
+       "f": "note",
+       "text": "Đọc lại cột phải một lượt, đánh dấu ba đến năm ý quan trọng nhất, bổ sung chỗ thiếu, gạch dòng không cần. Không chép lại cho đẹp."
+      },
+      {
+       "f": "cb",
+       "k": "d2r1",
+       "label": "Đã rút gọn trang hôm qua"
+      },
+      {
+       "f": "cb",
+       "k": "d2r2",
+       "label": "Đã rút gọn trang hôm nay"
+      },
+      {
+       "f": "tx",
+       "k": "d2key",
+       "q": "Ba ý chính của trang hôm nay",
+       "ph": "Ví dụ: đơn trên 200 triệu cần hai cấp duyệt; hạn 24 giờ; biểu mẫu mới"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt và 20 phút học. Một trang Cornell là dấu vết của 20 phút đó."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Sau khi rút gọn, ba ý chính của trang hôm nay: {d2key}.",
+     "need": [
+      "d2key"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Cột câu hỏi",
+   "title": "Che cột phải, trả lời từ cột trái",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Viết vào cột trái",
+     "items": [
+      {
+       "f": "note",
+       "text": "Viết câu hỏi, không chỉ từ khoá. Ví dụ: thay vì \"loại B\", viết \"Thay đổi loại B cần ai ký, trong bao lâu?\". Viết sau buổi học, cho trang Thứ Hai và Thứ Ba."
+      },
+      {
+       "f": "tx",
+       "k": "d3q1",
+       "q": "Một câu hỏi mẫu tôi đã viết",
+       "ph": "Ví dụ: biểu mẫu nào dùng khi thay đổi nhà cung cấp linh kiện?"
+      }
+     ]
+    },
+    {
+     "h": "Che và trả lời",
+     "items": [
+      {
+       "f": "note",
+       "text": "Lấy một tờ giấy che cột phải. Đọc từng câu hỏi ở cột trái, trả lời thành tiếng hoặc viết ra. Rồi mới mở ra đối chiếu."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d3ask",
+         "q": "Số câu hỏi ở cột trái"
+        },
+        {
+         "k": "d3ok",
+         "q": "Số câu trả lời được"
+        }
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d3mark",
+       "label": "Đã đánh dấu câu còn ngập ngừng để hỏi lại"
+      },
+      {
+       "f": "show",
+       "text": "Lịch ôn của tôi (tuần #0040): {j_review}",
+       "need": [
+        "j_review"
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi viết {d3ask} câu hỏi ở cột trái, che cột phải và trả lời được {d3ok} câu.",
+     "need": [
+      "d3ask",
+      "d3ok"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Biên bản họp",
+   "title": "Biên bản họp kiểu Cornell",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Cuộc họp hôm nay",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4meet",
+       "q": "Cuộc họp (hoặc buổi học) tôi ghi kiểu Cornell",
+       "ph": "Ví dụ: giao ban kinh doanh sáng Thứ Năm"
+      },
+      {
+       "f": "seg",
+       "k": "d4left",
+       "q": "Cột trái của tôi dùng cho",
+       "opts": [
+        "câu hỏi gợi nhớ",
+        "việc cần làm",
+        "cả hai"
+       ],
+       "hints": [
+        "Hợp với buổi học, buổi đào tạo: che cột phải để tự kiểm tra.",
+        "Hợp với cuộc họp: ai, việc gì, khi nào, và câu hỏi còn mở.",
+        "Dùng ký hiệu riêng: V cho việc cần làm, dấu chấm hỏi cho câu hỏi."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Dải tóm tắt hai câu",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d4sum",
+       "q": "Tóm tắt cuộc họp bằng hai câu",
+       "ph": "Ví dụ: chốt ưu đãi gia hạn 5%. Khu vực phía Bắc chậm, cần kế hoạch riêng tuần sau."
+      },
+      {
+       "f": "note",
+       "text": "Biên bản có thông tin khách hàng và nội bộ: giữ bảo mật theo quy định của công ty. Khi chia sẻ trên cộng đồng, chỉ viết ở mức chung."
+      },
+      {
+       "f": "cb",
+       "k": "d4r",
+       "label": "Đã che cột phải trang Thứ Hai và tự trả lời lại"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Biên bản kiểu Cornell cho {d4meet}.",
+     "need": [
+      "d4meet"
+     ]
+    },
+    {
+     "tpl": " Tóm tắt: {d4sum}",
+     "need": [
+      "d4sum"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Bằng chứng",
+   "title": "Cornell có thật sự hiệu quả không?",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Bảng kiểm bằng chứng",
+     "items": [
+      {
+       "f": "note",
+       "text": "Có cơ sở: tự kiểm tra từ cột câu hỏi; ôn các trang theo lịch cách quãng; Jacobs (2008) thấy Cornell có lợi khi cần tổng hợp, vận dụng. Chưa chắc: riêng việc chia trang (Quintus và cộng sự 2012 không thấy khác biệt có ý nghĩa); dải tóm tắt nếu chỉ chép lại."
+      },
+      {
+       "f": "seg",
+       "k": "d5use",
+       "q": "Tuần này tôi đã che cột phải để tự kiểm tra ở",
+       "opts": [
+        "mọi trang",
+        "vài trang",
+        "chưa trang nào"
+       ],
+       "hints": [
+        "Đây là phần có bằng chứng mạnh nhất của Cornell. Giữ nhịp này.",
+        "Hôm nay và ngày mai che thêm các trang còn lại.",
+        "Bắt đầu với một trang ngay hôm nay: đó là phần tạo ra khác biệt."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Tóm tắt không nhìn",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d5sum",
+       "label": "Đã viết dải tóm tắt hai câu cho các trang trong tuần, không nhìn cột phải"
+      },
+      {
+       "f": "tx",
+       "k": "d5keep",
+       "q": "Phần của Cornell tôi giữ",
+       "ph": "Ví dụ: cột câu hỏi và nhịp che cột phải mỗi sáng Thứ Sáu"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Phần của Cornell tôi giữ: {d5keep}.",
+     "need": [
+      "d5keep"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Tóm tắt tuần",
+   "title": "Sáu trang Cornell và năm câu hỏi mở",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Năm câu hỏi mở",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6pages",
+         "q": "Số trang Cornell trong tuần"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6best",
+       "q": "1. Trang lấy ra được nhiều nhất khi che cột phải",
+       "ph": "Ví dụ: buổi đào tạo quy trình kiểm soát thay đổi"
+      },
+      {
+       "f": "tx",
+       "k": "d6hard",
+       "q": "2. Câu hỏi vẫn khó sau cả tuần",
+       "ph": "Ví dụ: thời hạn của thay đổi loại C"
+      },
+      {
+       "f": "seg",
+       "k": "d6fit",
+       "q": "3. Cornell hợp nhất với",
+       "opts": [
+        "20 phút học",
+        "cuộc họp",
+        "đào tạo nội bộ",
+        "đọc tài liệu"
+       ],
+       "hints": [
+        "Mỗi buổi học để lại một trang, đến lịch ôn chỉ cần che cột phải.",
+        "Cột trái cho việc cần làm, dải tóm tắt gửi nhóm sau họp.",
+        "Nhiều ý mới, cần nhớ lâu: viết câu hỏi ngay trong ngày.",
+        "Ghi ý chính từng phần, cột trái là câu hỏi cho lần đọc sau."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6change",
+       "q": "4. Điều tôi muốn đổi cho hợp với mình",
+       "ph": "Ví dụ: tóm tắt bằng ba gạch đầu dòng"
+      },
+      {
+       "f": "show",
+       "text": "Dự án học: {j_learn_project}",
+       "need": [
+        "j_learn_project"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d6step",
+       "q": "5. Bước dự án học đi thêm được nhờ những trang tuần này",
+       "ph": "Ví dụ: hai mục mới của bộ kịch bản"
+      }
+     ]
+    },
+    {
+     "h": "Cách dùng Cornell tôi giữ",
+     "items": [
+      {
+       "f": "tx",
+       "k": "j_cornell",
+       "q": "Tôi dùng trang Cornell ở đâu, theo quy ước nào",
+       "ph": "Ví dụ: mỗi buổi học và họp giao ban Thứ Hai; cột trái câu hỏi; tóm tắt hai câu"
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Đã in vài bản mẫu trang Cornell (phiếu Ngày 6)"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tuần này tôi có {d6pages} trang Cornell.",
+     "need": [
+      "d6pages"
+     ]
+    },
+    {
+     "tpl": " Tôi giữ: {j_cornell}.",
+     "need": [
+      "j_cornell"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

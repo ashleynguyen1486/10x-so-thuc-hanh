@@ -1,0 +1,690 @@
+{
+ "id": "0056",
+ "name": "Phương pháp PARA",
+ "storeKey": "sth-0056-6n",
+ "kicker": "Công thức #0056",
+ "title": "Phương pháp PARA",
+ "sub": "Tài liệu học và tài liệu công việc vào bốn ngăn Dự án, Lĩnh vực, Tài nguyên, Lưu trữ, để buổi học 20 phút bắt đầu ngay. Dọn trước thư mục của dự án học. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "quote",
+  "big": "PARA",
+  "unit": "BỐN NGĂN ĐÃ VÀO NẾP",
+  "quote": "{j_para|Mỗi tài liệu một chỗ, mỗi dự án một thư mục}",
+  "line": "Dự án học: {j_learn_project|đang trên đường hoàn thành}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Kiểm kê",
+   "title": "Tài liệu đang nằm ở đâu?",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Hành trình đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Dự án học của quý 2: {j_learn_project}",
+       "need": [
+        "j_learn_project"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt, kỹ năng muốn học và dự án học (một sản phẩm nhỏ có ngày hoàn thành) ở các ô dưới đây. Ô nào đã có nội dung từ các tuần trước sẽ hiện sẵn."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: luôn hiểu rõ con số trước khi trình bày"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: 15 phút đầu giờ đối chiếu số liệu ngày hôm trước"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_skill",
+       "q": "Kỹ năng tôi học trong Mùa 3",
+       "ph": "Ví dụ: phân tích số liệu bằng Excel"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_project",
+       "q": "Dự án học của quý 2 (sản phẩm và ngày)",
+       "ph": "Ví dụ: bảng phân tích chi phí theo bộ phận, trình bày ngày 30.06"
+      }
+     ]
+    },
+    {
+     "h": "Bấm giờ tìm lại một tài liệu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Chọn một tài liệu đã dùng trong buổi học tuần trước. Bấm giờ từ lúc bắt đầu tìm đến lúc mở được nó."
+      },
+      {
+       "f": "tx",
+       "k": "d1doc",
+       "q": "Tài liệu tôi tìm lại",
+       "ph": "Ví dụ: bảng tính bài tập số 3 của khoá học"
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1min",
+         "q": "Số phút để tìm lại"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Tài liệu đang nằm ở những đâu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Đánh dấu mọi nơi đang có tài liệu học hoặc tài liệu công việc của mình. Hôm nay chưa dọn gì cả."
+      },
+      {
+       "f": "cb",
+       "k": "d1w1",
+       "label": "Hộp thư email"
+      },
+      {
+       "f": "cb",
+       "k": "d1w2",
+       "label": "Thư mục tải về hoặc màn hình chính của máy tính"
+      },
+      {
+       "f": "cb",
+       "k": "d1w3",
+       "label": "Thư mục chung của công ty"
+      },
+      {
+       "f": "cb",
+       "k": "d1w4",
+       "label": "Ổ lưu trữ trực tuyến cá nhân"
+      },
+      {
+       "f": "cb",
+       "k": "d1w5",
+       "label": "Ứng dụng ghi chú"
+      },
+      {
+       "f": "cb",
+       "k": "d1w6",
+       "label": "Sổ tay giấy"
+      },
+      {
+       "f": "cb",
+       "k": "d1w7",
+       "label": "Điện thoại, ứng dụng nhắn tin"
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d1where",
+         "q": "Tổng số nơi khác nhau"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi mất {d1min} phút để tìm lại {d1doc}.",
+     "need": [
+      "d1min",
+      "d1doc"
+     ]
+    },
+    {
+     "tpl": " Tài liệu học và công việc của tôi đang nằm ở {d1where} nơi khác nhau.",
+     "need": [
+      "d1where"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Ngăn Dự án",
+   "title": "Việc nào mới thật sự là một dự án?",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Hai câu hỏi kiểm tra",
+     "items": [
+      {
+       "f": "note",
+       "text": "1. Khi xong, có một kết quả nhìn thấy được không? 2. Có ngày kết thúc không? Hai câu đều có thì đó là dự án. Một câu không thì đó là lĩnh vực hoặc tài nguyên."
+      },
+      {
+       "f": "show",
+       "text": "Dự án học của tôi: {j_learn_project}",
+       "need": [
+        "j_learn_project"
+       ]
+      },
+      {
+       "f": "cb",
+       "k": "d2dl",
+       "label": "Dự án học của tôi đã có sản phẩm cụ thể và ngày hoàn thành"
+      }
+     ]
+    },
+    {
+     "h": "Dự án đang chạy",
+     "items": [
+      {
+       "f": "note",
+       "text": "Viết lại từng dự án sao cho có kết quả và có ngày. Ví dụ: không viết \"Tiếng Anh\", viết \"thuyết trình 5 phút bằng tiếng Anh cho đối tác, 25.06\"."
+      },
+      {
+       "f": "tx",
+       "k": "d2p1",
+       "q": "Dự án 1",
+       "ph": "Ví dụ: bài trình bày kết quả quý 2, ngày 30.06"
+      },
+      {
+       "f": "tx",
+       "k": "d2p2",
+       "q": "Dự án 2",
+       "ph": "Ví dụ: tuyển hai nhân viên kinh doanh trước 15.07"
+      },
+      {
+       "f": "tx",
+       "k": "d2p3",
+       "q": "Dự án 3",
+       "ph": ""
+      },
+      {
+       "f": "tx",
+       "k": "d2p4",
+       "q": "Dự án 4",
+       "ph": ""
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d2n",
+         "q": "Tổng số dự án đang chạy, kể cả dự án học"
+        }
+       ]
+      },
+      {
+       "f": "pick",
+       "k": "d2top",
+       "kp": "d2p",
+       "n": 4,
+       "empty": "Viết các dự án ở trên, rồi bấm chọn dự án gần hạn nhất."
+      },
+      {
+       "f": "note",
+       "text": "Bấm vào dự án gần hạn nhất. Đây là thư mục mở đầu tiên mỗi sáng tuần này."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi có {d2n} dự án đang chạy, kể cả dự án học: {j_learn_project}.",
+     "need": [
+      "d2n",
+      "j_learn_project"
+     ]
+    },
+    {
+     "tpl": " Dự án gần hạn nhất: {d2top}.",
+     "need": [
+      "d2top"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Lĩnh vực và Tài nguyên",
+   "title": "Lĩnh vực cần giữ chuẩn, tài nguyên để dùng sau",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Câu hỏi phân biệt",
+     "items": [
+      {
+       "f": "note",
+       "text": "Bỏ quên ba tháng, có ai bị ảnh hưởng không, kể cả mình? Có thì đó là Lĩnh vực. Không ai bị ảnh hưởng nhưng mình muốn dùng lại thì đó là Tài nguyên."
+      },
+      {
+       "f": "seg",
+       "k": "d3try",
+       "q": "Thử một mục: \"Chính sách lương thưởng\" của người làm nhân sự",
+       "opts": [
+        "Lĩnh vực",
+        "Tài nguyên"
+       ],
+       "hints": [
+        "Đúng. Ba tháng không đụng tới, cuối tháng sẽ có người hỏi ngay: đây là phần trách nhiệm cần giữ chuẩn.",
+        "Chưa đúng. Nếu bỏ quên, cuối tháng sẽ có người bị ảnh hưởng, nên đây là Lĩnh vực."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Ba lĩnh vực của tôi",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d3a1",
+       "q": "Lĩnh vực 1",
+       "ph": "Ví dụ: chăm sóc nhóm khách hàng phía Nam"
+      },
+      {
+       "f": "tx",
+       "k": "d3a2",
+       "q": "Lĩnh vực 2",
+       "ph": "Ví dụ: hồ sơ nhân sự"
+      },
+      {
+       "f": "tx",
+       "k": "d3a3",
+       "q": "Lĩnh vực 3",
+       "ph": ""
+      }
+     ]
+    },
+    {
+     "h": "Ba chủ đề tài nguyên",
+     "items": [
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3r1",
+       "q": "Tài nguyên cho kỹ năng đang học",
+       "ph": "Ví dụ: bài đọc và ví dụ về bảng tổng hợp dữ liệu"
+      },
+      {
+       "f": "tx",
+       "k": "d3r2",
+       "q": "Tài nguyên 2",
+       "ph": "Ví dụ: mẫu thuyết trình hay"
+      },
+      {
+       "f": "tx",
+       "k": "d3r3",
+       "q": "Tài nguyên 3",
+       "ph": ""
+      },
+      {
+       "f": "cb",
+       "k": "d3mk",
+       "label": "Đã tạo hai thư mục Lĩnh vực và Tài nguyên (trên máy tính hoặc trong sổ)"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Lĩnh vực tôi cần giữ chuẩn: {d3a1}.",
+     "need": [
+      "d3a1"
+     ]
+    },
+    {
+     "tpl": " Tài nguyên tôi đang gom cho kỹ năng {j_learn_skill|đang học}: {d3r1}.",
+     "need": [
+      "d3r1"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Dọn thư mục",
+   "title": "Hai mươi phút dọn thư mục dự án học",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Đồng hồ 20 phút",
+     "items": [
+      {
+       "f": "timer",
+       "k": "d4t",
+       "dk": "d4dur",
+       "def": 20,
+       "opts": [
+        15,
+        20,
+        25
+       ],
+       "note": "Bấm Bắt đầu rồi đi theo bốn bước bên dưới. Chỉ dọn dự án học, phần còn lại để dành tuần sau."
+      }
+     ]
+    },
+    {
+     "h": "Bốn bước",
+     "items": [
+      {
+       "f": "cb",
+       "k": "d4s1",
+       "label": "Tạo bốn thư mục đánh số: 1 Dự án, 2 Lĩnh vực, 3 Tài nguyên, 4 Lưu trữ"
+      },
+      {
+       "f": "cb",
+       "k": "d4s2",
+       "label": "Tạo thư mục dự án học trong ngăn Dự án, tên kèm hạn chót, gom tệp liên quan vào"
+      },
+      {
+       "f": "cb",
+       "k": "d4s3",
+       "label": "Bên trong chỉ giữ vài thư mục con, ví dụ Bài tập, Ghi chú, Sản phẩm"
+      },
+      {
+       "f": "cb",
+       "k": "d4s4",
+       "label": "Đưa ít nhất một dự án đã xong sang Lưu trữ (chuyển chỗ, không xoá)"
+      },
+      {
+       "f": "show",
+       "text": "Dự án học: {j_learn_project}",
+       "need": [
+        "j_learn_project"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "j_para",
+       "q": "Cấu trúc thư mục dự án học của tôi",
+       "ph": "Ví dụ: 1 Dự án > Phân tích chi phí, 30.06 > Bài tập, Ghi chú, Sản phẩm"
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d4moved",
+         "q": "Số mục đã chuyển sang Lưu trữ"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt và 20 phút học. Dòng bên dưới đếm tổng số ngày của cả hành trình."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Thư mục dự án học đã vào nếp: {j_para}.",
+     "need": [
+      "j_para"
+     ]
+    },
+    {
+     "tpl": " Tôi chuyển {d4moved} mục đã xong sang Lưu trữ.",
+     "need": [
+      "d4moved"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4. Cấu trúc thư mục được lưu cho cả hành trình."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Phân vai",
+   "title": "Sổ đầu dòng, hộp thẻ, PARA: mỗi công cụ một vai",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Sáu tình huống",
+     "items": [
+      {
+       "f": "note",
+       "text": "Chọn công cụ cho từng tình huống, gợi ý hiện ngay bên dưới. Sổ đầu dòng giữ việc, hộp thẻ giữ ý, PARA giữ tài liệu."
+      },
+      {
+       "f": "seg",
+       "k": "d5q1",
+       "q": "1. Trưởng phòng giao thêm một việc cần xong trước Thứ Năm",
+       "opts": [
+        "Sổ đầu dòng",
+        "Hộp thẻ",
+        "PARA"
+       ],
+       "hints": [
+        "Giữ việc: một dòng có ngày và ký hiệu (#0041).",
+        "Giữ ý: một thẻ viết bằng lời của mình, nối với thẻ cũ (#0055).",
+        "Giữ tài liệu: tệp nằm trong một trong bốn ngăn Dự án, Lĩnh vực, Tài nguyên, Lưu trữ."
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d5q2",
+       "q": "2. Sau buổi học, hiểu ra một ý mới về cách đọc báo cáo",
+       "opts": [
+        "Sổ đầu dòng",
+        "Hộp thẻ",
+        "PARA"
+       ],
+       "hints": [
+        "Giữ việc: một dòng có ngày và ký hiệu (#0041).",
+        "Giữ ý: một thẻ viết bằng lời của mình, nối với thẻ cũ (#0055).",
+        "Giữ tài liệu: tệp nằm trong một trong bốn ngăn Dự án, Lĩnh vực, Tài nguyên, Lưu trữ."
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d5q3",
+       "q": "3. Nhận tệp bài giảng và bài tập tuần này của khoá học",
+       "opts": [
+        "Sổ đầu dòng",
+        "Hộp thẻ",
+        "PARA"
+       ],
+       "hints": [
+        "Giữ việc: một dòng có ngày và ký hiệu (#0041).",
+        "Giữ ý: một thẻ viết bằng lời của mình, nối với thẻ cũ (#0055).",
+        "Giữ tài liệu: tệp nằm trong một trong bốn ngăn Dự án, Lĩnh vực, Tài nguyên, Lưu trữ."
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d5q4",
+       "q": "4. Một bài viết hay về thuyết trình, chưa cần dùng ngay",
+       "opts": [
+        "Sổ đầu dòng",
+        "Hộp thẻ",
+        "PARA"
+       ],
+       "hints": [
+        "Giữ việc: một dòng có ngày và ký hiệu (#0041).",
+        "Giữ ý: một thẻ viết bằng lời của mình, nối với thẻ cũ (#0055).",
+        "Giữ tài liệu: tệp nằm trong một trong bốn ngăn Dự án, Lĩnh vực, Tài nguyên, Lưu trữ."
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d5q5",
+       "q": "5. Một ý trong bài viết đó làm mình nghĩ lại cách mở đầu bài trình bày",
+       "opts": [
+        "Sổ đầu dòng",
+        "Hộp thẻ",
+        "PARA"
+       ],
+       "hints": [
+        "Giữ việc: một dòng có ngày và ký hiệu (#0041).",
+        "Giữ ý: một thẻ viết bằng lời của mình, nối với thẻ cũ (#0055).",
+        "Giữ tài liệu: tệp nằm trong một trong bốn ngăn Dự án, Lĩnh vực, Tài nguyên, Lưu trữ."
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d5q6",
+       "q": "6. Dự án học đã xong, sản phẩm đã nộp",
+       "opts": [
+        "Sổ đầu dòng",
+        "Hộp thẻ",
+        "PARA"
+       ],
+       "hints": [
+        "Giữ việc: một dòng có ngày và ký hiệu (#0041).",
+        "Giữ ý: một thẻ viết bằng lời của mình, nối với thẻ cũ (#0055).",
+        "Giữ tài liệu: tệp nằm trong một trong bốn ngăn Dự án, Lĩnh vực, Tài nguyên, Lưu trữ."
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Quy tắc của tôi",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d5bj",
+       "q": "Sổ đầu dòng dùng cho",
+       "ph": "Ví dụ: việc cần làm trong ngày và hạn chót"
+      },
+      {
+       "f": "tx",
+       "k": "d5zk",
+       "q": "Hộp thẻ dùng cho",
+       "ph": "Ví dụ: ý mới sau mỗi buổi học, viết bằng lời của mình"
+      },
+      {
+       "f": "tx",
+       "k": "d5pa",
+       "q": "PARA dùng cho",
+       "ph": "Ví dụ: tệp bài giảng, bài tập, bản nháp sản phẩm"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Mỗi công cụ một vai trò: sổ đầu dòng cho {d5bj}, hộp thẻ cho {d5zk}, PARA cho {d5pa}.",
+     "need": [
+      "d5bj",
+      "d5zk",
+      "d5pa"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Nhịp dọn tuần",
+   "title": "Mười lăm phút mỗi tuần giữ bốn ngăn gọn",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Đo lại",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thứ Hai: {d1min} phút để tìm lại {d1doc}.",
+       "need": [
+        "d1min"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Bấm giờ tìm lại một tài liệu của buổi học tuần này, giống như Thứ Hai."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d6min",
+         "q": "Số phút hôm nay"
+        }
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Thư mục dự án học: {j_para}",
+       "need": [
+        "j_para"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Nhịp dọn hằng tuần",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mười lăm phút gồm: gom tệp ở thư mục tải về và màn hình chính vào đúng ngăn; dự án xong thì chuyển sang Lưu trữ; xem dự án học còn bao nhiêu ngày và bước tiếp theo; kéo một tài nguyên cần dùng sang dự án tuần tới."
+      },
+      {
+       "f": "tx",
+       "k": "d6rhythm",
+       "q": "Khung 15 phút dọn bốn ngăn của tôi",
+       "ph": "Ví dụ: 16:45 chiều Thứ Sáu, trước khi tắt máy"
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã in và điền trang bốn ngăn (phiếu Ngày 6)"
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau: Hiệu ứng Dunning-Kruger và tự đánh giá. Mình đã thạo kỹ năng đang học tới đâu, và biết điều đó bằng bằng chứng nào?"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Thứ Hai tôi mất {d1min} phút để tìm lại một tài liệu học, hôm nay là {d6min} phút.",
+     "need": [
+      "d1min",
+      "d6min"
+     ]
+    },
+    {
+     "tpl": " Nhịp dọn bốn ngăn của tôi: {d6rhythm}.",
+     "need": [
+      "d6rhythm"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}

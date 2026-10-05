@@ -1,0 +1,627 @@
+{
+ "id": "0057",
+ "name": "Dunning-Kruger và tự đánh giá",
+ "storeKey": "sth-0057-6n",
+ "kicker": "Công thức #0057",
+ "title": "Tự đánh giá kỹ năng",
+ "sub": "Hiệu ứng Dunning-Kruger và tranh luận khoa học quanh nó. Đo mức thạo của kỹ năng đang học bằng thang mô tả, bài kiểm tra nhỏ và phản hồi, thay vì chỉ bằng cảm giác. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "badge": {
+  "style": "loops",
+  "big": "{jweek}/6",
+  "unit": "NGÀY GIỮ NHỊP TUẦN NÀY",
+  "line": "Vòng tự đánh giá: {j_meta|đối chiếu cảm giác với bằng chứng}"
+ },
+ "days": [
+  {
+   "label": "Thứ Hai",
+   "kick": "Tự chấm",
+   "title": "Tự chấm theo cảm giác",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Hành trình đang giữ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Thói quen đang giữ: {j_habit}",
+       "need": [
+        "j_habit"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Kỹ năng đang học: {j_learn_skill}",
+       "need": [
+        "j_learn_skill"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Dự án học: {j_learn_project}",
+       "need": [
+        "j_learn_project"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt, một kỹ năng đang dùng hằng ngày trong công việc và một sản phẩm nhỏ muốn làm ra với kỹ năng đó. Ô nào đã có nội dung từ các tuần trước sẽ hiện sẵn."
+      },
+      {
+       "f": "tx",
+       "k": "j_identity",
+       "q": "Tôi là người ...",
+       "ph": "Ví dụ: trả lời khách hàng rõ ràng và đúng hẹn"
+      },
+      {
+       "f": "tx",
+       "k": "j_habit",
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: 15 phút đầu ca xử lý trước khiếu nại khó nhất"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_skill",
+       "q": "Kỹ năng tôi đang học",
+       "ph": "Ví dụ: viết email trả lời khiếu nại"
+      },
+      {
+       "f": "tx",
+       "k": "j_learn_project",
+       "q": "Dự án học (sản phẩm và ngày)",
+       "ph": "Ví dụ: mười câu trả lời mẫu cho tình huống khó, xong 30.06"
+      }
+     ]
+    },
+    {
+     "h": "Ba phần nhỏ của kỹ năng",
+     "items": [
+      {
+       "f": "note",
+       "text": "Chia kỹ năng thành ba phần nhỏ, rồi tự chấm từng phần trên thang 1 đến 5 chỉ theo cảm giác. Chấm nhanh, chưa cần lý do. 1 là mới bắt đầu, 5 là rất thạo."
+      },
+      {
+       "f": "tx",
+       "k": "d1p1",
+       "q": "Phần 1",
+       "ph": "Ví dụ: mở đầu và xin lỗi đúng mực"
+      },
+      {
+       "f": "seg",
+       "k": "d1r1",
+       "q": "Tự chấm phần 1",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1p2",
+       "q": "Phần 2",
+       "ph": "Ví dụ: giải thích nguyên nhân"
+      },
+      {
+       "f": "seg",
+       "k": "d1r2",
+       "q": "Tự chấm phần 2",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d1p3",
+       "q": "Phần 3",
+       "ph": "Ví dụ: nêu bước tiếp theo và thời hạn"
+      },
+      {
+       "f": "seg",
+       "k": "d1r3",
+       "q": "Tự chấm phần 3",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Cả kỹ năng",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d1self",
+       "q": "Tự chấm cả kỹ năng, theo cảm giác hôm nay",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Con số này sẽ hiện lại vào Thứ Sáu để đặt cạnh bằng chứng."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Kỹ năng tôi đang học: {j_learn_skill}.",
+     "need": [
+      "j_learn_skill"
+     ]
+    },
+    {
+     "tpl": " Tự chấm theo cảm giác hôm nay: {d1self}/5.",
+     "need": [
+      "d1self"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 1."
+  },
+  {
+   "label": "Thứ Ba",
+   "kick": "Thang năm mức",
+   "title": "Thang năm mức, mỗi mức một bằng chứng",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Năm mức thạo",
+     "items": [
+      {
+       "f": "note",
+       "text": "Mức 1 biết tên. Mức 2 làm được khi có hướng dẫn. Mức 3 tự làm được việc quen. Mức 4 xử lý được tình huống mới. Mức 5 hướng dẫn được người khác. Chấm theo bằng chứng có thật: chưa có sản phẩm tự làm thì chưa lên mức 3."
+      },
+      {
+       "f": "ta",
+       "k": "d2desc",
+       "q": "Mức 3 với kỹ năng của tôi trông như thế nào?",
+       "ph": "Ví dụ: tự viết email cho khiếu nại giao hàng chậm, gửi đi không cần duyệt"
+      }
+     ]
+    },
+    {
+     "h": "Bằng chứng và mức",
+     "items": [
+      {
+       "f": "show",
+       "text": "Gợi ý: mở thư mục Sản phẩm của dự án học ({j_para})",
+       "need": [
+        "j_para"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d2proof",
+       "q": "Bằng chứng mạnh nhất tôi đang có",
+       "ph": "Ví dụ: 12 email tự gửi trong tháng, không cần trưởng nhóm sửa"
+      },
+      {
+       "f": "seg",
+       "k": "d2lvl",
+       "q": "Mức phù hợp với bằng chứng đó",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ],
+       "hints": [
+        "Mức 1: biết tên. Hiểu kỹ năng là gì, giải thích được các bước, chưa tự làm được.",
+        "Mức 2: làm được khi có mẫu, có người hướng dẫn hoặc danh sách từng bước.",
+        "Mức 3: tự làm được tình huống quen, kết quả ổn định, không cần sửa nhiều.",
+        "Mức 4: xử lý được tình huống mới hoặc khó hơn bình thường, có ví dụ cụ thể.",
+        "Mức 5: hướng dẫn được người khác, và người đó đã tự làm được."
+       ]
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Theo thang mô tả, kỹ năng {j_learn_skill|đang học} của tôi ở mức {d2lvl}.",
+     "need": [
+      "d2lvl"
+     ]
+    },
+    {
+     "tpl": " Bằng chứng: {d2proof}.",
+     "need": [
+      "d2proof"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 2."
+  },
+  {
+   "label": "Thứ Tư",
+   "kick": "Kiểm tra nhỏ",
+   "title": "Bài kiểm tra nhỏ mười lăm phút",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Soạn năm câu",
+     "items": [
+      {
+       "f": "note",
+       "text": "Hai câu ở mức mình thường làm, hai câu khó hơn một chút, một câu thuộc tình huống chưa gặp. Viết đáp án hoặc tiêu chí đạt trước khi làm."
+      },
+      {
+       "f": "tx",
+       "k": "d3q1",
+       "q": "Câu 1",
+       "ph": "Ví dụ: trả lời khiếu nại giao hàng chậm lần đầu"
+      },
+      {
+       "f": "tx",
+       "k": "d3q2",
+       "q": "Câu 2",
+       "ph": ""
+      },
+      {
+       "f": "tx",
+       "k": "d3q3",
+       "q": "Câu 3",
+       "ph": ""
+      },
+      {
+       "f": "tx",
+       "k": "d3q4",
+       "q": "Câu 4",
+       "ph": ""
+      },
+      {
+       "f": "tx",
+       "k": "d3q5",
+       "q": "Câu 5 (tình huống chưa gặp)",
+       "ph": "Ví dụ: khiếu nại có cả bên vận chuyển và kho liên quan"
+      }
+     ]
+    },
+    {
+     "h": "Dự đoán, làm bài, chấm",
+     "items": [
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d3pred",
+         "q": "Dự đoán số câu đúng (trước khi làm)"
+        }
+       ]
+      },
+      {
+       "f": "timer",
+       "k": "d3t",
+       "dk": "d3dur",
+       "def": 15,
+       "opts": [
+        10,
+        15,
+        20
+       ],
+       "note": "Làm bài trong 15 phút, rồi chấm theo đáp án đã viết."
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d3score",
+         "q": "Số câu đúng thực tế"
+        }
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d3miss",
+       "q": "Câu chưa đạt cho thấy điều gì?",
+       "ph": "Ví dụ: chưa xử lý được khiếu nại nhiều bên"
+      }
+     ]
+    },
+    {
+     "h": "Bảng hành trình thói quen",
+     "items": [
+      {
+       "f": "track",
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt và 20 phút học. Dòng bên dưới đếm tổng số ngày của cả hành trình."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Bài kiểm tra nhỏ 5 câu: tôi dự đoán đúng {d3pred} câu, thực tế đúng {d3score} câu.",
+     "need": [
+      "d3pred",
+      "d3score"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 3."
+  },
+  {
+   "label": "Thứ Năm",
+   "kick": "Phản hồi",
+   "title": "Xin một phản hồi thật cụ thể",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Bốn dấu hiệu của câu hỏi cụ thể",
+     "items": [
+      {
+       "f": "note",
+       "text": "Câu hỏi tốt gắn với một sản phẩm, hỏi một điều cần cải thiện, có chuẩn so sánh, và có thời hạn. Ví dụ: \"Nếu chỉ sửa một điều trong email em gửi hôm qua, chị sẽ sửa điều gì? Chị trả lời giúp em trước 16 giờ Thứ Sáu nha.\""
+      },
+      {
+       "f": "cb",
+       "k": "d4c1",
+       "label": "Gắn với một sản phẩm cụ thể"
+      },
+      {
+       "f": "cb",
+       "k": "d4c2",
+       "label": "Hỏi một điều cần cải thiện"
+      },
+      {
+       "f": "cb",
+       "k": "d4c3",
+       "label": "Có chuẩn so sánh"
+      },
+      {
+       "f": "cb",
+       "k": "d4c4",
+       "label": "Có thời hạn và giới hạn công sức"
+      }
+     ]
+    },
+    {
+     "h": "Câu hỏi của tôi",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d4prod",
+       "q": "Sản phẩm muốn nhận phản hồi",
+       "ph": "Ví dụ: bảng tổng hợp chi phí gửi hôm Thứ Hai"
+      },
+      {
+       "f": "tx",
+       "k": "d4who",
+       "q": "Người được hỏi (ghi vai trò, không cần tên)",
+       "ph": "Ví dụ: trưởng nhóm"
+      },
+      {
+       "f": "ta",
+       "k": "d4ask",
+       "q": "Câu hỏi",
+       "ph": "Ví dụ: anh có phải sửa lại chỗ nào trước khi dùng không?"
+      },
+      {
+       "f": "cb",
+       "k": "d4sent",
+       "label": "Đã gửi hôm nay"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tôi xin phản hồi từ {d4who} với câu hỏi: {d4ask}",
+     "need": [
+      "d4who",
+      "d4ask"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 4."
+  },
+  {
+   "label": "Thứ Sáu",
+   "kick": "Đối chiếu",
+   "title": "Đặt cảm giác cạnh bằng chứng",
+   "time": "Khoảng 20 phút",
+   "cards": [
+    {
+     "h": "Ba nguồn bằng chứng",
+     "items": [
+      {
+       "f": "show",
+       "text": "Tự chấm Thứ Hai: {d1self}/5",
+       "need": [
+        "d1self"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Thang mô tả Thứ Ba: mức {d2lvl}",
+       "need": [
+        "d2lvl"
+       ]
+      },
+      {
+       "f": "show",
+       "text": "Bài kiểm tra Thứ Tư: dự đoán {d3pred}, thực tế {d3score} trên 5",
+       "need": [
+        "d3score"
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5fb",
+       "q": "Phản hồi Thứ Năm (nếu đã có)",
+       "ph": "Ví dụ: giọng văn tốt, chưa nói rõ bước tiếp theo"
+      }
+     ]
+    },
+    {
+     "h": "Kết luận",
+     "items": [
+      {
+       "f": "seg",
+       "k": "d5lvl",
+       "q": "Mức theo bằng chứng",
+       "opts": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+       ],
+       "hints": [
+        "Mức 1: biết tên. Hiểu kỹ năng là gì, giải thích được các bước, chưa tự làm được.",
+        "Mức 2: làm được khi có mẫu, có người hướng dẫn hoặc danh sách từng bước.",
+        "Mức 3: tự làm được tình huống quen, kết quả ổn định, không cần sửa nhiều.",
+        "Mức 4: xử lý được tình huống mới hoặc khó hơn bình thường, có ví dụ cụ thể.",
+        "Mức 5: hướng dẫn được người khác, và người đó đã tự làm được."
+       ]
+      },
+      {
+       "f": "seg",
+       "k": "d5gap",
+       "q": "So với tự chấm Thứ Hai",
+       "opts": [
+        "Tự chấm cao hơn",
+        "Khớp nhau",
+        "Tự chấm thấp hơn"
+       ],
+       "hints": [
+        "Rất thường gặp với kỹ năng làm nhiều nhưng ít được kiểm tra. Bằng chứng chỉ ra phần cần luyện.",
+        "Cảm giác đang đáng tin với kỹ năng này. Vẫn nên đối chiếu lại sau vài tuần.",
+        "Cũng thường gặp, nhất là với người cẩn thận. Bằng chứng cho phép tự tin hơn và nhận việc khó hơn."
+       ]
+      },
+      {
+       "f": "tx",
+       "k": "d5next",
+       "q": "Phần tôi cần luyện thêm trong 20 phút học tuần tới",
+       "ph": "Ví dụ: khiếu nại nhiều bên, câu kết có bước tiếp theo"
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Tự chấm {d1self}/5, theo bằng chứng {d5lvl}/5.",
+     "need": [
+      "d1self",
+      "d5lvl"
+     ]
+    },
+    {
+     "tpl": " Phần tôi cần luyện thêm: {d5next}.",
+     "need": [
+      "d5next"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 5."
+  },
+  {
+   "label": "Thứ Bảy",
+   "kick": "Vòng tự đánh giá",
+   "title": "Vòng tự đánh giá của riêng mình",
+   "time": "Khoảng 25 phút",
+   "cards": [
+    {
+     "h": "Năm câu hỏi mở",
+     "items": [
+      {
+       "f": "ta",
+       "k": "d6q1",
+       "q": "1. Điều gì làm tôi bất ngờ nhất về mức thạo của chính mình?",
+       "ph": "Ví dụ: phần nêu bước tiếp theo yếu hơn tôi nghĩ"
+      },
+      {
+       "f": "seg",
+       "k": "d6q2",
+       "q": "2. Nguồn bằng chứng nói với tôi nhiều nhất",
+       "opts": [
+        "Thang mô tả",
+        "Bài kiểm tra",
+        "Phản hồi"
+       ],
+       "hints": [
+        "Hợp với kỹ năng có sản phẩm rõ ràng.",
+        "Hợp với kỹ năng cần phản xạ nhanh, làm trong thời gian giới hạn.",
+        "Hợp với kỹ năng làm việc với người khác, cần góc nhìn của người nhận kết quả."
+       ]
+      },
+      {
+       "f": "show",
+       "text": "3. Phần cần ưu tiên tuần tới: {d5next}",
+       "need": [
+        "d5next"
+       ]
+      },
+      {
+       "f": "ta",
+       "k": "d6q4",
+       "q": "4. Tôi đã đi được bao xa so với đầu Mùa 3?",
+       "ph": "Ví dụ: từ chỗ dùng mẫu có sẵn đến tự viết cho tình huống quen"
+      },
+      {
+       "f": "note",
+       "text": "5. Tôi muốn tự đánh giá lại vào lúc nào? Viết vòng tự đánh giá ở ô dưới đây."
+      }
+     ]
+    },
+    {
+     "h": "Vòng tự đánh giá",
+     "items": [
+      {
+       "f": "tx",
+       "k": "d6insight",
+       "q": "Điều tôi nhận ra về mức thạo của mình (một câu)",
+       "ph": "Ví dụ: tôi tự chấm cao hơn bằng chứng một mức"
+      },
+      {
+       "f": "tx",
+       "k": "j_meta",
+       "q": "Vòng tự đánh giá của tôi: bao lâu một lần, nguồn bằng chứng nào",
+       "ph": "Ví dụ: cuối mỗi tháng, một bài kiểm tra 5 câu và một câu hỏi xin phản hồi"
+      },
+      {
+       "f": "cb",
+       "k": "d6print",
+       "label": "Tôi đã in và điền bảng đối chiếu (phiếu Ngày 6)"
+      },
+      {
+       "f": "note",
+       "text": "Tuần sau: Xây dựng công khai, chia sẻ điều mình học từ dự án học."
+      }
+     ]
+    }
+   ],
+   "checkin": [
+    {
+     "tpl": "Điều tôi nhận ra về mức thạo của mình: {d6insight}.",
+     "need": [
+      "d6insight"
+     ]
+    },
+    {
+     "tpl": " Vòng tự đánh giá của tôi: {j_meta}.",
+     "need": [
+      "j_meta"
+     ]
+    }
+   ],
+   "hint": "Dán vào bình luận của bài Ngày 6. Đủ 6 ngày, thẻ thành tích sẽ hiện ra bên dưới."
+  }
+ ]
+}
