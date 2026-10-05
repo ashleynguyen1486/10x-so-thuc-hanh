@@ -3,8 +3,8 @@
  "name": "Hộp thời gian",
  "storeKey": "sth-0042-6n",
  "kicker": "Công thức #0042",
- "title": "Quy luật Parkinson và hộp thời gian",
- "sub": "Đọc lại Quy luật Parkinson từ bài viết gốc năm 1955, thử ước lượng thời gian, đặt hộp thời gian cho từng bước của năm mục tiêu, dùng hạn chót tự đặt một cách đúng mực và khép tuần bằng một cuộc họp 20 phút với chính mình. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "title": "Quy luật Parkinson và hộp thời gian",
+ "sub": "Đọc lại Quy luật Parkinson từ bài viết gốc năm 1955, thử ước lượng thời gian, đặt hộp thời gian cho từng bước của năm mục tiêu, chia nhỏ từng bước rồi mới đặt hạn chót và khép tuần bằng một cuộc họp 20 phút với chính mình. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
  "badge": {
   "style": "sun",
   "big": "6/6",
@@ -30,7 +30,7 @@
       },
       {
        "f": "show",
-       "text": "Mục tiêu số 1: {j_goal1}",
+       "text": "Mục tiêu số 1: {j_goal1}",
        "need": [
         "j_goal1"
        ]
@@ -44,7 +44,7 @@
       },
       {
        "f": "note",
-       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và mục tiêu quan trọng nhất của quý này ở các ô dưới đây."
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và mục tiêu quan trọng nhất của quý này ở các ô dưới đây."
       },
       {
        "f": "tx",
@@ -55,13 +55,13 @@
       {
        "f": "tx",
        "k": "j_habit",
-       "q": "Thói quen then chốt của tôi",
+       "q": "Thói quen then chốt của tôi",
        "ph": "Ví dụ: mỗi sáng làm 45 phút cho việc quan trọng nhất trước khi họp"
       },
       {
        "f": "tx",
        "k": "j_goal1",
-       "q": "Mục tiêu số 1 (quan trọng nhất)",
+       "q": "Mục tiêu số 1 (quan trọng nhất)",
        "ph": "Ví dụ: 12 khách hàng doanh nghiệp mới ký hợp đồng trong năm"
       }
      ]
@@ -120,7 +120,7 @@
       {
        "f": "tx",
        "k": "d1step",
-       "q": "Một bước nhỏ của mục tiêu số 1 sẽ đặt vào hộp thời gian",
+       "q": "Một bước nhỏ của mục tiêu số 1 sẽ đặt vào hộp thời gian",
        "ph": "Ví dụ: viết phần giải pháp của bản đề xuất cho khách hàng mới"
       }
      ]
@@ -214,7 +214,7 @@
      "items": [
       {
        "f": "track",
-       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt, kể cả hôm qua."
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt, kể cả hôm qua."
       }
      ]
     }
@@ -239,7 +239,7 @@
   {
    "label": "Thứ Tư",
    "kick": "Hộp đầu tiên",
-   "title": "Hộp thời gian đầu tiên cho mục tiêu số 1",
+   "title": "Hộp thời gian đầu tiên cho mục tiêu số 1",
    "time": "Khoảng 45 phút, gồm chính hộp thời gian",
    "cards": [
     {
@@ -318,7 +318,7 @@
        "f": "tx",
        "k": "j_timebox",
        "q": "Quy tắc hộp thời gian của tôi (lưu cho cả hành trình)",
-       "ph": "Ví dụ: mỗi sáng một hộp 45 phút cho mục tiêu số 1, bắt đầu 8:30, hết giờ thì dừng"
+       "ph": "Ví dụ: mỗi sáng một hộp 45 phút cho mục tiêu số 1, bắt đầu 8:30, hết giờ thì dừng"
       }
      ]
     }
@@ -341,74 +341,161 @@
   },
   {
    "label": "Thứ Năm",
-   "kick": "Hạn chót",
-   "title": "Hạn chót tự đặt cho một bước lớn",
+   "kick": "Chia nhỏ",
+   "title": "Chia nhỏ rồi mới đặt hạn",
    "time": "Khoảng 20 phút",
    "cards": [
     {
-     "h": "Điều cần biết về bằng chứng",
+     "h": "Một bước gồm nhiều phần",
      "items": [
       {
        "f": "note",
-       "text": "Nghiên cứu nổi tiếng của Ariely và Wertenbroch (2002) về hạn chót tự đặt đã bị rút: năm 2026 có các dấu hiệu bất thường trong dữ liệu được công bố, tạp chí đã rút bài, và một nghiên cứu lặp lại không tìm thấy hiệu ứng. Dùng hạn chót trung gian như một công cụ lập kế hoạch để tự kiểm tra, không coi là điều khoa học đã chứng minh."
+       "text": "Kruger và Evans (2004): liệt kê các việc con trước khi ước lượng giúp con số sát thực tế hơn, nhất là với việc gồm nhiều phần."
+      },
+      {
+       "f": "tx",
+       "k": "d4step",
+       "q": "Bước tôi sẽ chia nhỏ hôm nay",
+       "ph": "Ví dụ: bản nháp bài đầu tiên của bộ tài liệu đào tạo nhân viên mới"
+      },
+      {
+       "f": "nums",
+       "items": [
+        {
+         "k": "d4before",
+         "q": "Ước lượng nhanh trước khi chia nhỏ (phút)"
+        }
+       ]
+      },
+      {
+       "f": "note",
+       "text": "Ghi ngay con số đầu tiên nghĩ ra, đừng tính kỹ."
       }
      ]
     },
     {
-     "h": "Một bước lớn, hai mốc trung gian",
+     "h": "Liệt kê việc con",
      "items": [
       {
-       "f": "tx",
-       "k": "d4step",
-       "q": "Bước lớn cần làm trong vài tuần tới",
-       "ph": "Ví dụ: bộ tài liệu đào tạo nhân viên mới"
+       "f": "note",
+       "text": "Nhớ ba phần hay bị bỏ sót: chờ và phối hợp, kiểm tra và sửa, gửi và bàn giao."
       },
       {
        "f": "tx",
-       "k": "d4dl1",
-       "q": "Hạn chót trung gian 1 (kết quả nhìn thấy được và ngày)",
-       "ph": "Ví dụ: Thứ Sáu 12.03 gửi dàn ý cho trưởng phòng"
+       "k": "d4s1",
+       "q": "Việc con 1",
+       "ph": "Ví dụ: xin danh sách quy trình từ hai phòng liên quan"
       },
       {
        "f": "tx",
-       "k": "d4dl2",
-       "q": "Hạn chót trung gian 2",
-       "ph": "Ví dụ: Thứ Sáu 19.03 hoàn thành bản nháp ba bài đầu"
+       "k": "d4s2",
+       "q": "Việc con 2",
+       "ph": "Ví dụ: đọc tài liệu các phòng gửi về"
       },
       {
-       "f": "seg",
-       "k": "d4kind",
-       "q": "Loại hạn chót này",
-       "opts": [
-        "Có người cùng biết",
-        "Chỉ mình biết"
+       "f": "tx",
+       "k": "d4s3",
+       "q": "Việc con 3",
+       "ph": "Ví dụ: viết dàn ý"
+      },
+      {
+       "f": "tx",
+       "k": "d4s4",
+       "q": "Việc con 4",
+       "ph": "Ví dụ: viết nội dung bản nháp"
+      },
+      {
+       "f": "tx",
+       "k": "d4s5",
+       "q": "Việc con 5",
+       "ph": "Ví dụ: gửi trưởng phòng xem và chỉnh theo góp ý"
+      },
+      {
+       "f": "sum",
+       "head": [
+        "Việc con",
+        "Phút"
        ],
-       "hints": [
-        "Hạn chót đã được báo cho một người liên quan. Hỏi lại người đó vào ngày hạn.",
-        "Hạn chót chỉ mình biết rất dễ được dời. Thử báo cho một người trong hôm nay."
+       "rows": [
+        {
+         "label": "Việc con 1",
+         "keys": [
+          "d4m1"
+         ]
+        },
+        {
+         "label": "Việc con 2",
+         "keys": [
+          "d4m2"
+         ]
+        },
+        {
+         "label": "Việc con 3",
+         "keys": [
+          "d4m3"
+         ]
+        },
+        {
+         "label": "Việc con 4",
+         "keys": [
+          "d4m4"
+         ]
+        },
+        {
+         "label": "Việc con 5",
+         "keys": [
+          "d4m5"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "h": "Trước và sau khi chia nhỏ",
+     "items": [
+      {
+       "f": "show",
+       "text": "Ước lượng trước khi chia nhỏ: {d4before} phút. Sau khi chia nhỏ: {sum:d4m1,d4m2,d4m3,d4m4,d4m5} phút.",
+       "need": [
+        "d4before",
+        "d4m1"
        ]
       },
       {
        "f": "tx",
-       "k": "d4who",
-       "q": "Người được báo về hạn chót đầu tiên",
-       "ph": "Ví dụ: chị Lan, trưởng phòng nhân sự"
+       "k": "d4dl",
+       "q": "Hạn chót cho bước này",
+       "ph": "Ví dụ: Thứ Tư 10.03"
+      },
+      {
+       "f": "tx",
+       "k": "d4box",
+       "q": "Hộp thời gian cuối cùng trên lịch",
+       "ph": "Ví dụ: T2 20 phút gửi đề nghị; T3 70 phút đọc và viết dàn ý; T3 90 phút viết bản nháp; T4 40 phút chỉnh theo góp ý"
       }
      ]
     }
    ],
    "checkin": [
     {
-     "tpl": "Hạn chót trung gian tôi tự đặt: {d4dl1}, cho bước {d4step}.",
+     "tpl": "Bước tôi chia nhỏ hôm nay: {d4step}.",
      "need": [
-      "d4dl1",
       "d4step"
      ]
     },
     {
-     "tpl": " Người biết hạn này: {d4who}.",
+     "tpl": " Ước lượng trước khi chia nhỏ: {d4before} phút; sau khi chia nhỏ: {sum:d4m1,d4m2,d4m3,d4m4,d4m5} phút.",
      "need": [
-      "d4who"
+      "d4before",
+      "d4m1"
+     ]
+    },
+    {
+     "tpl": " Hạn chót: {d4dl}; hộp thời gian cuối cùng: {d4box}.",
+     "need": [
+      "d4dl",
+      "d4box"
      ]
     }
    ],
@@ -487,7 +574,7 @@
        "f": "ta",
        "k": "d5plan",
        "q": "Các hộp của tuần 08.03 đến 12.03",
-       "ph": "Ví dụ: T2 8:30 45 phút, mục tiêu số 1, dàn ý đề xuất; T3 14:00 25 phút, mục tiêu số 3, đọc tài liệu"
+       "ph": "Ví dụ: T2 8:30 45 phút, mục tiêu số 1, dàn ý đề xuất; T3 14:00 25 phút, mục tiêu số 3, đọc tài liệu"
       },
       {
        "f": "nums",
@@ -604,7 +691,7 @@
        "f": "tx",
        "k": "j_timebox",
        "q": "Quy tắc hộp thời gian tôi giữ (sửa nếu cần)",
-       "ph": "Ví dụ: mỗi sáng một hộp 45 phút cho mục tiêu số 1, bắt đầu 8:30, viết kết quả đủ từ chiều hôm trước"
+       "ph": "Ví dụ: mỗi sáng một hộp 45 phút cho mục tiêu số 1, bắt đầu 8:30, viết kết quả đủ từ chiều hôm trước"
       },
       {
        "f": "note",

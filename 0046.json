@@ -4,7 +4,7 @@
  "storeKey": "sth-0046-6n",
  "kicker": "Công thức #0046",
  "title": "Chi phí chìm và quý 1",
- "sub": "Tuần cuối của quý 1 và của Mùa 2. Nhìn lại năm mục tiêu bằng chặng đường phía trước, không bằng phần đã bỏ ra phía sau: giữ, sửa hay dừng. Thói quen then chốt thì giữ. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "sub": "Tuần cuối của quý 1 và của Mùa 2. Nhìn lại năm mục tiêu bằng chặng đường phía trước, không bằng phần đã bỏ ra phía sau: giữ, sửa hay dừng. Thói quen then chốt thì giữ. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
  "badge": {
   "style": "frame",
   "big": "Q1",
@@ -31,14 +31,14 @@
       },
       {
        "f": "show",
-       "text": "Sao Bắc Đẩu của mục tiêu số 1: {j_northstar}",
+       "text": "Sao Bắc Cực của mục tiêu số 1: {j_northstar}",
        "need": [
         "j_northstar"
        ]
       },
       {
        "f": "note",
-       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và mục tiêu quan trọng nhất ở các ô dưới đây."
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và mục tiêu quan trọng nhất ở các ô dưới đây."
       },
       {
        "f": "tx",
@@ -49,13 +49,13 @@
       {
        "f": "tx",
        "k": "j_habit",
-       "q": "Thói quen then chốt của tôi",
+       "q": "Thói quen then chốt của tôi",
        "ph": "Ví dụ: đầu mỗi ca, 15 phút kiểm tra một máy theo danh sách"
       },
       {
        "f": "tx",
        "k": "j_goal1",
-       "q": "Mục tiêu số 1 (người mới)",
+       "q": "Mục tiêu số 1 (người mới)",
        "ph": "Ví dụ: giảm thời gian dừng máy"
       }
      ]
@@ -77,7 +77,7 @@
       {
        "f": "seg",
        "k": "d1s1",
-       "q": "Mục tiêu số 1",
+       "q": "Mục tiêu số 1",
        "opts": [
         "Đúng hướng",
         "Chậm",
@@ -229,7 +229,7 @@
       {
        "f": "seg",
        "k": "d2k1",
-       "q": "Mục tiêu số 1",
+       "q": "Mục tiêu số 1",
        "opts": [
         "Giữ",
         "Sửa",
@@ -238,7 +238,7 @@
        "hints": [
         "Mục tiêu vẫn đúng, đang đi đúng hướng hoặc chỉ chậm vì lý do tạm thời.",
         "Vẫn đáng theo đuổi nhưng cần đổi phạm vi, thời hạn, cách đo hoặc cách làm.",
-        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
+        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
        ]
       },
       {
@@ -260,7 +260,7 @@
        "hints": [
         "Mục tiêu vẫn đúng, đang đi đúng hướng hoặc chỉ chậm vì lý do tạm thời.",
         "Vẫn đáng theo đuổi nhưng cần đổi phạm vi, thời hạn, cách đo hoặc cách làm.",
-        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
+        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
        ]
       },
       {
@@ -282,7 +282,7 @@
        "hints": [
         "Mục tiêu vẫn đúng, đang đi đúng hướng hoặc chỉ chậm vì lý do tạm thời.",
         "Vẫn đáng theo đuổi nhưng cần đổi phạm vi, thời hạn, cách đo hoặc cách làm.",
-        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
+        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
        ]
       },
       {
@@ -304,7 +304,7 @@
        "hints": [
         "Mục tiêu vẫn đúng, đang đi đúng hướng hoặc chỉ chậm vì lý do tạm thời.",
         "Vẫn đáng theo đuổi nhưng cần đổi phạm vi, thời hạn, cách đo hoặc cách làm.",
-        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
+        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
        ]
       },
       {
@@ -326,7 +326,7 @@
        "hints": [
         "Mục tiêu vẫn đúng, đang đi đúng hướng hoặc chỉ chậm vì lý do tạm thời.",
         "Vẫn đáng theo đuổi nhưng cần đổi phạm vi, thời hạn, cách đo hoặc cách làm.",
-        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
+        "Không còn phù hợp. Có thể dừng hẳn hoặc chuyển vào danh sách tránh, xem lại cuối năm."
        ]
       }
      ]
@@ -389,7 +389,7 @@
       },
       {
        "f": "note",
-       "text": "2. Thói quen then chốt đã đi cùng mình bao nhiêu ngày: xem bảng hành trình bên dưới."
+       "text": "2. Thói quen then chốt đã đi cùng mình bao nhiêu ngày: xem bảng hành trình bên dưới."
       },
       {
        "f": "seg",
@@ -407,10 +407,10 @@
        "hints": [
         "Bảng ba cột và giới hạn việc dở (#0035).",
         "Bảo vệ giờ làm việc quan trọng (#0037).",
-        "Mỗi bước một khung giờ, hạn chót tự đặt (#0042).",
+        "Mỗi bước một khung giờ, hạn chót tự đặt (#0042).",
         "Hệ thống ghi chép ngày và tháng (#0041).",
-        "Quy tắc mặc định, lịch mục tiêu theo ngày (#0044).",
-        "Sao Bắc Đẩu và chỉ số hành động (#0045).",
+        "Quy tắc mặc định, lịch mục tiêu theo ngày (#0044).",
+        "Sao Bắc Cực và chỉ số hành động (#0045).",
         "Một công cụ khác của Mùa 2, ghi ở ô bài học bên dưới."
        ]
       },
@@ -424,7 +424,7 @@
        "f": "tx",
        "k": "d3thanks",
        "q": "5. Người tôi muốn cảm ơn về quý 1",
-       "ph": "Ví dụ: chị Mai, đã nhận giúp việc trong tuần tôi nghỉ Tết"
+       "ph": "Ví dụ: chị Mai, đã nhận giúp việc trong tuần tôi nghỉ Tết"
       }
      ]
     },
@@ -500,17 +500,17 @@
        "q": "Tôi chọn",
        "opts": [
         "Dừng hẳn",
-        "Vào danh sách tránh",
+        "Vào danh sách tránh",
         "Sửa phạm vi",
         "Sửa thời hạn",
         "Sửa cách đo hoặc cách làm"
        ],
        "hints": [
         "Thời gian của quý 2 đi về mục tiêu khác. Những gì đã học vẫn ở lại.",
-        "Tạm gác, xem lại vào cuối năm cùng danh sách tránh.",
+        "Tạm gác, xem lại vào cuối năm cùng danh sách tránh.",
         "Thu hẹp cho vừa, ví dụ 12 khách hàng thành 6 khách hàng ở một khu vực.",
         "Lùi hạn có lý do rõ ràng, ghi lý do vào sổ.",
-        "Thêm Sao Bắc Đẩu hoặc đổi chỉ số hành động."
+        "Thêm Sao Bắc Cực hoặc đổi chỉ số hành động."
        ]
       },
       {
@@ -560,7 +560,7 @@
       {
        "f": "tx",
        "k": "j_goal1",
-       "q": "Mục tiêu số 1",
+       "q": "Mục tiêu số 1",
        "ph": ""
       },
       {
@@ -594,14 +594,14 @@
      "items": [
       {
        "f": "show",
-       "text": "Thói quen then chốt: {j_habit}",
+       "text": "Thói quen then chốt: {j_habit}",
        "need": [
         "j_habit"
        ]
       },
       {
        "f": "show",
-       "text": "Quy tắc mặc định: {j_default}",
+       "text": "Quy tắc mặc định: {j_default}",
        "need": [
         "j_default"
        ]
@@ -650,31 +650,31 @@
        ],
        "rows": [
         {
-         "label": "Thói quen then chốt",
+         "label": "Thói quen then chốt",
          "keys": [
           "j_habit"
          ]
         },
         {
-         "label": "Mục tiêu số 1",
+         "label": "Mục tiêu số 1",
          "keys": [
           "j_goal1"
          ]
         },
         {
-         "label": "Danh sách tránh",
+         "label": "Danh sách tránh",
          "keys": [
           "j_avoid"
          ]
         },
         {
-         "label": "Quy tắc mặc định",
+         "label": "Quy tắc mặc định",
          "keys": [
           "j_default"
          ]
         },
         {
-         "label": "Sao Bắc Đẩu",
+         "label": "Sao Bắc Cực",
          "keys": [
           "j_northstar"
          ]
@@ -715,7 +715,7 @@
        "f": "tx",
        "k": "d6proud",
        "q": "Điều tôi tự hào nhất về Mùa 2",
-       "ph": "Ví dụ: giữ thói quen qua cả tuần Tết bằng phiên bản tối thiểu"
+       "ph": "Ví dụ: giữ thói quen qua cả tuần Tết bằng phiên bản tối thiểu"
       },
       {
        "f": "tx",
@@ -730,7 +730,7 @@
       },
       {
        "f": "note",
-       "text": "Từ Thứ Hai 05.04: Mùa 3 \"Học nhanh, nhớ lâu\". Thói quen then chốt tiếp tục là trục của hành trình."
+       "text": "Từ Thứ Hai 05.04: Mùa 3 \"Học nhanh, nhớ lâu\". Thói quen then chốt tiếp tục là trục của hành trình."
       }
      ]
     }

@@ -4,7 +4,7 @@
  "storeKey": "sth-0035-6n",
  "kicker": "Công thức #0035",
  "title": "Bảng Kanban cá nhân: năm mục tiêu thành việc mỗi ngày",
- "sub": "Tuần làm việc trọn vẹn đầu tiên của năm 2027. Đưa năm mục tiêu lên một bảng ba cột (Cần làm, Đang làm, Xong), tách mục tiêu số 1 thành thẻ việc, giới hạn số việc dở và nhìn bảng năm phút mỗi sáng cạnh thói quen then chốt. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "sub": "Tuần thứ hai của năm 2027, tuần đầu tiên đưa năm mục tiêu vào vận hành. Đưa năm mục tiêu lên một bảng ba cột (Cần làm, Đang làm, Xong), tách mục tiêu số 1 thành thẻ việc, giới hạn số việc dở và nhìn bảng năm phút mỗi sáng cạnh thói quen then chốt. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
  "badge": {
   "style": "diag",
   "big": "{d6xong|6}",
@@ -30,14 +30,14 @@
       },
       {
        "f": "show",
-       "text": "Mục tiêu số 1 năm 2027: {j_goal1}",
+       "text": "Mục tiêu số 1 năm 2027: {j_goal1}",
        "need": [
         "j_goal1"
        ]
       },
       {
        "f": "note",
-       "text": "Người mới tham gia: viết một câu bản sắc và một thói quen then chốt trong công việc ở hai ô dưới đây. Thứ Ba sẽ có ô cho mục tiêu số 1."
+       "text": "Người mới tham gia: viết một câu bản sắc và một thói quen then chốt trong công việc ở hai ô dưới đây. Thứ Ba sẽ có ô cho mục tiêu số 1."
       },
       {
        "f": "tx",
@@ -48,7 +48,7 @@
       {
        "f": "tx",
        "k": "j_habit",
-       "q": "Thói quen then chốt của tôi",
+       "q": "Thói quen then chốt của tôi",
        "ph": "Ví dụ: viết ba việc quan trọng nhất trước khi mở hộp thư"
       }
      ]
@@ -130,7 +130,7 @@
   {
    "label": "Thứ Ba",
    "kick": "Tách bước",
-   "title": "Tách mục tiêu số 1 thành thẻ việc",
+   "title": "Tách mục tiêu số 1 thành thẻ việc",
    "time": "Khoảng 25 phút",
    "cards": [
     {
@@ -138,7 +138,7 @@
      "items": [
       {
        "f": "show",
-       "text": "Mục tiêu số 1: {j_goal1}",
+       "text": "Mục tiêu số 1: {j_goal1}",
        "need": [
         "j_goal1"
        ]
@@ -146,13 +146,13 @@
       {
        "f": "tx",
        "k": "j_goal1",
-       "q": "Mục tiêu số 1 năm 2027 (người mới điền ở đây, người đã có có thể sửa)",
+       "q": "Mục tiêu số 1 năm 2027 (người mới điền ở đây, người đã có có thể sửa)",
        "ph": "Ví dụ: 12 khách hàng doanh nghiệp mới ký hợp đồng trong năm"
       },
       {
        "f": "tx",
        "k": "d2mile",
-       "q": "Mốc gần nhất của mục tiêu số 1",
+       "q": "Mốc gần nhất của mục tiêu số 1",
        "ph": "Ví dụ: cuối tháng 1, danh sách 40 khách hàng tiềm năng đã sàng lọc"
       }
      ]
@@ -267,7 +267,7 @@
         },
         {
          "k": "d3week",
-         "q": "Số việc tôi làm xong mỗi tuần (ước lượng)"
+         "q": "Số việc tôi làm xong mỗi tuần (ước lượng)"
         }
        ]
       },
@@ -315,7 +315,7 @@
      "items": [
       {
        "f": "track",
-       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt. Mỗi ô cũng là một ngày bảng được nhìn tới."
+       "note": "Bấm vào những ngày tuần này đã làm thói quen then chốt. Mỗi ô cũng là một ngày bảng được nhìn tới."
       }
      ]
     }
@@ -355,12 +355,12 @@
         5,
         10
        ],
-       "note": "Bấm Bắt đầu, đọc bảng từ phải sang trái theo ba câu hỏi bên dưới."
+       "note": "Bấm Bắt đầu, đọc bảng từ phải sang trái theo ba câu hỏi bên dưới."
       }
      ]
     },
     {
-     "h": "Ba câu hỏi, đọc từ phải sang trái",
+     "h": "Ba câu hỏi, đọc từ phải sang trái",
      "items": [
       {
        "f": "cb",
@@ -381,16 +381,16 @@
        "f": "tx",
        "k": "d4pick",
        "q": "Việc tôi chọn làm trước hôm nay",
-       "ph": "Ví dụ: gửi bộ câu trả lời mẫu cho trưởng phòng góp ý"
+       "ph": "Ví dụ: gửi bộ câu trả lời mẫu cho trưởng phòng góp ý"
       }
      ]
     },
     {
-     "h": "Gắn vào thói quen then chốt",
+     "h": "Gắn vào thói quen then chốt",
      "items": [
       {
        "f": "show",
-       "text": "Thói quen then chốt: {j_habit}",
+       "text": "Thói quen then chốt: {j_habit}",
        "need": [
         "j_habit"
        ]
@@ -400,8 +400,8 @@
        "k": "d4when",
        "q": "Thời điểm nhìn bảng mỗi sáng",
        "opts": [
-        "Ngay trước thói quen then chốt",
-        "Ngay sau thói quen then chốt",
+        "Ngay trước thói quen then chốt",
+        "Ngay sau thói quen then chốt",
         "Ngay khi mở máy tính"
        ],
        "hints": [
@@ -436,7 +436,7 @@
    "time": "Khoảng 20 phút",
    "cards": [
     {
-     "h": "Thẻ đứng yên lâu nhất",
+     "h": "Thẻ đứng yên lâu nhất",
      "items": [
       {
        "f": "tx",
@@ -457,16 +457,16 @@
        ],
        "hints": [
         "Cần xác nhận, số liệu, chữ ký từ người khác. Gửi lời nhắn ngắn có hạn rõ, ghi tên người đang giữ việc lên thẻ.",
-        "Chưa đủ dữ liệu hoặc chưa rõ yêu cầu. Viết đúng một câu hỏi cần trả lời, dành 15 phút tìm câu trả lời.",
+        "Chưa đủ dữ liệu hoặc chưa rõ yêu cầu. Viết đúng một câu hỏi cần trả lời, dành 15 phút tìm câu trả lời.",
         "Thẻ là một chủ đề, không phải một việc. Tách theo ba dấu hiệu của Ngày 2, giữ thẻ nhỏ nhất ở Đang làm.",
         "Đã làm một phần nhưng dừng ở chỗ \"rồi sao nữa\". Viết ngay bước tiếp theo bằng một động từ.",
-        "Không thiếu gì, chỉ là việc khó hoặc không thích. Đặt đồng hồ 15 phút, làm phần dễ nhất trước."
+        "Không thiếu gì, chỉ là việc khó hoặc không thích. Đặt đồng hồ 15 phút, làm phần dễ nhất trước."
        ]
       },
       {
        "f": "tx",
        "k": "d5next",
-       "q": "Bước gỡ tắc hôm nay (khoảng 15 phút)",
+       "q": "Bước gỡ tắc hôm nay (khoảng 15 phút)",
        "ph": "Ví dụ: nhắn phòng kế toán xác nhận hạn mức trước 15 giờ Thứ Hai"
       }
      ]
@@ -526,7 +526,7 @@
         },
         {
          "k": "d6g1",
-         "q": "Trong đó, số thẻ thuộc mục tiêu số 1"
+         "q": "Trong đó, số thẻ thuộc mục tiêu số 1"
         },
         {
          "k": "d6morning",
@@ -544,7 +544,7 @@
      ]
     },
     {
-     "h": "Câu hỏi mở",
+     "h": "Câu hỏi mở",
      "items": [
       {
        "f": "ta",
@@ -569,7 +569,7 @@
        ],
        "hints": [
         "Cột Đang làm thường còn vừa đủ chỗ, thẻ chảy đều: giữ nguyên.",
-        "Cột luôn đầy, nhiều thẻ đứng yên: giảm một để buộc làm xong trước khi bắt đầu.",
+        "Cột luôn đầy, nhiều thẻ đứng yên: giảm một để buộc làm xong trước khi bắt đầu.",
         "Cột thường trống mà việc vẫn chảy đều: có thể thử tăng một."
        ]
       }
@@ -585,13 +585,13 @@
        ],
        "rows": [
         {
-         "label": "Thói quen then chốt",
+         "label": "Thói quen then chốt",
          "keys": [
           "j_habit"
          ]
         },
         {
-         "label": "Mục tiêu số 1",
+         "label": "Mục tiêu số 1",
          "keys": [
           "j_goal1"
          ]
@@ -624,7 +624,7 @@
       },
       {
        "f": "note",
-       "text": "Tuần sau, Công thức #0036 Gan góc: giữ thói quen và mục tiêu khi hứng khởi đầu năm chững lại. Tấm bảng tiếp tục được dùng."
+       "text": "Tuần sau, Công thức #0036 Gan góc: giữ thói quen và mục tiêu khi hứng khởi đầu năm chững lại. Tấm bảng tiếp tục được dùng."
       }
      ]
     }

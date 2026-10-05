@@ -4,7 +4,7 @@
  "storeKey": "sth-0044-6n",
  "kicker": "Công thức #0044",
  "title": "Luật Hick và mặc định",
- "sub": "Mỗi lựa chọn thêm vào ngay trước lúc bắt đầu là thêm một nhịp chậm. Tuần này đo thời gian bắt đầu thói quen, biến quyết định lặp lại thành quy tắc mặc định, làm lịch mục tiêu theo ngày và thực đơn ba việc. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "sub": "Mỗi lựa chọn thêm vào ngay trước lúc bắt đầu là thêm một nhịp chậm. Tuần này đo thời gian bắt đầu thói quen, biến quyết định lặp lại thành quy tắc mặc định, làm lịch mục tiêu theo ngày và thực đơn ba việc. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
  "badge": {
   "style": "loops",
   "big": "6/6",
@@ -14,7 +14,7 @@
  "days": [
   {
    "label": "Thứ Hai",
-   "kick": "Đo thời gian bắt đầu",
+   "kick": "Đo thời gian bắt đầu",
    "title": "Từ lúc định làm đến lúc bắt đầu",
    "time": "Khoảng 20 phút",
    "cards": [
@@ -41,8 +41,8 @@
       {
        "f": "tx",
        "k": "j_habit",
-       "q": "Thói quen then chốt của tôi",
-       "ph": "Ví dụ: 20 phút đầu giờ cho một bước của mục tiêu số 1"
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: 20 phút đầu giờ cho một bước của mục tiêu số 1"
       }
      ]
     },
@@ -136,7 +136,7 @@
      "items": [
       {
        "f": "note",
-       "text": "Ưu tiên những quyết định nằm quanh thói quen then chốt và giờ đầu ngày."
+       "text": "Ưu tiên những quyết định nằm quanh thói quen then chốt và giờ đầu ngày."
       },
       {
        "f": "tx",
@@ -205,7 +205,7 @@
      "items": [
       {
        "f": "track",
-       "note": "Bấm vào những ngày tuần này đã làm thói quen. Tuần này bảng nằm ở Ngày 2 để theo dõi cả tuần thử quy tắc mặc định."
+       "note": "Bấm vào những ngày tuần này đã làm thói quen. Tuần này bảng nằm ở Ngày 2 để theo dõi cả tuần thử quy tắc mặc định."
       }
      ]
     }
@@ -228,34 +228,34 @@
   },
   {
    "label": "Thứ Tư",
-   "kick": "Quy tắc mặc định",
-   "title": "Viết một quy tắc mặc định cho thói quen",
+   "kick": "Quy tắc mặc định",
+   "title": "Viết một quy tắc mặc định cho thói quen",
    "time": "Khoảng 20 phút",
    "cards": [
     {
-     "h": "Quy tắc của thói quen then chốt",
+     "h": "Quy tắc của thói quen then chốt",
      "items": [
       {
        "f": "show",
-       "text": "Thói quen then chốt: {j_habit}",
+       "text": "Thói quen then chốt: {j_habit}",
        "need": [
         "j_habit"
        ]
       },
       {
        "f": "note",
-       "text": "Mẫu: Nếu không có lý do đặc biệt, tôi luôn ... Một quy tắc tốt trả lời trước bốn câu hỏi: khi nào, cho mục tiêu nào, bao lâu, bắt đầu từ đâu."
+       "text": "Mẫu: Nếu không có lý do đặc biệt, tôi luôn ... Một quy tắc tốt trả lời trước bốn câu hỏi: khi nào, cho mục tiêu nào, bao lâu, bắt đầu từ đâu."
       },
       {
        "f": "tx",
        "k": "j_default",
-       "q": "Quy tắc mặc định của tôi",
-       "ph": "Ví dụ: 8 giờ 15, sau khi rót trà, 30 phút cho bước tiếp theo của mục tiêu số 1, mở đúng tệp đang dở"
+       "q": "Quy tắc mặc định của tôi",
+       "ph": "Ví dụ: 8 giờ 15, sau khi rót trà, 30 phút cho bước tiếp theo của mục tiêu số 1, mở đúng tệp đang dở"
       }
      ]
     },
     {
-     "h": "Kiểm tra bốn câu hỏi",
+     "h": "Kiểm tra bốn câu hỏi",
      "items": [
       {
        "f": "cb",
@@ -292,7 +292,7 @@
       {
        "f": "tx",
        "k": "d3rule2",
-       "q": "Quy tắc mặc định cho quyết định này",
+       "q": "Quy tắc mặc định cho quyết định này",
        "ph": "Ví dụ: trả lời email hai lần mỗi ngày, 11 giờ và 16 giờ"
       }
      ]
@@ -357,12 +357,12 @@
       },
       {
        "f": "note",
-       "text": "Ô nào hiện dấu ba chấm là mục tiêu đó chưa được viết. Người mới có thể ghi nhanh mục tiêu ở ô dưới."
+       "text": "Ô nào hiện dấu ba chấm là mục tiêu đó chưa được viết. Người mới có thể ghi nhanh mục tiêu ở ô dưới."
       },
       {
        "f": "tx",
        "k": "j_goal1",
-       "q": "Mục tiêu số 1 (nếu chưa có)",
+       "q": "Mục tiêu số 1 (nếu chưa có)",
        "ph": "Ví dụ: giảm tỷ lệ nghỉ việc của nhân viên mới"
       }
      ]
@@ -372,7 +372,7 @@
      "items": [
       {
        "f": "note",
-       "text": "Mỗi nút là một mục tiêu trong bảng trên: số 1 là mục tiêu quan trọng nhất. Mục tiêu số 1 nên có ít nhất hai ngày. Thứ Bảy có thể chọn phiên bản tối thiểu: xem lại bảng mục tiêu 10 phút."
+       "text": "Mỗi nút là một mục tiêu trong bảng trên: số 1 là mục tiêu quan trọng nhất. Mục tiêu số 1 nên có ít nhất hai ngày. Thứ Bảy có thể chọn phiên bản tối thiểu: xem lại bảng mục tiêu 10 phút."
       },
       {
        "f": "seg",
@@ -502,7 +502,7 @@
        "f": "tx",
        "k": "d5m2",
        "q": "Việc 2",
-       "ph": "Ví dụ: trả lời một câu hỏi của bộ phận khác"
+       "ph": "Ví dụ: trả lời một câu hỏi của bộ phận khác"
       },
       {
        "f": "tx",
@@ -517,7 +517,7 @@
      "items": [
       {
        "f": "show",
-       "text": "Quy tắc mặc định: {j_default}",
+       "text": "Quy tắc mặc định: {j_default}",
        "need": [
         "j_default"
        ]
@@ -620,7 +620,7 @@
       },
       {
        "f": "note",
-       "text": "Giảm ít hay nhiều đều là thông tin tốt. Nếu chưa giảm, xem lại quy tắc còn để ngỏ câu hỏi nào."
+       "text": "Giảm ít hay nhiều đều là thông tin tốt. Nếu chưa giảm, xem lại quy tắc còn để ngỏ câu hỏi nào."
       }
      ]
     },
@@ -638,7 +638,7 @@
        ],
        "rows": [
         {
-         "label": "Thói quen then chốt",
+         "label": "Thói quen then chốt",
          "keys": [
           "j_habit"
          ]
@@ -718,7 +718,7 @@
       },
       {
        "f": "note",
-       "text": "Tuần sau, Công thức #0045 Chỉ số Sao Bắc Đẩu cho mục tiêu: mỗi mục tiêu có một con số dẫn đường và một con số hành động mỗi tuần."
+       "text": "Tuần sau, Công thức #0045 Chỉ số Sao Bắc Cực: mỗi mục tiêu có một con số dẫn đường và một con số hành động mỗi tuần."
       }
      ]
     }

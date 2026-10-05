@@ -1,15 +1,15 @@
 {
  "id": "0045",
- "name": "Sao Bắc Đẩu",
+ "name": "Sao Bắc Cực",
  "storeKey": "sth-0045-6n",
  "kicker": "Công thức #0045",
- "title": "Chỉ số Sao Bắc Đẩu",
- "sub": "Mỗi mục tiêu cần một con số dẫn đường và một con số hành động mỗi tuần. Tuần này viết Sao Bắc Đẩu cho mục tiêu số 1, chọn chỉ số hành động, dựng bảng điểm và đặt nhịp xem 15 phút mỗi tuần. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
+ "title": "Chỉ số Sao Bắc Cực",
+ "sub": "Mỗi mục tiêu cần một con số dẫn đường và một con số hành động mỗi tuần. Tuần này viết Sao Bắc Cực cho mục tiêu số 1, chọn chỉ số hành động, dựng bảng điểm và đặt nhịp xem 15 phút mỗi tuần. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
  "badge": {
   "style": "chain",
   "big": "",
   "unit": "NGÀY GIỮ THÓI QUEN",
-  "line": "Sao Bắc Đẩu: {j_northstar|đã chọn xong}"
+  "line": "Sao Bắc Cực: {j_northstar|đã chọn xong}"
  },
  "days": [
   {
@@ -30,7 +30,7 @@
       },
       {
        "f": "note",
-       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và mục tiêu số 1 ở các ô dưới đây."
+       "text": "Người mới tham gia: viết câu bản sắc, thói quen then chốt và mục tiêu số 1 ở các ô dưới đây."
       },
       {
        "f": "tx",
@@ -41,13 +41,13 @@
       {
        "f": "tx",
        "k": "j_habit",
-       "q": "Thói quen then chốt của tôi",
-       "ph": "Ví dụ: 20 phút đầu giờ cho một bước của mục tiêu số 1"
+       "q": "Thói quen then chốt của tôi",
+       "ph": "Ví dụ: 20 phút đầu giờ cho một bước của mục tiêu số 1"
       },
       {
        "f": "tx",
        "k": "j_goal1",
-       "q": "Mục tiêu số 1 (người mới hoặc muốn sửa)",
+       "q": "Mục tiêu số 1 (người mới hoặc muốn sửa)",
        "ph": "Ví dụ: tăng doanh thu từ khách hàng doanh nghiệp"
       }
      ]
@@ -69,7 +69,7 @@
       {
        "f": "seg",
        "k": "d1s1",
-       "q": "Mục tiêu số 1",
+       "q": "Mục tiêu số 1",
        "opts": [
         "Đều đặn",
         "Cuối kỳ",
@@ -160,7 +160,7 @@
       },
       {
        "f": "note",
-       "text": "Sau một quý, mục tiêu chưa có con số là chuyện bình thường. Tuần này bắt đầu từ mục tiêu số 1."
+       "text": "Sau một quý, mục tiêu chưa có con số là chuyện bình thường. Tuần này bắt đầu từ mục tiêu số 1."
       }
      ]
     }
@@ -183,8 +183,8 @@
   },
   {
    "label": "Thứ Ba",
-   "kick": "Sao Bắc Đẩu",
-   "title": "Viết chỉ số Sao Bắc Đẩu cho mục tiêu số 1",
+   "kick": "Sao Bắc Cực",
+   "title": "Viết chỉ số Sao Bắc Cực cho mục tiêu số 1",
    "time": "Khoảng 20 phút",
    "cards": [
     {
@@ -192,7 +192,7 @@
      "items": [
       {
        "f": "show",
-       "text": "Mục tiêu số 1: {j_goal1}",
+       "text": "Mục tiêu số 1: {j_goal1}",
        "need": [
         "j_goal1"
        ]
@@ -226,7 +226,7 @@
      ]
     },
     {
-     "h": "Sao Bắc Đẩu của mục tiêu số 1",
+     "h": "Sao Bắc Cực của mục tiêu số 1",
      "items": [
       {
        "f": "tx",
@@ -245,7 +245,7 @@
    ],
    "checkin": [
     {
-     "tpl": "Sao Bắc Đẩu của mục tiêu số 1: {j_northstar}.",
+     "tpl": "Sao Bắc Cực của mục tiêu số 1: {j_northstar}.",
      "need": [
       "j_northstar"
      ]
@@ -255,7 +255,7 @@
   },
   {
    "label": "Thứ Tư",
-   "kick": "Chỉ số hành động",
+   "kick": "Chỉ số hành động",
    "title": "Chọn một con số hành động mỗi tuần",
    "time": "Khoảng 20 phút",
    "cards": [
@@ -264,7 +264,7 @@
      "items": [
       {
        "f": "show",
-       "text": "Sao Bắc Đẩu: {j_northstar}",
+       "text": "Sao Bắc Cực: {j_northstar}",
        "need": [
         "j_northstar"
        ]
@@ -356,7 +356,7 @@
       {
        "f": "tx",
        "k": "j_lead",
-       "q": "Chỉ số hành động mỗi tuần",
+       "q": "Chỉ số hành động mỗi tuần",
        "ph": "Ví dụ: mỗi tuần gặp trực tiếp 3 khách hàng doanh nghiệp"
       }
      ]
@@ -379,11 +379,11 @@
    "time": "Khoảng 20 phút",
    "cards": [
     {
-     "h": "Phần trên: Sao Bắc Đẩu",
+     "h": "Phần trên: Sao Bắc Cực",
      "items": [
       {
        "f": "show",
-       "text": "Sao Bắc Đẩu: {j_northstar}",
+       "text": "Sao Bắc Cực: {j_northstar}",
        "need": [
         "j_northstar"
        ]
@@ -494,15 +494,15 @@
       {
        "f": "seg",
        "k": "d5trend",
-       "q": "2. Sao Bắc Đẩu đang",
+       "q": "2. Sao Bắc Cực đang",
        "opts": [
         "Đi lên",
-        "Đứng yên",
+        "Đứng yên",
         "Đi xuống"
        ],
        "hints": [
         "Ghi lại điều đã giúp con số đi lên, giữ nhịp tuần tới.",
-        "Bình thường trong vài tuần đầu. Nếu chỉ số hành động đạt đều mà con số đứng yên lâu, xem lại chỉ số hành động.",
+        "Bình thường trong vài tuần đầu. Nếu chỉ số hành động đạt đều mà con số đứng yên lâu, xem lại chỉ số hành động.",
         "Tìm nguyên nhân nằm trong tầm tác động của mình trước, rồi mới đến nguyên nhân bên ngoài."
        ]
       },
@@ -579,13 +579,13 @@
        ],
        "rows": [
         {
-         "label": "Mục tiêu số 1",
+         "label": "Mục tiêu số 1",
          "keys": [
           "j_goal1"
          ]
         },
         {
-         "label": "Sao Bắc Đẩu",
+         "label": "Sao Bắc Cực",
          "keys": [
           "j_northstar"
          ]
@@ -608,7 +608,7 @@
        "f": "tx",
        "k": "d6daily",
        "q": "Mỗi ngày (thói quen viết lại theo con số hành động)",
-       "ph": "Ví dụ: 20 phút đầu giờ viết hoặc sửa một câu trả lời mẫu"
+       "ph": "Ví dụ: 20 phút đầu giờ viết hoặc sửa một câu trả lời mẫu"
       },
       {
        "f": "show",
@@ -654,7 +654,7 @@
         "Số 5"
        ],
        "hints": [
-        "Giữ trọng tâm cho mục tiêu số 1, chưa thêm mục tiêu khác.",
+        "Giữ trọng tâm cho mục tiêu số 1, chưa thêm mục tiêu khác.",
         "Thêm dòng bốn tầng cho mục tiêu số 2.",
         "Thêm dòng bốn tầng cho mục tiêu số 3.",
         "Thêm dòng bốn tầng cho mục tiêu số 4.",
@@ -663,14 +663,14 @@
       },
       {
        "f": "note",
-       "text": "Tuần sau, Công thức #0046 khép quý 1 và khép Mùa 2: nhìn lại năm mục tiêu sau một quý. Bảng điểm tuần này là nguồn thông tin quan trọng."
+       "text": "Tuần sau, Công thức #0046 khép quý 1 và khép Mùa 2: nhìn lại năm mục tiêu sau một quý. Bảng điểm tuần này là nguồn thông tin quan trọng."
       }
      ]
     }
    ],
    "checkin": [
     {
-     "tpl": "Mục tiêu số 1: {j_goal1} → Sao Bắc Đẩu: {j_northstar} → mỗi tuần: {j_lead} → mỗi ngày: {d6daily}.",
+     "tpl": "Mục tiêu số 1: {j_goal1} → Sao Bắc Cực: {j_northstar} → mỗi tuần: {j_lead} → mỗi ngày: {d6daily}.",
      "need": [
       "j_goal1",
       "j_northstar",
