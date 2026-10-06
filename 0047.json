@@ -1,9 +1,9 @@
 {
  "id": "0047",
- "name": "Siêu học",
+ "name": "Học chuyên sâu tự định hướng",
  "storeKey": "sth-0047-6n",
  "kicker": "Công thức #0047",
- "title": "Siêu học: bản đồ quý 2",
+ "title": "Học chuyên sâu tự định hướng: bản đồ quý 2",
  "sub": "Mở Mùa 3 \"Học nhanh, nhớ lâu\". Thêm 20 phút học có chủ đích ngay sau thói quen then chốt, chọn một kỹ năng và một dự án học cho quý 2. Từ Thứ Hai đến Thứ Bảy, Chủ Nhật nghỉ. Điền ngay trên trang, sao chép câu chia sẻ và dán vào bình luận bài hôm đó.",
  "badge": {
   "style": "ladder",
@@ -43,7 +43,7 @@
        "f": "tx",
        "k": "j_identity",
        "q": "Tôi là người ...",
-       "ph": "Ví dụ: học điều mới mỗi tuần và dùng ngay vào việc"
+       "ph": "Ví dụ: học điều mới mỗi tuần và dùng ngay vào việc"
       },
       {
        "f": "tx",
@@ -90,7 +90,7 @@
      ]
     },
     {
-     "h": "Ba kỹ năng ứng viên",
+     "h": "Ba kỹ năng ứng viên",
      "items": [
       {
        "f": "show",
@@ -159,7 +159,7 @@
    "time": "Khoảng 20 phút",
    "cards": [
     {
-     "h": "Ba kỹ năng ứng viên",
+     "h": "Ba kỹ năng ứng viên",
      "items": [
       {
        "f": "show",
@@ -280,7 +280,7 @@
   {
    "label": "Thứ Tư",
    "kick": "Vẽ bản đồ",
-   "title": "Vẽ bản đồ trước khi bắt đầu học",
+   "title": "Vẽ bản đồ trước khi bắt đầu học",
    "time": "Khoảng 20 phút",
    "cards": [
     {
@@ -302,7 +302,7 @@
       },
       {
        "f": "note",
-       "text": "Siêu học trước: dành khoảng 10% tổng thời gian dự kiến để tìm hiểu kỹ năng gồm những phần nào. Với 20 phút mỗi ngày trong mười hai tuần, phần này khoảng hai giờ rưỡi, chia ra vài buổi trong tuần."
+       "text": "Vẽ bản đồ trước: dành khoảng 10% tổng thời gian dự kiến để tìm hiểu kỹ năng gồm những phần nào. Với 20 phút mỗi ngày trong mười hai tuần, phần này khoảng hai giờ rưỡi, chia ra vài buổi trong tuần."
       }
      ]
     },
@@ -319,7 +319,7 @@
        "f": "ta",
        "k": "d3fact",
        "q": "Dữ kiện cần nhớ",
-       "ph": "Ví dụ: các khoản mục chính, hạn chốt số mỗi tuần"
+       "ph": "Ví dụ: các khoản mục chính, hạn chốt số mỗi tuần"
       },
       {
        "f": "ta",
@@ -337,9 +337,9 @@
         "quy trình"
        ],
        "hints": [
-        "Mỗi buổi kết thúc bằng việc tự giải thích lại bằng lời của mình, kèm một ví dụ công việc.",
-        "Dành phần đầu buổi cho tự kiểm tra và ôn cách quãng cho đến khi trả lời được không cần nhìn.",
-        "Dành phần lớn buổi để làm đi làm lại trên việc thật hoặc số liệu thật."
+        "Mỗi buổi kết thúc bằng việc tự giải thích lại bằng lời của mình, kèm một ví dụ công việc.",
+        "Dành phần đầu buổi cho tự kiểm tra và ôn cách quãng cho đến khi trả lời được không cần nhìn.",
+        "Dành phần lớn buổi để làm đi làm lại trên việc thật hoặc số liệu thật."
        ]
       }
      ]
@@ -400,7 +400,7 @@
       {
        "f": "cb",
        "k": "d4p1",
-       "label": "1. Siêu học trước: vẽ bản đồ trước khi học"
+       "label": "1. Vẽ bản đồ trước: tìm hiểu kỹ năng trước khi học"
       },
       {
        "f": "cb",
@@ -420,7 +420,7 @@
       {
        "f": "cb",
        "k": "d4p5",
-       "label": "5. Truy hồi: tự kiểm tra thay vì đọc lại"
+       "label": "5. Truy hồi: tự kiểm tra thay vì đọc lại"
       },
       {
        "f": "cb",
@@ -467,7 +467,7 @@
       },
       {
        "f": "note",
-       "text": "Một dự án học tốt: có sản phẩm nhìn thấy được, dùng cho một việc thật, xong trước 30.06.2027, chia được thành những bước vừa 20 phút. Câu mẫu: Trước 30.06, tôi hoàn thành [sản phẩm], dùng cho [việc thật]."
+       "text": "Một dự án học tốt: có sản phẩm nhìn thấy được, dùng cho một việc thật, xong trước 30.06.2027, chia được thành những bước vừa 20 phút. Câu mẫu: Trước 30.06, tôi hoàn thành [sản phẩm], dùng cho [việc thật]."
       },
       {
        "f": "tx",
@@ -521,7 +521,7 @@
        "f": "tx",
        "k": "d5part",
        "q": "Phần nhỏ tôi luyện hôm nay",
-       "ph": "Ví dụ: câu hỏi đào sâu sau câu trả lời đầu tiên của ứng viên"
+       "ph": "Ví dụ: câu hỏi đào sâu sau câu trả lời đầu tiên của ứng viên"
       }
      ]
     },
@@ -539,7 +539,7 @@
         20,
         25
        ],
-       "note": "Gợi ý: 2 phút chọn phần nhỏ, 10 phút luyện riêng, 5 phút đóng tài liệu tự kiểm tra, 3 phút ghi một dòng và bước tiếp theo."
+       "note": "Gợi ý: 2 phút chọn phần nhỏ, 10 phút luyện riêng, 5 phút đóng tài liệu tự kiểm tra, 3 phút ghi một dòng và bước tiếp theo."
       }
      ]
     },
